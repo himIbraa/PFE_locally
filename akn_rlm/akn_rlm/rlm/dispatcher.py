@@ -60,6 +60,19 @@ from akn_rlm.rlm.ceiling_breakers import (
     make_llm_doc_router_call,
     make_nli_verifier_fn,
 )
+from akn_rlm.rlm.enhancers import (
+    HyDEDenseIndex,
+    MultiQueryRetrieverWrapper,
+    active_enhancers,
+    is_e1_enabled,
+    is_e2_enabled,
+    is_e3_enabled,
+    is_e4_enabled,
+    make_concept_amendment_fn,
+    make_hyde_query_enhancer,
+    make_nli_v2_verifier_fn,
+    make_query_paraphrase_fn,
+)
 from akn_rlm.rlm.classifier import classify as _classify_intent
 from akn_rlm.rlm.handlers import (
     LAYMAN_DEFAULT_REWRITE_MODEL,
@@ -222,14 +235,57 @@ class RLMDispatcher:
         # on with one variable.
         enable_ceiling_breakers: Optional[bool] = None,
     ) -> None:
-        self._bm25 = bm25
-        self._dense = dense
         self._registry = registry
         self._llm_pool = llm_pool
         self._ceiling = (
             _ceiling_enabled() if enable_ceiling_breakers is None
             else bool(enable_ceiling_breakers)
         )
+
+        # E1-E4 enhancer wiring. Read flags up front so the run() path
+        # never re-checks the env mid-question. Each enhancer is built
+        # at most once, fails open, and degrades to the F5 default.
+        self._enh_active = active_enhancers()
+        log.info("Enhancers active: %s", self._enh_active)
+
+        # E4 (HyDE) wraps the dense index. Has to happen BEFORE we
+        # assign self._dense so every handler that retrieves dense
+        # transparently sees the augmented query.
+        if is_e4_enabled():
+            try:
+                hyde_fn = make_hyde_query_enhancer(llm_pool)
+                dense = HyDEDenseIndex(dense, hyde_fn)
+                log.info("E4 HyDE: dense index wrapped with hypothetical-answer enhancer")
+            except Exception as exc:
+                log.warning("E4 HyDE wiring failed (%s) — falling back to plain dense", exc)
+
+        # E3 paraphrase wrapper. Applies to BOTH BM25 and Dense so
+        # every handler that fuses RRF(BM25, Dense) benefits.
+        if is_e3_enabled():
+            try:
+                pf = make_query_paraphrase_fn(llm_pool)
+                bm25 = MultiQueryRetrieverWrapper(bm25, pf)
+                dense = MultiQueryRetrieverWrapper(dense, pf)
+                log.info("E3 paraphrase: BM25 + Dense wrapped with multi-query fusion")
+            except Exception as exc:
+                log.warning("E3 paraphrase wiring failed (%s) — falling back", exc)
+
+        self._bm25 = bm25
+        self._dense = dense
+
+        # E2 — reverse-NLI verifier. Built lazily; the v1 NLI verifier
+        # from ceiling_breakers stays available only when enable_
+        # ceiling_breakers is on and E2 is off (back-compat).
+        self._e2_verifier_fn = None
+        if is_e2_enabled():
+            try:
+                self._e2_verifier_fn = make_nli_v2_verifier_fn(llm_pool)
+                log.info("E2 reverse-NLI verifier active")
+            except Exception as exc:
+                log.warning("E2 NLI v2 wiring failed (%s) — leaving F5 verifier", exc)
+
+        # E1 — concept_amendment helper. Built lazily once the KG loads.
+        self._e1_concept_amendment_fn = None
         # Build (or reuse) the doc-router; turn on the LLM tie-breaker
         # channel when ceiling-breakers are enabled.
         if router is None:
@@ -367,6 +423,9 @@ class RLMDispatcher:
         tel.setdefault("baseline", DISPATCH_BASELINE)
         # R9.7: per-handler-run model counts.
         tel["calls_by_model"] = calls_by_model
+        # E1-E4 ablation telemetry — every dispatched answer carries the
+        # active enhancer set so we can audit which run produced what.
+        tel["enhancers_active"] = dict(self._enh_active)
         return answer
 
     # ------------------------------------------------------------------
@@ -416,7 +475,10 @@ class RLMDispatcher:
         # so HPC nodes without sentence-transformers / mDeBERTa still
         # work.
         ceiling_kwargs: dict[str, Any] = {}
-        if self._ceiling and self._nli_verifier_fn is not None:
+        # E2 takes precedence over the legacy v1 (wrong NLI direction).
+        if self._e2_verifier_fn is not None:
+            ceiling_kwargs["verifier_fn"] = self._e2_verifier_fn
+        elif self._ceiling and self._nli_verifier_fn is not None:
             ceiling_kwargs["verifier_fn"] = self._nli_verifier_fn
 
         if key == "rule_application":
@@ -488,7 +550,7 @@ class RLMDispatcher:
                     sub_model=self._sub_model,
                 )
             if key == "conceptual_definitional":
-                return build_conceptual_definitional_handler(
+                cd_kwargs: dict[str, Any] = dict(
                     kg=kg,
                     bm25=self._bm25,
                     dense=self._dense,
@@ -497,6 +559,19 @@ class RLMDispatcher:
                     router=self._router,
                     sub_model=self._sub_model,
                 )
+                # E1 — build the concept-amendment helper now that we
+                # have the KG. Cached on self so a second CD dispatch
+                # reuses it without re-building.
+                if is_e1_enabled():
+                    if self._e1_concept_amendment_fn is None:
+                        try:
+                            self._e1_concept_amendment_fn = make_concept_amendment_fn(kg)
+                            log.info("E1 concept->amendment helper built")
+                        except Exception as exc:
+                            log.warning("E1 helper build failed (%s)", exc)
+                    if self._e1_concept_amendment_fn is not None:
+                        cd_kwargs["concept_amendment_fn"] = self._e1_concept_amendment_fn
+                return build_conceptual_definitional_handler(**cd_kwargs)
         # Unreachable when TYPE_TO_HANDLER is exhaustive — guard anyway
         # so a typo in a future key is loud, not silent.
         raise ValueError(f"Unknown dispatcher handler key: {key!r}")

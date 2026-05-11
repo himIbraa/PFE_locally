@@ -217,7 +217,32 @@ def main() -> None:
                              "per-citation NLI verifier, doc-router LLM tie-breaker, "
                              "and concept->amendment SPARQL helper for CD. "
                              "Equivalent to AKN_CEILING_BREAKERS=1 env var.")
+    parser.add_argument("--e1", action="store_true",
+                        help="E1: union concept->amendment SPARQL hits into the "
+                             "CD handler's KG-bias set (AKN_E1_CONCEPT_AMENDMENT=1).")
+    parser.add_argument("--e2", action="store_true",
+                        help="E2: reverse-direction NLI verifier (Gemma rewrites "
+                             "question as declarative; NLI scores entailment of "
+                             "article -> claim). Replaces F5 LLM verifier in RA/MH/EA. "
+                             "(AKN_E2_NLI_REVERSE=1).")
+    parser.add_argument("--e3", action="store_true",
+                        help="E3: Gemma paraphrase pre-retrieval; BM25 + Dense run "
+                             "over [original, paraphrases] and RRF-merge "
+                             "(AKN_E3_PARAPHRASE=1).")
+    parser.add_argument("--e4", action="store_true",
+                        help="E4: HyDE retrieval. Qwen drafts a hypothetical answer; "
+                             "dense embeds query+answer. (AKN_E4_HYDE=1).")
+    parser.add_argument("--enhancers-all", action="store_true",
+                        help="Enable E1+E2+E3+E4 simultaneously (AKN_ENHANCERS=all).")
     args = parser.parse_args()
+    # Convert per-flag CLI toggles to env vars so the enhancers module
+    # picks them up uniformly regardless of activation path.
+    import os as _os
+    if args.enhancers_all: _os.environ["AKN_ENHANCERS"] = "all"
+    if args.e1: _os.environ["AKN_E1_CONCEPT_AMENDMENT"] = "1"
+    if args.e2: _os.environ["AKN_E2_NLI_REVERSE"] = "1"
+    if args.e3: _os.environ["AKN_E3_PARAPHRASE"] = "1"
+    if args.e4: _os.environ["AKN_E4_HYDE"] = "1"
 
     run_id = args.run_id or time.strftime("rlm_dispatched_%Y%m%d_%H%M%S")
     output_dir = Path(args.output_dir)

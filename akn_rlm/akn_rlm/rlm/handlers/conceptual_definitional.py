@@ -438,6 +438,11 @@ class ConceptualDefinitionalHandler:
         sparql_fn: Optional[SparqlFn] = None,
         paraphrase_fn: Optional[ParaphraseFn] = None,
         adu_extract_fn: Optional[AduExtractFn] = None,
+        # E1: union concept->amendment SPARQL hits into the KG-bias set.
+        # Catches definitions that live inside amending decrees (the
+        # documented R4 ceiling case — e.g. lab_cd_q01 art_114 lives
+        # inside 96-21#art_17). Callable: phrases -> set[(doc_id, ref)].
+        concept_amendment_fn: Optional[Callable[[List[str]], Any]] = None,
     ) -> None:
         self._kg = kg
         self._bm25 = bm25
@@ -462,6 +467,7 @@ class ConceptualDefinitionalHandler:
         self._sparql_fn = sparql_fn or self._default_sparql_fn()
         self._paraphrase_fn = paraphrase_fn or _generate_paraphrases
         self._adu_extract_fn = adu_extract_fn or adu_extract
+        self._concept_amendment_fn = concept_amendment_fn
 
     # ------------------------------------------------------------------
     def _default_sparql_fn(self) -> Optional[SparqlFn]:
@@ -539,6 +545,17 @@ class ConceptualDefinitionalHandler:
             self._sparql_fn, phrases, limit=self._kg_limit,
         )
         kg_keys = self._kg_keys(kg_scores)
+
+        # E1 — union concept->amendment SPARQL hits into the bias set so
+        # definitions inside amending decrees (lab_cd_q01 pattern) receive
+        # the same kg_boost as direct KG hits.
+        if self._concept_amendment_fn is not None and phrases:
+            try:
+                amend_hits = self._concept_amendment_fn(phrases) or set()
+                if amend_hits:
+                    kg_keys = set(kg_keys) | set(amend_hits)
+            except Exception as exc:
+                log.debug("E1 concept_amendment_fn raised: %s", exc)
 
         # 6. Apply KG bias and re-sort.
         candidates = self._apply_kg_bias(fused, kg_keys)
