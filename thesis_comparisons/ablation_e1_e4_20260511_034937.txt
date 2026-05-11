@@ -1,0 +1,30 @@
+
+================================================================================================================================================================
+config                                   citation_f1mrr_at_10_article mrr_at_10_docdoc_citation_f1recall_at_10_article           hcr abstention_f1mean_latency_s
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+F5 full-244 (locked Windows)                  0.3011        0.2686        0.5567        0.6122        0.2155        0.0000        0.7075        4.5086
+F5 baseline (no enhancers)                    0.2745        (none)        (none)        0.5992        (none)        0.0000        0.6316        2.3152
+F5 + E1 (concept_amendment)                   0.2745        (none)        (none)        0.6117        (none)        0.0000        0.6316        3.2957
+F5 + E2 (NLI reverse)                         0.2745        (none)        (none)        0.5992        (none)        0.0000        0.6316        2.7789
+F5 + E3 (paraphrase)                          0.2785        (none)        (none)        0.6292        (none)        0.0000        0.6667        7.3899
+F5 + E4 (HyDE)                                0.2954        (none)        (none)        0.6700        (none)        0.0000        0.7059        5.3571
+F5 + E1+E2+E3+E4 (all)                        0.2871        (none)        (none)        0.6250        (none)        0.0000        0.7059        8.2175
+================================================================================================================================================================
+
+STRONGEST per metric (excluding F5 full-244 reference):
+  citation_f1           : 0.2954  <- F5 + E4 (HyDE)
+  mrr_at_10_article     : (no data)
+  mrr_at_10_doc         : (no data)
+  doc_citation_f1       : 0.6700  <- F5 + E4 (HyDE)
+  recall_at_10_article  : (no data)
+  hcr                   : 0.0000  <- F5 baseline (no enhancers)
+  abstention_f1         : 0.7059  <- F5 + E4 (HyDE)
+  mean_latency_s        : 2.3152  <- F5 baseline (no enhancers)
+
+PARETO winner (rank-sum of Cite F1, MRR art, R@10 art): lower = better
+  rank-sum   3  F5 + E4 (HyDE)
+  rank-sum   4  F5 + E1+E2+E3+E4 (all)
+  rank-sum   5  F5 + E3 (paraphrase)
+  rank-sum   6  F5 baseline (no enhancers)
+  rank-sum   6  F5 + E1 (concept_amendment)
+  rank-sum   6  F5 + E2 (NLI reverse)

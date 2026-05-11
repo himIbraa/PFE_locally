@@ -1,0 +1,113 @@
+========================================================================
+  RLM dispatcher  rlm_dispatched_full_e4_selective
+========================================================================
+
+Total questions : 244
+Temporal subset : 7
+
+── OVERALL ──────────────────────────────────────────────────────────
+  MRR@K  (doc)             0.5533  (Δ -0.097 vs baseline, ✗ target=0.75)
+  MRR@K  (art)             0.2856  (Δ +0.106 vs baseline, ✗ target=0.40)
+  MAP@K  (doc)             0.5137
+  MAP@K  (art)             0.1999
+  R@K    (doc)             0.5526
+  R@K    (art)             0.2293
+  P@K    (doc)             0.0619
+  P@K    (art)             0.0381
+  NDCG@K (doc)             0.5640
+  NDCG@K (art)             0.2960
+  Cite F1                  0.3095  (Δ +0.099 vs baseline, ✗ target=0.40)
+  Cite P                   0.2048
+  Cite R                   0.2293
+  Doc Cite F1              0.6096
+  Exact Match              0.0000
+  Token F1                 0.1209
+  ROUGE-L                  0.0939
+  HCR ↓                    0.0000  (Δ -0.670 vs baseline, ✗ target=0.15)
+  JIR ↓                    0.0041  (Δ -0.096 vs baseline, ✗ target=0.10)
+  Faithfulness             0.3279
+  Groundedness             0.5480
+  Abst Acc                 0.8238
+  Abst Recall              0.7761
+  Abst Prec                0.6500
+  Abst F1                  0.7075  (✗ target=0.75)
+  Mean Tokens              0.0000
+  Mean Latency (s)         5.1916
+  Retry Rate               0.0000
+
+── BY QUERY TYPE ─────────────────────────────────────────────────────
+
+  [conceptual_definitional]  (n=12)
+  MRR@K  (doc)=0.542  MRR@K  (art)=0.163  Cite F1=0.135  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=0.000  Abst F1=0.000
+
+  [exact_article]  (n=59)
+  MRR@K  (doc)=0.602  MRR@K  (art)=0.455  Cite F1=0.428  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=0.500  Abst F1=0.414
+
+  [layman]  (n=17)
+  MRR@K  (doc)=0.471  MRR@K  (art)=0.196  Cite F1=0.247  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=0.500  Abst F1=0.250
+
+  [long_context]  (n=17)
+  MRR@K  (doc)=0.824  MRR@K  (art)=0.275  Cite F1=0.097  HCR ↓=0.000  JIR ↓=0.059  Abst Recall=0.000  Abst F1=0.000
+
+  [multi_hop]  (n=26)
+  MRR@K  (doc)=0.808  MRR@K  (art)=0.255  Cite F1=0.164  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=0.667  Abst F1=0.667
+
+  [rule_application]  (n=66)
+  MRR@K  (doc)=0.674  MRR@K  (art)=0.375  Cite F1=0.245  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=0.429  Abst F1=0.286
+
+  [temporal_factual]  (n=7)
+  MRR@K  (doc)=0.786  MRR@K  (art)=0.214  Cite F1=0.190  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=0.000  Abst F1=0.000
+
+  [unanswerable]  (n=40)
+  MRR@K  (doc)=0.000  MRR@K  (art)=0.000  Cite F1=0.525  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=1.000  Abst F1=1.000
+
+── BY DIFFICULTY ─────────────────────────────────────────────────────
+
+  [easy]  (n=56)
+  MRR@K  (doc)=0.554  MRR@K  (art)=0.378  Cite F1=0.351  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=0.417  Abst F1=0.345
+
+  [hard]  (n=103)
+  MRR@K  (doc)=0.481  MRR@K  (art)=0.170  Cite F1=0.268  HCR ↓=0.000  JIR ↓=0.010  Abst Recall=0.976  Abst F1=0.943
+
+  [medium]  (n=85)
+  MRR@K  (doc)=0.641  MRR@K  (art)=0.364  Cite F1=0.333  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=0.462  Abst F1=0.387
+
+── BY LANGUAGE ───────────────────────────────────────────────────────
+
+  [ar]  (n=232)
+  MRR@K  (doc)=0.573  MRR@K  (art)=0.300  Cite F1=0.321  HCR ↓=0.000  JIR ↓=0.004  Abst Recall=0.766  Abst F1=0.726
+
+  [fr]  (n=12)
+  MRR@K  (doc)=0.167  MRR@K  (art)=0.000  Cite F1=0.083  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=1.000  Abst F1=0.500
+
+── TEMPORAL SUBSET ───────────────────────────────────────────────────
+  MRR@K  (doc)=0.786  MRR@K  (art)=0.214  Cite F1=0.190  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=0.000  Abst F1=0.000
+
+── BY LEGAL CATEGORY (compact) ───────────────────────────────────────
+  Category                      MRR(art)   R(art)   CiteF1     HCR
+  -----------------------------------------------------------------
+  administrative_law              0.2000   0.2000   0.4667  0.0000  (n=10)
+  anti_corruption                 0.0417   0.1667   0.2222  0.0000  (n=6)
+  civil_law                       0.4000   0.2267   0.2158  0.0000  (n=20)
+  civil_procedure                 0.3043   0.2174   0.2725  0.0000  (n=23)
+  commercial_law                  0.2409   0.2233   0.2468  0.0000  (n=30)
+  conflict_of_laws                0.6667   0.6667   0.5833  0.0000  (n=6)
+  constitutional_law              0.1833   0.3000   0.2500  0.0000  (n=10)
+  consumer_law                    0.0000   0.0000   0.5000  0.0000  (n=2)
+  criminal_law                    0.4298   0.3351   0.4061  0.0000  (n=19)
+  criminal_procedure              0.0909   0.0455   0.1364  0.0000  (n=11)
+  cross_domain                    0.4028   0.1550   0.1767  0.0000  (n=12)
+  customs_law                     0.0000   0.0000   0.0000  0.0000  (n=1)
+  e_commerce                      0.0000   0.0000   0.0000  0.0000  (n=1)
+  environmental_law               0.1667   0.1667   0.2778  0.0000  (n=6)
+  family_law                      0.4476   0.2948   0.3160  0.0000  (n=35)
+  housing_law                     0.0000   0.0000   0.4286  0.0000  (n=7)
+  investment_law                  0.3636   0.3333   0.4364  0.0000  (n=11)
+  ip_law                          0.3000   0.4000   0.6667  0.0000  (n=5)
+  labor_law                       0.2667   0.3333   0.3611  0.0000  (n=12)
+  public_function                 0.0000   0.0000   1.0000  0.0000  (n=1)
+  social_security                 0.0000   0.0000   0.1667  0.0000  (n=6)
+  tax_law                         0.0000   0.0000   0.3333  0.0000  (n=9)
+  traffic_law                     0.0000   0.0000   0.0000  0.0000  (n=1)
+
+========================================================================
