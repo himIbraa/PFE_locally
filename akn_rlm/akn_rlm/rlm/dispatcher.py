@@ -248,16 +248,23 @@ class RLMDispatcher:
         self._enh_active = active_enhancers()
         log.info("Enhancers active: %s", self._enh_active)
 
-        # E4 (HyDE) wraps the dense index. Has to happen BEFORE we
-        # assign self._dense so every handler that retrieves dense
-        # transparently sees the augmented query.
+        # E4 (HyDE) wraps the dense index — but **selectively**.
+        # Empirical full-244 result: HyDE helps RA/EA/layman/MH (BM25/Dense-
+        # driven handlers) and HURTS temporal_factual / conceptual_
+        # definitional (handlers that resolve the gold via the KG; a
+        # generic hypothetical answer drifts retrieval away from the
+        # specific in-force version / definition). We keep both:
+        #   self._dense_raw   — plain dense for TF and CD
+        #   self._dense       — HyDE-wrapped dense for the others
+        self._dense_raw = dense
         if is_e4_enabled():
             try:
                 hyde_fn = make_hyde_query_enhancer(llm_pool)
                 dense = HyDEDenseIndex(dense, hyde_fn)
-                log.info("E4 HyDE: dense index wrapped with hypothetical-answer enhancer")
+                log.info("E4 HyDE: dense wrapped (selective: off for TF/CD)")
             except Exception as exc:
                 log.warning("E4 HyDE wiring failed (%s) — falling back to plain dense", exc)
+                self._dense_raw = dense
 
         # E3 paraphrase wrapper. Applies to BOTH BM25 and Dense so
         # every handler that fuses RRF(BM25, Dense) benefits.
@@ -540,20 +547,27 @@ class RLMDispatcher:
         if key in _KG_HANDLER_KEYS:
             kg = self._get_kg()
             if key == "temporal_factual":
+                # E4 selective: use the RAW dense (no HyDE) — empirically
+                # HyDE hurts TF by drifting retrieval away from the
+                # specific in-force version.
                 return build_temporal_factual_handler(
                     kg=kg,
                     bm25=self._bm25,
-                    dense=self._dense,
+                    dense=self._dense_raw,
                     registry=self._registry,
                     llm_pool=self._llm_pool,
                     router=self._router,
                     sub_model=self._sub_model,
                 )
             if key == "conceptual_definitional":
+                # E4 selective: use the RAW dense (no HyDE) — empirically
+                # HyDE hurts CD because the handler already does its own
+                # paraphrase widening; HyDE's hypothetical answer
+                # conflicts with that.
                 cd_kwargs: dict[str, Any] = dict(
                     kg=kg,
                     bm25=self._bm25,
-                    dense=self._dense,
+                    dense=self._dense_raw,
                     registry=self._registry,
                     llm_pool=self._llm_pool,
                     router=self._router,
