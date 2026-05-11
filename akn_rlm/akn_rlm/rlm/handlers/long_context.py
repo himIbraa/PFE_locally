@@ -78,7 +78,12 @@ DEFAULT_SEEDS_FOR_EXPANSION: int = 4
 DEFAULT_NEIGHBORS_PER_SEED: int = 2
 #: Final top_K is bumped when chapter expansion is on so the summariser
 #: gets the broader section coverage.
-DEFAULT_FINAL_TOP_K_WITH_EXPANSION: int = 10
+DEFAULT_FINAL_TOP_K_WITH_EXPANSION: int = 12
+#: When chapter expansion is on, cap the first-pass RRF dedup at this
+#: many seeds. The remaining final_top_k - seed_cap slots are reserved
+#: for chapter neighbors. Bug fix: without a cap the dedup loop fills
+#: the entire final_top_k from raw RRF and the expansion adds 0 entries.
+DEFAULT_RRF_SEED_CAP_WITH_EXPANSION: int = 8
 DEFAULT_ROUTE_TOP_N: int = 3
 SUPPORT_SPAN_LEN: int = 280
 
@@ -164,8 +169,14 @@ class LongContextHandler:
                 candidates=0, sub_calls=0,
             )
 
-        # 3. Take top-K. Dedup on (doc_id, canonical article_ref) so the
-        # summariser doesn't see the same article twice.
+        # 3. Take top-K seeds. When chapter expansion is on, cap the
+        # first-pass dedup at ``seed_cap`` so there are slots left for
+        # neighbors. Without the cap, the loop fills the entire
+        # final_top_k from raw RRF and expansion has nothing to add.
+        if self._enable_chapter_expansion:
+            seed_cap = DEFAULT_RRF_SEED_CAP_WITH_EXPANSION
+        else:
+            seed_cap = self._final_top_k
         deduped: list[dict[str, Any]] = []
         seen_keys: set[tuple[str, str]] = set()
         for cand in candidates:
@@ -174,7 +185,7 @@ class LongContextHandler:
                 continue
             seen_keys.add(key)
             deduped.append(cand)
-            if len(deduped) >= self._final_top_k:
+            if len(deduped) >= seed_cap:
                 break
 
         # Fix-LC: chapter-neighbor expansion. For each of the top-N RRF
@@ -184,17 +195,14 @@ class LongContextHandler:
         # them, the neighbors close the gap.
         if self._enable_chapter_expansion:
             expanded = self._expand_with_chapter_neighbors(deduped)
-            if expanded:
-                # Preserve the original seed order, append neighbors after.
-                seen_keys = {(c["doc_id"], c["article_ref"]) for c in deduped}
-                for nbr in expanded:
-                    key = (nbr["doc_id"], nbr["article_ref"])
-                    if key in seen_keys:
-                        continue
-                    seen_keys.add(key)
-                    deduped.append(nbr)
-                    if len(deduped) >= self._final_top_k:
-                        break
+            for nbr in expanded:
+                key = (nbr["doc_id"], nbr["article_ref"])
+                if key in seen_keys:
+                    continue
+                seen_keys.add(key)
+                deduped.append(nbr)
+                if len(deduped) >= self._final_top_k:
+                    break
 
         top_score = float(deduped[0]["score"]) if deduped else 0.0
 

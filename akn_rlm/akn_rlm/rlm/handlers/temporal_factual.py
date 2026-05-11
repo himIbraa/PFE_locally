@@ -341,27 +341,34 @@ def _amendment_chain(
 # ---------------------------------------------------------------------------
 
 def _tf_query_phrases(query: str, max_n: int = 6) -> list[str]:
-    """Extract content phrases from a TF query for KG-first retrieval.
+    """Extract MULTI-WORD content phrases from a TF query for KG-first
+    retrieval. SPARQL CONTAINS over a single common token (e.g. "العمل",
+    "قانون") matches thousands of articles — useless noise. Bigrams /
+    trigrams of content tokens are 100-1000x more selective.
 
-    Conservative: single tokens of length ≥ 4, excluding Arabic stopwords
-    and question-words. Arabic ``ال`` definite article is preserved
-    because CONTAINS over ``versionText`` is a literal substring match
-    (HANDOFF §R4: stripping ال breaks "الاتفاقية الجماعية" matches).
+    Strategy: tokenize → drop stopwords + length<3 → emit trigrams first
+    (most selective), then bigrams. Preserve ``ال`` definite-article
+    prefix because CONTAINS is a literal substring match (HANDOFF §R4).
     """
     if not query:
         return []
-    tokens = [t for t in _TF_TOKEN_RE.split(query) if t]
+    raw_tokens = [t for t in _TF_TOKEN_RE.split(query) if t and len(t) >= 3]
+    tokens = [t for t in raw_tokens if t not in _TF_AR_STOP]
+    if len(tokens) < 2:
+        return []
+    trigrams: list[str] = []
+    bigrams: list[str] = []
+    for i in range(len(tokens) - 2):
+        trigrams.append(f"{tokens[i]} {tokens[i+1]} {tokens[i+2]}")
+    for i in range(len(tokens) - 1):
+        bigrams.append(f"{tokens[i]} {tokens[i+1]}")
     seen: set[str] = set()
     out: list[str] = []
-    for tok in tokens:
-        if len(tok) < 4:
+    for ph in trigrams + bigrams:
+        if ph in seen:
             continue
-        if tok in _TF_AR_STOP:
-            continue
-        if tok in seen:
-            continue
-        seen.add(tok)
-        out.append(tok)
+        seen.add(ph)
+        out.append(ph)
         if len(out) >= max_n:
             break
     return out
