@@ -29,6 +29,10 @@ from akn_rlm.baselines.kg_hybrid_pipeline import (
     KGHybridBaselinePipeline,
     build_kg_hybrid_pipeline,
 )
+from akn_rlm.baselines.llm_only_pipeline import (
+    LLMOnlyBaselinePipeline,
+    build_llm_only_pipeline,
+)
 
 __all__ = [
     "BM25BaselinePipeline",
@@ -43,4 +47,6 @@ __all__ = [
     "build_kg_pipeline",
     "KGHybridBaselinePipeline",
     "build_kg_hybrid_pipeline",
+    "LLMOnlyBaselinePipeline",
+    "build_llm_only_pipeline",
 ]

@@ -63,6 +63,39 @@ These exist in code, are tested, but are not in the current SOTA path. Phases be
 - **Faithfulness gate retune (R8)**: `SUPPORT_THRESHOLD=0.55`, per-citation NLI, record-only (not retry). Only fires on `pipeline.py` (LangGraph) — the dispatcher bypasses it.
 - **R9.5 supervisor** (gpt-oss-120b per-citation re-ranker): fires on ~25% of questions when `len(citations) >= 3`. Small positive lift (~+0.005 when invoked).
 
+### 1.4b — Phase A — DONE (2026-05-11)
+
+4 LLM-only baselines on full 244. Establishes the floor + reveals an
+interesting intermediate finding.
+
+| Pipeline | Cite F1 | MRR doc | MRR art | Doc Cite F1 | HCR | AbstF1 |
+|---|---:|---:|---:|---:|---:|---:|
+| **gpt-oss-120b raw** | **0.0555** | 0.192 | 0.034 | 0.184 | 0 | 0 |
+| **Qwen3 raw** | **0.0338** | 0.314 | 0.058 | 0.292 | 0 | 0 |
+| **gpt-oss + dense top-5** | **0.1747** | 0.412 | 0.166 | 0.437 | 0 | 0 |
+| **gpt-oss + dense top-5 + KG amend** | **0.1734** | 0.399 | 0.152 | 0.422 | 0 | 0 |
+| (ref) Hybrid+Rerank deterministic | 0.105 | 0.621 | 0.242 | 0.439 | 0 | 0 |
+| (ref) RLM SOTA (E4 + trajectory) | 0.313 | 0.546 | 0.284 | 0.613 | 0 | 0.716 |
+
+Key findings:
+- **Floor established**: raw LLMs land at Cite F1 ∈ [0.03, 0.06]. RLM is **5.6× higher** than raw gpt-oss.
+- **LLM + dense top-5 (0.175) BEATS the best deterministic baseline (Hybrid+Rerank = 0.105)** by 66%. The LLM acts as an implicit reranker over the retrieved context. This re-frames the contribution story: RAG is the dominant lift, the LLM as a reranker on RAG is another solid lift, then RLM's typed handlers add the final ~1.8× on top of that.
+- **KG amendment text on top of dense context is neutral (0.173 ≈ 0.175)**. The LLM already saturates with the dense context; longer prompts don't help here.
+- **HCR = 0 across all 4 raw / RAG-stuffed LLM runs** — the LLM cites real articles (resolved via the alias-aware extractor); it just cites the wrong ones for the question.
+- **AbstF1 = 0 across all 4** — raw LLM has no abstention path; this is a structural gap that only RLM's `unanswerable` handler addresses (AbstF1 0.716).
+- **Answer faithfulness = 0** across all 4 — answer claims don't entail from the cited articles' text, even when the cited articles are real.
+
+Artifacts:
+- `eval_results/baseline_gpt_oss_raw_full/`
+- `eval_results/baseline_qwen3_raw_full/`
+- `eval_results/baseline_gpt_oss_with_dense5_full/`
+- `eval_results/baseline_gpt_oss_with_dense5_kg_full/`
+- `thesis_comparisons/phase_a_llm_only_comparison.md` — full 12-pipeline comparison
+
+Pipeline tag suffixes in metrics: `llm_only_<model>_<raw|dense5|dense5_kg>`.
+
+Gate: ✅ 4 runs complete, comparison table built, raw runs at Cite F1 ≤ 0.06, LLM+RAG at 0.175 (reframes the contribution narrative).
+
 ### 1.5 What's been falsified (do NOT retry these)
 
 - **BGE-m3 as dense retriever**: regressed Cite F1 by 0.04 on this small Arabic legal corpus. e5-small wins.
@@ -188,8 +221,8 @@ Execution rule: when a phase completes, **append a "Phase X — DONE" section** 
 
 **Expected outcome**: raw LLMs at Cite F1 ≈ 0.02-0.08 with HCR > 0.5; LLM+dense at ≈ 0.10-0.15. Lifts the RLM result from "good vs Hybrid baseline" to "fundamentally different than parametric-only".
 
-**📋 Self-prompt for next session after Phase A is done**:
-> Read `D:\TRY_AGAIN\HANDOFF.md` end-to-end. Phase A (LLM-only baselines) is complete and documented in §1. Start **Phase B — Classifier-typed real-world evaluation** as specified in §3. The current locked SOTA is the trajectory-fixed run; everything past that builds on top of it.
+**📋 Self-prompt for next session after Phase A is done** ✅ READY TO PASTE NOW:
+> Read `D:\TRY_AGAIN\HANDOFF.md` end-to-end. Phase A (LLM-only baselines) is complete and documented in §1.4b. Key Phase-A finding to carry forward: LLM + dense top-5 RAG (Cite F1 = 0.175) BEATS the strongest deterministic Phase-1 baseline (Hybrid+Rerank = 0.105) by 66%. The RLM contribution narrative therefore reframes as: "RAG is the dominant lift; the typed-handler RLM architecture adds another 1.8× on top". Start **Phase B — Classifier-typed real-world evaluation** as specified in §3. The current locked SOTA is `rlm_dispatched_full_e4_trajectory` at Cite F1 = 0.313 (gold-typed); Phase B measures the drop when query_type comes from a Gemma classifier instead.
 
 ---
 
