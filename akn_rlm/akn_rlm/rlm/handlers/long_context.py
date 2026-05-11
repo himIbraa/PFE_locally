@@ -69,6 +69,16 @@ DEFAULT_K_EACH: int = 20
 # citations still exceeds typical gold-set size (4-6 per query) so
 # the summariser still has the breadth it needs for a real narrative.
 DEFAULT_FINAL_TOP_K: int = 6
+#: Fix-LC: after RRF, expand each top-seed with up to N siblings in the
+#: same AKN chapter/section. Long-context queries usually want a whole
+#: section ("all articles about X in chapter Y"); pure relevance RRF
+#: catches 2-3 of 4-6 gold articles, neighbors close the gap.
+DEFAULT_CHAPTER_EXPANSION: bool = False   # opt-in via dispatcher / kwarg
+DEFAULT_SEEDS_FOR_EXPANSION: int = 4
+DEFAULT_NEIGHBORS_PER_SEED: int = 2
+#: Final top_K is bumped when chapter expansion is on so the summariser
+#: gets the broader section coverage.
+DEFAULT_FINAL_TOP_K_WITH_EXPANSION: int = 10
 DEFAULT_ROUTE_TOP_N: int = 3
 SUPPORT_SPAN_LEN: int = 280
 
@@ -100,6 +110,12 @@ class LongContextHandler:
         route_top_n: int = DEFAULT_ROUTE_TOP_N,
         summarizer_fn: Optional[SummarizerFn] = None,
         supervisor_fn: Optional[SupervisorFn] = None,
+        # Fix-LC: AKN chapter/section neighbor expansion. When on, the
+        # handler bumps final_top_k to 10 and unions each of the top-N
+        # RRF seeds with their chapter siblings.
+        enable_chapter_expansion: bool = DEFAULT_CHAPTER_EXPANSION,
+        seeds_for_expansion: int = DEFAULT_SEEDS_FOR_EXPANSION,
+        neighbors_per_seed: int = DEFAULT_NEIGHBORS_PER_SEED,
     ) -> None:
         self._bm25 = bm25
         self._dense = dense
@@ -107,10 +123,21 @@ class LongContextHandler:
         self._llm_pool = llm_pool
         self._router = router or build_doc_router(registry=registry, bm25=bm25)
         self._sub_model = sub_model
-        self._final_top_k = final_top_k
+        # Fix-LC: when chapter expansion is on, we widen final_top_k so the
+        # summariser sees the full section. Caller-supplied final_top_k
+        # overrides this default if explicitly passed.
+        if enable_chapter_expansion and final_top_k == DEFAULT_FINAL_TOP_K:
+            self._final_top_k = DEFAULT_FINAL_TOP_K_WITH_EXPANSION
+        else:
+            self._final_top_k = final_top_k
         self._k_each = k_each
         self._route_top_n = route_top_n
         self._summarizer_fn = summarizer_fn or call_summarizer
+        # Fix-LC config + lazy-loaded article->ancestors map.
+        self._enable_chapter_expansion = bool(enable_chapter_expansion)
+        self._seeds_for_expansion = int(seeds_for_expansion)
+        self._neighbors_per_seed = int(neighbors_per_seed)
+        self._ancestor_map: Optional[dict[tuple[str, str], dict[str, str]]] = None
         # R9.5: optional gpt-oss-120b per-citation re-ranker. Trigger
         # is unlikely to fire on the LC path (citations are scored by
         # RRF, which sits well below 0.30), but the seam is wired so
@@ -149,6 +176,25 @@ class LongContextHandler:
             deduped.append(cand)
             if len(deduped) >= self._final_top_k:
                 break
+
+        # Fix-LC: chapter-neighbor expansion. For each of the top-N RRF
+        # seeds, find articles in the same AKN chapter/section and union
+        # them into the pool. Long-context gold sets are usually whole
+        # sections (4-6 articles); broad RRF alone tends to catch 2-3 of
+        # them, the neighbors close the gap.
+        if self._enable_chapter_expansion:
+            expanded = self._expand_with_chapter_neighbors(deduped)
+            if expanded:
+                # Preserve the original seed order, append neighbors after.
+                seen_keys = {(c["doc_id"], c["article_ref"]) for c in deduped}
+                for nbr in expanded:
+                    key = (nbr["doc_id"], nbr["article_ref"])
+                    if key in seen_keys:
+                        continue
+                    seen_keys.add(key)
+                    deduped.append(nbr)
+                    if len(deduped) >= self._final_top_k:
+                        break
 
         top_score = float(deduped[0]["score"]) if deduped else 0.0
 
@@ -268,6 +314,114 @@ class LongContextHandler:
     # ------------------------------------------------------------------
     # Citation / answer assembly
     # ------------------------------------------------------------------
+
+    # ------------------------------------------------------------------
+    # Fix-LC — chapter neighbor expansion
+    # ------------------------------------------------------------------
+
+    def _load_ancestor_map(self) -> dict[tuple[str, str], dict[str, str]]:
+        """Lazy-build (doc_id, article_ref) -> ancestors map by re-parsing
+        the corpus. One-time ~0.7 s cost on first dispatched LC question.
+        Subsequent dispatches reuse the cached map.
+        """
+        if self._ancestor_map is not None:
+            return self._ancestor_map
+        try:
+            from akn_rlm.corpus.akn_parser import parse_all
+            from akn_rlm.normalizers import canonical_article_ref as _canon
+        except Exception as exc:
+            log.warning("Fix-LC ancestor map load failed: %s", exc)
+            self._ancestor_map = {}
+            return self._ancestor_map
+
+        amap: dict[tuple[str, str], dict[str, str]] = {}
+        # Also keep an index of (doc_id, chapter, section) -> [refs] so the
+        # neighbor lookup is O(siblings) not O(corpus). The "chapter+section"
+        # key is the right grouping: long_context queries asking "all
+        # provisions about X" usually want one section (or one chapter
+        # when sections are absent).
+        sibling_idx: dict[tuple[str, str, str], list[str]] = {}
+        try:
+            for art in parse_all():
+                anc = dict(getattr(art, "ancestors", {}) or {})
+                ref = _canon(art.article_ref) or art.article_ref
+                key = (art.doc_id, ref)
+                amap[key] = anc
+                grp_key = (art.doc_id, anc.get("chapter", ""), anc.get("section", ""))
+                sibling_idx.setdefault(grp_key, []).append(ref)
+        except Exception as exc:
+            log.warning("Fix-LC parse_all raised: %s", exc)
+
+        self._ancestor_map = amap
+        # Stash sibling_idx on self for the lookup path
+        self._sibling_idx = sibling_idx
+        return amap
+
+    def _expand_with_chapter_neighbors(
+        self,
+        seeds: list[dict[str, Any]],
+    ) -> list[dict[str, Any]]:
+        """Return neighbor candidates for the top-N seeds in the same
+        chapter / section, ordered by seed rank then by article_ref.
+        """
+        amap = self._load_ancestor_map()
+        if not amap:
+            return []
+        sibling_idx = getattr(self, "_sibling_idx", {}) or {}
+        if not sibling_idx:
+            return []
+
+        out: list[dict[str, Any]] = []
+        seen: set[tuple[str, str]] = {(s["doc_id"], s["article_ref"]) for s in seeds}
+
+        for seed in seeds[: self._seeds_for_expansion]:
+            doc_id = seed.get("doc_id", "")
+            ref = seed.get("article_ref", "")
+            anc = amap.get((doc_id, ref))
+            if not anc:
+                continue
+            grp_key = (doc_id, anc.get("chapter", ""), anc.get("section", ""))
+            siblings = sibling_idx.get(grp_key, [])
+            if len(siblings) <= 1:
+                continue   # singleton chapter/section — no siblings to add
+            added = 0
+            for sib_ref in siblings:
+                if added >= self._neighbors_per_seed:
+                    break
+                if (doc_id, sib_ref) in seen:
+                    continue
+                seen.add((doc_id, sib_ref))
+                # Build a neighbor candidate with damped score so the
+                # original RRF order is preserved when truncating.
+                out.append({
+                    "doc_id":      doc_id,
+                    "article_ref": sib_ref,
+                    "text":        self._lookup_chunk_text(doc_id, sib_ref),
+                    "score":       float(seed.get("score", 0.5)) * 0.7,
+                    "kg_first":    False,
+                    "chapter_neighbor": True,
+                })
+                added += 1
+        return out
+
+    def _lookup_chunk_text(self, doc_id: str, ref: str) -> str:
+        """Best-effort article text lookup via BM25 chunk meta. Falls back
+        to empty string when the chunk isn't indexed (e.g. the article
+        was empty / repealed at parse time and chunker dropped it).
+        """
+        # BM25Index stores chunks in self._chunks keyed by chunk_id.
+        # chunk_id pattern: "{doc_id}#{eid}". We don't have eid here, so
+        # scan by (doc_id, ref). This is O(chunks) but only fires on
+        # ~2-4 added neighbors per LC question.
+        try:
+            chunks = getattr(self._bm25, "_chunks", None) or []
+            for c in chunks:
+                if getattr(c, "doc_id", "") == doc_id and \
+                   canonical_article_ref(getattr(c, "article_ref", "")) == ref:
+                    return getattr(c, "text", "") or getattr(c, "text_norm", "") or ""
+        except Exception:
+            pass
+        return ""
 
     def _build_citation(self, candidate: dict[str, Any]) -> dict[str, Any]:
         doc_id = candidate.get("doc_id", "")

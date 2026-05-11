@@ -514,6 +514,10 @@ class RLMDispatcher:
             timeout_summarizer = _make_timeout_summarizer(
                 self._long_context_timeout_s
             )
+            # Fix-LC: turn on AKN chapter/section neighbor expansion for
+            # the dispatched-production path. Long-context gold sets are
+            # whole sections; broad RRF alone catches 2-3 of 4-6 gold
+            # articles, neighbors close the gap.
             return build_long_context_handler(
                 bm25=self._bm25,
                 dense=self._dense,
@@ -523,6 +527,7 @@ class RLMDispatcher:
                 sub_model=self._sub_model,
                 summarizer_fn=timeout_summarizer,
                 supervisor_fn=self._supervisor_fn,
+                enable_chapter_expansion=True,
             )
         if key == "layman":
             return build_layman_handler(

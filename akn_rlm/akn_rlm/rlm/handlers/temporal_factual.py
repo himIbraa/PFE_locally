@@ -66,6 +66,26 @@ log = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 
 DEFAULT_TOP_K_CANDIDATES: int = 5
+
+#: Fix-TF: per-query SPARQL row cap for the KG-first concept-at-date
+#: channel. Each query phrase (~4-6 phrases typical) generates one
+#: SPARQL query at this row cap. Higher = better recall, slower KG.
+DEFAULT_KG_FIRST_LIMIT: int = 30
+#: Baseline score assigned to KG-first hits before they enter the fused
+#: candidate pool. Bumped by +0.05 per additional phrase that also hits
+#: the same (doc, ref). Anchored a touch above the typical RRF score
+#: to ensure KG hits are seriously considered (the failure mode we're
+#: fixing is "gold article missing from top-K").
+DEFAULT_KG_FIRST_BASE_SCORE: float = 0.6
+#: Stopwords stripped during phrase extraction for the KG-first channel.
+_TF_AR_STOP = {
+    "هذا", "ذلك", "التي", "الذي", "اللذان", "اللذين", "اللتان", "اللتين",
+    "حيث", "كيف", "متى", "أين", "ماذا", "كان", "تكون", "كانت", "يكون",
+}
+_TF_TOKEN_RE = re.compile(r"\W+", re.UNICODE)
+_TF_URI_RE = re.compile(
+    r"resource/([^/]+)/(\d{4}-\d{2}-\d{2})/([^/#]+)(?:#art_(.+))?",
+)
 # Verifier OFF by default. The HANDOFF §3 contract is "answer from the
 # KG result, never from search" — the KG amendment chain is the source
 # of truth, and a generic LLM relevance verifier (trained on
@@ -316,6 +336,160 @@ def _amendment_chain(
     return out
 
 
+# ---------------------------------------------------------------------------
+# Fix-TF — KG-first concept-at-date retrieval channel
+# ---------------------------------------------------------------------------
+
+def _tf_query_phrases(query: str, max_n: int = 6) -> list[str]:
+    """Extract content phrases from a TF query for KG-first retrieval.
+
+    Conservative: single tokens of length ≥ 4, excluding Arabic stopwords
+    and question-words. Arabic ``ال`` definite article is preserved
+    because CONTAINS over ``versionText`` is a literal substring match
+    (HANDOFF §R4: stripping ال breaks "الاتفاقية الجماعية" matches).
+    """
+    if not query:
+        return []
+    tokens = [t for t in _TF_TOKEN_RE.split(query) if t]
+    seen: set[str] = set()
+    out: list[str] = []
+    for tok in tokens:
+        if len(tok) < 4:
+            continue
+        if tok in _TF_AR_STOP:
+            continue
+        if tok in seen:
+            continue
+        seen.add(tok)
+        out.append(tok)
+        if len(out) >= max_n:
+            break
+    return out
+
+
+def _tf_uri_to_doc_ref(uri: str) -> Optional[tuple[str, str]]:
+    """Parse an article URI into (canonical doc_id, canonical article_ref)."""
+    m = _TF_URI_RE.search(str(uri))
+    if not m:
+        return None
+    _cat, date, num, ref = m.groups()
+    if not ref:
+        return None
+    doc_id = f"{num}_{date}"
+    return doc_id, canonical_article_ref(ref)
+
+
+def _merge_candidate_pools(
+    primary: list[dict[str, Any]],
+    secondary: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """Union two candidate pools by (doc_id, canonical article_ref). Keep
+    the entry with the higher score; merge ``kg_first`` flag and
+    preserve ``text`` from whichever source had it non-empty.
+    """
+    merged: dict[tuple[str, str], dict[str, Any]] = {}
+    for src in (primary, secondary):
+        for cand in src or []:
+            doc = cand.get("doc_id", "")
+            ref = canonical_article_ref(cand.get("article_ref", "")) or cand.get("article_ref", "")
+            key = (doc, ref)
+            prior = merged.get(key)
+            if prior is None:
+                merged[key] = dict(cand)
+                merged[key]["article_ref"] = ref
+                continue
+            # Keep the higher-scoring entry; merge metadata.
+            if float(cand.get("score", 0.0)) > float(prior.get("score", 0.0)):
+                # New entry wins; preserve prior text if new entry's is empty.
+                new_text = cand.get("text") or prior.get("text", "")
+                merged[key] = dict(cand)
+                merged[key]["article_ref"] = ref
+                merged[key]["text"] = new_text
+            else:
+                # Prior wins; fill empty text from new entry if helpful.
+                if not prior.get("text") and cand.get("text"):
+                    prior["text"] = cand["text"]
+            if cand.get("kg_first") or merged[key].get("kg_first"):
+                merged[key]["kg_first"] = True
+    return sorted(merged.values(), key=lambda c: float(c.get("score", 0.0)), reverse=True)
+
+
+def _tf_kg_first_candidates(
+    sparql_fn: Callable[[str], list[dict]] | None,
+    query: str,
+    target_date: str,
+    *,
+    routed_ids: Optional[list[str]] = None,
+    base_score: float = DEFAULT_KG_FIRST_BASE_SCORE,
+    limit_per_phrase: int = DEFAULT_KG_FIRST_LIMIT,
+) -> list[dict[str, Any]]:
+    """Fix-TF: surface articles whose any-version text contains a query
+    phrase AND was in force on ``target_date``. Returns candidate dicts
+    in the same shape as the hybrid retrieval pool so the downstream
+    chain step consumes them uniformly.
+
+    The bottleneck this fixes (documented in HANDOFF §R3): for 4/7 of the
+    TF slice the hybrid retrieve step gets the right *doc* in top-3 but
+    misses the *gold article* in top-5. Asking the KG "give me articles
+    that mention X and existed at date Y" gives us the exact ground truth
+    the chain step then validates.
+    """
+    if not sparql_fn or not query or not target_date:
+        return []
+    phrases = _tf_query_phrases(query)
+    if not phrases:
+        return []
+
+    results: dict[tuple[str, str], dict[str, Any]] = {}
+    routed_set = set(routed_ids) if routed_ids else None
+
+    for phrase in phrases:
+        # SPARQL string-literal escape — replace " with \" and \ with \\
+        safe = phrase.replace("\\", "\\\\").replace('"', '\\"')
+        sparql = (
+            'PREFIX dzdoc: <https://legal.dz/ontology/document#>\n'
+            'PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n'
+            'SELECT DISTINCT ?article ?text ?inForceFrom WHERE {\n'
+            '  ?article a dzdoc:Article ;\n'
+            '           dzdoc:hasVersion ?v .\n'
+            '  ?v dzdoc:versionText ?text ;\n'
+            '     dzdoc:inForceFrom ?inForceFrom .\n'
+            f'  FILTER(CONTAINS(STR(?text), "{safe}"))\n'
+            f'  FILTER(STR(?inForceFrom) <= "{target_date}")\n'
+            '}\n'
+            f'LIMIT {limit_per_phrase}'
+        )
+        try:
+            rows = sparql_fn(sparql) or []
+        except Exception as exc:
+            log.debug("KG-first SPARQL failed for phrase %r: %s", phrase, exc)
+            continue
+
+        for row in rows:
+            uri = str(row.get("article", "")) if isinstance(row, dict) else ""
+            text = str(row.get("text", "")) if isinstance(row, dict) else ""
+            parsed = _tf_uri_to_doc_ref(uri)
+            if not parsed:
+                continue
+            doc_id, ref = parsed
+            if routed_set and doc_id not in routed_set:
+                continue   # respect doc-routing
+            key = (doc_id, ref)
+            entry = results.get(key)
+            if entry is None:
+                results[key] = {
+                    "doc_id":      doc_id,
+                    "article_ref": ref,
+                    "text":        text,
+                    "score":       float(base_score),
+                    "kg_first":    True,
+                }
+            else:
+                # multi-phrase match: bump the score (caps at 1.0)
+                entry["score"] = min(1.0, entry["score"] + 0.05)
+    return list(results.values())
+
+
 def _version_at_date(chain: list[dict[str, Any]], target_date: str) -> dict[str, Any] | None:
     """Pick the latest version whose ``date <= target_date``.
 
@@ -442,7 +616,18 @@ class TemporalFactualHandler:
         target_date = _pick_target_date(dates)
 
         # 3. Retrieve candidate articles
-        candidates = self._fused_candidates(query, routed_ids)
+        hybrid_candidates = self._fused_candidates(query, routed_ids)
+
+        # 3b. Fix-TF — parallel KG-first channel. Ask the KG for articles
+        # whose any-version text contains the query concepts AND was
+        # in force at target_date. Union with hybrid candidates, dedup
+        # by (doc, ref) keeping the highest score. This recovers the
+        # documented R3 misses where the gold article was in the right
+        # routed doc but not in hybrid top-5.
+        kg_first = _tf_kg_first_candidates(
+            self._sparql_fn, query, target_date, routed_ids=routed_ids,
+        )
+        candidates = _merge_candidate_pools(hybrid_candidates, kg_first)
         if not candidates:
             return self._abstain(
                 "no_hits",

@@ -97,6 +97,13 @@ DEFAULT_ROUTE_TOP_N: int = 3
 #: surfaced in ``_telemetry["max_sub_calls"]`` so eval scripts can
 #: detect when a query approached the cap.
 DEFAULT_MAX_SUB_CALLS: int = 25
+#: Fix-MH consensus boost: for each *additional* sub-Q that cites the same
+#: (doc_id, article_ref), add this to the final ranking score. The verifier
+#: confidence on its own is roughly uniform across adjacent legal articles
+#: inside a code, so the consensus across sub-questions is a stronger
+#: discriminator. Calibrated to flip the ranking when two candidates' raw
+#: confidences differ by < 0.25.
+DEFAULT_CONSENSUS_BOOST: float = 0.25
 SUPPORT_SPAN_LEN: int = 280
 
 # Telemetry tag — stays stable so the comparison script can pick it out.
@@ -132,6 +139,7 @@ class MultiHopHandler:
         verify_threshold: float = DEFAULT_VERIFY_THRESHOLD,
         route_top_n: int = DEFAULT_ROUTE_TOP_N,
         max_sub_calls: int = DEFAULT_MAX_SUB_CALLS,
+        consensus_boost: float = DEFAULT_CONSENSUS_BOOST,
         decomposer_fn: Optional[DecomposerFn] = None,
         verifier_fn: Optional[VerifierFn] = None,
         summarizer_fn: Optional[SummarizerFn] = None,
@@ -153,6 +161,7 @@ class MultiHopHandler:
         self._verify_threshold = verify_threshold
         self._route_top_n = route_top_n
         self._max_sub_calls = int(max_sub_calls)
+        self._consensus_boost = float(consensus_boost)
         # Injectable LLM-call wrappers so unit tests don't hit the real LLM.
         self._decomposer_fn = decomposer_fn or call_decomposer
         self._verifier_fn = verifier_fn or call_verifier
@@ -239,6 +248,12 @@ class MultiHopHandler:
         # 3. Per-sub-q retrieval + verification
         # accumulator keyed on (doc_id, canonical_ref) → best citation dict
         accumulated: dict[tuple[str, str], dict[str, Any]] = {}
+        # Fix-MH: count how many DISTINCT sub-Qs cite each (doc, ref). True
+        # multi-hop gold sits on the intersection of sub-questions, so the
+        # consensus count is a stronger signal than verifier confidence
+        # alone (the latter is roughly uniform across adjacent legal
+        # articles inside the same code).
+        consensus_sq: dict[tuple[str, str], set[str]] = {}
         any_retrieval = False
         sub_q_traces: list[dict[str, Any]] = []
 
@@ -295,6 +310,9 @@ class MultiHopHandler:
                 prior = accumulated.get(key)
                 if prior is None or conf > float(prior.get("confidence", 0.0)):
                     accumulated[key] = citation
+                # Fix-MH: record which DISTINCT sub-Q surfaced this article.
+                # Same sub-Q hitting twice doesn't count as consensus.
+                consensus_sq.setdefault(key, set()).add(sq.get("id", sq_text[:40]))
                 sq_trace["verified"] += 1
 
             sub_q_traces.append(sq_trace)
@@ -315,11 +333,27 @@ class MultiHopHandler:
             )
 
         # 4. Aggregate + truncate to final_top_k
-        ranked = sorted(
-            accumulated.values(),
-            key=lambda c: float(c.get("confidence", 0.0)),
-            reverse=True,
-        )
+        # Fix-MH: re-rank by (confidence + consensus_boost). consensus_boost
+        # = DEFAULT_CONSENSUS_BOOST * (n_sub_qs_citing - 1) so:
+        #   - articles cited by 1 sub-Q  → no boost (legacy behaviour)
+        #   - articles cited by 2 sub-Qs → +DEFAULT_CONSENSUS_BOOST
+        #   - articles cited by 3 sub-Qs → +2*DEFAULT_CONSENSUS_BOOST
+        # The article on the multi-hop chain is the intersection point; an
+        # adjacent-but-wrong article (HANDOFF §R2: civ 409 vs gold 408)
+        # rarely gets cited by more than one sub-Q.
+        # We also stamp the consensus into the citation telemetry so we can
+        # audit which articles won by consensus vs raw confidence.
+        ranked_with_score: list[tuple[float, dict[str, Any]]] = []
+        for key, cit in accumulated.items():
+            base_conf = float(cit.get("confidence", 0.0))
+            consensus_n = len(consensus_sq.get(key, ())) or 1
+            boost = float(self._consensus_boost) * max(0, consensus_n - 1)
+            final_score = base_conf + boost
+            cit["consensus_sub_qs"] = consensus_n
+            cit["consensus_boost"] = boost
+            ranked_with_score.append((final_score, cit))
+        ranked_with_score.sort(key=lambda kv: kv[0], reverse=True)
+        ranked = [cit for _, cit in ranked_with_score]
         final_citations = ranked[: self._final_top_k]
 
         # 4b. R9.5 supervisor (smart-trigger). Re-rank with the strong
