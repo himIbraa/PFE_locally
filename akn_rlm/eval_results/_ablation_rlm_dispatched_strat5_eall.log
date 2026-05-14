@@ -1,0 +1,1688 @@
+03:44:00  INFO     run_dispatcher: ================================================================
+03:44:00  INFO     run_dispatcher: RLM dispatcher  run_id=rlm_dispatched_strat5_eall
+03:44:00  INFO     run_dispatcher: Benchmark      : D:\TRY_AGAIN\new_dataset\AlgerianLegalBench_v3.0_final.json
+03:44:00  INFO     run_dispatcher: Output         : eval_results/rlm_dispatched_strat5_eall/
+03:44:00  INFO     run_dispatcher: Sub-LM model   : Qwen3-30B-A3B-Thinking
+03:44:00  INFO     run_dispatcher: Rewrite model  : google/gemma-4-31B
+03:44:00  INFO     run_dispatcher: LC timeout     : 60.0s
+03:44:00  INFO     run_dispatcher: KG             : lazy-load on first KG dispatch
+03:44:00  INFO     run_dispatcher: ================================================================
+03:44:00  INFO     run_dispatcher: Parsing corpus to build registry …
+03:44:00  INFO     akn_rlm.corpus.akn_parser: Parsing 51 AKN files from D:\TRY_AGAIN\new_dataset\data\akn
+03:44:01  INFO     akn_rlm.corpus.akn_parser: Total articles parsed: 9077
+03:44:01  INFO     akn_rlm.corpus.article_registry: ArticleRegistry built: 51 canonical documents, 216 alias keys
+03:44:01  INFO     run_dispatcher: Loading BM25 index …
+03:44:01  INFO     akn_rlm.indexers.bm25: BM25 index loaded from D:\TRY_AGAIN\akn_rlm\data\indices\bm25.pkl  (8998 chunks)
+03:44:01  INFO     run_dispatcher: Loading dense index …
+03:44:01  INFO     faiss.loader: Loading faiss with AVX2 support.
+03:44:01  INFO     faiss.loader: Successfully loaded faiss with AVX2 support.
+03:44:01  INFO     akn_rlm.indexers.dense: Dense index loaded from D:\TRY_AGAIN\akn_rlm\data\indices\dense.faiss  (8998 vectors, model=intfloat/multilingual-e5-small)
+03:44:01  INFO     run_dispatcher: Connecting to LLM pool …
+03:44:02  INFO     akn_rlm.llm.client: LLMPool ready: 6 client slots (['gpt', 'qwen', 'qwen3', 'gemma', 'google', 'ai_grid'])
+03:44:02  INFO     run_dispatcher: Building doc-router (deterministic; pass --ceiling-breakers to enable LLM channel) …
+03:44:02  INFO     akn_rlm.rlm.dispatcher: Enhancers active: {'E1_concept_amendment': True, 'E2_nli_reverse': True, 'E3_paraphrase': True, 'E4_hyde': True}
+03:44:02  INFO     akn_rlm.rlm.dispatcher: E4 HyDE: dense index wrapped with hypothetical-answer enhancer
+03:44:02  INFO     akn_rlm.rlm.dispatcher: E3 paraphrase: BM25 + Dense wrapped with multi-query fusion
+03:44:02  INFO     akn_rlm.rlm.dispatcher: E2 reverse-NLI verifier active
+03:44:02  INFO     run_benchmark: Benchmark: 244 questions loaded from AlgerianLegalBench_v3.0_final.json
+03:44:02  INFO     run_dispatcher: Stratified sample: 40 questions across 8 types
+03:44:02  INFO     run_dispatcher: Running 40 questions through RLM dispatcher …
+03:44:02  INFO     akn_rlm.rlm.dispatcher: Lazy-loading KG via supplied loader …
+03:44:02  INFO     run_dispatcher: Loading KG (rdflib parse, ~26 s on first KG dispatch) …
+03:44:02  INFO     akn_rlm.corpus.kg_loader: Loading RDF KG from algerian_legal_kg.ttl ...
+03:44:28  INFO     akn_rlm.corpus.kg_loader: RDF graph loaded: 758558 triples
+03:44:28  INFO     akn_rlm.rlm.dispatcher: E1 concept->amendment helper built
+03:44:29  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:44:29  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:44:29  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:44:34  INFO     akn_rlm.indexers.dense: Loading dense encoder: intfloat/multilingual-e5-small on cuda
+03:44:34  INFO     sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: intfloat/multilingual-e5-small
+03:44:42  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:44:43  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:44:43  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:44:44  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:44:45  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:44:46  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:44:47  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:44:47  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:44:48  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:44:48  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:44:49  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:44:50  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:44:51  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:44:51  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:06  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:07  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:08  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:08  INFO     run_dispatcher:   Qlab_cd_q01  type=conceptual_definitional  handler=conceptual_definitional  abstain=False  lat=66.59s
+03:45:08  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:09  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:09  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:09  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:10  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:10  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:10  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:11  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:12  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:12  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:12  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:13  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:13  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:13  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:13  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:14  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:15  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:29  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:29  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:31  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:31  INFO     run_dispatcher:   Qcon_cd_q01  type=conceptual_definitional  handler=conceptual_definitional  abstain=False  lat=22.13s
+03:45:31  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:31  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:31  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:32  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:33  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:33  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:33  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:34  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:34  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:34  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:34  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:35  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:35  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:35  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:36  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:36  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:50  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:50  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:51  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:51  INFO     run_dispatcher:   Qcon_cd_q02  type=conceptual_definitional  handler=conceptual_definitional  abstain=False  lat=20.93s
+03:45:52  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:52  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:52  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:52  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:53  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:53  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:53  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:54  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:55  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:55  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:55  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:55  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:56  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:56  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:57  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:57  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:45:58  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:11  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:12  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:13  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:13  INFO     run_dispatcher:   Qtax_cd_q01  type=conceptual_definitional  handler=conceptual_definitional  abstain=False  lat=21.55s
+03:46:13  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:13  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:13  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:14  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:15  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:15  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:15  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:16  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:16  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:16  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:17  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:17  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:18  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:18  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:18  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:19  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:20  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:34  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:34  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:35  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:35  INFO     run_dispatcher:   Qadm_cd_q01  type=conceptual_definitional  handler=conceptual_definitional  abstain=False  lat=22.39s
+03:46:36  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:36  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:36  INFO     akn_rlm.gates.faithfulness_nli: Loading NLI model: MoritzLaurer/mDeBERTa-v3-base-mnli-xnli
+03:46:38  INFO     sentence_transformers.cross_encoder.CrossEncoder: Use pytorch device: cuda:0
+03:46:39  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:46:39  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:39  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:46:39  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:39  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:46:39  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:39  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:46:39  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:39  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:46:39  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:39  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:39  INFO     run_dispatcher:   Qfam_ea_q01  type=exact_article  handler=exact_article  abstain=False  lat=4.07s
+03:46:40  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:40  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:40  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:46:40  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:40  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:46:40  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:40  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:46:40  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:40  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:46:40  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:40  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:46:40  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:41  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:41  INFO     run_dispatcher:   Qfam_ea_q02  type=exact_article  handler=exact_article  abstain=False  lat=1.06s
+03:46:41  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:41  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:41  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:46:41  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:41  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:46:41  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:41  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:46:42  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:42  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:46:42  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:42  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:46:42  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:42  INFO     run_dispatcher:   Qcrim_ea_q01  type=exact_article  handler=exact_article  abstain=True  lat=1.11s
+03:46:42  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:42  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:42  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:46:42  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:42  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:46:42  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:42  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:46:42  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:42  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:46:43  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:43  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:46:43  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:43  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:43  INFO     run_dispatcher:   Qcrim_ea_q02  type=exact_article  handler=exact_article  abstain=False  lat=1.04s
+03:46:43  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:43  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:43  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:46:43  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:43  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:46:43  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:43  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:46:43  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:43  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:46:43  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:43  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:46:44  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:44  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:44  INFO     run_dispatcher:   Qcom_ea_q01  type=exact_article  handler=exact_article  abstain=False  lat=0.89s
+03:46:44  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:44  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:44  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:44  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:45  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:45  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:45  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:45  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:45  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:46  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:46  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:46  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:46  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:47  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:47  INFO     run_dispatcher:   Qfam_lm_q01  type=layman  handler=layman  abstain=False  lat=2.96s
+03:46:47  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:47  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:47  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:47  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:48  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:48  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:48  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:48  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:48  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:48  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:49  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:49  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:49  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:51  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:51  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:51  INFO     run_dispatcher:   Qcrim_lm_q01  type=layman  handler=layman  abstain=False  lat=4.16s
+03:46:51  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:51  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:51  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:52  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:52  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:53  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:53  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:53  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:53  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:53  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:53  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:53  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:54  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:56  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:56  WARNING  akn_rlm.rlm.sub_worker: parse_strict_json: could not parse JSON from output, returning default
+03:46:56  WARNING  akn_rlm.rlm.supervisor: supervisor returned no scores dict — returning citations unchanged
+03:46:57  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:57  INFO     run_dispatcher:   Qcom_lm_q01  type=layman  handler=layman  abstain=False  lat=6.49s
+03:46:57  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:57  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:57  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:58  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:59  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:59  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:59  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:59  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:59  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:59  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:59  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:00  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:00  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:01  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:01  INFO     run_dispatcher:   Qtraf_un_q01  type=layman  handler=layman  abstain=False  lat=3.37s
+03:47:01  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:01  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:01  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:01  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:02  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:02  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:02  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:02  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:02  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:02  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:02  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:03  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:03  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:03  INFO     run_dispatcher:   Qinv_lm_q01  type=layman  handler=layman  abstain=True  lat=2.66s
+03:47:03  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:03  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:04  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:05  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:07  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:09  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:09  INFO     run_dispatcher:   Qciv_lc_q01  type=long_context  handler=long_context  abstain=False  lat=5.89s
+03:47:09  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:09  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:10  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:11  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:13  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:13  WARNING  akn_rlm.rlm.sub_worker: parse_strict_json: could not parse JSON from output, returning default
+03:47:13  WARNING  akn_rlm.rlm.supervisor: supervisor returned no scores dict — returning citations unchanged
+03:47:15  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:15  INFO     run_dispatcher:   Qfam_lc_q01  type=long_context  handler=long_context  abstain=False  lat=5.75s
+03:47:15  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:15  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:16  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:17  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:19  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:20  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:20  INFO     run_dispatcher:   Qcom_lc_q01  type=long_context  handler=long_context  abstain=False  lat=4.96s
+03:47:20  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:20  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:21  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:22  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:23  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:24  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:24  INFO     run_dispatcher:   Qcpro_lc_q01  type=long_context  handler=long_context  abstain=False  lat=4.28s
+03:47:24  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:24  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:25  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:26  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:28  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:28  WARNING  akn_rlm.rlm.sub_worker: parse_strict_json: could not parse JSON from output, returning default
+03:47:28  WARNING  akn_rlm.rlm.supervisor: supervisor returned no scores dict — returning citations unchanged
+03:47:29  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:29  INFO     run_dispatcher:   Qfam_lc_q02  type=long_context  handler=long_context  abstain=False  lat=5.12s
+03:47:29  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:29  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:30  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:30  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:31  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:31  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:31  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:31  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:31  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:32  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:32  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:32  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:32  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:32  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:32  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:33  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:33  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:34  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:34  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:34  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:34  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:34  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:34  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:34  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:34  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:34  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:35  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:35  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:35  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:36  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:36  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:37  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:37  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:37  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:37  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:37  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:37  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:37  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:37  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:37  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:39  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:40  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:40  INFO     run_dispatcher:   Qciv_mh_q01  type=multi_hop  handler=multi_hop  abstain=False  lat=10.74s
+03:47:40  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:40  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:40  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:41  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:41  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:42  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:42  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:42  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:42  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:42  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:42  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:43  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:43  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:43  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:43  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:43  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:44  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:45  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:45  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:45  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:45  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:45  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:45  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:45  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:45  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:45  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:45  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:45  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:46  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:46  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:47  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:47  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:47  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:47  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:47  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:47  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:47  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:47  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:47  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:48  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:48  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:48  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:48  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:49  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:50  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:50  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:50  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:50  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:50  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:50  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:50  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:50  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:51  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:51  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:51  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:52  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:53  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:53  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:53  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:53  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:53  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:53  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:53  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:53  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:53  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:47:54  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:03  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 502 Bad Gateway"
+03:48:03  INFO     openai._base_client: Retrying request to /chat/completions in 0.457641 seconds
+03:48:13  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 502 Bad Gateway"
+03:48:13  INFO     openai._base_client: Retrying request to /chat/completions in 0.893605 seconds
+03:48:24  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 502 Bad Gateway"
+03:48:24  ERROR    akn_rlm.llm.ai_grid: AI Grid call failed (model=gpt-oss-120b): Error code: 502 - {'error': {'message': 'litellm.BadGatewayError: BadGatewayError: Hosted_vllmException - <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.28.0</center>\r\n</body>\r\n</html>\r\n. Received Model Group=gpt-oss-120b\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '502'}}
+03:48:24  WARNING  akn_rlm.rlm.supervisor: supervisor LLM call failed (Error code: 502 - {'error': {'message': 'litellm.BadGatewayError: BadGatewayError: Hosted_vllmException - <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.28.0</center>\r\n</body>\r\n</html>\r\n. Received Model Group=gpt-oss-120b\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '502'}}) — returning citations unchanged
+03:48:26  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:26  INFO     run_dispatcher:   Qcom_mh_q01  type=multi_hop  handler=multi_hop  abstain=False  lat=46.05s
+03:48:26  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:26  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:26  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:27  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:27  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:28  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:28  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:28  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:28  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:28  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:28  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:28  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:28  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:28  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:28  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:28  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:29  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:30  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:30  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:30  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:30  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:30  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:30  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:30  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:30  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:30  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:31  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:31  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:31  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:32  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:33  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:33  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:33  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:33  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:33  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:33  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:33  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:34  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:34  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:34  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:34  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:34  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:34  INFO     run_dispatcher:   Qcpp_mh_q01  type=multi_hop  handler=multi_hop  abstain=False  lat=7.97s
+03:48:34  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:34  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:34  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:35  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:36  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:36  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:36  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:36  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:36  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:36  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:36  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:36  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:36  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:36  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:37  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:37  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:37  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:38  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:39  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:39  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:39  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:39  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:39  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:39  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:39  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:39  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:39  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:39  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:39  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:40  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:41  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:41  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:41  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:41  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:41  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:41  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:41  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:41  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:41  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:42  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:42  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:42  INFO     run_dispatcher:   Qfam_mh_q01  type=multi_hop  handler=multi_hop  abstain=False  lat=7.85s
+03:48:42  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:42  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:42  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:43  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:43  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:44  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:44  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:44  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:44  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:45  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:45  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:45  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:45  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:45  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:45  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:45  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:46  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:46  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:47  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:47  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:47  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:47  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:47  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:47  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:47  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:47  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:48  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:48  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:48  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:49  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:49  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:50  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:50  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:50  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:50  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:50  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:50  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:50  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:50  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:50  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:52  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:54  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:54  INFO     run_dispatcher:   Qcom_mh_q02  type=multi_hop  handler=multi_hop  abstain=False  lat=11.90s
+03:48:54  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:54  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:55  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:56  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:56  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:56  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:57  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:57  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:57  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:57  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:57  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:57  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:57  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:57  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:57  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:57  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:57  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:57  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:58  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:58  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:48:58  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:59  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:59  INFO     run_dispatcher:   Qciv_ra_q01  type=rule_application  handler=rule_application  abstain=False  lat=5.07s
+03:48:59  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:48:59  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:00  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:01  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:01  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:01  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:01  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:01  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:01  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:01  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:01  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:01  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:02  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:02  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:02  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:02  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:02  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:02  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:02  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:02  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:02  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:02  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:02  INFO     run_dispatcher:   Qciv_ra_q02  type=rule_application  handler=rule_application  abstain=False  lat=3.14s
+03:49:02  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:02  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:03  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:03  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:04  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:04  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:04  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:04  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:04  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:04  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:04  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:04  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:04  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:04  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:04  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:05  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:05  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:05  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:05  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:05  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:05  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:05  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:05  INFO     run_dispatcher:   Qciv_ra_q03  type=rule_application  handler=rule_application  abstain=False  lat=2.85s
+03:49:05  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:05  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:06  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:06  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:07  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:07  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:07  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:07  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:07  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:07  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:07  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:07  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:07  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:07  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:07  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:07  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:07  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:07  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:07  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:07  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:07  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:09  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:09  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:09  INFO     run_dispatcher:   Qciv_ra_q04  type=rule_application  handler=rule_application  abstain=False  lat=4.47s
+03:49:09  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:10  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:10  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:11  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:12  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:12  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:12  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:12  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:12  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:12  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:12  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:12  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:12  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:12  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:13  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:13  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:13  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:13  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:13  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:13  ERROR    akn_rlm.gates.faithfulness_nli: NLI scoring failed: I/O operation on closed file.
+Exception ignored in: <function tqdm.__del__ at 0x000002086BD9EF80>
+Traceback (most recent call last):
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1148, in __del__
+    self.close()
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\tqdm\std.py", line 1277, in close
+    if self.last_print_t < self.start_t + self.delay:
+AttributeError: 'tqdm' object has no attribute 'last_print_t'
+03:49:13  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:13  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:13  INFO     run_dispatcher:   Qfam_ra_q01  type=rule_application  handler=rule_application  abstain=False  lat=3.99s
+03:49:13  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:13  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:14  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:15  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:15  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:15  INFO     run_dispatcher:   Qlab_tf_q01  type=temporal_factual  handler=temporal_factual  abstain=False  lat=1.77s
+03:49:15  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:15  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:16  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:17  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:17  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:17  INFO     run_dispatcher:   Qcon_tf_q01  type=temporal_factual  handler=temporal_factual  abstain=False  lat=1.82s
+03:49:17  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:17  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:18  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:19  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:19  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:19  INFO     run_dispatcher:   Qtax_tf_q01  type=temporal_factual  handler=temporal_factual  abstain=False  lat=1.91s
+03:49:19  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:19  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:20  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:20  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:21  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:21  INFO     run_dispatcher:   Qfam_tf_q01  type=temporal_factual  handler=temporal_factual  abstain=False  lat=2.50s
+03:49:21  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:21  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:22  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:23  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:23  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:23  INFO     run_dispatcher:   Qcpp_tf_q01  type=temporal_factual  handler=temporal_factual  abstain=False  lat=1.74s
+03:49:23  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:23  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:24  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:25  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:25  INFO     run_dispatcher:   Qlab_un_q03  type=unanswerable  handler=unanswerable  abstain=True  lat=1.56s
+03:49:25  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:25  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:25  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:26  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:26  INFO     run_dispatcher:   Qcon_un_q01  type=unanswerable  handler=unanswerable  abstain=True  lat=1.28s
+03:49:26  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:26  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:27  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:27  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:27  INFO     run_dispatcher:   Qtax_un_q02  type=unanswerable  handler=unanswerable  abstain=True  lat=1.64s
+03:49:28  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:28  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:28  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:29  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:29  INFO     run_dispatcher:   Qadm_un_q01  type=unanswerable  handler=unanswerable  abstain=True  lat=1.44s
+03:49:29  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:29  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:30  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:31  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:31  INFO     run_dispatcher:   Qacor_un_q01  type=unanswerable  handler=unanswerable  abstain=True  lat=1.64s
+03:49:31  INFO     run_dispatcher: Predictions saved \u2192 eval_results\rlm_dispatched_strat5_eall\predictions.jsonl
+03:49:31  INFO     run_dispatcher: All results saved to eval_results\rlm_dispatched_strat5_eall/
+Traceback (most recent call last):
+  File "D:\TRY_AGAIN\akn_rlm\scripts\run_dispatcher.py", line 328, in <module>
+    main()
+  File "D:\TRY_AGAIN\akn_rlm\scripts\run_dispatcher.py", line 323, in main
+    print_report(strata, title=f"RLM dispatcher  {run_id}")
+  File "D:\TRY_AGAIN\akn_rlm\akn_rlm\eval\report.py", line 177, in print_report
+    print(format_report(strata, title))
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\wandb\sdk\lib\console_capture.py", line 173, in write_with_callbacks
+    n = orig_write(s)
+ValueError: I/O operation on closed file.

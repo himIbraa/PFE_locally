@@ -68,8 +68,14 @@ from akn_rlm.rlm.enhancers import (
     is_e2_enabled,
     is_e3_enabled,
     is_e4_enabled,
+    is_e5_enabled,
+    is_e6_enabled,
+    is_e7_enabled,
     make_concept_amendment_fn,
+    make_concept_kg_channel,
     make_hyde_query_enhancer,
+    make_kg_doc_router_call,
+    make_kg_topology_disambiguator,
     make_nli_v2_verifier_fn,
     make_query_paraphrase_fn,
 )
@@ -234,6 +240,39 @@ class RLMDispatcher:
         # AKN_CEILING_BREAKERS env flag so HPC runs flip everything
         # on with one variable.
         enable_ceiling_breakers: Optional[bool] = None,
+        # Phase C — pervasive Argument Mining. When True, every
+        # citation-emitting handler (RA / EA / MH / TF / LC; layman
+        # rides RA) attaches a Toulmin ``argumentation`` dict to its
+        # top-N citations. CD already runs ADU pre-citation-construction
+        # and is left untouched. Per-query cost: +N ADU sub-LM calls
+        # per non-CD handler that emits citations (default N=5).
+        enable_pervasive_adu: bool = False,
+        adu_extract_top_n: int = 5,
+        # Phase D — genuine recursion. Wraps each citation-emitting
+        # handler's retrieve+verify step in a RecursiveRetriever. The
+        # gap-probe (gpt-oss-120b) decides whether to issue extra
+        # depth-2/3 retrieval passes; the new candidates are merged
+        # additively (never replace existing citations). Default OFF
+        # for back-compat.
+        enable_recursion: bool = False,
+        recursion_max_depth: int = 3,
+        # Phase D — corrective retry on faithfulness failure. After the
+        # summariser produces an answer, run gates.faithfulness_nli; if
+        # it fails, regenerate ONCE with explicit "use only cited
+        # articles" feedback. Default OFF for back-compat.
+        enable_corrective_retry: bool = False,
+        # Phase E — per-handler `recursion_coverage_min` override.
+        # Phase D measured MH/RA regressing (−0.018/−0.017 Cite F1)
+        # despite the highest recursion firing rates (80.8% / 66.7%).
+        # The diagnosis (HANDOFF §1.4e): the default coverage_min=2 is
+        # too aggressive for the wide candidate pools MH and RA already
+        # produce — gap-probe surfaces adjacent-but-wrong articles that
+        # dilute the confidence-sorted top-K. Lifting coverage_min to 4
+        # for MH/RA only fires the gap-probe on *genuinely thin* pools
+        # while leaving TF/CD at 2 (TF +0.096 from the lower threshold).
+        # Keys MUST match TYPE_TO_HANDLER handler keys; unknown keys are
+        # silently ignored. ``None`` means "use each handler's default".
+        recursion_coverage_min_overrides: Optional[dict[str, int]] = None,
     ) -> None:
         self._registry = registry
         self._llm_pool = llm_pool
@@ -293,6 +332,20 @@ class RLMDispatcher:
 
         # E1 — concept_amendment helper. Built lazily once the KG loads.
         self._e1_concept_amendment_fn = None
+        # E5 — Phase E.2 KG topology disambiguator. Built lazily on
+        # first MH dispatch when AKN_E5_KG_TOPOLOGY=1. None means "not
+        # yet built"; an identity callable (``lambda q, c: list(c)``)
+        # means "build failed — degrade to F5 behaviour silently".
+        self._e5_disambiguator_fn: Optional[Callable] = None
+        # E6 — Phase E.3 concept-KG retrieval channel. Built lazily on
+        # first MH/RA dispatch when AKN_E6_CONCEPT_KG=1. None means
+        # "not yet built"; a no-op callable means "build failed".
+        self._e6_concept_kg_channel_fn: Optional[Callable] = None
+        # E7 — Phase E.4 KG-derived doc-router channel. Attached to
+        # the router lazily on first run when AKN_E7_KG_DOC_ROUTER=1.
+        # ``_e7_attached`` flips to True once attached (or once a
+        # failed-attach has been logged) so we don't re-try every run.
+        self._e7_attached: bool = False
         # Build (or reuse) the doc-router; turn on the LLM tie-breaker
         # channel when ceiling-breakers are enabled.
         if router is None:
@@ -329,6 +382,22 @@ class RLMDispatcher:
         else:
             self._supervisor_fn = None
         self._plan_supervisor_fn = plan_supervisor_fn
+        # Phase C — pervasive ADU toggles. Stored eagerly so _build()
+        # forwards them to each non-CD handler when constructing.
+        self._enable_pervasive_adu = bool(enable_pervasive_adu)
+        self._adu_extract_top_n = int(adu_extract_top_n)
+        # Phase D — recursion + corrective retry toggles.
+        self._enable_recursion = bool(enable_recursion)
+        self._recursion_max_depth = int(recursion_max_depth)
+        self._enable_corrective_retry = bool(enable_corrective_retry)
+        # Phase E — per-handler coverage_min override map. Stored as a
+        # plain dict; _build() forwards the per-key value into the
+        # handler's recursion_coverage_min kwarg when present.
+        self._recursion_coverage_min_overrides: dict[str, int] = (
+            dict(recursion_coverage_min_overrides)
+            if recursion_coverage_min_overrides
+            else {}
+        )
         # Pre-populated overrides are honoured as-is — the dispatcher
         # never replaces an injected handler. Tests use this to inject
         # mocks; production code can use it to swap in a custom
@@ -348,6 +417,19 @@ class RLMDispatcher:
                 dispatched_handler=None,
                 dispatched_query_type=query_type,
             )
+
+        # Phase E.4 — lazy-attach the KG doc-router channel on first
+        # run when E7 is enabled. We don't fire KG load on construction
+        # so MH/RA-only runs without E7 keep their startup cost low.
+        if is_e7_enabled() and not self._e7_attached:
+            try:
+                kg = self._get_kg()
+                sparql_fn = self._make_sparql_fn(kg)
+                self._router.set_kg_call(make_kg_doc_router_call(sparql_fn))
+                log.info("E7 KG doc-router channel attached to router")
+            except Exception as exc:
+                log.warning("E7 KG doc-router attach failed (%s)", exc)
+            self._e7_attached = True
 
         resolved_type = (query_type or "").strip() or self._classify(query)
         handler_key = TYPE_TO_HANDLER.get(resolved_type, DEFAULT_FALLBACK_HANDLER)
@@ -488,9 +570,47 @@ class RLMDispatcher:
         elif self._ceiling and self._nli_verifier_fn is not None:
             ceiling_kwargs["verifier_fn"] = self._nli_verifier_fn
 
+        # Phase C — pervasive ADU kwargs forwarded into every
+        # citation-emitting handler. CD owns its own ADU budget.
+        adu_kwargs: dict[str, Any] = {}
+        if self._enable_pervasive_adu:
+            adu_kwargs["enable_adu_extraction"] = True
+            adu_kwargs["adu_extract_top_n"] = self._adu_extract_top_n
+
+        # Phase D — recursion + corrective-retry kwargs. Only forwarded
+        # to the four handlers that have wired the toggles (RA, MH, TF,
+        # CD); EA/LC/layman/UA are unchanged.
+        phase_d_kwargs: dict[str, Any] = {}
+        if self._enable_recursion:
+            phase_d_kwargs["enable_recursion"] = True
+            phase_d_kwargs["recursion_max_depth"] = self._recursion_max_depth
+            # Phase E: per-handler coverage_min override. Only injected
+            # when recursion is enabled AND this handler key is listed
+            # in the override map — otherwise the handler keeps its
+            # constructor default (DEFAULT_COVERAGE_MIN=2).
+            override = self._recursion_coverage_min_overrides.get(key)
+            if override is not None:
+                phase_d_kwargs["recursion_coverage_min"] = int(override)
+        if self._enable_corrective_retry:
+            phase_d_kwargs["enable_corrective_retry"] = True
+
         if key == "rule_application":
+            ra_extra: dict[str, Any] = {}
+            # Phase E.3 — concept-KG channel for RA. The channel adds
+            # candidates (Fix-TF pattern), so it doesn't matter that
+            # RA has no consensus boost / disambiguator — it just
+            # widens the pool before verification.
+            if is_e6_enabled():
+                ch = self._get_e6_concept_kg_channel()
+                if ch is not None:
+                    ra_extra["concept_kg_channel_fn"] = ch
             return build_rule_application_handler(
-                **common, supervisor_fn=self._supervisor_fn, **ceiling_kwargs,
+                **common,
+                supervisor_fn=self._supervisor_fn,
+                **ceiling_kwargs,
+                **adu_kwargs,
+                **phase_d_kwargs,
+                **ra_extra,
             )
         if key == "exact_article":
             # exact_article never uses dense — see HANDOFF §R6.2.
@@ -502,6 +622,7 @@ class RLMDispatcher:
                 sub_model=self._sub_model,
                 supervisor_fn=self._supervisor_fn,
                 **ceiling_kwargs,
+                **adu_kwargs,
             )
         if key == "multi_hop":
             mh_kwargs: dict[str, Any] = dict(common)
@@ -509,6 +630,20 @@ class RLMDispatcher:
             if self._plan_supervisor_fn is not None:
                 mh_kwargs["plan_supervisor_fn"] = self._plan_supervisor_fn
             mh_kwargs.update(ceiling_kwargs)
+            mh_kwargs.update(adu_kwargs)
+            mh_kwargs.update(phase_d_kwargs)
+            # Phase E.2 — inject the KG topology disambiguator when E5
+            # is active. The lazy-build triggers KG loading on first MH
+            # dispatch only; an MH-only run with E5 off pays no KG cost.
+            if is_e5_enabled():
+                disamb = self._get_e5_disambiguator()
+                if disamb is not None:
+                    mh_kwargs["kg_topology_disambiguator_fn"] = disamb
+            # Phase E.3 — inject the concept-KG channel when E6 active.
+            if is_e6_enabled():
+                ch = self._get_e6_concept_kg_channel()
+                if ch is not None:
+                    mh_kwargs["concept_kg_channel_fn"] = ch
             return build_multi_hop_handler(**mh_kwargs)
         if key == "long_context":
             timeout_summarizer = _make_timeout_summarizer(
@@ -528,8 +663,13 @@ class RLMDispatcher:
                 summarizer_fn=timeout_summarizer,
                 supervisor_fn=self._supervisor_fn,
                 enable_chapter_expansion=True,
+                **adu_kwargs,
             )
         if key == "layman":
+            # Pervasive ADU lives inside the rule_application handler
+            # that layman wraps; forward the toggle via
+            # ``rule_handler_kwargs`` (build_layman_handler passes
+            # **kwargs to its child RA handler).
             return build_layman_handler(
                 bm25=self._bm25,
                 dense=self._dense,
@@ -539,6 +679,7 @@ class RLMDispatcher:
                 sub_model=self._sub_model,
                 rewrite_model=self._rewrite_model,
                 supervisor_fn=self._supervisor_fn,
+                **adu_kwargs,
             )
         if key == "unanswerable":
             return build_unanswerable_handler(
@@ -563,6 +704,8 @@ class RLMDispatcher:
                     llm_pool=self._llm_pool,
                     router=self._router,
                     sub_model=self._sub_model,
+                    **adu_kwargs,
+                    **phase_d_kwargs,
                 )
             if key == "conceptual_definitional":
                 # E4 selective: use the RAW dense (no HyDE) — empirically
@@ -590,6 +733,7 @@ class RLMDispatcher:
                             log.warning("E1 helper build failed (%s)", exc)
                     if self._e1_concept_amendment_fn is not None:
                         cd_kwargs["concept_amendment_fn"] = self._e1_concept_amendment_fn
+                cd_kwargs.update(phase_d_kwargs)
                 return build_conceptual_definitional_handler(**cd_kwargs)
         # Unreachable when TYPE_TO_HANDLER is exhaustive — guard anyway
         # so a typo in a future key is loud, not silent.
@@ -605,6 +749,95 @@ class RLMDispatcher:
             log.info("Lazy-loading KG via supplied loader …")
             self._kg = self._kg_loader()
         return self._kg
+
+    # ------------------------------------------------------------------
+    # E5 — KG topology disambiguator (Phase E.2)
+    # ------------------------------------------------------------------
+
+    @staticmethod
+    def _make_sparql_fn(kg: Any) -> Optional[Callable[[str], Any]]:
+        """Mirror of ``temporal_factual._default_sparql_fn`` so MH can
+        access the same KG without depending on a TF instance."""
+        if kg is None:
+            return None
+
+        def _fn(query: str) -> Any:
+            try:
+                results = kg.query(query)
+            except Exception as exc:
+                log.debug("E5 SPARQL query failed: %s", exc)
+                return []
+            stripped = query.strip().lower()
+            if stripped.startswith("ask"):
+                try:
+                    return [{"_ask": bool(results)}]
+                except Exception:
+                    return []
+            rows: list[dict] = []
+            try:
+                vars_list = list(results.vars or [])
+            except Exception:
+                vars_list = []
+            for row in results:
+                rows.append({
+                    str(var): (str(row[var]) if row[var] is not None else None)
+                    for var in vars_list
+                })
+            return rows
+
+        return _fn
+
+    def _get_e6_concept_kg_channel(self) -> Optional[Callable]:
+        """Build (or return cached) Phase E.3 concept-KG channel.
+
+        Triggers KG lazy-load on first call, so MH/RA-only runs without
+        E6 still avoid the ~26 s rdflib parse. On any build failure
+        installs a no-op callable so subsequent dispatches degrade
+        cleanly to F5 hybrid-only retrieval.
+        """
+        if self._e6_concept_kg_channel_fn is not None:
+            return self._e6_concept_kg_channel_fn
+        try:
+            kg = self._get_kg()
+            sparql_fn = self._make_sparql_fn(kg)
+            self._e6_concept_kg_channel_fn = make_concept_kg_channel(sparql_fn)
+            log.info("E6 concept-KG channel built")
+        except Exception as exc:
+            log.warning("E6 concept-KG channel build failed (%s)", exc)
+            self._e6_concept_kg_channel_fn = lambda _q, _r=None: []
+        return self._e6_concept_kg_channel_fn
+
+    def _get_e5_disambiguator(self) -> Optional[Callable]:
+        """Build (or return cached) Phase E.2 KG topology disambiguator.
+
+        Triggers KG lazy-load on first call, so MH-only runs without
+        E5 still avoid the ~26 s rdflib parse. On any build failure
+        installs an identity callable so subsequent dispatches degrade
+        cleanly to the F5 ranking.
+        """
+        if self._e5_disambiguator_fn is not None:
+            return self._e5_disambiguator_fn
+        try:
+            kg = self._get_kg()
+            sparql_fn = self._make_sparql_fn(kg)
+            # _resolve_article_uri lives in temporal_factual but is
+            # generic over any sparql_fn — import lazily to avoid the
+            # heavy TF handler module load when E5 is off.
+            from akn_rlm.rlm.handlers.temporal_factual import (
+                _resolve_article_uri,
+            )
+
+            def _bound_resolve(doc_id: str, ref: str) -> Optional[str]:
+                return _resolve_article_uri(sparql_fn, doc_id, ref)
+
+            self._e5_disambiguator_fn = make_kg_topology_disambiguator(
+                sparql_fn, resolve_uri=_bound_resolve,
+            )
+            log.info("E5 KG topology disambiguator built")
+        except Exception as exc:
+            log.warning("E5 disambiguator build failed (%s)", exc)
+            self._e5_disambiguator_fn = lambda _q, c: list(c)
+        return self._e5_disambiguator_fn
 
     # ------------------------------------------------------------------
     # Abstention envelope shared by every error path

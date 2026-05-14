@@ -1,0 +1,61 @@
+========================================================================
+  RLM dispatcher  phase_e_smoke_e5_covmin4
+========================================================================
+
+Total questions : 5
+Temporal subset : 0
+
+── OVERALL ──────────────────────────────────────────────────────────
+  MRR@K  (doc)             1.0000  (Δ +0.350 vs baseline, ✓ target=0.75)
+  MRR@K  (art)             0.6000  (Δ +0.420 vs baseline, ✓ target=0.40)
+  MAP@K  (doc)             0.7000
+  MAP@K  (art)             0.2167
+  R@K    (doc)             0.7000
+  R@K    (art)             0.2333
+  P@K    (doc)             0.1200
+  P@K    (art)             0.0800
+  NDCG@K (doc)             1.0000
+  NDCG@K (art)             0.5839
+  Cite F1                  0.2371  (Δ +0.027 vs baseline, ✗ target=0.40)
+  Cite P                   0.2500
+  Cite R                   0.2333
+  Doc Cite F1              0.6933
+  Exact Match              0.0000
+  Token F1                 0.1916
+  ROUGE-L                  0.1120
+  HCR ↓                    0.0000  (Δ -0.670 vs baseline, ✗ target=0.15)
+  JIR ↓                    0.0000  (Δ -0.100 vs baseline, ✗ target=0.10)
+  Faithfulness             0.0000
+  Groundedness             0.9000
+  Abst Acc                 1.0000
+  Abst Recall              0.0000
+  Abst Prec                0.0000
+  Abst F1                  0.0000  (✗ target=0.75)
+  Mean Tokens              0.0000
+  Mean Latency (s)         36.5734
+  Retry Rate               0.6000
+
+── BY QUERY TYPE ─────────────────────────────────────────────────────
+
+  [multi_hop]  (n=5)
+  MRR@K  (doc)=1.000  MRR@K  (art)=0.600  Cite F1=0.237  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=0.000  Abst F1=0.000
+
+── BY DIFFICULTY ─────────────────────────────────────────────────────
+
+  [hard]  (n=5)
+  MRR@K  (doc)=1.000  MRR@K  (art)=0.600  Cite F1=0.237  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=0.000  Abst F1=0.000
+
+── BY LANGUAGE ───────────────────────────────────────────────────────
+
+  [ar]  (n=5)
+  MRR@K  (doc)=1.000  MRR@K  (art)=0.600  Cite F1=0.237  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=0.000  Abst F1=0.000
+
+── BY LEGAL CATEGORY (compact) ───────────────────────────────────────
+  Category                      MRR(art)   R(art)   CiteF1     HCR
+  -----------------------------------------------------------------
+  civil_law                       0.0000   0.0000   0.0000  0.0000  (n=1)
+  commercial_law                  0.5000   0.1667   0.1429  0.0000  (n=2)
+  criminal_procedure              1.0000   0.5000   0.5000  0.0000  (n=1)
+  family_law                      1.0000   0.3333   0.4000  0.0000  (n=1)
+
+========================================================================

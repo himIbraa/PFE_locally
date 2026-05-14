@@ -1,0 +1,11 @@
+{
+  "rule_application": {
+    "rule_application": 6,
+    "long_context": 1
+  },
+  "exact_article": {
+    "long_context": 1,
+    "multi_hop": 1,
+    "exact_article": 1
+  }
+}

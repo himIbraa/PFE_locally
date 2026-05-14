@@ -56,6 +56,22 @@ from akn_rlm.indexers.bm25 import BM25Hit, BM25Index
 from akn_rlm.indexers.dense import DenseHit, DenseIndex
 from akn_rlm.normalizers import canonical_article_ref
 from akn_rlm.retrievers.hybrid_fusion import rrf_fuse
+from akn_rlm.rlm.adu_helpers import (
+    DEFAULT_ADU_EXTRACT_TOP_N,
+    AduExtractFn,
+    attach_argumentation,
+)
+from akn_rlm.rlm.corrective_retry import maybe_corrective_retry
+from akn_rlm.rlm.recursive_refine import (
+    DEFAULT_CONFIDENCE_STRONG,
+    DEFAULT_CONFIDENCE_WEAK,
+    DEFAULT_COVERAGE_MIN,
+    DEFAULT_MAX_DEPTH,
+    DEFAULT_PROBE_MODEL,
+    GapProbeFn,
+    RecursiveRetriever,
+    call_gap_probe,
+)
 from akn_rlm.rlm.routing import DocRouter, build_doc_router
 from akn_rlm.rlm.sub_worker import call_summarizer, call_verifier
 
@@ -547,6 +563,22 @@ class TemporalFactualHandler:
         verifier_fn: Optional[VerifierFn] = None,
         summarizer_fn: Optional[SummarizerFn] = None,
         sparql_fn: Optional[SparqlFn] = None,
+        # Phase C — pervasive Toulmin ADU extraction (default OFF).
+        enable_adu_extraction: bool = False,
+        adu_extract_top_n: int = DEFAULT_ADU_EXTRACT_TOP_N,
+        adu_extract_fn: Optional[AduExtractFn] = None,
+        # Phase D — gap-driven recursion + corrective retry. The TF
+        # depth-1 is "hybrid + KG-first → KG amendment chain → versioned
+        # answer". Recursion's gap question goes through the same
+        # hybrid+KG-first+chain path with the new query string.
+        enable_recursion: bool = False,
+        recursion_max_depth: int = DEFAULT_MAX_DEPTH,
+        recursion_coverage_min: int = DEFAULT_COVERAGE_MIN,
+        recursion_confidence_weak: float = DEFAULT_CONFIDENCE_WEAK,
+        recursion_confidence_strong: float = DEFAULT_CONFIDENCE_STRONG,
+        recursion_probe_fn: GapProbeFn = call_gap_probe,
+        recursion_probe_model: str = DEFAULT_PROBE_MODEL,
+        enable_corrective_retry: bool = False,
     ) -> None:
         self._kg = kg
         self._bm25 = bm25
@@ -566,6 +598,19 @@ class TemporalFactualHandler:
         # SPARQL injection point: the runner wires this to the loaded
         # rdflib graph; tests mock it with canned responses.
         self._sparql_fn = sparql_fn or self._default_sparql_fn()
+        # Phase C — pervasive ADU.
+        self._enable_adu_extraction = bool(enable_adu_extraction)
+        self._adu_extract_top_n = int(adu_extract_top_n)
+        self._adu_extract_fn = adu_extract_fn
+        # Phase D — recursion + corrective retry.
+        self._enable_recursion = bool(enable_recursion)
+        self._recursion_max_depth = int(recursion_max_depth)
+        self._recursion_coverage_min = int(recursion_coverage_min)
+        self._recursion_confidence_weak = float(recursion_confidence_weak)
+        self._recursion_confidence_strong = float(recursion_confidence_strong)
+        self._recursion_probe_fn = recursion_probe_fn
+        self._recursion_probe_model = recursion_probe_model
+        self._enable_corrective_retry = bool(enable_corrective_retry)
 
     # ------------------------------------------------------------------
     def _default_sparql_fn(self) -> Optional[SparqlFn]:
@@ -614,43 +659,281 @@ class TemporalFactualHandler:
                 chains=[],
             )
 
+        trajectory: list[dict[str, Any]] = []
+
         # 1. Doc-route
         route = self._router.route(query, top_n=self._route_top_n)
         routed_ids = list(route.doc_ids)
+        trajectory.append({
+            "step": "route", "depth": 0,
+            "routed_doc_ids": routed_ids,
+        })
 
         # 2. Extract date(s) → target
         dates = _extract_dates(query)
         target_date = _pick_target_date(dates)
+        trajectory.append({
+            "step": "extract_date", "depth": 0,
+            "dates": dates, "target": target_date,
+        })
 
-        # 3. Retrieve candidate articles
-        hybrid_candidates = self._fused_candidates(query, routed_ids)
+        # State threaded through the retrieve+chain closure so recursion's
+        # extra calls show up in telemetry.
+        chain_traces: list[dict[str, Any]] = []
+        sub_calls_holder = [0]
+        candidate_holder: list[dict[str, Any]] = []
+        # Phase E.1 — per-call KG-first telemetry. One dict per
+        # _retrieve_chain_verify invocation (depth 1, plus one per
+        # recursion depth). The handler-level _telemetry surfaces the
+        # list as ``tf_kg_first_telemetry`` so post-hoc inspection can
+        # diagnose whether KG-first hits actually survive (a) the merge,
+        # (b) the top-K slice, (c) URI resolution, and (d) verification.
+        # The bug HANDOFF §1.3 documents ("Fix-TF wired but flat on full
+        # 244 — likely the merge logic or chain step rejecting KG-first
+        # hits") needs all four numbers to localise.
+        kg_first_telemetry: list[dict[str, Any]] = []
+        depth_counter = [0]
 
-        # 3b. Fix-TF — parallel KG-first channel. Ask the KG for articles
-        # whose any-version text contains the query concepts AND was
-        # in force at target_date. Union with hybrid candidates, dedup
-        # by (doc, ref) keeping the highest score. This recovers the
-        # documented R3 misses where the gold article was in the right
-        # routed doc but not in hybrid top-5.
-        kg_first = _tf_kg_first_candidates(
-            self._sparql_fn, query, target_date, routed_ids=routed_ids,
-        )
-        candidates = _merge_candidate_pools(hybrid_candidates, kg_first)
-        if not candidates:
+        def _retrieve_chain_verify(q: str) -> dict[tuple[str, str], dict[str, Any]]:
+            depth_counter[0] += 1
+            depth = depth_counter[0]
+            hybrid = self._fused_candidates(q, routed_ids)
+            kgf = _tf_kg_first_candidates(
+                self._sparql_fn, q, target_date, routed_ids=routed_ids,
+            )
+            kg_first_hits = [
+                (c.get("doc_id", ""), c.get("article_ref", ""))
+                for c in kgf
+            ]
+            cands = _merge_candidate_pools(hybrid, kgf)
+            top_slice = cands[: self._top_k_candidates]
+            kg_first_in_top_slice = sum(1 for c in top_slice if c.get("kg_first"))
+            # Snapshot the per-trace cursor so we can attribute new
+            # chain_traces entries back to this depth's KG-first hits.
+            traces_before = len(chain_traces)
+            if not cands:
+                kg_first_telemetry.append({
+                    "depth":               depth,
+                    "query":               q,
+                    "hybrid_count":        len(hybrid),
+                    "kg_first_count":      len(kgf),
+                    "kg_first_hits":       kg_first_hits,
+                    "merged_pool_size":    0,
+                    "top_slice_size":      0,
+                    "kg_first_in_top_slice": 0,
+                    "kg_first_uri_resolved": 0,
+                    "kg_first_in_verified":  0,
+                })
+                return {}
+            candidate_holder.extend(top_slice)
+            verified = self._chain_verify_pool(
+                top_slice,
+                query=q,
+                target_date=target_date,
+                chain_traces=chain_traces,
+                sub_calls_holder=sub_calls_holder,
+            )
+            # Diagnose URI-resolution success on the KG-first slice — the
+            # primary failure mode HANDOFF §1.3 calls out.
+            new_traces = chain_traces[traces_before:]
+            kg_first_keys = {
+                (c.get("doc_id", ""), canonical_article_ref(c.get("article_ref", "")) or c.get("article_ref", ""))
+                for c in top_slice if c.get("kg_first")
+            }
+            kg_first_uri_resolved = sum(
+                1 for t in new_traces
+                if (t.get("doc_id"), t.get("article_ref")) in kg_first_keys
+                and t.get("uri")
+            )
+            kg_first_in_verified = sum(
+                1 for key in verified.keys() if key in kg_first_keys
+            )
+            kg_first_telemetry.append({
+                "depth":                  depth,
+                "query":                  q,
+                "hybrid_count":           len(hybrid),
+                "kg_first_count":         len(kgf),
+                "kg_first_hits":          kg_first_hits,
+                "merged_pool_size":       len(cands),
+                "top_slice_size":         len(top_slice),
+                "kg_first_in_top_slice":  kg_first_in_top_slice,
+                "kg_first_uri_resolved":  kg_first_uri_resolved,
+                "kg_first_in_verified":   kg_first_in_verified,
+            })
+            return verified
+
+        # 3-4. Depth-1: retrieve + KG-chain + (optional) verify.
+        verified = _retrieve_chain_verify(query)
+        if not candidate_holder:
             return self._abstain(
                 "no_hits",
                 routed=routed_ids,
                 target_date=target_date,
                 dates=dates,
-                sub_calls=0,
+                sub_calls=sub_calls_holder[0],
                 chains=[],
             )
+        trajectory.append({
+            "step": "kg_chain", "depth": 1,
+            "candidates": len(candidate_holder),
+            "verified": len(verified),
+        })
 
-        # 4. MANDATORY KG amendment chain for every candidate
+        # 4b. Phase D — gap-driven recursion (additive merge).
+        recursion_steps = []
+        recursion_probe_calls = 0
+        if self._enable_recursion and self._recursion_max_depth >= 2:
+            retriever = RecursiveRetriever(
+                llm_pool=self._llm_pool,
+                retrieve_verify_fn=_retrieve_chain_verify,
+                max_depth=self._recursion_max_depth,
+                coverage_min=self._recursion_coverage_min,
+                confidence_weak=self._recursion_confidence_weak,
+                confidence_strong=self._recursion_confidence_strong,
+                probe_fn=self._recursion_probe_fn,
+                probe_model=self._recursion_probe_model,
+                seed_accumulator=verified,
+            )
+            verified, recursion_steps, recursion_probe_calls = retriever.run(query)
+            sub_calls_holder[0] += recursion_probe_calls
+            for step in recursion_steps:
+                trajectory.append({"step": "recursion", **step.to_dict()})
+
+        sub_calls = sub_calls_holder[0]
+
+        if not verified:
+            return self._abstain(
+                "no_verified_articles",
+                routed=routed_ids,
+                target_date=target_date,
+                dates=dates,
+                sub_calls=sub_calls,
+                chains=chain_traces,
+            )
+
+        # 6. Final ranking + truncate
+        ranked = sorted(
+            verified.values(),
+            key=lambda c: float(c.get("confidence", 0.0)),
+            reverse=True,
+        )
+        final_citations = ranked[: self._final_top_k]
+
+        # 6b. Phase C — pervasive Toulmin ADU.
+        adu_extracts_done = 0
+        if self._enable_adu_extraction:
+            final_citations, adu_extracts_done = attach_argumentation(
+                final_citations,
+                self._llm_pool,
+                sub_model=self._sub_model,
+                top_n=self._adu_extract_top_n,
+                adu_extract_fn=self._adu_extract_fn,
+            )
+            sub_calls += adu_extracts_done
+            trajectory.append({
+                "step": "adu_extract", "depth": 0,
+                "extracts": adu_extracts_done,
+            })
+
+        # 7. Synthesise
+        template_answer = self._template_answer(final_citations)
+        answer_text = template_answer
+        try:
+            synth = self._summarizer_fn(
+                self._llm_pool, query, final_citations, self._sub_model
+            )
+            sub_calls += 1
+            summary = synth.get("summary")
+            if isinstance(summary, str) and summary.strip():
+                answer_text = summary.strip()
+        except Exception as exc:
+            log.warning("temporal summariser failed (%s) — template answer", exc)
+        trajectory.append({"step": "summarize", "depth": 0})
+
+        # 8. Phase D — corrective retry on faithfulness failure.
+        retry_trace = None
+        if self._enable_corrective_retry:
+            answer_text, retry_trace = maybe_corrective_retry(
+                answer_text=answer_text,
+                citations=final_citations,
+                original_question=query,
+                summarizer_fn=self._summarizer_fn,
+                llm_pool=self._llm_pool,
+                sub_model=self._sub_model,
+                enabled=True,
+                template_fallback=template_answer,
+            )
+            sub_calls += retry_trace.sub_call_count
+            trajectory.append({
+                "step": "faithfulness_gate", "depth": 0,
+                "fired": retry_trace.fired,
+                "pre_passed": retry_trace.pre_passed,
+                "post_passed": retry_trace.post_passed,
+            })
+
+        depth_max = max(
+            (s.depth for s in recursion_steps if s.new_citations > 0 or s.depth == 1),
+            default=1,
+        )
+        if not recursion_steps:
+            depth_max = 1
+
+        telemetry: dict[str, Any] = {
+            "retry_count":     1 if (retry_trace and retry_trace.fired) else 0,
+            "gate_results":    {},
+            "baseline":        TELEMETRY_BASELINE,
+            "routed_doc_ids":  routed_ids,
+            "extracted_dates": dates,
+            "target_date":     target_date,
+            "amendment_chains": chain_traces,
+            "sub_call_count":  sub_calls,
+            "adu_extracts":    adu_extracts_done,
+            "recursion_trace": [s.to_dict() for s in recursion_steps],
+            "recursion_depth_max": depth_max,
+            # Phase E.1 — per-depth KG-first inspection data. Lets a
+            # post-hoc analysis answer "did KG-first hits survive the
+            # merge? did the URI resolve? did the chain step accept
+            # them?" without re-running.
+            "tf_kg_first_telemetry": kg_first_telemetry,
+        }
+        if retry_trace is not None:
+            telemetry["corrective_retry"] = retry_trace.to_dict()
+
+        return {
+            "answer_text":       answer_text,
+            "abstention":        False,
+            "abstention_reason": None,
+            "citations":         final_citations,
+            "reasoning_chain":   [
+                f"target_date={target_date}",
+                *[f"{t['doc_id']}/{t['article_ref']}@{t.get('picked') or '-'}({t['source']})"
+                  for t in chain_traces],
+            ],
+            "trajectory":        trajectory,
+            "tokens_used":       0,
+            "depth_max_reached": depth_max,
+            "_telemetry":        telemetry,
+        }
+
+    # ------------------------------------------------------------------
+    # KG amendment-chain verifier — extracted so recursion can re-call.
+    # ------------------------------------------------------------------
+
+    def _chain_verify_pool(
+        self,
+        candidates: list[dict[str, Any]],
+        *,
+        query: str,
+        target_date: str,
+        chain_traces: list[dict[str, Any]],
+        sub_calls_holder: list[int],
+    ) -> dict[tuple[str, str], dict[str, Any]]:
+        """Run the KG amendment chain on each candidate and return the
+        verified accumulator. Side-effects: appends to ``chain_traces``;
+        increments ``sub_calls_holder[0]`` for each verifier call.
+        """
         verified: dict[tuple[str, str], dict[str, Any]] = {}
-        chain_traces: list[dict[str, Any]] = []
-        sub_calls = 0
-
-        for cand in candidates[: self._top_k_candidates]:
+        for cand in candidates:
             doc_id = cand.get("doc_id", "")
             ref = canonical_article_ref(cand.get("article_ref", "")) or cand.get(
                 "article_ref", ""
@@ -663,7 +946,6 @@ class TemporalFactualHandler:
             if chain:
                 version = _version_at_date(chain, target_date)
                 if version is None:
-                    # Article didn't exist on the target date — skip.
                     chain_traces.append({
                         "doc_id":     doc_id,
                         "article_ref": ref,
@@ -677,11 +959,6 @@ class TemporalFactualHandler:
                 version_date = version.get("date") or ""
                 source = "kg"
             else:
-                # MANDATORY chain ran but the article isn't versioned in
-                # the KG (or URI didn't resolve) — fall back to chunk text.
-                # This is correct behaviour for articles that have never
-                # been amended: their original enacted text IS the
-                # current version.
                 version_text = chunk_text
                 version_date = ""
                 source = "fallback"
@@ -695,7 +972,6 @@ class TemporalFactualHandler:
                 "source":      source,
             })
 
-            # 5. Optional sub-LM verify on KG-versioned text.
             confidence = float(cand.get("score", 0.6))
             supporting_quote = ""
             if self._verifier_fn is not None and len(verified) < self._verify_top_n:
@@ -708,12 +984,11 @@ class TemporalFactualHandler:
                     verdict = self._verifier_fn(
                         self._llm_pool, query, article_for_verify, self._sub_model
                     )
-                    sub_calls += 1
+                    sub_calls_holder[0] += 1
                 except Exception as exc:
-                    log.warning("temporal verifier failed (%s) — keeping candidate", exc)
-                    # KG resolved the chain; degrade gracefully and keep the
-                    # candidate at threshold-level confidence rather than
-                    # losing answers when the LLM endpoint is flaky.
+                    log.warning(
+                        "temporal verifier failed (%s) — keeping candidate", exc
+                    )
                     verdict = {
                         "relevant": True,
                         "confidence": max(confidence, self._verify_threshold),
@@ -740,62 +1015,7 @@ class TemporalFactualHandler:
             prior = verified.get(key)
             if prior is None or confidence > float(prior.get("confidence", 0.0)):
                 verified[key] = citation
-
-        if not verified:
-            return self._abstain(
-                "no_verified_articles",
-                routed=routed_ids,
-                target_date=target_date,
-                dates=dates,
-                sub_calls=sub_calls,
-                chains=chain_traces,
-            )
-
-        # 6. Final ranking + truncate
-        ranked = sorted(
-            verified.values(),
-            key=lambda c: float(c.get("confidence", 0.0)),
-            reverse=True,
-        )
-        final_citations = ranked[: self._final_top_k]
-
-        # 7. Synthesise
-        answer_text = self._template_answer(final_citations)
-        try:
-            synth = self._summarizer_fn(
-                self._llm_pool, query, final_citations, self._sub_model
-            )
-            sub_calls += 1
-            summary = synth.get("summary")
-            if isinstance(summary, str) and summary.strip():
-                answer_text = summary.strip()
-        except Exception as exc:
-            log.warning("temporal summariser failed (%s) — template answer", exc)
-
-        return {
-            "answer_text":       answer_text,
-            "abstention":        False,
-            "abstention_reason": None,
-            "citations":         final_citations,
-            "reasoning_chain":   [
-                f"target_date={target_date}",
-                *[f"{t['doc_id']}/{t['article_ref']}@{t.get('picked') or '-'}({t['source']})"
-                  for t in chain_traces],
-            ],
-            "trajectory":        [],
-            "tokens_used":       0,
-            "depth_max_reached": 1,
-            "_telemetry": {
-                "retry_count":     0,
-                "gate_results":    {},
-                "baseline":        TELEMETRY_BASELINE,
-                "routed_doc_ids":  routed_ids,
-                "extracted_dates": dates,
-                "target_date":     target_date,
-                "amendment_chains": chain_traces,
-                "sub_call_count":  sub_calls,
-            },
-        }
+        return verified
 
     # ------------------------------------------------------------------
     # Retrieval helpers (mirror multi_hop)

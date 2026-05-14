@@ -182,6 +182,10 @@ def main() -> None:
                         help=f"Router top-N (default {DEFAULT_TOP_N})")
     parser.add_argument("--out", default="eval_results/doc_router_smoke.md",
                         help="Output markdown path")
+    parser.add_argument("--e7", action="store_true",
+                        help="Phase E.4: enable the KG-derived doc-router "
+                             "channel. Loads the KG (~26s) on startup and "
+                             "adds a 0.5 bonus per matched doc.")
     args = parser.parse_args()
 
     bm_path = Path(args.benchmark) if args.benchmark else get_benchmark_path()
@@ -203,7 +207,41 @@ def main() -> None:
         log.warning("BM25 index not found — alias-only routing")
         bm25 = None
 
-    router = build_doc_router(registry=registry, bm25=bm25, top_n=args.top_n)
+    router_kwargs: dict = {}
+    if args.e7:
+        log.info("E7 enabled — loading KG and building KG doc-router call …")
+        from akn_rlm.corpus.kg_loader import load_kg  # noqa: PLC0415
+        from akn_rlm.rlm.enhancers import make_kg_doc_router_call  # noqa: PLC0415
+
+        kg = load_kg()
+
+        def _sparql_fn(q: str):
+            try:
+                res = kg.query(q)
+            except Exception:
+                return []
+            if q.strip().lower().startswith("ask"):
+                try:
+                    return [{"_ask": bool(res)}]
+                except Exception:
+                    return []
+            rows = []
+            try:
+                vars_list = list(res.vars or [])
+            except Exception:
+                vars_list = []
+            for row in res:
+                rows.append({
+                    str(v): (str(row[v]) if row[v] is not None else None)
+                    for v in vars_list
+                })
+            return rows
+
+        router_kwargs["kg_call"] = make_kg_doc_router_call(_sparql_fn)
+
+    router = build_doc_router(
+        registry=registry, bm25=bm25, top_n=args.top_n, **router_kwargs,
+    )
 
     records = _benchmark_to_records(bm_path, registry)
     if args.stratified:

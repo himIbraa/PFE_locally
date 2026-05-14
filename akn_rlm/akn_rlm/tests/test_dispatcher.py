@@ -649,6 +649,287 @@ def test_abstention_envelope_consumed_by_answer_to_result():
 
 
 # ---------------------------------------------------------------------------
+# Phase E — per-handler recursion_coverage_min override
+# ---------------------------------------------------------------------------
+
+
+def _capture_kwargs(captured: dict, key: str):
+    """Build a fake handler factory that records its kwargs under ``key``."""
+    def _factory(**kwargs):
+        captured[key] = kwargs
+        return _stub_handler()
+    return _factory
+
+
+def test_recursion_coverage_min_override_forwarded_to_mh_ra_only(monkeypatch):
+    """Phase E: when recursion is on AND an override map is supplied,
+    MH/RA receive the overridden ``recursion_coverage_min`` while TF/CD
+    keep their constructor default (we don't pass the kwarg)."""
+    captured: dict[str, dict] = {}
+    monkeypatch.setattr(
+        "akn_rlm.rlm.dispatcher.build_rule_application_handler",
+        _capture_kwargs(captured, "rule_application"),
+    )
+    monkeypatch.setattr(
+        "akn_rlm.rlm.dispatcher.build_multi_hop_handler",
+        _capture_kwargs(captured, "multi_hop"),
+    )
+    monkeypatch.setattr(
+        "akn_rlm.rlm.dispatcher.build_temporal_factual_handler",
+        _capture_kwargs(captured, "temporal_factual"),
+    )
+    monkeypatch.setattr(
+        "akn_rlm.rlm.dispatcher.build_conceptual_definitional_handler",
+        _capture_kwargs(captured, "conceptual_definitional"),
+    )
+
+    disp = RLMDispatcher(
+        bm25=MagicMock(),
+        dense=MagicMock(),
+        registry=MagicMock(),
+        llm_pool=MagicMock(),
+        router=MagicMock(),
+        kg=object(),  # avoid kg_loader path
+        enable_recursion=True,
+        recursion_max_depth=3,
+        recursion_coverage_min_overrides={"multi_hop": 4, "rule_application": 4},
+    )
+    disp.run("س1", query_type="rule_application")
+    disp.run("س2", query_type="multi_hop")
+    disp.run("س3", query_type="temporal_factual")
+    disp.run("س4", query_type="conceptual_definitional")
+
+    assert captured["rule_application"]["recursion_coverage_min"] == 4
+    assert captured["multi_hop"]["recursion_coverage_min"] == 4
+    assert "recursion_coverage_min" not in captured["temporal_factual"]
+    assert "recursion_coverage_min" not in captured["conceptual_definitional"]
+    # enable_recursion is still forwarded to all four handlers.
+    for key in ("rule_application", "multi_hop", "temporal_factual",
+                "conceptual_definitional"):
+        assert captured[key]["enable_recursion"] is True
+
+
+def test_recursion_coverage_min_override_ignored_when_recursion_off(monkeypatch):
+    """If enable_recursion=False the override map is silently dropped —
+    no recursion kwargs reach the handlers."""
+    captured: dict[str, dict] = {}
+    monkeypatch.setattr(
+        "akn_rlm.rlm.dispatcher.build_multi_hop_handler",
+        _capture_kwargs(captured, "multi_hop"),
+    )
+    disp = RLMDispatcher(
+        bm25=MagicMock(),
+        dense=MagicMock(),
+        registry=MagicMock(),
+        llm_pool=MagicMock(),
+        router=MagicMock(),
+        enable_recursion=False,
+        recursion_coverage_min_overrides={"multi_hop": 4},
+    )
+    disp.run("س", query_type="multi_hop")
+    # When recursion is off, NO phase-D kwargs flow through — handler
+    # keeps its own DEFAULT_COVERAGE_MIN.
+    assert "recursion_coverage_min" not in captured["multi_hop"]
+    assert "enable_recursion" not in captured["multi_hop"]
+
+
+def test_e5_disambiguator_forwarded_to_mh_when_enabled(monkeypatch):
+    """Phase E.2: when AKN_E5_KG_TOPOLOGY=1 the dispatcher builds the
+    disambiguator on first MH dispatch (lazy KG load) and forwards it
+    via ``kg_topology_disambiguator_fn``."""
+    monkeypatch.setenv("AKN_E5_KG_TOPOLOGY", "1")
+    captured: dict[str, dict] = {}
+    monkeypatch.setattr(
+        "akn_rlm.rlm.dispatcher.build_multi_hop_handler",
+        _capture_kwargs(captured, "multi_hop"),
+    )
+    # Stub make_kg_topology_disambiguator so we don't traverse the real
+    # rdflib path; assert it was called with the dispatcher's KG.
+    fake_disamb = MagicMock(name="disamb")
+    captured_kg = {}
+    def _fake_make_disamb(sparql_fn, *, resolve_uri):
+        captured_kg["sparql_fn"] = sparql_fn
+        captured_kg["resolve_uri"] = resolve_uri
+        return fake_disamb
+    monkeypatch.setattr(
+        "akn_rlm.rlm.dispatcher.make_kg_topology_disambiguator",
+        _fake_make_disamb,
+    )
+
+    kg_sentinel = MagicMock(name="kg_graph")
+    disp = RLMDispatcher(
+        bm25=MagicMock(),
+        dense=MagicMock(),
+        registry=MagicMock(),
+        llm_pool=MagicMock(),
+        router=MagicMock(),
+        kg=kg_sentinel,
+    )
+    disp.run("س", query_type="multi_hop")
+    # Disambiguator was built once and forwarded.
+    assert captured["multi_hop"]["kg_topology_disambiguator_fn"] is fake_disamb
+    assert captured_kg["sparql_fn"] is not None  # built from kg
+    assert callable(captured_kg["resolve_uri"])
+
+
+def test_e5_disambiguator_not_built_when_disabled(monkeypatch):
+    """Without AKN_E5_KG_TOPOLOGY, MH does NOT receive a disambiguator
+    and the KG isn't lazily loaded just for MH."""
+    monkeypatch.delenv("AKN_E5_KG_TOPOLOGY", raising=False)
+    monkeypatch.delenv("AKN_ENHANCERS", raising=False)
+    captured: dict[str, dict] = {}
+    monkeypatch.setattr(
+        "akn_rlm.rlm.dispatcher.build_multi_hop_handler",
+        _capture_kwargs(captured, "multi_hop"),
+    )
+    loader = MagicMock()  # would error if called
+    disp = RLMDispatcher(
+        bm25=MagicMock(),
+        dense=MagicMock(),
+        registry=MagicMock(),
+        llm_pool=MagicMock(),
+        router=MagicMock(),
+        kg=None,
+        kg_loader=loader,
+    )
+    disp.run("س", query_type="multi_hop")
+    assert "kg_topology_disambiguator_fn" not in captured["multi_hop"]
+    loader.assert_not_called()
+
+
+def test_e5_disambiguator_cached_across_calls(monkeypatch):
+    """Disambiguator is built once even when MH is dispatched multiple
+    times — the KG load is amortised."""
+    monkeypatch.setenv("AKN_E5_KG_TOPOLOGY", "1")
+    captured: dict[str, dict] = {}
+    monkeypatch.setattr(
+        "akn_rlm.rlm.dispatcher.build_multi_hop_handler",
+        _capture_kwargs(captured, "multi_hop"),
+    )
+    build_call_count = [0]
+    def _fake_make_disamb(_sparql_fn, *, resolve_uri):
+        build_call_count[0] += 1
+        return MagicMock()
+    monkeypatch.setattr(
+        "akn_rlm.rlm.dispatcher.make_kg_topology_disambiguator",
+        _fake_make_disamb,
+    )
+    disp = RLMDispatcher(
+        bm25=MagicMock(),
+        dense=MagicMock(),
+        registry=MagicMock(),
+        llm_pool=MagicMock(),
+        router=MagicMock(),
+        kg=MagicMock(),
+    )
+    # Multiple MH dispatches — handler is built once (existing lazy
+    # behaviour), and the disambiguator is also built only once.
+    disp.run("س1", query_type="multi_hop")
+    disp.run("س2", query_type="multi_hop")
+    disp.run("س3", query_type="multi_hop")
+    assert build_call_count[0] == 1
+
+
+def test_e6_concept_kg_channel_forwarded_to_mh_and_ra(monkeypatch):
+    """Phase E.3: when AKN_E6_CONCEPT_KG=1 the dispatcher builds the
+    channel on first MH/RA dispatch and forwards it via
+    ``concept_kg_channel_fn``. EA/LC/UA/CD/TF/layman do NOT receive
+    the channel (Fix-TF already owns CD/TF's KG-first path)."""
+    monkeypatch.setenv("AKN_E6_CONCEPT_KG", "1")
+    captured: dict[str, dict] = {}
+    for key in ("multi_hop", "rule_application", "exact_article",
+                "long_context", "layman", "unanswerable",
+                "temporal_factual", "conceptual_definitional"):
+        monkeypatch.setattr(
+            f"akn_rlm.rlm.dispatcher.build_{key}_handler",
+            _capture_kwargs(captured, key),
+        )
+    fake_channel = MagicMock(name="concept_kg_channel")
+
+    def _fake_make_channel(sparql_fn):
+        return fake_channel
+    monkeypatch.setattr(
+        "akn_rlm.rlm.dispatcher.make_concept_kg_channel",
+        _fake_make_channel,
+    )
+
+    disp = RLMDispatcher(
+        bm25=MagicMock(),
+        dense=MagicMock(),
+        registry=MagicMock(),
+        llm_pool=MagicMock(),
+        router=MagicMock(),
+        kg=MagicMock(),
+    )
+    disp.run("س1", query_type="multi_hop")
+    disp.run("س2", query_type="rule_application")
+    disp.run("س3", query_type="exact_article")
+    disp.run("س4", query_type="temporal_factual")
+    disp.run("س5", query_type="conceptual_definitional")
+
+    assert captured["multi_hop"]["concept_kg_channel_fn"] is fake_channel
+    assert captured["rule_application"]["concept_kg_channel_fn"] is fake_channel
+    # EA/TF/CD/etc do NOT receive the channel kwarg.
+    for k in ("exact_article", "temporal_factual", "conceptual_definitional"):
+        assert "concept_kg_channel_fn" not in captured[k]
+
+
+def test_e6_concept_kg_channel_not_built_when_disabled(monkeypatch):
+    """Without AKN_E6_CONCEPT_KG, MH/RA do NOT receive a channel and
+    the KG isn't loaded just for them."""
+    monkeypatch.delenv("AKN_E6_CONCEPT_KG", raising=False)
+    monkeypatch.delenv("AKN_ENHANCERS", raising=False)
+    captured: dict[str, dict] = {}
+    monkeypatch.setattr(
+        "akn_rlm.rlm.dispatcher.build_multi_hop_handler",
+        _capture_kwargs(captured, "multi_hop"),
+    )
+    monkeypatch.setattr(
+        "akn_rlm.rlm.dispatcher.build_rule_application_handler",
+        _capture_kwargs(captured, "rule_application"),
+    )
+    loader = MagicMock()  # would error if called
+    disp = RLMDispatcher(
+        bm25=MagicMock(),
+        dense=MagicMock(),
+        registry=MagicMock(),
+        llm_pool=MagicMock(),
+        router=MagicMock(),
+        kg=None,
+        kg_loader=loader,
+    )
+    disp.run("س1", query_type="multi_hop")
+    disp.run("س2", query_type="rule_application")
+    assert "concept_kg_channel_fn" not in captured["multi_hop"]
+    assert "concept_kg_channel_fn" not in captured["rule_application"]
+    loader.assert_not_called()
+
+
+def test_recursion_coverage_min_override_default_none_passes_no_kwarg(monkeypatch):
+    """When no override map is set (or set to None), recursion is still
+    forwarded but ``recursion_coverage_min`` is NOT injected — handler
+    defaults apply."""
+    captured: dict[str, dict] = {}
+    monkeypatch.setattr(
+        "akn_rlm.rlm.dispatcher.build_rule_application_handler",
+        _capture_kwargs(captured, "rule_application"),
+    )
+    disp = RLMDispatcher(
+        bm25=MagicMock(),
+        dense=MagicMock(),
+        registry=MagicMock(),
+        llm_pool=MagicMock(),
+        router=MagicMock(),
+        enable_recursion=True,
+        recursion_max_depth=3,
+        recursion_coverage_min_overrides=None,
+    )
+    disp.run("س", query_type="rule_application")
+    assert captured["rule_application"]["enable_recursion"] is True
+    assert "recursion_coverage_min" not in captured["rule_application"]
+
+
+# ---------------------------------------------------------------------------
 # Cross-stratum sweep: every query_type dispatches end-to-end
 # ---------------------------------------------------------------------------
 

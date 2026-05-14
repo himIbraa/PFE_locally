@@ -47,6 +47,22 @@ from akn_rlm.indexers.bm25 import BM25Hit, BM25Index
 from akn_rlm.indexers.dense import DenseHit, DenseIndex
 from akn_rlm.normalizers import canonical_article_ref
 from akn_rlm.retrievers.hybrid_fusion import rrf_fuse
+from akn_rlm.rlm.adu_helpers import (
+    DEFAULT_ADU_EXTRACT_TOP_N,
+    AduExtractFn,
+    attach_argumentation,
+)
+from akn_rlm.rlm.corrective_retry import maybe_corrective_retry
+from akn_rlm.rlm.recursive_refine import (
+    DEFAULT_CONFIDENCE_STRONG,
+    DEFAULT_CONFIDENCE_WEAK,
+    DEFAULT_COVERAGE_MIN,
+    DEFAULT_MAX_DEPTH,
+    DEFAULT_PROBE_MODEL,
+    GapProbeFn,
+    RecursiveRetriever,
+    call_gap_probe,
+)
 from akn_rlm.rlm.routing import DocRouter, build_doc_router
 from akn_rlm.rlm.sub_worker import call_summarizer, call_verifier
 from akn_rlm.rlm.supervisor import SupervisorFn, should_supervise
@@ -106,6 +122,40 @@ class RuleApplicationHandler:
         verifier_fn: Optional[VerifierFn] = None,
         summarizer_fn: Optional[SummarizerFn] = None,
         supervisor_fn: Optional[SupervisorFn] = None,
+        # Phase C: pervasive Toulmin ADU extraction. OFF by default so
+        # legacy callers (per-handler eval scripts, unit tests) keep
+        # their existing budget. Dispatcher flips it on for the SOTA
+        # path. Extracts the top-``adu_extract_top_n`` final citations
+        # and attaches an ``argumentation`` dict per citation.
+        enable_adu_extraction: bool = False,
+        adu_extract_top_n: int = DEFAULT_ADU_EXTRACT_TOP_N,
+        adu_extract_fn: Optional[AduExtractFn] = None,
+        # Phase D — gap-driven recursion. When enabled, the
+        # retrieve+verify step is wrapped in a RecursiveRetriever that
+        # may issue up to ``recursion_max_depth - 1`` extra retrieval
+        # passes if the gap-probe (gpt-oss-120b) flags missing coverage.
+        # Default OFF for back-compat with the per-handler test suite.
+        enable_recursion: bool = False,
+        recursion_max_depth: int = DEFAULT_MAX_DEPTH,
+        recursion_coverage_min: int = DEFAULT_COVERAGE_MIN,
+        recursion_confidence_weak: float = DEFAULT_CONFIDENCE_WEAK,
+        recursion_confidence_strong: float = DEFAULT_CONFIDENCE_STRONG,
+        recursion_probe_fn: GapProbeFn = call_gap_probe,
+        recursion_probe_model: str = DEFAULT_PROBE_MODEL,
+        # Phase D — corrective retry on faithfulness gate failure.
+        # After the first summary, run gates.faithfulness_nli.run_gate;
+        # on fail, regenerate ONCE with feedback prompting the LLM to
+        # use only cited articles. Default OFF.
+        enable_corrective_retry: bool = False,
+        # Phase E.3 — concept-KG retrieval channel. When provided, the
+        # handler unions concept-KG hits with the hybrid (RRF) candidate
+        # pool BEFORE the top-K cap. Each candidate has the same dict
+        # shape as the hybrid pool; the helper is built in the dispatcher
+        # from the loaded rdflib KG. Default ``None`` keeps the F5
+        # hybrid-only behaviour for back-compat.
+        concept_kg_channel_fn: Optional[Callable[
+            [str, Optional[list[str]]], list[dict[str, Any]]
+        ]] = None,
     ) -> None:
         self._bm25 = bm25
         self._dense = dense
@@ -123,6 +173,21 @@ class RuleApplicationHandler:
         # R9.5: optional gpt-oss-120b per-citation re-ranker. Fires only
         # when ``should_supervise`` returns True (uncertainty band).
         self._supervisor_fn = supervisor_fn
+        # Phase C — pervasive ADU.
+        self._enable_adu_extraction = bool(enable_adu_extraction)
+        self._adu_extract_top_n = int(adu_extract_top_n)
+        self._adu_extract_fn = adu_extract_fn
+        # Phase D — recursion + corrective retry.
+        self._enable_recursion = bool(enable_recursion)
+        self._recursion_max_depth = int(recursion_max_depth)
+        self._recursion_coverage_min = int(recursion_coverage_min)
+        self._recursion_confidence_weak = float(recursion_confidence_weak)
+        self._recursion_confidence_strong = float(recursion_confidence_strong)
+        self._recursion_probe_fn = recursion_probe_fn
+        self._recursion_probe_model = recursion_probe_model
+        self._enable_corrective_retry = bool(enable_corrective_retry)
+        # Phase E.3 — concept-KG channel (None when E6 is off).
+        self._concept_kg_channel_fn = concept_kg_channel_fn
 
     # ------------------------------------------------------------------
     def run(self, query: str) -> dict[str, Any]:
@@ -131,61 +196,101 @@ class RuleApplicationHandler:
                 "empty_query", routed=[], top_score=0.0, candidates=0, sub_calls=0,
             )
 
+        trajectory: list[dict[str, Any]] = []
+
         # 1. Doc-route
         route = self._router.route(query, top_n=self._route_top_n)
         routed_ids = list(route.doc_ids)
+        trajectory.append({
+            "step": "route", "depth": 0,
+            "routed_doc_ids": routed_ids,
+        })
 
-        # 2. RRF-fuse(BM25, Dense) restricted to routed docs (with fallback)
-        candidates = self._fused_candidates(query, routed_ids)
-        if not candidates:
+        # Per-query verifier-call accumulator threaded through the
+        # retrieve+verify closure so recursion's extra passes contribute
+        # to the budget telemetry.
+        verifier_calls = [0]
+        candidate_count = [0]
+        top_score_holder = [0.0]
+
+        def _retrieve_verify(q: str) -> dict[tuple[str, str], dict[str, Any]]:
+            """One retrieve+verify pass for query string ``q``.
+
+            Returns the per-(doc, ref) citation accumulator. Pure
+            function over its input — recursion's additive merge is
+            handled by RecursiveRetriever.
+            """
+            cands = self._fused_candidates(q, routed_ids)
+            if not cands:
+                return {}
+            top_pool = cands[: self._top_k_candidates]
+            if top_pool and top_pool[0].get("score", 0.0) > top_score_holder[0]:
+                top_score_holder[0] = float(top_pool[0].get("score", 0.0))
+            candidate_count[0] += len(top_pool)
+            local_acc: dict[tuple[str, str], dict[str, Any]] = {}
+            for cand in top_pool:
+                cand_article = self._candidate_to_article(cand)
+                try:
+                    verdict = self._verifier_fn(
+                        self._llm_pool, q, cand_article, self._sub_model
+                    )
+                    verifier_calls[0] += 1
+                except Exception as exc:
+                    log.warning("rule_application verifier failed (%s) — skipping", exc)
+                    continue
+                if not verdict.get("relevant"):
+                    continue
+                conf = float(verdict.get("confidence", 0.0) or 0.0)
+                if conf < self._verify_threshold:
+                    continue
+                key = (cand_article["doc_id"], cand_article["article_ref"])
+                supporting_quote = verdict.get("supporting_span") or ""
+                citation = self._build_citation(
+                    cand_article, supporting_quote=supporting_quote, confidence=conf
+                )
+                prior = local_acc.get(key)
+                if prior is None or conf > float(prior.get("confidence", 0.0)):
+                    local_acc[key] = citation
+            return local_acc
+
+        # 2-4. Retrieve+verify (with optional recursion).
+        recursion_steps = []
+        recursion_probe_calls = 0
+        if self._enable_recursion:
+            retriever = RecursiveRetriever(
+                llm_pool=self._llm_pool,
+                retrieve_verify_fn=_retrieve_verify,
+                max_depth=self._recursion_max_depth,
+                coverage_min=self._recursion_coverage_min,
+                confidence_weak=self._recursion_confidence_weak,
+                confidence_strong=self._recursion_confidence_strong,
+                probe_fn=self._recursion_probe_fn,
+                probe_model=self._recursion_probe_model,
+            )
+            accumulated, recursion_steps, recursion_probe_calls = retriever.run(query)
+        else:
+            accumulated = _retrieve_verify(query)
+
+        sub_calls = verifier_calls[0] + recursion_probe_calls
+        top_score = top_score_holder[0]
+        for step in recursion_steps:
+            trajectory.append({"step": "recursion", **step.to_dict()})
+
+        if candidate_count[0] == 0:
             return self._abstain(
                 "no_hits",
                 routed=routed_ids,
                 top_score=0.0,
                 candidates=0,
-                sub_calls=0,
+                sub_calls=sub_calls,
             )
-
-        # 3. Take top-K
-        top_k_pool = candidates[: self._top_k_candidates]
-        top_score = float(top_k_pool[0].get("score", 0.0))
-
-        # 4. Mandatory sub-LM verifier on every top-K candidate
-        sub_calls = 0
-        accumulated: dict[tuple[str, str], dict[str, Any]] = {}
-        for cand in top_k_pool:
-            cand_article = self._candidate_to_article(cand)
-            try:
-                verdict = self._verifier_fn(
-                    self._llm_pool, query, cand_article, self._sub_model
-                )
-                sub_calls += 1
-            except Exception as exc:
-                log.warning("rule_application verifier failed (%s) — skipping", exc)
-                continue
-
-            if not verdict.get("relevant"):
-                continue
-            conf = float(verdict.get("confidence", 0.0) or 0.0)
-            if conf < self._verify_threshold:
-                continue
-
-            key = (cand_article["doc_id"], cand_article["article_ref"])
-            supporting_quote = verdict.get("supporting_span") or ""
-            citation = self._build_citation(
-                cand_article, supporting_quote=supporting_quote, confidence=conf
-            )
-            # Keep highest-confidence verdict if duplicates appear.
-            prior = accumulated.get(key)
-            if prior is None or conf > float(prior.get("confidence", 0.0)):
-                accumulated[key] = citation
 
         if not accumulated:
             return self._abstain(
                 "no_verified_articles",
                 routed=routed_ids,
                 top_score=top_score,
-                candidates=len(top_k_pool),
+                candidates=candidate_count[0],
                 sub_calls=sub_calls,
             )
 
@@ -196,6 +301,11 @@ class RuleApplicationHandler:
             reverse=True,
         )
         final_citations = ranked[: self._final_top_k]
+        trajectory.append({
+            "step": "rank", "depth": 0,
+            "verified": len(accumulated),
+            "kept": len(final_citations),
+        })
 
         # 5b. R9.5 supervisor (smart-trigger). Re-rank with the strong
         # model when the verifier's confidence is in the uncertainty
@@ -211,6 +321,10 @@ class RuleApplicationHandler:
                 if supervised:
                     final_citations = supervised
                 supervisor_used = True
+                trajectory.append({
+                    "step": "supervisor", "depth": 0,
+                    "kept": len(final_citations),
+                })
             except Exception as exc:
                 log.warning(
                     "rule_application supervisor failed (%s) — "
@@ -222,12 +336,31 @@ class RuleApplicationHandler:
                 "supervisor_dropped_all",
                 routed=routed_ids,
                 top_score=top_score,
-                candidates=len(top_k_pool),
+                candidates=candidate_count[0],
                 sub_calls=sub_calls,
             )
 
+        # 5c. Phase C — pervasive Toulmin ADU. Attach claim/ground/warrant/
+        # rebuttal/backing to each emitted citation; rewrite supporting_span
+        # to claim+ground when both extracted.
+        adu_extracts_done = 0
+        if self._enable_adu_extraction:
+            final_citations, adu_extracts_done = attach_argumentation(
+                final_citations,
+                self._llm_pool,
+                sub_model=self._sub_model,
+                top_n=self._adu_extract_top_n,
+                adu_extract_fn=self._adu_extract_fn,
+            )
+            sub_calls += adu_extracts_done
+            trajectory.append({
+                "step": "adu_extract", "depth": 0,
+                "extracts": adu_extracts_done,
+            })
+
         # 6. Synthesise — fall back to deterministic template on null/exc
-        answer_text = self._template_answer(final_citations)
+        template_answer = self._template_answer(final_citations)
+        answer_text = template_answer
         try:
             synth = self._summarizer_fn(
                 self._llm_pool, query, final_citations, self._sub_model
@@ -240,6 +373,50 @@ class RuleApplicationHandler:
             log.warning(
                 "rule_application summariser failed (%s) — using template", exc
             )
+        trajectory.append({"step": "summarize", "depth": 0})
+
+        # 7. Phase D — corrective retry on faithfulness failure.
+        retry_trace = None
+        if self._enable_corrective_retry:
+            answer_text, retry_trace = maybe_corrective_retry(
+                answer_text=answer_text,
+                citations=final_citations,
+                original_question=query,
+                summarizer_fn=self._summarizer_fn,
+                llm_pool=self._llm_pool,
+                sub_model=self._sub_model,
+                enabled=True,
+                template_fallback=template_answer,
+            )
+            sub_calls += retry_trace.sub_call_count
+            trajectory.append({
+                "step": "faithfulness_gate", "depth": 0,
+                "fired": retry_trace.fired,
+                "pre_passed": retry_trace.pre_passed,
+                "post_passed": retry_trace.post_passed,
+            })
+
+        depth_max = max(
+            (s.depth for s in recursion_steps if s.new_citations > 0 or s.depth == 1),
+            default=1,
+        )
+
+        telemetry: dict[str, Any] = {
+            "retry_count":     1 if (retry_trace and retry_trace.fired) else 0,
+            "gate_results":    {},
+            "baseline":        TELEMETRY_BASELINE,
+            "routed_doc_ids":  routed_ids,
+            "top_score":       top_score,
+            "candidate_count": candidate_count[0],
+            "verified_count":  len(final_citations),
+            "sub_call_count":  sub_calls,
+            "supervisor_used": supervisor_used,
+            "adu_extracts":    adu_extracts_done,
+            "recursion_trace": [s.to_dict() for s in recursion_steps],
+            "recursion_depth_max": depth_max,
+        }
+        if retry_trace is not None:
+            telemetry["corrective_retry"] = retry_trace.to_dict()
 
         return {
             "answer_text":       answer_text,
@@ -250,20 +427,10 @@ class RuleApplicationHandler:
                 f"routed_doc_ids={routed_ids}",
                 f"verified_candidates={len(final_citations)}",
             ],
-            "trajectory":        [],
+            "trajectory":        trajectory,
             "tokens_used":       0,
-            "depth_max_reached": 1,
-            "_telemetry": {
-                "retry_count":     0,
-                "gate_results":    {},
-                "baseline":        TELEMETRY_BASELINE,
-                "routed_doc_ids":  routed_ids,
-                "top_score":       top_score,
-                "candidate_count": len(top_k_pool),
-                "verified_count":  len(final_citations),
-                "sub_call_count":  sub_calls,
-                "supervisor_used": supervisor_used,
-            },
+            "depth_max_reached": depth_max,
+            "_telemetry":        telemetry,
         }
 
     # ------------------------------------------------------------------
@@ -299,6 +466,23 @@ class RuleApplicationHandler:
             # return nothing.
             if filtered:
                 fused = filtered
+
+        # Phase E.3 — union with the concept-KG channel when wired.
+        # ``concept_kg_channel_fn`` returns candidates already restricted
+        # to ``routed_ids``; we merge by (doc_id, article_ref) keeping
+        # the higher-scoring entry. F5 behaviour preserved when the
+        # channel is ``None`` (E6 off) or returns ``[]``.
+        if self._concept_kg_channel_fn is not None:
+            try:
+                kg_hits = self._concept_kg_channel_fn(query, routed_ids)
+            except Exception as exc:
+                log.warning("rule_application concept_kg_channel raised (%s)", exc)
+                kg_hits = []
+            if kg_hits:
+                # Local import avoids a top-level cycle (enhancers
+                # imports from handlers via the dispatcher's _build).
+                from akn_rlm.rlm.enhancers import merge_hybrid_with_concept_kg
+                fused = merge_hybrid_with_concept_kg(fused, kg_hits)
         return fused
 
     @staticmethod

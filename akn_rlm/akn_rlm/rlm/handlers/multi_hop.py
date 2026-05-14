@@ -58,6 +58,22 @@ from akn_rlm.indexers.bm25 import BM25Hit, BM25Index
 from akn_rlm.indexers.dense import DenseHit, DenseIndex
 from akn_rlm.normalizers import canonical_article_ref
 from akn_rlm.retrievers.hybrid_fusion import rrf_fuse
+from akn_rlm.rlm.adu_helpers import (
+    DEFAULT_ADU_EXTRACT_TOP_N,
+    AduExtractFn,
+    attach_argumentation,
+)
+from akn_rlm.rlm.corrective_retry import maybe_corrective_retry
+from akn_rlm.rlm.recursive_refine import (
+    DEFAULT_CONFIDENCE_STRONG,
+    DEFAULT_CONFIDENCE_WEAK,
+    DEFAULT_COVERAGE_MIN,
+    DEFAULT_MAX_DEPTH,
+    DEFAULT_PROBE_MODEL,
+    GapProbeFn,
+    RecursiveRetriever,
+    call_gap_probe,
+)
 from akn_rlm.rlm.routing import DocRouter, build_doc_router
 from akn_rlm.rlm.sub_worker import call_decomposer, call_summarizer, call_verifier
 from akn_rlm.rlm.supervisor import (
@@ -146,6 +162,46 @@ class MultiHopHandler:
         supervisor_fn: Optional[SupervisorFn] = None,
         plan_supervisor_fn: Optional[PlanSupervisorFn] = None,
         plan_min_content_tokens: int = DEFAULT_PLAN_MIN_CONTENT_TOKENS,
+        # Phase C — pervasive Toulmin ADU extraction (default OFF).
+        enable_adu_extraction: bool = False,
+        adu_extract_top_n: int = DEFAULT_ADU_EXTRACT_TOP_N,
+        adu_extract_fn: Optional[AduExtractFn] = None,
+        # Phase D — gap-driven recursion. The recursion *wraps the whole
+        # decomposed sweep*: the original query's decomposition is depth-1;
+        # if the gap-probe says "still missing", a single new gap sub-Q is
+        # retrieved+verified at depth 2 and merged into the accumulator.
+        # We deliberately do NOT re-run the decomposer for the gap query —
+        # it is already an atomic sub-question by construction.
+        enable_recursion: bool = False,
+        recursion_max_depth: int = DEFAULT_MAX_DEPTH,
+        recursion_coverage_min: int = DEFAULT_COVERAGE_MIN,
+        recursion_confidence_weak: float = DEFAULT_CONFIDENCE_WEAK,
+        recursion_confidence_strong: float = DEFAULT_CONFIDENCE_STRONG,
+        recursion_probe_fn: GapProbeFn = call_gap_probe,
+        recursion_probe_model: str = DEFAULT_PROBE_MODEL,
+        # Phase D — corrective retry on faithfulness gate failure.
+        enable_corrective_retry: bool = False,
+        # Phase E.2 — KG topology disambiguator (Fix-MH v2). When set,
+        # the handler invokes ``kg_topology_disambiguator_fn(query,
+        # citations)`` AFTER consensus-boost ranking and BEFORE the
+        # supervisor + truncate. The disambiguator promotes the
+        # candidate whose chapter/section title matches the query
+        # concept — closes the documented art_408 vs art_409 adjacent-
+        # article ambiguity that consensus + verifier confidence alone
+        # can't resolve. Default ``None`` → identity (no change to F5
+        # behaviour). Failure-open: any exception is logged and
+        # ranking falls back to the pre-disambiguator order.
+        kg_topology_disambiguator_fn: Optional[Callable[
+            [str, list[dict[str, Any]]], list[dict[str, Any]]
+        ]] = None,
+        # Phase E.3 — concept-KG retrieval channel. When provided, the
+        # handler unions concept-KG hits with each sub-question's
+        # hybrid (RRF) candidate pool BEFORE the top-K cap. Same shape
+        # as RA's wiring; the dispatcher builds the helper once and
+        # injects it. Default ``None`` keeps the F5 hybrid-only pool.
+        concept_kg_channel_fn: Optional[Callable[
+            [str, Optional[list[str]]], list[dict[str, Any]]
+        ]] = None,
     ) -> None:
         self._bm25 = bm25
         self._dense = dense
@@ -174,16 +230,41 @@ class MultiHopHandler:
         # model plan that also predicts ``target_docs`` per sub-question.
         self._plan_supervisor_fn = plan_supervisor_fn
         self._plan_min_content_tokens = int(plan_min_content_tokens)
+        # Phase C — pervasive ADU.
+        self._enable_adu_extraction = bool(enable_adu_extraction)
+        self._adu_extract_top_n = int(adu_extract_top_n)
+        self._adu_extract_fn = adu_extract_fn
+        # Phase D — recursion + corrective retry.
+        self._enable_recursion = bool(enable_recursion)
+        self._recursion_max_depth = int(recursion_max_depth)
+        self._recursion_coverage_min = int(recursion_coverage_min)
+        self._recursion_confidence_weak = float(recursion_confidence_weak)
+        self._recursion_confidence_strong = float(recursion_confidence_strong)
+        self._recursion_probe_fn = recursion_probe_fn
+        self._recursion_probe_model = recursion_probe_model
+        self._enable_corrective_retry = bool(enable_corrective_retry)
+        # Phase E.2 — KG topology disambiguator. ``None`` is the F5
+        # default; the dispatcher passes a bound disambiguator built
+        # from the KG when E5 is enabled.
+        self._kg_topology_disambiguator_fn = kg_topology_disambiguator_fn
+        # Phase E.3 — concept-KG channel (None when E6 is off).
+        self._concept_kg_channel_fn = concept_kg_channel_fn
 
     # ------------------------------------------------------------------
     def run(self, query: str) -> dict[str, Any]:
         if not query or not query.strip():
             return self._abstain("empty_query", routed=[], sub_qs=[], sub_calls=0)
 
+        trajectory: list[dict[str, Any]] = []
+
         # 1. Doc-route
         route = self._router.route(query, top_n=self._route_top_n)
         routed_ids = list(route.doc_ids)
         log.debug("multi_hop route: %s", routed_ids)
+        trajectory.append({
+            "step": "route", "depth": 0,
+            "routed_doc_ids": routed_ids,
+        })
 
         # 2. Decompose. R9.6: try the gpt-oss-120b plan supervisor
         # FIRST when the query is long enough; on parse failure or
@@ -332,6 +413,79 @@ class MultiHopHandler:
                 sub_calls=sub_calls,
             )
 
+        trajectory.append({
+            "step": "decompose_sweep", "depth": 1,
+            "sub_questions": len(sub_q_traces),
+            "verified": len(accumulated),
+        })
+
+        # 3b. Phase D — gap-driven recursion. The decomposition sweep is
+        # treated as depth-1; if the gap-probe (gpt-oss-120b) flags
+        # missing coverage we issue ONE additional sub-question per
+        # recursion depth and merge its verified candidates additively.
+        recursion_steps = []
+        recursion_probe_calls = 0
+        if self._enable_recursion and self._recursion_max_depth >= 2:
+            def _gap_retrieve_verify(gap_q: str) -> dict[tuple[str, str], dict[str, Any]]:
+                fused = self._fused_candidates(gap_q, routed_ids)
+                if not fused:
+                    return {}
+                local_acc: dict[tuple[str, str], dict[str, Any]] = {}
+                for cand in fused[: self._verify_top_n]:
+                    cand_article = self._candidate_to_article(cand)
+                    try:
+                        verdict = self._verifier_fn(
+                            self._llm_pool, gap_q, cand_article, self._sub_model
+                        )
+                        # Recursion's verifier calls count toward the
+                        # handler's budget so the telemetry stays honest.
+                        nonlocal_state["verifier_calls"] += 1
+                    except Exception as exc:
+                        log.warning("multi_hop recursive verifier failed (%s)", exc)
+                        continue
+                    if not verdict.get("relevant"):
+                        continue
+                    conf = float(verdict.get("confidence", 0.0) or 0.0)
+                    if conf < self._verify_threshold:
+                        continue
+                    key = (cand_article["doc_id"], cand_article["article_ref"])
+                    supporting_quote = verdict.get("supporting_span") or ""
+                    local_acc[key] = self._build_citation(
+                        cand_article,
+                        supporting_quote=supporting_quote,
+                        confidence=conf,
+                    )
+                return local_acc
+
+            nonlocal_state = {"verifier_calls": 0}
+            retriever = RecursiveRetriever(
+                llm_pool=self._llm_pool,
+                retrieve_verify_fn=_gap_retrieve_verify,
+                max_depth=self._recursion_max_depth,
+                coverage_min=self._recursion_coverage_min,
+                confidence_weak=self._recursion_confidence_weak,
+                confidence_strong=self._recursion_confidence_strong,
+                probe_fn=self._recursion_probe_fn,
+                probe_model=self._recursion_probe_model,
+                seed_accumulator=accumulated,
+            )
+            new_accumulated, recursion_steps, recursion_probe_calls = retriever.run(query)
+            # Update consensus_sq for any new articles added by recursion.
+            # Each recursion depth's gap question counts as a single
+            # additional "sub-Q" for consensus purposes — mirrors the
+            # decomposition contract.
+            for step in recursion_steps:
+                if step.depth == 1:
+                    continue
+                # Find newly-added keys in this step
+                for key, cit in new_accumulated.items():
+                    if key not in accumulated:
+                        consensus_sq.setdefault(key, set()).add(f"gap_d{step.depth}")
+            accumulated = new_accumulated
+            sub_calls += recursion_probe_calls + nonlocal_state["verifier_calls"]
+            for step in recursion_steps:
+                trajectory.append({"step": "recursion", **step.to_dict()})
+
         # 4. Aggregate + truncate to final_top_k
         # Fix-MH: re-rank by (confidence + consensus_boost). consensus_boost
         # = DEFAULT_CONSENSUS_BOOST * (n_sub_qs_citing - 1) so:
@@ -354,6 +508,28 @@ class MultiHopHandler:
             ranked_with_score.append((final_score, cit))
         ranked_with_score.sort(key=lambda kv: kv[0], reverse=True)
         ranked = [cit for _, cit in ranked_with_score]
+
+        # 4a. Phase E.2 — KG topology disambiguator (Fix-MH v2).
+        # Re-rank BEFORE truncation so the title-matched candidate has a
+        # chance to displace an adjacent-but-wrong sibling that would
+        # otherwise fall inside ``final_top_k`` purely by raw confidence.
+        # The disambiguator never drops citations; it only re-orders
+        # via a confidence bonus on matched candidates. We pass the
+        # candidates that survived consensus-boost (not the full pool)
+        # so we keep latency bounded and trust the ranker's signal
+        # outside the title-match decision.
+        topology_used = False
+        if self._kg_topology_disambiguator_fn is not None and len(ranked) >= 2:
+            try:
+                reranked = self._kg_topology_disambiguator_fn(query, ranked)
+                if reranked:
+                    ranked = reranked
+                    topology_used = True
+            except Exception as exc:
+                log.warning(
+                    "multi_hop KG topology disambiguator raised (%s) — "
+                    "keeping consensus-boost ranking", exc,
+                )
         final_citations = ranked[: self._final_top_k]
 
         # 4b. R9.5 supervisor (smart-trigger). Re-rank with the strong
@@ -385,8 +561,21 @@ class MultiHopHandler:
                 sub_calls=sub_calls,
             )
 
+        # 4c. Phase C — pervasive Toulmin ADU on the emitted citations.
+        adu_extracts_done = 0
+        if self._enable_adu_extraction:
+            final_citations, adu_extracts_done = attach_argumentation(
+                final_citations,
+                self._llm_pool,
+                sub_model=self._sub_model,
+                top_n=self._adu_extract_top_n,
+                adu_extract_fn=self._adu_extract_fn,
+            )
+            sub_calls += adu_extracts_done
+
         # 5. Synthesise
-        answer_text = self._template_answer(final_citations)
+        template_answer = self._template_answer(final_citations)
+        answer_text = template_answer
         try:
             synth = self._summarizer_fn(
                 self._llm_pool, query, final_citations, self._sub_model
@@ -397,6 +586,53 @@ class MultiHopHandler:
                 answer_text = summary.strip()
         except Exception as exc:
             log.warning("multi_hop summariser failed (%s) — using template answer", exc)
+        trajectory.append({"step": "summarize", "depth": 0})
+
+        # 6. Phase D — corrective retry on faithfulness failure.
+        retry_trace = None
+        if self._enable_corrective_retry:
+            answer_text, retry_trace = maybe_corrective_retry(
+                answer_text=answer_text,
+                citations=final_citations,
+                original_question=query,
+                summarizer_fn=self._summarizer_fn,
+                llm_pool=self._llm_pool,
+                sub_model=self._sub_model,
+                enabled=True,
+                template_fallback=template_answer,
+            )
+            sub_calls += retry_trace.sub_call_count
+            trajectory.append({
+                "step": "faithfulness_gate", "depth": 0,
+                "fired": retry_trace.fired,
+                "pre_passed": retry_trace.pre_passed,
+                "post_passed": retry_trace.post_passed,
+            })
+
+        depth_max = max(
+            (s.depth for s in recursion_steps if s.new_citations > 0 or s.depth == 1),
+            default=1,
+        )
+        if not recursion_steps:
+            depth_max = 1
+
+        telemetry: dict[str, Any] = {
+            "retry_count":     1 if (retry_trace and retry_trace.fired) else 0,
+            "gate_results":    {},
+            "baseline":        TELEMETRY_BASELINE,
+            "routed_doc_ids":  routed_ids,
+            "sub_questions":   sub_q_traces,
+            "sub_call_count":  sub_calls,
+            "max_sub_calls":   self._max_sub_calls,
+            "supervisor_used": supervisor_used,
+            "plan_supervisor_used": plan_supervisor_used,
+            "kg_topology_used": topology_used,
+            "adu_extracts":    adu_extracts_done,
+            "recursion_trace": [s.to_dict() for s in recursion_steps],
+            "recursion_depth_max": depth_max,
+        }
+        if retry_trace is not None:
+            telemetry["corrective_retry"] = retry_trace.to_dict()
 
         return {
             "answer_text":       answer_text,
@@ -404,20 +640,10 @@ class MultiHopHandler:
             "abstention_reason": None,
             "citations":         final_citations,
             "reasoning_chain":   [t["text"] for t in sub_q_traces if t.get("text")],
-            "trajectory":        [],
+            "trajectory":        trajectory,
             "tokens_used":       0,
-            "depth_max_reached": 1,
-            "_telemetry": {
-                "retry_count":     0,
-                "gate_results":    {},
-                "baseline":        TELEMETRY_BASELINE,
-                "routed_doc_ids":  routed_ids,
-                "sub_questions":   sub_q_traces,
-                "sub_call_count":  sub_calls,
-                "max_sub_calls":   self._max_sub_calls,
-                "supervisor_used": supervisor_used,
-                "plan_supervisor_used": plan_supervisor_used,
-            },
+            "depth_max_reached": depth_max,
+            "_telemetry":        telemetry,
         }
 
     # ------------------------------------------------------------------
@@ -498,6 +724,20 @@ class MultiHopHandler:
             # corpus than to return nothing.
             if filtered:
                 fused = filtered
+
+        # Phase E.3 — union with the concept-KG channel when wired.
+        # Per-sub-question call so each atomic sub-Q can pull in the
+        # articles whose text contains its concept phrases. The merge
+        # respects (doc_id, ref) dedup and keeps the higher score.
+        if self._concept_kg_channel_fn is not None:
+            try:
+                kg_hits = self._concept_kg_channel_fn(sub_question, routed_ids)
+            except Exception as exc:
+                log.warning("multi_hop concept_kg_channel raised (%s)", exc)
+                kg_hits = []
+            if kg_hits:
+                from akn_rlm.rlm.enhancers import merge_hybrid_with_concept_kg
+                fused = merge_hybrid_with_concept_kg(fused, kg_hits)
 
         return fused[: self._top_k_per_subq]
 

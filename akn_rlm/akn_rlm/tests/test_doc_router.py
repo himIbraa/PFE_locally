@@ -408,6 +408,84 @@ def test_canonical_id_alias_resolves_to_itself():
 
 
 # ---------------------------------------------------------------------------
+# Phase E.4 — KG-derived doc-router channel
+# ---------------------------------------------------------------------------
+
+
+def test_kg_channel_adds_bonus_to_returned_doc_ids():
+    """The KG channel returns doc_ids the KG associates with the query
+    concept; each gets ``kg_bonus`` (default 0.5)."""
+    reg = _registry_with_docs("90-11_1990-04-21", "84-11_1984-06-09")
+    bm25 = _bm25_returning([])  # no BM25 signal
+
+    def _kg_call(_q: str) -> list[str]:
+        return ["84-11_1984-06-09"]
+
+    router = DocRouter(registry=reg, bm25=bm25, kg_call=_kg_call, kg_bonus=0.5)
+    out = router.route("سؤال بدون أي إشارة لفظية", top_n=3)
+    assert "84-11_1984-06-09" in out.doc_ids
+    assert "kg" in out.sources["84-11_1984-06-09"]
+    assert out.scores["84-11_1984-06-09"] == 0.5
+
+
+def test_kg_channel_stacks_with_alias_and_bm25():
+    """When alias + BM25 + KG all surface the same doc, all three
+    bonuses stack — the doc ranks well above any single-channel
+    competitor."""
+    reg = _registry_with_docs("84-11_1984-06-09", "75-58_1975-09-26")
+    bm25 = _bm25_returning([_hit("84-11_1984-06-09", "1", 5.0)])
+
+    def _kg_call(_q: str) -> list[str]:
+        return ["84-11_1984-06-09"]
+
+    router = DocRouter(
+        registry=reg, bm25=bm25, kg_call=_kg_call,
+        alias_bonus=1.0, bm25_weight=1.0, kg_bonus=0.5,
+    )
+    out = router.route("ما هي شروط الزواج في قانون الأسرة؟", top_n=3)
+    assert out.doc_ids[0] == "84-11_1984-06-09"
+    assert {"alias", "bm25", "kg"} <= set(out.sources["84-11_1984-06-09"])
+
+
+def test_kg_channel_no_call_is_noop():
+    """When ``kg_call`` is None, the router behaves identically to F5."""
+    reg = _registry_with_docs("84-11_1984-06-09")
+    bm25 = _bm25_returning([_hit("84-11_1984-06-09", "1", 5.0)])
+    router = DocRouter(registry=reg, bm25=bm25, kg_call=None)
+    out = router.route("قانون الأسرة", top_n=3)
+    assert "kg" not in out.sources.get("84-11_1984-06-09", [])
+
+
+def test_kg_channel_silent_on_exception():
+    """A raising kg_call must not break the router; it falls back to
+    the alias/BM25 result."""
+    reg = _registry_with_docs("84-11_1984-06-09", "75-58_1975-09-26")
+    bm25 = _bm25_returning([_hit("75-58_1975-09-26", "1", 3.0)])
+
+    def _broken_kg(_q: str) -> list[str]:
+        raise RuntimeError("graph crash")
+
+    router = DocRouter(registry=reg, bm25=bm25, kg_call=_broken_kg)
+    out = router.route("سؤال", top_n=3)
+    assert "75-58_1975-09-26" in out.doc_ids
+    assert "kg" not in out.sources.get("75-58_1975-09-26", [])
+
+
+def test_kg_channel_set_after_init():
+    """``set_kg_call`` lets the dispatcher attach the KG channel after
+    the router was built (lazy KG load pattern)."""
+    reg = _registry_with_docs("84-11_1984-06-09")
+    bm25 = _bm25_returning([])
+    router = DocRouter(registry=reg, bm25=bm25)
+    out1 = router.route("سؤال غير محدد", top_n=3)
+    assert "kg" not in out1.sources.get("84-11_1984-06-09", [])
+    router.set_kg_call(lambda _q: ["84-11_1984-06-09"])
+    out2 = router.route("سؤال غير محدد", top_n=3)
+    assert "84-11_1984-06-09" in out2.doc_ids
+    assert "kg" in out2.sources["84-11_1984-06-09"]
+
+
+# ---------------------------------------------------------------------------
 # Integration with benchmark-style queries
 # ---------------------------------------------------------------------------
 

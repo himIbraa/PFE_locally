@@ -1,0 +1,394 @@
+03:40:17  INFO     run_dispatcher: ================================================================
+03:40:17  INFO     run_dispatcher: RLM dispatcher  run_id=rlm_dispatched_strat5_e4
+03:40:17  INFO     run_dispatcher: Benchmark      : D:\TRY_AGAIN\new_dataset\AlgerianLegalBench_v3.0_final.json
+03:40:17  INFO     run_dispatcher: Output         : eval_results/rlm_dispatched_strat5_e4/
+03:40:17  INFO     run_dispatcher: Sub-LM model   : Qwen3-30B-A3B-Thinking
+03:40:17  INFO     run_dispatcher: Rewrite model  : google/gemma-4-31B
+03:40:17  INFO     run_dispatcher: LC timeout     : 60.0s
+03:40:17  INFO     run_dispatcher: KG             : lazy-load on first KG dispatch
+03:40:17  INFO     run_dispatcher: ================================================================
+03:40:17  INFO     run_dispatcher: Parsing corpus to build registry …
+03:40:17  INFO     akn_rlm.corpus.akn_parser: Parsing 51 AKN files from D:\TRY_AGAIN\new_dataset\data\akn
+03:40:18  INFO     akn_rlm.corpus.akn_parser: Total articles parsed: 9077
+03:40:18  INFO     akn_rlm.corpus.article_registry: ArticleRegistry built: 51 canonical documents, 216 alias keys
+03:40:18  INFO     run_dispatcher: Loading BM25 index …
+03:40:18  INFO     akn_rlm.indexers.bm25: BM25 index loaded from D:\TRY_AGAIN\akn_rlm\data\indices\bm25.pkl  (8998 chunks)
+03:40:18  INFO     run_dispatcher: Loading dense index …
+03:40:18  INFO     faiss.loader: Loading faiss with AVX2 support.
+03:40:18  INFO     faiss.loader: Successfully loaded faiss with AVX2 support.
+03:40:18  INFO     akn_rlm.indexers.dense: Dense index loaded from D:\TRY_AGAIN\akn_rlm\data\indices\dense.faiss  (8998 vectors, model=intfloat/multilingual-e5-small)
+03:40:18  INFO     run_dispatcher: Connecting to LLM pool …
+03:40:19  INFO     akn_rlm.llm.client: LLMPool ready: 6 client slots (['gpt', 'qwen', 'qwen3', 'gemma', 'google', 'ai_grid'])
+03:40:19  INFO     run_dispatcher: Building doc-router (deterministic; pass --ceiling-breakers to enable LLM channel) …
+03:40:19  INFO     akn_rlm.rlm.dispatcher: Enhancers active: {'E1_concept_amendment': False, 'E2_nli_reverse': False, 'E3_paraphrase': False, 'E4_hyde': True}
+03:40:19  INFO     akn_rlm.rlm.dispatcher: E4 HyDE: dense index wrapped with hypothetical-answer enhancer
+03:40:19  INFO     run_benchmark: Benchmark: 244 questions loaded from AlgerianLegalBench_v3.0_final.json
+03:40:19  INFO     run_dispatcher: Stratified sample: 40 questions across 8 types
+03:40:19  INFO     run_dispatcher: Running 40 questions through RLM dispatcher …
+03:40:19  INFO     akn_rlm.rlm.dispatcher: Lazy-loading KG via supplied loader …
+03:40:19  INFO     run_dispatcher: Loading KG (rdflib parse, ~26 s on first KG dispatch) …
+03:40:19  INFO     akn_rlm.corpus.kg_loader: Loading RDF KG from algerian_legal_kg.ttl ...
+03:40:45  INFO     akn_rlm.corpus.kg_loader: RDF graph loaded: 758558 triples
+03:40:45  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:40:46  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:40:51  INFO     akn_rlm.indexers.dense: Loading dense encoder: intfloat/multilingual-e5-small on cuda
+03:40:51  INFO     sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: intfloat/multilingual-e5-small
+03:40:58  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:40:59  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:00  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:07  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:07  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:09  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:09  INFO     run_dispatcher:   Qlab_cd_q01  type=conceptual_definitional  handler=conceptual_definitional  abstain=False  lat=50.43s
+03:41:09  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:10  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:11  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:11  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:12  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:20  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:21  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:22  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:22  INFO     run_dispatcher:   Qcon_cd_q01  type=conceptual_definitional  handler=conceptual_definitional  abstain=False  lat=13.13s
+03:41:22  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:23  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:24  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:24  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:25  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:32  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:33  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:34  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:34  INFO     run_dispatcher:   Qcon_cd_q02  type=conceptual_definitional  handler=conceptual_definitional  abstain=False  lat=11.61s
+03:41:34  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:35  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:35  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:36  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:37  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:43  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:43  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:45  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:45  INFO     run_dispatcher:   Qtax_cd_q01  type=conceptual_definitional  handler=conceptual_definitional  abstain=False  lat=10.77s
+03:41:45  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:46  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:46  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:47  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:48  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:57  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:57  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:58  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:58  INFO     run_dispatcher:   Qadm_cd_q01  type=conceptual_definitional  handler=conceptual_definitional  abstain=False  lat=13.46s
+03:41:58  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:58  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:58  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:58  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:58  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:58  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:58  INFO     run_dispatcher:   Qfam_ea_q01  type=exact_article  handler=exact_article  abstain=False  lat=0.43s
+03:41:59  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:59  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:59  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:59  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:59  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:59  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:41:59  INFO     run_dispatcher:   Qfam_ea_q02  type=exact_article  handler=exact_article  abstain=False  lat=0.73s
+03:41:59  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:00  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:00  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:00  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:01  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:01  INFO     run_dispatcher:   Qcrim_ea_q01  type=exact_article  handler=exact_article  abstain=True  lat=1.40s
+03:42:01  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:01  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:01  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:01  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:01  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:01  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:01  INFO     run_dispatcher:   Qcrim_ea_q02  type=exact_article  handler=exact_article  abstain=False  lat=0.72s
+03:42:01  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:02  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:02  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:02  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:02  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:02  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:02  INFO     run_dispatcher:   Qcom_ea_q01  type=exact_article  handler=exact_article  abstain=False  lat=1.09s
+03:42:03  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:03  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:04  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:04  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:04  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:04  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:04  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:04  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:05  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:05  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:05  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:05  INFO     run_dispatcher:   Qfam_lm_q01  type=layman  handler=layman  abstain=False  lat=2.58s
+03:42:05  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:05  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:06  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:06  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:06  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:07  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:07  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:07  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:07  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:07  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:09  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:11  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:11  INFO     run_dispatcher:   Qcrim_lm_q01  type=layman  handler=layman  abstain=False  lat=5.53s
+03:42:11  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:11  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:11  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:12  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:12  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:12  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:12  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:13  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:13  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:13  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:15  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:16  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:16  INFO     run_dispatcher:   Qcom_lm_q01  type=layman  handler=layman  abstain=False  lat=5.89s
+03:42:17  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:17  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:17  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:17  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:18  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:18  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:18  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:19  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:19  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:19  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:20  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:20  INFO     run_dispatcher:   Qtraf_un_q01  type=layman  handler=layman  abstain=False  lat=3.71s
+03:42:20  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:21  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:21  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:21  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:21  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:21  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:22  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:22  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:23  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:23  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:23  INFO     run_dispatcher:   Qinv_lm_q01  type=layman  handler=layman  abstain=True  lat=2.53s
+03:42:24  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:26  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:26  WARNING  akn_rlm.rlm.sub_worker: parse_strict_json: could not parse JSON from output, returning default
+03:42:26  WARNING  akn_rlm.rlm.supervisor: supervisor returned no scores dict — returning citations unchanged
+03:42:28  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:28  INFO     run_dispatcher:   Qciv_lc_q01  type=long_context  handler=long_context  abstain=False  lat=4.93s
+03:42:29  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:31  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:31  WARNING  akn_rlm.rlm.sub_worker: parse_strict_json: could not parse JSON from output, returning default
+03:42:31  WARNING  akn_rlm.rlm.supervisor: supervisor returned no scores dict — returning citations unchanged
+03:42:32  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:32  INFO     run_dispatcher:   Qfam_lc_q01  type=long_context  handler=long_context  abstain=False  lat=4.53s
+03:42:33  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:35  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:36  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:36  INFO     run_dispatcher:   Qcom_lc_q01  type=long_context  handler=long_context  abstain=False  lat=4.11s
+03:42:37  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:39  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:40  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:40  INFO     run_dispatcher:   Qcpro_lc_q01  type=long_context  handler=long_context  abstain=False  lat=3.78s
+03:42:41  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:43  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:44  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:44  INFO     run_dispatcher:   Qfam_lc_q02  type=long_context  handler=long_context  abstain=False  lat=3.67s
+03:42:44  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:44  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:45  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:45  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:46  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:46  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:46  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:46  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:47  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:47  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:48  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:48  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:48  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:49  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:49  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:49  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:51  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:52  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:52  INFO     run_dispatcher:   Qciv_mh_q01  type=multi_hop  handler=multi_hop  abstain=False  lat=8.54s
+03:42:52  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:53  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:53  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:53  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:53  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:54  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:54  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:55  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:56  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:56  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:57  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:58  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:58  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:58  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:58  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:58  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:59  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:00  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:00  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:00  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:00  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:01  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:02  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:02  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:03  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:03  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:05  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:05  WARNING  akn_rlm.rlm.sub_worker: parse_strict_json: could not parse JSON from output, returning default
+03:43:05  WARNING  akn_rlm.rlm.supervisor: supervisor returned no scores dict — returning citations unchanged
+03:43:06  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:06  INFO     run_dispatcher:   Qcom_mh_q01  type=multi_hop  handler=multi_hop  abstain=False  lat=13.97s
+03:43:06  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:07  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:07  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:07  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:07  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:07  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:08  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:08  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:08  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:09  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:09  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:09  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:10  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:10  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:10  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:10  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:12  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:12  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:12  INFO     run_dispatcher:   Qcpp_mh_q01  type=multi_hop  handler=multi_hop  abstain=False  lat=5.84s
+03:43:12  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:13  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:13  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:13  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:13  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:14  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:15  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:15  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:15  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:15  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:15  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:15  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:16  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:16  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:16  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:16  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:17  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:17  INFO     run_dispatcher:   Qfam_mh_q01  type=multi_hop  handler=multi_hop  abstain=False  lat=5.14s
+03:43:17  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:18  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:18  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:19  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:19  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:20  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:20  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:21  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:21  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:21  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:21  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:22  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:23  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:23  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:23  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:23  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:25  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:25  INFO     run_dispatcher:   Qcom_mh_q02  type=multi_hop  handler=multi_hop  abstain=False  lat=7.42s
+03:43:25  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:25  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:26  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:26  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:26  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:26  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:27  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:27  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:28  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:28  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:28  INFO     run_dispatcher:   Qciv_ra_q01  type=rule_application  handler=rule_application  abstain=False  lat=3.15s
+03:43:28  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:29  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:30  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:30  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:30  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:31  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:31  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:31  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:32  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:33  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:33  INFO     run_dispatcher:   Qciv_ra_q02  type=rule_application  handler=rule_application  abstain=False  lat=4.86s
+03:43:33  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:33  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:33  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:33  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:34  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:34  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:34  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:34  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:34  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:35  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:35  INFO     run_dispatcher:   Qciv_ra_q03  type=rule_application  handler=rule_application  abstain=False  lat=1.89s
+03:43:35  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:35  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:35  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:35  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:36  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:36  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:36  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:37  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:37  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:38  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:38  INFO     run_dispatcher:   Qciv_ra_q04  type=rule_application  handler=rule_application  abstain=False  lat=3.39s
+03:43:39  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:39  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:39  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:39  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:39  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:39  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:40  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:40  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:40  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:42  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:42  INFO     run_dispatcher:   Qfam_ra_q01  type=rule_application  handler=rule_application  abstain=False  lat=3.73s
+03:43:42  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:42  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:42  INFO     run_dispatcher:   Qlab_tf_q01  type=temporal_factual  handler=temporal_factual  abstain=False  lat=0.85s
+03:43:43  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:44  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:44  INFO     run_dispatcher:   Qcon_tf_q01  type=temporal_factual  handler=temporal_factual  abstain=False  lat=1.58s
+03:43:45  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:46  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:46  INFO     run_dispatcher:   Qtax_tf_q01  type=temporal_factual  handler=temporal_factual  abstain=False  lat=1.73s
+03:43:46  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:48  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:48  INFO     run_dispatcher:   Qfam_tf_q01  type=temporal_factual  handler=temporal_factual  abstain=False  lat=1.83s
+03:43:48  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:50  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:50  INFO     run_dispatcher:   Qcpp_tf_q01  type=temporal_factual  handler=temporal_factual  abstain=False  lat=1.92s
+03:43:50  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:50  INFO     run_dispatcher:   Qlab_un_q03  type=unanswerable  handler=unanswerable  abstain=True  lat=0.87s
+03:43:51  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:51  INFO     run_dispatcher:   Qcon_un_q01  type=unanswerable  handler=unanswerable  abstain=True  lat=0.82s
+03:43:52  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:52  INFO     run_dispatcher:   Qtax_un_q02  type=unanswerable  handler=unanswerable  abstain=True  lat=0.46s
+03:43:52  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:52  INFO     run_dispatcher:   Qadm_un_q01  type=unanswerable  handler=unanswerable  abstain=True  lat=0.57s
+03:43:53  INFO     httpx: HTTP Request: POST http://app.ai-grid.io:4000/v1/chat/completions "HTTP/1.1 200 OK"
+03:43:53  INFO     run_dispatcher:   Qacor_un_q01  type=unanswerable  handler=unanswerable  abstain=True  lat=0.70s
+03:43:53  INFO     run_dispatcher: Predictions saved \u2192 eval_results\rlm_dispatched_strat5_e4\predictions.jsonl
+03:43:53  INFO     run_dispatcher: All results saved to eval_results\rlm_dispatched_strat5_e4/
+Traceback (most recent call last):
+  File "D:\TRY_AGAIN\akn_rlm\scripts\run_dispatcher.py", line 328, in <module>
+    main()
+  File "D:\TRY_AGAIN\akn_rlm\scripts\run_dispatcher.py", line 323, in main
+    print_report(strata, title=f"RLM dispatcher  {run_id}")
+  File "D:\TRY_AGAIN\akn_rlm\akn_rlm\eval\report.py", line 177, in print_report
+    print(format_report(strata, title))
+  File "C:\Users\21355\.conda\envs\pfe_env\lib\site-packages\wandb\sdk\lib\console_capture.py", line 173, in write_with_callbacks
+    n = orig_write(s)
+ValueError: I/O operation on closed file.

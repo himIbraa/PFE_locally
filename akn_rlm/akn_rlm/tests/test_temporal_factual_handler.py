@@ -425,6 +425,47 @@ def test_run_telemetry_carries_routing_dates_and_chains():
     assert chains[0]["source"] == "kg"
 
 
+def test_run_telemetry_includes_tf_kg_first_telemetry():
+    """Phase E.1: every dispatched TF answer must carry a
+    ``tf_kg_first_telemetry`` list — one dict per depth's
+    retrieve+merge+chain call. The dict must surface hybrid_count,
+    kg_first_count, merged_pool_size, top_slice_size, and how many of
+    the KG-first hits actually resolved to a URI and survived
+    verification. The hybrid-only case (no KG-first hits) is the
+    common path and must still emit a single-entry telemetry list."""
+    art_uri = "https://legal.dz/resource/law/1984-06-09/84-11#art_54"
+    h, _ = _make_handler(
+        bm25_hits=[_bm25("84-11_1984-06-09", "54", "نص")],
+        dense_hits=[],
+        routed_ids=["84-11_1984-06-09"],
+        uri_to_chain={art_uri: [{"date": "2005-02-27", "text": "ب"}]},
+    )
+    out = h.run("بعد 2005")
+    tel = out["_telemetry"]
+    assert "tf_kg_first_telemetry" in tel
+    rows = tel["tf_kg_first_telemetry"]
+    assert isinstance(rows, list)
+    assert len(rows) == 1  # depth-1 only when recursion is OFF
+    row = rows[0]
+    for key in (
+        "depth", "query", "hybrid_count", "kg_first_count",
+        "kg_first_hits", "merged_pool_size", "top_slice_size",
+        "kg_first_in_top_slice", "kg_first_uri_resolved",
+        "kg_first_in_verified",
+    ):
+        assert key in row, f"missing telemetry key: {key}"
+    assert row["depth"] == 1
+    assert row["hybrid_count"] == 1
+    # No SPARQL CONTAINS results in the stub → no KG-first candidates.
+    assert row["kg_first_count"] == 0
+    assert row["kg_first_hits"] == []
+    assert row["merged_pool_size"] == 1
+    assert row["top_slice_size"] == 1
+    assert row["kg_first_in_top_slice"] == 0
+    assert row["kg_first_uri_resolved"] == 0
+    assert row["kg_first_in_verified"] == 0
+
+
 def test_citation_carries_kg_versioned_text_not_chunk_text():
     """The citation text MUST come from the KG version, not the BM25 chunk
     — that's the HANDOFF "answer from KG, never from search" contract."""

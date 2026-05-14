@@ -294,6 +294,80 @@ def citation_groundedness(answer_text: str, citations: list[dict]) -> float:
     return grounded / texts_with_content if texts_with_content > 0 else 0.0
 
 
+def _citation_ground(citation: dict) -> str:
+    """Pick the Toulmin *ground* text out of a citation, accepting both
+    Phase-C canonical ``argumentation.ground`` and the legacy CD
+    ``adu.ground``. Returns empty string when neither key is populated.
+    """
+    arg = citation.get("argumentation") if isinstance(citation, dict) else None
+    if isinstance(arg, dict):
+        g = arg.get("ground")
+        if isinstance(g, str) and g.strip():
+            return g.strip()
+    legacy = citation.get("adu") if isinstance(citation, dict) else None
+    if isinstance(legacy, dict):
+        g = legacy.get("ground")
+        if isinstance(g, str) and g.strip():
+            return g.strip()
+    return ""
+
+
+def am_faithfulness_score(
+    answer_text: str,
+    citations: list[dict],
+    *,
+    claim_threshold: float = 0.5,
+) -> float:
+    """Phase C — Argument-Mining faithfulness.
+
+    For each sentence-level claim in ``answer_text``, score
+    ``NLI(entailment | premise=ground, hypothesis=claim)`` against the
+    Toulmin *ground* of every citation that carries one, and take the
+    max. Returns the average of per-claim max scores in ``[0, 1]``.
+
+    Conventions:
+      - Empty answer text → ``0.0`` (nothing to verify, treat as
+        unverified — abstention paths short-circuit upstream in
+        ``_answer_to_result`` and assign ``1.0`` for trivially-faithful
+        empty answers).
+      - No citations OR no citation carries a Toulmin ground → ``0.0``
+        (metric is not applicable; ADU was off or extraction failed).
+        This is the deliberate "unverified" semantic — falling back to
+        a neutral 1.0 inflates the metric on ADU-off ablations.
+      - NLI model unavailable → ``0.5`` (genuine neutral).
+    """
+    if not answer_text or not citations:
+        return 0.0
+    grounds: list[str] = []
+    for c in citations:
+        g = _citation_ground(c)
+        if g:
+            grounds.append(g)
+    if not grounds:
+        return 0.0
+    try:
+        from akn_rlm.gates.faithfulness_nli import (
+            _split_claims, entailment_score,
+        )
+    except Exception as exc:
+        log.debug("am_faithfulness_score: faithfulness_nli unavailable (%s)", exc)
+        return 0.5
+
+    claims = _split_claims(answer_text)
+    if not claims:
+        return 0.0
+
+    per_claim_max: list[float] = []
+    for claim in claims:
+        best = 0.0
+        for ground in grounds:
+            s = entailment_score(ground, claim)
+            if s > best:
+                best = s
+        per_claim_max.append(best)
+    return sum(per_claim_max) / len(per_claim_max)
+
+
 # ---------------------------------------------------------------------------
 # Abstention metrics (batch — over a full result list)
 # ---------------------------------------------------------------------------
@@ -337,6 +411,7 @@ def telemetry_metrics(results: list[dict]) -> dict[str, float]:
         "mean_jir":                 _mean(results, "jir"),
         "mean_faithfulness":        _mean(results, "answer_faithfulness"),
         "mean_citation_groundedness": _mean(results, "citation_groundedness"),
+        "mean_am_faithfulness":     _mean(results, "am_faithfulness_score"),
     }
 
 
@@ -375,6 +450,7 @@ def aggregate(results: list[dict[str, Any]], k: int = 10) -> dict[str, float]:
         # Faithfulness
         "hcr": 0.0, "jir": 0.0,
         "answer_faithfulness": 0.0, "citation_groundedness": 0.0,
+        "am_faithfulness_score": 0.0,
         # Abstention (per-query accuracy)
         "abstention_acc": 0.0,
     }
@@ -417,6 +493,7 @@ def aggregate(results: list[dict[str, Any]], k: int = 10) -> dict[str, float]:
         totals["jir"]                    += r.get("jir", 0.0)
         totals["answer_faithfulness"]    += r.get("answer_faithfulness", 0.0)
         totals["citation_groundedness"]  += r.get("citation_groundedness", 0.0)
+        totals["am_faithfulness_score"]  += r.get("am_faithfulness_score", 0.0)
 
         totals["abstention_acc"] += abstention_accuracy(
             r.get("predicted_abstain", False), r.get("gold_abstain", False)

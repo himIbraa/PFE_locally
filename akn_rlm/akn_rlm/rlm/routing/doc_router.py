@@ -65,6 +65,11 @@ DEFAULT_BM25_PER_DOC_CAP: int = 5
 DEFAULT_ALIAS_BONUS: float = 1.0
 DEFAULT_BM25_WEIGHT: float = 1.0
 DEFAULT_LLM_BONUS: float = 0.5
+#: Phase E.4 — bonus added to a doc_id when the KG channel surfaces
+#: it. Matches the LLM tie-breaker's 0.5 — strong enough to flip a
+#: BM25 tie but not strong enough to override an explicit alias hit
+#: (alias bonus = 1.0).
+DEFAULT_KG_BONUS: float = 0.5
 
 # Bare law identifiers like "84-11", "06-154", "75-58".  The leading run is
 # capped at three digits so a date such as 1984-06-09 does not match.
@@ -103,6 +108,7 @@ class RouteResult:
 # ---------------------------------------------------------------------------
 
 LLMCall = Callable[[str, list[str]], list[str]]
+KGCall = Callable[[str], list[str]]
 
 
 class DocRouter:
@@ -120,6 +126,12 @@ class DocRouter:
         bm25_weight: float = DEFAULT_BM25_WEIGHT,
         llm_bonus: float = DEFAULT_LLM_BONUS,
         llm_call: Optional[LLMCall] = None,
+        # Phase E.4 — KG-derived channel. ``kg_call`` returns the
+        # doc_ids whose articles mention the query concept; the
+        # router adds ``kg_bonus`` to each matched doc. Both default
+        # ``None`` / 0.5 so existing callers see no behaviour change.
+        kg_bonus: float = DEFAULT_KG_BONUS,
+        kg_call: Optional[KGCall] = None,
     ) -> None:
         self._registry = registry
         self._bm25 = bm25
@@ -130,7 +142,20 @@ class DocRouter:
         self._bm25_weight = bm25_weight
         self._llm_bonus = llm_bonus
         self._llm_call = llm_call
+        # Phase E.4 — KG channel.
+        self._kg_bonus = kg_bonus
+        self._kg_call = kg_call
         self._sorted_aliases = self._build_alias_lookup()
+
+    # ------------------------------------------------------------------
+    def set_kg_call(self, kg_call: Optional[KGCall]) -> None:
+        """Phase E.4 — attach (or replace) the KG channel after init.
+
+        The dispatcher lazy-loads the KG on first MH/TF/CD dispatch, so
+        the router's KG channel is built only when the KG is already in
+        memory. Tests can also call this to swap in a stub.
+        """
+        self._kg_call = kg_call
 
     # ------------------------------------------------------------------
     def _build_alias_lookup(self) -> list[tuple[str, str]]:
@@ -181,7 +206,23 @@ class DocRouter:
             if "bm25" not in sources[doc_id]:
                 sources[doc_id].append("bm25")
 
-        # 4. Optional LLM tie-breaker
+        # 4. Phase E.4 — KG channel. ``kg_call`` returns doc_ids whose
+        # articles mention the query's concept phrases; we bump each
+        # matched doc by ``kg_bonus`` (default 0.5). Bigram-based
+        # CONTAINS is conservative — if it returns 0 docs the channel
+        # is a no-op and the router falls back to alias+BM25.
+        if self._kg_call is not None:
+            try:
+                kg_docs = self._kg_call(query) or []
+            except Exception as exc:
+                log.debug("doc_router KG channel skipped (%s)", exc)
+                kg_docs = []
+            for doc_id in kg_docs:
+                scores[doc_id] += self._kg_bonus
+                if "kg" not in sources[doc_id]:
+                    sources[doc_id].append("kg")
+
+        # 5. Optional LLM tie-breaker
         if self._llm_call is not None and scores:
             try:
                 ranked = sorted(scores.items(), key=lambda kv: (-kv[1], kv[0]))

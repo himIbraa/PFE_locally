@@ -1,0 +1,39 @@
+{
+  "rule_application": {
+    "rule_application": 31,
+    "long_context": 4,
+    "exact_article": 4,
+    "conceptual_definitional": 16,
+    "multi_hop": 11
+  },
+  "exact_article": {
+    "long_context": 1,
+    "multi_hop": 5,
+    "exact_article": 15,
+    "conceptual_definitional": 25,
+    "rule_application": 13
+  },
+  "layman": {
+    "layman": 15,
+    "exact_article": 2
+  },
+  "multi_hop": {
+    "multi_hop": 22,
+    "temporal_factual": 1,
+    "rule_application": 3
+  },
+  "long_context": {
+    "long_context": 13,
+    "multi_hop": 4
+  },
+  "conceptual_definitional": {
+    "conceptual_definitional": 12
+  },
+  "temporal_factual": {
+    "temporal_factual": 7
+  },
+  "unanswerable": {
+    "unanswerable": 38,
+    "exact_article": 2
+  }
+}

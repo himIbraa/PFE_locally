@@ -120,7 +120,14 @@ def entailment_score(premise: str, hypothesis: str) -> float:
 
     try:
         import numpy as np  # type: ignore
-        scores = model.predict([[premise, hypothesis]])
+        # ``show_progress_bar=False`` — single-pair scoring doesn't need
+        # the tqdm bar, and the bar interacts badly with stdout capture
+        # (wandb / pytest) producing spurious "I/O operation on closed
+        # file" errors that degrade scoring to the 0.5 fallback.
+        scores = model.predict(
+            [[premise, hypothesis]],
+            show_progress_bar=False,
+        )
         probs = np.exp(scores) / np.exp(scores).sum(axis=-1, keepdims=True)
         idx = _get_entailment_idx(model)
         return float(probs[0][idx])

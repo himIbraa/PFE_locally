@@ -1,0 +1,90 @@
+========================================================================
+  RLM dispatcher  smoke_classifier_typed_28849
+========================================================================
+
+Total questions : 8
+Temporal subset : 1
+
+── OVERALL ──────────────────────────────────────────────────────────
+  MRR@K  (doc)             0.7292  (Δ +0.079 vs baseline, ✗ target=0.75)
+  MRR@K  (art)             0.4000  (Δ +0.220 vs baseline, ✓ target=0.40)
+  MAP@K  (doc)             0.6667
+  MAP@K  (art)             0.2958
+  R@K    (doc)             0.8125
+  R@K    (art)             0.3958
+  P@K    (doc)             0.0875
+  P@K    (art)             0.0625
+  NDCG@K (doc)             0.7664
+  NDCG@K (art)             0.4234
+  Cite F1                  0.2625  (Δ +0.053 vs baseline, ✗ target=0.40)
+  Cite P                   0.2333
+  Cite R                   0.3958
+  Doc Cite F1              0.6250
+  Exact Match              0.0000
+  Token F1                 0.2301
+  ROUGE-L                  0.1749
+  HCR ↓                    0.0000  (Δ -0.670 vs baseline, ✗ target=0.15)
+  JIR ↓                    0.0000  (Δ -0.100 vs baseline, ✗ target=0.10)
+  Faithfulness             0.1250
+  Groundedness             0.6406
+  Abst Acc                 1.0000
+  Abst Recall              1.0000
+  Abst Prec                1.0000
+  Abst F1                  1.0000  (✓ target=0.75)
+  Mean Tokens              0.0000
+  Mean Latency (s)         12.0615
+  Retry Rate               0.0000
+
+── BY QUERY TYPE ─────────────────────────────────────────────────────
+
+  [conceptual_definitional]  (n=1)
+  MRR@K  (doc)=1.000  MRR@K  (art)=0.200  Cite F1=0.333  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=0.000  Abst F1=0.000
+
+  [exact_article]  (n=1)
+  MRR@K  (doc)=1.000  MRR@K  (art)=1.000  Cite F1=0.267  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=0.000  Abst F1=0.000
+
+  [layman]  (n=1)
+  MRR@K  (doc)=1.000  MRR@K  (art)=1.000  Cite F1=1.000  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=0.000  Abst F1=0.000
+
+  [long_context]  (n=1)
+  MRR@K  (doc)=0.333  MRR@K  (art)=0.000  Cite F1=0.000  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=0.000  Abst F1=0.000
+
+  [multi_hop]  (n=1)
+  MRR@K  (doc)=1.000  MRR@K  (art)=0.000  Cite F1=0.000  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=0.000  Abst F1=0.000
+
+  [rule_application]  (n=1)
+  MRR@K  (doc)=1.000  MRR@K  (art)=1.000  Cite F1=0.500  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=0.000  Abst F1=0.000
+
+  [temporal_factual]  (n=1)
+  MRR@K  (doc)=0.500  MRR@K  (art)=0.000  Cite F1=0.000  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=0.000  Abst F1=0.000
+
+  [unanswerable]  (n=1)
+  MRR@K  (doc)=0.000  MRR@K  (art)=0.000  Cite F1=0.000  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=1.000  Abst F1=1.000
+
+── BY DIFFICULTY ─────────────────────────────────────────────────────
+
+  [easy]  (n=2)
+  MRR@K  (doc)=1.000  MRR@K  (art)=1.000  Cite F1=0.633  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=0.000  Abst F1=0.000
+
+  [hard]  (n=4)
+  MRR@K  (doc)=0.458  MRR@K  (art)=0.000  Cite F1=0.000  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=1.000  Abst F1=1.000
+
+  [medium]  (n=2)
+  MRR@K  (doc)=1.000  MRR@K  (art)=0.600  Cite F1=0.417  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=0.000  Abst F1=0.000
+
+── BY LANGUAGE ───────────────────────────────────────────────────────
+
+  [ar]  (n=8)
+  MRR@K  (doc)=0.729  MRR@K  (art)=0.400  Cite F1=0.263  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=1.000  Abst F1=1.000
+
+── TEMPORAL SUBSET ───────────────────────────────────────────────────
+  MRR@K  (doc)=0.500  MRR@K  (art)=0.000  Cite F1=0.000  HCR ↓=0.000  JIR ↓=0.000  Abst Recall=0.000  Abst F1=0.000
+
+── BY LEGAL CATEGORY (compact) ───────────────────────────────────────
+  Category                      MRR(art)   R(art)   CiteF1     HCR
+  -----------------------------------------------------------------
+  civil_law                       0.3333   0.1667   0.1667  0.0000  (n=3)
+  family_law                      1.0000   0.8333   0.6333  0.0000  (n=2)
+  labor_law                       0.0667   0.3333   0.1111  0.0000  (n=3)
+
+========================================================================

@@ -48,6 +48,11 @@ from akn_rlm.indexers.bm25 import BM25Hit, BM25Index
 from akn_rlm.indexers.dense import DenseHit, DenseIndex
 from akn_rlm.normalizers import canonical_article_ref
 from akn_rlm.retrievers.hybrid_fusion import rrf_fuse
+from akn_rlm.rlm.adu_helpers import (
+    DEFAULT_ADU_EXTRACT_TOP_N,
+    AduExtractFn,
+    attach_argumentation,
+)
 from akn_rlm.rlm.routing import DocRouter, build_doc_router
 from akn_rlm.rlm.sub_worker import call_summarizer
 from akn_rlm.rlm.supervisor import SupervisorFn, should_supervise
@@ -121,6 +126,10 @@ class LongContextHandler:
         enable_chapter_expansion: bool = DEFAULT_CHAPTER_EXPANSION,
         seeds_for_expansion: int = DEFAULT_SEEDS_FOR_EXPANSION,
         neighbors_per_seed: int = DEFAULT_NEIGHBORS_PER_SEED,
+        # Phase C — pervasive Toulmin ADU extraction (default OFF).
+        enable_adu_extraction: bool = False,
+        adu_extract_top_n: int = DEFAULT_ADU_EXTRACT_TOP_N,
+        adu_extract_fn: Optional[AduExtractFn] = None,
     ) -> None:
         self._bm25 = bm25
         self._dense = dense
@@ -148,6 +157,10 @@ class LongContextHandler:
         # RRF, which sits well below 0.30), but the seam is wired so
         # an explicit override can opt in.
         self._supervisor_fn = supervisor_fn
+        # Phase C — pervasive ADU.
+        self._enable_adu_extraction = bool(enable_adu_extraction)
+        self._adu_extract_top_n = int(adu_extract_top_n)
+        self._adu_extract_fn = adu_extract_fn
 
     # ------------------------------------------------------------------
     def run(self, query: str) -> dict[str, Any]:
@@ -210,6 +223,18 @@ class LongContextHandler:
         final_citations = [self._build_citation(c) for c in deduped]
 
         sub_calls = 0
+        # 4a. Phase C — pervasive Toulmin ADU on the emit list.
+        adu_extracts_done = 0
+        if self._enable_adu_extraction:
+            final_citations, adu_extracts_done = attach_argumentation(
+                final_citations,
+                self._llm_pool,
+                sub_model=self._sub_model,
+                top_n=self._adu_extract_top_n,
+                adu_extract_fn=self._adu_extract_fn,
+            )
+            sub_calls += adu_extracts_done
+
         # 4b. R9.5 supervisor (smart-trigger). Only fires if RRF top
         # confidence happens to fall in the [0.30, 0.70] band — rare
         # for LC, but the seam is wired for completeness.
@@ -265,6 +290,7 @@ class LongContextHandler:
                 "candidate_count": len(deduped),
                 "sub_call_count":  sub_calls,
                 "supervisor_used": supervisor_used,
+                "adu_extracts":    adu_extracts_done,
             },
         }
 

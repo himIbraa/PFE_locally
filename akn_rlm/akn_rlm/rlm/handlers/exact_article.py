@@ -64,6 +64,11 @@ from akn_rlm.config import SUB_LLM_MODEL
 from akn_rlm.corpus.article_registry import ArticleRegistry
 from akn_rlm.indexers.bm25 import BM25Hit, BM25Index
 from akn_rlm.normalizers import canonical_article_ref, ref_to_eid
+from akn_rlm.rlm.adu_helpers import (
+    DEFAULT_ADU_EXTRACT_TOP_N,
+    AduExtractFn,
+    attach_argumentation,
+)
 from akn_rlm.rlm.routing import DocRouter, build_doc_router
 from akn_rlm.rlm.sub_worker import call_summarizer, call_verifier
 from akn_rlm.rlm.supervisor import SupervisorFn, should_supervise
@@ -269,6 +274,10 @@ class ExactArticleHandler:
         verifier_fn: Optional[VerifierFn] = None,
         summarizer_fn: Optional[SummarizerFn] = None,
         supervisor_fn: Optional[SupervisorFn] = None,
+        # Phase C — pervasive Toulmin ADU extraction (default OFF).
+        enable_adu_extraction: bool = False,
+        adu_extract_top_n: int = DEFAULT_ADU_EXTRACT_TOP_N,
+        adu_extract_fn: Optional[AduExtractFn] = None,
     ) -> None:
         self._bm25 = bm25
         self._registry = registry
@@ -285,6 +294,10 @@ class ExactArticleHandler:
         self._summarizer_fn = summarizer_fn or call_summarizer
         # R9.5: optional gpt-oss-120b per-citation re-ranker.
         self._supervisor_fn = supervisor_fn
+        # Phase C — pervasive ADU.
+        self._enable_adu_extraction = bool(enable_adu_extraction)
+        self._adu_extract_top_n = int(adu_extract_top_n)
+        self._adu_extract_fn = adu_extract_fn
 
     # ------------------------------------------------------------------
     def run(self, query: str) -> dict[str, Any]:
@@ -391,6 +404,18 @@ class ExactArticleHandler:
                 candidates=candidates_count, sub_calls=sub_calls,
             )
 
+        # Phase C — pervasive Toulmin ADU on the final emit list.
+        adu_extracts_done = 0
+        if self._enable_adu_extraction:
+            final_citations, adu_extracts_done = attach_argumentation(
+                final_citations,
+                self._llm_pool,
+                sub_model=self._sub_model,
+                top_n=self._adu_extract_top_n,
+                adu_extract_fn=self._adu_extract_fn,
+            )
+            sub_calls += adu_extracts_done
+
         answer_text = self._template_answer(final_citations)
         try:
             synth = self._summarizer_fn(
@@ -429,6 +454,7 @@ class ExactArticleHandler:
                 "verified_count":  len(final_citations),
                 "sub_call_count":  sub_calls,
                 "supervisor_used": supervisor_used,
+                "adu_extracts":    adu_extracts_done,
             },
         }
 

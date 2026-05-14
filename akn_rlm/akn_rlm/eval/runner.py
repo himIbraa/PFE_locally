@@ -79,8 +79,15 @@ def _answer_to_result(
     faith_score = faith_gate.get("score", 0.0) if not answer.get("abstention") else 1.0
 
     # Citation groundedness (bigram overlap proxy — no NLI required)
-    from akn_rlm.eval.metrics import citation_groundedness
+    from akn_rlm.eval.metrics import am_faithfulness_score, citation_groundedness
     groundedness = citation_groundedness(answer_text, citations)
+    # Phase C — Toulmin Argument-Mining faithfulness. Skipped (treated as
+    # 1.0) when the question was abstained, in line with how the legacy
+    # faithfulness signal handles abstention.
+    if answer.get("abstention"):
+        am_faith = 1.0
+    else:
+        am_faith = am_faithfulness_score(answer_text, citations)
 
     return {
         # ── Retrieval fields (for metrics.aggregate) ──────────────────────
@@ -103,6 +110,7 @@ def _answer_to_result(
         "jir":                 jir_val,
         "answer_faithfulness": faith_score,
         "citation_groundedness": groundedness,
+        "am_faithfulness_score": am_faith,
         # ── Stratification keys ───────────────────────────────────────────
         "query_type":          question.get("query_type", "rule_application"),
         "legal_category":      question.get("legal_category", "unknown"),

@@ -77,6 +77,17 @@ from akn_rlm.indexers.bm25 import BM25Hit, BM25Index
 from akn_rlm.indexers.dense import DenseHit, DenseIndex
 from akn_rlm.normalizers import canonical_article_ref
 from akn_rlm.retrievers.hybrid_fusion import rrf_fuse
+from akn_rlm.rlm.corrective_retry import maybe_corrective_retry
+from akn_rlm.rlm.recursive_refine import (
+    DEFAULT_CONFIDENCE_STRONG,
+    DEFAULT_CONFIDENCE_WEAK,
+    DEFAULT_COVERAGE_MIN,
+    DEFAULT_MAX_DEPTH,
+    DEFAULT_PROBE_MODEL,
+    GapProbeFn,
+    RecursiveRetriever,
+    call_gap_probe,
+)
 from akn_rlm.rlm.routing import DocRouter, build_doc_router
 from akn_rlm.rlm.sub_worker import call_summarizer, call_verifier
 
@@ -443,6 +454,15 @@ class ConceptualDefinitionalHandler:
         # documented R4 ceiling case — e.g. lab_cd_q01 art_114 lives
         # inside 96-21#art_17). Callable: phrases -> set[(doc_id, ref)].
         concept_amendment_fn: Optional[Callable[[List[str]], Any]] = None,
+        # Phase D — gap-driven recursion + corrective retry.
+        enable_recursion: bool = False,
+        recursion_max_depth: int = DEFAULT_MAX_DEPTH,
+        recursion_coverage_min: int = DEFAULT_COVERAGE_MIN,
+        recursion_confidence_weak: float = DEFAULT_CONFIDENCE_WEAK,
+        recursion_confidence_strong: float = DEFAULT_CONFIDENCE_STRONG,
+        recursion_probe_fn: GapProbeFn = call_gap_probe,
+        recursion_probe_model: str = DEFAULT_PROBE_MODEL,
+        enable_corrective_retry: bool = False,
     ) -> None:
         self._kg = kg
         self._bm25 = bm25
@@ -468,6 +488,15 @@ class ConceptualDefinitionalHandler:
         self._paraphrase_fn = paraphrase_fn or _generate_paraphrases
         self._adu_extract_fn = adu_extract_fn or adu_extract
         self._concept_amendment_fn = concept_amendment_fn
+        # Phase D — recursion + corrective retry.
+        self._enable_recursion = bool(enable_recursion)
+        self._recursion_max_depth = int(recursion_max_depth)
+        self._recursion_coverage_min = int(recursion_coverage_min)
+        self._recursion_confidence_weak = float(recursion_confidence_weak)
+        self._recursion_confidence_strong = float(recursion_confidence_strong)
+        self._recursion_probe_fn = recursion_probe_fn
+        self._recursion_probe_model = recursion_probe_model
+        self._enable_corrective_retry = bool(enable_corrective_retry)
 
     # ------------------------------------------------------------------
     def _default_sparql_fn(self) -> Optional[SparqlFn]:
@@ -503,9 +532,15 @@ class ConceptualDefinitionalHandler:
                 routed=[], phrases=[], kg_hits=0, paraphrases=[], sub_calls=0,
             )
 
+        trajectory: list[dict[str, Any]] = []
+
         # 1. Doc-route
         route = self._router.route(query, top_n=self._route_top_n)
         routed_ids = list(route.doc_ids)
+        trajectory.append({
+            "step": "route", "depth": 0,
+            "routed_doc_ids": routed_ids,
+        })
 
         # 2. Concept phrases (used for KG entity lookup)
         phrases = _extract_concept_phrases(query)
@@ -647,6 +682,75 @@ class ConceptualDefinitionalHandler:
                 paraphrases=paraphrases, sub_calls=sub_calls,
             )
 
+        trajectory.append({
+            "step": "candidate_pool", "depth": 1,
+            "phrases": phrases,
+            "paraphrases": paraphrases,
+            "kg_hits": len(kg_scores),
+            "verified": len(accumulated),
+        })
+
+        # Phase D — gap-driven recursion (additive merge).
+        recursion_steps = []
+        recursion_probe_calls = 0
+        if self._enable_recursion and self._recursion_max_depth >= 2:
+            sub_calls_holder = [0]
+
+            def _gap_retrieve(gap_q: str) -> dict[tuple[str, str], dict[str, Any]]:
+                # Gap question feeds straight back through fused + KG-bias
+                # without generating new paraphrases (cost-control: each
+                # recursion depth already costs a probe call). Phrases
+                # extracted from the gap-question itself drive a fresh
+                # KG lookup so adjacent definitional articles surface.
+                gap_phrases = _extract_concept_phrases(gap_q)
+                gap_fused = self._fused_candidates(gap_q, [], routed_ids)
+                gap_kg_scores, _ = _kg_phrase_lookup(
+                    self._sparql_fn, gap_phrases, limit=self._kg_limit,
+                )
+                gap_kg_keys = self._kg_keys(gap_kg_scores)
+                if self._concept_amendment_fn is not None and gap_phrases:
+                    try:
+                        amend_hits = self._concept_amendment_fn(gap_phrases) or set()
+                        if amend_hits:
+                            gap_kg_keys = set(gap_kg_keys) | set(amend_hits)
+                    except Exception:
+                        pass
+                gap_cands = self._apply_kg_bias(gap_fused, gap_kg_keys)[: self._top_k_candidates]
+                local_acc: dict[tuple[str, str], dict[str, Any]] = {}
+                for cand in gap_cands:
+                    doc_id = cand.get("doc_id", "")
+                    ref = canonical_article_ref(cand.get("article_ref", "")) or cand.get(
+                        "article_ref", ""
+                    )
+                    confidence = float(cand.get("score", 0.6))
+                    citation = self._build_citation(
+                        doc_id=doc_id,
+                        article_ref=ref,
+                        cand=cand,
+                        adu={},
+                        supporting_quote="",
+                        confidence=confidence,
+                        kg_hit=cand.get("kg_hit", False),
+                    )
+                    local_acc[(doc_id, ref)] = citation
+                return local_acc
+
+            retriever = RecursiveRetriever(
+                llm_pool=self._llm_pool,
+                retrieve_verify_fn=_gap_retrieve,
+                max_depth=self._recursion_max_depth,
+                coverage_min=self._recursion_coverage_min,
+                confidence_weak=self._recursion_confidence_weak,
+                confidence_strong=self._recursion_confidence_strong,
+                probe_fn=self._recursion_probe_fn,
+                probe_model=self._recursion_probe_model,
+                seed_accumulator=accumulated,
+            )
+            accumulated, recursion_steps, recursion_probe_calls = retriever.run(query)
+            sub_calls += recursion_probe_calls + sub_calls_holder[0]
+            for step in recursion_steps:
+                trajectory.append({"step": "recursion", **step.to_dict()})
+
         ranked = sorted(
             accumulated.values(),
             key=lambda c: float(c.get("confidence", 0.0)),
@@ -655,7 +759,8 @@ class ConceptualDefinitionalHandler:
         final_citations = ranked[: self._final_top_k]
 
         # 8. Synthesise
-        answer_text = self._template_answer(final_citations)
+        template_answer = self._template_answer(final_citations)
+        answer_text = template_answer
         try:
             synth = self._summarizer_fn(
                 self._llm_pool, query, final_citations, self._sub_model,
@@ -666,6 +771,51 @@ class ConceptualDefinitionalHandler:
                 answer_text = summary.strip()
         except Exception as exc:
             log.warning("conceptual summariser failed: %s — template", exc)
+        trajectory.append({"step": "summarize", "depth": 0})
+
+        # 9. Phase D — corrective retry on faithfulness failure.
+        retry_trace = None
+        if self._enable_corrective_retry:
+            answer_text, retry_trace = maybe_corrective_retry(
+                answer_text=answer_text,
+                citations=final_citations,
+                original_question=query,
+                summarizer_fn=self._summarizer_fn,
+                llm_pool=self._llm_pool,
+                sub_model=self._sub_model,
+                enabled=True,
+                template_fallback=template_answer,
+            )
+            sub_calls += retry_trace.sub_call_count
+            trajectory.append({
+                "step": "faithfulness_gate", "depth": 0,
+                "fired": retry_trace.fired,
+                "pre_passed": retry_trace.pre_passed,
+                "post_passed": retry_trace.post_passed,
+            })
+
+        depth_max = max(
+            (s.depth for s in recursion_steps if s.new_citations > 0 or s.depth == 1),
+            default=1,
+        )
+        if not recursion_steps:
+            depth_max = 1
+
+        telemetry: dict[str, Any] = {
+            "retry_count":      1 if (retry_trace and retry_trace.fired) else 0,
+            "gate_results":     {},
+            "baseline":         TELEMETRY_BASELINE,
+            "routed_doc_ids":   routed_ids,
+            "concept_phrases":  phrases,
+            "kg_hits":          len(kg_scores),
+            "kg_used":          kg_used,
+            "paraphrases":      paraphrases,
+            "sub_call_count":   sub_calls,
+            "recursion_trace":  [s.to_dict() for s in recursion_steps],
+            "recursion_depth_max": depth_max,
+        }
+        if retry_trace is not None:
+            telemetry["corrective_retry"] = retry_trace.to_dict()
 
         return {
             "answer_text":       answer_text,
@@ -673,20 +823,10 @@ class ConceptualDefinitionalHandler:
             "abstention_reason": None,
             "citations":         final_citations,
             "reasoning_chain":   phrases,
-            "trajectory":        [],
+            "trajectory":        trajectory,
             "tokens_used":       0,
-            "depth_max_reached": 1,
-            "_telemetry": {
-                "retry_count":      0,
-                "gate_results":     {},
-                "baseline":         TELEMETRY_BASELINE,
-                "routed_doc_ids":   routed_ids,
-                "concept_phrases":  phrases,
-                "kg_hits":          len(kg_scores),
-                "kg_used":          kg_used,
-                "paraphrases":      paraphrases,
-                "sub_call_count":   sub_calls,
-            },
+            "depth_max_reached": depth_max,
+            "_telemetry":        telemetry,
         }
 
     # ------------------------------------------------------------------
@@ -838,6 +978,22 @@ class ConceptualDefinitionalHandler:
         else:
             span = text[:SUPPORT_SPAN_LEN]
 
+        warrant_str = (
+            (adu.get("warrant") or "").strip() if isinstance(adu, dict) else ""
+        )
+        rebuttal_str = (
+            (adu.get("rebuttal") or "").strip() if isinstance(adu, dict) else ""
+        )
+        backing_str = (
+            (adu.get("backing") or "").strip() if isinstance(adu, dict) else ""
+        )
+        argumentation = {
+            "claim":    claim,
+            "ground":   ground,
+            "warrant":  warrant_str,
+            "rebuttal": rebuttal_str,
+            "backing":  backing_str,
+        }
         return {
             "doc_id":            doc_id,
             "article_ref":       article_ref,
@@ -846,12 +1002,17 @@ class ConceptualDefinitionalHandler:
             "text":              text,
             "confidence":        float(confidence),
             "kg_hit":            bool(kg_hit),
+            # Legacy key — kept for backwards compatibility with the
+            # CD-specific test suite. ``argumentation`` is the canonical
+            # Phase-C key consumed by am_faithfulness_score / thesis
+            # artifacts.
             "adu":               {
                 "claim":    claim,
                 "ground":   ground,
-                "warrant":  (adu.get("warrant") or "").strip() if isinstance(adu, dict) else "",
-                "rebuttal": (adu.get("rebuttal") or "").strip() if isinstance(adu, dict) else "",
+                "warrant":  warrant_str,
+                "rebuttal": rebuttal_str,
             },
+            "argumentation":     argumentation,
             "verifier_relevant": True,
         }
 
