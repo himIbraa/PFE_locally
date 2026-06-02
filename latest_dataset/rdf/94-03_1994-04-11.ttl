@@ -1,0 +1,357 @@
+@prefix dzdoc: <https://legal.dz/ontology/document#> .
+@prefix dznorm: <https://legal.dz/ontology/norm#> .
+@prefix dzorg: <https://legal.dz/resource/organization/> .
+@prefix dzterm: <https://legal.dz/resource/term/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dzorg:parliament a dzdoc:Organization ;
+    rdfs:label "البرلمان"@ar ;
+    dzdoc:frbrUri "/ontology/organization/dz/parliament"^^xsd:anyURI .
+
+dzorg:الجريدة_الرسمية a dzdoc:Organization ;
+    rdfs:label "الجريدة الرسمية"@ar ;
+    dzdoc:frbrUri "/ontology/organization/dz/joradp"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#art_1_extref_7dfc639f> a dzdoc:ExternalReference ;
+    rdfs:label "القانون رقم 90 - 11 المؤرخ في 21 أبريل سنة 1990"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/law/1990-04-21/90-11"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/law/1990-04-21/90-11"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/law/1990-04-21/90-11" ;
+    dzdoc:referencesTarget <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:resolutionReason "canonical_akn_path_alias" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/law/1990-04-21/90-11"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#art_1_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1994-04-11/94-03#art_1> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تتمم أحكام القانون رقم 90 - 11 المؤرخ في 21 أبريل سنة 1990 والمذكور أعلاه، بمادة 87 مكرر ، تصاغ كما يأتي"@ar .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#art_2_obligation_0_e4daa85b> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1994-04-11/94-03#art_2> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "ينشر هذا المرسوم التشريعي في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية."@ar ;
+    dznorm:sourceArticle "art_2" .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#art_2_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1994-04-11/94-03#art_2> ;
+    dzdoc:position 0 ;
+    dzdoc:text "ينشر هذا المرسوم التشريعي في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية."@ar .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#art_2_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1994-04-11/94-03#art_2> ;
+    dzdoc:position 1 ;
+    dzdoc:text "حرر بالجزائر في 30 شوال عام 1414 الموافق 11 أبريل سنة 1994."@ar .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#art_2_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1994-04-11/94-03#art_2> ;
+    dzdoc:position 2 ;
+    dzdoc:text "اليمين زروال"@ar .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#art_87_bis_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1994-04-11/94-03#art_87_bis> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يشمل الأجر الوطني الأدنى المضمون، المذكور في المادة 87 أعلاه، الأجر القاعدي والعلاوات والتعويضات مهما كانت طبيعتها، باستثناء التعويضات المدفوعة لتسديد المصاريف التي دفعها العامل ."@ar .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#legal_basis_8f644c36eb94> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/90-11> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل المعدل والمتمم"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/law/1994-04-11/94-03#preamble_segment_2> .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#lifecycle_974b20447a67> a dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:confidenceScore 0.92 ;
+    dzdoc:evidenceText "تتمم أحكام القانون رقم 90 - 11 المؤرخ في 21 أبريل سنة 1990 والمذكور أعلاه، بمادة 87 مكرر ، تصاغ كما يأتي"@ar ;
+    dzdoc:isContradictory false ;
+    dzdoc:lifecycleRelationType "amends" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:ruleId "lifecycle_explicit_amend_phrase" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1994-04-11/94-03#art_1> .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#preamble_segment_4> a dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1994-04-11/94-03#preamble> ;
+    dzdoc:position 4 ;
+    dzdoc:segmentType "formula" ;
+    dzdoc:text "يصدر المرسوم التشريعي التالي نصه"@ar .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#preface> a dzdoc:Preface ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1994-04-11/94-03> .
+
+<https://legal.dz/resource/law/1994-04-11/94-03/manifestation> a dzdoc:Manifestation ;
+    dzdoc:frbrUri "/akn/dz/act/law/1994-04-11/94-03/ara@.xml"^^xsd:anyURI ;
+    dzdoc:manifestationOf <https://legal.dz/resource/law/1994-04-11/94-03/expression> ;
+    dzdoc:transformDate "2026-04-28"^^xsd:date .
+
+dzterm:base_salary a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "الأجر القاعدي"@ar .
+
+dzterm:minimum_wage a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "الأجر الوطني الأدنى المضمون"@ar .
+
+dzterm:worker a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "العامل"@ar .
+
+<https://legal.dz/resource/law/1990-04-21/90-11#art_87_bis> dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1994-04-11/94-03#amend_1> ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1990-04-21/90-11#version_art_87_bis_19940411_OpInsertBis_bdcf063481> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1994-04-11/94-03> ;
+    dzdoc:introducedOn "1994-04-11"^^xsd:date .
+
+<https://legal.dz/resource/law/1990-04-21/90-11#version_art_87_bis_19940411_OpInsertBis_bdcf063481> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1994-04-11"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1994-04-11/94-03#amend_1> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1990-04-21/90-11#art_87_bis> .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#preamble_segment_0> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1994-04-11/94-03#preamble> ;
+    dzdoc:position 0 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "بناء على الدستور، لا سيما المواد 52 53 54 113 و 115 منه"@ar .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#preamble_segment_1> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1994-04-11/94-03#preamble> ;
+    dzdoc:position 1 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبناء على الأرضية المتضمنة الوفاق الوطني حول المرحلة الانتقالية، لا سيما المادتان 5 و 42 منها"@ar .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#preamble_segment_3> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1994-04-11/94-03#preamble> ;
+    dzdoc:position 3 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبعد الاستماع إلى مجلس الوزراء"@ar .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#version_art_1_19940411_OpEnact_9373ca7185> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1994-04-11"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1994-04-11/94-03#version_art_1> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1994-04-11/94-03#art_1> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1994-04-11/94-03#art_1> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1994-04-11/94-03> ;
+    dzdoc:versionText "تتمم أحكام القانون رقم 90 - 11 المؤرخ في 21 أبريل سنة 1990 والمذكور أعلاه، بمادة 87 مكرر ، تصاغ كما يأتي"@ar .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#version_art_2_19940411_OpEnact_e1a5af1eb1> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1994-04-11"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1994-04-11/94-03#version_art_2> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1994-04-11/94-03#art_2> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1994-04-11/94-03#art_2> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1994-04-11/94-03> ;
+    dzdoc:versionText "ينشر هذا المرسوم التشريعي في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية. حرر بالجزائر في 30 شوال عام 1414 الموافق 11 أبريل سنة 1994. اليمين زروال"@ar .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#version_art_87_bis_19940411_OpEnact_a3ca9b9345> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1994-04-11"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1994-04-11/94-03#version_art_87_bis> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1994-04-11/94-03#art_87_bis> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1994-04-11/94-03#art_87_bis> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1994-04-11/94-03> ;
+    dzdoc:versionText "يشمل الأجر الوطني الأدنى المضمون ، المذكور في المادة 87 أعلاه، الأجر القاعدي والعلاوات والتعويضات مهما كانت طبيعتها، باستثناء التعويضات المدفوعة لتسديد المصاريف التي دفعها العامل ."@ar .
+
+<https://legal.dz/resource/law/1994-04-11/94-03/expression> a dzdoc:Expression ;
+    dzdoc:expressionOf <https://legal.dz/resource/law/1994-04-11/94-03> ;
+    dzdoc:frbrUri "/akn/dz/act/law/1994-04-11/94-03/ara@"^^xsd:anyURI ;
+    dzdoc:hasManifestation <https://legal.dz/resource/law/1994-04-11/94-03/manifestation> ;
+    dzdoc:language "ara" ;
+    dzdoc:publicationDate "1994-04-11"^^xsd:date .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#amend_1> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:confidenceScore 0.99 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpInsertBis ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1990-04-21/90-11#version_art_87_bis_19940411_OpInsertBis_bdcf063481> ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1994-04-11/94-03#art_1> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1994-04-11/94-03> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1990-04-21/90-11#art_87_bis> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:validFrom "1994-04-11"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#preamble_segment_2> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1994-04-11/94-03#preamble> ;
+    dzdoc:position 2 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل المعدل والمتمم"@ar .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#version_art_1> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1994-04-11/94-03> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تتمم أحكام القانون رقم 90 - 11 المؤرخ في 21 أبريل سنة 1990 والمذكور أعلاه، بمادة 87 مكرر ، تصاغ كما يأتي"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1994-04-11/94-03#version_art_1_19940411_OpEnact_9373ca7185> ;
+    dzdoc:replacementText "تتمم أحكام القانون رقم 90 - 11 المؤرخ في 21 أبريل سنة 1990 والمذكور أعلاه، بمادة 87 مكرر ، تصاغ كما يأتي"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1994-04-11/94-03#art_1> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1994-04-11/94-03> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1994-04-11/94-03#art_1> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1994-04-11/94-03> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1994-04-11"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#version_art_2> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1994-04-11/94-03> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "ينشر هذا المرسوم التشريعي في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية. حرر بالجزائر في 30 شوال عام 1414 الموافق 11 أبريل سنة 1994. اليمين زروال"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1994-04-11/94-03#version_art_2_19940411_OpEnact_e1a5af1eb1> ;
+    dzdoc:replacementText "ينشر هذا المرسوم التشريعي في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية. حرر بالجزائر في 30 شوال عام 1414 الموافق 11 أبريل سنة 1994. اليمين زروال"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1994-04-11/94-03#art_2> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1994-04-11/94-03> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1994-04-11/94-03#art_2> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1994-04-11/94-03> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1994-04-11"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#version_art_87_bis> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1994-04-11/94-03> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يشمل الأجر الوطني الأدنى المضمون ، المذكور في المادة 87 أعلاه، الأجر القاعدي والعلاوات والتعويضات مهما كانت طبيعتها، باستثناء التعويضات المدفوعة لتسديد المصاريف التي دفعها العامل ."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1994-04-11/94-03#version_art_87_bis_19940411_OpEnact_a3ca9b9345> ;
+    dzdoc:replacementText "يشمل الأجر الوطني الأدنى المضمون ، المذكور في المادة 87 أعلاه، الأجر القاعدي والعلاوات والتعويضات مهما كانت طبيعتها، باستثناء التعويضات المدفوعة لتسديد المصاريف التي دفعها العامل ."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1994-04-11/94-03#art_87_bis> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1994-04-11/94-03> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1994-04-11/94-03#art_87_bis> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1994-04-11/94-03> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1994-04-11"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#body> a dzdoc:Body ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1994-04-11/94-03> ;
+    dzdoc:directlyContains <https://legal.dz/resource/law/1994-04-11/94-03#art_1>,
+        <https://legal.dz/resource/law/1994-04-11/94-03#art_2>,
+        <https://legal.dz/resource/law/1994-04-11/94-03#art_87_bis> ;
+    dzdoc:hasArticle <https://legal.dz/resource/law/1994-04-11/94-03#art_1>,
+        <https://legal.dz/resource/law/1994-04-11/94-03#art_2>,
+        <https://legal.dz/resource/law/1994-04-11/94-03#art_87_bis> .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#preamble> a dzdoc:Preamble ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1994-04-11/94-03> ;
+    dzdoc:hasCitation <https://legal.dz/resource/law/1994-04-11/94-03#preamble_segment_0>,
+        <https://legal.dz/resource/law/1994-04-11/94-03#preamble_segment_1>,
+        <https://legal.dz/resource/law/1994-04-11/94-03#preamble_segment_2>,
+        <https://legal.dz/resource/law/1994-04-11/94-03#preamble_segment_3> ;
+    dzdoc:hasSegment <https://legal.dz/resource/law/1994-04-11/94-03#preamble_segment_0>,
+        <https://legal.dz/resource/law/1994-04-11/94-03#preamble_segment_1>,
+        <https://legal.dz/resource/law/1994-04-11/94-03#preamble_segment_2>,
+        <https://legal.dz/resource/law/1994-04-11/94-03#preamble_segment_3>,
+        <https://legal.dz/resource/law/1994-04-11/94-03#preamble_segment_4> ;
+    dzdoc:text "يصدر المرسوم التشريعي التالي نصه"@ar .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#art_1> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1994-04-11/94-03> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1994-04-11/94-03#body> ;
+    dzdoc:eId "art_1" ;
+    dzdoc:fullText "تتمم أحكام القانون رقم 90 - 11 المؤرخ في 21 أبريل سنة 1990 والمذكور أعلاه، بمادة 87 مكرر ، تصاغ كما يأتي"@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1994-04-11/94-03#version_art_1> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1994-04-11/94-03#art_1_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1994-04-11/94-03#version_art_1_19940411_OpEnact_9373ca7185> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1994-04-11/94-03> ;
+    dzdoc:introducedOn "1994-04-11"^^xsd:date ;
+    dzdoc:number "المادة الأولى" ;
+    dzdoc:position 0 ;
+    dzdoc:references <https://legal.dz/resource/law/1994-04-11/94-03#art_87_bis> ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/1994-04-11/94-03#art_1_extref_7dfc639f> ;
+    dzdoc:referencesInternal <https://legal.dz/resource/law/1994-04-11/94-03#art_87_bis> .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#art_87_bis> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1994-04-11/94-03> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1994-04-11/94-03#body> ;
+    dzdoc:eId "art_87_bis" ;
+    dzdoc:fullText "يشمل الأجر الوطني الأدنى المضمون ، المذكور في المادة 87 أعلاه، الأجر القاعدي والعلاوات والتعويضات مهما كانت طبيعتها، باستثناء التعويضات المدفوعة لتسديد المصاريف التي دفعها العامل ."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1994-04-11/94-03#version_art_87_bis> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1994-04-11/94-03#art_87_bis_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1994-04-11/94-03#version_art_87_bis_19940411_OpEnact_a3ca9b9345> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1994-04-11/94-03> ;
+    dzdoc:introducedOn "1994-04-11"^^xsd:date ;
+    dzdoc:number "المادة 87 مكرر" ;
+    dzdoc:position 1 ;
+    dzdoc:references <https://legal.dz/resource/law/1994-04-11/94-03#art_87> ;
+    dzdoc:referencesInternal <https://legal.dz/resource/law/1994-04-11/94-03#art_87> ;
+    dzdoc:usesTerm dzterm:base_salary,
+        dzterm:minimum_wage,
+        dzterm:worker .
+
+<https://legal.dz/resource/law/1994-04-11/94-03#art_2> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1994-04-11/94-03> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1994-04-11/94-03#body> ;
+    dzdoc:eId "art_2" ;
+    dzdoc:fullText "ينشر هذا المرسوم التشريعي في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية. حرر بالجزائر في 30 شوال عام 1414 الموافق 11 أبريل سنة 1994. اليمين زروال"@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1994-04-11/94-03#version_art_2> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1994-04-11/94-03#art_2_para_0>,
+        <https://legal.dz/resource/law/1994-04-11/94-03#art_2_para_1>,
+        <https://legal.dz/resource/law/1994-04-11/94-03#art_2_para_2> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1994-04-11/94-03#version_art_2_19940411_OpEnact_e1a5af1eb1> ;
+    dzdoc:imposesObligation <https://legal.dz/resource/law/1994-04-11/94-03#art_2_obligation_0_e4daa85b> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1994-04-11/94-03> ;
+    dzdoc:introducedOn "1994-04-11"^^xsd:date ;
+    dzdoc:number "المادة 2" ;
+    dzdoc:position 2 .
+
+<https://legal.dz/resource/law/1994-04-11/94-03> a dzdoc:Law ;
+    dzdoc:amends <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:authoredBy dzorg:رئيس_الدولة ;
+    dzdoc:citesLegalBasis <https://legal.dz/resource/law/unknown/90-11> ;
+    dzdoc:countryCode "dz" ;
+    dzdoc:dateText "30 شوال عام 1414 الموافق 11 أبريل سنة 1994"@ar ;
+    dzdoc:documentNumber "94-03" ;
+    dzdoc:enactmentDate "1994-04-11"^^xsd:date ;
+    dzdoc:frbrThisUri "/akn/dz/act/law/1994-04-11/94-03/main"^^xsd:anyURI ;
+    dzdoc:frbrUri "/akn/dz/act/law/1994-04-11/94-03"^^xsd:anyURI ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1994-04-11/94-03#amend_1>,
+        <https://legal.dz/resource/law/1994-04-11/94-03#version_art_1>,
+        <https://legal.dz/resource/law/1994-04-11/94-03#version_art_2>,
+        <https://legal.dz/resource/law/1994-04-11/94-03#version_art_87_bis> ;
+    dzdoc:hasAuthority dzorg:رئيس_الدولة ;
+    dzdoc:hasBody <https://legal.dz/resource/law/1994-04-11/94-03#body> ;
+    dzdoc:hasExpression <https://legal.dz/resource/law/1994-04-11/94-03/expression> ;
+    dzdoc:hasLegalBasisAssertion <https://legal.dz/resource/law/1994-04-11/94-03#legal_basis_8f644c36eb94> ;
+    dzdoc:hasLifecycleAssertion <https://legal.dz/resource/law/1994-04-11/94-03#lifecycle_974b20447a67> ;
+    dzdoc:hasPreamble <https://legal.dz/resource/law/1994-04-11/94-03#preamble> ;
+    dzdoc:hasPreface <https://legal.dz/resource/law/1994-04-11/94-03#preface> ;
+    dzdoc:publicationDate "1994-04-11"^^xsd:date ;
+    dzdoc:sourceFile "Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/94-03_1994-04-11.xml" ;
+    dzdoc:title "مرسوم تشريعي رقم 94-03 يتمم القانون رقم 90-11 والمتعلق بعلاقات العمل"@ar .
+

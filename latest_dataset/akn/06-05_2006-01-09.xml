@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="executive-decree">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/executive-decree/2006-01-09/06-05/main"/>
+      <FRBRuri value="/akn/dz/act/executive-decree/2006-01-09/06-05"/>
+      <FRBRdate date="2006-01-09" name="enactment"/>
+      <FRBRauthor href="#pm"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="06-05"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/executive-decree/2006-01-09/06-05/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/executive-decree/2006-01-09/06-05/ara@"/>
+      <FRBRdate date="2006-01-09" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/executive-decree/2006-01-09/06-05/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/executive-decree/2006-01-09/06-05/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="pm" href="/ontology/organization/dz/prime-minister" showAs="الوزير الأول"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="converter" href="/ontology/person/dz/converter" showAs="Legal Markup Specialist"/>
+  </references>
+</meta>
+    <preface>
+  <docTitle>المرسوم التنفيذي رقم 06-05 المتضمن شكل الإخطار بالشبهة ونموذجه ومحتواه ووصل استلامه</docTitle>
+  <docNumber>06-05</docNumber>
+  <docDate date="2006-01-09">9 ذي الحجة عام 1426 الموافق 9 يناير سنة 2006</docDate>
+  <docAuthority>رئيس الحكومة</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>إن رئيس الحكومة</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يرسم ما يأتي :</p>
+  </formula>
+</preamble>
+    <body>
+      <article eId="art_1">
+        <num>المادة الأولى</num>
+        <content>
+        <paragraph>
+        <p>يحدد هذا المرسوم شكل <term refersTo="#suspicion_notification">الإخطار بالشبهة</term> ونموذجه ومحتواه ووصل استلامه كما هو منصوص عليه في <ref href="/akn/dz/act/law/2005-02-06/05-01#art_20_para_4">المادة 20 ( الفقرة 4 ) من القانون رقم 05-01 المؤرخ في 27 ذي الحجة عام 1425 الموافق 6 فبراير سنة 2005</ref> والمذكور أعلاه.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_2">
+        <num>المادة 2</num>
+        <content>
+        <paragraph>
+        <p>ينشأ نموذج وحيد <term refersTo="#suspicion_notification">للإخطار بالشبهة</term> ووصل استلام <term refersTo="#suspicion_notification">الإخطار بالشبهة</term>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_3">
+        <num>المادة 3</num>
+        <content>
+        <paragraph>
+        <p>يحرر <term refersTo="#suspicion_notification">الإخطار بالشبهة</term> ووصل الاستلام المذكوران في <ref href="#art_2">المادة 2</ref> أعلاه على المطبوعين المطابقين لنموذج المحفوظ لدى الهيئة المختصة "<term refersTo="#ctrf">خلية معالجة الاستعلام المالي</term>" المرفقين بالملحقين الأول والثاني.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_4">
+        <num>المادة 4</num>
+        <content>
+        <paragraph>
+        <p><obligation>تتحمل تصميم <term refersTo="#suspicion_notification">الإخطار بالشبهة</term> الهيئات الخاضعة <ref href="/akn/dz/act/law/2005-02-06/05-01#art_19">للمادة 19 من القانون رقم 05-01 المؤرخ في 27 ذي الحجة عام 1425 الموافق 6 فبراير سنة 2005</ref> والمذكور أعلاه.</obligation></p>
+        </paragraph>
+        <paragraph>
+        <p>وتختص بتصميم وصل استلام <term refersTo="#suspicion_notification">الإخطار بالشبهة</term> <term refersTo="#ctrf">خلية معالجة الاستعلام المالي</term> دون سواها.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_5">
+        <num>5</num>
+        <content>
+        <paragraph>
+        <p><obligation>يجب أن يكون <term refersTo="#suspicion_report">الإخطار بالشبهة</term> كما يأتي</obligation> :</p>
+        <list>
+        <point>
+        <p>1.5 - يحرر بخط واضح دون حشو أو إضافة عن طريق الرقن أو آليا،</p>
+        </point>
+        <point>
+        <p>2.5 - يتضمن التفاصيل المتعلقة بما يأتي :</p>
+        <list>
+        <point>
+        <p>1.2.5 - المخطر ( مؤسسة بنكية - العنوان – الهاتف - الفاكس)،</p>
+        </point>
+        <point>
+        <p>2.2.5 - المعلومات حول الحساب موضوع الشبهة، صاحبه والموقع عليه ( رقم الحساب – تاريخ فتح الحساب - الوكالة العنوان)،</p>
+        </point>
+        <point>
+        <p>3.2.5 - الهوية :</p>
+        <list>
+        <point>
+        <p>بالنسبة للأشخاص الطبيعيين، <obligation>يجب تحديد الهوية الكاملة وكذا تاريخ ومكان الازدياد</obligation>،</p>
+        </point>
+        <point>
+        <p>بالنسبة للأشخاص المعنويين، <obligation>يجب تحديد عنوان الشركة، الطبيعة القانونية، النشاط، التعريف الجبائي، أو رقم المؤشر الإحصائي</obligation>،</p>
+        </point>
+        <point>
+        <p>بالنسبة للشركاء، يذكر زيادة على النسب الكامل، تاريخ ومكان الازدياد والمهنة وقيمة حصص الشركة والعنوان الشخصي،</p>
+        </point>
+        <point>
+        <p>بالنسبة للمسير، يذكر النسب الكامل، وتاريخ ومكان الازدياد، والمعلومات المتعلقة بوثيقة الهوية المستعملة ( النوع - الرقم – تاريخ ومكان الإصدار)،</p>
+        </point>
+        </list>
+        </point>
+        <point>
+        <p>4.2.5 - الوثائق التي استعملت لفتح الحساب وكل تعليق أو ملاحظات خاصة تتعلق بها،</p>
+        </point>
+        <point>
+        <p>5.2.5- نوع الزبون – اعتيادي أو غير اعتيادي،</p>
+        </point>
+        <point>
+        <p>6.2.5- هوية وصفة الموقعين المؤهلين بتفويض التصرف في الحساب.</p>
+        </point>
+        </list>
+        </point>
+        <point>
+        <p>3.5- يتضمن التفاصيل المتعلقة بما يأتي</p>
+        <list>
+        <point>
+        <p>1.3.5- العمليات محل الشبهة ) التاريخ أو الفترة - نوع العملية - القيمة الإجمالية – عدد العمليات ).</p>
+        </point>
+        </list>
+        </point>
+        </list>
+        </paragraph>
+        <paragraph>
+        <p><obligation>يجب القيام بوصف دقيق للعمليات والعلاقات المحتملة بين الأطراف المعنية</obligation>،</p>
+        </paragraph>
+        <paragraph>
+        <list>
+        <point>
+        <p>2.3.5 - طبيعة الأموال المشبوهة ) عملة وطنية - قيم عقارية - معادن نفيسة – غيره )،</p>
+        </point>
+        <point>
+        <p>3.3.5 - تفاصيل العملية المشبوهة - <obligation>يجب إعطاء كل المعلومات المطلوبة حسب طبيعة العملية العابرة للحدود أو المحلية</obligation> ( تحويل – إرجاع الأموال للوطن – دفع صك – مصدر الأموال - المؤسسة البنكية أو المالية – الوكالة - البلد - رقم الحساب - صاحب الحساب - المؤسسة البنكية المطابقة - رقم الصك وتاريخ إصداره – وجهة الأموال – الدفع نقدا – تسليم صك المؤسسة البنكية - الوكالة - رقم الحساب - صاحب الحساب – المؤسسة الوسيطة - رقم الصك وتاريخه )،</p>
+        </point>
+        <point>
+        <p>4.3.5 – دواعي الشبهة - <obligation>يجب وصف دواعي الشبهة بالاعتماد على العناصر الآتية</obligation> : هوية صاحب الأمر أو وكيله – هوية المستفيد – مصدر الأموال - وجهة الأموال - المظهر السلوكي أو غير ذلك – أهمية مبلغ العملية – عملية غير اعتيادية – عملية معقدة - غياب المبرر الاقتصادي - غياب المحل الشرعي،</p>
+        </point>
+        <point>
+        <p>5.3.5 - سوابق المشتبه فيه أو المشتبه فيهم ( معلومات )،</p>
+        </point>
+        <point>
+        <p>6.3.5 – الجهات الأخرى الخاضعة للإخطار، <obligation>يجب إعطاء كل المعلومات المتعلقة بطبيعة العملية</obligation> ( إيداع - مبادلات – توظيفات - تحويلات – أو أية حركة لرؤوس الأموال ( المتعلقة بعلاقة الأعمال ( مكان علاقة الأعمال ومكان مسك المحاسبة ومكان البيع ومكان التصريح بالأعمال، طريقة الدفع نقدا أو غيرها...) ومعلومات حول غرض وطبيعة العملية وإبراز دواعي إثارة الشبهة بدقة،</p>
+        </point>
+        <point>
+        <p>7.3.5 - الخاتمة والرأي :</p>
+        <list>
+        <point>
+        <p>حسب الحالة، هوية وصفة وتوقيع مراسل المؤسسة لدى <term refersTo="#ctrf">خلية معالجة الاستعلام المالي</term>،</p>
+        </point>
+        <point>
+        <p>تاريخ إصدار الإخطار بالشبهة.</p>
+        </point>
+        </list>
+        </point>
+        </list>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_6">
+        <num>6</num>
+        <content>
+        <paragraph>
+        <p><obligation>يجب أن يرفق <term refersTo="#suspicion_notification">الإخطار بالشبهة</term> بكل الوثائق الجازمة المتعلقة بالعملية المعنية.</obligation></p>
+        </paragraph>
+        <paragraph>
+        <p>كما يمكن <term refersTo="#ctrf">الهيئة المختصة (خلية معالجة الاستعلام المالي)</term> أن تطلب في أي وقت أي معلومة مفيدة أو وثيقة تتعلقان بالشبهة وتساعدان في تقدم التحريات.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_7">
+        <num>7</num>
+        <content>
+        <paragraph>
+        <p><obligation>يجب أن يوقع <term refersTo="#suspicion_notification">الإخطار بالشبهة</term>، حسب الحالات، ممثل المؤسسة البنكية أو المالية لدى <term refersTo="#ctrf">خلية معالجة الاستعلام المالي</term>، أو أحد الخاضعين لواجب الإخطار المذكورين في <ref href="/akn/dz/act/law/2005-02-06/05-01#art_19__para_2">المادة 19 الفقرة (2) من القانون رقم 05-01 المؤرخ في 6 فبراير سنة 2005</ref> والمذكور علاه.</obligation></p>
+        </paragraph>
+        <paragraph>
+        <p><obligation>يجب أن يكون التوقيع خطيا دون اللجوء إلى الاستنساخ أو التأشير.</obligation></p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_8">
+        <num>8</num>
+        <content>
+        <paragraph>
+        <p>ينشر هذا المرسوم في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية.</p>
+        </paragraph>
+        <paragraph>
+        <p>حرر بالجزائر في 9 ذي الحجة عام 1426 الموافق 9 يناير سنة 2006 .</p>
+        </paragraph>
+        <paragraph>
+        <p>أحمد أويحيى</p>
+        </paragraph>
+        </content>
+        </article>
+    </body>
+  </act>
+</akomaNtoso>

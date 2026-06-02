@@ -1,0 +1,1140 @@
+@prefix dzdoc: <https://legal.dz/ontology/document#> .
+@prefix dznorm: <https://legal.dz/ontology/norm#> .
+@prefix dzorg: <https://legal.dz/resource/organization/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dzorg:الجريدة_الرسمية a dzdoc:Organization ;
+    rdfs:label "الجريدة الرسمية"@ar ;
+    dzdoc:frbrUri "/ontology/organization/dz/joradp"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_1_extref_7dfc639f> a dzdoc:ExternalReference ;
+    rdfs:label "القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/law/1990-04-21/90-11"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/law/1990-04-21/90-11"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/law/1990-04-21/90-11" ;
+    dzdoc:referencesTarget <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:resolutionReason "canonical_akn_path_alias" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/law/1990-04-21/90-11"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_1_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#art_1> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يهدف هذا القانون إلى تتميم أحكام القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل المعدل والمتمم"@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_2_extref_7dfc639f> a dzdoc:ExternalReference ;
+    rdfs:label "القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/law/1990-04-21/90-11"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/law/1990-04-21/90-11"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/law/1990-04-21/90-11" ;
+    dzdoc:referencesTarget <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:resolutionReason "canonical_akn_path_alias" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/law/1990-04-21/90-11"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_2_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#art_2> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تتمم أحكام القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمذكور أعلاه، بمواد 56 مكرر و 56 مكرر 1 و 56 مكرر 2 و 56 مكرر 3 و 56 مكرر 4 و 56 مكرر 5 و 56 مكرر 6، وتحرر كما يأتي :"@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_3_extref_0453db64> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 64 من القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/law/1990-04-21/90-11#art_64"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/law/1990-04-21/90-11#art_64"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/law/1990-04-21/90-11#art_64" ;
+    dzdoc:resolutionReason "cross_document_fragment_unverified" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/law/1990-04-21/90-11"^^xsd:anyURI ;
+    dzdoc:targetEId "art_64" .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_3_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#art_3> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تتمم أحكام المادة 64 من القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمذكور أعلاه، كما يأتي:"@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_3_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#art_3> ;
+    dzdoc:position 1 ;
+    dzdoc:text "\"المادة 64 : تعلق علاقة العمل قانونا للأسباب الآتية : ............................... (بدون تغيير حتى) عطلة بدون أجر عطلة لإنشاء مؤسسة"@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_4_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#art_4> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تحدد شروط وكيفيات تطبيق أحكام هذا القانون عند الاقتضاء، عن طريق التنظيم."@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يمكن العامل، في حالة عدم إنجاز مشروعه في الآجال المحددة، أن يطلب إعادة إدماجه في منصب عمله أو إعادة تشغيله بالتوقيت الكامل، في أجل شهر واحد (1) على الأقل، قبل انتهاء فترة العطلة أو فترة العمل بالتوقيت الجزئي لإنشاء مؤسسة\"."@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4_permission_0_7c9cfa29> a dznorm:Permission ;
+    dzdoc:confidenceScore 0.72 ;
+    dzdoc:extractionMethod "lexical_permission_cue" ;
+    dzdoc:hasAction <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4_permission_0_7c9cfa29_action_36bc88c7b2> ;
+    dzdoc:hasPeriod <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4_permission_0_7c9cfa29_period_67011be906> ;
+    dzdoc:hasRole <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4_permission_0_7c9cfa29_role_33743ab5ec> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يمكن العامل، في حالة عدم إنجاز مشروعه في الآجال المحددة، أن يطلب إعادة إدماجه في منصب عمله أو إعادة تشغيله بالتوقيت الكامل، في أجل شهر واحد (1) على الأقل، قبل انتهاء فترة العطلة أو فترة العمل بالتوقيت الجزئي لإنشاء مؤسسة\"."@ar ;
+    dznorm:sourceArticle "art_56_bis_4" .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4_permission_0_7c9cfa29_action_36bc88c7b2> a dznorm:Action ;
+    rdfs:label "العامل"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يمكن العامل، في حالة عدم إنجاز مشروعه في الآجال المحددة، أن يطلب إعادة إدماجه في منصب عمله أو إعادة تشغيله بالتوقيت الكامل، في أجل شهر واحد (1) على الأقل، قبل انتهاء فترة العطلة أو فترة العمل بالتوقيت الجزئي لإنشاء مؤسسة\"."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4> .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4_permission_0_7c9cfa29_period_67011be906> a dznorm:Period ;
+    rdfs:label "في أجل شهر واحد (1) على الأقل"@ar ;
+    dzdoc:confidenceScore 0.68 ;
+    dzdoc:extractionMethod "lexical_period_pattern" ;
+    dzdoc:sourceTextSpan "يمكن العامل، في حالة عدم إنجاز مشروعه في الآجال المحددة، أن يطلب إعادة إدماجه في منصب عمله أو إعادة تشغيله بالتوقيت الكامل، في أجل شهر واحد (1) على الأقل، قبل انتهاء فترة العطلة أو فترة العمل بالتوقيت الجزئي لإنشاء مؤسسة\"."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4> .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4_permission_0_7c9cfa29_role_33743ab5ec> a dznorm:Role ;
+    rdfs:label "الأقل"@ar ;
+    dzdoc:confidenceScore 0.66 ;
+    dzdoc:extractionMethod "lexical_role_pattern" ;
+    dzdoc:sourceTextSpan "يمكن العامل، في حالة عدم إنجاز مشروعه في الآجال المحددة، أن يطلب إعادة إدماجه في منصب عمله أو إعادة تشغيله بالتوقيت الكامل، في أجل شهر واحد (1) على الأقل، قبل انتهاء فترة العطلة أو فترة العمل بالتوقيت الجزئي لإنشاء مؤسسة\"."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4> .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4_right_0_cc7a305e> a dznorm:Right ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_right_tag" ;
+    dzdoc:hasAction <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4_right_0_cc7a305e_action_4d0b8e9bd9> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يمكن العامل، في حالة عدم إنجاز مشروعه في الآجال المحددة، أن يطلب إعادة إدماجه في منصب عمله أو إعادة تشغيله بالتوقيت الكامل"@ar ;
+    dznorm:sourceArticle "art_56_bis_4" .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4_right_0_cc7a305e_action_4d0b8e9bd9> a dznorm:Action ;
+    rdfs:label "العامل"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يمكن العامل، في حالة عدم إنجاز مشروعه في الآجال المحددة، أن يطلب إعادة إدماجه في منصب عمله أو إعادة تشغيله بالتوقيت الكامل"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4> .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_5_condition_0_0d83e327> a dznorm:Condition ;
+    dzdoc:hasReference <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_5_condition_0_0d83e327_ref_fa7982921e80> ;
+    dzdoc:references <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4> ;
+    dzdoc:referencesInternal <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4> ;
+    dznorm:conditionText "إذا لم يقدم طلب إعادة إدماجه في الآجال المحددة بموجب أحكام المادة 56 مكرر 4 أعلاه"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_5> ;
+    dznorm:position 0 .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_5_condition_0_0d83e327_ref_fa7982921e80> a dzdoc:Reference ;
+    rdfs:label "المادة 56 مكرر 4"@ar ;
+    dzdoc:frbrUri "#art_56_bis_4"^^xsd:anyURI ;
+    dzdoc:referencesTarget <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4> ;
+    dzdoc:sourceEId "art_56_bis_5" ;
+    dzdoc:sourceElementType "condition" ;
+    dzdoc:sourceTextSpan "إذا لم يقدم طلب إعادة إدماجه في الآجال المحددة بموجب أحكام المادة 56 مكرر 4 أعلاه"@ar ;
+    dzdoc:targetEId "art_56_bis_4" .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_5_obligation_0_e03ee3b3> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dznorm:expressedIn <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_5> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "تنتهي علاقة العمل إذا أنجز العامل مؤسسته"@ar ;
+    dznorm:sourceArticle "art_56_bis_5" .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_5_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_5> ;
+    dzdoc:position 0 ;
+    dzdoc:text "دون الإخلال بالأحكام التشريعية والتنظيمية المعمول بها تنتهي علاقة العمل إذا أنجز العامل مؤسسته، وعند الاقتضاء، إذا لم يقدم طلب إعادة إدماجه في الآجال المحددة بموجب أحكام المادة 56 مكرر 4 أعلاه\"."@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يحق للعامل الاستفادة، مرة واحدة (1) خلال مساره المهني من عطلة غير مدفوعة الأجر لإنشاء مؤسسة."@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis> ;
+    dzdoc:position 1 ;
+    dzdoc:text "كما يحق للعامل اللجوء إلى العمل بالتوقيت الجزئي لإنشاء مؤسسة طبقا لأحكام التشريع والتنظيم المعمول بهما\"."@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_right_0_10953f8c> a dznorm:Right ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_right_tag" ;
+    dzdoc:hasPeriod <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_right_0_10953f8c_period_633e1bf1bb> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يحق للعامل الاستفادة، مرة واحدة (1) خلال مساره المهني من عطلة غير مدفوعة الأجر لإنشاء مؤسسة"@ar ;
+    dznorm:sourceArticle "art_56_bis" .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_right_0_10953f8c_period_633e1bf1bb> a dznorm:Period ;
+    rdfs:label "خلال مساره المهني من عطلة غير مدفوع"@ar ;
+    dzdoc:confidenceScore 0.68 ;
+    dzdoc:extractionMethod "lexical_period_pattern" ;
+    dzdoc:sourceTextSpan "يحق للعامل الاستفادة، مرة واحدة (1) خلال مساره المهني من عطلة غير مدفوعة الأجر لإنشاء مؤسسة"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis> .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_right_1_4dd67575> a dznorm:Right ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_right_tag" ;
+    dznorm:expressedIn <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis> ;
+    dznorm:position 1 ;
+    dznorm:provisionText "كما يحق للعامل اللجوء إلى العمل بالتوقيت الجزئي لإنشاء مؤسسة"@ar ;
+    dznorm:sourceArticle "art_56_bis" .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_5_obligation_0_d261bccb> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dznorm:expressedIn <https://legal.dz/resource/law/2022-07-20/22-21#art_5> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية"@ar ;
+    dznorm:sourceArticle "art_5" .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_5_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#art_5> ;
+    dzdoc:position 0 ;
+    dzdoc:text "ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية"@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_5_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#art_5> ;
+    dzdoc:position 1 ;
+    dzdoc:text "حرر بالجزائر في 21 ذي الحجة عام 1443 الموافق 20 يوليو سنة 2022."@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_5_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#art_5> ;
+    dzdoc:position 2 ;
+    dzdoc:text "عبد المجيد تبون"@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#legal_basis_0642854f3563> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/83-12> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى القانون رقم 83-12 المؤرخ في 21 رمضان عام 1403 الموافق 2 يوليو سنة 1983 والمتعلق بالتقاعد، المعدل والمتمم"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_4> .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#legal_basis_10861f565b1a> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/90-03> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى القانون رقم 90-03 المؤرخ في 10 رجب عام 1410 الموافق 6 فبراير سنة 1990 والمتعلق بمفتشية العمل المعدل والمتمم"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_6> .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#legal_basis_2ba9e053d3f8> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/153-01> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى الأمر رقم 153-01 المؤرخ في 7 شوال عام 1436 الموافق 23 يوليو سنة 2015 والمتضمن قانون المالية التكميلي لسنة 2015، لا سيما المادة 60 منه"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_10> .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#legal_basis_33f1a6d79fd2> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/83-14> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى القانون رقم 83-14 المؤرخ في 21 رمضان عام 1403 الموافق 2 يوليو سنة 1983 والمتعلق بالتزامات المكلفين في مجال الضمان الاجتماعي، المعدل والمتمم لا سيما المادة 6 منه"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_5> .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#legal_basis_621b7ca66da6> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/constitution/unknown/139-18> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "بناء على الدستور، لا سيما المواد 61 و 66 و 139-18 و 141 الفقرة (2) و (143) الفقرة (2 و 145 و 148 منه"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_1> .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#legal_basis_6f0968d6c454> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/90-104> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى القانون رقم 90-104 المؤرخ في 10 رجب عام 1410 الموافق 6 فبراير سنة 1990 والمتعلق بتسوية النزاعات الفردية في العمل المعدل والمتمم"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_7> .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#legal_basis_7cb64d050dbe> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/75-58> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى الأمر رقم 75-58 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون المدني المعدل والمتمم"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_2> .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#legal_basis_81659a2a9f11> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/90-11> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل المعدل والمتمم"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_8> .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#legal_basis_ca4422bab8b0> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/83-11> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى القانون رقم 83-11 المؤرخ في 21 رمضان عام 1403 الموافق 2 يوليو سنة 1983 والمتعلق بالتأمينات الاجتماعية المعدل والمتمم"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_3> .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#legal_basis_e8c4db7cd152> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/08-09> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى القانون رقم 08-09 المؤرخ في 18 صفر عام 1429 الموافق 25 فبراير سنة 2008 والمتضمن قانون الإجراءات المدنية والإدارية المعدل والمتمم"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_9> .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#lifecycle_2de833f40292> a dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:confidenceScore 0.92 ;
+    dzdoc:evidenceText "تتمم أحكام القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمذكور أعلاه، بمواد 56 مكرر و 56 مكرر 1 و 56 مكرر 2 و 56 مكرر 3 و 56 مكرر 4 و 56 مكرر 5 و 56 مكرر 6 ، وتحرر كما يأتي :"@ar ;
+    dzdoc:isContradictory false ;
+    dzdoc:lifecycleRelationType "amends" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:ruleId "lifecycle_explicit_amend_phrase" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_2> .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#lifecycle_31f1489129a5> a dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:confidenceScore 0.79 ;
+    dzdoc:evidenceText "تتمم أحكام المادة 64 من القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمذكور أعلاه، كما يأتي: \"المادة 64 : تعلق علاقة العمل قانونا للأسباب الآتية : ............................... (بدون تغيير حتى) عطلة بدون أجر عطلة لإنشاء مؤسسة"@ar ;
+    dzdoc:isContradictory false ;
+    dzdoc:lifecycleRelationType "amends" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:ruleId "lifecycle_explicit_amend_phrase" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_3> .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_0> a dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#preamble> ;
+    dzdoc:position 0 ;
+    dzdoc:segmentType "formula" ;
+    dzdoc:text "إن رئيس الجمهورية،"@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_13> a dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#preamble> ;
+    dzdoc:position 13 ;
+    dzdoc:segmentType "formula" ;
+    dzdoc:text "يصدر القانون الآتي نصه :"@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#preface> a dzdoc:Preface ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21> .
+
+<https://legal.dz/resource/law/2022-07-20/22-21/manifestation> a dzdoc:Manifestation ;
+    dzdoc:frbrUri "/akn/dz/act/law/2022-07-20/22-21/ara@.xml"^^xsd:anyURI ;
+    dzdoc:manifestationOf <https://legal.dz/resource/law/2022-07-20/22-21/expression> ;
+    dzdoc:transformDate "2026-04-28"^^xsd:date .
+
+<https://legal.dz/resource/law/1990-04-21/90-11#art_56_bis> dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2022-07-20/22-21#amend_1> ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1990-04-21/90-11#version_art_56_bis_20220720_OpInsertBis_ff9f0fb38a> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:introducedOn "2022-07-20"^^xsd:date .
+
+<https://legal.dz/resource/law/1990-04-21/90-11#art_56_bis_1> dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2022-07-20/22-21#amend_2> ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1990-04-21/90-11#version_art_56_bis_1_20220720_OpInsert_db85bff466> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:introducedOn "2022-07-20"^^xsd:date .
+
+<https://legal.dz/resource/law/1990-04-21/90-11#art_56_bis_2> dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2022-07-20/22-21#amend_3> ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1990-04-21/90-11#version_art_56_bis_2_20220720_OpInsert_48e7f640c2> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:introducedOn "2022-07-20"^^xsd:date .
+
+<https://legal.dz/resource/law/1990-04-21/90-11#art_56_bis_3> dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2022-07-20/22-21#amend_4> ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1990-04-21/90-11#version_art_56_bis_3_20220720_OpInsert_00c598ad1c> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:introducedOn "2022-07-20"^^xsd:date .
+
+<https://legal.dz/resource/law/1990-04-21/90-11#art_56_bis_4> dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2022-07-20/22-21#amend_5> ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1990-04-21/90-11#version_art_56_bis_4_20220720_OpInsert_7c9f90da89> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:introducedOn "2022-07-20"^^xsd:date .
+
+<https://legal.dz/resource/law/1990-04-21/90-11#art_56_bis_5> dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2022-07-20/22-21#amend_6> ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1990-04-21/90-11#version_art_56_bis_5_20220720_OpInsert_b640e7f210> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:introducedOn "2022-07-20"^^xsd:date .
+
+<https://legal.dz/resource/law/1990-04-21/90-11#art_56_bis_6> dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2022-07-20/22-21#amend_7> ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1990-04-21/90-11#version_art_56_bis_6_20220720_OpInsert_d72e33a8a6> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:introducedOn "2022-07-20"^^xsd:date .
+
+<https://legal.dz/resource/law/1990-04-21/90-11#art_64> dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2022-07-20/22-21#amend_8> ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1990-04-21/90-11#version_art_64_20220720_OpInsert_250bb3491f> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:introducedOn "2022-07-20"^^xsd:date .
+
+<https://legal.dz/resource/law/1990-04-21/90-11#version_art_56_bis_1_20220720_OpInsert_db85bff466> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2022-07-20/22-21#amend_2> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1990-04-21/90-11#art_56_bis_1> .
+
+<https://legal.dz/resource/law/1990-04-21/90-11#version_art_56_bis_20220720_OpInsertBis_ff9f0fb38a> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2022-07-20/22-21#amend_1> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1990-04-21/90-11#art_56_bis> .
+
+<https://legal.dz/resource/law/1990-04-21/90-11#version_art_56_bis_2_20220720_OpInsert_48e7f640c2> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2022-07-20/22-21#amend_3> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1990-04-21/90-11#art_56_bis_2> .
+
+<https://legal.dz/resource/law/1990-04-21/90-11#version_art_56_bis_3_20220720_OpInsert_00c598ad1c> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2022-07-20/22-21#amend_4> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1990-04-21/90-11#art_56_bis_3> .
+
+<https://legal.dz/resource/law/1990-04-21/90-11#version_art_56_bis_4_20220720_OpInsert_7c9f90da89> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2022-07-20/22-21#amend_5> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1990-04-21/90-11#art_56_bis_4> .
+
+<https://legal.dz/resource/law/1990-04-21/90-11#version_art_56_bis_5_20220720_OpInsert_b640e7f210> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2022-07-20/22-21#amend_6> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1990-04-21/90-11#art_56_bis_5> .
+
+<https://legal.dz/resource/law/1990-04-21/90-11#version_art_56_bis_6_20220720_OpInsert_d72e33a8a6> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2022-07-20/22-21#amend_7> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1990-04-21/90-11#art_56_bis_6> .
+
+<https://legal.dz/resource/law/1990-04-21/90-11#version_art_64_20220720_OpInsert_250bb3491f> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2022-07-20/22-21#amend_8> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1990-04-21/90-11#art_64> .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_11> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#preamble> ;
+    dzdoc:position 11 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبعد رأي مجلس الدولة"@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_12> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#preamble> ;
+    dzdoc:position 12 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبعد مصادقة البرلمان"@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#version_art_1_20220720_OpEnact_36eb5ea799> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2022-07-20/22-21#version_art_1> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/2022-07-20/22-21#art_1> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_1> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:versionText "يهدف هذا القانون إلى تتميم أحكام القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل المعدل والمتمم"@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#version_art_2_20220720_OpEnact_964d8a4e12> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2022-07-20/22-21#version_art_2> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/2022-07-20/22-21#art_2> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_2> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:versionText "تتمم أحكام القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمذكور أعلاه، بمواد 56 مكرر و 56 مكرر 1 و 56 مكرر 2 و 56 مكرر 3 و 56 مكرر 4 و 56 مكرر 5 و 56 مكرر 6 ، وتحرر كما يأتي :"@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#version_art_3_20220720_OpEnact_ca312c77c0> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2022-07-20/22-21#version_art_3> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/2022-07-20/22-21#art_3> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_3> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:versionText "تتمم أحكام المادة 64 من القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمذكور أعلاه، كما يأتي: \"المادة 64 : تعلق علاقة العمل قانونا للأسباب الآتية : ............................... (بدون تغيير حتى) عطلة بدون أجر عطلة لإنشاء مؤسسة"@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#version_art_4_20220720_OpEnact_519cb27eb2> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2022-07-20/22-21#version_art_4> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/2022-07-20/22-21#art_4> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_4> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:versionText "تحدد شروط وكيفيات تطبيق أحكام هذا القانون عند الاقتضاء، عن طريق التنظيم."@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#version_art_56_bis_20220720_OpEnact_355243635f> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2022-07-20/22-21#version_art_56_bis> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:versionText "يحق للعامل الاستفادة، مرة واحدة (1) خلال مساره المهني من عطلة غير مدفوعة الأجر لإنشاء مؤسسة . كما يحق للعامل اللجوء إلى العمل بالتوقيت الجزئي لإنشاء مؤسسة طبقا لأحكام التشريع والتنظيم المعمول بهما\"."@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#version_art_56_bis_4_20220720_OpEnact_efaf8d60b3> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2022-07-20/22-21#version_art_56_bis_4> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:versionText "يمكن العامل، في حالة عدم إنجاز مشروعه في الآجال المحددة، أن يطلب إعادة إدماجه في منصب عمله أو إعادة تشغيله بالتوقيت الكامل ، في أجل شهر واحد (1) على الأقل، قبل انتهاء فترة العطلة أو فترة العمل بالتوقيت الجزئي لإنشاء مؤسسة\"."@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#version_art_56_bis_5_20220720_OpEnact_c8efdf6a2a> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2022-07-20/22-21#version_art_56_bis_5> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_5> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_5> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:versionText "دون الإخلال بالأحكام التشريعية والتنظيمية المعمول بها تنتهي علاقة العمل إذا أنجز العامل مؤسسته ، وعند الاقتضاء، إذا لم يقدم طلب إعادة إدماجه في الآجال المحددة بموجب أحكام المادة 56 مكرر 4 أعلاه \"."@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#version_art_5_20220720_OpEnact_fd1b8867d1> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2022-07-20/22-21#version_art_5> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/2022-07-20/22-21#art_5> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_5> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:versionText "ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية حرر بالجزائر في 21 ذي الحجة عام 1443 الموافق 20 يوليو سنة 2022. عبد المجيد تبون"@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21/expression> a dzdoc:Expression ;
+    dzdoc:expressionOf <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:frbrUri "/akn/dz/act/law/2022-07-20/22-21/ara@"^^xsd:anyURI ;
+    dzdoc:hasManifestation <https://legal.dz/resource/law/2022-07-20/22-21/manifestation> ;
+    dzdoc:language "ara" ;
+    dzdoc:publicationDate "2022-07-20"^^xsd:date .
+
+dzorg:parliament a dzdoc:Organization ;
+    rdfs:label "البرلمان"@ar ;
+    dzdoc:frbrUri "/ontology/organization/dz/parliament"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#amend_1> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:confidenceScore 0.99 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpInsertBis ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1990-04-21/90-11#version_art_56_bis_20220720_OpInsertBis_ff9f0fb38a> ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_2> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1990-04-21/90-11#art_56_bis> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:validFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#amend_2> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:confidenceScore 0.99 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpInsert ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1990-04-21/90-11#version_art_56_bis_1_20220720_OpInsert_db85bff466> ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_2> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1990-04-21/90-11#art_56_bis_1> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:validFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#amend_3> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:confidenceScore 0.99 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpInsert ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1990-04-21/90-11#version_art_56_bis_2_20220720_OpInsert_48e7f640c2> ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_2> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1990-04-21/90-11#art_56_bis_2> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:validFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#amend_4> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:confidenceScore 0.99 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpInsert ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1990-04-21/90-11#version_art_56_bis_3_20220720_OpInsert_00c598ad1c> ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_2> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1990-04-21/90-11#art_56_bis_3> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:validFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#amend_5> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:confidenceScore 0.99 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpInsert ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1990-04-21/90-11#version_art_56_bis_4_20220720_OpInsert_7c9f90da89> ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_2> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1990-04-21/90-11#art_56_bis_4> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:validFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#amend_6> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:confidenceScore 0.99 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpInsert ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1990-04-21/90-11#version_art_56_bis_5_20220720_OpInsert_b640e7f210> ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_2> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1990-04-21/90-11#art_56_bis_5> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:validFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#amend_7> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:confidenceScore 0.99 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpInsert ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1990-04-21/90-11#version_art_56_bis_6_20220720_OpInsert_d72e33a8a6> ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_2> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1990-04-21/90-11#art_56_bis_6> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:validFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#amend_8> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:confidenceScore 0.99 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpInsert ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1990-04-21/90-11#version_art_64_20220720_OpInsert_250bb3491f> ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_3> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1990-04-21/90-11#art_64> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:validFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_1> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#preamble> ;
+    dzdoc:position 1 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "بناء على الدستور، لا سيما المواد 61 و 66 و 139-18 و 141 الفقرة (2) و (143) الفقرة (2 و 145 و 148 منه"@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_10> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#preamble> ;
+    dzdoc:position 10 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى الأمر رقم 153-01 المؤرخ في 7 شوال عام 1436 الموافق 23 يوليو سنة 2015 والمتضمن قانون المالية التكميلي لسنة 2015، لا سيما المادة 60 منه"@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_2> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#preamble> ;
+    dzdoc:position 2 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى الأمر رقم 75-58 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون المدني المعدل والمتمم"@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_3> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#preamble> ;
+    dzdoc:position 3 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى القانون رقم 83-11 المؤرخ في 21 رمضان عام 1403 الموافق 2 يوليو سنة 1983 والمتعلق بالتأمينات الاجتماعية المعدل والمتمم"@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_4> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#preamble> ;
+    dzdoc:position 4 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى القانون رقم 83-12 المؤرخ في 21 رمضان عام 1403 الموافق 2 يوليو سنة 1983 والمتعلق بالتقاعد، المعدل والمتمم"@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_5> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#preamble> ;
+    dzdoc:position 5 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى القانون رقم 83-14 المؤرخ في 21 رمضان عام 1403 الموافق 2 يوليو سنة 1983 والمتعلق بالتزامات المكلفين في مجال الضمان الاجتماعي، المعدل والمتمم لا سيما المادة 6 منه"@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_6> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#preamble> ;
+    dzdoc:position 6 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى القانون رقم 90-03 المؤرخ في 10 رجب عام 1410 الموافق 6 فبراير سنة 1990 والمتعلق بمفتشية العمل المعدل والمتمم"@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_7> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#preamble> ;
+    dzdoc:position 7 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى القانون رقم 90-104 المؤرخ في 10 رجب عام 1410 الموافق 6 فبراير سنة 1990 والمتعلق بتسوية النزاعات الفردية في العمل المعدل والمتمم"@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_8> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#preamble> ;
+    dzdoc:position 8 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل المعدل والمتمم"@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_9> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#preamble> ;
+    dzdoc:position 9 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى القانون رقم 08-09 المؤرخ في 18 صفر عام 1429 الموافق 25 فبراير سنة 2008 والمتضمن قانون الإجراءات المدنية والإدارية المعدل والمتمم"@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#version_art_1> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يهدف هذا القانون إلى تتميم أحكام القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل المعدل والمتمم"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/2022-07-20/22-21#version_art_1_20220720_OpEnact_36eb5ea799> ;
+    dzdoc:replacementText "يهدف هذا القانون إلى تتميم أحكام القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل المعدل والمتمم"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_1> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_1> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#version_art_2> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تتمم أحكام القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمذكور أعلاه، بمواد 56 مكرر و 56 مكرر 1 و 56 مكرر 2 و 56 مكرر 3 و 56 مكرر 4 و 56 مكرر 5 و 56 مكرر 6 ، وتحرر كما يأتي :"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/2022-07-20/22-21#version_art_2_20220720_OpEnact_964d8a4e12> ;
+    dzdoc:replacementText "تتمم أحكام القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمذكور أعلاه، بمواد 56 مكرر و 56 مكرر 1 و 56 مكرر 2 و 56 مكرر 3 و 56 مكرر 4 و 56 مكرر 5 و 56 مكرر 6 ، وتحرر كما يأتي :"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_2> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_2> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#version_art_3> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تتمم أحكام المادة 64 من القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمذكور أعلاه، كما يأتي: \"المادة 64 : تعلق علاقة العمل قانونا للأسباب الآتية : ............................... (بدون تغيير حتى) عطلة بدون أجر عطلة لإنشاء مؤسسة"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/2022-07-20/22-21#version_art_3_20220720_OpEnact_ca312c77c0> ;
+    dzdoc:replacementText "تتمم أحكام المادة 64 من القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمذكور أعلاه، كما يأتي: \"المادة 64 : تعلق علاقة العمل قانونا للأسباب الآتية : ............................... (بدون تغيير حتى) عطلة بدون أجر عطلة لإنشاء مؤسسة"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_3> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_3> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#version_art_4> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تحدد شروط وكيفيات تطبيق أحكام هذا القانون عند الاقتضاء، عن طريق التنظيم."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/2022-07-20/22-21#version_art_4_20220720_OpEnact_519cb27eb2> ;
+    dzdoc:replacementText "تحدد شروط وكيفيات تطبيق أحكام هذا القانون عند الاقتضاء، عن طريق التنظيم."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_4> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_4> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#version_art_5> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية حرر بالجزائر في 21 ذي الحجة عام 1443 الموافق 20 يوليو سنة 2022. عبد المجيد تبون"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/2022-07-20/22-21#version_art_5_20220720_OpEnact_fd1b8867d1> ;
+    dzdoc:replacementText "ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية حرر بالجزائر في 21 ذي الحجة عام 1443 الموافق 20 يوليو سنة 2022. عبد المجيد تبون"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_5> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_5> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#version_art_56_bis> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يحق للعامل الاستفادة، مرة واحدة (1) خلال مساره المهني من عطلة غير مدفوعة الأجر لإنشاء مؤسسة . كما يحق للعامل اللجوء إلى العمل بالتوقيت الجزئي لإنشاء مؤسسة طبقا لأحكام التشريع والتنظيم المعمول بهما\"."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/2022-07-20/22-21#version_art_56_bis_20220720_OpEnact_355243635f> ;
+    dzdoc:replacementText "يحق للعامل الاستفادة، مرة واحدة (1) خلال مساره المهني من عطلة غير مدفوعة الأجر لإنشاء مؤسسة . كما يحق للعامل اللجوء إلى العمل بالتوقيت الجزئي لإنشاء مؤسسة طبقا لأحكام التشريع والتنظيم المعمول بهما\"."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#version_art_56_bis_4> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يمكن العامل، في حالة عدم إنجاز مشروعه في الآجال المحددة، أن يطلب إعادة إدماجه في منصب عمله أو إعادة تشغيله بالتوقيت الكامل ، في أجل شهر واحد (1) على الأقل، قبل انتهاء فترة العطلة أو فترة العمل بالتوقيت الجزئي لإنشاء مؤسسة\"."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/2022-07-20/22-21#version_art_56_bis_4_20220720_OpEnact_efaf8d60b3> ;
+    dzdoc:replacementText "يمكن العامل، في حالة عدم إنجاز مشروعه في الآجال المحددة، أن يطلب إعادة إدماجه في منصب عمله أو إعادة تشغيله بالتوقيت الكامل ، في أجل شهر واحد (1) على الأقل، قبل انتهاء فترة العطلة أو فترة العمل بالتوقيت الجزئي لإنشاء مؤسسة\"."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#version_art_56_bis_5> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "دون الإخلال بالأحكام التشريعية والتنظيمية المعمول بها تنتهي علاقة العمل إذا أنجز العامل مؤسسته ، وعند الاقتضاء، إذا لم يقدم طلب إعادة إدماجه في الآجال المحددة بموجب أحكام المادة 56 مكرر 4 أعلاه \"."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/2022-07-20/22-21#version_art_56_bis_5_20220720_OpEnact_c8efdf6a2a> ;
+    dzdoc:replacementText "دون الإخلال بالأحكام التشريعية والتنظيمية المعمول بها تنتهي علاقة العمل إذا أنجز العامل مؤسسته ، وعند الاقتضاء، إذا لم يقدم طلب إعادة إدماجه في الآجال المحددة بموجب أحكام المادة 56 مكرر 4 أعلاه \"."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_5> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_5> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2022-07-20"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_1> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#body> ;
+    dzdoc:eId "art_1" ;
+    dzdoc:fullText "يهدف هذا القانون إلى تتميم أحكام القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل المعدل والمتمم"@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2022-07-20/22-21#version_art_1> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/2022-07-20/22-21#art_1_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/2022-07-20/22-21#version_art_1_20220720_OpEnact_36eb5ea799> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:introducedOn "2022-07-20"^^xsd:date ;
+    dzdoc:number "الأولى" ;
+    dzdoc:position 0 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/2022-07-20/22-21#art_1_extref_7dfc639f> .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_4> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#body> ;
+    dzdoc:eId "art_4" ;
+    dzdoc:fullText "تحدد شروط وكيفيات تطبيق أحكام هذا القانون عند الاقتضاء، عن طريق التنظيم."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2022-07-20/22-21#version_art_4> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/2022-07-20/22-21#art_4_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/2022-07-20/22-21#version_art_4_20220720_OpEnact_519cb27eb2> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:introducedOn "2022-07-20"^^xsd:date ;
+    dzdoc:number "4" ;
+    dzdoc:position 6 .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#body> a dzdoc:Body ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:directlyContains <https://legal.dz/resource/law/2022-07-20/22-21#art_1>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_2>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_3>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_4>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_5>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_5> ;
+    dzdoc:hasArticle <https://legal.dz/resource/law/2022-07-20/22-21#art_1>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_2>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_3>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_4>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_5>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_5> .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_3> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#body> ;
+    dzdoc:eId "art_3" ;
+    dzdoc:fullText "تتمم أحكام المادة 64 من القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمذكور أعلاه، كما يأتي: \"المادة 64 : تعلق علاقة العمل قانونا للأسباب الآتية : ............................... (بدون تغيير حتى) عطلة بدون أجر عطلة لإنشاء مؤسسة"@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2022-07-20/22-21#version_art_3> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/2022-07-20/22-21#art_3_para_0>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_3_para_1> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/2022-07-20/22-21#version_art_3_20220720_OpEnact_ca312c77c0> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:introducedOn "2022-07-20"^^xsd:date ;
+    dzdoc:number "3" ;
+    dzdoc:position 5 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/2022-07-20/22-21#art_3_extref_0453db64> .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_5> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#body> ;
+    dzdoc:eId "art_5" ;
+    dzdoc:fullText "ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية حرر بالجزائر في 21 ذي الحجة عام 1443 الموافق 20 يوليو سنة 2022. عبد المجيد تبون"@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2022-07-20/22-21#version_art_5> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/2022-07-20/22-21#art_5_para_0>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_5_para_1>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_5_para_2> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/2022-07-20/22-21#version_art_5_20220720_OpEnact_fd1b8867d1> ;
+    dzdoc:imposesObligation <https://legal.dz/resource/law/2022-07-20/22-21#art_5_obligation_0_d261bccb> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:introducedOn "2022-07-20"^^xsd:date ;
+    dzdoc:number "المادة 5" ;
+    dzdoc:position 7 .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_5> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#body> ;
+    dzdoc:eId "art_56_bis_5" ;
+    dzdoc:fullText "دون الإخلال بالأحكام التشريعية والتنظيمية المعمول بها تنتهي علاقة العمل إذا أنجز العامل مؤسسته ، وعند الاقتضاء، إذا لم يقدم طلب إعادة إدماجه في الآجال المحددة بموجب أحكام المادة 56 مكرر 4 أعلاه \"."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2022-07-20/22-21#version_art_56_bis_5> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_5_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusNew ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/2022-07-20/22-21#version_art_56_bis_5_20220720_OpEnact_c8efdf6a2a> ;
+    dzdoc:imposesObligation <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_5_obligation_0_e03ee3b3> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:introducedOn "2022-07-20"^^xsd:date ;
+    dzdoc:number "56 مكرر 5" ;
+    dzdoc:position 4 ;
+    dzdoc:references <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4> ;
+    dzdoc:referencesInternal <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4> ;
+    dzdoc:specifiesCondition <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_5_condition_0_0d83e327> .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#body> ;
+    dzdoc:eId "art_56_bis" ;
+    dzdoc:fullText "يحق للعامل الاستفادة، مرة واحدة (1) خلال مساره المهني من عطلة غير مدفوعة الأجر لإنشاء مؤسسة . كما يحق للعامل اللجوء إلى العمل بالتوقيت الجزئي لإنشاء مؤسسة طبقا لأحكام التشريع والتنظيم المعمول بهما\"."@ar ;
+    dzdoc:grantsRight <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_right_0_10953f8c>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_right_1_4dd67575> ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2022-07-20/22-21#version_art_56_bis> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_para_0>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_para_1> ;
+    dzdoc:hasStatus dzdoc:StatusNew ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/2022-07-20/22-21#version_art_56_bis_20220720_OpEnact_355243635f> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:introducedOn "2022-07-20"^^xsd:date ;
+    dzdoc:number "56 مكرر" ;
+    dzdoc:position 2 .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_2> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#body> ;
+    dzdoc:eId "art_2" ;
+    dzdoc:fullText "تتمم أحكام القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمذكور أعلاه، بمواد 56 مكرر و 56 مكرر 1 و 56 مكرر 2 و 56 مكرر 3 و 56 مكرر 4 و 56 مكرر 5 و 56 مكرر 6 ، وتحرر كما يأتي :"@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2022-07-20/22-21#version_art_2> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/2022-07-20/22-21#art_2_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/2022-07-20/22-21#version_art_2_20220720_OpEnact_964d8a4e12> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:introducedOn "2022-07-20"^^xsd:date ;
+    dzdoc:number "2" ;
+    dzdoc:position 1 ;
+    dzdoc:references <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_1>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_2>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_3>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_5>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_6> ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/2022-07-20/22-21#art_2_extref_7dfc639f> ;
+    dzdoc:referencesInternal <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_1>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_2>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_3>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_5>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_6> .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#preamble> a dzdoc:Preamble ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:hasCitation <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_1>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_10>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_11>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_12>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_2>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_3>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_4>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_5>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_6>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_7>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_8>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_9> ;
+    dzdoc:hasSegment <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_0>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_1>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_10>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_11>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_12>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_13>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_2>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_3>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_4>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_5>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_6>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_7>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_8>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#preamble_segment_9> ;
+    dzdoc:text "إن رئيس الجمهورية،"@ar .
+
+<https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2022-07-20/22-21#body> ;
+    dzdoc:eId "art_56_bis_4" ;
+    dzdoc:fullText "يمكن العامل، في حالة عدم إنجاز مشروعه في الآجال المحددة، أن يطلب إعادة إدماجه في منصب عمله أو إعادة تشغيله بالتوقيت الكامل ، في أجل شهر واحد (1) على الأقل، قبل انتهاء فترة العطلة أو فترة العمل بالتوقيت الجزئي لإنشاء مؤسسة\"."@ar ;
+    dzdoc:grantsPermission <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4_permission_0_7c9cfa29> ;
+    dzdoc:grantsRight <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4_right_0_cc7a305e> ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2022-07-20/22-21#version_art_56_bis_4> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/2022-07-20/22-21#art_56_bis_4_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusNew ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/2022-07-20/22-21#version_art_56_bis_4_20220720_OpEnact_efaf8d60b3> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2022-07-20/22-21> ;
+    dzdoc:introducedOn "2022-07-20"^^xsd:date ;
+    dzdoc:number "56 مكرر 4" ;
+    dzdoc:position 3 .
+
+<https://legal.dz/resource/law/2022-07-20/22-21> a dzdoc:Law ;
+    dzdoc:amends <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:authoredBy dzorg:parliament ;
+    dzdoc:candidateAmends <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:citesLegalBasis <https://legal.dz/resource/constitution/unknown/139-18>,
+        <https://legal.dz/resource/law/unknown/08-09>,
+        <https://legal.dz/resource/law/unknown/153-01>,
+        <https://legal.dz/resource/law/unknown/75-58>,
+        <https://legal.dz/resource/law/unknown/83-11>,
+        <https://legal.dz/resource/law/unknown/83-12>,
+        <https://legal.dz/resource/law/unknown/83-14>,
+        <https://legal.dz/resource/law/unknown/90-03>,
+        <https://legal.dz/resource/law/unknown/90-104>,
+        <https://legal.dz/resource/law/unknown/90-11> ;
+    dzdoc:countryCode "dz" ;
+    dzdoc:dateText "21 ذي الحجة عام 1443 الموافق 20 يوليو سنة 2022"@ar ;
+    dzdoc:documentNumber "22-21" ;
+    dzdoc:enactmentDate "2022-07-20"^^xsd:date ;
+    dzdoc:frbrThisUri "/akn/dz/act/law/2022-07-20/22-21/main"^^xsd:anyURI ;
+    dzdoc:frbrUri "/akn/dz/act/law/2022-07-20/22-21"^^xsd:anyURI ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2022-07-20/22-21#amend_1>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#amend_2>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#amend_3>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#amend_4>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#amend_5>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#amend_6>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#amend_7>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#amend_8>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#version_art_1>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#version_art_2>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#version_art_3>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#version_art_4>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#version_art_5>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#version_art_56_bis>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#version_art_56_bis_4>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#version_art_56_bis_5> ;
+    dzdoc:hasAuthority dzorg:parliament ;
+    dzdoc:hasBody <https://legal.dz/resource/law/2022-07-20/22-21#body> ;
+    dzdoc:hasExpression <https://legal.dz/resource/law/2022-07-20/22-21/expression> ;
+    dzdoc:hasLegalBasisAssertion <https://legal.dz/resource/law/2022-07-20/22-21#legal_basis_0642854f3563>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#legal_basis_10861f565b1a>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#legal_basis_2ba9e053d3f8>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#legal_basis_33f1a6d79fd2>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#legal_basis_621b7ca66da6>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#legal_basis_6f0968d6c454>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#legal_basis_7cb64d050dbe>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#legal_basis_81659a2a9f11>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#legal_basis_ca4422bab8b0>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#legal_basis_e8c4db7cd152> ;
+    dzdoc:hasLifecycleAssertion <https://legal.dz/resource/law/2022-07-20/22-21#lifecycle_2de833f40292>,
+        <https://legal.dz/resource/law/2022-07-20/22-21#lifecycle_31f1489129a5> ;
+    dzdoc:hasPreamble <https://legal.dz/resource/law/2022-07-20/22-21#preamble> ;
+    dzdoc:hasPreface <https://legal.dz/resource/law/2022-07-20/22-21#preface> ;
+    dzdoc:publicationDate "2022-07-20"^^xsd:date ;
+    dzdoc:sourceFile "Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/22-21_2022-07-20.xml" ;
+    dzdoc:title "قانون رقم 22-21 يتمم القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل"@ar .
+

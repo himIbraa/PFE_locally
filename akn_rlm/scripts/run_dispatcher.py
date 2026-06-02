@@ -44,7 +44,7 @@ import sys
 import time
 from pathlib import Path
 
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+# (UTF-8 stdout wrap removed — Linux default is UTF-8; Windows path used io.TextIOWrapper)
 
 _ROOT = Path(__file__).resolve().parents[1]
 if str(_ROOT) not in sys.path:
@@ -330,10 +330,17 @@ def main() -> None:
     parser.add_argument("--show-trajectory", action="store_true",
                         help="Phase D: print the per-step trajectory of the first 3 "
                              "questions to stdout for sanity inspection.")
+    parser.add_argument("--no-citation-gate", action="store_true",
+                        help="Bypass the citation-existence gate and span-existence gate. "
+                             "All LLM-generated citations are stored verbatim so pre-gate "
+                             "HCR can be measured offline. Sets AKN_NO_CITATION_GATE=1.")
     args = parser.parse_args()
     # Convert per-flag CLI toggles to env vars so the enhancers module
     # picks them up uniformly regardless of activation path.
     import os as _os
+    if getattr(args, "no_citation_gate", False):
+        _os.environ["AKN_NO_CITATION_GATE"] = "1"
+        log.info("--no-citation-gate: citation-existence and span-existence gates BYPASSED")
     if args.enhancers_all: _os.environ["AKN_ENHANCERS"] = "all"
     if args.e1: _os.environ["AKN_E1_CONCEPT_AMENDMENT"] = "1"
     if args.e2: _os.environ["AKN_E2_NLI_REVERSE"] = "1"

@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="law">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/law/1997-01-11/97-02_1997-01-11/main"/>
+      <FRBRuri value="/akn/dz/act/law/1997-01-11/97-02_1997-01-11"/>
+      <FRBRdate date="1997-01-11" name="enactment"/>
+      <FRBRauthor href="#parliament"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="97-02_1997-01-11"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/law/1997-01-11/97-02_1997-01-11/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/law/1997-01-11/97-02_1997-01-11/ara@"/>
+      <FRBRdate date="1997-01-11" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/law/1997-01-11/97-02_1997-01-11/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/law/1997-01-11/97-02_1997-01-11/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="parliament" href="/ontology/organization/dz/parliament" showAs="البرلمان"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="president" href="/ontology/person/dz/president" showAs="رئيس الجمهورية"/>
+  </references>
+<lifecycle source="#source"><eventRef eId="evt_1" date="1997-01-11" source="#source" type="generation"/></lifecycle><analysis source="#source"><activeModifications><textualMod type="insertion" eId="amend_1"><source href="#art_1"/><destination href="/akn/dz/act/law/1990-04-21/90-11"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_2"><source href="#art_2"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_52bis"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_3"><source href="#art_3"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_52bis2"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_4"><source href="#art_4"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_52bis3"/><force period="#evt_1"/></textualMod></activeModifications></analysis></meta>
+    <preface>
+  <docTitle>أمر رقم 97-02_1997-01-11 يتمم القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل</docTitle>
+  <docNumber>97-02_1997-01-11</docNumber>
+  <docDate date="1997-01-11">2 رمضان عام 1417 الموافق 11 يناير سنة 1997</docDate>
+  <docAuthority>البرلمان</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>إن رئيس الجمهورية</p>
+    </citation>
+    <citation>
+      <p>بناء على الدستور، لاسيما المواد 55 و 56 و 57 و 119 و 122 و 126 179 منه،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 66 - 154 المؤرخ في 18 صفر عام 1386 الموافق 8 يونيو سنة 1966 والمتضمن قانون الإجراءات المدنية، المعدل والمتمم</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 66 - 155 المؤرخ في 18 صفر عام 1386 الموافق 8 يونيو سنة 1966 والمتضمن قانون الإجراءات الجزائية، المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 66 156 المؤرخ في 18 صفر عام 1386 الموافق 8 يونيو سنة 1966 والمتضمن قانون العقوبات، المعدل والمتمم</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 75 - 58 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون المدني، المعدل والمتمم</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 90 - 02 المؤرخ في 10 رجب عام 1410 الموافق 6 فبراير سنة 1990 والمتعلق بالوقاية من النزاعات الجماعية في العمل وتسويتها وممارسة حق الإضراب، المعدل والمتمم</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 90 - 03 المؤرخ في 10 رجب عام 1410 الموافق 6 فبراير سنة 1990 والمتعلق بمفتشية العمل المعدل والمتمم</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 90 - 04 المؤرخ في 10 رجب عام 1410 الموافق 6 فبراير سنة 1990 والمتعلق بتسوية النزاعات الفردية في العمل، المعدل والمتمم</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل، المعدل والمتمم</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 90 - 14 المؤرخ في 9 ذي القعدة عام 1410 الموافق 2 يونيو سنة 1990 والمتعلق بكيفيات ممارسة الحق النقابي، المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 97 - 01 المؤرخ في 2 رمضان عام 1417 الموافق 11 يناير سنة 1997 الذي يؤسس تعويض البطالة الناجمة عن سوء الأحوال الجوية لعمال قطاعات البناء والأشغال العمومية والري، ويحدد شروط منحه وكيفياته،</p>
+    </citation>
+    <citation>
+      <p>وبعد مصادقة المجلس الوطني الانتقالي،</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يصدر الأمر الآتي نصه :</p>
+  </formula>
+</preamble>
+    <body>
+      <article eId="art_1">
+        <num>المادة الأولى</num>
+        <content>
+        <paragraph>
+        <p>يتمم هذا الأمر أحكام <ref href="/akn/dz/act/law/1990-04-21/90-11">القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل</ref>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_2">
+        <num>المادة 2</num>
+        <content>
+        <paragraph>
+        <p>تدرج ضمن <ref href="/akn/dz/act/law/1990-04-21/90-11">القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990</ref> <ref href="/akn/dz/act/law/1990-04-21/90-11#art_52bis">المادة 52 مكرر</ref>، وتحرر كما يأتي :</p>
+        </paragraph>
+        <paragraph>
+        <p>" <ref href="#art_52bis">المادة 52 مكرر</ref> : <obligation>يسدد <term refersTo="#special_fund">صندوق خاص</term> تعويض العطلة السنوية المستحقة لعمال المهن والفروع وقطاعات النشاط الذين لا يشتغلون عادة بصفة مستمرة عند نفس الهيئة المستخدمة خلال المدة المعتمدة لتقدير الحق في العطلة</obligation>.</p>
+        </paragraph>
+        <paragraph>
+        <p><obligation>تنخرط الهيئات المستخدمة المذكورة أعلاه وجوبا في هذا الصندوق</obligation>.</p>
+        </paragraph>
+        <paragraph>
+        <p>تحدد المهن والفروع وقطاعات النشاط المذكورة أعلاه عن طريق التنظيم".</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_3">
+        <num>المادة 3</num>
+        <content>
+        <paragraph>
+        <p>تدرج ضمن <ref href="/akn/dz/act/law/1990-04-21/90-11">القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990</ref> <ref href="/akn/dz/act/law/1990-04-21/90-11#art_52bis2">المادة 52 مكرر 2</ref>، وتحرر كما يأتي:</p>
+        </paragraph>
+        <paragraph>
+        <p>" <ref href="#art_52bis2">المادة 52 مكرر 2</ref> : تغطى النفقات المتعلقة بتسديد تعويض العطلة المذكورة في <ref href="#art_52bis">المادة 52 مكرر</ref> أعلاه، وكذا مصاريف التسيير، بواسطة اشتراك على عاتق الهيئات المستخدمة دون سواها.</p>
+        </paragraph>
+        <paragraph>
+        <p>تحدد نسبة هذا الاشتراك وكيفيات تحصيله عن طريق التنظيم".</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_4">
+        <num>المادة 4</num>
+        <content>
+        <paragraph>
+        <p>تدرج ضمن <ref href="/akn/dz/act/law/1990-04-21/90-11">القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990</ref> <ref href="/akn/dz/act/law/1990-04-21/90-11#art_52bis3">المادة 52 مكرر 3</ref>، وتحرر كما يأتي :</p>
+        </paragraph>
+        <paragraph>
+        <p>" <ref href="#art_52bis3">المادة 52 مكرر 3</ref>: يحدد عن طريق التنظيم إنشاء <term refersTo="#special_fund">الصندوق الخاص</term> المنصوص عليه في هذا الأمر وكذا شروط سيره وكيفياته".</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_5">
+        <num>المادة 5</num>
+        <content>
+        <paragraph>
+        <p>ينشر هذا الأمر في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية.</p>
+        </paragraph>
+        <paragraph>
+        <p>حرر بالجزائر في 2 رمضان عام 1417 الموافق 11 يناير سنة 1997.</p>
+        </paragraph>
+        <paragraph>
+        <p>اليمين زروال</p>
+        </paragraph>
+        </content>
+        </article>
+    </body>
+  </act>
+</akomaNtoso>

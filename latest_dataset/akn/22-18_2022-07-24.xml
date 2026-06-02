@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="law">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/law/2022-07-24/22-18/main"/>
+      <FRBRuri value="/akn/dz/act/law/2022-07-24/22-18"/>
+      <FRBRdate date="2022-07-24" name="enactment"/>
+      <FRBRauthor href="#parliament"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="22-18"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/law/2022-07-24/22-18/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/law/2022-07-24/22-18/ara@"/>
+      <FRBRdate date="2022-07-24" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/law/2022-07-24/22-18/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/law/2022-07-24/22-18/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="parliament" href="/ontology/organization/dz/parliament" showAs="البرلمان"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="president" href="/ontology/person/dz/president" showAs="رئيس الجمهورية"/>
+  </references>
+</meta>
+    <preface>
+  <docTitle>قانون يتعلق بالاستثمار</docTitle>
+  <docNumber>22-18</docNumber>
+  <docDate date="2022-07-24">25 ذي الحجة عام 1443 الموافق 24 يوليو سنة 2022</docDate>
+  <docAuthority>البرلمان</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>إن رئيس الجمهورية،</p>
+    </citation>
+    <citation>
+      <p>وبعد رأي مجلس الدولة،</p>
+    </citation>
+    <citation>
+      <p>وبعد مصادقة البرلمان</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يصدر القانون الآتي نصه :</p>
+  </formula>
+</preamble>
+    <body>
+      <section eId="sec_1">
+        <num>الأول</num>
+        <heading>أحكام عامة</heading>
+        <article eId="art_1">
+          <num>الأولى</num>
+          <content>
+          <paragraph>
+          <p>يهدف هذا القانون إلى تحديد القواعد التي تنظم <term refersTo="#investment">الاستثمار</term> و<right>حقوق المستثمرين</right> و<obligation>التزاماتهم</obligation>، والأنظمة التحفيزية المطبقة على الاستثمارات في الأنشطة الاقتصادية لإنتاج السلع والخدمات المنجزة من طرف الأشخاص الطبيعيين أو المعنويين الوطنيين أو الأجانب، مقيمين كانوا أو غير مقيمين.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_2">
+          <num>2</num>
+          <content>
+          <paragraph>
+          <p>ترمي أحكام هذا القانون إلى تشجيع الاستثمار، بهدف:</p>
+          <list>
+          <point>
+          <p>تطوير قطاعات النشاطات ذات الأولوية وذات قيمة مضافة عالية،</p>
+          </point>
+          <point>
+          <p>ضمان تنمية إقليمية مستدامة ومتوازنة،</p>
+          </point>
+          <point>
+          <p>تثمين الموارد الطبيعية والمواد الأولية المحلية،</p>
+          </point>
+          <point>
+          <p>إعطاء الأفضلية للتحويل التكنولوجي وتطوير الابتكار واقتصاد المعرفة،</p>
+          </point>
+          <point>
+          <p>تعميم استعمال التكنولوجيات الحديثة،</p>
+          </point>
+          <point>
+          <p>تفعيل استحداث مناصب الشغل الدائمة وترقية كفاءات الموارد البشرية،</p>
+          </point>
+          <point>
+          <p>تدعيم وتحسين تنافسية الاقتصاد الوطني وقدرته على التصدير.</p>
+          </point>
+          </list>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_3">
+          <num>3</num>
+          <content>
+          <paragraph>
+          <p>يرسخ هذا القانون المبادئ الآتية :</p>
+          <list>
+          <point>
+          <p><right><term refersTo="#freedom_of_investment">حرية الاستثمار</term> : كل شخص طبيعي أو معنوي، وطنيا كان أو أجنبيا، مقيم أو غير مقيم، يرغب في الاستثمار، هو حر في اختيار استثماره</right> وذلك في ظل <condition>احترام التشريع والتنظيم المعمول بهما</condition>،</p>
+          </point>
+          <point>
+          <p>الشفافية والمساواة في التعامل مع الاستثمارات.</p>
+          </point>
+          </list>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_4">
+          <num>4</num>
+          <content>
+          <paragraph>
+          <p>تخضع لأحكام هذا القانون، الاستثمارات المنجزة من خلال :</p>
+          <list>
+          <point>
+          <p>اقتناء الأصول المادية أو غير المادية التي تندرج مباشرة ضمن نشاطات إنتاج السلع والخدمات في إطار إنشاء أنشطة جديدة وتوسيع قدرات الإنتاج و/أو إعادة تأهيل أدوات الإنتاج،</p>
+          </point>
+          <point>
+          <p>المساهمة في رأسمال مؤسسة في شكل حصص نقدية أو عينية،</p>
+          </point>
+          <point>
+          <p>نقل أنشطة من الخارج.</p>
+          </point>
+          </list>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_5">
+          <num>5</num>
+          <content>
+          <paragraph>
+          <p>يقصد، في مفهوم هذا القانون، بما يأتي :</p>
+          <list>
+          <point>
+          <p><def refersTo="#investor">المستثمر : كل شخص طبيعي أو معنوي، وطنيا كان أو أجنبيا، مقيما أو غير مقيم، بمفهوم التنظيم الخاص بالصرف، ينجز استثمارا طبقا لأحكام هذا القانون.</def></p>
+          </point>
+          <point>
+          <p><def refersTo="#creation_investment">استثمار الإنشاء : كل استثمار منجز من أجل إنشاء رأسمال تقني من العدم باقتناء أصول بغرض إنشاء نشاط إنتاج السلع و/أو الخدمات.</def></p>
+          </point>
+          <point>
+          <p><def refersTo="#expansion_investment">استثمار التوسع : كل استثمار منجز بهدف رفع قدرات إنتاج السلع و/أو الخدمات عن طريق اقتناء وسائل إنتاج جديدة تضاف إلى تلك الموجودة.</def></p>
+          </point>
+          </list>
+          </paragraph>
+          <paragraph>
+          <p>لا يخول اقتناء تجهيزات تكميلية ملحقة و/أو مرتبطة طابع التوسع للاستثمار. وكذلك هو الشأن بالنسبة لاقتناء تجهيزات تجديد أو استبدال مماثلة لتلك الموجودة.</p>
+          </paragraph>
+          <paragraph>
+          <list>
+          <point>
+          <p><def refersTo="#rehabilitation_investment">استثمار إعادة التأهيل : كل استثمار منجز يتمثل في عمليات اقتناء سلع و/أو خدمات موجهة لمطابقة العتاد والتجهيزات الموجودة من أجل معالجة التأخر التكنولوجي أو بسبب الاهتلاك لقدمها والتي تؤثر عليها من أجل رفع الإنتاجية أو إعادة بعث نشاط متوقف منذ ثلاث (3) سنوات على الأقل.</def></p>
+          </point>
+          <point>
+          <p><def refersTo="#transfer_activities">نقل أنشطة من الخارج : عمل التحويل الذي تقوم بموجبه مؤسسة خاضعة للقانون الأجنبي، لكل أو لجزء من أنشطتها من الخارج إلى الجزائر.</def></p>
+          </point>
+          </list>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+      <section eId="sec_2">
+        <num>الثاني</num>
+        <heading>الضمانات والواجبات</heading>
+        <article eId="art_6">
+          <num>6</num>
+          <content>
+          <paragraph>
+          <p><right>يمكن أن تستفيد <term refersTo="#investment_projects">المشاريع الاستثمارية</term> القابلة للاستفادة من الأنظمة التحفيزية المنصوص عليها في هذا القانون من أراض تابعة للأملاك الخاصة للدولة</right>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تمنح الأراضي من طرف <term refersTo="#real_estate_bodies">الهيئات المكلفة بالعقار</term>، <condition>طبقا للشروط والكيفيات المنصوص عليها في التشريع والتنظيم المعمول بهما</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p>توضع المعلومات التي تتعلق بتوفر العقار تحت تصرف المستثمر من طرف <term refersTo="#real_estate_bodies">الهيئات المكلفة بالعقار</term>، لا سيما من خلال <term refersTo="#digital_platform">المنصة الرقمية للمستثمر</term> المذكورة في <ref href="#art_23">المادة 23</ref> أدناه.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_7">
+          <num>7</num>
+          <content>
+          <paragraph>
+          <p><right>تعفى من إجراءات التجارة الخارجية والتوطين البنكي، المساهمات الخارجية العينية التي تدخل حصريا في إطار عمليات نقل الأنشطة من الخارج</right>.</p>
+          </paragraph>
+          <paragraph>
+          <p><right>وتعفى أيضا من إجراءات التجارة الخارجية والتوطين البنكي، السلع الجديدة التي تدخل ضمن الحصص العينية الخارجية</right>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_8">
+          <num>8</num>
+          <content>
+          <paragraph>
+          <p><right>تستفيد من ضمان تحويل رأسمال المستثمر والعائدات الناجمة عنه، الاستثمارات المنجزة انطلاقا من حصص في الرأسمال في شكل حصص نقدية مستوردة عن الطريق المصرفي، والمحررة بعملة حرة التحويل يسعرها بنك الجزائر بانتظام، ويتم التنازل عنها لصالحه، والتي تساوي قيمتها أو تفوق الحدود الدنيا المحددة حسب التكلفة الكلية للمشروع</right>.</p>
+          </paragraph>
+          <paragraph>
+          <p>كما تقبل كحصص خارجية، عملية إعادة الاستثمار في الرأسمال للفوائد وأرباح الأسهم المصرح بقابليتها للتحويل طبقا للتشريع والتنظيم المعمول بهما.</p>
+          </paragraph>
+          <paragraph>
+          <p>يطبق ضمان التحويل وكذا الحدود الدنيا المذكورة في الفقرة الأولى أعلاه، على الحصص العينية المنجزة حسب الأشكال المنصوص عليها في التشريع المعمول به، <condition>شريطة أن يكون مصدرها خارجيا و أن تكون محل تقييم طبقا للقواعد والإجراءات التي تحكم إنشاء الشركات</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p>كما يتضمن ضمان التحويل المنصوص عليه في الفقرة الأولى أعلاه ، المداخيل الحقيقية الصافية الناتجة عن التنازل وعن تصفية الاستثمارات ذات المصدر الأجنبي، حتى وإن كان مبلغها يفوق الرأسمال المستثمر في البداية.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تطبيق أحكام هذه المادة، عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_9">
+          <num>9</num>
+          <content>
+          <paragraph>
+          <p><obligation>تضمن الدولة حماية حقوق الملكية الفكرية طبقا للتشريع المعمول به</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_10">
+          <num>10</num>
+          <content>
+          <paragraph>
+          <p><condition>لا يمكن أن يكون الاستثمار المنجز محل تسخير من طرف الإدارة إلا في الحالات المنصوص عليها في القانون</condition> و<obligation>يترتب على التسخير تعويض عادل ومنصف، طبقا للتشريع المعمول به</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_11">
+          <num>11</num>
+          <content>
+          <paragraph>
+          <p>تنشأ لدى رئاسة الجمهورية "<def refersTo="#committee">لجنة وطنية عليا للطعون المتصلة بالاستثمار</def>" تدعى في صلب النص "<term refersTo="#committee">اللجنة</term>" تكلف بالفصل في الطعون التي يقدمها المستثمرون.</p>
+          </paragraph>
+          <paragraph>
+          <p>ترسل الطعون إلى <term refersTo="#committee">اللجنة</term> في أجل لا يتجاوز شهرين (2)، ابتداء من تبليغ القرار موضوع الاعتراض، و<obligation>يجب عليها أن تبت في هذه الطعون في أجل لا يتجاوز شهرا واحدا (1)، ابتداء من تاريخ إخطارها</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><right>ويمكن المستثمر، زيادة على ذلك، أن يرفع في هذا الشأن طعنا قضائيا أمام الجهات القضائية المختصة طبقا للتشريع المعمول به</right>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد تشكيلة <term refersTo="#committee">اللجنة</term> وسيرها وكذا كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_12">
+          <num>12</num>
+          <content>
+          <paragraph>
+          <p>زيادة على أحكام <ref href="#art_11">المادة 11</ref> أعلاه، يخضع كل خلاف ناجم عن تطبيق أحكام هذا القانون بين <term refersTo="#foreign_investor">المستثمر الأجنبي</term> و<term refersTo="#algerian_state">الدولة الجزائرية</term> يتسبب فيه المستثمر أو يكون بسبب إجراء اتخذته الدولة الجزائرية في حقه، للجهات القضائية الجزائرية المختصة، <condition>ما لم توجد اتفاقيات ثنائية أو متعددة الأطراف صادقت عليها الدولة الجزائرية تتعلق أحكامها بالمصالحة والوساطة والتحكيم، أو إبرام اتفاق بين <term refersTo="#agency">الوكالة</term> المذكورة في <ref href="#art_18">المادة 18</ref> أدناه، التي تتصرف باسم الدولة والمستثمر ، تسمح للأطراف باللجوء إلى التحكيم</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_13">
+          <num>13</num>
+          <content>
+          <paragraph>
+          <p>لا تسري الآثار الناجمة عن مراجعة أو إلغاء هذا القانون التي قد تطرأ مستقبلا، على الاستثمار المنجز في إطار هذا القانون، <condition>إلا إذا طلب المستثمر ذلك صراحة</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_14">
+          <num>14</num>
+          <content>
+          <paragraph>
+          <p>يمكن أن تكون السلع والخدمات التي استفادت من المزايا المنصوص عليها في أحكام هذا القانون وكذا تلك الممنوحة في ظل الأحكام السابقة، موضوع تحويل أو تنازل بموجب رخصة تسلمها <term refersTo="#agency">الوكالة</term> المذكورة في <ref href="#art_18">المادة 18</ref> أدناه.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تطبيق أحكام هذه المادة عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_15">
+          <num>15</num>
+          <content>
+          <paragraph>
+          <p><obligation>يجب على المستثمر أن يلتزم بما يأتي :</obligation></p>
+          <list>
+          <point>
+          <p><obligation>السهر على احترام التشريع المعمول به والمعايير، لاسيما منها تلك المتعلقة بحماية البيئة، والصحة العمومية، والمنافسة، والعمل، وشفافية المعلومات المحاسبية والجبائية والمالية</obligation>،</p>
+          </point>
+          <point>
+          <p><obligation>تقديم كل المعلومات الضرورية التي تطلبها الإدارة لمتابعة وتقييم تنفيذ أحكام هذا القانون</obligation>.</p>
+          </point>
+          </list>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+      <section eId="sec_3">
+        <num>الثالث</num>
+        <heading>الإطار المؤسساتي</heading>
+        <article eId="art_16">
+          <num>16</num>
+          <content>
+          <paragraph>
+          <p><term refersTo="#investment_bodies">الأجهزة المكلفة بالاستثمار</term> هي:
+          <list>
+          <point><p><term refersTo="#national_investment_council">المجلس الوطني للاستثمار</term>،</p></point>
+          <point><p><term refersTo="#algerian_investment_promotion_agency">الوكالة الجزائرية لترقية الاستثمار</term>.</p></point>
+          </list>
+          </p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_17">
+          <num>17</num>
+          <content>
+          <paragraph>
+          <p><obligation>يكلف <term refersTo="#national_investment_council">المجلس الوطني للاستثمار</term>، المنشأ بموجب أحكام <ref href="/akn/dz/act/order/2001-08-20/01-03#art_18">المادة 18</ref> التي بقيت سارية المفعول ضمن <ref href="/akn/dz/act/order/2001-08-20/01-03">الأمر رقم 01-03 المؤرخ في أول جمادى الثانية عام 1422 الموافق 20 غشت سنة 2001 والمتعلق بتطوير الاستثمار</ref>، باقتراح استراتيجية الدولة في مجال الاستثمار، والسهر على تناسقها الشامل وتقييم تنفيذها</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يعد <term refersTo="#national_investment_council">المجلس الوطني للاستثمار</term> تقريرا تقييميا سنويا يرفعه إلى رئيس الجمهورية</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>تحدد تشكيلة المجلس الوطني للاستثمار وسيره عن طريق التنظيم</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_18">
+          <num>18</num>
+          <content>
+          <paragraph>
+          <p><def refersTo="#algerian_investment_promotion_agency">تدعى الوكالة الوطنية لتطوير الاستثمار المنشأة بموجب <ref href="/akn/dz/act/order/2001-08-20/01-03#art_6">المادة 6</ref> التي بقيت سارية المفعول ضمن <ref href="/akn/dz/act/order/2001-08-20/01-03">الأمر رقم 01-03 المؤرخ في أول جمادى الثانية عام 1422 الموافق 20 غشت سنة 2001 والمتعلق بتطوير الاستثمار</ref>، من الآن فصاعدا "الوكالة الجزائرية لترقية الاستثمار"، وتدعى في صلب هذا النص "الوكالة"</def>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>تكلف <term refersTo="#agency">الوكالة</term> بالتنسيق مع الإدارات والهيئات المعنية بما يأتي:
+          <list>
+          <point><p>ترقية وتثمين الاستثمار في الجزائر وكذا في الخارج وجاذبية الجزائر، بالاتصال مع الممثليات الدبلوماسية والقنصلية الجزائرية بالخارج،</p></point>
+          <point><p>إعلام أوساط الأعمال وتحسيسهم،</p></point>
+          <point><p>ضمان تسيير المنصة الرقمية للمستثمر،</p></point>
+          <point><p>تسجيل ملفات الاستثمار ومعالجتها،</p></point>
+          <point><p>مرافقة المستثمر في استكمال الإجراءات المتصلة باستثماره،</p></point>
+          <point><p>تسيير المزايا، بما فيها تلك المتعلقة بحافظة المشاريع المصرح بها أو المسجلة قبل تاريخ إصدار هذا القانون،</p></point>
+          <point><p>متابعة مدى تقدم وضعية المشاريع الاستثمارية.</p></point>
+          </list>
+          </obligation></p>
+          </paragraph>
+          <paragraph>
+          <p>تنشأ لدى <term refersTo="#agency">الوكالة</term> <term refersTo="#one_stop_shops">الشبابيك الوحيدة</term> الآتية :
+          <list>
+          <point><p><term refersTo="#major_projects_one_stop_shop">الشباك الوحيد للمشاريع الكبرى والاستثمارات الأجنبية</term>،</p></point>
+          <point><p><term refersTo="#decentralized_one_stop_shops">الشبابيك الوحيدة اللامركزية</term>.</p></point>
+          </list>
+          </p>
+          </paragraph>
+          <paragraph>
+          <p><right>تحصل <term refersTo="#agency">الوكالة</term> إتاوة بعنوان معالجة ملفات الاستثمار</right>.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>يحدد تنظيم الوكالة وسيرها وكذا مبلغ وكيفيات تحصيل الإتاوة عن طريق التنظيم</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_19">
+          <num>19</num>
+          <content>
+          <paragraph>
+          <p><def refersTo="#major_projects_one_stop_shop"><term refersTo="#major_projects_one_stop_shop">الشباك الوحيد للمشاريع الكبرى والاستثمارات الأجنبية</term> هو المحاور الوحيد ذو الاختصاص الوطني</def>، و<obligation>يكلف بالقيام بكل الإجراءات اللازمة لتجسيد ومرافقة المشاريع الاستثمارية الكبرى والاستثمارات الأجنبية</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>تحدد معايير تأهيل المشاريع الاستثمارية الكبرى عن طريق التنظيم</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_20">
+          <num>20</num>
+          <content>
+          <paragraph>
+          <p><def refersTo="#decentralized_one_stop_shops"><term refersTo="#decentralized_one_stop_shops">الشبابيك الوحيدة اللامركزية</term> هي بمثابة المحاور الوحيد للمستثمرين على المستوى المحلي</def>، و<obligation>تتولى مهام مساعدة ومرافقة المستثمرين في إتمام الإجراءات المتعلقة بالاستثمار</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_21">
+          <num>21</num>
+          <content>
+          <paragraph>
+          <p><obligation>يضم <term refersTo="#major_projects_one_stop_shop">الشباك الوحيد للمشاريع الكبرى والاستثمارات الأجنبية</term> وكذا <term refersTo="#decentralized_one_stop_shops">الشبابيك الوحيدة اللامركزية</term> ممثلي الهيئات والإدارات المكلفة مباشرة بتنفيذ الإجراءات المرتبطة بما يأتي :
+          <list>
+          <point><p>تجسيد المشاريع الاستثمارية،</p></point>
+          <point><p>منح المقررات والتراخيص وكل وثيقة لها علاقة بممارسة النشاط المرتبط بالمشروع الاستثماري،</p></point>
+          <point><p>الحصول على العقار الموجه للاستثمار،</p></point>
+          <point><p>متابعة الالتزامات المكتتبة من طرف المستثمر.</p></point>
+          </list>
+          </obligation></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_22">
+          <num>22</num>
+          <content>
+          <paragraph>
+          <p><condition>بغض النظر عن كل الأحكام المخالفة</condition>، <obligation>يؤهل <term refersTo="#representatives">ممثلو الهيئات والإدارات</term> لدى <term refersTo="#one_stop_shops">الشبابيك الوحيدة</term> بمنح، في الآجال المحددة بموجب التشريع والتنظيم المعمول بهما، كل القرارات والوثائق والتراخيص التي لها علاقة بتجسيد واستغلال المشروع الاستثماري المسجل على مستوى <term refersTo="#one_stop_shops">الشبابيك الوحيدة</term></obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_23">
+          <num>23</num>
+          <content>
+          <paragraph>
+          <p>تنشأ "<def refersTo="#investor_digital_platform">منصة رقمية للمستثمر</def>" يسند تسييرها إلى <term refersTo="#agency">الوكالة</term>، تسمح بتوفير كل المعلومات اللازمة، لا سيما منها فرص الاستثمار في الجزائر، والعرض العقاري والتحفيزات والمزايا المرتبطة بالاستثمار وكذا الإجراءات ذات الصلة.</p>
+          </paragraph>
+          <paragraph>
+          <p>وتسمح هذه <term refersTo="#investor_digital_platform">المنصة الرقمية</term> المتصلة بينيا بالأنظمة المعلوماتية للهيئات والإدارات المكلفة بالعملية الاستثمارية، بإزالة الطابع المادي عن جميع الإجراءات والقيام بواسطة الإنترنت بجميع الإجراءات المتصلة بالاستثمار.</p>
+          </paragraph>
+          <paragraph>
+          <p>وتشكل <term refersTo="#investor_digital_platform">المنصة الرقمية</term> أيضا أداة توجيه ومرافقة للاستثمارات ومتابعتها انطلاقا من تسجيلها وأثناء فترة استغلالها.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تسيير هذه المنصة عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+      <section eId="sec_4">
+        <num>الرابع</num>
+        <heading>الأنظمة التحفيزية والشروط</heading>
+        <article eId="art_24">
+          <num>24</num>
+          <content>
+          <paragraph>
+          <p><condition>يمكن أن تستفيد الاستثمارات، بمفهوم <ref href="#art_4">المادة 4</ref> من هذا القانون بناء على طلب من المستثمر</condition>، من أحد الأنظمة التحفيزية المذكورة أدناه:
+          <list>
+          <point><p><term refersTo="#sector_regime">النظام التحفيزي للقطاعات ذات الأولوية</term>، ويدعى في صلب النص "نظام القطاعات"،</p></point>
+          <point><p><term refersTo="#region_regime">النظام التحفيزي للمناطق التي توليها الدولة أهمية خاصة</term>، ويدعى في صلب النص "نظام المناطق"،</p></point>
+          <point><p><term refersTo="#structured_regime">النظام التحفيزي للاستثمارات ذات الطابع المهيكل</term> ويدعى في صلب النص نظام" الاستثمارات المهيكلة".</p></point>
+          </list></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_25">
+          <num>25</num>
+          <content>
+          <paragraph>
+          <p><obligation>يجب أن تخضع الاستثمارات، قبل إنجازها، للتسجيل لدى الشبابيك الوحيدة المختصة المذكورة في <ref href="#art_18">المادة 18</ref> من هذا القانون</obligation>، من أجل الاستفادة من المزايا المنصوص عليها في أحكام هذا القانون.</p>
+          </paragraph>
+          <paragraph>
+          <p>يتجسد تسجيل الاستثمار بتسليم شهادة على الفور مرفقة بقائمة السلع والخدمات القابلة للاستفادة من المزايا التي <right>ترخص للمستثمر الاستفادة من الامتيازات التي له حق المطالبة بها لدى الإدارات والهيئات المعنية</right>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تطبيق هذه المادة وكذا قائمة السلع والخدمات غير القابلة للاستفادة من المزايا المحددة في أحكام هذا القانون، عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_26">
+          <num>26</num>
+          <content>
+          <paragraph>
+          <p>تكون قابلة للاستفادة من "نظام القطاعات"، الاستثمارات المنجزة في مجالات النشاطات الآتية:
+          <list>
+          <point><p>المناجم والمحاجر،</p></point>
+          <point><p>الفلاحة وتربية المائيات والصيد البحري،</p></point>
+          <point><p>الصناعة والصناعة الغذائية والصناعة الصيدلانية والبتروكيميائية،</p></point>
+          <point><p>الخدمات والسياحة ،</p></point>
+          <point><p>الطاقات الجديدة والطاقات المتجددة،</p></point>
+          <point><p>اقتصاد المعرفة وتكنولوجيات الإعلام والاتصال.</p></point>
+          </list></p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد قائمة الأنشطة غير القابلة للاستفادة من المزايا المحددة بعنوان نظام القطاعات، عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_27">
+          <num>27</num>
+          <content>
+          <paragraph>
+          <p>تستفيد الاستثمارات القابلة للاستفادة من "نظام القطاعات"، زيادة على التحفيزات الجبائية وشبه الجبائية والجمركية المنصوص عليها في القانون العام من المزايا الآتية:</p>
+          </paragraph>
+          <paragraph>
+          <p>بعنوان مرحلة الإنجاز :</p>
+          <list>
+          <point><p>1- <right>الإعفاء من الحقوق الجمركية فيما يخص السلع المستوردة التي تدخل مباشرة في إنجاز الاستثمار</right>،</p></point>
+          <point><p>2- <right>الإعفاء من الرسم على القيمة المضافة فيما يخص السلع والخدمات المستوردة أو المقتناة محليا التي تدخل مباشرة في إنجاز الاستثمار</right>،</p></point>
+          <point><p>3- <right>الإعفاء من دفع حق نقل الملكية بعوض والرسم على الإشهار العقاري عن كل المقتنيات العقارية التي تتم في إطار الاستثمار المعني</right>،</p></point>
+          <point><p>4- <right>الإعفاء من حقوق التسجيل المفروضة فيما يخص العقود التأسيسية للشركات والزيادات في الرأسمال</right>،</p></point>
+          <point><p>5- <right>الإعفاء من حقوق التسجيل والرسم على الإشهار العقاري ومبالغ الأملاك الوطنية المتضمنة حق الامتياز على الأملاك العقارية المبنية وغير المبنية الموجهة لإنجاز المشاريع الاستثمارية</right>،</p></point>
+          <point><p>6- <right>الإعفاء من الرسم العقاري على الملكيات العقارية التي تدخل في إطار الاستثمار لمدة عشر (10) سنوات، ابتداء من تاريخ الاقتناء</right>.</p></point>
+          </list>
+          </paragraph>
+          <paragraph>
+          <p>بعنوان مرحلة الاستغلال : <condition>ضمن مدة تتراوح من ثلاث (3) إلى خمس (5) سنوات، ابتداء من تاريخ الشروع في الاستغلال</condition>:
+          <list>
+          <point><p>1) <right>الإعفاء من الضريبة على أرباح الشركات</right></p></point>
+          <point><p>é) <right>الإعفاء من الرسم على النشاط المهني</right>.</p></point>
+          </list></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_28">
+          <num>28</num>
+          <content>
+          <paragraph>
+          <p><condition>تعد قابلة للاستفادة من <term refersTo="#regime_zones">"نظام المناطق"</term>، الاستثمارات المنجزة في :</condition>
+          <list>
+          <point>
+          <p>المواقع التابعة للهضاب العليا و الجنوب و الجنوب الكبير،</p>
+          </point>
+          <point>
+          <p>المواقع التي تتطلب تنميتها مرافقة خاصة من الدولة،</p>
+          </point>
+          <point>
+          <p>المواقع التي تمتلك إمكانيات من الموارد الطبيعية القابلة للتثمين.</p>
+          </point>
+          </list>
+          </p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد قائمة المواقع التابعة للمناطق التي توليها الدولة أهمية خاصة، عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_29">
+          <num>29</num>
+          <content>
+          <paragraph>
+          <p>زيادة على التحفيزات الجبائية وشبه الجبائية و الجمركية المنصوص عليها في القانون العام، <right>يمكن أن تستفيد الاستثمارات القابلة للاستفادة من مزايا <term refersTo="#regime_zones">"نظام المناطق"</term> والتي تكون الأنشطة المنجزة فيها غير مستثناة من المزايا المحددة في هذه المادة، من المزايا الآتية:</right>
+          <list>
+          <point>
+          <p>بعنوان مرحلة الإنجاز : من المزايا المحددة في <ref href="#art_27">المادة 27</ref> من هذا القانون</p>
+          </point>
+          <point>
+          <p>بعنوان مرحلة الاستغلال : لمدة تتراوح من خمس (5) إلى عشر (10) سنوات ابتداء من تاريخ الشروع في الاستغلال:
+          <list>
+          <point>
+          <p>1) الإعفاء من الضريبة على أرباح الشركات،</p>
+          </point>
+          <point>
+          <p>2) الإعفاء من الرسم على النشاط المهني.</p>
+          </point>
+          </list>
+          </p>
+          </point>
+          </list>
+          </p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد قائمة النشاطات غير القابلة للاستفادة من المزايا المحددة في نظام المناطق"، عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_30">
+          <num>30</num>
+          <content>
+          <paragraph>
+          <p><def refersTo="#structured_investments">تكون الاستثمارات ذات القدرة العالية لخلق الثروة واستحداث مناصب الشغل، والتي من شأنها الرفع من جاذبية الإقليم وتكون قوة دافعة للنشاط الاقتصادي من أجل تنمية مستدامة، قابلة للاستفادة من نظام <term refersTo="#structured_investments">"الاستثمارات المهيكلة"</term>.</def></p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد معايير تأهيل الاستثمارات القابلة للاستفادة من <term refersTo="#structured_investments">"نظام الاستثمارات المهيكلة"</term> ، عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_31">
+          <num>31</num>
+          <content>
+          <paragraph>
+          <p>زيادة على التحفيزات الجبائية وشبه الجبائية و الجمركية المنصوص عليها في القانون العام <right>يمكن أن تستفيد الاستثمارات القابلة للاستفادة من نظام الاستثمارات المهيكلة :</right>
+          <list>
+          <point>
+          <p>بعنوان مرحلة الإنجاز : من المزايا المنصوص عليها في <ref href="#art_27">المادة 27</ref> من هذا القانون.</p>
+          </point>
+          </list>
+          </p>
+          </paragraph>
+          <paragraph>
+          <p><right>يمكن تحويل مزايا مرحلة الإنجاز المنصوص عليها في هذه المادة إلى الأطراف المتعاقدة مع المستثمر المستفيد، المكلفة بإنجاز الاستثمار، لحساب هذا الأخير.</right></p>
+          </paragraph>
+          <paragraph>
+          <p>بعنوان مرحلة الاستغلال : ابتداء من تاريخ الشروع في الاستغلال لمدة تتراوح من خمس (5) إلى عشر (10) سنوات، من:
+          <list>
+          <point>
+          <p>1) الإعفاء من الضريبة على أرباح الشركات،</p>
+          </point>
+          <point>
+          <p>2) الإعفاء من الرسم على النشاط المهني.</p>
+          </point>
+          </list>
+          </p>
+          </paragraph>
+          <paragraph>
+          <p><right>يمكن أن تستفيد الاستثمارات المهيكلة من مرافقة الدولة عن طريق التكفل جزئيا أو كليا بأعمال التهيئة والمنشآت الأساسية الضرورية لتجسيدها، على أساس اتفاقية تعد بين المستثمر والوكالة التي تتصرف باسم الدولة.</right> و تبرم الاتفاقية بعد موافقة الحكومة.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تطبيق أحكام هذه المادة، عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_32">
+          <num>المادة 32</num>
+          <content>
+          <paragraph>
+          <p><condition>مع مراعاة مدة الإعفاء من <term refersTo="#property_tax">الرسم العقاري</term> على الملكيات العقارية التي تدخل في إطار الاستثمار</condition>، <obligation>يجب أن تنجز الاستثمارات المذكورة في <ref href="#art_4">المادة 4</ref> من هذا القانون، في مدة لا تتعدى ثلاث (3) سنوات</obligation>، وترفع هذه المدة إلى خمس (5) سنوات فيما يخص الاستثمارات المدرجة ضمن "نظام المناطق" و "نظام الاستثمارات المهيكلة".</p>
+          </paragraph>
+          <paragraph>
+          <p>يسري الأجل المحدد لإنجاز الاستثمار ابتداء من تاريخ تسجيل الاستثمار لدى <term refersTo="#agency">الوكالة</term> أو ابتداء من تاريخ تسليم رخصة البناء في الحالات التي تكون فيها هذه الرخصة مطلوبة.</p>
+          </paragraph>
+          <paragraph>
+          <p><right>ويمكن تمديد أجل الإنجاز لمدة اثني عشر (12) شهرا قابلة للتجديد بصفة استثنائية مرة واحدة لنفس المدة</right> <condition>وذلك عندما يتجاوز إنجاز الاستثمار نسبة تقدم معينة</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات وشروط تطبيق أحكام هذه المادة، عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_33">
+          <num>المادة 33</num>
+          <content>
+          <paragraph>
+          <p>تحدد مدة الاستفادة من المزايا، بعنوان مرحلة الاستغلال، على أساس شبكات التقييم المعدة، مع أخذ بعين الاعتبار الأهداف المبينة في <ref href="#art_2">المادة 2</ref> أعلاه، وكذا المعايير المقررة لكل نظام تحفيزي تستفيد استثمارات التوسعة أو إعادة التأهيل من المزايا الممنوحة بعنوان مرحلة الاستغلال باحتساب نسبة الاستثمارات الجديدة مقارنة مع مجمل الاستثمارات المنجزة.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات الاستفادة من المزايا بعنوان مرحلة الاستغلال وكذا شبكة التقييم، عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+      <section eId="sec_5">
+        <num>الخامس</num>
+        <heading>أحكام مختلفة</heading>
+        <article eId="art_34">
+          <num>المادة 34</num>
+          <content>
+          <paragraph>
+          <p><condition>في حالة ممارسة نشاط مختلط أو عدة أنشطة</condition>، لا تستفيد من المزايا المحددة في هذا القانون إلا تلك القابلة للاستفادة من المزايا.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يمسك <term refersTo="#beneficiary">المستفيد من المزايا</term> بهذا الصدد، محاسبة تسمح بتحديد أرقام الأعمال و النتائج ذات الصلة بالنشاطات القابلة للاستفادة من المزايا</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_35">
+          <num>المادة 35</num>
+          <content>
+          <paragraph>
+          <p>لا يؤدي وجود عدة مزايا من نفس الطبيعة أنشئت بموجب التشريع المعمول به مع المزايا المنصوص عليها بموجب هذا القانون، إلى الجمع بين المزايا المعنية، و<right>يستفيد الاستثمار من التحفيز الأفضل</right>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_36">
+          <num>المادة 36</num>
+          <content>
+          <paragraph>
+          <p><obligation>تكلف الإدارات والهيئات المعنية بتطبيق أحكام هذا القانون، بعنوان المتابعة، طبقا لصلاحياتها وطيلة المدة المقبولة لاهتلاك السلع المقتناة في إطار المزايا، بالسهر على احترام المستثمرين لالتزاماتهم المكتتبة عند تسجيلهم للاستثمار</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>وفي حالة عدم احترام الالتزامات المترتبة على تطبيق أحكام هذا القانون أو التعهدات التي التزم بها المستثمر</condition>، يمكن سحب هذه المزايا جزئيا أو كليا، دون الإخلال بالعقوبات المنصوص عليها في التشريع المعمول به.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تطبيق أحكام هذه المادة عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_37">
+          <num>المادة 37</num>
+          <content>
+          <paragraph>
+          <p>يعاقب كل من يقوم بسوء نية، بعرقلة الاستثمار بأية وسيلة كانت، وفقا للأحكام المنصوص عليها في التشريع الساري المفعول.</p>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+      <section eId="sec_6">
+        <num>السادس</num>
+        <heading>أحكام انتقالية ونهائية</heading>
+        <article eId="art_38">
+          <num>38</num>
+          <content>
+          <paragraph>
+          <p><right>يحتفظ <term refersTo="#investor">المستثمر</term> بالحقوق والمزايا المكتسبة بطريقة قانونية بموجب التشريعات السابقة لهذا القانون</right> دون الإخلال بأحكام <ref href="#art_32">المادة 32</ref> الفقرة (3) أعلاه، تبقى الاستثمارات المستفيدة من المزايا المنصوص عليها في القوانين المتعلقة بتطوير وترقية الاستثمار السابقة لهذا القانون، وكذا مجموع النصوص اللاحقة به، خاضعة للقوانين التي تم التسجيل أو التصريح في ظلها، إلى غاية انقضاء مدة المزايا.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_39">
+          <num>39</num>
+          <content>
+          <paragraph>
+          <p>تحول حافظة المشاريع التي كانت تابعة سابقا لاختصاص <term refersTo="#national_investment_council">المجلس الوطني للاستثمار</term> إلى <term refersTo="#agency">الوكالة</term>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_40">
+          <num>40</num>
+          <content>
+          <paragraph>
+          <p>تلغى كل الأحكام المخالفة لهذا القانون، لا سيما <ref href="/akn/dz/act/law/2016-08-03/16-09">القانون رقم 16-09 المؤرخ في 29 شوال عام 1437 الموافق 3 غشت سنة 2016 والمتعلق بترقية الاستثمار</ref>، باستثناء <ref href="/akn/dz/act/law/2016-08-03/16-09#art_37">المادة 37</ref> منه التي تبقى سارية المفعول.</p>
+          </paragraph>
+          <paragraph>
+          <p>دون الإخلال بأحكام <ref href="#art_38">المادة 38</ref> من هذا القانون، تبقى النصوص التطبيقية <ref href="/akn/dz/act/law/2016-08-03/16-09">للقانون رقم 16-09 المؤرخ في 29 شوال عام 1437 الموافق 3 غشت سنة 2016</ref> والمذكور أعلاه، سارية المفعول إلى غاية صدور النصوص التنظيمية المتخذة لتطبيق هذا القانون</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_41">
+          <num>41</num>
+          <content>
+          <paragraph>
+          <p>ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية.</p>
+          </paragraph>
+          <paragraph>
+          <p>حرر بالجزائر في 25 ذي الحجة عام 1443 الموافق 24 يوليو سنة 2022.</p>
+          </paragraph>
+          <paragraph>
+          <p>عبد المجيد تبون</p>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+    </body>
+  </act>
+</akomaNtoso>

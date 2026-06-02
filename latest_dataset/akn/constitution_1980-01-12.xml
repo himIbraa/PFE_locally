@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="law">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/law/1980-01-12/80-01/main"/>
+      <FRBRuri value="/akn/dz/act/law/1980-01-12/80-01"/>
+      <FRBRdate date="1980-01-12" name="enactment"/>
+      <FRBRauthor href="#parliament"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="80-01"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/law/1980-01-12/80-01/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/law/1980-01-12/80-01/ara@"/>
+      <FRBRdate date="1980-01-12" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/law/1980-01-12/80-01/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/law/1980-01-12/80-01/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="parliament" href="/ontology/organization/dz/parliament" showAs="البرلمان"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="converter" href="/ontology/person/dz/converter" showAs="Legal Markup Specialist"/>
+  </references>
+</meta>
+    <preface>
+  <docTitle>قانون رقم 80-01 يتضمن التعديل الدستوري</docTitle>
+  <docNumber>80-01</docNumber>
+  <docDate date="1980-01-12">12 يناير سنة 1980</docDate>
+  <docAuthority>البرلمان</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>بناء على الدستور</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يصدر القانون الآتي نصه</p>
+  </formula>
+</preamble>
+    <body>
+      <chapter eId="chp_الثاني_السلطة_و_تنظيمها">
+        <num>الثاني السلطة و تنظيمها</num>
+        <section eId="chp_الثاني_السلطة_و_تنظيمها_sec_الخامس_وظيفة_المراقبة">
+          <num>الخامس وظيفة المراقبة</num>
+          <article eId="art_الاولى">
+            <num>المادة الاولى</num>
+            <content>
+            <paragraph>
+            <p>تعدل الفقرة الأولى من <ref href="#art_190">المادة 190</ref> من الدستور، کما یلي:</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_190_" status="modified">
+            <num>المادة 190 »</num>
+            <content>
+            <paragraph>
+            <p><obligation>يؤسس <term refersTo="#court_of_auditors">مجلس محاسبة</term> مكلف بمراقبة مالية الدولة والحزب والمجموعات المحلية والمؤسسات الاشتراكية بجميع أنواعها</obligation> «</p>
+            </paragraph>
+            <paragraph>
+            <p>(الباقي بدون تغيير)</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+    </body>
+  </act>
+</akomaNtoso>

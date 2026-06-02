@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="law">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/law/2015-12-30/15-20/main"/>
+      <FRBRuri value="/akn/dz/act/law/2015-12-30/15-20"/>
+      <FRBRdate date="2015-12-30" name="enactment"/>
+      <FRBRauthor href="#parliament"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="15-20"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/law/2015-12-30/15-20/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/law/2015-12-30/15-20/ara@"/>
+      <FRBRdate date="2015-12-30" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/law/2015-12-30/15-20/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/law/2015-12-30/15-20/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="parliament" href="/ontology/organization/dz/parliament" showAs="البرلمان"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="president" href="/ontology/person/dz/president" showAs="رئيس الجمهورية"/>
+  </references>
+<lifecycle source="#source"><eventRef eId="evt_1" date="2015-12-30" source="#source" type="generation"/></lifecycle><analysis source="#source"><activeModifications><textualMod type="substitution" eId="amend_1"><source href="#art_1"/><destination href="/akn/dz/act/order/1975-09-26/75-59"/><force period="#evt_1"/></textualMod><textualMod type="substitution" eId="amend_2"><source href="#art_2"/><destination href="/akn/dz/act/order/1975-09-26/75-59#art_566"/><force period="#evt_1"/></textualMod><textualMod type="substitution" eId="amend_3"><source href="#art_2"/><destination href="/akn/dz/act/order/1975-09-26/75-59#art_567"/><force period="#evt_1"/></textualMod><textualMod type="substitution" eId="amend_4"><source href="#art_4"/><destination href="/akn/dz/act/order/1975-09-26/75-59#art_590"/><force period="#evt_1"/></textualMod></activeModifications></analysis></meta>
+    <preface>
+  <docTitle>قانون يعدل ويتمم الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون التجاري</docTitle>
+  <docNumber>15-20</docNumber>
+  <docDate date="2015-12-30">18 ربيع الأول عام 1437 الموافق 30 ديسمبر سنة 2015</docDate>
+  <docAuthority>البرلمان</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>إن رئيس الجمهورية،</p>
+    </citation>
+    <citation>
+      <p>بناء على الدستور، لا سيما المواد 119 و 120 و 122 و 126 منه،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 75-58 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون المدني، المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون التجاري، المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 76-105 المؤرخ في 17 ذي الحجة عام 1396 الموافق 9 ديسمبر سنة 1976 والمتضمن قانون التسجيل، المعدل والمتمم، لا سيما المادة 256 منه،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 08-09 المؤرخ في 18 صفر عام 1429 الموافق 25 فبراير سنة 2008 والمتضمن قانون الإجراءات المدنية والإدارية،</p>
+    </citation>
+    <citation>
+      <p>وبعد رأي مجلس الدولة،</p>
+    </citation>
+    <citation>
+      <p>وبعد مصادقة البرلمان،</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يصدر القانون الآتي نصه :</p>
+  </formula>
+</preamble>
+    <body>
+      <article eId="art_1">
+        <num>المادة الأولى</num>
+        <content>
+        <paragraph>
+        <p>يهدف هذا القانون إلى تعديل وتتميم <ref href="/akn/dz/act/order/1975-09-26/75-59">الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975</ref> والمتضمن <term refersTo="#commercial_code">القانون التجاري</term>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_2">
+        <num>المادة 2</num>
+        <content>
+        <paragraph>
+        <p>تعدل وتتمم <ref href="/akn/dz/act/order/1975-09-26/75-59#art_566">المادتان 566</ref> و <ref href="/akn/dz/act/order/1975-09-26/75-59#art_567">567</ref> من <ref href="/akn/dz/act/order/1975-09-26/75-59">الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975</ref> والمذكور أعلاه، وتحرران كما يأتي :</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_566" status="modified">
+        <num>المادة 566</num>
+        <content>
+        <paragraph>
+        <p><obligation>يحدد رأسمال <term refersTo="#limited_liability_company">الشركة ذات المسؤولية المحدودة</term> بحرية من طرف الشركاء في القانون الأساسي للشركة</obligation> ويقسم إلى حصص ذات قيمة اسمية متساوية.</p>
+        </paragraph>
+        <paragraph>
+        <p><obligation>يجب أن يشار إلى الرأسمال في جميع وثائق الشركة</obligation>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_3">
+        <num>المادة 3</num>
+        <content>
+        <paragraph>
+        <p>يتمم <ref href="/akn/dz/act/order/1975-09-26/75-59">الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975</ref> والمذكور أعلاه، بمادتين <ref href="#art_567_bis">567 مكرر</ref> و <ref href="#art_567_bis_1">567 مكرر 1</ref>، تحرران كما يأتي :</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_567_bis" status="new">
+        <num>المادة 567 مكرر</num>
+        <content>
+        <paragraph>
+        <p><right>يمكن أن تكون المساهمة في <term refersTo="#limited_liability_company">الشركة ذات المسؤولية المحدودة</term> تقديم عمل</right>، تحدد كيفيات تقدير قيمته وما يخوله من أرباح ضمن القانون الأساسي للشركة ولا يدخل في تأسيس رأسمال الشركة.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_4">
+        <num>المادة 4</num>
+        <content>
+        <paragraph>
+        <p>تعدل <ref href="/akn/dz/act/order/1975-09-26/75-59#art_590">المادة 590</ref> من <ref href="/akn/dz/act/order/1975-09-26/75-59">الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975</ref> والمذكور أعلاه، وتحرر كما يأتي :</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_590" status="modified">
+        <num>المادة 590</num>
+        <content>
+        <paragraph>
+        <p><obligation>لا يسوغ أن يتجاوز عدد الشركاء في <term refersTo="#limited_liability_company">الشركة ذات المسؤولية المحدودة</term> خمسين (50) شريكا</obligation>.</p>
+        </paragraph>
+        <paragraph>
+        <p><condition>وإذا أصبحت الشركة مشتملة على أكثر من خمسين (50) شريكا</condition> <obligation>وجب تحويلها إلى شركة مساهمة في أجل سنة واحدة</obligation>. وعند عدم القيام بذلك، تنحل الشركة ما لم يصبح عدد الشركاء في تلك الفترة من الزمن مساويا لخمسين (50) شريكا أو أقل.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_5">
+        <num>المادة 5</num>
+        <content>
+        <paragraph>
+        <p>ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية.</p>
+        </paragraph>
+        </content>
+        </article>
+    </body>
+  </act>
+</akomaNtoso>

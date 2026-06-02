@@ -1,0 +1,1750 @@
+@prefix dzdoc: <https://legal.dz/ontology/document#> .
+@prefix dznorm: <https://legal.dz/ontology/norm#> .
+@prefix dzorg: <https://legal.dz/resource/organization/> .
+@prefix dzterm: <https://legal.dz/resource/term/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dzorg:الجريدة_الرسمية a dzdoc:Organization ;
+    rdfs:label "الجريدة الرسمية"@ar ;
+    dzdoc:frbrUri "/ontology/organization/dz/joradp"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_104_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_104> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يجسد رئيس الجمهورية، رئيس الدولة، وحدة الأمة."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_104_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_104> ;
+    dzdoc:position 1 ;
+    dzdoc:text "هو حامي الدستور يجسد الدولة داخل البلاد وخارجها."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_104_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_104> ;
+    dzdoc:position 2 ;
+    dzdoc:text "له أن يخاطب الأمة مباشرة."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يضطلع رئيس الجمهورية، بالاضافة الى السلطات التي تخولها إياه صراحة أحكام أخرى في الدستور، بالسلطات والصلاحيات الآتية : 1) هو القائد الأعلى لجميع القوات المسلحة للجمهورية، 2) يتولى مسؤولية الدفاع الوطني، 3) يقرر السياسة الخارجية للأمة، طبقا للميثاق الوطني وأحكام الدستور ويوجهها، 4) يعين رئيس الحكومة وينهي مهامه، 5) يرأس مجلس الوزراء، 6) يوقع المراسيم الرئاسية، 7) يعين في الوظائف المدنية والعسكرية طبقا للقانون، 8) له حق اصدار العفو وحق الغاء العقوبات أو تخفيضها، وحق ازالة الآثار القانونية، أيا كانت طبيعتها، التي تترتب على الأحكام التي تصدرها أية جهة قضائية، 9) يمكنه أن يعمد الى استفتاء الشعب في كل قضية ذات أهمية وطنية، 10) يمكنه أن يفوض بعض سلطاته الى نائبه أو الى نوابه مع مراعاة أحكام المادة 116 من الدستور، 11) يعين سفراء الجمهورية والمبعوثين فوق العادة الى الخارج وينهي مهامهم، ويتسلم أوراق اعتماد الممثلين الدبلوماسيين الأجانب، وأوراق انهاء مهامهم، 12) يبرم المعاهدات الدولية ويصادق عليها حسب الشروط التي يحددها الدستور، 13) يسلم أوسمة الدولة ونياشينها وشهاداتها التشريفية."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_113_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_113> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يضبط رئيس الحكومة برنامج حكومته، وينسقه وينفذه. . وهو مسؤول أمام المجلس الشعبي الوطني."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1141_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1141> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يشكل رئيس الحكومة بعد استشارات واسعة، حكومته، ويقدم أعضاءها الذين اختارهم لرئيس الجمهورية الذي يعينهم."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1142_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1142> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يقدم رئيس الحكومة برنامجه الى المجلس الشعبي الوطني للموافقة عليه."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1142_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1142> ;
+    dzdoc:position 1 ;
+    dzdoc:text "يجري المجلس الشعبي الوطني مناقشة عامة للبرنامج المقدم."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1142_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1142> ;
+    dzdoc:position 2 ;
+    dzdoc:text "ويمكن رئيس الحكومة أن يكيف برنامجه، في ضوء هذه المناقشة."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1143_condition_0_dd6b90e1> a dznorm:Condition ;
+    dzdoc:hasRole <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1143_condition_0_dd6b90e1_role_84eb3ddbdb> ;
+    dznorm:conditionText "في حالة عدم موافقة المجلس الشعبي الوطني على البرنامج المعروض"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1143> ;
+    dznorm:position 0 .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1143_condition_0_dd6b90e1_role_84eb3ddbdb> a dznorm:Role ;
+    rdfs:label "البرنامج المعروض"@ar ;
+    dzdoc:confidenceScore 0.66 ;
+    dzdoc:extractionMethod "lexical_role_pattern" ;
+    dzdoc:sourceTextSpan "في حالة عدم موافقة المجلس الشعبي الوطني على البرنامج المعروض"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1143> .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1143_obligation_0_054a4879> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1143> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يقدم رئيس الحكومة لرئيس الجمهورية استقالة حكومته"@ar ;
+    dznorm:sourceArticle "art_1143" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1143_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1143> ;
+    dzdoc:position 0 ;
+    dzdoc:text "في حالة عدم موافقة المجلس الشعبي الوطني على البرنامج المعروض، يقدم رئيس الحكومة لرئيس الجمهورية استقالة حكومته."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1143_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1143> ;
+    dzdoc:position 1 ;
+    dzdoc:text "يعين رئيس الجمهورية من جديد رئيس حكومة"@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1144_condition_0_d116f49f> a dznorm:Condition ;
+    dzdoc:hasRole <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1144_condition_0_d116f49f_role_3fbd9ac658> ;
+    dznorm:conditionText "اذا لم تحصل موافقة المجلس الشعبي الوطني على برنامج عمل رئيس الحكومة من جديد"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1144> ;
+    dznorm:position 0 .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1144_condition_0_d116f49f_role_3fbd9ac658> a dznorm:Role ;
+    rdfs:label "برنامج عمل رئيس الحكومة"@ar ;
+    dzdoc:confidenceScore 0.66 ;
+    dzdoc:extractionMethod "lexical_role_pattern" ;
+    dzdoc:sourceTextSpan "اذا لم تحصل موافقة المجلس الشعبي الوطني على برنامج عمل رئيس الحكومة من جديد"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1144> .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1144_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1144> ;
+    dzdoc:position 0 ;
+    dzdoc:text "اذا لم تحصل موافقة المجلس الشعبي الوطني على برنامج عمل رئيس الحكومة من جديد، يحل المجلس قانونا."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1144_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1144> ;
+    dzdoc:position 1 ;
+    dzdoc:text "تنظم انتخابات تشريعية جديدة في أجل أقصاه ثلاثة أشهر."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1145_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1145> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تقدم الحكومة للمجلس الشعبي الوطني بيانا سنويا عن السياسة العامة ."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1145_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1145> ;
+    dzdoc:position 1 ;
+    dzdoc:text "يعقب هذا البيان نقاش عام حول عمل الحكومة. ويمكن المجلس الشعبي الوطني أن يختتم هذا النقاش بلائحة."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1145_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1145> ;
+    dzdoc:position 2 ;
+    dzdoc:text "الرئيس الحكومة أن يطلب تصويتا بالثقة."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1151_extref_f0049a66> a dzdoc:ExternalReference ;
+    rdfs:label "الدستور"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/constitution/2020-12-30/1"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/constitution/2020-12-30/1"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/constitution/2020-12-30/1" ;
+    dzdoc:referencesTarget <https://legal.dz/resource/constitution/2020-12-30/1> ;
+    dzdoc:resolutionReason "canonical_akn_path" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/constitution/2020-12-30/1"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1151_obligation_0_18edb75c> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dzdoc:hasReference <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1151_obligation_0_18edb75c_ref_f0049a66f9c7> ;
+    dzdoc:hasRole <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1151_obligation_0_18edb75c_role_893f879c6e> ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1151_obligation_0_18edb75c_ref_f0049a66f9c7> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1151> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يمارس رئيس الحكومة، زيادة على السلطات التي تخولها إياه صراحة أحكام أخرى في الدستور، الصلاحيات الآتية :"@ar ;
+    dznorm:sourceArticle "art_1151" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1151_obligation_0_18edb75c_role_893f879c6e> a dznorm:Role ;
+    rdfs:label "السلطات التي تخولها إياه"@ar ;
+    dzdoc:confidenceScore 0.66 ;
+    dzdoc:extractionMethod "lexical_role_pattern" ;
+    dzdoc:sourceTextSpan "يمارس رئيس الحكومة، زيادة على السلطات التي تخولها إياه صراحة أحكام أخرى في الدستور، الصلاحيات الآتية :"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1151> .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1151_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1151> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يمارس رئيس الحكومة، زيادة على السلطات التي تخولها إياه صراحة أحكام أخرى في الدستور، الصلاحيات الآتية : يوزع الصلاحيات بين أعضاء الحكومة مع احترام الأحكام الدستورية، يرأس مجلس الحكومة، يسهر على تنفيذ القوانين والتنظيمات، يوقع المراسيم التنفيذية، يعين في وظائف الدولة طبقا للقانون."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1152_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1152> ;
+    dzdoc:position 0 ;
+    dzdoc:text "لرئيس الحكومة أن يقدم استقالة حكومته لرئيس الجمهورية."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1152_right_0_ffe18a2b> a dznorm:Right ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_right_tag" ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1152> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "لرئيس الحكومة أن يقدم استقالة حكومته لرئيس الجمهورية"@ar ;
+    dznorm:sourceArticle "art_1152" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_obligation_0_9c046fe3> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dzdoc:hasAction <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_obligation_0_9c046fe3_action_38e73df030> ;
+    dzdoc:hasReference <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_obligation_0_9c046fe3_ref_1c0cf8f19f42>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_obligation_0_9c046fe3_ref_1da4c491e3b9>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_obligation_0_9c046fe3_ref_3ac7b0207866>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_obligation_0_9c046fe3_ref_48f5502d621b>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_obligation_0_9c046fe3_ref_b0b6accb44e1>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_obligation_0_9c046fe3_ref_cf15ca8668a6>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_obligation_0_9c046fe3_ref_e9adfb54cd34>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_obligation_0_9c046fe3_ref_ff1a91355c9f> ;
+    dzdoc:references <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111__para_1>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111__para_2>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111__para_3>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111__para_5>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111__para_8>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_119>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_124> ;
+    dzdoc:referencesInternal <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111__para_1>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111__para_2>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111__para_3>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111__para_5>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111__para_8>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_119>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_124> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "لا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية، ورئيس الحكومة وأعضائها، أو في إعفائهم من مهامهم، أو في إجراء إستفتاء، أو في حل المجلس الشعبي الوطني، أو في تنظيم إنتخابات تشريعية مسبقة، أو في تطبيق الاحكام المنصوص عليها في المواد من 119 الى 124 من الدستور، وكذلك السلطات المحددة في الفقرات 1 و2 و3 و5 و 8 و المادة 111 من الدستور"@ar ;
+    dznorm:sourceArticle "art_116" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_obligation_0_9c046fe3_action_38e73df030> a dznorm:Action ;
+    rdfs:label "بأي حال من الأحوال أن"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "لا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية، ورئيس الحكومة وأعضائها، أو في إعفائهم من مهامهم، أو في إجراء إستفتاء، أو في حل المجلس الشعبي الوطني، أو في تنظيم إنتخابات تشريعية مسبقة، أو في تطبيق الاحكام المنصوص عليها في المواد من 119 الى 124 من الدستور، وكذلك السلطات المحددة في الفقرات 1 و2 و3 و5 و 8 و المادة 111 من الدستور"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116> .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_obligation_0_9c046fe3_ref_1c0cf8f19f42> a dzdoc:Reference ;
+    rdfs:label "5"@ar ;
+    dzdoc:frbrUri "#art_111__para_5"^^xsd:anyURI ;
+    dzdoc:referencesTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111__para_5> ;
+    dzdoc:sourceEId "art_116" ;
+    dzdoc:sourceElementType "obligation" ;
+    dzdoc:sourceTextSpan "لا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية، ورئيس الحكومة وأعضائها، أو في إعفائهم من مهامهم، أو في إجراء إستفتاء، أو في حل المجلس الشعبي الوطني، أو في تنظيم إنتخابات تشريعية مسبقة، أو في تطبيق الاحكام المنصوص عليها في المواد من 119 الى 124 من الدستور، وكذلك السلطات المحددة في الفقرات 1 و2 و3 و5 و 8 و المادة 111 من الدستور"@ar ;
+    dzdoc:targetEId "art_111__para_5" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_obligation_0_9c046fe3_ref_1da4c491e3b9> a dzdoc:Reference ;
+    rdfs:label "المواد من 119"@ar ;
+    dzdoc:frbrUri "#art_119"^^xsd:anyURI ;
+    dzdoc:referencesTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_119> ;
+    dzdoc:sourceEId "art_116" ;
+    dzdoc:sourceElementType "obligation" ;
+    dzdoc:sourceTextSpan "لا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية، ورئيس الحكومة وأعضائها، أو في إعفائهم من مهامهم، أو في إجراء إستفتاء، أو في حل المجلس الشعبي الوطني، أو في تنظيم إنتخابات تشريعية مسبقة، أو في تطبيق الاحكام المنصوص عليها في المواد من 119 الى 124 من الدستور، وكذلك السلطات المحددة في الفقرات 1 و2 و3 و5 و 8 و المادة 111 من الدستور"@ar ;
+    dzdoc:targetEId "art_119" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_obligation_0_9c046fe3_ref_3ac7b0207866> a dzdoc:Reference ;
+    rdfs:label "124"@ar ;
+    dzdoc:frbrUri "#art_124"^^xsd:anyURI ;
+    dzdoc:referencesTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_124> ;
+    dzdoc:sourceEId "art_116" ;
+    dzdoc:sourceElementType "obligation" ;
+    dzdoc:sourceTextSpan "لا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية، ورئيس الحكومة وأعضائها، أو في إعفائهم من مهامهم، أو في إجراء إستفتاء، أو في حل المجلس الشعبي الوطني، أو في تنظيم إنتخابات تشريعية مسبقة، أو في تطبيق الاحكام المنصوص عليها في المواد من 119 الى 124 من الدستور، وكذلك السلطات المحددة في الفقرات 1 و2 و3 و5 و 8 و المادة 111 من الدستور"@ar ;
+    dzdoc:targetEId "art_124" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_obligation_0_9c046fe3_ref_48f5502d621b> a dzdoc:Reference ;
+    rdfs:label "3"@ar ;
+    dzdoc:frbrUri "#art_111__para_3"^^xsd:anyURI ;
+    dzdoc:referencesTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111__para_3> ;
+    dzdoc:sourceEId "art_116" ;
+    dzdoc:sourceElementType "obligation" ;
+    dzdoc:sourceTextSpan "لا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية، ورئيس الحكومة وأعضائها، أو في إعفائهم من مهامهم، أو في إجراء إستفتاء، أو في حل المجلس الشعبي الوطني، أو في تنظيم إنتخابات تشريعية مسبقة، أو في تطبيق الاحكام المنصوص عليها في المواد من 119 الى 124 من الدستور، وكذلك السلطات المحددة في الفقرات 1 و2 و3 و5 و 8 و المادة 111 من الدستور"@ar ;
+    dzdoc:targetEId "art_111__para_3" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_obligation_0_9c046fe3_ref_b0b6accb44e1> a dzdoc:Reference ;
+    rdfs:label "1"@ar ;
+    dzdoc:frbrUri "#art_111__para_1"^^xsd:anyURI ;
+    dzdoc:referencesTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111__para_1> ;
+    dzdoc:sourceEId "art_116" ;
+    dzdoc:sourceElementType "obligation" ;
+    dzdoc:sourceTextSpan "لا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية، ورئيس الحكومة وأعضائها، أو في إعفائهم من مهامهم، أو في إجراء إستفتاء، أو في حل المجلس الشعبي الوطني، أو في تنظيم إنتخابات تشريعية مسبقة، أو في تطبيق الاحكام المنصوص عليها في المواد من 119 الى 124 من الدستور، وكذلك السلطات المحددة في الفقرات 1 و2 و3 و5 و 8 و المادة 111 من الدستور"@ar ;
+    dzdoc:targetEId "art_111__para_1" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_obligation_0_9c046fe3_ref_cf15ca8668a6> a dzdoc:Reference ;
+    rdfs:label "المادة 111"@ar ;
+    dzdoc:frbrUri "#art_111"^^xsd:anyURI ;
+    dzdoc:referencesTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111> ;
+    dzdoc:sourceEId "art_116" ;
+    dzdoc:sourceElementType "obligation" ;
+    dzdoc:sourceTextSpan "لا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية، ورئيس الحكومة وأعضائها، أو في إعفائهم من مهامهم، أو في إجراء إستفتاء، أو في حل المجلس الشعبي الوطني، أو في تنظيم إنتخابات تشريعية مسبقة، أو في تطبيق الاحكام المنصوص عليها في المواد من 119 الى 124 من الدستور، وكذلك السلطات المحددة في الفقرات 1 و2 و3 و5 و 8 و المادة 111 من الدستور"@ar ;
+    dzdoc:targetEId "art_111" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_obligation_0_9c046fe3_ref_e9adfb54cd34> a dzdoc:Reference ;
+    rdfs:label "2"@ar ;
+    dzdoc:frbrUri "#art_111__para_2"^^xsd:anyURI ;
+    dzdoc:referencesTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111__para_2> ;
+    dzdoc:sourceEId "art_116" ;
+    dzdoc:sourceElementType "obligation" ;
+    dzdoc:sourceTextSpan "لا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية، ورئيس الحكومة وأعضائها، أو في إعفائهم من مهامهم، أو في إجراء إستفتاء، أو في حل المجلس الشعبي الوطني، أو في تنظيم إنتخابات تشريعية مسبقة، أو في تطبيق الاحكام المنصوص عليها في المواد من 119 الى 124 من الدستور، وكذلك السلطات المحددة في الفقرات 1 و2 و3 و5 و 8 و المادة 111 من الدستور"@ar ;
+    dzdoc:targetEId "art_111__para_2" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_obligation_0_9c046fe3_ref_ff1a91355c9f> a dzdoc:Reference ;
+    rdfs:label "8"@ar ;
+    dzdoc:frbrUri "#art_111__para_8"^^xsd:anyURI ;
+    dzdoc:referencesTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111__para_8> ;
+    dzdoc:sourceEId "art_116" ;
+    dzdoc:sourceElementType "obligation" ;
+    dzdoc:sourceTextSpan "لا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية، ورئيس الحكومة وأعضائها، أو في إعفائهم من مهامهم، أو في إجراء إستفتاء، أو في حل المجلس الشعبي الوطني، أو في تنظيم إنتخابات تشريعية مسبقة، أو في تطبيق الاحكام المنصوص عليها في المواد من 119 الى 124 من الدستور، وكذلك السلطات المحددة في الفقرات 1 و2 و3 و5 و 8 و المادة 111 من الدستور"@ar ;
+    dzdoc:targetEId "art_111__para_8" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116> ;
+    dzdoc:position 0 ;
+    dzdoc:text "لا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية، ورئيس الحكومة وأعضائها، أو في إعفائهم من مهامهم، أو في إجراء إستفتاء، أو في حل المجلس الشعبي الوطني، أو في تنظيم إنتخابات تشريعية مسبقة، أو في تطبيق الاحكام المنصوص عليها في المواد من 119 الى 124 من الدستور، وكذلك السلطات المحددة في الفقرات 1 و2 و3 و5 و 8 و المادة 111 من الدستور"@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_permission_0_9c046fe3> a dznorm:Permission ;
+    dzdoc:confidenceScore 0.72 ;
+    dzdoc:extractionMethod "lexical_permission_cue" ;
+    dzdoc:hasAction <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_permission_0_9c046fe3_action_0059e6ed1a> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "لا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية، ورئيس الحكومة وأعضائها، أو في إعفائهم من مهامهم، أو في إجراء إستفتاء، أو في حل المجلس الشعبي الوطني، أو في تنظيم إنتخابات تشريعية مسبقة، أو في تطبيق الاحكام المنصوص عليها في المواد من 119 الى 124 من الدستور، وكذلك السلطات المحددة في الفقرات 1 و2 و3 و5 و 8 و المادة 111 من الدستور"@ar ;
+    dznorm:sourceArticle "art_116" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_permission_0_9c046fe3_action_0059e6ed1a> a dznorm:Action ;
+    rdfs:label "بأي حال من الأحوال أن"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "لا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية، ورئيس الحكومة وأعضائها، أو في إعفائهم من مهامهم، أو في إجراء إستفتاء، أو في حل المجلس الشعبي الوطني، أو في تنظيم إنتخابات تشريعية مسبقة، أو في تطبيق الاحكام المنصوص عليها في المواد من 119 الى 124 من الدستور، وكذلك السلطات المحددة في الفقرات 1 و2 و3 و5 و 8 و المادة 111 من الدستور"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116> .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_prohibition_0_9c046fe3> a dznorm:Prohibition ;
+    dzdoc:confidenceScore 0.72 ;
+    dzdoc:extractionMethod "lexical_prohibition_cue" ;
+    dzdoc:hasAction <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_prohibition_0_9c046fe3_action_29d0351e49> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "لا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية، ورئيس الحكومة وأعضائها، أو في إعفائهم من مهامهم، أو في إجراء إستفتاء، أو في حل المجلس الشعبي الوطني، أو في تنظيم إنتخابات تشريعية مسبقة، أو في تطبيق الاحكام المنصوص عليها في المواد من 119 الى 124 من الدستور، وكذلك السلطات المحددة في الفقرات 1 و2 و3 و5 و 8 و المادة 111 من الدستور"@ar ;
+    dznorm:sourceArticle "art_116" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_prohibition_0_9c046fe3_action_29d0351e49> a dznorm:Action ;
+    rdfs:label "بأي حال من الأحوال أن"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "لا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية، ورئيس الحكومة وأعضائها، أو في إعفائهم من مهامهم، أو في إجراء إستفتاء، أو في حل المجلس الشعبي الوطني، أو في تنظيم إنتخابات تشريعية مسبقة، أو في تطبيق الاحكام المنصوص عليها في المواد من 119 الى 124 من الدستور، وكذلك السلطات المحددة في الفقرات 1 و2 و3 و5 و 8 و المادة 111 من الدستور"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116> .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147_condition_0_92f3372b> a dznorm:Condition ;
+    dznorm:conditionText "بمبادرة من رئيس الجمهورية أو بطلب من ثلثي أعضاء المجلس او من رئيس الحكومة"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147> ;
+    dznorm:position 0 .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147_obligation_0_80b7d3dc> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "تختتم الدورة الاستثنائية بمجرد ما يستنفد المجلس الشعبي الوطني جدول الاعمال الذي استدعي من أجله"@ar ;
+    dznorm:sourceArticle "art_147" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يمكن استدعاء المجلس الشعبي الوطني للاجتماع في دورة استثنائية بمبادرة من رئيس الجمهورية أو بطلب من ثلثي أعضاء المجلس او من رئيس الحكومة."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147> ;
+    dzdoc:position 1 ;
+    dzdoc:text "تختتم الدورة الاستثنائية بمجرد ما يستنفد المجلس الشعبي الوطني جدول الاعمال الذي استدعي من أجله."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147_permission_0_e09857d4> a dznorm:Permission ;
+    dzdoc:confidenceScore 0.72 ;
+    dzdoc:extractionMethod "lexical_permission_cue" ;
+    dzdoc:hasAction <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147_permission_0_e09857d4_action_dec0bbe2a9> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يمكن استدعاء المجلس الشعبي الوطني للاجتماع في دورة استثنائية بمبادرة من رئيس الجمهورية أو بطلب من ثلثي أعضاء المجلس او من رئيس الحكومة."@ar ;
+    dznorm:sourceArticle "art_147" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147_permission_0_e09857d4_action_dec0bbe2a9> a dznorm:Action ;
+    rdfs:label "استدعاء المجلس الشعبي الوطني للاجتماع"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يمكن استدعاء المجلس الشعبي الوطني للاجتماع في دورة استثنائية بمبادرة من رئيس الجمهورية أو بطلب من ثلثي أعضاء المجلس او من رئيس الحكومة."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147> .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147_right_0_06ab6665> a dznorm:Right ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_right_tag" ;
+    dzdoc:hasAction <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147_right_0_06ab6665_action_7c43cc7a79> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يمكن استدعاء المجلس الشعبي الوطني للاجتماع في دورة استثنائية"@ar ;
+    dznorm:sourceArticle "art_147" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147_right_0_06ab6665_action_7c43cc7a79> a dznorm:Action ;
+    rdfs:label "استدعاء المجلس الشعبي الوطني للاجتماع"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يمكن استدعاء المجلس الشعبي الوطني للاجتماع في دورة استثنائية"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147> .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_148_condition_0_6e0452b5> a dznorm:Condition ;
+    dznorm:conditionText "تكون اقتراحات القوانين قابلة للنقاش اذا قدمها عشرون نائبا"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_148> ;
+    dznorm:position 0 .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_148_obligation_0_a73f967e> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_148> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "تقدم الحكومة مشاريع القوانين المكتب المجلس الشعبي الوطني"@ar ;
+    dznorm:sourceArticle "art_148" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_148_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_148> ;
+    dzdoc:position 0 ;
+    dzdoc:text "لكل من رئيس الحكومة وأعضاء المجلس الشعبي الوطني أن يبادر بالقوانين."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_148_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_148> ;
+    dzdoc:position 1 ;
+    dzdoc:text "تكون اقتراحات القوانين قابلة للنقاش اذا قدمها عشرون نائبا."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_148_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_148> ;
+    dzdoc:position 2 ;
+    dzdoc:text "تقدم الحكومة مشاريع القوانين المكتب المجلس الشعبي الوطني."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_148_right_0_89b5e797> a dznorm:Right ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_right_tag" ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_148> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "لكل من رئيس الحكومة وأعضاء المجلس الشعبي الوطني أن يبادر بالقوانين"@ar ;
+    dznorm:sourceArticle "art_148" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_153_obligation_0_d4816e1e> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dzdoc:hasRole <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_153_obligation_0_d4816e1e_role_3cea51878b> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_153> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "وتعرض الحكومة النصوص الصادرة بهذه الكيفية على المجلس الشعبي الوطني في أول دورة لاحقة ليوافق عليها"@ar ;
+    dznorm:sourceArticle "art_153" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_153_obligation_0_d4816e1e_role_3cea51878b> a dznorm:Role ;
+    rdfs:label "المجلس الشعبي الوطني في"@ar ;
+    dzdoc:confidenceScore 0.66 ;
+    dzdoc:extractionMethod "lexical_role_pattern" ;
+    dzdoc:sourceTextSpan "وتعرض الحكومة النصوص الصادرة بهذه الكيفية على المجلس الشعبي الوطني في أول دورة لاحقة ليوافق عليها"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_153> .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_153_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_153> ;
+    dzdoc:position 0 ;
+    dzdoc:text "لـ رئيس الجمهورية، فيما بين دورتي المجلس الشعبي الوطني، أن يشرع بأمر، بناء على اقتراح من رئيس الحكومة."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_153_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_153> ;
+    dzdoc:position 1 ;
+    dzdoc:text "وتعرض الحكومة النصوص الصادرة بهذه الكيفية على المجلس الشعبي الوطني في أول دورة لاحقة ليوافق عليها."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_153_right_0_7e586f01> a dznorm:Right ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_right_tag" ;
+    dzdoc:hasRole <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_153_right_0_7e586f01_role_7015edd87d> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_153> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "لـ رئيس الجمهورية، فيما بين دورتي المجلس الشعبي الوطني، أن يشرع بأمر، بناء على اقتراح من رئيس الحكومة"@ar ;
+    dznorm:sourceArticle "art_153" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_153_right_0_7e586f01_role_7015edd87d> a dznorm:Role ;
+    rdfs:label "اقتراح من رئيس الحكومة"@ar ;
+    dzdoc:confidenceScore 0.66 ;
+    dzdoc:extractionMethod "lexical_role_pattern" ;
+    dzdoc:sourceTextSpan "لـ رئيس الجمهورية، فيما بين دورتي المجلس الشعبي الوطني، أن يشرع بأمر، بناء على اقتراح من رئيس الحكومة"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_153> .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_154_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_154> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يصبح رقم هذه المادة 155 بدون تغيير."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155_condition_0_f81d34f8> a dznorm:Condition ;
+    dznorm:conditionText "في ظرف ثلاثين (30) يوما من تاريخ إقراره"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155> ;
+    dznorm:position 0 .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155_condition_1_840aae1e> a dznorm:Condition ;
+    dznorm:conditionText "وفي هذه الحالة يتم إقرار القانون بأغلبية ثلثي أعضاء المجلس الشعبي الوطني"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155> ;
+    dznorm:position 1 .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يصبح رقم هذه المادة 154، وتحرر هكذا :"@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155> ;
+    dzdoc:position 1 ;
+    dzdoc:text "لـ رئيس الحكومة أن يطلب إجراء مداولة ثانية في القانون الذي تم التصويت عليه، في ظرف ثلاثين (30) يوما من تاريخ إقراره."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155> ;
+    dzdoc:position 2 ;
+    dzdoc:text "وفي هذه الحالة يتم إقرار القانون بأغلبية ثلثي أعضاء المجلس الشعبي الوطني."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155_right_0_ae4cd71e> a dznorm:Right ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_right_tag" ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "لـ رئيس الحكومة أن يطلب إجراء مداولة ثانية في القانون الذي تم التصويت عليه"@ar ;
+    dznorm:sourceArticle "art_155" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_156_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_156> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يمكن رئيس الجمهورية أن يوجه خطابا إلى المجلس الشعبي الوطني."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_156_permission_0_c89e1869> a dznorm:Permission ;
+    dzdoc:confidenceScore 0.72 ;
+    dzdoc:extractionMethod "lexical_permission_cue" ;
+    dzdoc:hasAction <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_156_permission_0_c89e1869_action_5fab21a5fe> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_156> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يمكن رئيس الجمهورية أن يوجه خطابا إلى المجلس الشعبي الوطني."@ar ;
+    dznorm:sourceArticle "art_156" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_156_permission_0_c89e1869_action_5fab21a5fe> a dznorm:Action ;
+    rdfs:label "رئيس الجمهورية أن يوجه خطابا"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يمكن رئيس الجمهورية أن يوجه خطابا إلى المجلس الشعبي الوطني."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_156> .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_156_right_0_fc07e6d5> a dznorm:Right ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_right_tag" ;
+    dzdoc:hasAction <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_156_right_0_fc07e6d5_action_65ee8deeb7> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_156> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يمكن رئيس الجمهورية أن يوجه خطابا إلى المجلس الشعبي الوطني"@ar ;
+    dznorm:sourceArticle "art_156" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_156_right_0_fc07e6d5_action_65ee8deeb7> a dznorm:Action ;
+    rdfs:label "رئيس الجمهورية أن يوجه خطابا"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يمكن رئيس الجمهورية أن يوجه خطابا إلى المجلس الشعبي الوطني"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_156> .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157_condition_0_df8abc75> a dznorm:Condition ;
+    dznorm:conditionText "يمكن، عند الاقتضاء، أن تفضي هذه المناقشة الى إصدار لائحة من المجلس الشعبي الوطني"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157> ;
+    dznorm:position 0 .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يمكن المجلس الشعبي الوطني، بناء على طلب من رئيس الجمهورية، أو رئيس الحكومة، أو رئيس المجلس، أن يفتح مناقشة حول السياسة الخارجية."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157> ;
+    dzdoc:position 1 ;
+    dzdoc:text "يمكن، عند الاقتضاء، أن تفضي هذه المناقشة الى إصدار لائحة من المجلس الشعبي الوطني يبلغها رئيسه الى رئيس الجمهورية."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157_permission_0_50345974> a dznorm:Permission ;
+    dzdoc:confidenceScore 0.72 ;
+    dzdoc:extractionMethod "lexical_permission_cue" ;
+    dzdoc:hasAction <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157_permission_0_50345974_action_1deb395218> ;
+    dzdoc:hasRole <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157_permission_0_50345974_role_779d43775d> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يمكن المجلس الشعبي الوطني، بناء على طلب من رئيس الجمهورية، أو رئيس الحكومة، أو رئيس المجلس، أن يفتح مناقشة حول السياسة الخارجية."@ar ;
+    dznorm:sourceArticle "art_157" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157_permission_0_50345974_action_1deb395218> a dznorm:Action ;
+    rdfs:label "المجلس الشعبي الوطني"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يمكن المجلس الشعبي الوطني، بناء على طلب من رئيس الجمهورية، أو رئيس الحكومة، أو رئيس المجلس، أن يفتح مناقشة حول السياسة الخارجية."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157> .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157_permission_0_50345974_role_779d43775d> a dznorm:Role ;
+    rdfs:label "طلب من رئيس الجمهورية"@ar ;
+    dzdoc:confidenceScore 0.66 ;
+    dzdoc:extractionMethod "lexical_role_pattern" ;
+    dzdoc:sourceTextSpan "يمكن المجلس الشعبي الوطني، بناء على طلب من رئيس الجمهورية، أو رئيس الحكومة، أو رئيس المجلس، أن يفتح مناقشة حول السياسة الخارجية."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157> .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157_permission_1_62e42f4d> a dznorm:Permission ;
+    dzdoc:confidenceScore 0.72 ;
+    dzdoc:extractionMethod "lexical_permission_cue" ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157> ;
+    dznorm:position 1 ;
+    dznorm:provisionText "يمكن، عند الاقتضاء، أن تفضي هذه المناقشة الى إصدار لائحة من المجلس الشعبي الوطني يبلغها رئيسه الى رئيس الجمهورية."@ar ;
+    dznorm:sourceArticle "art_157" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157_right_0_54a8b6c9> a dznorm:Right ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_right_tag" ;
+    dzdoc:hasAction <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157_right_0_54a8b6c9_action_5ddf2a8906> ;
+    dzdoc:hasRole <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157_right_0_54a8b6c9_role_69126cbe59> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يمكن المجلس الشعبي الوطني، بناء على طلب من رئيس الجمهورية، أو رئيس الحكومة، أو رئيس المجلس، أن يفتح مناقشة حول السياسة الخارجية"@ar ;
+    dznorm:sourceArticle "art_157" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157_right_0_54a8b6c9_action_5ddf2a8906> a dznorm:Action ;
+    rdfs:label "المجلس الشعبي الوطني"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يمكن المجلس الشعبي الوطني، بناء على طلب من رئيس الجمهورية، أو رئيس الحكومة، أو رئيس المجلس، أن يفتح مناقشة حول السياسة الخارجية"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157> .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157_right_0_54a8b6c9_role_69126cbe59> a dznorm:Role ;
+    rdfs:label "طلب من رئيس الجمهورية"@ar ;
+    dzdoc:confidenceScore 0.66 ;
+    dzdoc:extractionMethod "lexical_role_pattern" ;
+    dzdoc:sourceTextSpan "يمكن المجلس الشعبي الوطني، بناء على طلب من رئيس الجمهورية، أو رئيس الحكومة، أو رئيس المجلس، أن يفتح مناقشة حول السياسة الخارجية"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157> .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_5_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_5> ;
+    dzdoc:position 0 ;
+    dzdoc:text "السيادة الوطنية ملك للشعب"@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_5_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_5> ;
+    dzdoc:position 1 ;
+    dzdoc:text "يمارس الشعب هذه السيادة عن طريق الاستفتاء"@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_5_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_5> ;
+    dzdoc:position 2 ;
+    dzdoc:text "يمارس الشعب هذه السيادة كذلك بواسطة ممثليه المنتخبين. ."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_5_para_3> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_5> ;
+    dzdoc:position 3 ;
+    dzdoc:text "الرئيس الجمهورية أن يرجع مباشرة إلى ارادة الشعب."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#preamble_segment_1> a dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#preamble> ;
+    dzdoc:position 1 ;
+    dzdoc:segmentType "formula" ;
+    dzdoc:text "يصدر القانون الآتي نصه"@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#preface> a dzdoc:Preface ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]/manifestation> a dzdoc:Manifestation ;
+    dzdoc:frbrUri "/akn/dz/act/law/1988-11-03/[NUMBER]/ara@.xml"^^xsd:anyURI ;
+    dzdoc:manifestationOf <https://legal.dz/resource/law/1988-11-03/[NUMBER]/expression> ;
+    dzdoc:transformDate "2026-04-28"^^xsd:date .
+
+dzterm:national_sovereignty a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "السيادة الوطنية"@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1151_obligation_0_18edb75c_ref_f0049a66f9c7> a dzdoc:ExternalReference,
+        dzdoc:Reference ;
+    rdfs:label "الدستور"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/constitution/2020-12-30/1"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/constitution/2020-12-30/1"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/constitution/2020-12-30/1" ;
+    dzdoc:referencesTarget <https://legal.dz/resource/constitution/2020-12-30/1> ;
+    dzdoc:resolutionReason "canonical_akn_path" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceEId "art_1151" ;
+    dzdoc:sourceElementType "obligation" ;
+    dzdoc:sourceTextSpan "يمارس رئيس الحكومة، زيادة على السلطات التي تخولها إياه صراحة أحكام أخرى في الدستور، الصلاحيات الآتية :"@ar ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/constitution/2020-12-30/1"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#preamble_segment_0> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#preamble> ;
+    dzdoc:position 0 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "بناء على التعديل الدستوري المصادق عليه في إستفتاء 3 نوفمبر سنة 1988"@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_104_19881103_OpEnact_d92a10749f> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_104> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_104> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_104> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:versionText "يجسد رئيس الجمهورية ، رئيس الدولة، وحدة الأمة. هو حامي الدستور يجسد الدولة داخل البلاد وخارجها. له أن يخاطب الأمة مباشرة."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_111_19881103_OpEnact_d6f487707c> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_111> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:versionText "يضطلع رئيس الجمهورية ، بالاضافة الى السلطات التي تخولها إياه صراحة أحكام أخرى في الدستور، بالسلطات والصلاحيات الآتية : 1) هو القائد الأعلى لجميع القوات المسلحة للجمهورية، 2) يتولى مسؤولية الدفاع الوطني، 3) يقرر السياسة الخارجية للأمة، طبقا للميثاق الوطني وأحكام الدستور ويوجهها، 4) يعين رئيس الحكومة وينهي مهامه، 5) يرأس مجلس الوزراء، 6) يوقع المراسيم الرئاسية، 7) يعين في الوظائف المدنية والعسكرية طبقا للقانون، 8) له حق اصدار العفو وحق الغاء العقوبات أو تخفيضها، وحق ازالة الآثار القانونية، أيا كانت طبيعتها، التي تترتب على الأحكام التي تصدرها أية جهة قضائية، 9) يمكنه أن يعمد الى استفتاء الشعب في كل قضية ذات أهمية وطنية، 10) يمكنه أن يفوض بعض سلطاته الى نائبه أو الى نوابه مع مراعاة أحكام المادة 116 من الدستور، 11) يعين سفراء الجمهورية والمبعوثين فوق العادة الى الخارج وينهي مهامهم، ويتسلم أوراق اعتماد الممثلين الدبلوماسيين الأجانب، وأوراق انهاء مهامهم، 12) يبرم المعاهدات الدولية ويصادق عليها حسب الشروط التي يحددها الدستور، 13) يسلم أوسمة الدولة ونياشينها وشهاداتها التشريفية."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_113_19881103_OpEnact_82ecf603ea> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_113> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_113> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_113> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:versionText "يضبط رئيس الحكومة برنامج حكومته، وينسقه وينفذه. . وهو مسؤول أمام المجلس الشعبي الوطني."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1141_19881103_OpEnact_bbdf159bf1> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1141> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1141> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1141> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:versionText "يشكل رئيس الحكومة بعد استشارات واسعة، حكومته، ويقدم أعضاءها الذين اختارهم ل رئيس الجمهورية الذي يعينهم."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1142_19881103_OpEnact_865a803879> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1142> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1142> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1142> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:versionText "يقدم رئيس الحكومة برنامجه الى المجلس الشعبي الوطني للموافقة عليه. يجري المجلس الشعبي الوطني مناقشة عامة للبرنامج المقدم. ويمكن رئيس الحكومة أن يكيف برنامجه، في ضوء هذه المناقشة."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1143_19881103_OpEnact_870fad3979> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1143> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1143> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1143> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:versionText "في حالة عدم موافقة المجلس الشعبي الوطني على البرنامج المعروض ، يقدم رئيس الحكومة لرئيس الجمهورية استقالة حكومته . يعين رئيس الجمهورية من جديد رئيس حكومة"@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1144_19881103_OpEnact_b1507ede96> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1144> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1144> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1144> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:versionText "اذا لم تحصل موافقة المجلس الشعبي الوطني على برنامج عمل رئيس الحكومة من جديد ، يحل المجلس قانونا. تنظم انتخابات تشريعية جديدة في أجل أقصاه ثلاثة أشهر."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1145_19881103_OpEnact_91fd1392a8> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1145> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1145> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1145> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:versionText "تقدم الحكومة للمجلس الشعبي الوطني بيانا سنويا عن السياسة العامة . يعقب هذا البيان نقاش عام حول عمل الحكومة. ويمكن المجلس الشعبي الوطني أن يختتم هذا النقاش بلائحة. الرئيس الحكومة أن يطلب تصويتا بالثقة."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1151_19881103_OpEnact_ad95e5a80b> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1151> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1151> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1151> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:versionText "يمارس رئيس الحكومة ، زيادة على السلطات التي تخولها إياه صراحة أحكام أخرى في الدستور ، الصلاحيات الآتية : يوزع الصلاحيات بين أعضاء الحكومة مع احترام الأحكام الدستورية، يرأس مجلس الحكومة، يسهر على تنفيذ القوانين والتنظيمات، يوقع المراسيم التنفيذية، يعين في وظائف الدولة طبقا للقانون."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1152_19881103_OpEnact_f24fd26d9f> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1152> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1152> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1152> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:versionText "ل رئيس الحكومة أن يقدم استقالة حكومته ل رئيس الجمهورية ."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_116_19881103_OpEnact_f5a7b310d8> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_116> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:versionText "لا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية، ورئيس الحكومة وأعضائها، أو في إعفائهم من مهامهم، أو في إجراء إستفتاء، أو في حل المجلس الشعبي الوطني، أو في تنظيم إنتخابات تشريعية مسبقة، أو في تطبيق الاحكام المنصوص عليها في المواد من 119 الى 124 من الدستور، وكذلك السلطات المحددة في الفقرات 1 و 2 و 3 و 5 و 8 و المادة 111 من الدستور"@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_147_19881103_OpEnact_be63041aa0> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_147> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:versionText "يمكن استدعاء المجلس الشعبي الوطني للاجتماع في دورة استثنائية بمبادرة من رئيس الجمهورية أو بطلب من ثلثي أعضاء المجلس او من رئيس الحكومة . تختتم الدورة الاستثنائية بمجرد ما يستنفد المجلس الشعبي الوطني جدول الاعمال الذي استدعي من أجله ."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_148_19881103_OpEnact_600b93b73d> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_148> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_148> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_148> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:versionText "لكل من رئيس الحكومة وأعضاء المجلس الشعبي الوطني أن يبادر بالقوانين . تكون اقتراحات القوانين قابلة للنقاش اذا قدمها عشرون نائبا . تقدم الحكومة مشاريع القوانين المكتب المجلس الشعبي الوطني ."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_153_19881103_OpEnact_bd78917796> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_153> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_153> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_153> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:versionText "لـ رئيس الجمهورية ، فيما بين دورتي المجلس الشعبي الوطني ، أن يشرع بأمر، بناء على اقتراح من رئيس الحكومة . وتعرض الحكومة النصوص الصادرة بهذه الكيفية على المجلس الشعبي الوطني في أول دورة لاحقة ليوافق عليها ."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_154_19881103_OpEnact_b8d9fb35a1> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_154> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_154> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_154> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:versionText "يصبح رقم هذه المادة 155 بدون تغيير."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_155_19881103_OpEnact_7dd1b531b0> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_155> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:versionText "يصبح رقم هذه المادة 154 ، وتحرر هكذا : لـ رئيس الحكومة أن يطلب إجراء مداولة ثانية في القانون الذي تم التصويت عليه ، في ظرف ثلاثين (30) يوما من تاريخ إقراره . وفي هذه الحالة يتم إقرار القانون بأغلبية ثلثي أعضاء المجلس الشعبي الوطني ."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_156_19881103_OpEnact_8435f0b088> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_156> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_156> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_156> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:versionText "يمكن رئيس الجمهورية أن يوجه خطابا إلى المجلس الشعبي الوطني ."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_157_19881103_OpEnact_b8dd2e53f5> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_157> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:versionText "يمكن المجلس الشعبي الوطني ، بناء على طلب من رئيس الجمهورية ، أو رئيس الحكومة ، أو رئيس المجلس، أن يفتح مناقشة حول السياسة الخارجية . يمكن، عند الاقتضاء، أن تفضي هذه المناقشة الى إصدار لائحة من المجلس الشعبي الوطني يبلغها رئيسه الى رئيس الجمهورية ."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_5_19881103_OpEnact_b6f717bb8d> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_5> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_5> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_5> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:versionText "السيادة الوطنية ملك للشعب يمارس الشعب هذه السيادة عن طريق الاستفتاء يمارس الشعب هذه السيادة كذلك بواسطة ممثليه المنتخبين. . الرئيس الجمهورية أن يرجع مباشرة إلى ارادة الشعب."@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]/expression> a dzdoc:Expression ;
+    dzdoc:expressionOf <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:frbrUri "/akn/dz/act/law/1988-11-03/[NUMBER]/ara@"^^xsd:anyURI ;
+    dzdoc:hasManifestation <https://legal.dz/resource/law/1988-11-03/[NUMBER]/manifestation> ;
+    dzdoc:language "ara" ;
+    dzdoc:publicationDate "1988-11-03"^^xsd:date .
+
+dzorg:parliament a dzdoc:Organization ;
+    rdfs:label "البرلمان"@ar ;
+    dzdoc:frbrUri "/ontology/organization/dz/parliament"^^xsd:anyURI .
+
+dzterm:government a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "الحكومة"@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#body> a dzdoc:Body ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:directlyContains <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الأول_المبادئ_الأساسية_لتنظيم_المجتمع_الجزائري>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها> ;
+    dzdoc:hasChapter <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الأول_المبادئ_الأساسية_لتنظيم_المجتمع_الجزائري>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها> .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الأول_المبادئ_الأساسية_لتنظيم_المجتمع_الجزائري> a dzdoc:Chapter ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#body> ;
+    dzdoc:directlyContains <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الأول_المبادئ_الأساسية_لتنظيم_المجتمع_الجزائري_sec_الأول_الجمهورية> ;
+    dzdoc:eId "chp_الأول_المبادئ_الأساسية_لتنظيم_المجتمع_الجزائري" ;
+    dzdoc:hasSection <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الأول_المبادئ_الأساسية_لتنظيم_المجتمع_الجزائري_sec_الأول_الجمهورية> ;
+    dzdoc:number "الأول المبادئ الأساسية لتنظيم المجتمع الجزائري" ;
+    dzdoc:position 0 .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الأول_المبادئ_الأساسية_لتنظيم_المجتمع_الجزائري_sec_الأول_الجمهورية> a dzdoc:Section ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الأول_المبادئ_الأساسية_لتنظيم_المجتمع_الجزائري> ;
+    dzdoc:directlyContains <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_5> ;
+    dzdoc:eId "chp_الأول_المبادئ_الأساسية_لتنظيم_المجتمع_الجزائري_sec_الأول_الجمهورية" ;
+    dzdoc:hasArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_5> ;
+    dzdoc:number "الأول الجمهورية" ;
+    dzdoc:position 0 .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#preamble> a dzdoc:Preamble ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:hasCitation <https://legal.dz/resource/law/1988-11-03/[NUMBER]#preamble_segment_0> ;
+    dzdoc:hasSegment <https://legal.dz/resource/law/1988-11-03/[NUMBER]#preamble_segment_0>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#preamble_segment_1> ;
+    dzdoc:text "يصدر القانون الآتي نصه"@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_104> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يجسد رئيس الجمهورية ، رئيس الدولة، وحدة الأمة. هو حامي الدستور يجسد الدولة داخل البلاد وخارجها. له أن يخاطب الأمة مباشرة."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_104_19881103_OpEnact_d92a10749f> ;
+    dzdoc:replacementText "يجسد رئيس الجمهورية ، رئيس الدولة، وحدة الأمة. هو حامي الدستور يجسد الدولة داخل البلاد وخارجها. له أن يخاطب الأمة مباشرة."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_104> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_104> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_111> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يضطلع رئيس الجمهورية ، بالاضافة الى السلطات التي تخولها إياه صراحة أحكام أخرى في الدستور، بالسلطات والصلاحيات الآتية : 1) هو القائد الأعلى لجميع القوات المسلحة للجمهورية، 2) يتولى مسؤولية الدفاع الوطني، 3) يقرر السياسة الخارجية للأمة، طبقا للميثاق الوطني وأحكام الدستور ويوجهها، 4) يعين رئيس الحكومة وينهي مهامه، 5) يرأس مجلس الوزراء، 6) يوقع المراسيم الرئاسية، 7) يعين في الوظائف المدنية والعسكرية طبقا للقانون، 8) له حق اصدار العفو وحق الغاء العقوبات أو تخفيضها، وحق ازالة الآثار القانونية، أيا كان"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_111_19881103_OpEnact_d6f487707c> ;
+    dzdoc:replacementText "يضطلع رئيس الجمهورية ، بالاضافة الى السلطات التي تخولها إياه صراحة أحكام أخرى في الدستور، بالسلطات والصلاحيات الآتية : 1) هو القائد الأعلى لجميع القوات المسلحة للجمهورية، 2) يتولى مسؤولية الدفاع الوطني، 3) يقرر السياسة الخارجية للأمة، طبقا للميثاق الوطني وأحكام الدستور ويوجهها، 4) يعين رئيس الحكومة وينهي مهامه، 5) يرأس مجلس الوزراء، 6) يوقع المراسيم الرئاسية، 7) يعين في الوظائف المدنية والعسكرية طبقا للقانون، 8) له حق اصدار العفو وحق الغاء العقوبات أو تخفيضها، وحق ازالة الآثار القانونية، أيا كانت طبيعتها، التي تترتب على الأحكام التي تصدرها أية جهة قضائية، 9) يمكنه أن يعمد الى استفتاء الشعب في كل قضية ذات أهمية وطنية، 10) يمكنه أن يفوض بعض سلطاته الى نائبه أو الى نوابه مع مراعاة أحكام المادة 116 من الدستور، 11) يعين سفراء الجمهورية والمبعوثين فوق العادة الى الخارج وينهي مهامهم، ويتسلم أوراق اعتماد الممثلين الدبلوماسيين الأجانب، وأوراق انهاء مهامهم، 12) يبرم المعاهدات الدولية ويصادق عليها حسب الشروط التي يحددها الدستور، 13) يسلم أوسمة الدولة ونياشينها وشهاداتها التشريفية."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_113> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يضبط رئيس الحكومة برنامج حكومته، وينسقه وينفذه. . وهو مسؤول أمام المجلس الشعبي الوطني."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_113_19881103_OpEnact_82ecf603ea> ;
+    dzdoc:replacementText "يضبط رئيس الحكومة برنامج حكومته، وينسقه وينفذه. . وهو مسؤول أمام المجلس الشعبي الوطني."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_113> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_113> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1141> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يشكل رئيس الحكومة بعد استشارات واسعة، حكومته، ويقدم أعضاءها الذين اختارهم ل رئيس الجمهورية الذي يعينهم."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1141_19881103_OpEnact_bbdf159bf1> ;
+    dzdoc:replacementText "يشكل رئيس الحكومة بعد استشارات واسعة، حكومته، ويقدم أعضاءها الذين اختارهم ل رئيس الجمهورية الذي يعينهم."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1141> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1141> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1142> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يقدم رئيس الحكومة برنامجه الى المجلس الشعبي الوطني للموافقة عليه. يجري المجلس الشعبي الوطني مناقشة عامة للبرنامج المقدم. ويمكن رئيس الحكومة أن يكيف برنامجه، في ضوء هذه المناقشة."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1142_19881103_OpEnact_865a803879> ;
+    dzdoc:replacementText "يقدم رئيس الحكومة برنامجه الى المجلس الشعبي الوطني للموافقة عليه. يجري المجلس الشعبي الوطني مناقشة عامة للبرنامج المقدم. ويمكن رئيس الحكومة أن يكيف برنامجه، في ضوء هذه المناقشة."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1142> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1142> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1143> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "في حالة عدم موافقة المجلس الشعبي الوطني على البرنامج المعروض ، يقدم رئيس الحكومة لرئيس الجمهورية استقالة حكومته . يعين رئيس الجمهورية من جديد رئيس حكومة"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1143_19881103_OpEnact_870fad3979> ;
+    dzdoc:replacementText "في حالة عدم موافقة المجلس الشعبي الوطني على البرنامج المعروض ، يقدم رئيس الحكومة لرئيس الجمهورية استقالة حكومته . يعين رئيس الجمهورية من جديد رئيس حكومة"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1143> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1143> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1144> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "اذا لم تحصل موافقة المجلس الشعبي الوطني على برنامج عمل رئيس الحكومة من جديد ، يحل المجلس قانونا. تنظم انتخابات تشريعية جديدة في أجل أقصاه ثلاثة أشهر."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1144_19881103_OpEnact_b1507ede96> ;
+    dzdoc:replacementText "اذا لم تحصل موافقة المجلس الشعبي الوطني على برنامج عمل رئيس الحكومة من جديد ، يحل المجلس قانونا. تنظم انتخابات تشريعية جديدة في أجل أقصاه ثلاثة أشهر."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1144> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1144> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1145> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تقدم الحكومة للمجلس الشعبي الوطني بيانا سنويا عن السياسة العامة . يعقب هذا البيان نقاش عام حول عمل الحكومة. ويمكن المجلس الشعبي الوطني أن يختتم هذا النقاش بلائحة. الرئيس الحكومة أن يطلب تصويتا بالثقة."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1145_19881103_OpEnact_91fd1392a8> ;
+    dzdoc:replacementText "تقدم الحكومة للمجلس الشعبي الوطني بيانا سنويا عن السياسة العامة . يعقب هذا البيان نقاش عام حول عمل الحكومة. ويمكن المجلس الشعبي الوطني أن يختتم هذا النقاش بلائحة. الرئيس الحكومة أن يطلب تصويتا بالثقة."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1145> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1145> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1151> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يمارس رئيس الحكومة ، زيادة على السلطات التي تخولها إياه صراحة أحكام أخرى في الدستور ، الصلاحيات الآتية : يوزع الصلاحيات بين أعضاء الحكومة مع احترام الأحكام الدستورية، يرأس مجلس الحكومة، يسهر على تنفيذ القوانين والتنظيمات، يوقع المراسيم التنفيذية، يعين في وظائف الدولة طبقا للقانون."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1151_19881103_OpEnact_ad95e5a80b> ;
+    dzdoc:replacementText "يمارس رئيس الحكومة ، زيادة على السلطات التي تخولها إياه صراحة أحكام أخرى في الدستور ، الصلاحيات الآتية : يوزع الصلاحيات بين أعضاء الحكومة مع احترام الأحكام الدستورية، يرأس مجلس الحكومة، يسهر على تنفيذ القوانين والتنظيمات، يوقع المراسيم التنفيذية، يعين في وظائف الدولة طبقا للقانون."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1151> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1151> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1152> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "ل رئيس الحكومة أن يقدم استقالة حكومته ل رئيس الجمهورية ."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1152_19881103_OpEnact_f24fd26d9f> ;
+    dzdoc:replacementText "ل رئيس الحكومة أن يقدم استقالة حكومته ل رئيس الجمهورية ."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1152> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1152> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_116> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "لا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية، ورئيس الحكومة وأعضائها، أو في إعفائهم من مهامهم، أو في إجراء إستفتاء، أو في حل المجلس الشعبي الوطني، أو في تنظيم إنتخابات تشريعية مسبقة، أو في تطبيق الاحكام المنصوص عليها في المواد من 119 الى 124 من الدستور، وكذلك السلطات المحددة في الفقرات 1 و 2 و 3 و 5 و 8 و المادة 111 من الدستور"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_116_19881103_OpEnact_f5a7b310d8> ;
+    dzdoc:replacementText "لا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية، ورئيس الحكومة وأعضائها، أو في إعفائهم من مهامهم، أو في إجراء إستفتاء، أو في حل المجلس الشعبي الوطني، أو في تنظيم إنتخابات تشريعية مسبقة، أو في تطبيق الاحكام المنصوص عليها في المواد من 119 الى 124 من الدستور، وكذلك السلطات المحددة في الفقرات 1 و 2 و 3 و 5 و 8 و المادة 111 من الدستور"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_147> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يمكن استدعاء المجلس الشعبي الوطني للاجتماع في دورة استثنائية بمبادرة من رئيس الجمهورية أو بطلب من ثلثي أعضاء المجلس او من رئيس الحكومة . تختتم الدورة الاستثنائية بمجرد ما يستنفد المجلس الشعبي الوطني جدول الاعمال الذي استدعي من أجله ."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_147_19881103_OpEnact_be63041aa0> ;
+    dzdoc:replacementText "يمكن استدعاء المجلس الشعبي الوطني للاجتماع في دورة استثنائية بمبادرة من رئيس الجمهورية أو بطلب من ثلثي أعضاء المجلس او من رئيس الحكومة . تختتم الدورة الاستثنائية بمجرد ما يستنفد المجلس الشعبي الوطني جدول الاعمال الذي استدعي من أجله ."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_148> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "لكل من رئيس الحكومة وأعضاء المجلس الشعبي الوطني أن يبادر بالقوانين . تكون اقتراحات القوانين قابلة للنقاش اذا قدمها عشرون نائبا . تقدم الحكومة مشاريع القوانين المكتب المجلس الشعبي الوطني ."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_148_19881103_OpEnact_600b93b73d> ;
+    dzdoc:replacementText "لكل من رئيس الحكومة وأعضاء المجلس الشعبي الوطني أن يبادر بالقوانين . تكون اقتراحات القوانين قابلة للنقاش اذا قدمها عشرون نائبا . تقدم الحكومة مشاريع القوانين المكتب المجلس الشعبي الوطني ."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_148> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_148> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_153> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "لـ رئيس الجمهورية ، فيما بين دورتي المجلس الشعبي الوطني ، أن يشرع بأمر، بناء على اقتراح من رئيس الحكومة . وتعرض الحكومة النصوص الصادرة بهذه الكيفية على المجلس الشعبي الوطني في أول دورة لاحقة ليوافق عليها ."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_153_19881103_OpEnact_bd78917796> ;
+    dzdoc:replacementText "لـ رئيس الجمهورية ، فيما بين دورتي المجلس الشعبي الوطني ، أن يشرع بأمر، بناء على اقتراح من رئيس الحكومة . وتعرض الحكومة النصوص الصادرة بهذه الكيفية على المجلس الشعبي الوطني في أول دورة لاحقة ليوافق عليها ."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_153> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_153> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_154> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يصبح رقم هذه المادة 155 بدون تغيير."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_154_19881103_OpEnact_b8d9fb35a1> ;
+    dzdoc:replacementText "يصبح رقم هذه المادة 155 بدون تغيير."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_154> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_154> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_155> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يصبح رقم هذه المادة 154 ، وتحرر هكذا : لـ رئيس الحكومة أن يطلب إجراء مداولة ثانية في القانون الذي تم التصويت عليه ، في ظرف ثلاثين (30) يوما من تاريخ إقراره . وفي هذه الحالة يتم إقرار القانون بأغلبية ثلثي أعضاء المجلس الشعبي الوطني ."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_155_19881103_OpEnact_7dd1b531b0> ;
+    dzdoc:replacementText "يصبح رقم هذه المادة 154 ، وتحرر هكذا : لـ رئيس الحكومة أن يطلب إجراء مداولة ثانية في القانون الذي تم التصويت عليه ، في ظرف ثلاثين (30) يوما من تاريخ إقراره . وفي هذه الحالة يتم إقرار القانون بأغلبية ثلثي أعضاء المجلس الشعبي الوطني ."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_156> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يمكن رئيس الجمهورية أن يوجه خطابا إلى المجلس الشعبي الوطني ."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_156_19881103_OpEnact_8435f0b088> ;
+    dzdoc:replacementText "يمكن رئيس الجمهورية أن يوجه خطابا إلى المجلس الشعبي الوطني ."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_156> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_156> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_157> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يمكن المجلس الشعبي الوطني ، بناء على طلب من رئيس الجمهورية ، أو رئيس الحكومة ، أو رئيس المجلس، أن يفتح مناقشة حول السياسة الخارجية . يمكن، عند الاقتضاء، أن تفضي هذه المناقشة الى إصدار لائحة من المجلس الشعبي الوطني يبلغها رئيسه الى رئيس الجمهورية ."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_157_19881103_OpEnact_b8dd2e53f5> ;
+    dzdoc:replacementText "يمكن المجلس الشعبي الوطني ، بناء على طلب من رئيس الجمهورية ، أو رئيس الحكومة ، أو رئيس المجلس، أن يفتح مناقشة حول السياسة الخارجية . يمكن، عند الاقتضاء، أن تفضي هذه المناقشة الى إصدار لائحة من المجلس الشعبي الوطني يبلغها رئيسه الى رئيس الجمهورية ."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_5> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "السيادة الوطنية ملك للشعب يمارس الشعب هذه السيادة عن طريق الاستفتاء يمارس الشعب هذه السيادة كذلك بواسطة ممثليه المنتخبين. . الرئيس الجمهورية أن يرجع مباشرة إلى ارادة الشعب."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_5_19881103_OpEnact_b6f717bb8d> ;
+    dzdoc:replacementText "السيادة الوطنية ملك للشعب يمارس الشعب هذه السيادة عن طريق الاستفتاء يمارس الشعب هذه السيادة كذلك بواسطة ممثليه المنتخبين. . الرئيس الجمهورية أن يرجع مباشرة إلى ارادة الشعب."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_5> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_5> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1988-11-03"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها> a dzdoc:Chapter ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#body> ;
+    dzdoc:directlyContains <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها_sec_الثالث_الوظيفة_التشريعية>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> ;
+    dzdoc:eId "chp_الثاني_السلطة_و_تنظيمها" ;
+    dzdoc:hasSection <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها_sec_الثالث_الوظيفة_التشريعية>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> ;
+    dzdoc:number "الثاني السلطة و تنظيمها" ;
+    dzdoc:position 1 .
+
+dzterm:national_people_assembly a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "المجلس الشعبي الوطني"@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_113> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> ;
+    dzdoc:eId "art_113" ;
+    dzdoc:fullText "يضبط رئيس الحكومة برنامج حكومته، وينسقه وينفذه. . وهو مسؤول أمام المجلس الشعبي الوطني."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_113> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_113_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_113_19881103_OpEnact_82ecf603ea> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:introducedOn "1988-11-03"^^xsd:date ;
+    dzdoc:number "المادة 113" ;
+    dzdoc:position 3 ;
+    dzdoc:usesTerm dzterm:head_of_government .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1141> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> ;
+    dzdoc:eId "art_1141" ;
+    dzdoc:fullText "يشكل رئيس الحكومة بعد استشارات واسعة، حكومته، ويقدم أعضاءها الذين اختارهم ل رئيس الجمهورية الذي يعينهم."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1141> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1141_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1141_19881103_OpEnact_bbdf159bf1> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:introducedOn "1988-11-03"^^xsd:date ;
+    dzdoc:number "المادة (114(1" ;
+    dzdoc:position 4 ;
+    dzdoc:usesTerm dzterm:head_of_government,
+        dzterm:president .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1152> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> ;
+    dzdoc:eId "art_1152" ;
+    dzdoc:fullText "ل رئيس الحكومة أن يقدم استقالة حكومته ل رئيس الجمهورية ."@ar ;
+    dzdoc:grantsRight <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1152_right_0_ffe18a2b> ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1152> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1152_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1152_19881103_OpEnact_f24fd26d9f> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:introducedOn "1988-11-03"^^xsd:date ;
+    dzdoc:number "(115(2" ;
+    dzdoc:position 10 ;
+    dzdoc:usesTerm dzterm:head_of_government,
+        dzterm:president .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_104> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> ;
+    dzdoc:eId "art_104" ;
+    dzdoc:fullText "يجسد رئيس الجمهورية ، رئيس الدولة، وحدة الأمة. هو حامي الدستور يجسد الدولة داخل البلاد وخارجها. له أن يخاطب الأمة مباشرة."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_104> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_104_para_0>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_104_para_1>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_104_para_2> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_104_19881103_OpEnact_d92a10749f> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:introducedOn "1988-11-03"^^xsd:date ;
+    dzdoc:number "المادة 104" ;
+    dzdoc:position 1 ;
+    dzdoc:usesTerm dzterm:president .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1142> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> ;
+    dzdoc:eId "art_1142" ;
+    dzdoc:fullText "يقدم رئيس الحكومة برنامجه الى المجلس الشعبي الوطني للموافقة عليه. يجري المجلس الشعبي الوطني مناقشة عامة للبرنامج المقدم. ويمكن رئيس الحكومة أن يكيف برنامجه، في ضوء هذه المناقشة."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1142> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1142_para_0>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1142_para_1>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1142_para_2> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1142_19881103_OpEnact_865a803879> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:introducedOn "1988-11-03"^^xsd:date ;
+    dzdoc:number "المادة (114(2" ;
+    dzdoc:position 5 ;
+    dzdoc:usesTerm dzterm:head_of_government .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1145> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> ;
+    dzdoc:eId "art_1145" ;
+    dzdoc:fullText "تقدم الحكومة للمجلس الشعبي الوطني بيانا سنويا عن السياسة العامة . يعقب هذا البيان نقاش عام حول عمل الحكومة. ويمكن المجلس الشعبي الوطني أن يختتم هذا النقاش بلائحة. الرئيس الحكومة أن يطلب تصويتا بالثقة."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1145> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1145_para_0>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1145_para_1>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1145_para_2> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1145_19881103_OpEnact_91fd1392a8> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:introducedOn "1988-11-03"^^xsd:date ;
+    dzdoc:number "المادة (114(5" ;
+    dzdoc:position 8 .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1151> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> ;
+    dzdoc:eId "art_1151" ;
+    dzdoc:fullText "يمارس رئيس الحكومة ، زيادة على السلطات التي تخولها إياه صراحة أحكام أخرى في الدستور ، الصلاحيات الآتية : يوزع الصلاحيات بين أعضاء الحكومة مع احترام الأحكام الدستورية، يرأس مجلس الحكومة، يسهر على تنفيذ القوانين والتنظيمات، يوقع المراسيم التنفيذية، يعين في وظائف الدولة طبقا للقانون."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1151> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1151_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1151_19881103_OpEnact_ad95e5a80b> ;
+    dzdoc:imposesObligation <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1151_obligation_0_18edb75c> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:introducedOn "1988-11-03"^^xsd:date ;
+    dzdoc:number "(115(1" ;
+    dzdoc:position 9 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1151_extref_f0049a66> ;
+    dzdoc:usesTerm dzterm:head_of_government .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_154> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها_sec_الثالث_الوظيفة_التشريعية> ;
+    dzdoc:eId "art_154" ;
+    dzdoc:fullText "يصبح رقم هذه المادة 155 بدون تغيير."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_154> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_154_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_154_19881103_OpEnact_b8d9fb35a1> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:introducedOn "1988-11-03"^^xsd:date ;
+    dzdoc:number "المادة 154" ;
+    dzdoc:position 16 ;
+    dzdoc:references <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155> ;
+    dzdoc:referencesInternal <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155> .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها_sec_الثالث_الوظيفة_التشريعية> a dzdoc:Section ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها> ;
+    dzdoc:directlyContains <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_148>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_153>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_154>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_156>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157> ;
+    dzdoc:eId "chp_الثاني_السلطة_و_تنظيمها_sec_الثالث_الوظيفة_التشريعية" ;
+    dzdoc:hasArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_148>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_153>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_154>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_156>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157> ;
+    dzdoc:number "الثالث الوظيفة التشريعية" ;
+    dzdoc:position 1 .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1144> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> ;
+    dzdoc:eId "art_1144" ;
+    dzdoc:fullText "اذا لم تحصل موافقة المجلس الشعبي الوطني على برنامج عمل رئيس الحكومة من جديد ، يحل المجلس قانونا. تنظم انتخابات تشريعية جديدة في أجل أقصاه ثلاثة أشهر."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1144> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1144_para_0>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1144_para_1> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1144_19881103_OpEnact_b1507ede96> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:introducedOn "1988-11-03"^^xsd:date ;
+    dzdoc:number "المادة (114(4" ;
+    dzdoc:position 7 ;
+    dzdoc:specifiesCondition <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1144_condition_0_d116f49f> .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_5> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الأول_المبادئ_الأساسية_لتنظيم_المجتمع_الجزائري_sec_الأول_الجمهورية> ;
+    dzdoc:eId "art_5" ;
+    dzdoc:fullText "السيادة الوطنية ملك للشعب يمارس الشعب هذه السيادة عن طريق الاستفتاء يمارس الشعب هذه السيادة كذلك بواسطة ممثليه المنتخبين. . الرئيس الجمهورية أن يرجع مباشرة إلى ارادة الشعب."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_5> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_5_para_0>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_5_para_1>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_5_para_2>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_5_para_3> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_5_19881103_OpEnact_b6f717bb8d> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:introducedOn "1988-11-03"^^xsd:date ;
+    dzdoc:number "5" ;
+    dzdoc:position 0 ;
+    dzdoc:usesTerm dzterm:national_sovereignty .
+
+dzterm:president a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "رئيس الجمهورية"@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1143> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> ;
+    dzdoc:eId "art_1143" ;
+    dzdoc:fullText "في حالة عدم موافقة المجلس الشعبي الوطني على البرنامج المعروض ، يقدم رئيس الحكومة لرئيس الجمهورية استقالة حكومته . يعين رئيس الجمهورية من جديد رئيس حكومة"@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1143> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1143_para_0>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1143_para_1> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1143_19881103_OpEnact_870fad3979> ;
+    dzdoc:imposesObligation <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1143_obligation_0_054a4879> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:introducedOn "1988-11-03"^^xsd:date ;
+    dzdoc:number "المادة (114(3" ;
+    dzdoc:position 6 ;
+    dzdoc:specifiesCondition <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1143_condition_0_dd6b90e1> ;
+    dzdoc:usesTerm dzterm:head_of_government,
+        dzterm:president .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_156> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها_sec_الثالث_الوظيفة_التشريعية> ;
+    dzdoc:eId "art_156" ;
+    dzdoc:fullText "يمكن رئيس الجمهورية أن يوجه خطابا إلى المجلس الشعبي الوطني ."@ar ;
+    dzdoc:grantsPermission <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_156_permission_0_c89e1869> ;
+    dzdoc:grantsRight <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_156_right_0_fc07e6d5> ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_156> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_156_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_156_19881103_OpEnact_8435f0b088> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:introducedOn "1988-11-03"^^xsd:date ;
+    dzdoc:number "المادة 156" ;
+    dzdoc:position 17 ;
+    dzdoc:usesTerm dzterm:national_people_assembly,
+        dzterm:president .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> ;
+    dzdoc:eId "art_111" ;
+    dzdoc:fullText "يضطلع رئيس الجمهورية ، بالاضافة الى السلطات التي تخولها إياه صراحة أحكام أخرى في الدستور، بالسلطات والصلاحيات الآتية : 1) هو القائد الأعلى لجميع القوات المسلحة للجمهورية، 2) يتولى مسؤولية الدفاع الوطني، 3) يقرر السياسة الخارجية للأمة، طبقا للميثاق الوطني وأحكام الدستور ويوجهها، 4) يعين رئيس الحكومة وينهي مهامه، 5) يرأس مجلس الوزراء، 6) يوقع المراسيم الرئاسية، 7) يعين في الوظائف المدنية والعسكرية طبقا للقانون، 8) له حق اصدار العفو وحق الغاء العقوبات أو تخفيضها، وحق ازالة الآثار القانونية، أيا كانت طبيعتها، التي تترتب على الأحكام التي تصدرها أية جهة قضائية، 9) يمكنه أن يعمد الى استفتاء الشعب في كل قضية ذات أهمية وطنية، 10) يمكنه أن يفوض بعض سلطاته الى نائبه أو الى نوابه مع مراعاة أحكام المادة 116 من الدستور، 11) يعين سفراء الجمهورية والمبعوثين فوق العادة الى الخارج وينهي مهامهم، ويتسلم أوراق اعتماد الممثلين الدبلوماسيين الأجانب، وأوراق انهاء مهامهم، 12) يبرم المعاهدات الدولية ويصادق عليها حسب الشروط التي يحددها الدستور، 13) يسلم أوسمة الدولة ونياشينها وشهاداتها التشريفية."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_111> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_111_19881103_OpEnact_d6f487707c> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:introducedOn "1988-11-03"^^xsd:date ;
+    dzdoc:number "المادة 111" ;
+    dzdoc:position 2 ;
+    dzdoc:references <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116> ;
+    dzdoc:referencesInternal <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116> ;
+    dzdoc:usesTerm dzterm:head_of_government,
+        dzterm:president .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_148> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها_sec_الثالث_الوظيفة_التشريعية> ;
+    dzdoc:eId "art_148" ;
+    dzdoc:fullText "لكل من رئيس الحكومة وأعضاء المجلس الشعبي الوطني أن يبادر بالقوانين . تكون اقتراحات القوانين قابلة للنقاش اذا قدمها عشرون نائبا . تقدم الحكومة مشاريع القوانين المكتب المجلس الشعبي الوطني ."@ar ;
+    dzdoc:grantsRight <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_148_right_0_89b5e797> ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_148> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_148_para_0>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_148_para_1>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_148_para_2> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_148_19881103_OpEnact_600b93b73d> ;
+    dzdoc:imposesObligation <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_148_obligation_0_a73f967e> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:introducedOn "1988-11-03"^^xsd:date ;
+    dzdoc:number "المادة 148" ;
+    dzdoc:position 13 ;
+    dzdoc:specifiesCondition <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_148_condition_0_6e0452b5> ;
+    dzdoc:usesTerm dzterm:government,
+        dzterm:head_of_government,
+        dzterm:national_people_assembly .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_153> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها_sec_الثالث_الوظيفة_التشريعية> ;
+    dzdoc:eId "art_153" ;
+    dzdoc:fullText "لـ رئيس الجمهورية ، فيما بين دورتي المجلس الشعبي الوطني ، أن يشرع بأمر، بناء على اقتراح من رئيس الحكومة . وتعرض الحكومة النصوص الصادرة بهذه الكيفية على المجلس الشعبي الوطني في أول دورة لاحقة ليوافق عليها ."@ar ;
+    dzdoc:grantsRight <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_153_right_0_7e586f01> ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_153> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_153_para_0>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_153_para_1> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_153_19881103_OpEnact_bd78917796> ;
+    dzdoc:imposesObligation <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_153_obligation_0_d4816e1e> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:introducedOn "1988-11-03"^^xsd:date ;
+    dzdoc:number "المادة 153" ;
+    dzdoc:position 14 ;
+    dzdoc:usesTerm dzterm:government,
+        dzterm:head_of_government,
+        dzterm:national_people_assembly,
+        dzterm:president .
+
+dzterm:head_of_government a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "رئيس الحكومة"@ar,
+        "رئيس حكومة"@ar .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> a dzdoc:Section ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها> ;
+    dzdoc:directlyContains <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_104>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_113>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1141>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1142>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1143>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1144>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1145>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1151>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1152>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116> ;
+    dzdoc:eId "chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية" ;
+    dzdoc:hasArticle <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_104>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_113>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1141>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1142>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1143>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1144>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1145>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1151>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_1152>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116> ;
+    dzdoc:number "الثاني الوظيفة التنفيذية" ;
+    dzdoc:position 0 .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها_sec_الثالث_الوظيفة_التشريعية> ;
+    dzdoc:eId "art_147" ;
+    dzdoc:fullText "يمكن استدعاء المجلس الشعبي الوطني للاجتماع في دورة استثنائية بمبادرة من رئيس الجمهورية أو بطلب من ثلثي أعضاء المجلس او من رئيس الحكومة . تختتم الدورة الاستثنائية بمجرد ما يستنفد المجلس الشعبي الوطني جدول الاعمال الذي استدعي من أجله ."@ar ;
+    dzdoc:grantsPermission <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147_permission_0_e09857d4> ;
+    dzdoc:grantsRight <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147_right_0_06ab6665> ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_147> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147_para_0>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147_para_1> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_147_19881103_OpEnact_be63041aa0> ;
+    dzdoc:imposesObligation <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147_obligation_0_80b7d3dc> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:introducedOn "1988-11-03"^^xsd:date ;
+    dzdoc:number "المادة 147" ;
+    dzdoc:position 12 ;
+    dzdoc:specifiesCondition <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_147_condition_0_92f3372b> ;
+    dzdoc:usesTerm dzterm:head_of_government,
+        dzterm:national_people_assembly,
+        dzterm:president .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها_sec_الثالث_الوظيفة_التشريعية> ;
+    dzdoc:eId "art_155" ;
+    dzdoc:fullText "يصبح رقم هذه المادة 154 ، وتحرر هكذا : لـ رئيس الحكومة أن يطلب إجراء مداولة ثانية في القانون الذي تم التصويت عليه ، في ظرف ثلاثين (30) يوما من تاريخ إقراره . وفي هذه الحالة يتم إقرار القانون بأغلبية ثلثي أعضاء المجلس الشعبي الوطني ."@ar ;
+    dzdoc:grantsRight <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155_right_0_ae4cd71e> ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_155> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155_para_0>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155_para_1>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155_para_2> ;
+    dzdoc:hasStatus dzdoc:StatusModified ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_155_19881103_OpEnact_7dd1b531b0> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:introducedOn "1988-11-03"^^xsd:date ;
+    dzdoc:number "المادة 155" ;
+    dzdoc:position 15 ;
+    dzdoc:references <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_154> ;
+    dzdoc:referencesInternal <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_154> ;
+    dzdoc:specifiesCondition <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155_condition_0_f81d34f8>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_155_condition_1_840aae1e> ;
+    dzdoc:usesTerm dzterm:head_of_government,
+        dzterm:national_people_assembly .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> ;
+    dzdoc:eId "art_116" ;
+    dzdoc:fullText "لا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية، ورئيس الحكومة وأعضائها، أو في إعفائهم من مهامهم، أو في إجراء إستفتاء، أو في حل المجلس الشعبي الوطني، أو في تنظيم إنتخابات تشريعية مسبقة، أو في تطبيق الاحكام المنصوص عليها في المواد من 119 الى 124 من الدستور، وكذلك السلطات المحددة في الفقرات 1 و 2 و 3 و 5 و 8 و المادة 111 من الدستور"@ar ;
+    dzdoc:grantsPermission <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_permission_0_9c046fe3> ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_116> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_116_19881103_OpEnact_f5a7b310d8> ;
+    dzdoc:imposesObligation <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_obligation_0_9c046fe3> ;
+    dzdoc:imposesProhibition <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_116_prohibition_0_9c046fe3> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:introducedOn "1988-11-03"^^xsd:date ;
+    dzdoc:number "116" ;
+    dzdoc:position 11 ;
+    dzdoc:references <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111__para_1>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111__para_2>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111__para_3>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111__para_5>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111__para_8>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_119>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_124> ;
+    dzdoc:referencesInternal <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111__para_1>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111__para_2>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111__para_3>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111__para_5>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_111__para_8>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_119>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_124> ;
+    dzdoc:usesTerm dzterm:president .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1988-11-03/[NUMBER]#chp_الثاني_السلطة_و_تنظيمها_sec_الثالث_الوظيفة_التشريعية> ;
+    dzdoc:eId "art_157" ;
+    dzdoc:fullText "يمكن المجلس الشعبي الوطني ، بناء على طلب من رئيس الجمهورية ، أو رئيس الحكومة ، أو رئيس المجلس، أن يفتح مناقشة حول السياسة الخارجية . يمكن، عند الاقتضاء، أن تفضي هذه المناقشة الى إصدار لائحة من المجلس الشعبي الوطني يبلغها رئيسه الى رئيس الجمهورية ."@ar ;
+    dzdoc:grantsPermission <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157_permission_0_50345974>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157_permission_1_62e42f4d> ;
+    dzdoc:grantsRight <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157_right_0_54a8b6c9> ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_157> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157_para_0>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157_para_1> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_157_19881103_OpEnact_b8dd2e53f5> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1988-11-03/[NUMBER]> ;
+    dzdoc:introducedOn "1988-11-03"^^xsd:date ;
+    dzdoc:number "المادة 157" ;
+    dzdoc:position 18 ;
+    dzdoc:specifiesCondition <https://legal.dz/resource/law/1988-11-03/[NUMBER]#art_157_condition_0_df8abc75> ;
+    dzdoc:usesTerm dzterm:head_of_government,
+        dzterm:national_people_assembly,
+        dzterm:president .
+
+<https://legal.dz/resource/law/1988-11-03/[NUMBER]> a dzdoc:Law ;
+    dzdoc:authoredBy dzorg:parliament ;
+    dzdoc:countryCode "dz" ;
+    dzdoc:dateText "3 نوفمبر سنة 1988"@ar ;
+    dzdoc:documentNumber "[NUMBER]" ;
+    dzdoc:enactmentDate "1988-11-03"^^xsd:date ;
+    dzdoc:frbrThisUri "/akn/dz/act/law/1988-11-03/[NUMBER]/main"^^xsd:anyURI ;
+    dzdoc:frbrUri "/akn/dz/act/law/1988-11-03/[NUMBER]"^^xsd:anyURI ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_104>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_111>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_113>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1141>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1142>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1143>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1144>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1145>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1151>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_1152>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_116>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_147>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_148>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_153>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_154>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_155>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_156>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_157>,
+        <https://legal.dz/resource/law/1988-11-03/[NUMBER]#version_art_5> ;
+    dzdoc:hasAuthority dzorg:parliament ;
+    dzdoc:hasBody <https://legal.dz/resource/law/1988-11-03/[NUMBER]#body> ;
+    dzdoc:hasExpression <https://legal.dz/resource/law/1988-11-03/[NUMBER]/expression> ;
+    dzdoc:hasPreamble <https://legal.dz/resource/law/1988-11-03/[NUMBER]#preamble> ;
+    dzdoc:hasPreface <https://legal.dz/resource/law/1988-11-03/[NUMBER]#preface> ;
+    dzdoc:publicationDate "1988-11-03"^^xsd:date ;
+    dzdoc:sourceFile "Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1988-11-03.xml" ;
+    dzdoc:title "التعديل الدستوري المصادق عليه في إستفتاء 3 نوفمبر سنة 1988"@ar .
+

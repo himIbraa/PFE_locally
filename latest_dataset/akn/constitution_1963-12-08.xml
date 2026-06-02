@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="constitution">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/constitution/1963-12-08/1963/main"/>
+      <FRBRuri value="/akn/dz/act/constitution/1963-12-08/1963"/>
+      <FRBRdate date="1963-12-08" name="enactment"/>
+      <FRBRauthor href="#president"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="1963"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/constitution/1963-12-08/1963/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/constitution/1963-12-08/1963/ara@"/>
+      <FRBRdate date="1963-12-08" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/constitution/1963-12-08/1963/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/constitution/1963-12-08/1963/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="president" href="/ontology/organization/dz/president" showAs="رئيس الجمهورية"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="converter" href="/ontology/person/dz/converter" showAs="Markup Specialist"/>
+  </references>
+</meta>
+    <preface>
+  <docTitle>دستور الجمهورية الجزائرية الديمقراطية الشعبية</docTitle>
+  <docNumber>1963</docNumber>
+  <docDate date="1963-12-08">08 ديسمبر 1963</docDate>
+  <docAuthority>رئيس الجمهورية</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>دستور موافق عليه في استفتاء شعبي بتاريخ 08 ديسمبر 1963</p>
+    </citation>
+    <citation>
+      <p>وفاء للميثاق الذي أقره المجلس القومي للثورة الجزائرية في طرابلس</p>
+    </citation>
+    <citation>
+      <p>طبقا للمبادئ الاشتراكية و الممارسة الفعلية للسلطة من طرف الشعب</p>
+    </citation>
+  </citations>
+  <container name="introduction">
+    <p>ما فتئ الشعب الجزائري منذ ما ينيف على المائة سنة، يواصل كفاحا مسلحا و كفاحا آخرا خلقيا و سياسيا ضد الغزو الإستعماري في جميع أشكال، اضطهادها، و ذلك عقب عدوان سنة 1830 على الدولة الجزائرية و احتلال القوات الاستعمارية الفرنسية للبلاد.</p>
+    <p>و في غرة نوفمبر عام 1954، استنفرت جبهة التحرير الوطني تعبئة جميع طاقات الأمة، ذلك أن النضال من أجل تحقيق الاستقلال قد بلغ مرحلته النهائية.</p>
+    <p>فاحتدمت حرب الإبادة التي شنها الاستعمار الفرنسي، وسقط ضحيتها في ميدان الشرف أكثر من مليون شهيد، اشتروا بحياتهم حبهم للوطن و الحرية.</p>
+    <p>و في شهر مارس عام 1962، خرج الشعب الجزائري منتصرا من هذه المعركة، التي اصطلى حرها سبع سنوات و نصف، بقيادة جبهة التحرير الوطني.</p>
+    <p>ثم شرعت الجزائر تجدد لنفسها أنظمة سياسية قومية، بعد استرجاعها لسيادتها، اثر مائة و اثنتين و ثلاثين سنة (132) من السيطرة الاستعمارية، و النظام الإقطاعي.</p>
+    <p>فمضت الجمهورية الجزائرية الديمقراطية الشعبية توجه مناحى نشاطها الى طريق تشييد البلاد، وفاء منها للميثاق الذي أقره المجلس القومي للثورة الجزائرية في طرابلس، و طبقا للمبادئ الاشتراكية و الممارسة الفعلية للسلطة من طرف الشعب الذي يشكل طليعته الفلاحون، و الجماهير الكادحة، و المثقفون الثوريون.</p>
+    <p>ان الشعب الجزائري لمواصل زحفه في طريق ثورة ديمقراطية شعبية، بعد أن حقق هدف الاستقلال الوطني الذي استهدفته جبهة التحرير الوطني في غرة نوفمبر 1954.</p>
+    <p>هذه الثورة المتجسمة في :</p>
+    <p>– الشروع في انجاز الاصلاح الزراعي، و انشاء اقتصاد وطني ينهض العمال بتسييره.</p>
+    <p>– و انتهاج سياسة اجتماعية لفائدة الجماهير كي يرتفع مستوى معيشة العمال، و التعجيل بترقية المرأة قصد اشتراكها في تدبير الشؤون العامة، و تطوير البلاد، و محو الأمية، و تنمية الثقافة القومية، و تحسين السكن، و الحالة الصحية العامة.</p>
+    <p>– و توخي سياسة دولية قائمة على قاعدة من الاستقلال، و التعاون الدولي، و مناهضة الاستعمار، و المؤازرة الفعلية للحركات النضالية في العالم من أجل التحرير الوطني و الاستقلال.</p>
+    <p>– ان الاسلام و اللغة العربية قد كانا و لا يزال كل منهما قوة فعالة في الصمود ضد المحاولة التي قام بها النظام الاستعماري لتجريد الجزائريين من شخصيتهم. فيتعين على الجزائر التأكيد بأن اللغة العربية هي اللغة القومية الرسمية لها، و أنها تستمد طاقتها الروحية الأساسية من دين الاسلام، بيد أن الجمهورية تضمن حرية ممارسة الأديان لكل فرد و احترام آرائه و معتقداته.</p>
+    <p>ان الجيش الوطني الشعبي الذي كان بالأمس جيش التحرير الوطني هو بمثابة سنان الرمح في نضال التحرير القومي، من ثمة سيظل هذا الجيش مسهما في خدمة الشعب، ساهرا على النشاط السياسي داخل إطار الحزب، عاملا على تشييد الانظمة الجديدة الاقتصادية منها و الاجتماعية للبلاد.</p>
+    <p>من الأهداف الأساسية للجمهورية، الوفاء لتقاليد أمتنا الفلسفية و الاخلاقية و السياسية، و المطابقة للإتجاه السياسي الدولي، الذي اختاره الشعب الجزائري.</p>
+    <p>كما أن الحقوق السياسية المعترف بها لكل مواطن بالجمهورية تمكنه من المساهمة بطريقة كلية و فعالة في فريضة تشييد البلاد، و تخول له النمو، و تعده لمعرفة نفسه بصورة منسجمة في نطاق المجموعة طبقا لمصالح البلاد، و اختيارات الشعب.</p>
+    <p>ان ضرورة قيام حزب الطليعة الواحد، و دوره المرجح في اعداد و مراقبة سياسة الأمة، هما المبدأن الجوهريان اللذان حملا على اختيار شتى الحلول لمعالجة المشاكل الدستورية التي تواجه الدولة الجزائرية و بذلك يتم ضمان السير المنسجم و الفعال للنظم السياسية المقررة في الدستور عن طريق جبهة التحرير الوطني التي :</p>
+    <p>– تعبئ و تنظم الجماهير الشعبية، و تهذبها لتحقيق الاشتراكية.</p>
+    <p>– و تدرك و تشخص مطامح الجماهير الشعبية بالاتصال الدائم بها.</p>
+    <p>– و تعد و تحدد سياسة الأمة و تراقب تنفيذها.</p>
+    <p>و يتم اعداد هذه السياسة و تنشيطها و توجيهها من طرف أشد العناصر الثورية وعيا ونشاطا.</p>
+    <p>– كما تقيم جبهة التحرير الوطني تنظيمها و قواعدها على مبدأ المركزية الديمقراطية.</p>
+    <p>ان الحزب وحده باعتباره الجهاز المحرك الدافع الذي يستمد قوته من الشعب، هو الذي يستطيع أن يحطم أجهزة الماضي الاقتصادية، و يقيم مقامها نظما اقتصادية يمارسها الفلاحون العاملون، و الجماهير الكادحة بصورة ديمقراطية.</p>
+    <p>كما أنه على الشعب أن يسهر على استقرار الأنظمة السياسية للبلاد، هذا الإستقرار الذي هو ضرورة حيوية بالنسبة لمهام التشييد الاشتراكي التي تواجهها الجمهورية.</p>
+    <p>أما النظام الرئاسي و النظام البرلماني التقليديان للحكم، فلا يمكن لهما أن يضمنا هذا الاستقرار المنشود، بينما النظام القائم على قاعدة هيمنة الشعب صاحب السيادة، و على الحزب الطلائعي الواحد، فإنه يمكنه أن يضمن ذلك الاستقرار بصورة فعالة.</p>
+    <p>ان جبهة التحرير الوطني التي تمثل القوة الثورة للأمة، تسهر على هذا الإستقرار، كما أنها ستكون خير ضمان لتجاوب سياسة البلاد مع المطامح العميقة للشعب.</p>
+  </container>
+  <formula name="enactingFormula">
+    <p>يقرر الشعب الجزائري الدستور الآتي نصه:</p>
+  </formula>
+</preamble>
+    <body>
+      <article eId="art_1">
+        <num>الأولى</num>
+        <content>
+        <paragraph>
+        <p>الجزائر جمهورية ديمقراطية شعبية.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_2">
+        <num>2</num>
+        <content>
+        <paragraph>
+        <p>و هي جزء لا يتجزأ من المغرب العربي و العالم العربي و افريقيا.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_3">
+        <num>3</num>
+        <content>
+        <paragraph>
+        <p>شعارها “الثورة من الشعب و للشعب”.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_4">
+        <num>4</num>
+        <content>
+        <paragraph>
+        <p><term refersTo="#islam">الاسلام</term> دين الدولة و <obligation>تضمن الجمهورية لكل فرد احترام أرائه و معتقداته و <right>حرية ممارسة الاديان</right></obligation>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_5">
+        <num>5</num>
+        <content>
+        <paragraph>
+        <p><def refersTo="#arabic_language">اللغة العربية هي اللغة القومية و الرسمية للدولة</def>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_6">
+        <num>6</num>
+        <content>
+        <paragraph>
+        <p>علم الدولة أخضر و أبيض يتوسطه هلال و نجم أحمران.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_7">
+        <num>7</num>
+        <content>
+        <paragraph>
+        <p>عاصمة البلاد الجزائرية هي مدينة الجزائر، مقر <term refersTo="#national_council">المجلس الوطني</term> و <term refersTo="#government">الحكومة</term>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_8">
+        <num>8</num>
+        <content>
+        <paragraph>
+        <p><term refersTo="#national_army">الجيش الوطني</term> جيش شعبي، و هو في خدمة الشعب و تحت تصرف <term refersTo="#government">الحكومة</term> بحكم وفائه لتقاليد الكفاح من أجل التحرير الوطني.</p>
+        </paragraph>
+        <paragraph>
+        <p>و هو يتولى الدفاع عن أراضي الجمهورية و يسهم في مناحي النشاط السياسي و الاقتصادي و الاجتماعي للبلاد في نطاق الحزب.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_9">
+        <num>9</num>
+        <content>
+        <paragraph>
+        <p>تتكون الجمهورية من مجموعات ادارية يتولى القانون تحديد مداها و اختصاصها.</p>
+        </paragraph>
+        <paragraph>
+        <p>تعتبر <term refersTo="#municipality">البلدية</term> أساسا للمجموعة الترابية و الاقتصادية و الاجتماعية.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_10">
+        <num>10</num>
+        <content>
+        <paragraph>
+        <p>تتمثل الأهداف الأساسية للجمهورية الجزائرية الديمقراطية الشعبية في :</p>
+        <list>
+        <point><p>صيانة الاستقلال الوطني و سلامة الأراضي الوطنية و الوحدة الوطنية.</p></point>
+        <point><p>ممارسة السلطة من طرف الشعب الذي يؤلف طليعته فلاحون و عمال و مثقفون ثوريون.</p></point>
+        <point><p>تشييد ديمقراطية اشتراكية، و مقاومة استغلال الانسان في جميع اشكاله، وضمان <right>حق العمل</right> و <right>مجانية التعليم</right>، و تصفية جميع بقايا الاستعمار.</p></point>
+        <point><p>الدفاع عن الحرية و احترام كرامة الانسان.</p></point>
+        <point><p>مقاومة كل نوع من التمييز و خاصة التمييز العنصري و الديني.</p></point>
+        <point><p>السلام في العالم.</p></point>
+        <point><p>استنكار التعذيب و كل مساس حسي أو معنوي بكيان الانسان.</p></point>
+        </list>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_11">
+        <num>11</num>
+        <content>
+        <paragraph>
+        <p>توافق الجمهورية على الاعلان العالمي لحقوق الانسان و تنضم الى كل منظمة دولية تستجيب لمطامح الشعب الجزائري و ذلك اقتناعا منها بضرورة التعاون الدولي.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_12">
+        <num>12</num>
+        <content>
+        <paragraph>
+        <p>لكل المواطنين من الجنسين نفس <right>الحقوق</right> و نفس <obligation>الواجبات</obligation>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_13">
+        <num>13</num>
+        <content>
+        <paragraph>
+        <p><condition>لكل مواطن استكمل 19 عاما من عمره</condition> <right>حق التصويت</right>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_14">
+        <num>14</num>
+        <content>
+        <paragraph>
+        <p><obligation>لا يجوز الإعتداء على حرمة السكن</obligation>، و <obligation>يضمن حفظ سر المراسلة لجميع المواطنين</obligation>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_15">
+        <num>15</num>
+        <content>
+        <paragraph>
+        <p><obligation>لا يمكن ايقاف أي شخص و لا متابعته الا في الأحوال المنصوص عليها في القانون و أمام القضاة المعينين بمقتضاه و طبقا للإجراءات المقررة بموجبه</obligation>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_16">
+        <num>16</num>
+        <content>
+        <paragraph>
+        <p>تعترف الجمهورية بـ <right>حق كل فرد في حياة لائقة</right> و في <right>توزيع عادل للدخل القومي</right>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_17">
+        <num>17</num>
+        <content>
+        <paragraph>
+        <p><obligation>تحمي الدولة الأسرة باعتبارها الخلية الأساسية للمجتمع</obligation>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_18">
+        <num>المادة 18</num>
+        <content>
+        <paragraph>
+        <p><obligation>التعليم اجباري</obligation>، و <right>الثقافة في متناول الجميع بدون تمييز</right> الا ما كان ناشئا عن استعدادات كل فرد و حاجيات الجماعة.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_19">
+        <num>المادة 19</num>
+        <content>
+        <paragraph>
+        <p>تضمن الجمهورية <right>حرية الصحافة</right>، و <right>حرية وسائل الاعلام الأخرى</right>، و <right>حرية تأسيس الجمعيات</right>، و <right>حرية التعبير</right>، و <right>مخاطبة الجمهور</right> و <right>حرية الإجتماع</right>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_20">
+        <num>المادة 20</num>
+        <content>
+        <paragraph>
+        <p><right>الحق النقابي</right>، و <right>حق الاضراب</right>، و <right>مشاركة العمال في تدبير المؤسسات</right> معترف بها جميعا، و تمارس هذه الحقوق في نطاق القانون.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_21">
+        <num>المادة 21</num>
+        <content>
+        <paragraph>
+        <p>تضمن الجمهورية الجزائرية <right>حق الإلتجاء لكل من يكافح في سبيل الحرية</right>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_22">
+        <num>المادة 22</num>
+        <content>
+        <paragraph>
+        <p><obligation>لا يجوز لأي كان أن يستعمل الحقوق و الحريات السالفة الذكر في المساس باستقلال الأمة و سلامة الأراضي الوطنية و الوحدة الوطنية و مؤسسات الجمهورية و مطامح الشعب الإشتراكية، ومبدأ وحدانية جبهة التحرير الوطني</obligation>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_23">
+        <num>المادة 23</num>
+        <content>
+        <paragraph>
+        <p><def refersTo="#FLN">جبهة التحرير الوطني هي حزب الطليعة الواحد في الجزائر</def>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_24">
+        <num>المادة 24</num>
+        <content>
+        <paragraph>
+        <p><term refersTo="#FLN">جبهة التحرير الوطني</term> تحدد سياسة الأمة، و توحي بعمل الدولة و تراقب عمل <term refersTo="#national_assembly">المجلس الوطني</term> و الحكومة.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_25">
+        <num>المادة 25</num>
+        <content>
+        <paragraph>
+        <p><term refersTo="#FLN">جبهة التحرير الوطني</term> تشخص المطامح العميقة للجماهير و تهذبها و تنظمها و هي رائدها في تحقيق مطامحها.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_26">
+        <num>المادة 26</num>
+        <content>
+        <paragraph>
+        <p><term refersTo="#FLN">جبهة التحرير الوطني</term> تنجز أهداف الثورة الديمقراطية الشعبية، و تشيد الاشتراكية في الجزائر.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_27">
+        <num>المادة 27</num>
+        <content>
+        <paragraph>
+        <p>السيادة الوطنية للشعب يمارسها بواسطة ممثلين له قي <term refersTo="#national_assembly">مجلس وطني</term>، ترشحهم <term refersTo="#FLN">جبهة التحرير الوطني</term>، و ينتخبون باقتراع عام مباشر و سرى لمدة خمسة سنين.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_28">
+        <num>المادة 28</num>
+        <content>
+        <paragraph>
+        <p>يعبر <term refersTo="#national_assembly">المجلس الوطني</term> عن الارادة الشعبية، و يتولى التصويت على القوانين، و يراقب النشاط الحكومي.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_29">
+        <num>المادة 29</num>
+        <content>
+        <paragraph>
+        <p>يحدد القانون طريقة انتخاب النواب في <term refersTo="#national_assembly">المجلس الوطني</term> و عددهم، و شروط صلاحية انتخابهم، و نظام ما يتنافى و النيابة.</p>
+        </paragraph>
+        <paragraph>
+        <p>و في حالة النزاع حول قانونية انتخاب النائب، تتولى “لجنة مراجعة السلط و تصحيح النيابة” المنصوص عليها في النظام الداخلي للمجلس، الفصل في الموضوع طبقا للشروط المحددة.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_30">
+        <num>المادة 30</num>
+        <content>
+        <paragraph>
+        <p><condition>لا يمكن للمجلس الوطني الاعلان عن اسقاط النائب الا بأغلبية ثلثي أعضائه و باقتراح من الهيئة العليا لجبهة التحرير الوطني</condition>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_31">
+        <num>المادة 31</num>
+        <content>
+        <paragraph>
+        <p><right>يتمتع النائب بالحصانة البرلمانية خلال مدة نيابته</right>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_32">
+        <num>المادة 32</num>
+        <content>
+        <paragraph>
+        <p><obligation>لا يجوز ايقاف أي <term refersTo="#نائب">نائب</term>، أو متابعته فيما يتعلق بالقضايا الجنائية دون اذن <term refersTo="#المجلس_الوطني">المجلس الوطني</term></obligation> <condition>الا في حالة التلبس بالجريمة</condition>، و <obligation>يوقف حبس أو متابعة <term refersTo="#نائب">النائب</term> بطلب من <term refersTo="#المجلس_الوطني">المجلس الوطني</term></obligation>.</p>
+        </paragraph>
+        <paragraph>
+        <p><condition>و في حالة التلبس بالجريمة</condition> <obligation>يقدم فورا اخطار المتابعة أو الإجراءات المتخذة ضد <term refersTo="#نائب">النائب</term> الى مكتب المجلس الذي يمكنه ان يطالب بموجب سلطة القانون اتخاذ التدابير الضرورية لاحترام مبدأ الحصانة البرلمانية</obligation>.</p>
+        </paragraph>
+        <paragraph>
+        <p><right>و لا تجوز متابعة أي عضو من أعضاء <term refersTo="#المجلس_الوطني">المجلس الوطني</term>، أو ايقافه أو حبسه، أو محاكمته بسبب ما يدلي به من آراء أو تصويت خلال ممارسة نيابته</right>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_33">
+        <num>المادة 33</num>
+        <content>
+        <paragraph>
+        <p><obligation>يجتمع <term refersTo="#المجلس_الوطني">المجلس الوطني</term> وجوبا قبل اليوم الخامس عشر الموالي لانتخاب أعضائه و يعمد الى تصحيح نيابتهم</obligation>.</p>
+        </paragraph>
+        <paragraph>
+        <p><obligation>و ينتخب فورا رئيسه و مكتبه و لجانه</obligation>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_34">
+        <num>المادة 34</num>
+        <content>
+        <paragraph>
+        <p><term refersTo="#رئيس_المجلس_الوطني">رئيس المجلس الوطني</term> هو الشخصية الثانية في الدولة.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_35">
+        <num>المادة 35</num>
+        <content>
+        <paragraph>
+        <p><obligation>يحدد <term refersTo="#المجلس_الوطني">المجلس الوطني</term> في قانونه الداخلي قواعد تنظيمه و تسييره</obligation>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_36">
+        <num>المادة 36</num>
+        <content>
+        <paragraph>
+        <p><right>ل<term refersTo="#رئيس_الجمهورية">رئيس الجمهورية</term> و لل<term refersTo="#نواب">نواب</term> حق المبادرة بتقديم القوانين</right>.</p>
+        </paragraph>
+        <paragraph>
+        <p><obligation>توضع مشاريع و اقتراحات و تصميمات القوانين على مكتب المجلس الذي يحيلها على اللجان البرلمانية المختصة لدراستها</obligation>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_37">
+        <num>المادة 37</num>
+        <content>
+        <paragraph>
+        <p><right>لأعضاء الحكومة حق حضور جلسات <term refersTo="#المجلس_الوطني">المجلس الوطني</term> و المشاركة في مناقشة اللجان</right>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_38">
+        <num>المادة 38</num>
+        <content>
+        <paragraph>
+        <p><obligation>يمارس <term refersTo="#المجلس_الوطني">المجلس الوطني</term> مراقبته للنشاط الحكومي بواسطة</obligation> :</p>
+        <list>
+        <point><p>الاستماع الى الوزراء داخل اللجان</p></point>
+        <point><p>السؤال الكتابي.</p></point>
+        <point><p>السؤال الشفوي مع المناقشة أو بدونها.</p></point>
+        </list>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_39">
+        <num>المادة 39</num>
+        <content>
+        <paragraph>
+        <p><obligation>تسند السلطة التنفيذية الى رئيس الدولة الذي يحمل لقب <term refersTo="#رئيس_الجمهورية">رئيس الجمهورية</term></obligation>.</p>
+        </paragraph>
+        <paragraph>
+        <p>و هو ينتخب لمدة خمس سنوات عن طريق الإقتراع العام المباشر و السري بعد تعيينه من طرف الحزب.</p>
+        </paragraph>
+        <paragraph>
+        <p><condition>يمكن لكل مسلم جزائري الأصل بلغ عمره 35 سنة على الأقل و متمتع بحقوقه المدنية و السياسية</condition> أن ينتخب رئيسا للجمهورية.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_40">
+        <num>المادة 40</num>
+        <content>
+        <paragraph>
+        <p><obligation>يؤدي <term refersTo="#رئيس_الجمهورية">رئيس الجمهورية</term> قبل مباشرته لمهام وظيفته القسم أمام <term refersTo="#المجلس_الوطني">المجلس الوطني</term> بالعبارات التالية</obligation> : (وفاء لمبادئ ثورتنا و لأرواح شهدائنا، أقسم بالله العظيم ان أحترم الدستور و أدافع عليه و أحافظ على سلامة الوطن و استقلال البلاد و وحدتها، و أن أبذل كل جهدي لرعاية مصالح الشعب و الجمهورية الديمقراطية الشعبية).</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_41">
+        <num>المادة 41</num>
+        <content>
+        <paragraph>
+        <p>يعتمد لدى <term refersTo="#رئيس_الجمهورية">رئيس الجمهورية</term> السفراء الأجانب و المبعثون فوق العادة.</p>
+        </paragraph>
+        <paragraph>
+        <p><obligation>و يعين السفراء و المبعثون فوق العادة باقتراح من طرف <term refersTo="#وزير_الشؤون_الخارجية">وزير الشؤون الخارجية</term></obligation>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_42">
+        <num>المادة 42</num>
+        <content>
+        <paragraph>
+        <p><obligation>يوقع <term refersTo="#رئيس_الجمهورية">رئيس الجمهورية</term> بعد استشارة <term refersTo="#المجلس_الوطني">المجلس الوطني</term> و يصادق على المعاهدات والإتفاقيات و المواثيق الدولية و يسهر على تنفيذها</obligation>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_43">
+        <num>المادة 43</num>
+        <content>
+        <paragraph>
+        <p>و هو القائد الأعلى للقوات المسلحة للجمهورية.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_44">
+        <num>المادة 44</num>
+        <content>
+        <paragraph>
+        <p><obligation>يعلن <term refersTo="#رئيس_الجمهورية">رئيس الجمهورية</term> الحرب و يبرم السلم بموافقة <term refersTo="#المجلس_الوطني">المجلس الوطني</term></obligation>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_45">
+        <num>المادة 45</num>
+        <content>
+        <paragraph>
+        <p>يترأس <term refersTo="#president">رئيس الجمهورية</term> <term refersTo="#supreme_defense_council">المجلس الأعلى للدفاع</term> و <term refersTo="#supreme_judicial_council">المجلس الأعلى للقضاء</term>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_46">
+        <num>المادة 46</num>
+        <content>
+        <paragraph>
+        <p>يمارس <term refersTo="#president">رئيس الجمهورية</term> <right>حق العفو</right> بعد إستشارة <term refersTo="#supreme_judicial_council">المجلس الأعلى للقضاء</term>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_47">
+        <num>المادة 47</num>
+        <content>
+        <paragraph>
+        <p><term refersTo="#president">رئيس الجمهورية</term> هو المسؤول الوحيد أمام <term refersTo="#national_assembly">المجلس الوطني</term>، <obligation>يعين الوزراء الذين يجب أن يختار الثلثي 3/2 منهم على الأقل من بين النواب و يقدمهم الى المجلس</obligation>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_48">
+        <num>المادة 48</num>
+        <content>
+        <paragraph>
+        <p>يتولى <term refersTo="#president">رئيس الجمهورية</term> تحديد سياسة الحكومة و توجيهها، كما يقوم بتسيير و تنسيق السياسة الداخلية و الخارجية للبلاد طبقا لإرادة الشعب التي يجسمها الحزب، و يعبر عنها <term refersTo="#national_assembly">المجلس الوطني</term>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_49">
+        <num>المادة 49</num>
+        <content>
+        <paragraph>
+        <p><obligation>يكلف <term refersTo="#president">رئيس الجمهورية</term> باصدار القوانين و نشرها</obligation>.</p>
+        </paragraph>
+        <paragraph>
+        <p><obligation>يصدر القوانين خلال الأيام العشرة الموالية لإحالتها عليه من طرف <term refersTo="#national_assembly">المجلس الوطني</term></obligation>، و يوقع مرسومات التطبيق. و <condition>يمكن التخفيض من أجل الأيام العشرة عندما يطلب <term refersTo="#national_assembly">المجلس الوطني</term> الاستعجال</condition>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_50">
+        <num>المادة 50</num>
+        <content>
+        <paragraph>
+        <p><right>يجوز ل<term refersTo="#president">رئيس الجمهورية</term> أن يطلب من <term refersTo="#national_assembly">المجلس الوطني</term> برسالة مبينة الأسباب خلال الأجل المحدد لاصدار القوانين، للتداول في شأنها مرة ثانية</right>، و لا يمكن رفض طلبه هذا.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_51">
+        <num>المادة 51</num>
+        <content>
+        <paragraph>
+        <p><condition>اذا لم يصدر <term refersTo="#president">رئيس الجمهورية</term> القوانين في الآجال المنصوص عليها</condition> فإن <obligation>رئيس <term refersTo="#national_assembly">المجلس الوطني</term> يتول إصدارها</obligation>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_52">
+        <num>المادة 52</num>
+        <content>
+        <paragraph>
+        <p>يتولى <term refersTo="#president">رئيس الجمهورية</term> تنفيذ القوانين.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_53">
+        <num>المادة 53</num>
+        <content>
+        <paragraph>
+        <p>تمارس السلطة النظامية من <term refersTo="#president">رئيس الجمهورية</term>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_54">
+        <num>المادة 54</num>
+        <content>
+        <paragraph>
+        <p>يعين <term refersTo="#president">رئيس الجمهورية</term> الموظفين في جميع المناصب المدنية و العسكرية.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_55">
+        <num>المادة 55</num>
+        <content>
+        <paragraph>
+        <p><right>يطعن <term refersTo="#national_assembly">المجلس الوطني</term> في مسؤولية <term refersTo="#president">رئيس الجمهورية</term> بإيداع لائحة سحب الثقة</right>، <condition>يتعين توقيعها من طرف ثلث النواب الذين يتكون منهم المجلس</condition>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_56">
+        <num>المادة 56</num>
+        <content>
+        <paragraph>
+        <p><condition>التصويت على لائحة سحب الثقة بالأغلبية المطلقة لنواب <term refersTo="#national_assembly">المجلس الوطني</term></condition> يوجب استقالة <term refersTo="#president">رئيس الجمهورية</term> و الحل التلقائي للمجلس. و لا يجوز الإلتجاء الى هذا التصويت العلني إلا <condition>بعد مضي أجل خمسة أيام كاملة على إيداع اللائحة</condition>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_57">
+        <num>المادة 57</num>
+        <content>
+        <paragraph>
+        <p><condition>في حالة استقالة <term refersTo="#president">رئيس الجمهورية</term> أو وفاته أو عجزه النهائي أو سحب الثقة من الحكومة</condition>، يمارس <term refersTo="#national_assembly">المجلس الوطني</term> مهام <term refersTo="#president">رئيس الجمهورية</term>، و يساعده فيها رؤساء اللجان في <term refersTo="#national_assembly">المجلس الوطني</term>.</p>
+        </paragraph>
+        <paragraph>
+        <p>و مهمته الأساسية تصريف الشؤون العادية، وإعداد الانتخابات في ظرف شهرين لتعيين <term refersTo="#president">رئيس الجمهورية</term> و أعضاء <term refersTo="#national_assembly">المجلس الوطني</term> في حالة حله.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_58">
+        <num>المادة 58</num>
+        <content>
+        <paragraph>
+        <p><right>يجوز ل<term refersTo="#president">رئيس الجمهورية</term> أن يطلب من <term refersTo="#national_assembly">المجلس الوطني</term> التفويض له لمدة محدودة حق اتخاذ تدابير ذات صبغة تشريعية عن طريق أوامر تشريعية</right> تتخذ في نطاق مجلس الوزراء أو تعرض على مصادقة المجلس في أجل ثلاثة أشهر.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_59">
+        <num>المادة 59</num>
+        <content>
+        <paragraph>
+        <p><condition>في حالة الخطر الوشيك الوقوع</condition> يمكن لـ<term refersTo="#president">رئيس الجمهورية</term> اتخاذ تدابير استثنائية لحماية استقلال الأمة و مؤسسات الجمهورية. و <obligation>يجتمع المجلس الوطني وجوبا</obligation>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_60">
+        <num>المادة 60</num>
+        <content>
+        <paragraph>
+        <p>يقضى باسم الشعب الجزائري <condition>طبقا للشروط التي يحددها قانون التنظيم القضائي</condition>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_61">
+        <num>المادة 61</num>
+        <content>
+        <paragraph>
+        <p><right>يعترف بحق الدفاع و يكون مضمونا في الجنايات</right>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_62">
+        <num>المادة 62</num>
+        <content>
+        <paragraph>
+        <p><obligation>لا يخضع القضاة في ممارستهم لوظائفهم إلا للقانون و لمصالح الثورة الاشتراكية</obligation>.</p>
+        </paragraph>
+        <paragraph>
+        <p>إستقلالهم مضمون بالقانون و بوجود <term refersTo="#supreme_council_judiciary">المجلس الأعلى للقضاء</term>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_63">
+        <num>المادة 63</num>
+        <content>
+        <paragraph>
+        <p>يتألف <term refersTo="#constitutional_council">المجلس الدستوري</term> من الرئيس الأول للمحكمة العليا، و رئيسي الحجرتين المدنية والإدارية في المحكمة العليا و ثلاثة نواب يعينهم المجلس الوطني و عضو يعينه رئيس الجمهورية.</p>
+        </paragraph>
+        <paragraph>
+        <p>ينتخب أعضاء المجلس الدستوري رئيسهم الذي ليس له صوت مرجح.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_64">
+        <num>المادة 64</num>
+        <content>
+        <paragraph>
+        <p>يفصل <term refersTo="#constitutional_council">المجلس الدستوري</term> في دستورية القوانين و الأوامر التشريعية بطلب من رئيس الجمهورية أو رئيس المجلس الوطني.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_65">
+        <num>المادة 65</num>
+        <content>
+        <paragraph>
+        <p><def refersTo="#supreme_council_judiciary">المجلس الأعلى للقضاء</def> : يتألف <term refersTo="#supreme_council_judiciary">المجلس الأعلى للقضاء</term> من رئيس الجمهورية و وزير العدل، و الرئيس الأول للمحكمة العليا، و وكيل الدولة العام لديها، و محام لدى المحكمة العليا، وإثنين من رجال القضاء أحدهما من قضاة الصلح، ينتخبان من طرف زملائهم على المستوى الوطني و ستة أعضاء تنتخبهم لجنة العدل الدائمة في المجلس الوطني من بين أعضائها.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_66">
+        <num>المادة 66</num>
+        <content>
+        <paragraph>
+        <p>اختصاصات <term refersTo="#supreme_council_judiciary">المجلس الأعلى للقضاء</term> و قواعد سيره تحدد بقانون.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_67">
+        <num>المادة 67</num>
+        <content>
+        <paragraph>
+        <p><def refersTo="#supreme_council_defense">المجلس الأعلى للدفاع</def> : يتألف <term refersTo="#supreme_council_defense">المجلس الأعلى للدفاع</term> من رئيس الجمهورية و وزير الدفاع الوطني، و وزير الداخلية، و وزير الشؤون الخارجية، و رئيس لجنة الدفاع الوطني في المجلس، و عضوين يعينهما رئيس الجمهورية.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_68">
+        <num>المادة 68</num>
+        <content>
+        <paragraph>
+        <p>يستشار المجلس في جميع المسائل العسكرية.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_69">
+        <num>المادة 69</num>
+        <content>
+        <paragraph>
+        <p><def refersTo="#economic_social_council">المجلس الأعلى الإقتصادي و الإجتماعي</def> : يتألف <term refersTo="#economic_social_council">المجلس الأعلى الإقتصادي و الإجتماعي</term> من خمسة نواب يعينهم المجلس الوطني، و مدير التصميم، و حاكم البنك المركزي للجزائر و المسؤولون عن المنظمات القومية و ممثلين للنواحي الرئيسية من النشاط القومي الإقتصادي والإجتماعي يعينهم رئيس الجمهورية.</p>
+        </paragraph>
+        <paragraph>
+        <p>ينتخب المجلس الأعلى الاقتصادي و الاجتماعي رئيسه.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_70">
+        <num>المادة 70</num>
+        <content>
+        <paragraph>
+        <p>يستشار <term refersTo="#economic_social_council">المجلس الأعلى الإقتصادي والإجتماعي</term> في جميع مشروعات و مقترحات القانون ذات الطابع الإقتصادي و الإجتماعي، و يمكنه الإستماع الى أعضاء الحكومة.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_71">
+        <num>المادة 71</num>
+        <content>
+        <paragraph>
+        <p>ترجع المبادرة بتعديل الدستور الى كل من رئيس الجمهورية و الأغلبية المطلقة لأعضاء المجلس الوطني معا.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_72">
+        <num>المادة 72</num>
+        <content>
+        <paragraph>
+        <p>يتضمن إجراء تعديل الدستور، تلاوتين و تصويتين بالأغلبية المطلقة لأعضاء المجلس الوطني يفصل بينهما أجل شهرين.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_73">
+        <num>المادة 73</num>
+        <content>
+        <paragraph>
+        <p>يعرض مشروع قانون التعديل على مصادقة الشعب عن طريقة الإستفتاء.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_74">
+        <num>المادة 74</num>
+        <content>
+        <paragraph>
+        <p><condition>في حالة مصادقة الشعب على مشروع تعديل الدستور</condition> يتم إصداره من طرف <term refersTo="#president">رئيس الجمهورية</term> باعتباره قانونا دستوريا خلال الأيام الثمانية الموالية لتاريخ الإستفتاء.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_75">
+        <num>المادة 75</num>
+        <content>
+        <paragraph>
+        <p><term refersTo="#national_anthem">النشيد الوطني</term> مؤقتا هو “قسما”، و سيتولى قانون غير دستوري تحديد <term refersTo="#national_anthem">النشيد الوطني</term> في المستقبل.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_76">
+        <num>المادة 76</num>
+        <content>
+        <paragraph>
+        <p><obligation>يجب تحقيق تعميم اللغة العربية في أقرب وقت ممكن في كامل أراضي الجمهورية</obligation>. بيد أنه، خلافا لأحكام هذا القانون، سوف يجوز استعمال اللغة الفرنسية مؤقتا الى جانب اللغة العربية.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_77">
+        <num>المادة 77</num>
+        <content>
+        <paragraph>
+        <p>يمدد أجل النيابة التشريعية لأعضاء المجلس الوطني التأسيسي المنتخب بتاريخ 20 سبتمبر 1962، حتى تاريخ 20 سبتمبر 1964. و تجرى قبل هذا التاريخ انتخابات المجلس الوطني طبقا للدستور، و لمدة أربع سنوات.</p>
+        </paragraph>
+        <paragraph>
+        <p>و يواصل <term refersTo="#head_of_government">رئيس الحكومة</term> أداء مهامه الراهنة حتى يتم انتخاب <term refersTo="#president">رئيس الجمهورية</term> الذي يتعين أن يجرى خلال أجل أقصاه شهر بعد المصادقة على الدستور عن طريق الإستفتاء.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_78">
+        <num>المادة 78</num>
+        <content>
+        <paragraph>
+        <p>يصدر <term refersTo="#president">رئيس الجمهورية</term> مشروع الدستور في ظرف ثمانية أيام بعد مصادقة الشعب عليه.</p>
+        </paragraph>
+        </content>
+        </article>
+    </body>
+  </act>
+</akomaNtoso>

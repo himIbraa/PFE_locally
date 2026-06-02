@@ -1,0 +1,1964 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="law">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/law/1990-04-21/90-11/main"/>
+      <FRBRuri value="/akn/dz/act/law/1990-04-21/90-11"/>
+      <FRBRdate date="1990-04-21" name="enactment"/>
+      <FRBRauthor href="#parliament"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="90-11"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/law/1990-04-21/90-11/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/law/1990-04-21/90-11/ara@"/>
+      <FRBRdate date="1990-04-21" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/law/1990-04-21/90-11/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/law/1990-04-21/90-11/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="parliament" href="/ontology/organization/dz/parliament" showAs="البرلمان"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="converter" href="/ontology/person/dz/converter" showAs="Markup Specialist"/>
+  </references>
+<lifecycle source="#source"><eventRef eId="evt_1" date="1990-04-21" source="#source" type="generation"/></lifecycle><analysis source="#source"><activeModifications><textualMod type="substitution" eId="amend_1"><source href="#art_157"/><destination href="/akn/dz/act/order/1971-11-16/71-74#art_3"/><force period="#evt_1"/></textualMod><textualMod type="substitution" eId="amend_2"><source href="#art_157"/><destination href="/akn/dz/act/order/1975-04-29/75-31#art_3"/><force period="#evt_1"/></textualMod><textualMod type="substitution" eId="amend_3"><source href="#art_157"/><destination href="/akn/dz/act/law/1978-08-05/78-12#art_1"/><force period="#evt_1"/></textualMod><textualMod type="substitution" eId="amend_4"><source href="#art_157"/><destination href="/akn/dz/act/law/1978-08-05/78-12#art_179"/><force period="#evt_1"/></textualMod><textualMod type="substitution" eId="amend_5"><source href="#art_157"/><destination href="/akn/dz/act/law/1978-08-05/78-12#art_199"/><force period="#evt_1"/></textualMod><textualMod type="substitution" eId="amend_6"><source href="#art_157"/><destination href="/akn/dz/act/law/1978-08-05/78-12#art_216"/><force period="#evt_1"/></textualMod><textualMod type="substitution" eId="amend_7"><source href="#art_157"/><destination href="/akn/dz/act/law/1981-02-21/81-03#art_3"/><force period="#evt_1"/></textualMod><textualMod type="substitution" eId="amend_8"><source href="#art_157"/><destination href="/akn/dz/act/law/1981-06-27/81-08#art_3"/><force period="#evt_1"/></textualMod><textualMod type="substitution" eId="amend_9"><source href="#art_157"/><destination href="/akn/dz/act/law/1982-02-27/82-06#art_3"/><force period="#evt_1"/></textualMod><textualMod type="substitution" eId="amend_10"><source href="#art_157"/><destination href="/akn/dz/act/order/1971/71-74#art_3"/><force period="#evt_1"/></textualMod></activeModifications></analysis></meta>
+    <preface>
+  <docTitle>قانون رقم 90-11 يتعلق بعلاقات العمل</docTitle>
+  <docNumber>90-11</docNumber>
+  <docDate date="1990-04-21">26 رمضان عام 1410 الموافق 21 ابريل سنة 1990</docDate>
+  <docAuthority>البرلمان</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>إن رئيس الجمهورية،</p>
+    </citation>
+    <citation>
+      <p>بناء على الدستور، لاسيما المواد 52 و 53 و 54 و 113 و 115 و 117 منه،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 66 - 156 المؤرخ في 18 صفر عام 1386 الموافق 8 يونيو سنة 1966، المعدل والمتمم المتضمن قانون العقوبات،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 71 - 74 المؤرخ في 28 رمضان عام 1391 الموافق 16 نوفمبر سنة 1971، المتعلق بالتسيير الاشتراكي للمؤسسات،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 75 - 31 المؤرخ في 17 ربيع الثاني عام 1395 الموافق 29 أبريل سنة 1975، المتعلق بالشروط العامة للعمل في القطاع الخاص،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 78 - 12 المؤرخ في أول رمضان عام 1398 الموافق 5 غشت سنة 1978، المتضمن القانون الأساسي العام للعامل،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 81 - 03 المؤرخ في 16 ربيع الثاني عام 1401 الموافق 21 فبراير سنة 1981، الذي يحدد المدة القانونية للعمل،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 81 - 08 المؤرخ في 24 شعبان عام 1401 الموافق 27 يونيو سنة 1981، المتعلق بالعطل السنوية،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 82 - 06 المؤرخ في 3 جمادى الأولى عام 1402 الموافق 27 فبراير سنة 1982، المتعلق بعلاقات العمل الفردية،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 88 - 01 المؤرخ في 22 جمادى الاولى عام 1408 الموافق 12 يناير سنة 1988، المتضمن القانون التوجيهي للمؤسسات العمومية الاقتصادية،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 88 - 02 المؤرخ في 22 جمادى الاولى عام 1408 الموافق 12 يناير سنة 1988، المتعلق بالتخطيط،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 88 - 04 المؤرخ في 22 جمادى الأولى عام 1408 الموافق 12 يناير سنة 1988، المعدل والمتمم للأمر رقم 75 - 59 المؤرخ في 26 سبتمبر سنة 1975، المتضمن القانون التجاري، والذي يحدد القواعد الخاصة المطبقة على المؤسسات العمومية الاقتصادية،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 88 - 06 المؤرخ في 22 جمادى الاولى عام 1408 الموافق 12 يناير سنة 1988، المتعلق بنظام البنوك والقرد،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 90 - 02 المؤرخ في 10 رجب عام 1410 الموافق 6 فبراير سنة 1990، المتعلق بالوقاية من النزاعات الجماعية للعمل وتسويتها وممارسة حق الاضراب،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 90 - 03 المؤرخ في 10 رجب عام 1410 الموافق 6 فبراير سنة 1990، المتعلق بمفتشية العمل،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 90-04 المؤرخ في 10 رجب عام 1410 الموافق 6 فبراير سنة 1990، المتعلق بالنزاعات الفردية للعمل،</p>
+    </citation>
+    <citation>
+      <p>وبناء على ما أقره المجلس الشعبي الوطني،</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يصدر القانون التالي نصه :</p>
+  </formula>
+</preamble>
+    <body>
+      <chapter eId="chp_1">
+        <num>الأول</num>
+        <heading>الهدف ومجال التطبيق</heading>
+        <article eId="art_1">
+          <num>المادة الأولى</num>
+          <content>
+          <paragraph>
+          <p>يحكم هذا القانون <term refersTo="#individual_labor_relations">العلاقات الفردية والجماعية في العمل</term> بين <term refersTo="#employees">العمال الاجراء</term> و <term refersTo="#employers">المستخدمين</term>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_2">
+          <num>المادة 2</num>
+          <content>
+          <paragraph>
+          <p><def refersTo="#employees">يعتبر عمالا اجراء، في مفهوم هذا القانون، كل الأشخاص الذين يؤدون عملا يدويا أو فكريا مقابل مرتب، في اطار التنظيم، ولحساب شخص آخر، طبيعي أو معنوي عمومي أو خاص يدعى " <term refersTo="#employer">المستخدم</term> "</def>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_3">
+          <num>المادة 3</num>
+          <content>
+          <paragraph>
+          <p><obligation>يخضع المستخدمون المدنيون والعسكريون التابعون للدفاع الوطني والقضاة والموظفون والأعوان المتعاقدون في الهيئات والادارات العمومية في الدولة والولايات والبلديات ومستخدمو المؤسسات العمومية ذات الطابع الاداري لأحكام تشريعية وتنظيمية خاصة</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_2">
+        <num>الثاني</num>
+        <heading>حقوق العمال وواجباتهم</heading>
+        <section eId="chp_2_sec_1">
+          <num>الأول</num>
+          <heading>حقوق العمال</heading>
+          <article eId="art_5">
+            <num>5</num>
+            <content>
+            <paragraph>
+            <p><obligation>يتمتع <term refersTo="#workers">العمال</term> بالحقوق الاساسية التالية</obligation></p>
+            <list>
+            <point>
+            <p><right>ممارسة الحق النقابي</right></p>
+            </point>
+            <point>
+            <p><right>التفاوض الجماعي</right></p>
+            </point>
+            <point>
+            <p><right>المشاركة في الهيئة المستخدمة،</right></p>
+            </point>
+            <point>
+            <p><right>الضمان الاجتماعي والتقاعد</right></p>
+            </point>
+            <point>
+            <p><right>الوقاية الصحية والامن وطب العمل</right></p>
+            </point>
+            <point>
+            <p><right>الراحة،</right></p>
+            </point>
+            <point>
+            <p><right>المساهمة في الوقاية من نزاعات العمل وتسويتها،</right></p>
+            </point>
+            <point>
+            <p><right>اللجوء الى الاضراب.</right></p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_6">
+            <num>6</num>
+            <content>
+            <paragraph>
+            <p><right>يحق <term refersTo="#workers">للعمال</term> أيضا، في اطار علاقة العمل ما</right></p>
+            <list>
+            <point>
+            <p><right>التشغيل الفعلي</right></p>
+            </point>
+            <point>
+            <p><right>احترام السلامة البدنية و المعنوية وكرامتهم،</right></p>
+            </point>
+            <point>
+            <p><right>الحماية من أي تمييز لشغل منصب عمل غير المنصب القائم على أهليتهم واستحقاقهم،</right></p>
+            </point>
+            <point>
+            <p><right>التكوين المهني والترقية في العمل</right></p>
+            </point>
+            <point>
+            <p><right>الدفع المنتظم للاجر المستحق</right></p>
+            </point>
+            <point>
+            <p><right>الخدمات الاجتماعية</right></p>
+            </point>
+            <point>
+            <p><right>كل المنافع المرتبطة بعقد العمل ارتباطا نوعيا.</right></p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_2_sec_2">
+          <num>الثاني</num>
+          <heading>واجبات العمال</heading>
+          <article eId="art_7">
+            <num>7</num>
+            <content>
+            <paragraph>
+            <p><obligation>يخضع <term refersTo="#workers">العمال</term> في اطار <term refersTo="#labor_relations">علاقات العمل</term> للواجبات الاساسية التالية :</obligation></p>
+            <list>
+            <point>
+            <p><obligation>أن يؤدوا بأقصى ما لديهم من قدرات الواجبات المرتبطة بمنصب عملهم ويعملوا بعناية ومواظبة في اطار تنظيم العمل الذي يضعه <term refersTo="#employer">المستخدم</term>،</obligation></p>
+            </point>
+            <point>
+            <p><obligation>أن يساهموا في مجهودات <term refersTo="#employing_entity">الهيئة المستخدمة</term> لتحسين التنظيم والانتاجية</obligation></p>
+            </point>
+            <point>
+            <p><obligation>أن ينفذوا التعليمات التي تصدرها السلطة السلمية التي يعينها <term refersTo="#employer">المستخدم</term> أثناء ممارسته العادية لسلطاته في الادارة</obligation></p>
+            </point>
+            <point>
+            <p><obligation>أن يراعوا تدابير الوقاية الصحية والامن التي بعدها <term refersTo="#employer">المستخدم</term> وفقا للتشريع والتنظيم</obligation></p>
+            </point>
+            <point>
+            <p><obligation>أن يتقبلوا أنواع الرقابة الطبية الداخلية والخارجية التي قد يباشرها <term refersTo="#employer">المستخدم</term> في اطار طب العمل أو مراقبة المواظبة</obligation></p>
+            </point>
+            <point>
+            <p><obligation>أن يشاركوا في أعمال التكوين وتحسين المستوى وتجديد المعارف التي يقوم بها <term refersTo="#employer">المستخدم</term> في اطار تحسين التسيير أو فعالية <term refersTo="#employing_entity">الهيئة المستخدمة</term> أو من أجل تحسين الوقاية الصحية والامن</obligation></p>
+            </point>
+            <point>
+            <p><obligation>أن لاتكون لهم مصالح مباشرة أو غير مباشرة في مؤسسة أو شركة منافسة أو زبونة أو مقاولة من الباطن <condition>الا اذا كان هناك اتفاق مع <term refersTo="#employer">المستخدم</term></condition>، وأن لا تنافسه في مجال نشاطه.</obligation></p>
+            </point>
+            <point>
+            <p><obligation>أن لا يفشوا المعلومات المهنية المتعلقة بالتقنيات والتكنولوجيا وأساليب الصنع وطرق التنظيم وبصفة عامة ان لا يكشفوا مضمون الوثائق الداخلية الخاصة بـ <term refersTo="#employing_entity">الهيئة المستخدمة</term> <condition>الا اذا فرضها القانون أو طلبتها سلطتهم السلمية</condition>،</obligation></p>
+            </point>
+            <point>
+            <p><obligation>أن يراعوا الالتزامات الناجمة عن عقد العمل.</obligation></p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>كتابي.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+      <chapter eId="chp_3">
+        <num>الثالث</num>
+        <heading>علاقات العمل الفردية</heading>
+        <section eId="chp_3_sec_1">
+          <num>الأول</num>
+          <heading>احكام عامة</heading>
+          <article eId="art_8">
+            <num>8</num>
+            <content>
+            <paragraph>
+            <p><obligation>تنشأ <term refersTo="#employment_relationship">علاقة العمل</term> بعقد كتابي أو غير مكتوب</obligation>. وتقوم هذه العلاقة على أية حال، بمجرد العمل لحساب مستخدم ما.</p>
+            </paragraph>
+            <paragraph>
+            <p>وتنشأ عنها <right>حقوق المعنيين</right> و<obligation>واجباتهم</obligation> وفق ما يحدده التشريع والتنظيم والاتفاقيات أو الاتفاقات الجماعية وعقد العمل.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_9">
+            <num>9</num>
+            <content>
+            <paragraph>
+            <p>يتم <term refersTo="#employment_contract">عقد العمل</term> حسب الاشكال التي تتفق عليها الاطراف المتعاقدة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_10">
+            <num>10</num>
+            <content>
+            <paragraph>
+            <p>يمكن اثبات <term refersTo="#employment_contract">عقد العمل</term> أو علاقته بأية وسيلة كانت.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_11">
+            <num>11</num>
+            <content>
+            <paragraph>
+            <p>يعتبر العقد مبرما لمدة غير محدودة الا <condition>اذا نص على غير ذلك كتابة</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وفي حالة انعدام عقد عمل مكتوب</condition>، يفترض أن تكون علاقة العمل قائمة لمدة غير محدودة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_12">
+            <num>12</num>
+            <content>
+            <paragraph>
+            <p>يمكن ابرام <term refersTo="#employment_contract">عقد العمل</term> لمدة محدودة بالتوقيت الكامل أو التوقيت الجزئي في الحالات المنصوص عليها صراحة أدناه :</p>
+            <list>
+            <point>
+            <p>عندما يوظف العامل لتنفيذ عمل مرتبط بعقود أشغال أو خدمات غير متجددة</p>
+            </point>
+            <point>
+            <p>عندما يتعلق الأمر باستخلاف عامل مثبت في منصب تغيب عنه مؤقتا، و<obligation>يجب على المستخدم أن يحتفظ بمنصب العمل لصاحبه</obligation>،</p>
+            </point>
+            <point>
+            <p>عندما يتطلب الامر من الهيئة المستخدمة اجراء أشغال دورية ذات طابع متقطع</p>
+            </point>
+            <point>
+            <p>عندما يبرر ذلك تزايد العمل أو أسباب موسمية.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويبين بدقة عقد العمل، في جميع هذه الحالات، مدة علاقة العمل وأسباب المدة المقررة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_13">
+            <num>13</num>
+            <content>
+            <paragraph>
+            <p>يجوز كذلك ابرام <term refersTo="#employment_contract">عقد العمل</term> لمدة غير محدودة ولكن بالتوقيت الجزئي أي بحجم ساعات متوسط يقل عن المدة القانونية للعمل ويكون ذلك في الحالتين التاليتين :</p>
+            <list>
+            <point>
+            <p>اذا كان حجم العمل المتوفر لايسمح باستخدام العامل كامل الوقت،</p>
+            </point>
+            <point>
+            <p>اذا طلب العامل الممارس ذلك، لاسباب عائلية أو لاعتبارات شخصية ووافق المستخدم</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p><condition>ولا يمكن أن يقل، في أي حال من الاحوال الوقت الجزئي في العمل عن نصف المدة القانونية للعمل</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_14">
+            <num>14</num>
+            <content>
+            <paragraph>
+            <p>يعتبر <term refersTo="#employment_contract">عقد العمل</term> المبرم لمدة محدودة خلافا لما تنص عليه أحكام هذا القانون، عقد عمل لمدة غير محدودة، دون الاخلال بالاحكام الاخرى الواردة في القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_3_sec_2">
+          <num>الثاني</num>
+          <heading>شروط التوظيف وكيفياته</heading>
+          <article eId="art_15">
+            <num>المادة 15</num>
+            <content>
+            <paragraph>
+            <p><obligation>لا يمكن، في أي حال من الاحوال، أن يقل <term refersTo="#minimum_age">العمر الادنى للتوظيف</term> عن ست عشرة ( 16 ) سنة</obligation> <condition>الا في الحالات التي تدخل في اطار عقود التمهين، التي تعد وفقا للتشريع والتنظيم المعمول بهما</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>و لا يجوز توظيف <term refersTo="#minor">القاصر</term> الا بناء على رخصة من وصيه الشرعي</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>كما أنه لا يجوز استخدام <term refersTo="#minor_worker">العامل القاصر</term> في الاشغال الخطيرة أو التي تنعدم فيها النظافة أو تضر صحته أو تمس بأخلاقياته</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_16">
+            <num>المادة 16</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على <term refersTo="#employer_entities">المؤسسات المستخدمة</term> ان تخصص مناصب عمل <term refersTo="#disabled_persons">للاشخاص المعوقين</term> وفق كيفيات تحدد عن طريق التنظيم</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_17">
+            <num>المادة 17</num>
+            <content>
+            <paragraph>
+            <p>تعد باطلة وعديمة الاثر كل الأحكام المنصوص عليها في الاتفاقيات أو الاتفاقات الجماعية أو عقد العمل التي من شأنها أن تؤدي الى تمييز بين العمال، كيفما كان نوعه في مجال الشغل والأجرة أو ظروف العمل، على أساس السن والجنس أو الوضعية الاجتماعية، أو النسبية والقرابة العائلية والقناعات السياسية والانتماء الى نقابة أو عدم الانتماء اليها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_18">
+            <num>المادة 18</num>
+            <content>
+            <paragraph>
+            <p>يمكن ان يخضع <term refersTo="#new_worker">العامل الجديد توظيفه</term> <condition>لمدة تجريبية لاتتعدى ستة (06) ،اشهر</condition>، كما يمكن أن ترفع هذه المدة الى اثني عشر (12) شهرا لمناصب العمل ذات التأهيل العالي.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد المدة التجريبية لكل فئة من فئات العمال أو لمجموع العمال عن طريق التفاوض الجماعي.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_19">
+            <num>المادة 19</num>
+            <content>
+            <paragraph>
+            <p><right>يتمتع العامل خلال المدة التجريبية بنفس الحقوق التي يتمتع بها العمال الذين يشغلون مناصب عمل مماثلة</right> و<obligation>يخضع لنفس الواجبات</obligation> و<right>تؤخذ هذه المدة بعين الاعتبار في حساب الاقدمية لدى الهيئة المستخدمة، عندما يثبت في منصبه، إثر انتهاء الفترة التجريبية</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_21">
+            <num>المادة 21</num>
+            <content>
+            <paragraph>
+            <p><right>يجوز للمستخدم توظيف العمال الاجانب</right> <condition>عندما لا توجد يد عاملة وطنية مؤهلة، وحسب الشروط المحددة في التشريع والتنظيم المعمول بهما</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_3_sec_3">
+          <num>الثالث</num>
+          <heading>مدة العمل</heading>
+          <article eId="art_22">
+            <num>المادة 22</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#legal_working_hours">المدة القانونية للعمل</term> أربع وأربعون (44) ساعة في الاسبوع اثناء ظروف العمل العادية.</p>
+            </paragraph>
+            <paragraph>
+            <p>وتتوزع هذه الساعات على خمسة أيام كاملة على الاقل.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_23">
+            <num>المادة 23</num>
+            <content>
+            <paragraph>
+            <p>يجوز استثناء ل<ref href="#art_22">المادة 22</ref> أعلاه أن تكون مدة العمل الاسبوعية كما يأتي :</p>
+            <list>
+            <point>
+            <p>أن تخفض للاشخاص الذين يقومون بأشغال شاقة وخطيرة أو تترتب عليها متاعب بدنية أو عصبية.</p>
+            </point>
+            <point>
+            <p>وان ترفع لبعض مناصب العمل المتضمنة فترات التوقف عن النشاط.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>وتحدد الاتفاقيات أو الاتفاقات الجماعية قائمة المناصب المعنية وتوضح لكل منصب مقدار تخفيض العمل أو رفعها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_24">
+            <num>المادة 24</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#reference_working_hours">المدة القانونية للعمل المرجعي</term> في المستثمرات الفلاحية هي ألفا (2000) ساعة في السنة، توزع على فترات وحسب ضروريات المنطقة أو النشاط.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_25">
+            <num>المادة 25</num>
+            <content>
+            <paragraph>
+            <p><condition>اذا كانت ساعات العمل تؤدى حسب نظام الدوام المستمر</condition>، <obligation>فينبغي للمستخدم ان يخصص فترة استراحة لاتتعدى ساعة واحدة</obligation>، ويعتبر نصفها عملا.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_26">
+            <num>المادة 26</num>
+            <content>
+            <paragraph>
+            <p><obligation>لايجوز أن تتعدى بأية صفة كانت مدة العمل اثنتي عشرة ساعة (12) في اليوم</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_27">
+            <num>المادة 27</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#night_work">يعتبر كل عمل ينفذ ما بين الساعة التاسعة ليلا والساعة الخامسة صباحا، عملا ليليا</def>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد قواعد وشروط العمل الليلي والحقوق المرتبطة به عن طريق الاتفاقيات أو الاتفاقات الجماعية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_28">
+            <num>المادة 28</num>
+            <content>
+            <paragraph>
+            <p><obligation>لايجوز تشغيل العمال من كلا الجنسين الذين يقل عمرهم عن تسع عشرة (19) سنة كاملة في أي عمل ليلي</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_29">
+            <num>المادة 29</num>
+            <content>
+            <paragraph>
+            <p><obligation>يمنع المستخدم من تشغيل العاملات في أعمال ليلية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>غير أنه يجوز لمفتش العمل المختص اقليميا ان يمنح رخصا ،خاصة <condition>عندما تبرر ذلك طبيعة النشاط وخصوصيات منصب العمل</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_30">
+            <num>المادة 30</num>
+            <content>
+            <paragraph>
+            <p>يجوز للمستخدم ان ينظم العمل على أساس فرق متعاقبة أو عمل تناوبي <condition>اذا اقتضت ذلك حاجات الانتاج أو الخدمة</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>يخول العمل التناوبي الحق في التعويض</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_31">
+            <num>المادة 31</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب أن يكون اللجوء الى الساعات الاضافية استجابة لضرورة مطلقة في الخدمة</obligation>، كما <obligation>يجب ان يكتسي هذا اللجوء طابعا استثنائيا</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>وفي هذه الحالة، يجوز للمستخدم ان يطلب من أي عامل أداء ساعات اضافية، زيادة على المدة القانونية للعمل، دون أن تتعدى 20 % من المدة القانونية المذكورة، مع مراعاة أحكام <ref href="#art_26">المادة 26</ref> اعلاه.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_32">
+            <num>المادة 32</num>
+            <content>
+            <paragraph>
+            <p><right>يخول أداء ساعات اضافية الحق في زيادة لاتقل بأي حال من الاحوال عن 50% من الاجر العادي للساعة</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_3_sec_4">
+          <num>الرابع</num>
+          <heading>الراحة القانونية والعطل والغيابات</heading>
+          <article eId="art_33">
+            <num>33</num>
+            <content>
+            <paragraph>
+            <p><right><term refersTo="#worker">حق العامل</term> في الراحة يوم كامل في الاسبوع</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>وتكون الراحة الاسبوعية العادية في ظروف العمل العادية يوم الجمعة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_34">
+            <num>34</num>
+            <content>
+            <paragraph>
+            <p>يحدد القانون أيام الاعياد والعطل المدفوعة الأجر.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_35">
+            <num>35</num>
+            <content>
+            <paragraph>
+            <p>يعتبر يوم الراحة الاسبوعي وأيام الاعياد والعطل أيام راحة قانونية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_36">
+            <num>36</num>
+            <content>
+            <paragraph>
+            <p><right>يحق <term refersTo="#worker">للعامل</term> الذي يشتغل في يوم الراحة القانونية التمتع براحة تعويضية مماثلة لها</right>، و<right>ينتفع بالحق في زيادة ساعات اضافية</right>، طبقا لأحكام هذا القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_37">
+            <num>37</num>
+            <content>
+            <paragraph>
+            <p>يمكن تأجيل الراحة الاسبوعية أو التمتع بها في يوم آخر <condition>اذا استدعت ذلك الضرورات الاقتصادية أو ضرورات تنظيم الانتاج</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>يحق للهيئات والمؤسسات الأخرى ان تجعل الراحة الاسبوعية تناوبية</right>، <condition>اذا كان التوقف عن العمل فيها يوم العطلة الاسبوعية يتعارض مع طبيعة نشاط الهيئة أو المؤسسة أو يضر العموم</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_38">
+            <num>38</num>
+            <content>
+            <paragraph>
+            <p><obligation>يحدد الوالي بقرار يوم الراحة الاسبوعية لجميع العمال أو لبعضهم في الهياكل أو مؤسسات التجارة بالتجزئة</obligation>، و<obligation>يأخذ بعين الاعتبار ضرورات تموين المستهلكين وحاجات كل مهنة</obligation>، و<obligation>يضمن تناوب هياكل كل فئة ومؤسساتها</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_39">
+            <num>39</num>
+            <content>
+            <paragraph>
+            <p><right>لكل عامل الحق في عطلة سنوية مدفوعة الأجر، يمنحها اياه المستخدم</right></p>
+            </paragraph>
+            <paragraph>
+            <p>وكل تنازل من العامل عن كل عطلته أو عن بعضها يعد باطلا وعديم الاثر.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_40">
+            <num>40</num>
+            <content>
+            <paragraph>
+            <p>يعتمد الحق في العطلة السنوية على أساس العمل المتمم خلال فترة سنوية مرجعية تمتد من أول يوليو للسنة السابقة للعطلة الى غاية 30 يونيو من سنة العطلة.</p>
+            </paragraph>
+            <paragraph>
+            <p>وتحسب الفترة المرجعية للعمال الجديد توظيفهم ابتداء من تاريخ التوظيف.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_41">
+            <num>41</num>
+            <content>
+            <paragraph>
+            <p>تحسب العطلة المدفوعة الأجر على أساس يومين ونصف يوم في كل شهر عمل، دون أن تتعدى المدة الاجمالية ثلاثين (30) يوما تقويميا عن سنة العمل الواحدة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_42">
+            <num>42</num>
+            <content>
+            <paragraph>
+            <p><right>تمنح عطلة اضافية لا يمكن ان تقل عن عشرة (10) أيام في سنة العمل الواحدة في المناطق الجنوبية</right> هي محددة عن طريق التنظيم.</p>
+            </paragraph>
+            <paragraph>
+            <p>كما تحدد الاتفاقيات أو الاتفاقات الجماعية كيفيات تطبيق <ref href="#art_42">هذه المادة</ref>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_43">
+            <num>43</num>
+            <content>
+            <paragraph>
+            <p>كل فترة تساوى أربعة وعشرين (24) يوم عمل كامل أو أربعة أسابيع عمل تعادل شهر عمل فعلي، <condition>إذا تعلق الأمر بتحديد مدة العطلة السنوية المدفوعة الاجر</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p>وتساوي هذه الفترة 180 ساعة عمل للعمال الموسميين أو العاملين بالتوقيت الجزئي.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_44">
+            <num>44</num>
+            <content>
+            <paragraph>
+            <p>كل فترة تتعدى خمسة عشر (15) عمل تعادل شهر عمل بالنسبة للعمال الجديد توظيفهم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_45">
+            <num>45</num>
+            <content>
+            <paragraph>
+            <p>يجوز تمديد العطلة الرئيسية لفائدة العمال الذين يؤدون خصوصا اشغالا شاقة أو خطيرة أو اشغالا تتسبب في متاعب بدنية أو عصبية.</p>
+            </paragraph>
+            <paragraph>
+            <p>وتحدد الاتفاقيات أو الاتفاقات الجماعية كيفيات تطبيق <ref href="#art_45">هذه المادة</ref>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_46">
+            <num>46</num>
+            <content>
+            <paragraph>
+            <p><obligation>تعتبر فترات عمل لتحديد مدة <term refersTo="#annual_leave">العطلة السنوية</term> ما يأتي :</obligation></p>
+            <list>
+            <point>
+            <p>فترات العمل المؤدى</p>
+            </point>
+            <point>
+            <p>فترات العطل السنوية،</p>
+            </point>
+            <point>
+            <p>فترات الغيابات الخاصة المدفوعة الاجر أو التي يرخص بها <term refersTo="#employer">المستخدم</term></p>
+            </point>
+            <point>
+            <p>فترات الراحة القانونية المنصوص عليها في المواد المذكورة اعلاه</p>
+            </point>
+            <point>
+            <p>فترات الغيابات بسبب الأمومة والمرض وحوادث العمل،</p>
+            </point>
+            <point>
+            <p>فترات البقاء في الجيش أو اعادة التجنيد.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_47">
+            <num>47</num>
+            <content>
+            <paragraph>
+            <p><obligation>لايجوز، في أي حال من الاحوال، ان تحول <term refersTo="#long_term_sick_leave">العطلة المرضية الطويلة الأمد</term>، الحق في دفع أكثر من مرتب شهر واحد عطلة سنوية، وذلك مهما تكن مدة العطلة المرضية.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_48">
+            <num>48</num>
+            <content>
+            <paragraph>
+            <p><condition>يمكن ان يستدعى العامل الموجود في عطلة لضرورة ملحة تقتضيها الخدمة.</condition></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_50">
+            <num>50</num>
+            <content>
+            <paragraph>
+            <p><right>يرخص للعامل بتوقيف العطلة السنوية إثر وقوع مرض ليستفيد من العطلة المرضية والحقوق المرتبطة بها.</right></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_51">
+            <num>51</num>
+            <content>
+            <paragraph>
+            <p><obligation>يحدد <term refersTo="#employer">المستخدم</term> برنامج العطل السنوية وتجزئتها، بعد استشارة <term refersTo="#participation_committee">لجنة المشاركة</term> المحدثة بمقتضى هذا القانون، إن وجدت.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_52">
+            <num>52</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#leave_compensation">يساوي تعويض العطلة السنوية الجزء الثاني عشر من الاجر الكامل الذي يتقاضاه العامل خلال السنة المرجعية للعطلة أو في ضوء السنة السابقة للعطلة .</def></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_53">
+            <num>53</num>
+            <content>
+            <paragraph>
+            <p><obligation>لا يمكن ان يتقاضى العامل أجر فترة لم يعمل فيها مهما تكن وضعيته في الترتيب السلمي، ما عدا في الحالات التي ينص عليها القانون أو التنظيم صراحة، وذلك دون الاخلال بالتدابير التأديبية الواردة في النظام الداخلي.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_54">
+            <num>54</num>
+            <content>
+            <paragraph>
+            <p>زيادة على حالات الغياب للاسباب المنصوص عليها في التشريع المتعلق بالضمان الاجتماعي <right>يمكن العامل أن يتغيب، دون فقدان الاجر، <condition>اذا اعلم <term refersTo="#employer">المستخدم</term> بذلك وقدم له تبريرات مسبقا</condition> للاسباب التالية :</right></p>
+            <list>
+            <point>
+            <p>تأدية مهام مرتبطة بتمثيل نقابي أو تمثيل المستخدمين حسب المدة التي حددتها الاحكام القانونية أو التعاقدية</p>
+            </point>
+            <point>
+            <p>متابعة دورات التكوين المهني أو النقابي التي يسمح بها <term refersTo="#employer">المستخدم</term> والمشاركة في امتحانات اكاديمية أو مهنية</p>
+            </point>
+            <point>
+            <p>وفي حدث من الاحداث العائلية التالية : زواج العامل وولادة مولود له زواج أحد فروع العامل، وفاة أحد الأصول أو الفروع أو الحواشي المباشرة للعامل أو لزوجه، وفاة زوج التعامل. وعطلة العامل في كل حالة من هذه الحالات ثلاثة أيام كاملة مدفوعة الأجر،</p>
+            </point>
+            <point>
+            <p>تأدية فريضة الحج الى البقاع المقدسة، مرة واحدة خلال الحياة المهنية للعامل.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_55">
+            <num>55</num>
+            <content>
+            <paragraph>
+            <p><right>تستفيد العاملات خلال فترات ما قبل الولادة وما بعدها من عطلة الأمومة طبقا للتشريع المعمول به.</right></p>
+            </paragraph>
+            <paragraph>
+            <p><right>ويمكنهن الاستفادة أيضا من تسهيلات، حسب الشروط المحددة في النظام الداخلي للهيئة المستخدمة.</right></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_56">
+            <num>56</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن <term refersTo="#employer">المستخدم</term> أن يمنح رخص تغيب خاصة غير مدفوعة الأجر الى العمال الذين لهم حاجة ماسة للتغيب، حسب الشروط المحددة في النظام الداخلي.</right></p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_3_sec_5">
+          <num>الخامس</num>
+          <heading>التكوين والترقية خلال العمل</heading>
+          <article eId="art_57">
+            <num>المادة 57</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على كل <term refersTo="#employer">مستخدم</term> أن يباشر أعمالا تتعلق بالتكوين وتحسين المستوى لصالح العمال</obligation>، حسب برنامج يعرضه على لجنة المشاركة لابداء الرأي، كما <obligation>يجب عليه، في اطار التشريع المعمول به أن ينظم أعمالا تتعلق بالتمهين لتمكين الشباب من اكتساب معارف نظرية وتطبيقية ضرورية لممارسة مهنة ما</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_58">
+            <num>المادة 58</num>
+            <content>
+            <paragraph>
+            <p><obligation>يتعين على كل عامل متابعة الدروس أو الدورات أو أعمال التكوين أو تحسين المستوى الذي ينظمها <term refersTo="#employer">المستخدم</term></obligation> بغية تجديد المعارف العامة والمهنية والتكنولوجية وتعميقها أو تطويرها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_59">
+            <num>المادة 59</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن <term refersTo="#employer">المستخدم</term> أن يطالب العمال، الذين تسمح لهم المؤهلات أو الكفاءات بالمساهمة بشكل فعال في أعمال التكوين وتحسين المستوى التي ينظمها</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_60">
+            <num>المادة 60</num>
+            <content>
+            <paragraph>
+            <p><right>يجوز للعامل المسجل لمزاولة دروس التكوين أو تحسين المستوى المهنيين للاستفادة من تكييف وقت عمله أو من عطلة خاصة مع الاحتفاظ بمنصب عمله</right>، <condition>بشرط موافقة <term refersTo="#employer">المستخدم</term></condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_61">
+            <num>المادة 61</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#promotion">تتجسد الترقية في التدرج داخل سلم التأهيل أو داخل الترتيب السلمي المهني</def>.</p>
+            </paragraph>
+            <paragraph>
+            <p>وتكون حسب المناصب المتوفرة وتبعا لاهلية العامل واستحقاقه.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_3_sec_6">
+          <num>السادس</num>
+          <heading>تعديل علاقة العمل تعليقها وانهاؤها</heading>
+          <article eId="art_62">
+            <num>62</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعدل <term refersTo="#labor_contract">عقد العمل</term> اذا كان القانون أو التنظيم أو الاتفاقيات أو الاتفاقات الجماعية تملي قواعد أكثر نفعا للعمال من تلك التي نص عليها عقد العمل</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_64">
+            <num>64</num>
+            <content>
+            <paragraph>
+            <p>تعلق علاقة العمل قانونا للاسباب التالية :</p>
+            <list>
+            <point>
+            <p>اتفاق الطرفين المتبادل</p>
+            </point>
+            <point>
+            <p>عطل مرضية أو ما يماثلها كتلك التي ينص عليها التشريع والتنظيم المتعلقين بالضمان الاجتماعي</p>
+            </point>
+            <point>
+            <p>اداء التزامات الخدمة الوطنية وفترات الابقاء ضمن قوات الاحتياط أو التدريب في اطارها</p>
+            </point>
+            <point>
+            <p>ممارسة مهمة انتخابية عمومية،</p>
+            </point>
+            <point>
+            <p>حرمان العامل من الحرية ما لم يصدر ضده حكم قضائي نهائي</p>
+            </point>
+            <point>
+            <p>صدور قرار تأديبي يعلق ممارسة الوظيفة،</p>
+            </point>
+            <point>
+            <p>ممارسة حق الاضراب</p>
+            </point>
+            <point>
+            <p>عطلة بدون أجر.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_65">
+            <num>65</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاد ادراج العمال المشار اليهم في <ref href="#art_64">المادة 64</ref> أعلاه، قانونا في مناصب عملهم أو في مناصب ذات أجر مماثل، بعد انقضاء الفترات التي تسببت في تعليق علاقة العمل</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_66">
+            <num>66</num>
+            <content>
+            <paragraph>
+            <p>تنتهي علاقة العمل في الحالات التالية :</p>
+            <list>
+            <point>
+            <p>البطلان أو الالغاء القانوني،</p>
+            </point>
+            <point>
+            <p>انقضاء أجل عقد العمل ذي المدة المحدودة،</p>
+            </point>
+            <point>
+            <p>الاستقالة،</p>
+            </point>
+            <point>
+            <p>العزل،</p>
+            </point>
+            <point>
+            <p>العجز الكامل عن العمل كما ورد تحديده في التشريع،</p>
+            </point>
+            <point>
+            <p>التقاعد،</p>
+            </point>
+            <point>
+            <p>التسريح للتقليص من عدد العمال،</p>
+            </point>
+            <point>
+            <p>انهاء النشاط القانوني للهيئة المستخدمة .</p>
+            </point>
+            <point>
+            <p>الوفاة.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_67">
+            <num>67</num>
+            <content>
+            <paragraph>
+            <p><obligation>يسلم للعامل، عند انهاء علاقة العمل، شهادة عمل تبين تاريخ التوظيف وتاريخ انهاء علاقة العمل وكذا المناصب التي شغلت والفترات المناسبة لها</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>لا يترتب عن تسليم شهادة العمل فقدان حقوق وواجبات المستخدم والعامل الناشئة عن <term refersTo="#labor_contract">عقد العمل</term> أو عقود التكوين <condition>الا اذا اتفق الطرفان على عكس ذلك كتابة</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_68">
+            <num>68</num>
+            <content>
+            <paragraph>
+            <p><right>الاستقالة حق معترف به للعامل</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>على العامل الذي يبدى رغبته في انهاء علاقة العمل مع الهيئة المستخدمة أن يقدم استقالته كتابة</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويغادر منصب عمله بعد فترة اشعار مسبق وفقا للشروط التي تحددها الاتفاقيات أو الاتفاقات الجماعية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_69">
+            <num>69</num>
+            <content>
+            <paragraph>
+            <p><condition>يجوز للمستخدم تقليص عدد المستخدمين اذا بررت ذلك أسباب اقتصادية</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>واذا كان تقليص العدد ينبني على اجراء التسريح الجماعي</condition>، فان ترجمته تتم في شكل تسريحات فردية متزامنة ويتخذ قراره بعد تفاوض جماعي.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يمنع على أي مستخدم قام بتقليص عدد المستخدمين اللجوء في أماكن العمل نفسها الى توظيفات جديدة في الأصناف المهنية المعنية بالتقليص</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_70">
+            <num>المادة 70</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على <term refersTo="#employer">المستخدم</term> قبل القيام بتقليص عدد المستخدمين أن يلجأ الى جميع الوسائل التي من شأنها التقليل من عدد التسريحات</obligation> لا سيما :</p>
+            <list>
+            <point>
+            <p>تخفيض ساعات العمل</p>
+            </point>
+            <point>
+            <p>العمل الجزئي، كما هو محدد في هذا القانون،</p>
+            </point>
+            <point>
+            <p>الاحالة على التقاعد وفقا للتشريع المعمول به،</p>
+            </point>
+            <point>
+            <p>دراسة امكانيات تحويل المستخدمين الى أنشطة أخرى يمكن للهيئة المستخدمة تطويرها، أو تحويلهم الى مؤسسات أخرى، <condition>اذا لم يرغبوا في ذلك</condition>، <right>يستفيدون من التعويض عن التسريح من أجل تقليص عدد المستخدمين</right>.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_71">
+            <num>المادة 71</num>
+            <content>
+            <paragraph>
+            <p>تحدد كيفيات تقليص عدد المستخدمين <condition>بعد استنفاد جميع الوسائل التي من شأنها منع اللجوء اليه</condition>، على أساس معايير ولاسيما الأقدمية والخبرة والتأهيل لكل منصب عمل.</p>
+            </paragraph>
+            <paragraph>
+            <p>توضح الاتفاقيات أو الاتفاقات الجماعية مجموع الكيفيات المحددة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_73">
+            <num>المادة 73</num>
+            <content>
+            <paragraph>
+            <p>يتم العزل <condition>في حالة ارتكاب العامل أخطاء جسيمة</condition>، حسب الشروط المحددة في النظام الداخلي.</p>
+            </paragraph>
+            <paragraph>
+            <p>يحدد النظام الداخلي الشروط التي تسمح للعامل المعني الاستفادة من التعويض عن العزل المنصوص عليه في الفقرة السابقة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_74">
+            <num>المادة 74</num>
+            <content>
+            <paragraph>
+            <p><condition>اذا حدث تغيير في الوضعية القانونية للهيئة المستخدمة</condition>، <obligation>تبقى جميع علاقات العمل المعمول بها يوم التغيير قائمة بين المستخدم الجديد والعمال</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>لا يمكن أن يطرأ أي تعديل في علاقات العمل الا ضمن الاشكال وحسب الشروط التي ينص عليها هذا القانون وعن طريق المفاوضات الجماعية.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_3_sec_7">
+          <num>السابع</num>
+          <heading>النظام الداخلي</heading>
+          <article eId="art_75">
+            <num>75</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على <term refersTo="#employer">المستخدم</term> في المؤسسات التي تشغل عشرين ( 20 ) عاملا فأكثر أن تعد <term refersTo="#internal_regulation">نظاما داخليا</term> وأن تعرضه على أجهزة المشاركة أو ممثلي العمال، في حالة عدم وجود هذه الأخيرة، لابداء الرأي فيه قبل تطبيقه</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_76">
+            <num>76</num>
+            <content>
+            <paragraph>
+            <p>يمكن <term refersTo="#employer">المستخدم</term> في المؤسسات التي تشغل أقل من عشرين ( 20 ) عاملا أن يعد <term refersTo="#internal_regulation">نظاما داخليا</term>، حسب خصوصيات الأنشطة الممارسة.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد طبيعة هذه الأنشطة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_77">
+            <num>77</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#internal_regulation">النظام الداخلي هو وثيقة مكتوبة يحدد فيها <term refersTo="#employer">المستخدم</term>، لزوما ، القواعد المتعلقة بالتنظيم التقني للعمل والوقاية الصحية والأمن والانضباط</def>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يحدد <term refersTo="#internal_regulation">النظام الداخلي</term> في المجال التأديبي، طبيعة الأخطاء المهنية ودرجات العقوبات المطابقة واجراءات التنفيذ.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_78">
+            <num>78</num>
+            <content>
+            <paragraph>
+            <p>تعد الشروط الواردة في <term refersTo="#internal_regulation">النظام الداخلي</term> التي قد تلغي <right>حقوق العمال</right> أو تحد منها ، كما تنص عليها القوانين والاتفاقيات الجماعية المعمول بها، لاغية وعديمة المفعول.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_79">
+            <num>79</num>
+            <content>
+            <paragraph>
+            <p><obligation>يودع <term refersTo="#internal_regulation">النظام الداخلي</term>، المنصوص عليه في <ref href="#art_75">المادة 75</ref> أعلاه لدى مفتشية العمل المختصة اقليميا للمصادقة على مطابقته للتشريع والتنظيم المتعلقين بالعمل في أجل ثمانية ( 08 ) أيام</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يسري مفعول <term refersTo="#internal_regulation">النظام الداخلي</term> فور ايداعه لدى كتابة الضبط للمحكمة المختصة اقليميا.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويضمن له <term refersTo="#employer">المستخدم</term> اشهارا واسعا في أوساط العمال المعنيين</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+      <chapter eId="chp_4">
+        <num>الرابع</num>
+        <heading>أجرة العمل</heading>
+        <section eId="chp_4_sec_1">
+          <num>الأول</num>
+          <heading>أحكام عامة</heading>
+          <article eId="art_80">
+            <num>80</num>
+            <content>
+            <paragraph>
+            <p><right>للعامل الحق في أجر مقابل العمل المؤدى</right></p>
+            </paragraph>
+            <paragraph>
+            <p>ويتقاضى بموجبه <term refersTo="#salary">مرتبا</term> أو <term refersTo="#income">دخلا</term> يتناسب ونتائج العمل.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_82">
+            <num>82</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#proportional_income">يفهم من عبارة الدخل المتناسب مع نتائج العمل الاجرة حسب المردود، لاسيما العمل بالالتزام أو بالقطعة أو العمل بالحصة أو حسب رقم الاعمال.</def></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_83">
+            <num>83</num>
+            <content>
+            <paragraph>
+            <p>تسدد المصاريف حسب تبعات خاصة يفرضها المستخدم على العامل ( مهام مأمورة استعمال السيارة الشخصية لاداء خدمة وتبعات مماثلة ) :</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_84">
+            <num>84</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على كل مستخدم ضمان المساواة في الاجور بين العمال لكل عمل مساوي القيمة بدون أي تمييز.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_86">
+            <num>86</num>
+            <content>
+            <paragraph>
+            <p><obligation>يدرج مبلغ الاجر وجميع عناصره بالتسمية في قسيمة الاجور الدوري التي يعدها المستخدم</obligation> ولا يطبق هذا الحكم على تسديد المصاريف</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_4_sec_2">
+          <num>الثاني</num>
+          <heading>الأجر الوطني الأدنى المضمون</heading>
+          <article eId="art_87">
+            <num>87</num>
+            <content>
+            <paragraph>
+            <p>يحدد <term refersTo="#minimum_wage">الاجر الوطني الأدنى المضمون</term> المطبق في قطاعات النشاط بموجب مرسوم بعد استشارة نقابات العمل والمستخدمين والتنظيمات النقابية الاكثر تمثيلا</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويراعى عند تحديد <term refersTo="#minimum_wage">الأجر الوطني الأدنى المضمون</term> تطور ما يأتي</obligation></p>
+            <list>
+            <point>
+            <p>متوسط الانتاجية الوطنية المسجلة</p>
+            </point>
+            <point>
+            <p>الارقام الاستدلالية لأسعار الاستهلاك،</p>
+            </point>
+            <point>
+            <p>الظروف الاقتصادية العامة.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_4_sec_3">
+          <num>الثالث</num>
+          <heading>الامتيازات والضمانات</heading>
+          <article eId="art_88">
+            <num>88</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على <term refersTo="#employer">المستخدم</term> دفع <term refersTo="#wage">الأجور</term> لكل <term refersTo="#worker">عامل</term> بانتظام عند حلول أجل استحقاقه</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_89">
+            <num>89</num>
+            <content>
+            <paragraph>
+            <p><right>تمنح الافضلية لدفع <term refersTo="#wage">الاجور</term> وتسبيقاتها على جميع الديون الأخرى بما فيها ديون الخزينة والضمان الاجتماعي</right>، مهما كانت طبيعة <term refersTo="#employment_relationship">علاقة العمل</term> وصحتها وشكلها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_90">
+            <num>90</num>
+            <content>
+            <paragraph>
+            <p><obligation>لا يمكن الاعتراض على <term refersTo="#wage">الاجور</term> المترتبة على <term refersTo="#employer">المستخدم</term> كما لا يمكن حجزها أو اقتطاعها مهما كان السبب</obligation> حتى لا يتضرر <term refersTo="#worker">العمال</term> الذين يستحقونها.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+      <chapter eId="chp_5">
+        <num>الخامس</num>
+        <heading>مشاركة العمال</heading>
+        <section eId="chp_5_sec_الاول">
+          <num>الاول</num>
+          <heading>اجهزة المشاركة</heading>
+          <article eId="art_91">
+            <num>المادة 91</num>
+            <content>
+            <paragraph>
+            <p>تتم <right>مشاركة <term refersTo="#workers">العمال</term> في <term refersTo="#employer_entity">الهيئة المستخدمة</term></right> كما يأتي :</p>
+            <list>
+            <point>
+            <p>بواسطة <term refersTo="#employee_representatives">مندوبي المستخدمين</term> في مستوى كل مكان عمل متميز يحتوى على <condition>عشرين (20) عاملا على الأقل</condition>،</p>
+            </point>
+            <point>
+            <p>بواسطة <term refersTo="#participation_committee">لجنة مشاركة</term> تضم مجموع <term refersTo="#employee_representatives">مندوبي المستخدمين</term> في مستوى مقر <term refersTo="#employer_entity">الهيئة المستخدمة</term>.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_92">
+            <num>المادة 92</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن ان ينضم <term refersTo="#workers">العمال</term> في أقرب مكان أو ان يتجمعوا لانتخاب مندوبيهم</right> <condition>عندما يوجد ضمن نفس <term refersTo="#employer_entity">الهيئة المستخدمة</term> عدة أماكن عمل متميزة تضم كل واحدة أقل من عشرين عاملا لكن عددهم الاجمالي يساوي أو يفوق عشرين عاملا</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_93">
+            <num>المادة 93</num>
+            <content>
+            <paragraph>
+            <p><obligation>يؤسس ضمن نفس <term refersTo="#employer_entity">الهيئة المستخدمة</term> <term refersTo="#participation_committee">لجنة مشاركة</term> تتشكل من مجموع <term refersTo="#employee_representatives">مندوبي المستخدمين</term> المنتخبين</obligation> طبقا ل<ref href="#art_91">المواد 91</ref> و <ref href="#art_92">92</ref> و <ref href="#art_99">99</ref> من هذا القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_5_sec_2">
+          <num>الثاني</num>
+          <heading>صلاحيات اجهزة المشاركة</heading>
+          <article eId="art_94">
+            <num>94</num>
+            <content>
+            <paragraph>
+            <p><obligation>للجنة المشاركة الصلاحيات التالية :</obligation></p>
+            <list>
+            <point>
+            <p>1 - تتلقى المعلومات التي يبلغها اليها <term refersTo="#employer">المستخدم</term> كل ثلاثة أشهر على الاقل والخاصة ب :</p>
+            <list>
+            <point><p>تطوير انتاج المواد والخدمات والمبيعات وانتاجية العمل</p></point>
+            <point><p>تطور عدد المستخدمين وهيكل الشغل،</p></point>
+            <point><p>نسبة التغيب وحوادث العمل والأمراض المهنية</p></point>
+            <point><p>تطبيق النظام الداخلي.</p></point>
+            </list>
+            </point>
+            <point>
+            <p>2 – مراقبة تنفيذ الاحكام المطبقة في ميدان الشغل والوقاية الصحية والامن والاحكام المتعلقة بالضمان الاجتماعي.</p>
+            </point>
+            <point>
+            <p>3 - القيام بكل عمل ملائم لدى <term refersTo="#employer">المستخدم</term> في حالة عدم احترام الأحكام التشريعية والتنظيمية الخاصة بحفظ الوقاية الصحية والامن وطب العمل</p>
+            </point>
+            <point>
+            <p>4 - ابداء الرأي قبل تنفيذ <term refersTo="#employer">المستخدم</term> القرارات المتعلقة بما يلي :</p>
+            <list>
+            <point><p>المخططات السنوية وحصيلات تنفيذها،</p></point>
+            <point><p>تنظيم العمل ( مقاييس العمل، وطرق التحفيز ومراقبة العمل، وتوقيت العمل )،</p></point>
+            <point><p>مشاريع اعادة هيكلة الشغل ( تخفيض مدة العمل، واعادة توزيع العمال وتقليص عددهم )</p></point>
+            <point><p>مخططات التكوين المهني وتحديد المعارف وتحسين المستوى والتمهين</p></point>
+            <point><p>نماذج عقود العمل والتكوين والتمهين</p></point>
+            <point><p>النظام الداخلي للهيئة المستخدمة.</p></point>
+            </list>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يجب الادلاء بالآراء في أجل أقصاه خمسة عشر (15) يوما بعد تقديم <term refersTo="#employer">المستخدم</term> لعرض الأسباب</obligation>، و<condition>في حالة الخلاف حول النظام الداخلي يتم إخطار مفتش العمل وجوبا</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <list>
+            <point>
+            <p>5 - تسيير الخدمات الاجتماعية للهيئة المستخدمة <condition>اذا اسند تسيير الخدمات الاجتماعية للمستخدم بعد موافقته</condition>، تحدد اتفاقية تبرم بين لجنة المشاركة و<term refersTo="#employer">المستخدم</term> شروط وكيفيات ممارستها والرقابة</p>
+            </point>
+            <point>
+            <p>6 - الاطلاع على الكشوف المالية للهيئة المستخدمة : الحصيلات وحسابات الاستغلال وحسابات الارباح والخسائر.</p>
+            </point>
+            <point>
+            <p>7 - اعلام العمال بانتظام بالمسائل المعالجة ماعدا المسائل التي لها علاقة بأساليب الصنع والعلاقات مع الغير والمسائل التي تكتسي طابع الكتمان والسرية.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_95">
+            <num>95</num>
+            <content>
+            <paragraph>
+            <p><condition>تضم الهيئة المستخدمة أكثر من مائة وخمسين (150) عاملا وعندما يوجد بداخلها مجلس ادارة أو مراقبة</condition> <obligation>تعين لجنة المشاركة من بين اعضائها أو من غير اعضائها قائمين بالادارة يتولون تمثيل العمال في هذا المجلس طبقا للتشريع المعمول به</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_96">
+            <num>96</num>
+            <content>
+            <paragraph>
+            <p><condition>اذا كان للهيئة المستخدمة عدة أماكن عمل متمايزة</condition> يمارس مندوبو المستخدمين في كل مكان متمايز تحت مراقبة لجنة المشاركة صلاحيات هذه اللجنة المبينة في <ref href="#art_94">الفقرتين 1 و3 من المادة 94</ref> أعلاه المتعلقة بمكان العمل المعني.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_5_sec_3">
+          <num>الثالث</num>
+          <heading>طريقة الانتخاب وتشكيل اجهزة المشاركة</heading>
+          <article eId="art_97">
+            <num>المادة 97</num>
+            <content>
+            <paragraph>
+            <p><obligation>ينتخب <term refersTo="#workers">العمال</term> المعنيون بالاقتراع الفردي الحر والسري والمباشر <term refersTo="#employees_delegates">مندوبي المستخدمين</term> طبقا للمادتين <ref href="#art_91">91</ref> و<ref href="#art_92">92</ref> أعلاه.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p>ويعتبر <condition>غير قابل للانتخاب عليهم الاطارات القيادية في <term refersTo="#employer_entity">الهيئة المستخدمة</term>، وأصول المستخدم وفروعه وحواشيه أو أقاربه بالنسب من الدرجة الاولى والاطارات المسيرة والعمال الذين يشغلون مناصب مسؤولية مع التمتع بسلطة تأديبية والعمال الذين لا يتمتعون بحقوقهم المدنية والوطنية</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ينتخب <term refersTo="#workers_delegates">مندوبو العمال</term> من بين <term refersTo="#confirmed_workers">العمال المثبتين</term> الذين تتوفر فيهم <condition>شروط الناخب، البالغين 21 سنة كاملة والمثبتين لأقدمية أكثر من سنة في <term refersTo="#employer_entity">الهيئة المستخدمة</term></condition>.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_98">
+            <num>المادة 98</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب ان تسمح طريقة الانتخاب بتمثيل عادل لمختلف الفئات الاجتماعية والمهنية داخل مكان العمل و<term refersTo="#employer_entity">الهيئة المستخدمة</term> المعنية.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تحدد كيفيات تنظيم الانتخابات عن طريق التنظيم بعد استشارة التنظيمات النقابية للعمال والمستخدمين الاكثر تمثيلا.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_99">
+            <num>المادة 99</num>
+            <content>
+            <paragraph>
+            <p>يحدد عدد <term refersTo="#workers_delegates">مندوبي العمال</term> كالتالي :</p>
+            <list>
+            <point>
+            <p>من 20 الى 50 عاملا : مندوب ( 1 )</p>
+            </point>
+            <point>
+            <p>من 51 الى 150 عاملا : مندوبان ( 02 )</p>
+            </point>
+            <point>
+            <p>من 161 الى 400 عامل : أربعة ( 04 ) مندوبين</p>
+            </point>
+            <point>
+            <p>من 401 الى 1000 عامل : ستة ( 06 ) مندوبين</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>ويخصص مندوب اضافي عن كل شريحة 500 عامل <condition>اذا تجاوز العدد 1000 عامل</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_100">
+            <num>المادة 100</num>
+            <content>
+            <paragraph>
+            <p><right>يرفع كل اعتراض عن انتخاب <term refersTo="#employees_delegates">مندوبي المستخدمين</term> الى المحكمة المختصة اقليميا</right>، التي تبت في المسائل الاجتماعية وتصدر حكمها الاولي والنهائي في غضون ثلاثين (30) يوما من تلقي القضية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_101">
+            <num>المادة 101</num>
+            <content>
+            <paragraph>
+            <p>تدوم عضوية <term refersTo="#employees_delegates">مندوبي المستخدمين</term> ثلاث (3) سنوات ويمكن أن تسحب هذه العضوية من <term refersTo="#employees_delegates">مندوبي المستخدمين</term> بناء على قرار أغلبية <term refersTo="#workers">العمال</term> الذين انتخبوهم خلال جمعية عامة يستدعيها رئيس مكتب <term refersTo="#participation_committee">لجنة المشاركة</term> المنصوص عليها في <ref href="#art_102">المادة 102</ref> ادناه أو المنعقدة بناء على طلب من ثلث <term refersTo="#workers">العمال</term> المعنيين على الاقل.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة الشغور لاي سبب كان</condition> يخلف <term refersTo="#employees_delegate">مندوب المستخدمين</term> العامل الذي حصل في الانتخابات على عدد من الأصوات يلي مباشرة عدد الاصوات التي تحصل عليها آخر شخص منتخب كمندوب للمستخدمين.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_5_sec_4">
+          <num>الرابع</num>
+          <heading>التسيير والتسهيلات</heading>
+          <article eId="art_102">
+            <num>المادة 102</num>
+            <content>
+            <paragraph>
+            <p><obligation>تعد <term refersTo="#participation_committee">لجنة المشاركة</term> نظامها الداخلي</obligation> <obligation>وتنتخب من بين اعضائها مكتبا يتكون من رئيس ونائب رئيس على الاقل</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_103">
+            <num>المادة 103</num>
+            <content>
+            <paragraph>
+            <p><obligation>تجتمع <term refersTo="#participation_committee">لجنة المشاركة</term> مرة واحدة في كل ثلاثة ( 03 ) أشهر على الاقل</obligation> و<obligation>تجتمع اجباريا بطلب من رئيسها أو بطلب من أغلبية أعضائها</obligation>، و<obligation>يجب ابلاغ <term refersTo="#employer">المستخدم</term> بجدول أعمال هذه الاجتماعات قبل 15 يوما من تاريخ اجتماعها</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>ويمكن <term refersTo="#employer">المستخدم</term> أن يفوض واحدا أو أكثر من مساعديه لحضور هذه الاجتماعات</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_104">
+            <num>المادة 104</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجتمع مكتب <term refersTo="#participation_committee">لجنة المشاركة</term>، أيضا تحت رئاسة <term refersTo="#employer">المستخدم</term> أو ممثله المخول قانونا يساعده مساعدوه الاقربون مرة واحدة على الاقل كل ثلاثة أشهر</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويجب أن يبلغ جدول أعمال هذه الاجتماعات الى رئيس مكتب <term refersTo="#participation_committee">لجنة المشاركة</term> قبل ثلاثين (30) يوما على الاقل</obligation> كما <obligation>يجب أن يتناول مواضيع تابعة لاختصاصات <term refersTo="#participation_committee">لجنة المشاركة</term></obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>وتبلغ الملفات الخاصة بالمسائل المطلوب تناولها الى رئيس <term refersTo="#participation_committee">لجنة المشاركة</term></obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>يمكن مكتب <term refersTo="#participation_committee">لجنة المشاركة</term> أن يقترح اضافة نقاط لجدول أعمال الاجتماع</right>، <condition>شريطة أن تكون المسائل التي تثار داخلة في اختصاصه وأن تصل الملفات المطابقة التي أعدها مكتب <term refersTo="#participation_committee">لجنة المشاركة</term> الى <term refersTo="#employer">المستخدم</term> قبل خمسة عشر (15) يوما على الاقل من التاريخ المقرر لعقد الاجتماع</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_105">
+            <num>المادة 105</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعقد الممثل، الذي حوله <term refersTo="#employer">المستخدم</term> ويساعده مساعدوه الرئيسيون، اجتماعا في كل مكان عمل مرة على الاقل كل ثلاثة (03) أشهر مع <term refersTo="#workers_representatives">مندوبي المستخدمين</term> المعنيين طبقا ل<ref href="#art_96">المادة 96</ref> اعلاه، على أساس جدول الاعمال المعد مسبقا والمبلغ الى هؤلاء قبل سبعة أيام على الاقل من تاریخ عقد هذا الاجتماع</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_106">
+            <num>المادة 106</num>
+            <content>
+            <paragraph>
+            <p><right>يحق ل<term refersTo="#workers_representatives">مندوبي المستخدمين</term> التمتع بحساب عشر (10) ساعات عمل في الشهر مدفوعة الاجر من قبل <term refersTo="#employer">المستخدم</term> كوقت عمل ليمارسوا عضويتهم</right>، ماعد خلال عطلتهم السنوية.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تكون كيفيات حساب الساعات المخصصة على هذا النحو موضوع اتفاق مع <term refersTo="#employer">المستخدم</term></obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_107">
+            <num>المادة 107</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن ان يصطلح <term refersTo="#workers_representatives">مندوبو المستخدمين</term> على جمع حساب الساعات المخصصة اليهم بعد اتفاق مع <term refersTo="#employer">المستخدم</term> حتى ينتفع بها مندوب أو عدة مندوبين</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_108">
+            <num>المادة 108</num>
+            <content>
+            <paragraph>
+            <p>لا يدخل في حساب الساعات الشهرية المشار اليه في <ref href="#art_106">المادة 106</ref> أعلاه، الوقت الذي يقضيه <term refersTo="#workers_representatives">مندوبو المستخدمين</term> في الاجتماعات التي يبادر <term refersTo="#employer">المستخدم</term> الى استدعائها أو التي يقبلها بناء على طلبهم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_109">
+            <num>المادة 109</num>
+            <content>
+            <paragraph>
+            <p><obligation>يضع <term refersTo="#employer">المستخدم</term> تحت تصرف <term refersTo="#participation_committee">لجنة المشاركة</term> و<term refersTo="#workers_representatives">مندوبي المستخدمين</term> الوسائل الضرورية لعقد اجتماعاتهم ولانجاز أعمالهم السكرتارية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_110">
+            <num>المادة 110</num>
+            <content>
+            <paragraph>
+            <p><right>تنظم <term refersTo="#participation_committee">لجنة المشاركة</term> نشاطاتها في اطار اختصاصاتها ونظامها الداخلي</right>، كما <right>يمكنها ان تلجأ الى خبرات غير تابعة لاصحاب العمل</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_111">
+            <num>المادة 111</num>
+            <content>
+            <paragraph>
+            <p>تطبيقا لاحكام <ref href="#art_110">المادة 110</ref> أعلاه، <obligation>تخصص <term refersTo="#employer_entity">الهيئة المستخدمة</term> ميزانيات، حسب الكيفيات التي تحدد بالطرق التنظيمية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_112">
+            <num>المادة 112</num>
+            <content>
+            <paragraph>
+            <p><obligation>يخضع <term refersTo="#employee_delegates">مندوبو المستخدمين</term> عند ممارستهم لاعمالهم المهنية للاحكام التشريعية والتنظيمية والتعاقدية المتعلقة بحقوق العمال وواجباتهم</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_113">
+            <num>المادة 113</num>
+            <content>
+            <paragraph>
+            <p><right>لا يمكن أي مندوب أن يكون موضوع تسريح أو تحويل أو أية عقوبة تأديبية أيا كان نوعها، بسبب النشاطات التي يقوم بها بحكم مهمته التمثيلية</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+      <chapter eId="chp_6">
+        <num>السادس</num>
+        <heading>التفاوض الجماعي</heading>
+        <section eId="chp_6_sec_الاول">
+          <num>الاول</num>
+          <heading>أحكام عامة</heading>
+          <article eId="art_114">
+            <num>114</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#convention">الاتفاقية اتفاق مكتوب يتضمن شروط التشغيل والعمل فيما يخص فئة أو عدة فئات مهنية.</def></p>
+            </paragraph>
+            <paragraph>
+            <p>وتبرم داخل <term refersTo="#employer_entity">الهيئة المستخدمة</term> الواحدة بين <term refersTo="#employer">المستخدم</term> و<term refersTo="#union_representatives">الممثلين النقابيين للعمال</term>.</p>
+            </paragraph>
+            <paragraph>
+            <p>كما تبرم بين مجموعة مستخدمين أو تنظيم أو عدة تنظيمات نقابية تمثيلية للمستخدمين، من ناحية أو تنظيم أو عدة تنظيمات نقابية تمثيلية للعمال، من ناحية أخرى.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد شروط تمثيلية الاطراف المشاركة في التفاوض بموجب القانون المتعلق بكيفيات ممارسة <right>الحق النقابي</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_115">
+            <num>115</num>
+            <content>
+            <paragraph>
+            <p>تحدد <term refersTo="#collective_agreement">الاتفاقية الجماعية</term> مجال تطبيقها المهني والاقليمي ويمكن أن تخص فئة واحدة أو عدة فئات اجتماعية مهنية أو عدة هيئات مستخدمة، كما يمكن أن تكتسي طابعا محليا أو جهويا أو وطنيا.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_116">
+            <num>116</num>
+            <content>
+            <paragraph>
+            <p><condition>عندما تخص الاتفاقيات الجماعية عدة مؤسسات مستخدمة</condition> <obligation>تلزم هذه الاخيرة</obligation>، <condition>شريطة أن يكون ممثلو العمال والمستخدمين لهذه المؤسسات أطرافا فيها أو أن ينضموا اليها باتفاق مشترك</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_117">
+            <num>117</num>
+            <content>
+            <paragraph>
+            <p>تبرم <term refersTo="#collective_agreement">الاتفاقية الجماعية</term> لمدة محدودة أو غير محدودة.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وان لم توجد شروط مغايرة</condition> تبقى الاتفاقية ذات المدة المحدودة التي حل أجلها سارية المفعول كاتفاقية أو اتفاق غير محدودي المدة حتى يتوصل الطرفان الى اتفاقية جديدة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_119">
+            <num>119</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على الهيئات المستخدمة أن تقوم باشهار كل الاتفاقيات الجماعية التي تكون طرفا فيها في أوساط جماعات العمال المعنيين</obligation> و<obligation>توضع نسخة من الاتفاقيات الجماعية، دوما، تحت تصرف العمال وفي موضع مميز في كل مكان عمل</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_6_sec_2">
+          <num>الثاني</num>
+          <heading>محتوى الاتفاقيات الجماعية</heading>
+          <article eId="art_120">
+            <num>120</num>
+            <content>
+            <paragraph>
+            <p>تعالج <term refersTo="#collective_agreements">الاتفاقيات الجماعية</term> التي تبرم حسب <condition>الشروط التي يحددها <ref href="#law_90-11">هذا القانون</ref></condition>، شروط التشغيل والعمل ويمكنها أن تعالج خصوصا العناصر التالية :</p>
+            <list>
+            <point>
+            <p>1 - التصنيف المهني،</p>
+            </point>
+            <point>
+            <p>2 - مقاييس العمل، بما فيها ساعات العمل وتوزيعها،</p>
+            </point>
+            <point>
+            <p>3 – الاجور الاساسية الدنيا المطابقة،</p>
+            </point>
+            <point>
+            <p>4 - التعويضات المرتبطة بالاقدمية والساعات الاضافية وظروف العمل بما فيها تعويض المنطقة.</p>
+            </point>
+            <point>
+            <p>5 - المكافات المرتبطة بالانتاجية ونتائج العمل</p>
+            </point>
+            <point>
+            <p>6 - كيفيات مكافأة فئات العمال المعنيين على المردود</p>
+            </point>
+            <point>
+            <p>7 - تحديد النفقات المصرفية</p>
+            </point>
+            <point>
+            <p>8 - فترة التجريب والاشعار المسبق</p>
+            </point>
+            <point>
+            <p>9 - مدة العمل الفعلي التي تضمن مناصب العمل ذات التبعات الصعبة أو التي تتضمن فترات توقف عن النشاط</p>
+            </point>
+            <point>
+            <p>10 - التغيبات الخاصة،</p>
+            </point>
+            <point>
+            <p>11 - اجراءات المصالحة في حالة وقوع نزاع جماعي في العمل</p>
+            </point>
+            <point>
+            <p>12 - الحد الادنى من الخدمة في حالة الاضراب</p>
+            </point>
+            <point>
+            <p>13 - ممارسة <right>الحق النقابي</right>،</p>
+            </point>
+            <point>
+            <p>14 - مدة الاتفاقية وكيفيات تمديدها أو مراجعتها أو</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_6_sec_3">
+          <num>الثالث</num>
+          <heading>الاتفاقية الجماعية الخاصة بالمؤسسة</heading>
+          <article eId="art_121">
+            <num>المادة 121</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن كل <term refersTo="#employer_body">هيئة مستخدمة</term> أن تتوفر على <term refersTo="#collective_agreement">اتفاقية جماعية للمؤسسة</term> أو تكون طرفا في <term refersTo="#collective_agreement">اتفافية جماعية</term> تعلوها درجة.</right></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_122">
+            <num>المادة 122</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#higher_level_agreement">تعتبر <term refersTo="#collective_agreement">الاتفاقيات الجماعية</term> التي تتجاوز اطار <term refersTo="#employer_body">الهيئة المستخدمة</term> من درجة أعلى بمجرد ما تتفاوض في شأنها وتبرمها <term refersTo="#trade_unions">التنظيمات النقابية للعمال والمستخدمين</term> المعترف بتمثيلها في مجال التطبيق القطاعي أو المهني أو الاقليمي لتلك الاتفاقيات.</def></p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_6_sec_4">
+          <num>الرابع</num>
+          <heading>التفاوض في الاتفاقيات الجماعية</heading>
+          <article eId="art_123">
+            <num>المادة 123</num>
+            <content>
+            <paragraph>
+            <p>يكون التفاوض في <term refersTo="#collective_agreements">الاتفاقيات الجماعية</term> بناء على طلب أحد الطرفين المذكورين في <ref href="#art_114">المادة 114</ref> أعلاه، وتقوم به لجان متساوية الاعضاء للتفاوض تتكون من عدد مساو من الممثلين النقابيين للعمال وعدد من المستخدمين ينتدبهم أولئك الذين يمثلونهم.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويختص كل واحد من الطرفين في التفاوض بتعيين من يمثلونه.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_124">
+            <num>المادة 124</num>
+            <content>
+            <paragraph>
+            <p>يمكن أن يمثل كل واحد من الطرفين في <term refersTo="#enterprise_collective_agreements">الاتفاقيات الجماعية للمؤسسة</term> عدد يتراوح من ثلاثة (03) الى سبعة (07) أعضاء.</p>
+            </paragraph>
+            <paragraph>
+            <p>أما في الاتفاقيات من درجة أعلى، لا يمكن أن يتجاوز عدد ممثلي كل طرف أحد عشر (11) عضوا</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_125">
+            <num>المادة 125</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعين كل واحد من الطرفين في التفاوض السير المفاوضات الجماعية، رئيسا يعبر عن رأي اغلبية أعضاء الوفد الذي يقوده ويصبح ناطقه الرسمي.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_6_sec_5">
+          <num>الخامس</num>
+          <heading>تنفيذ الاتفاقيات الجماعية</heading>
+          <article eId="art_126">
+            <num>المادة 126</num>
+            <content>
+            <paragraph>
+            <p><obligation>يقدم <term refersTo="#negotiation_party">طرف التفاوض الجماعي</term> أو الطرف الاكثر استعجالا منهما <term refersTo="#collective_agreement">الاتفاقية الجماعية</term> فور ابرامها، قصد تسجيلها فقط الى <term refersTo="#labor_inspectorate">مفتشية العمل</term> وكتابة ضبط المحكمة الموجودتين في الاماكن التالية :</obligation></p>
+            <list>
+            <point>
+            <p>في مكان مقر الهيئة المستخدمة، <condition>إذا تعلق الامر باتفاقية جماعية للمؤسسة</condition>،</p>
+            </point>
+            <point>
+            <p>في مقر البلدية <condition>اذا كان مجال تطبيقها ينتهي عند حدود البلدية</condition>،</p>
+            </point>
+            <point>
+            <p>في مقر الولاية <condition>عندما يمتد مجال تطبيقها الى الولاية أو الى عدة بلديات من الولاية الواحدة</condition>،</p>
+            </point>
+            <point>
+            <p>وفي مدينة الجزائر فيما يخص الاتفاقيات الجماعية المشتركة بين الولايات أو بين الفروع، أو الوطنية.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_127">
+            <num>المادة 127</num>
+            <content>
+            <paragraph>
+            <p><obligation>تلزم <term refersTo="#collective_agreement">الاتفاقيات الجماعية</term> كل من وقع عليها أو انضم اليها فور استكمال الاجراءات المنصوص عليها في <ref href="#art_126">المادة السابقة</ref>.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_128">
+            <num>المادة 128</num>
+            <content>
+            <paragraph>
+            <p><right>يجوز للأشخاص الذين تربطهم <term refersTo="#collective_agreement">اتفاقية جماعية</term> أن يرفعوا أية دعوى تستهدف الحصول على تنفيذ الالتزامات المتعاقد عليها</right> دون المساس بالتعويضات التي قد يطلبونها بسبب خرق الاتفاقية المذكورة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_129">
+            <num>المادة 129</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن <term refersTo="#trade_unions">التنظيمات النقابية للعمال</term> أو المستخدمين التي تربطهم <term refersTo="#collective_agreement">اتفاقية جماعية</term>، أن تباشر كل الدعاوى الناشئة عن هذا السبب أمام القضاء لصالح أعضائها</right> كما <right>يمكنها أن ترفع دعوى لحسابها تستهدف الحصول على تنفيذ الالتزامات المتعاقد عليها</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_130">
+            <num>المادة 130</num>
+            <content>
+            <paragraph>
+            <p><obligation>يسهر <term refersTo="#labor_inspectors">مفتشو العمل</term> على تنفيذ <term refersTo="#collective_agreement">الاتفاقيات الجماعية</term> ويشعرون بكل خلاف يتعلق بتطبيقها</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_131">
+            <num>المادة 131</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن الاطراف المتعاقدة نقض <term refersTo="#collective_agreement">الاتفاقية الجماعية</term> جزئيا أو كليا</right> ولا يمكن، مع ذلك، أن يطرأ النقض في غضون اثنى عشر (12) شهرا التي تلي تسجيلها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_132">
+            <num>المادة 132</num>
+            <content>
+            <paragraph>
+            <p><obligation>يبلغ النقض برسالة مسجلة، الى الطرف المتعاقد الآخر، مع ارسال نسخة الى <term refersTo="#labor_inspectorate">مفتشية العمل</term>، التي سجلت هذه الاتفاقية وتسلمها الى كتابة الضبط التابعة للمحكمة المودع لديها</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_133">
+            <num>المادة 133</num>
+            <content>
+            <paragraph>
+            <p><obligation>يلزم تبليغ النقض الاطراف بالشروع في مفاوضات في ظرف ثلاثين يوما (30) لابرام اتفاقية جماعية جديدة</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>ولا يمكن في أي حال من الاحوال أن يؤثر نقض الاتفاقية على <term refersTo="#employment_contracts">عقود العمل</term> المبرمة في السابق والتي تبقى خاضعة للاحكام المعمول بها الى غاية ابرام اتفاقية جماعية جديدة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_134">
+            <num>المادة 134</num>
+            <content>
+            <paragraph>
+            <p><condition>اذا رأي <term refersTo="#labor_inspector">مفتش العمل</term> أن اتفاقية من الاتفاقيات الجماعية مخالفة للتشريع والتنظيم المعمول بهما، أو تلحق ضررا جسيما بمصالح الغير</condition> <obligation>يعرضها تلقائيا على الجهة القضائية المختصة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+      <chapter eId="chp_7">
+        <num>السابع</num>
+        <heading>حالات البطلان</heading>
+        <article eId="art_135">
+          <num>135</num>
+          <content>
+          <paragraph>
+          <p>تعد باطلة وعديمة الاثر كل <term refersTo="#employment_relationship">علاقة عمل</term> <condition>غير مطابقة لاحكام التشريع المعمول به</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p>غير أنه لا يمكن أن يؤدي بطلان العمل الى ضياع <right>الاجر المستحق عن عمل تم أداؤه</right>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_136">
+          <num>136</num>
+          <content>
+          <paragraph>
+          <p>يكون باطلا وعديم الاثر كل بند في <term refersTo="#employment_contract">عقد العمل</term> <condition>مخالف للاحكام التشريعية والتنظيمية المعمول بهما</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>وتحل محله أحكام هذا القانون بقوة القانون</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_137">
+          <num>137</num>
+          <content>
+          <paragraph>
+          <p>يكون باطلا وعديم الاثر كل بند في <term refersTo="#employment_contract">عقد العمل</term> <condition>يخالف باستنقاصه حقوقا منحت للعمال بموجب التشريع والاتفاقيات أو الاتفاقات الجماعية</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_8">
+        <num>الثامن</num>
+        <heading>الاحكام الجزائية</heading>
+        <article eId="art_138">
+          <num>المادة 138</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاين <term refersTo="#labor_inspectors">مفتشو العمل</term> ويسجلون المخالفات حيال أحكام هذا القانون طبقا لتشريع العمل.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_139">
+          <num>المادة 139</num>
+          <content>
+          <paragraph>
+          <p><obligation>تضاعف الغرامة في حالة العود، فيما يخص المخالفات.</obligation> <def refersTo="#recidivism">ويعتبر عودا اذا أدين المخالف بسبب مخالفة مماثلة خلال الاثني عشر (12) شهرا السابقة للواقعة الملاحقة.</def></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_140">
+          <num>المادة 140</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بغرامة مالية تتراوح من 1000 الى 2000 دج على كل توظيف عامل قاصر لم يبلغ السن المقررة، <condition>الا في حالة عقد التمهين المحرر، طبقا للتشريع والتنظيم المعمول بهما</condition>.</obligation></p>
+          </paragraph>
+          <paragraph>
+          <p><condition>وفي حالة العود</condition>، <obligation>يمكن اصدار عقوبة حبس تتراوح من 15 يوما الى شهرين دون المساس بالغرامة التي يمكن ان ترفع الى ضعف الغرامة المنصوص عليها في الفقرة السابقة.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_141">
+          <num>المادة 141</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب كل من ارتكب مخالفة لاحكام هذا القانون المتعلقة بظروف استخدام الشبان والنسوة بغرامة مالية تتراوح من 2000 الى 4000 دج وتطبق كلما تكررت المخالفة المعاينة.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_142">
+          <num>المادة 142</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بغرامة مالية تتراوح من 2000 الى 5000 دج كل من يوقع اتفاقية جماعية أو اتفاقا جماعيا للعمل يكون من شأن احكامهما اقامة تمييز بين العمال في مجال الشغل أو الراتب وظروف العمل، كما وردت في <ref href="#art_17">المادة 17</ref> من هذا القانون.</obligation></p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>ويعاقب في حالة العود بغرامة مالية تتراوح من 2000 دج الى 10.000 دج وبالحبس مدة ثلاثة أيام ( 03 ) أو باحدى هاتين العقوبتين فقط.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_143">
+          <num>المادة 143</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب كل من خالف احكام هذا القانون المتعلقة بمدة العمل القانونية الاسبوعية واتساع فترة العمل اليومية والحدود في مجال اللجوء الى الساعات الاضافية والعمل الليلي، فيما يخص الشبان والنسوة بغرامة مالية تتراوح من 500 دج إلى 1000 دج، وتطبق العقوبة عند كل مخالفة معاينة وتكرر بحسب عدد العمال المعنيين.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_144">
+          <num>المادة 144</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بغرامة مالية تتراوح من 1000 دج الى 2000 دج كل مستخدم يخالف أحكام هذا القانون المتعلقة بالراحة القانونية، ويتكرر تطبيقها حسب عدد العمال المعنيين.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_145">
+          <num>المادة 145</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بغرامة مالية تتراوح من 1000 دج الى 2000 دج على كل مخالفة معاينة وحسب عدد العمال المعنيين كل من يخالف احكام <ref href="#art_38">المواد من 38</ref> الى <ref href="#art_52">52</ref> أعلاه.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_146">
+          <num>المادة 146</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب كل من قام بتقليص عدد المستخدمين خرقا لاحكام هذا القانون بغرامة مالية تتراوح من 2000 دج إلى 5000 دج وتضاعف العقوبة حسب عدد العمال المعنيين دون المساس ب<right>حقوق العمال في اعادة ادماجهم</right>.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_147">
+          <num>المادة 147</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بغرامة مالية تتراوح من 1000 دج الى 2000 دج كل من خالف احكام هذا القانون المتعلقة بوجوب ايداع النظام الداخلي لدى مفتشية العمل ولدى كتابة الضبط للمحكمة المختصة.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_148">
+          <num>المادة 148</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بغرامة مالية تتراوح من 500 دج الى 1000 دج كل من دفع أجرا لعامل دون أن يسلمه قسيمة الراتب المطابقة للاجر المقبوض ، أو يغفل فيها عنصرا أو عدة عناصر يتكون منها الراتب المقبوض وتضاعف العقوبة حسب عدد المخالفات.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_149">
+          <num>المادة 149</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بغرامة مالية تتراوح من 1000 دج الى 2000 دج كل <term refersTo="#employer">مستخدم</term> يدفع لـ <term refersTo="#worker">عامل</term> أجرا يقل عن <term refersTo="#minimum_wage">الاجر الوطني الأدنى المضمون</term> أو الاجر الادنى المحدد في اتفاقية جماعية أو اتفاق جماعي للعمل</obligation> وذلك دون الاخلال بالاحكام الأخرى الواردة في التشريع المعمول به، وتضاعف العقوبة حسب عدد المخالفات.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>وفي حالة العود</condition>، تتراوح الغرامة المالية من 2000 دج الى 5000 دج وتضاعف حسب عدد المخالفات.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_150">
+          <num>المادة 150</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بغرامة مالية تتراوح من 1000 دج الى 2000 دج على كل مخالفة لوجوب دفع المرتب عند حلول أجل استحقاقه</obligation>، وتضاعف العقوبة حسب عدد المخالفات.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>وفي حالة العود</condition>، تتراوح الغرامة من 2000 دج الى 4000 دج، وتطبق حسب عدد المخالفات وبالحبس من ثلاثة ( 3 ) أشهر أو باحدى هاتين العقوبتين فقط.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_151">
+          <num>المادة 151</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بغرامة مالية تتراوح من 5000 دج إلى 20.000 دج وبالحبس من شهر واحد الى ثلاثة ( 3 ) أشهر أو باحدى هاتين العقوبتين فقط، كل من يعرقل تكوين لجنة المشاركة أو تسييرها أو ممارسة صلاحيتها أو صلاحيات مندوبي المستخدمين أو كل من رفض تقديم تسهيلات ووسائل منحها هذا القانون لأجهزة المشاركة</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_152">
+          <num>المادة 152</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بغرامة مالية تتراوح من 1000 دج الى 4000 دج على كل مخالفة لاحكام هذا القانون في مجال ايداع وتسجيل الاتفاقيات أو الاتفاقات الجماعية والاشهار بها في وسط العمال المعنيين وكذا كل رفض للتفاوض في الآجال القانونية</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_153">
+          <num>المادة 153</num>
+          <content>
+          <paragraph>
+          <p>تعتبر كل مخالفة لما نصت عليه الاتفاقيات أو الاتفاقات الجماعية من مخالفات تشريع العمل ويعاقب عليها طبقا لاحكام هذا القانون.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_154">
+          <num>المادة 154</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بغرامة مالية تتراوح من 2000 دج الى 4000 دج على كل مخالفة في مسك الدفاتر والسجلات الخاصة المذكورة في <ref href="#art_156">المادة 156</ref> من هذا القانون وكذا عدم تقديمها لمفتش العمل من أجل مراقبتها</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>وفي حالة العود</condition> ترفع الغرامة من 4000 دج الى 8000 دج.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_155">
+          <num>المادة 155</num>
+          <content>
+          <paragraph>
+          <p><right>يمكن مخالفي احكام هذا القانون أن يضعوا حدا للدعوى الجنائية المباشرة ضدهم بدفع غرامة الصلح تساوي الحد الادني للغرامة المنصوص عليها في هذا القانون</right>.</p>
+          </paragraph>
+          <paragraph>
+          <p>لايزيل دفع غرامة الصلح طابع العود في المخالفة المتكررة ويحدد التنظيم اجراءات وكيفيات دفع غرامة الصلح المذكورة.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_156">
+          <num>المادة 156</num>
+          <content>
+          <paragraph>
+          <p>يحدد التنظيم، قصد تطبيق هذا القانون الدفاتر والسجلات الخاصة التي <obligation>يلزم بها كل <term refersTo="#employer">مستخدم</term></obligation> كما يحدد مضمونها.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يقدم <term refersTo="#employer">المستخدم</term> هذه السجلات كلما يطلبها مفتش العمل</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_157">
+          <num>المادة 157</num>
+          <content>
+          <paragraph>
+          <p><obligation>تلغى كل الاحكام المخالفة لهذا القانون</obligation> لاسيما <ref href="/akn/dz/act/order/1971-11-16/71-74">الامر رقم 71 - 74 المؤرخ في 16 نوفمبر سنة 1971 والمتعلق بالتسيير الاشتراكي للمؤسسات</ref> و<ref href="/akn/dz/act/order/1975-04-29/75-31">الامر رقم 75 - 31 المؤرخ في 29 أبريل سنة 1975 المتعلق بالشروط العامة للعمل في القطاع الخاص</ref> و<ref href="/akn/dz/act/law/1978-08-05/78-12#art_1">المواد من 1</ref> الى <ref href="/akn/dz/act/law/1978-08-05/78-12#art_179">179</ref> ومن <ref href="/akn/dz/act/law/1978-08-05/78-12#art_199">199</ref> الى <ref href="/akn/dz/act/law/1978-08-05/78-12#art_216">216</ref> من <ref href="/akn/dz/act/law/1978-08-05/78-12">القانون رقم 78 - 12 المؤرخ في 5 غشت سنة 1978 والمتعلق بالقانون الاساسي العام للعامل</ref> و<ref href="/akn/dz/act/law/1981-02-21/81-03">القانون رقم 81 - 03 المؤرخ في 21 فبراير سنة 1981، الذي يحدد المدة القانونية للعمل</ref> و<ref href="/akn/dz/act/law/1981-06-27/81-08">القانون رقم 81 – 08 المؤرخ في 27يونيو سنة 1981 المتعلق بالعطل السنوية</ref> و<ref href="/akn/dz/act/law/1982-02-27/82-06">القانون رقم 82 - 06 المؤرخ في 27 فبراير سنة 1982 والمتعلق بالعلاقات الفردية للعمل</ref> وكذا كل النصوص التنظيمية المتخذة لتطبيقها.</p>
+          </paragraph>
+          <paragraph>
+          <p>غير أنه <condition>مع مراعاة أحكام <ref href="#art_3">المادة 3</ref> اعلاه</condition>، تظل علاقات العمل المبرمة عند تاريخ صدور هذا القانون تحدث اثرها الكامل، ماعدا احكامها المخالفة.</p>
+          </paragraph>
+          <paragraph>
+          <p>وتكون تعديلاتها طبقا لاحكام هذا القانون.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_158">
+          <num>المادة 158</num>
+          <content>
+          <paragraph>
+          <p><obligation>ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية.</obligation></p>
+          </paragraph>
+          <paragraph>
+          <p>حرر بالجزائر في 26 رمضان عام 1410 الموافق 21 ابريل سنة 1990.</p>
+          </paragraph>
+          <paragraph>
+          <p>الشاذلي بن جديد</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+    </body>
+  </act>
+</akomaNtoso>

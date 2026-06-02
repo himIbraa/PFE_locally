@@ -1,0 +1,609 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="order">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/order/1970-12-15/70-86/main"/>
+      <FRBRuri value="/akn/dz/act/order/1970-12-15/70-86"/>
+      <FRBRdate date="1970-12-15" name="enactment"/>
+      <FRBRauthor href="#president"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="70-86"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/order/1970-12-15/70-86/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/order/1970-12-15/70-86/ara@"/>
+      <FRBRdate date="1970-12-15" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/order/1970-12-15/70-86/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/order/1970-12-15/70-86/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="president" href="/ontology/organization/dz/president" showAs="رئيس الجمهورية"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="converter" href="/ontology/person/dz/converter" showAs="Legal Markup Specialist"/>
+  </references>
+<lifecycle source="#source"><eventRef eId="evt_1" date="1970-12-15" source="#source" type="generation"/></lifecycle><analysis source="#source"><activeModifications><textualMod type="repeal" eId="amend_1"><source href="#art_41"/><destination href="/akn/dz/act/law/1963-03-27/63-96"/><force period="#evt_1"/></textualMod><textualMod type="repeal" eId="amend_2"><source href="#art_41"/><destination href="/akn/dz/act/law/1963/63-96"/><force period="#evt_1"/></textualMod></activeModifications></analysis></meta>
+    <preface>
+  <docTitle>الأمر رقم 70-86 المؤرخ في 17 شوال عام 1390 الموافق 15 ديسمبر سنة 1970، المتضمن قانون الجنسية الجزائرية المعدل والمتمم</docTitle>
+  <docNumber>70-86</docNumber>
+  <docDate date="1970-12-15">17 شوال عام 1390 الموافق 15 ديسمبر سنة 1970</docDate>
+  <docAuthority>رئيس الجمهورية</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>بناء على تقرير وزير العدل، حامل الأختام،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمرين رقم 65-182 ورقم 70-53 المؤرخين في 11 ربيع الأول عام 1385 الموافق 10 يوليو سنة 1965 و 18 جمادى الأولى عام 1390 الموافق 21 يوليو سنة 1970 والمتضمنين تأسيس الحكومة،</p>
+    </citation>
+    <citation>
+      <p>وبعد استطلاع رأي مجلس الوزراء،</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يأمر بما يلي :</p>
+  </formula>
+</preamble>
+    <body>
+      <section eId="sec_1">
+        <num>الأول</num>
+        <heading>أحكام عامة</heading>
+        <article eId="art_1">
+          <num>الأولى</num>
+          <content>
+          <paragraph>
+          <p>تحدد <condition>الشروط الضرورية للتمتع بالجنسية الجزائرية</condition> بموجب القانون، وعند الاقتضاء بواسطة المعاهدات والاتفاقات الدولية التي يصادق عليها ويتم نشرها.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_2">
+          <num>2</num>
+          <content>
+          <paragraph>
+          <p>تطبق النصوص المتعلقة بمنح <term refersTo="#nationality">الجنسية الجزائرية</term> كجنسية أصلية على الأشخاص المولودين قبل تاريخ إجراء العمل بهذه الأحكام.</p>
+          </paragraph>
+          <paragraph>
+          <p>غير أن تطبيق هذه النصوص لا يمس بصحة العقود المبرمة من قبل المعنيين بالأمر استنادا على القوانين السابقة ولا بصحة الحقوق المكتسبة من طرف الغير استناد على هذه القوانين نفسها.</p>
+          </paragraph>
+          <paragraph>
+          <p>يسري على شروط اكتساب أو فقدان <term refersTo="#nationality">الجنسية الجزائرية</term> القانون المعمول به في تاريخ حدوث الوقائع أو العقود الناجم عنها الاكتساب أو هذا الفقدان.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_3" status="repealed">
+          <num>3</num>
+          <content>
+          <paragraph>
+          <p/>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_4" status="modified">
+          <num>4</num>
+          <content>
+          <paragraph>
+          <p><def refersTo="#majority_age">يقصد بسن الرشد في مفهوم هذا القانون، سن الرشد المدني.</def></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_5" status="modified">
+          <num>5</num>
+          <content>
+          <paragraph>
+          <p><def refersTo="#algeria_territory">يقصد بعبارة " بالجزائر" مجموع التراب الجزائري والمياه الإقليمية الجزائرية والسفن والطائرات الجزائرية.</def></p>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+      <section eId="sec_2">
+        <num>الثاني</num>
+        <heading>الجنسية الأصلية</heading>
+        <article eId="art_6" status="modified">
+          <num>6</num>
+          <content>
+          <paragraph>
+          <p>يعتبر <term refersTo="#nationality">جزائريا</term> الولد المولود من أب جزائري أو أم جزائرية.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_7" status="modified">
+          <num>7</num>
+          <content>
+          <paragraph>
+          <p>يعتبر من <term refersTo="#nationality">الجنسية الجزائرية</term> بالولادة في الجزائر :</p>
+          <list>
+          <point>
+          <p>1 - الولد المولود في الجزائر من أبوين مجهولين.</p>
+          </point>
+          </list>
+          </paragraph>
+          <paragraph>
+          <p>غير أن الولد المولود في الجزائر من أبوين مجهولين يعد كأنه لم يكن جزائريا قط <condition>إذا ثبت خلال قصوره، انتسابه إلى أجنبي أو أجنبية وكان ينتمي إلى جنسية هذا الأجنبي أو هذه الأجنبية وفقا لقانون جنسية أحدهما</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p>إن الولد الحديث الولادة الذي عثر عليه في الجزائر يعد مولودا فيها <condition>ما لم يثبت خلاف ذلك</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <list>
+          <point>
+          <p>2 – الولد المولود في الجزائر من أب مجهول وأم مسماة في شهادة ميلاده دون بيانات أخرى تمكن من إثبات جنسيتها.</p>
+          </point>
+          </list>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_8" status="modified">
+          <num>8</num>
+          <content>
+          <paragraph>
+          <p>إن الولد المكتسب <term refersTo="#nationality">الجنسية الجزائرية</term> بموجب <ref href="#art_7">المادة 7</ref> أعلاه يعتبر جزائريا منذ ولادته ولو كان <condition>توفر الشروط المطلوبة قانونا لم يثبت إلا بعد ولادته</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p>إن إعطاء صفة جزائري الجنسية منذ الولادة وكذا سحب هذه الصفة أو التخلي عنها بموجب أحكام <ref href="#art_7">المادة 7</ref> أعلاه، لا يمس بصحة العقود المبرمة من قبل المعني بالأمر ولا بصحة الحقوق المكتسبة من قبل الغير استنادا إلى الجنسية المكتسبة سابقا من قبل الولد.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_9" status="repealed">
+          <num>9</num>
+          <content>
+          <paragraph>
+          <p/>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+      <section eId="sec_3">
+        <num>الثالث</num>
+        <heading>اكتساب الجنسية الجزائرية</heading>
+        <article eId="art_9_bis" status="new">
+          <num>المادة 9 مكرر</num>
+          <content>
+          <paragraph>
+          <p>(مضافة) <right>يمكن اكتساب <term refersTo="#nationality">الجنسية الجزائرية</term> بالزواج من جزائري أو جزائرية</right>، بموجب مرسوم <condition>متى توفرت الشروط الآتية</condition> :</p>
+          <list>
+          <point>
+          <p><condition>أن يكون الزواج قانونيا وقائما فعليا منذ ثلاث (3) سنوات على الأقل، عند تقديم طلب التجنس</condition>،</p>
+          </point>
+          <point>
+          <p><condition>الإقامة المعتادة والمنتظمة بالجزائر مدة عامين (2) على الأقل</condition>،</p>
+          </point>
+          <point>
+          <p><condition>التمتع بحسن السيرة والسلوك</condition>،</p>
+          </point>
+          <point>
+          <p><condition>إثبات الوسائل الكافية للمعيشة</condition>.</p>
+          </point>
+          </list>
+          </paragraph>
+          <paragraph>
+          <p>يمكن ألا تؤخذ بعين الاعتبار العقوبة الصادرة في الخارج.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_10">
+          <num>المادة 10</num>
+          <content>
+          <paragraph>
+          <p><right>يمكن للأجنبي الذي يقدم طلبا لاكتساب <term refersTo="#nationality">الجنسية الجزائرية</term> أن يحصل عليها</right> <condition>بشرط</condition> :</p>
+          <list>
+          <point>
+          <p><condition>أن يكون مقيما في الجزائر منذ 7 سنوات على الأقل بتاريخ تقديم الطلب</condition>،</p>
+          </point>
+          <point>
+          <p><condition>أن يكون مقيما في الجزائر وقت التوقيع على المرسوم الذي يمنح التجنس</condition>،</p>
+          </point>
+          <point>
+          <p><condition>أن يكون بالغا سن الرشد</condition>،</p>
+          </point>
+          <point>
+          <p><condition>أن تكون سيرته حسنة ولم يسبق الحكم عليه بعقوبة تخل بالشرف</condition>،</p>
+          </point>
+          <point>
+          <p><condition>أن يثبت الوسائل الكافية لمعيشته</condition>،</p>
+          </point>
+          <point>
+          <p><condition>أن يكون سليم الجسد والعقل</condition>،</p>
+          </point>
+          <point>
+          <p><condition>أن يثبت اندماجه في المجتمع الجزائري</condition>.</p>
+          </point>
+          </list>
+          </paragraph>
+          <paragraph>
+          <p>ويقدم الطلب إلى <term refersTo="#minister_of_justice">وزير العدل</term> الذي يستطيع دائما رفضه ضمن شروط <ref href="#art_26">المادة 26</ref> بعده.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_11" status="modified">
+          <num>المادة 11</num>
+          <content>
+          <paragraph>
+          <p><right>يمكن للأجنبي الذي قدم خدمات استثنائية للجزائر أو المصاب بعاهة أو مرض جراء عمل قام به خدمة للجزائر أو لفائدتها، أن يتجنس بالجنسية الجزائرية</right>، بغض النظر عن أحكام <ref href="#art_10">المادة 10</ref> أعلاه.</p>
+          </paragraph>
+          <paragraph>
+          <p><right>ويمكن أيضا للأجنبي الذي يكون في تجنسه فائدة استثنائية للجزائر أن يتجنس بالجنسية الجزائرية</right>، بغض النظر عن الشروط المنصوص عليها في <ref href="#art_10">المادة 10</ref> أعلاه.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>إذا توفي أجنبي عن زوجه وأولاده وكان بإمكانه أثناء حياته أن يدخل في الصنف المذكور في الفقرة الأولى أعلاه</condition>، فيمكن هؤلاء أن يطلبوا تجنسه بعد الوفاة في نفس الوقت الذي يطلبون فيه تجنسهم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_12" status="modified">
+          <num>المادة 12</num>
+          <content>
+          <paragraph>
+          <p>يمنح التجنس بموجب مرسوم رئاسي.</p>
+          </paragraph>
+          <paragraph>
+          <p>يمكن أن يغير لقب المعني واسمه، بطلب منه، في مرسوم التجنس.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يتولى ضابط الحالة المدنية التأشير في سجلات الحالة المدنية بالبيانات المتعلقة بالتجنس</obligation> ، وعند الاقتضاء، تغيير والألقاب بناء على أمر من النيابة العامة.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_13" status="modified">
+          <num>المادة 13</num>
+          <content>
+          <paragraph>
+          <p>يمكن دائما سحب الجنسية من المستفيد <condition>إذا تبين خلال عامين (2) من نشر مرسوم التجنس في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية، بأنه لم تكن تتوفر فيه الشروط المنصوص عليها في القانون أو أنه استعمل وسائل الغش في الحصول على الجنسية</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p>يتم سحب الجنسية بنفس الأشكال التي تم بها منح التجنس <condition>بعد إعلام المعني بذلك قانونا ومنحه مهلة شهرين(2) لتقديم دفوعه</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p>عندما ما تكون صحة العقود المبرمة قبل نشر قرار سحب الجنسية متوقفة على حيازة المعني بالأمر صفة الجزائري، فإنه لا يمكن الطعن في صحة هذه العقود بحجة أن المعني بالأمر لم يكتسب الجنسية الجزائرية.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_14">
+          <num>المادة 14</num>
+          <content>
+          <paragraph>
+          <p><right>يمكن استرداد <term refersTo="#nationality">الجنسية الجزائرية</term> بموجب مرسوم لكل شخص كان متمتعا بها كجنسية أصلية وفقدها</right>، وذلك عن طريق تقديم طلب <condition>بعد 18 شهرا على الأقل من الإقامة المعتادة والمنتظمة في الجزائر</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_15">
+          <num>المادة 15</num>
+          <content>
+          <paragraph>
+          <p>الآثار الفردية : <right>يتمتع الشخص الذي يكتسب <term refersTo="#nationality">الجنسية الجزائرية</term> بجميع الحقوق المتعلقة بالصفة الجزائرية</right> ابتداء من تاريخ اكتسابها.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_16" status="repealed">
+          <num>المادة 16</num>
+          <content>
+          <paragraph>
+          <p/>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_17" status="modified">
+          <num>المادة 17</num>
+          <content>
+          <paragraph>
+          <p>الآثار الجماعية : يصبح الأولاد القصر لشخص اكتسب <term refersTo="#nationality">الجنسية الجزائرية</term> بموجب <ref href="#art_9">المادة 9</ref> من هذا القانون جزائريين في نفس الوقت كوالدهم. على أن <right>لهم حرية التنازل عن الجنسية الجزائرية</right> <condition>خلال سنتين ابتداء من بلوغهم سن الرشد</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+      <section eId="sec_4">
+        <num>الرابع</num>
+        <heading>فقدان الجنسية والتجريد منها</heading>
+        <article eId="art_18" status="modified">
+          <num>المادة 18</num>
+          <content>
+          <paragraph>
+          <p><obligation>يفقد <term refersTo="#nationality">الجنسية الجزائرية</term></obligation> :</p>
+          <list>
+          <point>
+          <p>1 - <condition>الجزائري الذي اكتسب عن طواعية في الخارج جنسية أجنبية وأذن له بموجب مر التخلي عن الجنسية الجزائرية</condition>،</p>
+          </point>
+          <point>
+          <p>2 - <condition>الجزائري، ولو كان قاصر ، الذي له جنسية أجنبية أصلية وأذن له بموجب مرسوم في التخلي عن الجنسية الجزائرية</condition>،</p>
+          </point>
+          <point>
+          <p>3 - <condition>المرأة الجزائرية المتزوجة بأجنبي وتكتسب جراء زواجها جنسية زوجها وأذن لها بموجب مرسوم في التخلي عن الجنسية الجزائرية</condition>،</p>
+          </point>
+          <point>
+          <p>4 - <condition>الجزائري الذي يعلن تخليه عن الجنسية الجزائرية في الحالة المنصوص عليها في الفقرة 2 من <ref href="#art_17">المادة 17</ref> أعلاه</condition>.</p>
+          </point>
+          </list>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_19" status="repealed">
+          <num>المادة 19</num>
+          <content>
+          <paragraph>
+          <p/>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_20" status="modified">
+          <num>المادة 20</num>
+          <content>
+          <paragraph>
+          <p>يبدأ أثر فقدان <term refersTo="#nationality">الجنسية الجزائرية</term> :</p>
+          <list>
+          <point>
+          <p>1- في الحالات المنصوص عليها في الفقرات 1 و 2 و 3 من <ref href="#art_18">المادة 18</ref> أعلاه، ابتداء من نشر المرسوم الذي يأذن للمعني بالأمر في التنازل عن الجنسية الجزائرية في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية.</p>
+          </point>
+          <point>
+          <p>2- في الحالة المنصوص عليها في الفقرة 4 من <ref href="#art_18">المادة 18</ref> أعلاه، ابتداء من يوم ثبوت تاريخ الطلب المقدم بصفة قانونية من قبل المعني بالأمر والموجه إلى <term refersTo="#minister_of_justice">وزير العدل</term>.</p>
+          </point>
+          </list>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_21" status="modified">
+          <num>المادة 21</num>
+          <content>
+          <paragraph>
+          <p>لا يمتد أثر فقدان <term refersTo="#nationality">الجنسية الجزائرية</term> في الحالات المنصوص عليها في <ref href="#art_18">المادة 18</ref> أعلاه، إلى الأولاد القصر.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_22" status="modified">
+          <num>المادة 22</num>
+          <content>
+          <paragraph>
+          <p>كل شخص اكتسب <term refersTo="#nationality">الجنسية الجزائرية</term> يمكن أن يجرد منها:</p>
+          <list>
+          <point>
+          <p>1 – <condition>إذا صدر ضده حكم من أجل فعل يعد جناية أو جنحة تمس بالمصالح الحيوية للجزائر</condition>.</p>
+          </point>
+          <point>
+          <p>2 – <condition>إذا صدر ضده حكم في الجزائر أو في الخارج يقضي بعقوبة لأكثر من خمس (5) سنوات سجنا من أجل جناية</condition>.</p>
+          </point>
+          <point>
+          <p>3 – <condition>إذا قام لفائدة جهة أجنبية بأعمال تتنافى مع صفته كجزائري أو مضرة بمصالح الدولة الجزائرية</condition>، ولا يترتب التجريد إلا كانت الأفعال المنسوبة إلى المعني قد وقعت خلال العشر (10) سنوات من تاريخ اكتساب الجنسية الجزائرية.</p>
+          </point>
+          </list>
+          </paragraph>
+          <paragraph>
+          <p>ولا يمكن إعلان التجريد من الجنسية إلا خلال أجل خمس (5) سنوات اعتبار من تاريخ ارتكاب تلك الأفعال.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_23" status="original">
+          <num>المادة 23</num>
+          <content>
+          <paragraph>
+          <p>يتم التجريد من الجنسية بمرسوم بعد تمكين المعني بالأمر من <right>تقديم ملاحظاته</right>، وله أجل شهرين للقيام بذلك.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_24" status="modified">
+          <num>المادة 24</num>
+          <content>
+          <paragraph>
+          <p>لا يمتد التجريد من الجنسية إلى زوج المعني وأولاده القصر. غير أنه، يجوز تمديد التجريد من الجنسية إلى الأولاد إذا كان شاملا لأبويهم.</p>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+      <section eId="sec_5">
+        <num>الخامس</num>
+        <heading>الإجراءات الإدارية</heading>
+        <article eId="art_25" status="modified">
+          <num>25</num>
+          <content>
+          <paragraph>
+          <p><obligation>ترفع طلبات اكتساب الجنسية الجزائرية أو التخلي عنها أو استردادها إلى <term refersTo="#minister_of_justice">وزير العدل</term>، مصحوبة بالعقود والوثائق والمستندات التي تثبت استيفاء الشروط القانونية.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_26" status="modified">
+          <num>26</num>
+          <content>
+          <paragraph>
+          <p><condition>إذا لم تتوفر الشروط القانونية</condition>، يعلن <term refersTo="#minister_of_justice">وزير العدل</term>، عدم قابلية الطلب بموجب مقرر معلل يبلغ إلى المعني.</p>
+          </paragraph>
+          <paragraph>
+          <p>ويمكن <term refersTo="#minister_of_justice">وزير العدل</term>، <condition>رغم توفر الشروط القانونية</condition> أن يرفض الطلب بموجب قرار يبلغ إلى المعني.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_27" status="modified">
+          <num>27</num>
+          <content>
+          <paragraph>
+          <p>يمكن بناء على طلب المعني الصريح، أن يتضمن مرسوم اكتساب الجنسية الجزائرية المذكور في <ref href="#art_9_bis">المادة 9 مكرر</ref> من هذا القانون تغيير اسمه ولقبه.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يتولى ضابط الحالة المدنية التأشير في سجلات الحالة المدنية بالبيانات المتعلقة باكتساب الجنسية وعند الاقتضاء، تغيير الاسم واللقب، بناء على أمر من النيابة العامة.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_28" status="repealed">
+          <num>28</num>
+          <content>
+          <paragraph>
+          <p/>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_29">
+          <num>29</num>
+          <content>
+          <paragraph>
+          <p><obligation>تنشر المراسيم المتعلقة باكتساب الجنسية في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية</obligation> وتحدث أثرها تجاه الغير ابتداء من تاريخ هذا النشر.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_30" status="repealed">
+          <num>30</num>
+          <content>
+          <paragraph>
+          <p/>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+      <section eId="sec_6">
+        <num>السادس</num>
+        <heading>إثبات الجنسية والنزاعات</heading>
+        <article eId="art_31">
+          <num>المادة 31</num>
+          <content>
+          <paragraph>
+          <p><obligation>يتحمل الإثبات في قضايا <term refersTo="#nationality">الجنسية</term> كل شخص سواء كان بواسطة الدعوى أو عن طريق الدفع يدعي هو نفسه أو شخص آخر بأنه يحمل أو لا يحمل <term refersTo="#algerian_nationality">الجنسية الجزائرية</term></obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_32" status="modified">
+          <num>المادة 32</num>
+          <content>
+          <paragraph>
+          <p><condition>عندما يدعي شخص <term refersTo="#algerian_nationality">الجنسية الجزائرية</term> كجنسية أصلية</condition> يمكن إثباتها عن طريق النسب بوجود أصلين ذكرين من جهة الأب أو الأم مولودين في الجزائر وممتنعين بالشريعة الإسلامية.</p>
+          </paragraph>
+          <paragraph>
+          <p>ويمكن أيضا إثباتها بكل الوسائل وخاصة عن طريق <term refersTo="#apparent_status">حيازة الحالة الظاهرة</term>.</p>
+          </paragraph>
+          <paragraph>
+          <p><def refersTo="#apparent_status">وتنجم الحالة الظاهرة للمواطن الجزائري عن مجموعة من الوقائع العلنية المشهورة المجردة من كل التباس والتي تثبت أن المعني بالأمر وأبويه كانوا يتظاهرون بالصفة الجزائرية وكان يعترف لهم بهذه الصفة لا من طرف السلطات العمومية فحسب بل وحتى من طرف الأفراد</def>.</p>
+          </paragraph>
+          <paragraph>
+          <p>إن الأحكام السابقة لا تمس بالحقوق الناتجة عن اكتساب <term refersTo="#algerian_nationality">الجنسية الجزائرية</term> بالزواج.</p>
+          </paragraph>
+          <paragraph>
+          <p>تثبت <term refersTo="#algerian_nationality">الجنسية الجزائرية</term> للولد المولود في الجزائر من أب مجهول وأم مسماة في شهادة ميلاده من غير بيانات أخرى تثبت جنسيتها، بشهادة ميلاده وشهادة مسلمة من الهيئات المختصة.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_33" status="modified">
+          <num>المادة 33</num>
+          <content>
+          <paragraph>
+          <p>يثبت اكتساب <term refersTo="#algerian_nationality">الجنسية الجزائرية</term> بنظير المرسوم.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>في حالة ما إذا كانت <term refersTo="#algerian_nationality">الجنسية الجزائرية</term> مكتسبة بمقتضى معاهدة</condition> <obligation>يجب أن يتم الإثبات طبقا لهذه المعاهدة</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_34">
+          <num>المادة 34</num>
+          <content>
+          <paragraph>
+          <p>تثبت <term refersTo="#algerian_nationality">الجنسية الجزائرية</term> بالإدلاء بشهادة الجنسية يسلمها <term refersTo="#minister_of_justice">وزير العدل</term>، أو سلطات مؤهلة لذلك.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_35" status="modified">
+          <num>المادة 35</num>
+          <content>
+          <paragraph>
+          <p>يثبت فقدان <term refersTo="#algerian_nationality">الجنسية الجزائرية</term> في الحالات المنصوص عليها في الفقرات <ref href="#art_18">1</ref> و <ref href="#art_18">2</ref> و <ref href="#art_18">3</ref> من <ref href="#art_18">المادة 18</ref> أعلاه بنظير المرسوم.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>وعندما ينتج الفقدان عن التصريح بالتخلي عن الجنسية المنصوص عليه في <ref href="#art_17">المادة 17</ref> أعلاه</condition>، فإن إثبات الفقدان يتم بالإدلاء بشهادة من <term refersTo="#minister_of_justice">وزير العدل</term> تثبت أن التصريح بالتخلي قد وقع عليه بصورة قانونية.</p>
+          </paragraph>
+          <paragraph>
+          <p>ويثبت التجريد من <term refersTo="#algerian_nationality">الجنسية الجزائرية</term> بنظير المرسوم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_36" status="modified">
+          <num>المادة 36</num>
+          <content>
+          <paragraph>
+          <p>يتم في كل الحالات إثبات تمتع الشخص بـ <term refersTo="#algerian_nationality">الجنسية الجزائرية</term> أو عدم تمتعه بها بالإدلاء بنسخة من حكم قضائي بت فيه نهائيا وبصورة أساسية.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_37" status="modified">
+          <num>المادة 37</num>
+          <content>
+          <paragraph>
+          <p>تختص المحاكم وحدها بالنظر في المنازعات حول <term refersTo="#algerian_nationality">الجنسية الجزائرية</term>.</p>
+          </paragraph>
+          <paragraph>
+          <p>وتعد النيابة العامة طرفا أصليا في جميع القضايا الرامية إلى تطبيق أحكام هذا القانون.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>وعندما تثار هذه المنازعات عن طريق الدفع أمام المحاكم الأخرى</condition> <obligation>تؤجل هذه الأخيرة الفصل فيها حتى يبت فيها من قبل المحكمة المختصة محليا</obligation>، التي <obligation>يجب أن يرفع إليها الأمر خلال شهر من قرار التأجيل من قبل الطرف الذي ينازع في الجنسية وإلا أهمل الدفع</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p>وتكون الأحكام المتعلقة بالنزاعات حول <term refersTo="#algerian_nationality">الجنسية الجزائرية</term> قابلة للاستئناف.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>وعندما يقتضي الأمر تفسير أحكام الاتفاقيات الدولية المتعلقة بالجنسية بمناسبة نزاع</condition>، تطلب النيابة العامة هذا التفسير من وزارة الشؤون الخارجية.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>وتلتزم المحاكم بهذا التفسير</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_38" status="modified">
+          <num>المادة 38</num>
+          <content>
+          <paragraph>
+          <p><right>لكل شخص الحق في إقامة دعوى يكون موضوعها الأصلي استصدار حكم بتمتعه أو عدم تمتعه ب<term refersTo="#nationality">الجنسية الجزائرية</term></right>. ويرفع المعني بالأمر الدعوى ضد <term refersTo="#prosecution">النيابة العامة</term> مع عدم الإضرار بحق تدخل الغير.</p>
+          </paragraph>
+          <paragraph>
+          <p>و<right>للنيابة العامة وحدها الحق في أن ترفع ضد أي شخص كان دعوى يكون موضوعها الأصلي إثبات تمتع المدعي عليه ب<term refersTo="#nationality">الجنسية الجزائرية</term> أو عدم تمتعه بها</right>، و<obligation>هي ملزمة بإقامة الدعوى في حالة ما إذا طلبت منها ذلك إحدى السلطات العمومية</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_39" status="modified">
+          <num>المادة 39</num>
+          <content>
+          <paragraph>
+          <p>يجري التحقيق والحكم في النزاعات حول <term refersTo="#nationality">الجنسية الجزائرية</term> وفقا لقواعد الإجراءات العادية.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>عندما تقدم العريضة من قبل أحد الأشخاص</condition> <obligation>يتعين على <term refersTo="#prosecution">النيابة العامة</term> أن تبلغ نسخة منها إلى <term refersTo="#minister_justice">وزير العدل</term></obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_40" status="modified">
+          <num>المادة 40</num>
+          <content>
+          <paragraph>
+          <p><obligation>تنشر الأحكام والقرارات النهائية الصادرة في قضايا الجنسية المنصوص عليها في <ref href="#art_37">المواد 37</ref> و <ref href="#art_38">38</ref> و <ref href="#art_39">39</ref> أعلاه، بإحدى الجرائد اليومية الوطنية، وتعلق بلوحة الإعلانات بالمحكمة المختصة</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+      <section eId="sec_7">
+        <num>السابع</num>
+        <heading>أحكام خاصة</heading>
+        <article eId="art_41">
+          <num>المادة 41</num>
+          <content>
+          <paragraph>
+          <p><obligation>يلغى <ref href="/akn/dz/act/law/1963-03-27/63-96">القانون رقم 63-96 المؤرخ في 27 مارس سنة 1963 والمتضمن قانون الجنسية الجزائرية</ref></obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_42">
+          <num>المادة 42</num>
+          <content>
+          <paragraph>
+          <p><obligation>ينشر هذا الأمر في <term refersTo="#official_gazette">الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية</term></obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p>وحرر بالجزائر في 17 شوال 1390 الموافق 15 ديسمبر سنة 1970.</p>
+          </paragraph>
+          <paragraph>
+          <p>هواري بومدين</p>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+    </body>
+  </act>
+</akomaNtoso>

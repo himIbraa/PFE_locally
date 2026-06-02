@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="law">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/law/2012-11-28/03-12/main"/>
+      <FRBRuri value="/akn/dz/act/law/2012-11-28/03-12"/>
+      <FRBRdate date="2012-11-28" name="enactment"/>
+      <FRBRauthor href="#bank_of_algeria"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="03-12"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/law/2012-11-28/03-12/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/law/2012-11-28/03-12/ara@"/>
+      <FRBRdate date="2012-11-28" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/law/2012-11-28/03-12/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/law/2012-11-28/03-12/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="bank_of_algeria" href="/ontology/organization/dz/bankOfAlgeria" showAs="بنك الجزائر"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="governor" href="/ontology/person/dz/governor" showAs="محافظ بنك الجزائر"/>
+  </references>
+</meta>
+    <preface>
+  <docTitle>النظام رقم 03-12 المتعلق بالوقاية من تبييض الأموال وتمويل الإرهاب ومكافحتهما</docTitle>
+  <docNumber>03-12</docNumber>
+  <docDate date="2012-11-28">14 محرم عام 1434 الموافق 28 نوفمبر سنة 2012</docDate>
+  <docAuthority>محافظ بنك الجزائر</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>إن محافظ بنك الجزائر،</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يصدر النظام الآتي نصه:</p>
+  </formula>
+</preamble>
+    <body>
+      <article eId="art_1">
+        <num>الأولى</num>
+        <content>
+        <paragraph>
+        <p><obligation>يجب على <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term> و<term refersTo="#postal_financial_services">المصالح المالية لبريد الجزائر</term>، تطبيقا ل<ref href="/akn/dz/act/law/2005-02-06/05-01">القانون رقم 01-05 المؤرخ في 27 ذي الحجة عام 1425 الموافق 6 فبراير سنة 2005</ref> ، المعدل والمتمم والمتعلق بالوقاية من <term refersTo="#money_laundering">تبييض الأموال</term> و<term refersTo="#terrorism_financing">تمويل الإرهاب</term> ومكافحتهما ، كما هو منصوص عليه في <ref href="/akn/dz/act/law/2005-02-06/05-01#art_2">المادتين 2</ref> و <ref href="/akn/dz/act/law/2005-02-06/05-01#art_3">3</ref> منه، الالتزام باليقظة</obligation>.</p>
+        </paragraph>
+        <paragraph>
+        <p><obligation>ويتعين عليهم، بهذه الصفة، أن يمتلكوا برنامجا مكتوبا من أجل الوقاية والكشف عن <term refersTo="#money_laundering">تبييض الأموال</term> و<term refersTo="#terrorism_financing">تمويل الإرهاب</term> ومكافحتهما</obligation>.</p>
+        </paragraph>
+        <paragraph>
+        <p><obligation>يجب أن يتضمن هذا البرنامج، على الخصوص ما يأتي:</obligation>
+        <list>
+        <point>
+        <p>الإجراءات،</p>
+        </point>
+        <point>
+        <p>عمليات الرقابة،</p>
+        </point>
+        <point>
+        <p>منهجية الرعاية اللازمة فيما يخص معرفة الزبائن،</p>
+        </point>
+        <point>
+        <p>توفير تكوين مناسب لمستخدميها،</p>
+        </point>
+        <point>
+        <p>جهاز علاقات مراسل) وإخطار بالشبهة مع <term refersTo="#ctrf">خلية معالجة الاستعلام المالي</term>.</p>
+        </point>
+        </list></p>
+        </paragraph>
+        </content>
+        </article>
+      <chapter eId="chp_1">
+        <num>الأول</num>
+        <heading>معرفة الزبائن والعمليات</heading>
+        <article eId="art_2">
+          <num>2</num>
+          <content>
+          <paragraph>
+          <p><obligation>يتعين على <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term> و<term refersTo="#postal_services">المصالح المالية لبريد الجزائر</term>، لتفادي التعرض إلى خاطر مرتبطة بزبائنها وأطرافها المقابلة السهر على وجود معايير داخلية "معرفة الزبائن" ومطابقتها باستمرار</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تتعدى تدابير الحماية المتعلقة بمعرفة الزبائن نطاق عملية عادية لفتح حساب ومسكه. و<obligation>تستلزم من <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term> و<term refersTo="#postal_services">المصالح المالية لبريد الجزائر</term> واجب الرعاية الصارمة فيما يخص الحسابات والعمليات التي قد تشكل خطرا ومراقبة حذرة للنشاطات والعمليات التي قد تكون محل شبهة</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_3">
+          <num>3</num>
+          <content>
+          <paragraph>
+          <p><obligation>يجب أن تأخذ المعايير المتعلقة بمعرفة الزبائن بعين الاعتبار العناصر الأساسية لتسيير المخاطر وإجراءات الرقابة</obligation>، لاسيما :</p>
+          <list>
+          <point>
+          <p>سياسة قبول الزبائن الجدد،</p>
+          </point>
+          <point>
+          <p>تحديد هوية الزبائن ومتابعة العمليات وحركاتها،</p>
+          </point>
+          <point>
+          <p>رقابة مستمرة على الزبائن وعلى الحسابات المتضمنة لمخاطر.</p>
+          </point>
+          </list>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يجب على <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term> و<term refersTo="#postal_services">المصالح المالية لبريد الجزائر</term> أن تعرف هوية وعنوان زبائنها كما يجب عليها مراقبة حركات الحسابات لاكتشاف أنواع العمليات والمعاملات غير الاعتيادية و/ أو غير العادية ومبررها الاقتصادي بالنسبة لزبون محدد أو صنف من الحسابات</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_4">
+          <num>4</num>
+          <content>
+          <paragraph>
+          <p>يتم إجراء التعرف على هوية الزبائن عند إقامة علاقة التعامل ويسمح بالتأكد من موضوع وطبيعة النشاط، هوية وعنوان الزبون و/أو مستفيد فعلي واحد أو أكثر، كما ينص عليه <ref href="/akn/dz/act/law/2005-02-06/05-01">القانون رقم 05-01 المؤرخ في 6 فبراير سنة 2005</ref> ، المعدل والمتمم والمذكور أعلاه.</p>
+          </paragraph>
+          <paragraph>
+          <p><def refersTo="#customer">يقصد في مفهوم هذا النظام بمصطلح "زبون" ما يأتي</def> :</p>
+          <list>
+          <point>
+          <p>كل شخص أو هيئة تمتلك حسابا لدى مصرف أو المصالح المالية لبريد الجزائر أو يتم فتح حساب باسمه (الصاحب الفعلي للحساب)،</p>
+          </point>
+          <point>
+          <p>كل مستفيد فعلي من حساب،</p>
+          </point>
+          <point>
+          <p>المستفيدين من المعاملات التي ينجزها وسيطا أو وسطاء محترفون،</p>
+          </point>
+          <point>
+          <p>الزبائن غير الاعتياديين،</p>
+          </point>
+          <point>
+          <p>الوكلاء والوسطاء الذين يعملون لحساب الغير،</p>
+          </point>
+          <point>
+          <p>كل شخص أو هيئة شريكة في معاملة مالية تنفذ بواسطة مصرف أو مؤسسة مالية أو المصالح المالية لبريد الجزائر.</p>
+          </point>
+          </list>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_5">
+          <num>5</num>
+          <content>
+          <paragraph>
+          <p><obligation>يتم التأكد من هوية <term refersTo="#natural_person">الشخص الطبيعي</term> بتقديم وثيقة رسمية أصلية سارية الصلاحية تتضمن صورة</obligation> ومن المهم جمع المعلومات الخاصة بنسب المعني بالأمر.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يتم التأكد من هوية <term refersTo="#legal_person">الشخص المعنوي</term>، بما فيها جميع أنواع الجمعيات ذات النشاط غير الهادف للربح والمنظمات الأخرى، بتقديم قانونه الأساسي الأصلي وأية وثيقة تثبت أنها مسجلة أو معتمدة قانونا وأن لها وجودا وعنوانا فعليا عند إثبات هويتها</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يتم التأكد من العنوان بتقديم وثيقة رسمية تثبت ذلك</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يتعين على الوكلاء والوسطاء الذين يعملون لحساب الغير تقديم زيادة على الوثائق المنصوص عليها <ref href="#art_5">أعلاه</ref>، التفويض بالسلطات المخولة لهم وكذا الوثائق التي تثبت هوية وعنوان أصحاب الأموال الفعليين</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يجب الاحتفاظ بنسخة من كل وثيقة تثبت الهوية والوكالة والعنوان</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يجب على <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term> و<term refersTo="#algerie_poste">المصالح المالية لبريد الجزائر</term> تفضيل إقامة اتصالات دورية، في إطار التعامل مع زبائنها</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>إذا تبين بعد فتح حساب ظهور مشاكل متعلقة بالتحقيق وتحيين عناصر المعلومات المذكورة <ref href="#art_5">أعلاه</ref></condition>، <obligation>يتعين على <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term> و<term refersTo="#algerie_poste">المصالح المالية لبريد الجزائر</term> إقفال الحساب و إخطار صاحب الحساب و<term refersTo="#ctrf">خلية معالجة الاستعلام المالي</term> واللجنة المصرفية واسترداد الرصيد ما لم يوجد أمر مخالف من سلطة مختصة</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يجب أن تنص اتفاقية فتح الحساب على هذا الشرط</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>لا يمكن في أي حال من الأحوال أن تقوم <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term> و<term refersTo="#algerie_poste">المصالح المالية لبريد الجزائر</term> بفتح حسابات مجهولة الإسم أو مرقمة</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_6">
+          <num>6</num>
+          <content>
+          <paragraph>
+          <p><obligation>يتعين على <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term> و<term refersTo="#algerie_poste">المصالح المالية لبريد الجزائر</term>، قصد التأكد من أن المعطيات الخاصة بالزبائن كاملة ، القيام بتحيينها سنويا وعلى الأقل، عند كل معاملة مهمة القيام بتعديل جوهري للمعايير الخاصة بالتزويد بالوثائق المتعلقة بالزبائن أو في منهج تسيير الحساب</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>غير أنه إذا تبين لمصرف أو مؤسسة مالية أو المصالح المالية لبريد الجزائر في وقت ما أن المعلومات المتوفرة لديها بخصوص زبون غير كافية</condition>، <obligation>يتعين عليها اتخاذ الإجراءات اللازمة للحصول في أقرب الآجال على جميع المعلومات المفيدة</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p>الأشخاص المعرضون سياسيا</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_7">
+          <num>7</num>
+          <content>
+          <paragraph>
+          <p><obligation>يجب على <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term> و<term refersTo="#algerie_poste">المصالح المالية لبريد الجزائر</term>، طبقا لتقدير مديرياتها العامة، أن تحصل قبل بداية العلاقة مع كل زبون ،جديد، <term refersTo="#pep">شخصا معرضا سياسيا</term> كما هو معرف ب<ref href="/akn/dz/act/law/2005-02-06/05-01">القانون رقم 05-01 المؤرخ في 6 فبراير سنة 2005</ref> ، المعدل والمتمم، والمذكور أعلاه، على معلومات كافية حول مصدر الأموال وأن تتخذ التدابير التي تضمن مراقبة مدعمة ودائمة لعلاقة التعامل</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_2">
+        <num>الثاني</num>
+        <heading>حفظ الوثائق</heading>
+        <article eId="art_8">
+          <num>8</num>
+          <content>
+          <paragraph>
+          <p><obligation>يجب على <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term> و<term refersTo="#postal_financial_services">المصالح المالية لبريد الجزائر</term> أن تحتفظ وتضع تحت تصرف السلطات المختصة ما يأتي :</obligation>
+          <list>
+          <point>
+          <p>الوثائق المتعلقة بهوية الزبائن وعناوينهم خلال فترة خمس (5) سنوات على الأقل، بعد غلق الحسابات و/أو وقف علاقة التعامل،</p>
+          </point>
+          <point>
+          <p>الوثائق المتعلقة بالعمليات التي تم إجراؤها، بما فيها التقارير السرية، خلال فترة خمس (5) سنوات على الأقل، بعد تنفيذ العملية.</p>
+          </point>
+          </list>
+          </p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يتعين على <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term> و<term refersTo="#postal_financial_services">المصالح المالية لبريد الجزائر</term> إعداد إجراءات لفائدة هيئاتها العملياتية، تحدد بموجبها المعطيات التي ينبغي الاحتفاظ بها بخصوص إثبات هوية الزبائن والمعاملات الفردية والمدة القانونية والنظامية لعملية الاحتفاظ.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_3">
+        <num>الثالث</num>
+        <heading>المصارف المراسلة</heading>
+        <article eId="art_9">
+          <num>9</num>
+          <content>
+          <paragraph>
+          <p><obligation>يجب على <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term>، وعند الاقتضاء، <term refersTo="#algerie_poste">المصالح المالية لبريد الجزائر</term> أن تجمع مراسليها المصرفيين تسمح بمعرفة طبيعة نشاطهم وسمعتهم</obligation>. ويجب أن تتم علاقات المراسل مع المؤسسات المصرفية الأجنبية، حسب تقدير المديرية العامة وبشرط:
+          <list>
+          <point>
+          <p><condition>أن إغلاق حساباتهم مصدق</condition>،</p>
+          </point>
+          <point>
+          <p><condition>أنهم خاضعون لمراقبة من سلطاتهم المختصة</condition>،</p>
+          </point>
+          <point>
+          <p><condition>أن يتعاونوا في إطار جهاز وطني لمكافحة تبييض الأموال وتمويل الإرهاب</condition>.</p>
+          </point>
+          <point>
+          <p><condition>أن يطبقوا إجراءات الحذر للزبائن مستعملي الحسابات الانتقالية</condition>،</p>
+          </point>
+          <point>
+          <p><condition>أن لا يقيموا علاقات أعمال مع بنوك وهمية</condition>.</p>
+          </point>
+          </list></p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يجب تحيين اتفاقيات حسابات المراسلين قصد إدماج الالتزامات المنصوص عليها أعلاه</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_4">
+        <num>الرابع</num>
+        <heading>أنظمة الإنذار</heading>
+        <article eId="art_10">
+          <num>المادة 10</num>
+          <content>
+          <paragraph>
+          <p><obligation>يتعين على <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term> و<term refersTo="#postal_financial_services">المصالح المالية لبريد الجزائر</term> أن تتوفر على أنظمة مراقبة المعاملات، تسمح بالنسبة لجميع الحسابات، بإبراز النشاطات ذات طابع غير اعتيادي أو مشتبه فيها</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تغطي أنواع العمليات التي يجب أن تكون محل اهتمام خاص على الخصوص العمليات الآتية :</p>
+          <list>
+          <point>
+          <p>التي لا تبدو أنها تستند إلى مبرر اقتصادي أو تجاري ممكن إدراكه،</p>
+          </point>
+          <point>
+          <p>التي تمثل حركات رؤوس الأموال بشكل مفرط بالمقارنة مع رصيد الحساب،</p>
+          </point>
+          <point>
+          <p>التي تتعلق بمبالغ، لاسيما نقدية ليس لها علاقة مع العمليات العادية أو المحتملة للزبون،</p>
+          </point>
+          <point>
+          <p>المعقدة بشكل غير عادي أو غير مبرر،</p>
+          </point>
+          <point>
+          <p>التي لا يبدو أن لها هدفا شرعيا،</p>
+          </point>
+          <point>
+          <p>التي تفوق، عند الاقتضاء، السقف المحدد بالتنظيم المعمول به.</p>
+          </point>
+          </list>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يجب على <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term> و<term refersTo="#postal_financial_services">المصالح المالية لبريد الجزائر</term>، بالنسبة لهذه العمليات، الاستعلام حول مصدر الأموال ووجهتها وكذا محل العملية وهوية المتدخلين</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يجب أن يحرر تقرير سري ويحتفظ به</obligation> دون الإخلال ب<ref href="/akn/dz/act/law/2005-02-06/05-01#art_15">المواد 15</ref> إلى <ref href="/akn/dz/act/law/2005-02-06/05-01#art_22">22</ref> من <ref href="/akn/dz/act/law/2005-02-06/05-01">القانون رقم 05-01 المؤرخ في 6 فبراير سنة 2005</ref> ، المعدل والمتمم، والمذكور أعلاه.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_11">
+          <num>المادة 11</num>
+          <content>
+          <paragraph>
+          <p><obligation>يجب على <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term> و<term refersTo="#postal_financial_services">المصالح المالية لبريد الجزائر</term> اتخاذ الإجراءات المناسبة، قصد الوقاية من خطر استعمال، لأغراض <term refersTo="#money_laundering">تبييض الأموال</term> أو <term refersTo="#terrorism_financing">تمويل الإرهاب</term> التكنولوجيات الجديدة أو قيد التطوير، ذات الصلة بمنتوجات أو تعاملات تجارية أو آليات توزيع</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_5">
+        <num>الخامس</num>
+        <heading>إخطار بالشبهة</heading>
+        <article eId="art_12">
+          <num>12</num>
+          <content>
+          <paragraph>
+          <p><obligation>تخضع <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term> و<term refersTo="#postal_services">المصالح المالية لبريد الجزائر</term> قانونا لـ<term refersTo="#suspicious_transaction_report">واجب الإخطار بالشبهة</term> في الشكل التنظيمي</obligation> و<obligation>يجب عليها أن تطالب وصل الاستلام</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يجب على <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term> و<term refersTo="#postal_services">المصالح المالية لبريد الجزائر</term> تأجيل تنفيذ كل عملية تتعلق بأموال تبدو أنها متأتية من مخالفة أو يشتبه أنها موجهة لـ<term refersTo="#money_laundering">تبييض الأموال</term> و/أو <term refersTo="#terrorism_financing">تمويل الإرهاب</term> والإبلاغ عنها إلى <term refersTo="#ctrf">خلية معالجة الاستعلام المالي</term></obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يتعين الإخطار بالشبهة بمجرد وجودها حتى ولو تعذر تأجيل تلك العمليات أو بعد إنجازها</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يجب الإبلاغ عن كل معلومات تؤدي إلى تأكيد الشبهة أو نفيها دون تأخير إلى <term refersTo="#ctrf">خلية معالجة الاستعلام المالي</term></obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يجب أن يتم الإبلاغ بالشبهة وفق النموذج التنظيمي</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يجب على <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term> و<term refersTo="#postal_services">المصالح المالية لبريد الجزائر</term> أن تتقيد بالتدابير التحفظية المنصوص عليها في <ref href="/akn/dz/act/law/2005-02-06/05-01#art_18">المادة 18 من القانون رقم 05-01 المؤرخ في 6 فبراير سنة 2005 والمتعلق بالوقاية من تبييض الأموال وتمويل الإرهاب ومكافحتهما المعدل والمتمم</ref></obligation> ، كما يجب السهر على تطبيقها.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_13">
+          <num>13</num>
+          <content>
+          <paragraph>
+          <p><obligation>يجب استفسار إجراءات الإخطار بالعمليات المشتبه فيها بصفة واضحة كتابيا من كل <term refersTo="#bank">مصرف</term> و<term refersTo="#financial_institution">مؤسسة مالية</term> و<term refersTo="#postal_services">المصالح المالية لبريد الجزائر</term> ويتم الإبلاغ عنها المستخدميها</obligation>. ويجب أن تحدد هذه الإجراءات الداخلية أيضا شروط الإخطار بالشبهة إلى <term refersTo="#ctrf">خلية معالجة الاستعلام المالي</term>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_14">
+          <num>14</num>
+          <content>
+          <paragraph>
+          <p>الإخطار بالشبهة موجه حصريا إلى <term refersTo="#ctrf">خلية معالجة الاستعلام المالي</term> ويندرج كل من الإخطار بالشبهة وتبعاته في إطار <term refersTo="#professional_secrecy">السر المهني</term> و<obligation>لا يمكن أن يطلع عليها الزبون أو المستفيد من العمليات</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_15">
+          <num>15</num>
+          <content>
+          <paragraph>
+          <p><obligation>لا يمكن تطبيقا، التحجج بـ<term refersTo="#banking_secrecy">السر المصرفي</term> لـ<term refersTo="#ctrf">خلية معالجة الاستعلام المالي</term></obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_16">
+          <num>16</num>
+          <content>
+          <paragraph>
+          <p><right>يحمي القانون المصرحين الذين تصرفوا بحسن نية من أية متابعة ومسؤولية إدارية ومدنية وجزائية</right>. و<obligation>يحب إعلام المستخدمين بهذا الحكم</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_6">
+        <num>السادس</num>
+        <heading>التحويلات الإلكترونية ووضع الأموال تحت التصرف</heading>
+        <article eId="art_17">
+          <num>17</num>
+          <content>
+          <paragraph>
+          <p><obligation>يتعين على <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term> و<term refersTo="#postal_financial_services">المصالح المالية لبريد الجزائر</term> في إطار <term refersTo="#electronic_transfers">التحويلات الإلكترونية</term> مهما كانت الوسيلة المستعملة ( SWIFT, ART, ACI ... إلخ ) و / أو وضع الأموال تحت التصرف أن تسهر على التحقق بدقة من هوية الأمر بالعملية والمستفيد بالإضافة إلى عنوانيهما</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يجب أن يحوز مسيروا <term refersTo="#payment_system">نظام الدفع</term> والمتعاملون المباشرون أو غير المباشرون على جهاز آلي لاكتشاف الزبائن والعمليات</obligation> ويتعلق الأمر بالهيئات أو الأشخاص المسجلين في القوائم المعدة مسبقا.</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_7">
+        <num>السابع</num>
+        <heading>المعلومات والتكوين</heading>
+        <article eId="art_18">
+          <num>18</num>
+          <content>
+          <paragraph>
+          <p><obligation>يجب على <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term> و<term refersTo="#postal_financial_services">المصالح المالية لبريد الجزائر</term> أن تضع برنامج تكوين دائم يحضر بصفة لائقة مستخدميهم على معرفة التدابير المتعلقة بمكافحة <term refersTo="#money_laundering">تبييض الأموال</term> و<term refersTo="#terrorism_financing">تمويل الإرهاب</term></obligation>. <obligation>ويجب أن تتلاءم كل من رزنامة ومضمون هذه الدورات المنظمة مع الاحتياجات الخاصة للمؤسسة</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_19">
+          <num>19</num>
+          <content>
+          <paragraph>
+          <p><obligation>يجب على <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term> و<term refersTo="#postal_financial_services">المصالح المالية لبريد الجزائر</term> أن تعين على الأقل إطارا ساميا مسؤولا على المطابقة في مجال مكافحة <term refersTo="#money_laundering">تبييض الأموال</term> و<term refersTo="#terrorism_financing">تمويل الإرهاب</term>، بصفته مراسلا لـ <term refersTo="#ctrf">خلية معالجة الاستعلام المالي</term> ويكلف بالسهر على التقيد بسياساتها وإجراءاتها المطبقة في مجال مكافحة <term refersTo="#money_laundering">تبييض الأموال</term> و<term refersTo="#terrorism_financing">تمويل الإرهاب</term></obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يجب على <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term> و<term refersTo="#postal_financial_services">المصالح المالية لبريد الجزائر</term> أن تتأكد من إبلاغ هذه الإجراءات إلى جميع المستخدمين وبأنها تسمح لكل عون أن يبلغ بإخطار المسؤول بالمطابقة في مجال مكافحة <term refersTo="#money_laundering">تبييض الأموال</term> و<term refersTo="#terrorism_financing">تمويل الإرهاب</term> بأي عملية محل شبهة</obligation> و<obligation>يتم تحرير تقرير سنوي يرسل إلى <term refersTo="#banking_commission">اللجنة المصرفية</term></obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_20">
+          <num>20</num>
+          <content>
+          <paragraph>
+          <p><obligation>يجب على <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term> و<term refersTo="#postal_financial_services">المصالح المالية لبريد الجزائر</term> أن تحدد في وثيقة معايير أخلاقيات المهنة والاحترافية في مجال الإخطار</obligation>. <obligation>ويجب أن يكون جميع المستخدمين على إطلاع بهذه الوثيقة</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_8">
+        <num>الثامن</num>
+        <heading>الفروع والفروع التابعة</heading>
+        <article eId="art_21">
+          <num>21</num>
+          <content>
+          <paragraph>
+          <p><obligation>يجب على <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term> أن تسهر على تطبيق نصوص هذا النظام من طرف فروعها والفروع التابعة لها الموجودة في الخارج</obligation>، <condition>في حدود ما تسمح به القوانين والأنظمة للبلد المضيف</condition>. <condition>وعند استحالة ذلك</condition>، يتم الرجوع إلى <term refersTo="#banking_commission">اللجنة المصرفية</term>.</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_9">
+        <num>التاسع</num>
+        <heading>الرقابة الداخلية</heading>
+        <article eId="art_22">
+          <num>المادة 22</num>
+          <content>
+          <paragraph>
+          <p><obligation>يندرج برنامج الوقاية واكتشاف ومكافحة <term refersTo="#money_laundering">تبييض الأموال</term> و<term refersTo="#terrorism_financing">تمويل الإرهاب</term>، كما تنص عليه <ref href="#art_1">المادة الأولى</ref> من هذا النظام، ضمن جهاز الرقابة الداخلية للمصارف و والمؤسسات المالية والمصالح المالية لبريد الجزائر</obligation> و<obligation>يعد تقرير سنوي في هذا المجال يرسل إلى <term refersTo="#banking_commission">اللجنة المصرفية</term></obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_10">
+        <num>العاشر</num>
+        <heading>دور أجهزة الرقابة الخارجية للمصارف</heading>
+        <article eId="art_23">
+          <num>المادة 23</num>
+          <content>
+          <paragraph>
+          <p><obligation>يقيم <term refersTo="#auditors">محافظو الحسابات</term> مطابقة الإجراءات الداخلية الخاصة بالوقاية من <term refersTo="#money_laundering">تبييض الأموال</term> و<term refersTo="#terrorism_financing">تمويل الإرهاب</term> ومكافحتهما ، لكل من <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term> و<term refersTo="#postal_financial_services">المصالح المالية لبريد الجزائر</term> مقارنة مع الممارسات المطابقة للمعايير وممارسات الحذر السارية المفعول ويرسل تقرير سنوي إلى <term refersTo="#banking_commission">اللجنة المصرفية</term></obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_24">
+          <num>المادة 24</num>
+          <content>
+          <paragraph>
+          <p><obligation>يرسل <term refersTo="#inspectors">مفتشو بنك الجزائر</term> المفوضون من قبل <term refersTo="#banking_commission">اللجنة المصرفية</term> الناشطون في إطار الرقابة بعين المكان أو في إطار الرقابة على أساس المستندات، فورا ، تقريرا عن طريق التسلسل السلمي إلى <term refersTo="#ctrf">خلية معالجة الاستعلام المالي</term> <condition>بمجرد اكتشافهم لعملية تتضمن المميزات المذكورة في <ref href="#art_10">المادة 10</ref> من هذا النظام</condition></obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_25">
+          <num>المادة 25</num>
+          <content>
+          <paragraph>
+          <p><obligation>تسهر <term refersTo="#banking_commission">اللجنة المصرفية</term> على أن تمتلك <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term> و<term refersTo="#postal_financial_services">المصالح المالية لبريد الجزائر</term> سياسات وممارسات وتدابير مناسبة، لاسيما فيما يخص المعايير الصارمة المتعلقة بمعرفة الزبائن وعملياتهم، والكشف والمراقبة وكذا الإخطار بالشبهة ما يضمن مستوى عال من الأخلاقيات والاحترافية</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يجب على <term refersTo="#banking_commission">اللجنة المصرفية</term> أن تتحقق من وجود التقرير المذكور في <ref href="#art_10">المادة 10</ref> من هذا النظام</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>وفي حالة التقصير</condition>، <right>يمكن أن تفتح <term refersTo="#banking_commission">اللجنة المصرفية</term> إجراءا تأديبيا ضد <term refersTo="#banks">المصارف</term> و<term refersTo="#financial_institutions">المؤسسات المالية</term></right>، و<right>أن تفتح السلطة المختصة إجراءا تأديبيا فيما يخص <term refersTo="#exchange_offices">مكاتب الصرف</term> و<term refersTo="#postal_financial_services">المصالح المالية لبريد الجزائر</term></right>.</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_11">
+        <num>الحادي عشر</num>
+        <heading>مكاتب الصرف</heading>
+        <article eId="art_26">
+          <num>26</num>
+          <content>
+          <paragraph>
+          <p><obligation>يتعين على <term refersTo="#exchange_offices">مكاتب الصرف</term> المعتمدة أن تعتمد إجراءات إثبات هوية زبائنها وإجراءات الحذر تجاه عملياتهم</obligation>. كما <obligation>تخضع إلى واجب إعلام وتكوين أعوانهم وإرسال الإخطار بالشبهة إلى <term refersTo="#ctrf">خلية معالجة الاستعلام المالي</term></obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_12">
+        <num>الثاني عشر</num>
+        <heading>أحكام ختامية</heading>
+        <article eId="art_27">
+          <num>المادة 27</num>
+          <content>
+          <paragraph>
+          <p><obligation>تصدر <term refersTo="#banking_commission">اللجنة المصرفية</term> و<term refersTo="#bank_of_algeria">بنك الجزائر</term>، عند الاقتضاء، خطوطا توجيهية ويضمنان عودة المعلومة من أجل تطبيق الإجراءات الوطنية في مجال الوقاية ومكافحة <term refersTo="#money_laundering">تبييض الأموال</term> و<term refersTo="#terrorism_financing">تمويل الإرهاب</term></obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_28">
+          <num>المادة 28</num>
+          <content>
+          <paragraph>
+          <p>تلغى أحكام <ref href="/akn/dz/act/regulation/2005-12-15/05-05">النظام رقم 05-05 المؤرخ في 13 ذي القعدة عام 1426 الموافق 15 ديسمبر سنة 2005 والمتعلق بالوقاية من تبييض الأموال وتمويل الإرهاب ومكافحتهما</ref>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_29">
+          <num>المادة 29</num>
+          <content>
+          <paragraph>
+          <p>ينشر هذا النظام في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية.</p>
+          </paragraph>
+          <paragraph>
+          <p>حرر بالجزائر في 14 محرم عام 1434 الموافق 28 نوفمبر سنة 2012.</p>
+          </paragraph>
+          <paragraph>
+          <p>محمد لكصاسي</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+    </body>
+  </act>
+</akomaNtoso>

@@ -470,15 +470,21 @@ class RootController:
             answer["abstention_reason"] = "timeout" if time.time() - start > timeout else "no_answer"
 
         # Apply citation existence gate (article must exist in registry)
+        # Set AKN_NO_CITATION_GATE=1 to bypass for pre-gate HCR measurement.
         raw_citations = answer.get("citations", []) or []
-        valid_citations, rejected = citation_existence.filter_citations(
-            self.env.registry, raw_citations
-        )
+        import os as _os
+        if _os.getenv("AKN_NO_CITATION_GATE"):
+            valid_citations, rejected = raw_citations, []
+            log.info("AKN_NO_CITATION_GATE: gate bypassed, %d citations pass through", len(valid_citations))
+        else:
+            valid_citations, rejected = citation_existence.filter_citations(
+                self.env.registry, raw_citations
+            )
 
         # Apply span-existence gate to surviving citations: supporting_span
         # must occur in the actual article text (catches LLM-fabricated spans
         # that pass the existence check).
-        if valid_citations:
+        if valid_citations and not _os.getenv("AKN_NO_CITATION_GATE"):
             valid_citations, span_rejected = span_existence.filter_citations(
                 self.env, valid_citations
             )

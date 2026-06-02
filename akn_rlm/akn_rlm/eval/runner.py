@@ -89,6 +89,11 @@ def _answer_to_result(
     else:
         am_faith = am_faithfulness_score(answer_text, citations)
 
+    # Store raw (pre-gate) citations when AKN_NO_CITATION_GATE is active so
+    # offline HCR computation can access the unfiltered LLM output.
+    import os as _os_runner
+    raw_summary_citations = answer.get("_raw_citations", []) if _os_runner.getenv("AKN_NO_CITATION_GATE") else []
+
     return {
         # ── Retrieval fields (for metrics.aggregate) ──────────────────────
         "pred_doc_ids":        seen_docs,
@@ -130,6 +135,8 @@ def _answer_to_result(
         "calls_by_model":      telemetry.get("calls_by_model", {}),
         "supervisor_used":     telemetry.get("supervisor_used", False),
         "dispatched_handler":  telemetry.get("dispatched_handler"),
+        # ── Gate bypass (only populated when AKN_NO_CITATION_GATE=1) ─────
+        "raw_summary_citations": raw_summary_citations,
     }
 
 

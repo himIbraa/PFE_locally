@@ -1,0 +1,1356 @@
+@prefix dzdoc: <https://legal.dz/ontology/document#> .
+@prefix dznorm: <https://legal.dz/ontology/norm#> .
+@prefix dzorg: <https://legal.dz/resource/organization/> .
+@prefix dzterm: <https://legal.dz/resource/term/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dzorg:الجريدة_الرسمية a dzdoc:Organization ;
+    rdfs:label "الجريدة الرسمية"@ar ;
+    dzdoc:frbrUri "/ontology/organization/dz/joradp"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_10_extref_43c6042d> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 117 من الدستور"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/constitution/1976-11-22#art_117"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/constitution/1976-11-22#art_117"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/constitution/1976-11-22#art_117" ;
+    dzdoc:resolutionReason "non_canonical_or_malformed_akn_uri" ;
+    dzdoc:resolutionStatus "unresolved" ;
+    dzdoc:targetEId "art_117" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_10_extref_b6f8319e> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 18 من الدستور"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/constitution/1976-11-22#art_18"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/constitution/1976-11-22#art_18"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/constitution/1976-11-22#art_18" ;
+    dzdoc:resolutionReason "non_canonical_or_malformed_akn_uri" ;
+    dzdoc:resolutionStatus "unresolved" ;
+    dzdoc:targetEId "art_18" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_10_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_10> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تعدل. الفقرتان الثانية والثالثة من المادة 18 من الدستور وتصاغان کما یلي:"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_10_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_10> ;
+    dzdoc:position 1 ;
+    dzdoc:text "»لا يمكن أثناء فترتي الخمسة والأربعين (45) يوما، المشار اليهما في الفقرتين الثانية والخامسة من المادة 117 من الدستور ۰۰۰» (والباقي بدون تغییر) «"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_10_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_10> ;
+    dzdoc:position 2 ;
+    dzdoc:text "»لا يمكن أثناء نفس الفترتين، انهاء مهام نائب ر نواب رئيس الجمهورية » ( والباقي بدون تغيير )"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_10_permission_0_8b4a9d33> a dznorm:Permission ;
+    dzdoc:confidenceScore 0.72 ;
+    dzdoc:extractionMethod "lexical_permission_cue" ;
+    dzdoc:hasAction <https://legal.dz/resource/law/1979-07-01/79-06#art_10_permission_0_8b4a9d33_action_580cdee012> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_10> ;
+    dznorm:position 1 ;
+    dznorm:provisionText "»لا يمكن أثناء فترتي الخمسة والأربعين (45) يوما، المشار اليهما في الفقرتين الثانية والخامسة من المادة 117 من الدستور ۰۰۰» (والباقي بدون تغییر) «"@ar ;
+    dznorm:sourceArticle "art_10" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_10_permission_0_8b4a9d33_action_580cdee012> a dznorm:Action ;
+    rdfs:label "أثناء فترتي الخمسة والأربعين (45)"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "»لا يمكن أثناء فترتي الخمسة والأربعين (45) يوما، المشار اليهما في الفقرتين الثانية والخامسة من المادة 117 من الدستور ۰۰۰» (والباقي بدون تغییر) «"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_10> .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_10_permission_1_fe5d2f2d> a dznorm:Permission ;
+    dzdoc:confidenceScore 0.72 ;
+    dzdoc:extractionMethod "lexical_permission_cue" ;
+    dzdoc:hasAction <https://legal.dz/resource/law/1979-07-01/79-06#art_10_permission_1_fe5d2f2d_action_9166b24f5d> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_10> ;
+    dznorm:position 2 ;
+    dznorm:provisionText "»لا يمكن أثناء نفس الفترتين، انهاء مهام نائب ر نواب رئيس الجمهورية » ( والباقي بدون تغيير )"@ar ;
+    dznorm:sourceArticle "art_10" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_10_permission_1_fe5d2f2d_action_9166b24f5d> a dznorm:Action ;
+    rdfs:label "أثناء نفس الفترتين"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "»لا يمكن أثناء نفس الفترتين، انهاء مهام نائب ر نواب رئيس الجمهورية » ( والباقي بدون تغيير )"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_10> .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_11_extref_329751ba> a dzdoc:ExternalReference ;
+    rdfs:label "198"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/constitution/1976-11-22/1#art_198"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/constitution/1976-11-22/1#art_198"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/constitution/1976-11-22/1#art_198" ;
+    dzdoc:resolutionReason "cross_document_fragment_unverified" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/constitution/1976-11-22/1"^^xsd:anyURI ;
+    dzdoc:targetEId "art_198" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_11_extref_a22a3916> a dzdoc:ExternalReference ;
+    rdfs:label "المادتان 197"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/constitution/1976-11-22/1#art_197"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/constitution/1976-11-22/1#art_197"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/constitution/1976-11-22/1#art_197" ;
+    dzdoc:resolutionReason "cross_document_fragment_unverified" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/constitution/1976-11-22/1"^^xsd:anyURI ;
+    dzdoc:targetEId "art_197" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_11_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_11> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تلغى المادتان 197 و 198 من الدستور"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_12_extref_0906869a> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 108"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/constitution/1976-11-22/1#art_108"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/constitution/1976-11-22/1#art_108"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/constitution/1976-11-22/1#art_108" ;
+    dzdoc:resolutionReason "cross_document_fragment_unverified" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/constitution/1976-11-22/1"^^xsd:anyURI ;
+    dzdoc:targetEId "art_108" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_12_extref_a22a3916> a dzdoc:ExternalReference ;
+    rdfs:label "مادة 197"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/constitution/1976-11-22/1#art_197"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/constitution/1976-11-22/1#art_197"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/constitution/1976-11-22/1#art_197" ;
+    dzdoc:resolutionReason "cross_document_fragment_unverified" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/constitution/1976-11-22/1"^^xsd:anyURI ;
+    dzdoc:targetEId "art_197" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_12_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_12> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تضاف الى الدستور (الباب الثالث أحكام مختلفة )"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_12_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_12> ;
+    dzdoc:position 1 ;
+    dzdoc:text "مادة 197 وتصاغ على النحو التالي :"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_12_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_12> ;
+    dzdoc:position 2 ;
+    dzdoc:text "»ينطبق الاجراء المنصوص عليه في المادة 108 (الفقرة الأولى على المدة الرئاسية التي تعقب انعقاد المؤتمر الرابع لحزب جبهة التحرير الوطني. «"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_13_extref_329751ba> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 198"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/constitution/1976-11-22/1#art_198"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/constitution/1976-11-22/1#art_198"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/constitution/1976-11-22/1#art_198" ;
+    dzdoc:resolutionReason "cross_document_fragment_unverified" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/constitution/1976-11-22/1"^^xsd:anyURI ;
+    dzdoc:targetEId "art_198" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_13_extref_e4fff54c> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 199"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/constitution/1976-11-22/1#art_199"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/constitution/1976-11-22/1#art_199"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/constitution/1976-11-22/1#art_199" ;
+    dzdoc:resolutionReason "cross_document_fragment_unverified" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/constitution/1976-11-22/1"^^xsd:anyURI ;
+    dzdoc:targetEId "art_199" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_13_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_13> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تصبح المادة 199 هي المادة 198 من الدستور ."@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_1_extref_09773ad1> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 105 من الدستور"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/constitution/1996-11-28#art_105"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/constitution/1996-11-28#art_105"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/constitution/1996-11-28#art_105" ;
+    dzdoc:resolutionReason "non_canonical_or_malformed_akn_uri" ;
+    dzdoc:resolutionStatus "unresolved" ;
+    dzdoc:targetEId "art_105" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_1_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_1> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تعدل الفقرة الثالثة من المادة 105 من الدستور وتصاع على النحو التالي :"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_1_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_1> ;
+    dzdoc:position 1 ;
+    dzdoc:text "»ويقترحه مؤتمر حزب جبهة التحرير الوطني وفقا لقانونه الأساسي«"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_2_extref_c0538e38> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 103 من الدستور"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/constitution/1996-11-28#art_103"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/constitution/1996-11-28#art_103"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/constitution/1996-11-28#art_103" ;
+    dzdoc:resolutionReason "non_canonical_or_malformed_akn_uri" ;
+    dzdoc:resolutionStatus "unresolved" ;
+    dzdoc:targetEId "art_103" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_2_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_2> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تعدل المادة 103 من الدستور و تصاغ على النحو التالي :"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_2_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_2> ;
+    dzdoc:position 1 ;
+    dzdoc:text "»المدة الرئاسية خمس (5) سنوات."@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_2_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_2> ;
+    dzdoc:position 2 ;
+    dzdoc:text "يمكن تجديد انتخاب رئيس الجمهورية «"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_2_permission_0_97834cb5> a dznorm:Permission ;
+    dzdoc:confidenceScore 0.72 ;
+    dzdoc:extractionMethod "lexical_permission_cue" ;
+    dzdoc:hasAction <https://legal.dz/resource/law/1979-07-01/79-06#art_2_permission_0_97834cb5_action_2b084019f5> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_2> ;
+    dznorm:position 2 ;
+    dznorm:provisionText "يمكن تجديد انتخاب رئيس الجمهورية «"@ar ;
+    dznorm:sourceArticle "art_2" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_2_permission_0_97834cb5_action_2b084019f5> a dznorm:Action ;
+    rdfs:label "تجديد انتخاب رئيس الجمهورية"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يمكن تجديد انتخاب رئيس الجمهورية «"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_2> .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_2_right_0_cfb03b89> a dznorm:Right ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_right_tag" ;
+    dzdoc:hasAction <https://legal.dz/resource/law/1979-07-01/79-06#art_2_right_0_cfb03b89_action_c35bb44d9f> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_2> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يمكن تجديد انتخاب رئيس الجمهورية"@ar ;
+    dznorm:sourceArticle "art_2" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_2_right_0_cfb03b89_action_c35bb44d9f> a dznorm:Action ;
+    rdfs:label "تجديد انتخاب رئيس الجمهورية"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يمكن تجديد انتخاب رئيس الجمهورية"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_2> .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_3_extref_b61ca8f8> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 110"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/constitution/1996-11-28#art_110"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/constitution/1996-11-28#art_110"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/constitution/1996-11-28#art_110" ;
+    dzdoc:resolutionReason "non_canonical_or_malformed_akn_uri" ;
+    dzdoc:resolutionStatus "unresolved" ;
+    dzdoc:targetEId "art_110" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_3_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_3> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يضاف في آخر المادة 110 :"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_3_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_3> ;
+    dzdoc:position 1 ;
+    dzdoc:text "»والله على ما أقول شهيد »"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_4_extref_28c3292e> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 111"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/constitution/1996-11-28#art_111"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/constitution/1996-11-28#art_111"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/constitution/1996-11-28#art_111" ;
+    dzdoc:resolutionReason "non_canonical_or_malformed_akn_uri" ;
+    dzdoc:resolutionStatus "unresolved" ;
+    dzdoc:targetEId "art_111" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_4_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_4> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تعدل المادة 111 ( الفترة 15) من الدستور وتصاغ على النحو التالي :"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_4_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_4> ;
+    dzdoc:position 1 ;
+    dzdoc:text "«يمكن له أن يفوض جزءا من صلاحياته الى نائب أو نواب رئيس الجمهورية ۰۰۰۰«"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_4_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_4> ;
+    dzdoc:position 2 ;
+    dzdoc:text ") – و الباقي بدون تغيير)."@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_4_permission_0_a51a6579> a dznorm:Permission ;
+    dzdoc:confidenceScore 0.72 ;
+    dzdoc:extractionMethod "lexical_permission_cue" ;
+    dzdoc:hasAction <https://legal.dz/resource/law/1979-07-01/79-06#art_4_permission_0_a51a6579_action_cce190eb44> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_4> ;
+    dznorm:position 1 ;
+    dznorm:provisionText "«يمكن له أن يفوض جزءا من صلاحياته الى نائب أو نواب رئيس الجمهورية ۰۰۰۰«"@ar ;
+    dznorm:sourceArticle "art_4" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_4_permission_0_a51a6579_action_cce190eb44> a dznorm:Action ;
+    rdfs:label "له أن يفوض جزءا من"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "«يمكن له أن يفوض جزءا من صلاحياته الى نائب أو نواب رئيس الجمهورية ۰۰۰۰«"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_4> .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_4_right_0_38cb9b8a> a dznorm:Right ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_right_tag" ;
+    dzdoc:hasAction <https://legal.dz/resource/law/1979-07-01/79-06#art_4_right_0_38cb9b8a_action_15cbae6a6d> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_4> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يمكن له أن يفوض جزءا من صلاحياته الى نائب أو نواب رئيس الجمهورية"@ar ;
+    dznorm:sourceArticle "art_4" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_4_right_0_38cb9b8a_action_15cbae6a6d> a dznorm:Action ;
+    rdfs:label "له أن يفوض جزءا من"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يمكن له أن يفوض جزءا من صلاحياته الى نائب أو نواب رئيس الجمهورية"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_4> .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_5_extref_0cacb763> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 112 من الدستور"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/constitution/1996-11-28#art_112"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/constitution/1996-11-28#art_112"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/constitution/1996-11-28#art_112" ;
+    dzdoc:resolutionReason "non_canonical_or_malformed_akn_uri" ;
+    dzdoc:resolutionStatus "unresolved" ;
+    dzdoc:targetEId "art_112" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_5_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_5> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تعدل المادة 112 من الدستور وتصاغ على النحو التالي :"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_5_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_5> ;
+    dzdoc:position 1 ;
+    dzdoc:text "«يمكن لرئيس الجمهورية أن يعين نائبا له أو أكثر يعينونه ويساعدونه في مهامه»"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_5_permission_0_122a8af1> a dznorm:Permission ;
+    dzdoc:confidenceScore 0.72 ;
+    dzdoc:extractionMethod "lexical_permission_cue" ;
+    dzdoc:hasAction <https://legal.dz/resource/law/1979-07-01/79-06#art_5_permission_0_122a8af1_action_332f547f8a> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_5> ;
+    dznorm:position 1 ;
+    dznorm:provisionText "«يمكن لرئيس الجمهورية أن يعين نائبا له أو أكثر يعينونه ويساعدونه في مهامه»"@ar ;
+    dznorm:sourceArticle "art_5" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_5_permission_0_122a8af1_action_332f547f8a> a dznorm:Action ;
+    rdfs:label "لرئيس الجمهورية أن يعين نائبا"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "«يمكن لرئيس الجمهورية أن يعين نائبا له أو أكثر يعينونه ويساعدونه في مهامه»"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_5> .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_5_right_0_14ecdfce> a dznorm:Right ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_right_tag" ;
+    dzdoc:hasAction <https://legal.dz/resource/law/1979-07-01/79-06#art_5_right_0_14ecdfce_action_c81d493e34> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_5> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يمكن لرئيس الجمهورية أن يعين نائبا له أو أكثر يعينونه ويساعدونه في مهامه"@ar ;
+    dznorm:sourceArticle "art_5" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_5_right_0_14ecdfce_action_c81d493e34> a dznorm:Action ;
+    rdfs:label "لرئيس الجمهورية أن يعين نائبا"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يمكن لرئيس الجمهورية أن يعين نائبا له أو أكثر يعينونه ويساعدونه في مهامه"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_5> .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_6_extref_28c3292e> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 111"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/constitution/1996-11-28#art_111"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/constitution/1996-11-28#art_111"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/constitution/1996-11-28#art_111" ;
+    dzdoc:resolutionReason "non_canonical_or_malformed_akn_uri" ;
+    dzdoc:resolutionStatus "unresolved" ;
+    dzdoc:targetEId "art_111" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_6_extref_b16095ac> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 113 من الدستور"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/constitution/1996-11-28#art_113"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/constitution/1996-11-28#art_113"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/constitution/1996-11-28#art_113" ;
+    dzdoc:resolutionReason "non_canonical_or_malformed_akn_uri" ;
+    dzdoc:resolutionStatus "unresolved" ;
+    dzdoc:targetEId "art_113" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_6_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_6> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تعدل المادة 113 من الدستور وتصاغ على النحو التالي :"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_6_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_6> ;
+    dzdoc:position 1 ;
+    dzdoc:text "« يعين رئيس الجمهورية أعضاء الحكومة ومن بينهم وزيرا أول يساعده في تنسيق النشاط الحكومي وفي تطبيق القرارات المتخذة في مجلس الوزراء. »"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_6_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_6> ;
+    dzdoc:position 2 ;
+    dzdoc:text "و يمارس الوزير الأول اختصاصاته في نطاق الصلاحيات التي يفرضها اليه رئيس الجمهورية طبقا لالمادة 111 (الفقرة 15) من الدستور. »"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_7_extref_07241b53> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 115 من الدستور"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/constitution/1996-11-28#art_115"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/constitution/1996-11-28#art_115"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/constitution/1996-11-28#art_115" ;
+    dzdoc:resolutionReason "non_canonical_or_malformed_akn_uri" ;
+    dzdoc:resolutionStatus "unresolved" ;
+    dzdoc:targetEId "art_115" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_7_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_7> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تعدل المادة 115 من الدستور وتصاغ على النحو التالي :"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_7_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_7> ;
+    dzdoc:position 1 ;
+    dzdoc:text "»ونائب أو نواب رئيس الجمهورية ۰۰۰۰ و الباقي بدون تغيير«"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_8_extref_3098c6f1> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 116 من الدستور"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/constitution/1996-11-28#art_116"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/constitution/1996-11-28#art_116"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/constitution/1996-11-28#art_116" ;
+    dzdoc:resolutionReason "non_canonical_or_malformed_akn_uri" ;
+    dzdoc:resolutionStatus "unresolved" ;
+    dzdoc:targetEId "art_116" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_8_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_8> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تعدل المادة 116 من الدستور وتصاغ على النحو التالي :"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_8_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_8> ;
+    dzdoc:position 1 ;
+    dzdoc:text "» ولا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية ……… أو اعفائهم من مهامهم ……. » (والباقي بدون تغيير)."@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_8_permission_0_9dd9fe36> a dznorm:Permission ;
+    dzdoc:confidenceScore 0.72 ;
+    dzdoc:extractionMethod "lexical_permission_cue" ;
+    dzdoc:hasAction <https://legal.dz/resource/law/1979-07-01/79-06#art_8_permission_0_9dd9fe36_action_7648fd30d0> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_8> ;
+    dznorm:position 1 ;
+    dznorm:provisionText "» ولا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية ……… أو اعفائهم من مهامهم ……. » (والباقي بدون تغيير)."@ar ;
+    dznorm:sourceArticle "art_8" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_8_permission_0_9dd9fe36_action_7648fd30d0> a dznorm:Action ;
+    rdfs:label "بأي حال من الأحوال أن"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "» ولا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية ……… أو اعفائهم من مهامهم ……. » (والباقي بدون تغيير)."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_8> .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_9_condition_0_10786361> a dznorm:Condition ;
+    dzdoc:hasRole <https://legal.dz/resource/law/1979-07-01/79-06#art_9_condition_0_10786361_role_e0db586ea4> ;
+    dznorm:conditionText "اذا استحال على رئيس الجمهورية أن يمارس مهامه بسبب مرض خطير مزمن"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_9> ;
+    dznorm:position 0 .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_9_condition_0_10786361_role_e0db586ea4> a dznorm:Role ;
+    rdfs:label "رئيس الجمهورية أن يمارس"@ar ;
+    dzdoc:confidenceScore 0.66 ;
+    dzdoc:extractionMethod "lexical_role_pattern" ;
+    dzdoc:sourceTextSpan "اذا استحال على رئيس الجمهورية أن يمارس مهامه بسبب مرض خطير مزمن"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_9> .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_9_condition_1_2a68f6ae> a dznorm:Condition ;
+    dznorm:conditionText "وفي حالة استمرار المانع ، بعد انقضاء خمسة و أربعين (45) يوما"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_9> ;
+    dznorm:position 1 .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_9_condition_2_4221f1be> a dznorm:Condition ;
+    dznorm:conditionText "وفي حالة استقالة رئيس الجمهورية أو وفاته"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_9> ;
+    dznorm:position 2 .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_9_extref_43c6042d> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 117 من الدستور"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/constitution/1976-11-22#art_117"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/constitution/1976-11-22#art_117"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/constitution/1976-11-22#art_117" ;
+    dzdoc:resolutionReason "non_canonical_or_malformed_akn_uri" ;
+    dzdoc:resolutionStatus "unresolved" ;
+    dzdoc:targetEId "art_117" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_9_extref_b6f8319e> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 18 من الدستور"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/constitution/1976-11-22#art_18"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/constitution/1976-11-22#art_18"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/constitution/1976-11-22#art_18" ;
+    dzdoc:resolutionReason "non_canonical_or_malformed_akn_uri" ;
+    dzdoc:resolutionStatus "unresolved" ;
+    dzdoc:targetEId "art_18" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_9_extref_db235098> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 108 من الدستور"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/constitution/1976-11-22#art_108"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/constitution/1976-11-22#art_108"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/constitution/1976-11-22#art_108" ;
+    dzdoc:resolutionReason "non_canonical_or_malformed_akn_uri" ;
+    dzdoc:resolutionStatus "unresolved" ;
+    dzdoc:targetEId "art_108" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_9_obligation_0_bc899094> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_9> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "تجتمع اللجنة المركزية للحزب وجوبا"@ar ;
+    dznorm:sourceArticle "art_9" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_9_obligation_1_03fff59e> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_9> ;
+    dznorm:position 1 ;
+    dznorm:provisionText "يجتمع المجلس الشعبي الوطني وجوبا"@ar ;
+    dznorm:sourceArticle "art_9" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_9_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_9> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تعدل المادة 117 من الدستور وتصاغ على النحو التالي :"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_9_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_9> ;
+    dzdoc:position 1 ;
+    dzdoc:text "«اذا استحال على رئيس الجمهورية أن يمارس مهامه بسبب مرض خطير مزمن، تجتمع اللجنة المركزية للحزب وجوبا ، و بعد التأكد من حقيقة هذا المانع بكل الوسائل الكفيلة بذلك ، تقترح بأغلبية ثلثي أعضائها على المجلس الشعبي الوطني التصريح بحالة المانع. »"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_9_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_9> ;
+    dzdoc:position 2 ;
+    dzdoc:text "»يعلن المجلس الشعبي الوطني ثبوت مانع الرئيس الجمهورية بأغلبية ثلثي أعضائه، و یكلف رئیسه بأن يتولى رئاسة الدولة بالنيابة لمدة أقصاها خمسة وأربعون (45) يوما وأن يمارس صلاحياته مع مراعاة أحكام المادة 18 من الدستور. «"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_9_para_3> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_9> ;
+    dzdoc:position 3 ;
+    dzdoc:text "»وفي حالة استمرار المانع ، بعد انقضاء خمسة و أربعين (45) يوما ، يعلن الشغور بالاستقالة بحكم القانون ، حسب الطريقة المنصوص عليها أعلاه وطبقا لأحكام الفقرات التالية من هذه المادة. «"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_9_para_4> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_9> ;
+    dzdoc:position 4 ;
+    dzdoc:text "«وفي حالة استقالة رئيس الجمهورية أو وفاته، يجتمع المجلس الشعبي الوطني وجوبا ويثبت حالة الشغور النهائي لرئاسة الجمهورية. »"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_9_para_5> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_9> ;
+    dzdoc:position 5 ;
+    dzdoc:text "»يتولى رئيس المجلس الشعبي الوطني، مهام رئيس الدولة لمدة أقصاها خمسة واربعون (45) يوما ، تنظم خلالها انتخابات رئاسية. ولا يحق الرئيس المجلس الشعبي الوطني أن يكون مرشحا لرئاسة الجمهورية. «"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_9_para_6> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_9> ;
+    dzdoc:position 6 ;
+    dzdoc:text "»يقترح مؤتمر حزب جبهة التحرير الوطني، المرشح لرئاسة الجمهورية، طبقا لقانونه الاساسي«"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_9_para_7> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#art_9> ;
+    dzdoc:position 7 ;
+    dzdoc:text "»يمارس رئيس الجمهورية المنتخب مهامه طبقا لأحكام المادة 108 من الدستور«"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#lifecycle_875c3d6b5251> a dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/constitution/1976-11-22/1> ;
+    dzdoc:confidenceScore 0.81 ;
+    dzdoc:evidenceText "تلغى المادتان 197 و 198 من الدستور"@ar ;
+    dzdoc:isContradictory false ;
+    dzdoc:lifecycleRelationType "repeals" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:ruleId "lifecycle_explicit_repeal_phrase" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_11> .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#lifecycle_e5cfa7858a7c> a dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/constitution/1976-11-22/1> ;
+    dzdoc:confidenceScore 0.81 ;
+    dzdoc:evidenceText "تلغى المادتان 197 و 198 من الدستور"@ar ;
+    dzdoc:isContradictory false ;
+    dzdoc:lifecycleRelationType "repeals" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:ruleId "lifecycle_explicit_repeal_phrase" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_11> .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#preamble_segment_1> a dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#preamble> ;
+    dzdoc:position 1 ;
+    dzdoc:segmentType "formula" ;
+    dzdoc:text "يصدر القانون الآتي نصه"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#preface> a dzdoc:Preface ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06> .
+
+<https://legal.dz/resource/law/1979-07-01/79-06/manifestation> a dzdoc:Manifestation ;
+    dzdoc:frbrUri "/akn/dz/act/law/1979-07-01/79-06/ara@.xml"^^xsd:anyURI ;
+    dzdoc:manifestationOf <https://legal.dz/resource/law/1979-07-01/79-06/expression> ;
+    dzdoc:transformDate "2026-04-28"^^xsd:date .
+
+dzterm:fln a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "حزب جبهة التحرير الوطني"@ar .
+
+dzterm:national_assembly a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "المجلس الشعبي الوطني"@ar .
+
+dzterm:prime_minister a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "الوزير الأول"@ar,
+        "وزيرا أول"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#preamble_segment_0> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#preamble> ;
+    dzdoc:position 0 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "بناء على الدستور"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_10_19790701_OpEnact_67bb3f50ff> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_10> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1979-07-01/79-06#art_10> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_10> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:versionText "تعدل. الفقرتان الثانية والثالثة من المادة 18 من الدستور وتصاغان کما یلي: »لا يمكن أثناء فترتي الخمسة والأربعين (45) يوما، المشار اليهما في الفقرتين الثانية والخامسة من المادة 117 من الدستور ۰۰۰» (والباقي بدون تغییر) « »لا يمكن أثناء نفس الفترتين، انهاء مهام نائب ر نواب رئيس الجمهورية » ( والباقي بدون تغيير )"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_11_19790701_OpEnact_5b8d4bce19> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_11> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1979-07-01/79-06#art_11> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_11> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:versionText "تلغى المادتان 197 و 198 من الدستور"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_12_19790701_OpEnact_10cd729f33> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_12> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1979-07-01/79-06#art_12> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_12> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:versionText "تضاف الى الدستور (الباب الثالث أحكام مختلفة ) مادة 197 وتصاغ على النحو التالي : »ينطبق الاجراء المنصوص عليه في المادة 108 (الفقرة الأولى على المدة الرئاسية التي تعقب انعقاد المؤتمر الرابع لحزب جبهة التحرير الوطني. «"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_13_19790701_OpEnact_05ed1cfecf> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_13> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1979-07-01/79-06#art_13> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_13> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:versionText "تصبح المادة 199 هي المادة 198 من الدستور ."@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_1_19790701_OpEnact_f0bc7a74bc> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_1> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1979-07-01/79-06#art_1> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_1> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:versionText "تعدل الفقرة الثالثة من المادة 105 من الدستور وتصاع على النحو التالي : »ويقترحه مؤتمر حزب جبهة التحرير الوطني وفقا لقانونه الأساسي«"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_2_19790701_OpEnact_d2d5a3b60b> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_2> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1979-07-01/79-06#art_2> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_2> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:versionText "تعدل المادة 103 من الدستور و تصاغ على النحو التالي : »المدة الرئاسية خمس (5) سنوات. يمكن تجديد انتخاب رئيس الجمهورية «"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_3_19790701_OpEnact_46a9d04b43> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_3> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1979-07-01/79-06#art_3> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_3> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:versionText "يضاف في آخر المادة 110 : »والله على ما أقول شهيد »"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_4_19790701_OpEnact_b2583d0c0d> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_4> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1979-07-01/79-06#art_4> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_4> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:versionText "تعدل المادة 111 ( الفترة 15) من الدستور وتصاغ على النحو التالي : « يمكن له أن يفوض جزءا من صلاحياته الى نائب أو نواب رئيس الجمهورية ۰۰۰۰« ) – و الباقي بدون تغيير)."@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_5_19790701_OpEnact_c0110344ff> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_5> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1979-07-01/79-06#art_5> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_5> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:versionText "تعدل المادة 112 من الدستور وتصاغ على النحو التالي : « يمكن لرئيس الجمهورية أن يعين نائبا له أو أكثر يعينونه ويساعدونه في مهامه »"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_6_19790701_OpEnact_c022593143> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_6> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1979-07-01/79-06#art_6> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_6> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:versionText "تعدل المادة 113 من الدستور وتصاغ على النحو التالي : « يعين رئيس الجمهورية أعضاء الحكومة ومن بينهم وزيرا أول يساعده في تنسيق النشاط الحكومي وفي تطبيق القرارات المتخذة في مجلس الوزراء. » و يمارس الوزير الأول اختصاصاته في نطاق الصلاحيات التي يفرضها اليه رئيس الجمهورية طبقا ل المادة 111 (الفقرة 15) من الدستور. »"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_7_19790701_OpEnact_3c979755c8> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_7> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1979-07-01/79-06#art_7> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_7> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:versionText "تعدل المادة 115 من الدستور وتصاغ على النحو التالي : »ونائب أو نواب رئيس الجمهورية ۰۰۰۰ و الباقي بدون تغيير«"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_8_19790701_OpEnact_ce3cc32450> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_8> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1979-07-01/79-06#art_8> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_8> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:versionText "تعدل المادة 116 من الدستور وتصاغ على النحو التالي : » ولا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية ……… أو اعفائهم من مهامهم ……. » (والباقي بدون تغيير)."@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_9_19790701_OpEnact_7cbe7d30cd> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_9> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1979-07-01/79-06#art_9> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_9> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:versionText "تعدل المادة 117 من الدستور وتصاغ على النحو التالي : « اذا استحال على رئيس الجمهورية أن يمارس مهامه بسبب مرض خطير مزمن ، تجتمع اللجنة المركزية للحزب وجوبا ، و بعد التأكد من حقيقة هذا المانع بكل الوسائل الكفيلة بذلك ، تقترح بأغلبية ثلثي أعضائها على المجلس الشعبي الوطني التصريح بحالة المانع. » »يعلن المجلس الشعبي الوطني ثبوت مانع الرئيس الجمهورية بأغلبية ثلثي أعضائه، و یكلف رئیسه بأن يتولى رئاسة الدولة بالنيابة لمدة أقصاها خمسة وأربعون (45) يوما وأن يمارس صلاحياته مع مراعاة أحكام المادة 18 من الدستور . « » وفي حالة استمرار المانع ، بعد انقضاء خمسة و أربعين (45) يوما ، يعلن الشغور بالاستقالة بحكم القانون ، حسب الطريقة المنصوص عليها أعلاه وطبقا لأحكام الفقرات التالية من هذه المادة. « « وفي حالة استقالة رئيس الجمهورية أو وفاته ، يجتمع المجلس الشعبي الوطني وجوبا ويثبت حالة الشغور النهائي لرئاسة الجمهورية. » »يتولى رئيس المجلس الشعبي الوطني، مهام رئيس الدولة لمدة أقصاها خمسة واربعون (45) يوما ، تنظم خلالها انتخابات رئاسية. ولا يحق الرئيس المجلس الشعبي الوطني أن يكون مرشحا لرئاسة الجمهورية. « »يقترح مؤتمر حزب جبهة التحرير الوطني، المرشح لرئاسة الجمهورية، طبقا لقانونه الاساسي« »يمارس رئيس الجمهورية المنتخب مهامه طبقا لأحكام المادة 108 من الدستور «"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06/expression> a dzdoc:Expression ;
+    dzdoc:expressionOf <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:frbrUri "/akn/dz/act/law/1979-07-01/79-06/ara@"^^xsd:anyURI ;
+    dzdoc:hasManifestation <https://legal.dz/resource/law/1979-07-01/79-06/manifestation> ;
+    dzdoc:language "ara" ;
+    dzdoc:publicationDate "1979-07-01"^^xsd:date .
+
+dzorg:parliament a dzdoc:Organization ;
+    rdfs:label "البرلمان"@ar ;
+    dzdoc:frbrUri "/ontology/organization/dz/parliament"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#body> a dzdoc:Body ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:directlyContains <https://legal.dz/resource/law/1979-07-01/79-06#chp_الثالث_أحكام_مختلفة>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#chp_الثاني_السلطة_و_تنظيمها> ;
+    dzdoc:hasChapter <https://legal.dz/resource/law/1979-07-01/79-06#chp_الثالث_أحكام_مختلفة>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#chp_الثاني_السلطة_و_تنظيمها> .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#chp_الثاني_السلطة_و_تنظيمها> a dzdoc:Chapter ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#body> ;
+    dzdoc:directlyContains <https://legal.dz/resource/law/1979-07-01/79-06#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> ;
+    dzdoc:eId "chp_الثاني_السلطة_و_تنظيمها" ;
+    dzdoc:hasSection <https://legal.dz/resource/law/1979-07-01/79-06#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> ;
+    dzdoc:number "الثاني السلطة و تنظيمها" ;
+    dzdoc:position 0 .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#preamble> a dzdoc:Preamble ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:hasCitation <https://legal.dz/resource/law/1979-07-01/79-06#preamble_segment_0> ;
+    dzdoc:hasSegment <https://legal.dz/resource/law/1979-07-01/79-06#preamble_segment_0>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#preamble_segment_1> ;
+    dzdoc:text "يصدر القانون الآتي نصه"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_1> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تعدل الفقرة الثالثة من المادة 105 من الدستور وتصاع على النحو التالي : »ويقترحه مؤتمر حزب جبهة التحرير الوطني وفقا لقانونه الأساسي«"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_1_19790701_OpEnact_f0bc7a74bc> ;
+    dzdoc:replacementText "تعدل الفقرة الثالثة من المادة 105 من الدستور وتصاع على النحو التالي : »ويقترحه مؤتمر حزب جبهة التحرير الوطني وفقا لقانونه الأساسي«"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_1> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_1> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_10> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تعدل. الفقرتان الثانية والثالثة من المادة 18 من الدستور وتصاغان کما یلي: »لا يمكن أثناء فترتي الخمسة والأربعين (45) يوما، المشار اليهما في الفقرتين الثانية والخامسة من المادة 117 من الدستور ۰۰۰» (والباقي بدون تغییر) « »لا يمكن أثناء نفس الفترتين، انهاء مهام نائب ر نواب رئيس الجمهورية » ( والباقي بدون تغيير )"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_10_19790701_OpEnact_67bb3f50ff> ;
+    dzdoc:replacementText "تعدل. الفقرتان الثانية والثالثة من المادة 18 من الدستور وتصاغان کما یلي: »لا يمكن أثناء فترتي الخمسة والأربعين (45) يوما، المشار اليهما في الفقرتين الثانية والخامسة من المادة 117 من الدستور ۰۰۰» (والباقي بدون تغییر) « »لا يمكن أثناء نفس الفترتين، انهاء مهام نائب ر نواب رئيس الجمهورية » ( والباقي بدون تغيير )"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_10> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_10> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_11> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تلغى المادتان 197 و 198 من الدستور"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_11_19790701_OpEnact_5b8d4bce19> ;
+    dzdoc:replacementText "تلغى المادتان 197 و 198 من الدستور"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_11> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_11> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_12> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تضاف الى الدستور (الباب الثالث أحكام مختلفة ) مادة 197 وتصاغ على النحو التالي : »ينطبق الاجراء المنصوص عليه في المادة 108 (الفقرة الأولى على المدة الرئاسية التي تعقب انعقاد المؤتمر الرابع لحزب جبهة التحرير الوطني. «"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_12_19790701_OpEnact_10cd729f33> ;
+    dzdoc:replacementText "تضاف الى الدستور (الباب الثالث أحكام مختلفة ) مادة 197 وتصاغ على النحو التالي : »ينطبق الاجراء المنصوص عليه في المادة 108 (الفقرة الأولى على المدة الرئاسية التي تعقب انعقاد المؤتمر الرابع لحزب جبهة التحرير الوطني. «"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_12> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_12> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_13> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تصبح المادة 199 هي المادة 198 من الدستور ."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_13_19790701_OpEnact_05ed1cfecf> ;
+    dzdoc:replacementText "تصبح المادة 199 هي المادة 198 من الدستور ."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_13> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_13> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_2> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تعدل المادة 103 من الدستور و تصاغ على النحو التالي : »المدة الرئاسية خمس (5) سنوات. يمكن تجديد انتخاب رئيس الجمهورية «"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_2_19790701_OpEnact_d2d5a3b60b> ;
+    dzdoc:replacementText "تعدل المادة 103 من الدستور و تصاغ على النحو التالي : »المدة الرئاسية خمس (5) سنوات. يمكن تجديد انتخاب رئيس الجمهورية «"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_2> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_2> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_3> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يضاف في آخر المادة 110 : »والله على ما أقول شهيد »"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_3_19790701_OpEnact_46a9d04b43> ;
+    dzdoc:replacementText "يضاف في آخر المادة 110 : »والله على ما أقول شهيد »"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_3> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_3> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_4> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تعدل المادة 111 ( الفترة 15) من الدستور وتصاغ على النحو التالي : « يمكن له أن يفوض جزءا من صلاحياته الى نائب أو نواب رئيس الجمهورية ۰۰۰۰« ) – و الباقي بدون تغيير)."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_4_19790701_OpEnact_b2583d0c0d> ;
+    dzdoc:replacementText "تعدل المادة 111 ( الفترة 15) من الدستور وتصاغ على النحو التالي : « يمكن له أن يفوض جزءا من صلاحياته الى نائب أو نواب رئيس الجمهورية ۰۰۰۰« ) – و الباقي بدون تغيير)."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_4> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_4> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_5> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تعدل المادة 112 من الدستور وتصاغ على النحو التالي : « يمكن لرئيس الجمهورية أن يعين نائبا له أو أكثر يعينونه ويساعدونه في مهامه »"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_5_19790701_OpEnact_c0110344ff> ;
+    dzdoc:replacementText "تعدل المادة 112 من الدستور وتصاغ على النحو التالي : « يمكن لرئيس الجمهورية أن يعين نائبا له أو أكثر يعينونه ويساعدونه في مهامه »"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_5> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_5> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_6> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تعدل المادة 113 من الدستور وتصاغ على النحو التالي : « يعين رئيس الجمهورية أعضاء الحكومة ومن بينهم وزيرا أول يساعده في تنسيق النشاط الحكومي وفي تطبيق القرارات المتخذة في مجلس الوزراء. » و يمارس الوزير الأول اختصاصاته في نطاق الصلاحيات التي يفرضها اليه رئيس الجمهورية طبقا ل المادة 111 (الفقرة 15) من الدستور. »"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_6_19790701_OpEnact_c022593143> ;
+    dzdoc:replacementText "تعدل المادة 113 من الدستور وتصاغ على النحو التالي : « يعين رئيس الجمهورية أعضاء الحكومة ومن بينهم وزيرا أول يساعده في تنسيق النشاط الحكومي وفي تطبيق القرارات المتخذة في مجلس الوزراء. » و يمارس الوزير الأول اختصاصاته في نطاق الصلاحيات التي يفرضها اليه رئيس الجمهورية طبقا ل المادة 111 (الفقرة 15) من الدستور. »"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_6> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_6> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_7> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تعدل المادة 115 من الدستور وتصاغ على النحو التالي : »ونائب أو نواب رئيس الجمهورية ۰۰۰۰ و الباقي بدون تغيير«"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_7_19790701_OpEnact_3c979755c8> ;
+    dzdoc:replacementText "تعدل المادة 115 من الدستور وتصاغ على النحو التالي : »ونائب أو نواب رئيس الجمهورية ۰۰۰۰ و الباقي بدون تغيير«"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_7> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_7> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_8> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تعدل المادة 116 من الدستور وتصاغ على النحو التالي : » ولا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية ……… أو اعفائهم من مهامهم ……. » (والباقي بدون تغيير)."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_8_19790701_OpEnact_ce3cc32450> ;
+    dzdoc:replacementText "تعدل المادة 116 من الدستور وتصاغ على النحو التالي : » ولا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية ……… أو اعفائهم من مهامهم ……. » (والباقي بدون تغيير)."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_8> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_8> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#version_art_9> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تعدل المادة 117 من الدستور وتصاغ على النحو التالي : « اذا استحال على رئيس الجمهورية أن يمارس مهامه بسبب مرض خطير مزمن ، تجتمع اللجنة المركزية للحزب وجوبا ، و بعد التأكد من حقيقة هذا المانع بكل الوسائل الكفيلة بذلك ، تقترح بأغلبية ثلثي أعضائها على المجلس الشعبي الوطني التصريح بحالة المانع. » »يعلن المجلس الشعبي الوطني ثبوت مانع الرئيس الجمهورية بأغلبية ثلثي أعضائه، و یكلف رئیسه بأن يتولى رئاسة الدولة بالنيابة لمدة أقصاها خمسة وأربعون (45) يوما وأن يمارس صلاحياته مع مراعاة أحكام المادة 18 من الدست"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_9_19790701_OpEnact_7cbe7d30cd> ;
+    dzdoc:replacementText "تعدل المادة 117 من الدستور وتصاغ على النحو التالي : « اذا استحال على رئيس الجمهورية أن يمارس مهامه بسبب مرض خطير مزمن ، تجتمع اللجنة المركزية للحزب وجوبا ، و بعد التأكد من حقيقة هذا المانع بكل الوسائل الكفيلة بذلك ، تقترح بأغلبية ثلثي أعضائها على المجلس الشعبي الوطني التصريح بحالة المانع. » »يعلن المجلس الشعبي الوطني ثبوت مانع الرئيس الجمهورية بأغلبية ثلثي أعضائه، و یكلف رئیسه بأن يتولى رئاسة الدولة بالنيابة لمدة أقصاها خمسة وأربعون (45) يوما وأن يمارس صلاحياته مع مراعاة أحكام المادة 18 من الدستور . « » وفي حالة استمرار المانع ، بعد انقضاء خمسة و أربعين (45) يوما ، يعلن الشغور بالاستقالة بحكم القانون ، حسب الطريقة المنصوص عليها أعلاه وطبقا لأحكام الفقرات التالية من هذه المادة. « « وفي حالة استقالة رئيس الجمهورية أو وفاته ، يجتمع المجلس الشعبي الوطني وجوبا ويثبت حالة الشغور النهائي لرئاسة الجمهورية. » »يتولى رئيس المجلس الشعبي الوطني، مهام رئيس الدولة لمدة أقصاها خمسة واربعون (45) يوما ، تنظم خلالها انتخابات رئاسية. ولا يحق الرئيس المجلس الشعبي الوطني أن يكون مرشحا لرئاسة الجمهورية. « »يقترح مؤتمر حزب جبهة التحرير الوطني، المرشح لرئاسة الجمهورية، طبقا لقانونه الاساسي« »يمارس رئيس الجمهورية المنتخب مهامه طبقا لأحكام المادة 108 من الدستور «"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_9> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_9> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1979-07-01"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+dzterm:president a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "رئيس الجمهورية"@ar .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#chp_الثالث_أحكام_مختلفة> a dzdoc:Chapter ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#body> ;
+    dzdoc:directlyContains <https://legal.dz/resource/law/1979-07-01/79-06#art_11>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_12>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_13> ;
+    dzdoc:eId "chp_الثالث_أحكام_مختلفة" ;
+    dzdoc:hasArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_11>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_12>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_13> ;
+    dzdoc:heading "أحكام مختلفة"@ar ;
+    dzdoc:number "الثالث أحكام مختلفة" ;
+    dzdoc:position 1 .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_13> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#chp_الثالث_أحكام_مختلفة> ;
+    dzdoc:eId "art_13" ;
+    dzdoc:fullText "تصبح المادة 199 هي المادة 198 من الدستور ."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_13> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1979-07-01/79-06#art_13_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_13_19790701_OpEnact_05ed1cfecf> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:introducedOn "1979-07-01"^^xsd:date ;
+    dzdoc:number "المادة 13" ;
+    dzdoc:position 12 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/1979-07-01/79-06#art_13_extref_329751ba>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_13_extref_e4fff54c> .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_1> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> ;
+    dzdoc:eId "art_1" ;
+    dzdoc:fullText "تعدل الفقرة الثالثة من المادة 105 من الدستور وتصاع على النحو التالي : »ويقترحه مؤتمر حزب جبهة التحرير الوطني وفقا لقانونه الأساسي«"@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_1> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1979-07-01/79-06#art_1_para_0>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_1_para_1> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_1_19790701_OpEnact_f0bc7a74bc> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:introducedOn "1979-07-01"^^xsd:date ;
+    dzdoc:number "المادة الأولى" ;
+    dzdoc:position 0 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/1979-07-01/79-06#art_1_extref_09773ad1> ;
+    dzdoc:usesTerm dzterm:fln .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_3> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> ;
+    dzdoc:eId "art_3" ;
+    dzdoc:fullText "يضاف في آخر المادة 110 : »والله على ما أقول شهيد »"@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_3> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1979-07-01/79-06#art_3_para_0>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_3_para_1> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_3_19790701_OpEnact_46a9d04b43> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:introducedOn "1979-07-01"^^xsd:date ;
+    dzdoc:number "المادة 3" ;
+    dzdoc:position 2 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/1979-07-01/79-06#art_3_extref_b61ca8f8> .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_7> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> ;
+    dzdoc:eId "art_7" ;
+    dzdoc:fullText "تعدل المادة 115 من الدستور وتصاغ على النحو التالي : »ونائب أو نواب رئيس الجمهورية ۰۰۰۰ و الباقي بدون تغيير«"@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_7> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1979-07-01/79-06#art_7_para_0>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_7_para_1> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_7_19790701_OpEnact_3c979755c8> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:introducedOn "1979-07-01"^^xsd:date ;
+    dzdoc:number "المادة 7" ;
+    dzdoc:position 6 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/1979-07-01/79-06#art_7_extref_07241b53> .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_11> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#chp_الثالث_أحكام_مختلفة> ;
+    dzdoc:eId "art_11" ;
+    dzdoc:fullText "تلغى المادتان 197 و 198 من الدستور"@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_11> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1979-07-01/79-06#art_11_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_11_19790701_OpEnact_5b8d4bce19> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:introducedOn "1979-07-01"^^xsd:date ;
+    dzdoc:number "المادة 11" ;
+    dzdoc:position 10 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/1979-07-01/79-06#art_11_extref_329751ba>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_11_extref_a22a3916> .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_12> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#chp_الثالث_أحكام_مختلفة> ;
+    dzdoc:eId "art_12" ;
+    dzdoc:fullText "تضاف الى الدستور (الباب الثالث أحكام مختلفة ) مادة 197 وتصاغ على النحو التالي : »ينطبق الاجراء المنصوص عليه في المادة 108 (الفقرة الأولى على المدة الرئاسية التي تعقب انعقاد المؤتمر الرابع لحزب جبهة التحرير الوطني. «"@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_12> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1979-07-01/79-06#art_12_para_0>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_12_para_1>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_12_para_2> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_12_19790701_OpEnact_10cd729f33> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:introducedOn "1979-07-01"^^xsd:date ;
+    dzdoc:number "المادة 12" ;
+    dzdoc:position 11 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/1979-07-01/79-06#art_12_extref_0906869a>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_12_extref_a22a3916> .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_6> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> ;
+    dzdoc:eId "art_6" ;
+    dzdoc:fullText "تعدل المادة 113 من الدستور وتصاغ على النحو التالي : « يعين رئيس الجمهورية أعضاء الحكومة ومن بينهم وزيرا أول يساعده في تنسيق النشاط الحكومي وفي تطبيق القرارات المتخذة في مجلس الوزراء. » و يمارس الوزير الأول اختصاصاته في نطاق الصلاحيات التي يفرضها اليه رئيس الجمهورية طبقا ل المادة 111 (الفقرة 15) من الدستور. »"@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_6> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1979-07-01/79-06#art_6_para_0>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_6_para_1>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_6_para_2> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_6_19790701_OpEnact_c022593143> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:introducedOn "1979-07-01"^^xsd:date ;
+    dzdoc:number "المادة 6" ;
+    dzdoc:position 5 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/1979-07-01/79-06#art_6_extref_28c3292e>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_6_extref_b16095ac> ;
+    dzdoc:usesTerm dzterm:president,
+        dzterm:prime_minister .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_8> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> ;
+    dzdoc:eId "art_8" ;
+    dzdoc:fullText "تعدل المادة 116 من الدستور وتصاغ على النحو التالي : » ولا يجوز بأي حال من الأحوال أن يفوض رئيس الجمهورية سلطته في تعيين نائب أو نواب رئيس الجمهورية ……… أو اعفائهم من مهامهم ……. » (والباقي بدون تغيير)."@ar ;
+    dzdoc:grantsPermission <https://legal.dz/resource/law/1979-07-01/79-06#art_8_permission_0_9dd9fe36> ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_8> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1979-07-01/79-06#art_8_para_0>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_8_para_1> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_8_19790701_OpEnact_ce3cc32450> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:introducedOn "1979-07-01"^^xsd:date ;
+    dzdoc:number "المادة 8" ;
+    dzdoc:position 7 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/1979-07-01/79-06#art_8_extref_3098c6f1> ;
+    dzdoc:usesTerm dzterm:president .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_5> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> ;
+    dzdoc:eId "art_5" ;
+    dzdoc:fullText "تعدل المادة 112 من الدستور وتصاغ على النحو التالي : « يمكن لرئيس الجمهورية أن يعين نائبا له أو أكثر يعينونه ويساعدونه في مهامه »"@ar ;
+    dzdoc:grantsPermission <https://legal.dz/resource/law/1979-07-01/79-06#art_5_permission_0_122a8af1> ;
+    dzdoc:grantsRight <https://legal.dz/resource/law/1979-07-01/79-06#art_5_right_0_14ecdfce> ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_5> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1979-07-01/79-06#art_5_para_0>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_5_para_1> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_5_19790701_OpEnact_c0110344ff> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:introducedOn "1979-07-01"^^xsd:date ;
+    dzdoc:number "المادة 5" ;
+    dzdoc:position 4 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/1979-07-01/79-06#art_5_extref_0cacb763> .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> a dzdoc:Section ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#chp_الثاني_السلطة_و_تنظيمها> ;
+    dzdoc:directlyContains <https://legal.dz/resource/law/1979-07-01/79-06#art_1>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_10>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_2>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_3>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_4>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_5>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_6>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_7>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_8>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_9> ;
+    dzdoc:eId "chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية" ;
+    dzdoc:hasArticle <https://legal.dz/resource/law/1979-07-01/79-06#art_1>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_10>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_2>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_3>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_4>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_5>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_6>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_7>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_8>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_9> ;
+    dzdoc:number "الثاني الوظيفة التنفيذية" ;
+    dzdoc:position 0 .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_10> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> ;
+    dzdoc:eId "art_10" ;
+    dzdoc:fullText "تعدل. الفقرتان الثانية والثالثة من المادة 18 من الدستور وتصاغان کما یلي: »لا يمكن أثناء فترتي الخمسة والأربعين (45) يوما، المشار اليهما في الفقرتين الثانية والخامسة من المادة 117 من الدستور ۰۰۰» (والباقي بدون تغییر) « »لا يمكن أثناء نفس الفترتين، انهاء مهام نائب ر نواب رئيس الجمهورية » ( والباقي بدون تغيير )"@ar ;
+    dzdoc:grantsPermission <https://legal.dz/resource/law/1979-07-01/79-06#art_10_permission_0_8b4a9d33>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_10_permission_1_fe5d2f2d> ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_10> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1979-07-01/79-06#art_10_para_0>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_10_para_1>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_10_para_2> ;
+    dzdoc:hasStatus dzdoc:StatusModified ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_10_19790701_OpEnact_67bb3f50ff> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:introducedOn "1979-07-01"^^xsd:date ;
+    dzdoc:number "المادة 10" ;
+    dzdoc:position 9 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/1979-07-01/79-06#art_10_extref_43c6042d>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_10_extref_b6f8319e> .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_2> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> ;
+    dzdoc:eId "art_2" ;
+    dzdoc:fullText "تعدل المادة 103 من الدستور و تصاغ على النحو التالي : »المدة الرئاسية خمس (5) سنوات. يمكن تجديد انتخاب رئيس الجمهورية «"@ar ;
+    dzdoc:grantsPermission <https://legal.dz/resource/law/1979-07-01/79-06#art_2_permission_0_97834cb5> ;
+    dzdoc:grantsRight <https://legal.dz/resource/law/1979-07-01/79-06#art_2_right_0_cfb03b89> ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_2> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1979-07-01/79-06#art_2_para_0>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_2_para_1>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_2_para_2> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_2_19790701_OpEnact_d2d5a3b60b> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:introducedOn "1979-07-01"^^xsd:date ;
+    dzdoc:number "المادة 2" ;
+    dzdoc:position 1 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/1979-07-01/79-06#art_2_extref_c0538e38> .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_4> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> ;
+    dzdoc:eId "art_4" ;
+    dzdoc:fullText "تعدل المادة 111 ( الفترة 15) من الدستور وتصاغ على النحو التالي : « يمكن له أن يفوض جزءا من صلاحياته الى نائب أو نواب رئيس الجمهورية ۰۰۰۰« ) – و الباقي بدون تغيير)."@ar ;
+    dzdoc:grantsPermission <https://legal.dz/resource/law/1979-07-01/79-06#art_4_permission_0_a51a6579> ;
+    dzdoc:grantsRight <https://legal.dz/resource/law/1979-07-01/79-06#art_4_right_0_38cb9b8a> ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_4> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1979-07-01/79-06#art_4_para_0>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_4_para_1>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_4_para_2> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_4_19790701_OpEnact_b2583d0c0d> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:introducedOn "1979-07-01"^^xsd:date ;
+    dzdoc:number "المادة 4" ;
+    dzdoc:position 3 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/1979-07-01/79-06#art_4_extref_28c3292e> .
+
+<https://legal.dz/resource/law/1979-07-01/79-06#art_9> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1979-07-01/79-06#chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية> ;
+    dzdoc:eId "art_9" ;
+    dzdoc:fullText "تعدل المادة 117 من الدستور وتصاغ على النحو التالي : « اذا استحال على رئيس الجمهورية أن يمارس مهامه بسبب مرض خطير مزمن ، تجتمع اللجنة المركزية للحزب وجوبا ، و بعد التأكد من حقيقة هذا المانع بكل الوسائل الكفيلة بذلك ، تقترح بأغلبية ثلثي أعضائها على المجلس الشعبي الوطني التصريح بحالة المانع. » »يعلن المجلس الشعبي الوطني ثبوت مانع الرئيس الجمهورية بأغلبية ثلثي أعضائه، و یكلف رئیسه بأن يتولى رئاسة الدولة بالنيابة لمدة أقصاها خمسة وأربعون (45) يوما وأن يمارس صلاحياته مع مراعاة أحكام المادة 18 من الدستور . « » وفي حالة استمرار المانع ، بعد انقضاء خمسة و أربعين (45) يوما ، يعلن الشغور بالاستقالة بحكم القانون ، حسب الطريقة المنصوص عليها أعلاه وطبقا لأحكام الفقرات التالية من هذه المادة. « « وفي حالة استقالة رئيس الجمهورية أو وفاته ، يجتمع المجلس الشعبي الوطني وجوبا ويثبت حالة الشغور النهائي لرئاسة الجمهورية. » »يتولى رئيس المجلس الشعبي الوطني، مهام رئيس الدولة لمدة أقصاها خمسة واربعون (45) يوما ، تنظم خلالها انتخابات رئاسية. ولا يحق الرئيس المجلس الشعبي الوطني أن يكون مرشحا لرئاسة الجمهورية. « »يقترح مؤتمر حزب جبهة التحرير الوطني، المرشح لرئاسة الجمهورية، طبقا لقانونه الاساسي« »يمارس رئيس الجمهورية المنتخب مهامه طبقا لأحكام المادة 108 من الدستور «"@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_9> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1979-07-01/79-06#art_9_para_0>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_9_para_1>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_9_para_2>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_9_para_3>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_9_para_4>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_9_para_5>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_9_para_6>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_9_para_7> ;
+    dzdoc:hasStatus dzdoc:StatusModified ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1979-07-01/79-06#version_art_9_19790701_OpEnact_7cbe7d30cd> ;
+    dzdoc:imposesObligation <https://legal.dz/resource/law/1979-07-01/79-06#art_9_obligation_0_bc899094>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_9_obligation_1_03fff59e> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1979-07-01/79-06> ;
+    dzdoc:introducedOn "1979-07-01"^^xsd:date ;
+    dzdoc:number "المادة 9" ;
+    dzdoc:position 8 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/1979-07-01/79-06#art_9_extref_43c6042d>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_9_extref_b6f8319e>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_9_extref_db235098> ;
+    dzdoc:specifiesCondition <https://legal.dz/resource/law/1979-07-01/79-06#art_9_condition_0_10786361>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_9_condition_1_2a68f6ae>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#art_9_condition_2_4221f1be> ;
+    dzdoc:usesTerm dzterm:national_assembly,
+        dzterm:president .
+
+<https://legal.dz/resource/law/1979-07-01/79-06> a dzdoc:Law ;
+    dzdoc:authoredBy dzorg:parliament ;
+    dzdoc:candidateRepeals <https://legal.dz/resource/constitution/1976-11-22/1> ;
+    dzdoc:countryCode "dz" ;
+    dzdoc:dateText "1 يوليو سنة 1979"@ar ;
+    dzdoc:documentNumber "79-06" ;
+    dzdoc:enactmentDate "1979-07-01"^^xsd:date ;
+    dzdoc:frbrThisUri "/akn/dz/act/law/1979-07-01/79-06/main"^^xsd:anyURI ;
+    dzdoc:frbrUri "/akn/dz/act/law/1979-07-01/79-06"^^xsd:anyURI ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1979-07-01/79-06#version_art_1>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#version_art_10>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#version_art_11>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#version_art_12>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#version_art_13>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#version_art_2>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#version_art_3>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#version_art_4>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#version_art_5>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#version_art_6>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#version_art_7>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#version_art_8>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#version_art_9> ;
+    dzdoc:hasAuthority dzorg:parliament ;
+    dzdoc:hasBody <https://legal.dz/resource/law/1979-07-01/79-06#body> ;
+    dzdoc:hasExpression <https://legal.dz/resource/law/1979-07-01/79-06/expression> ;
+    dzdoc:hasLifecycleAssertion <https://legal.dz/resource/law/1979-07-01/79-06#lifecycle_875c3d6b5251>,
+        <https://legal.dz/resource/law/1979-07-01/79-06#lifecycle_e5cfa7858a7c> ;
+    dzdoc:hasPreamble <https://legal.dz/resource/law/1979-07-01/79-06#preamble> ;
+    dzdoc:hasPreface <https://legal.dz/resource/law/1979-07-01/79-06#preface> ;
+    dzdoc:publicationDate "1979-07-01"^^xsd:date ;
+    dzdoc:sourceFile "Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1979-07-01.xml" ;
+    dzdoc:title "قانون رقم 79-06 يتضمن التعديل الدستوري"@ar .
+

@@ -1,0 +1,215 @@
+@prefix dzdoc: <https://legal.dz/ontology/document#> .
+@prefix dznorm: <https://legal.dz/ontology/norm#> .
+@prefix dzorg: <https://legal.dz/resource/organization/> .
+@prefix dzterm: <https://legal.dz/resource/term/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dzorg:الجريدة_الرسمية a dzdoc:Organization ;
+    rdfs:label "الجريدة الرسمية"@ar ;
+    dzdoc:frbrUri "/ontology/organization/dz/joradp"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/1980-01-12/80-01#art_190__obligation_0_155edb63> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1980-01-12/80-01#art_190_> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يؤسس مجلس محاسبة مكلف بمراقبة مالية الدولة والحزب والمجموعات المحلية والمؤسسات الاشتراكية بجميع أنواعها"@ar ;
+    dznorm:sourceArticle "art_190_" .
+
+<https://legal.dz/resource/law/1980-01-12/80-01#art_190__para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1980-01-12/80-01#art_190_> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يؤسس مجلس محاسبة مكلف بمراقبة مالية الدولة والحزب والمجموعات المحلية والمؤسسات الاشتراكية بجميع أنواعها «"@ar .
+
+<https://legal.dz/resource/law/1980-01-12/80-01#art_190__para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1980-01-12/80-01#art_190_> ;
+    dzdoc:position 1 ;
+    dzdoc:text "(الباقي بدون تغيير)"@ar .
+
+<https://legal.dz/resource/law/1980-01-12/80-01#art_الاولى_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1980-01-12/80-01#art_الاولى> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تعدل الفقرة الأولى من المادة 190 من الدستور، کما یلي:"@ar .
+
+<https://legal.dz/resource/law/1980-01-12/80-01#preamble_segment_1> a dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1980-01-12/80-01#preamble> ;
+    dzdoc:position 1 ;
+    dzdoc:segmentType "formula" ;
+    dzdoc:text "يصدر القانون الآتي نصه"@ar .
+
+<https://legal.dz/resource/law/1980-01-12/80-01#preface> a dzdoc:Preface ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1980-01-12/80-01> .
+
+<https://legal.dz/resource/law/1980-01-12/80-01/manifestation> a dzdoc:Manifestation ;
+    dzdoc:frbrUri "/akn/dz/act/law/1980-01-12/80-01/ara@.xml"^^xsd:anyURI ;
+    dzdoc:manifestationOf <https://legal.dz/resource/law/1980-01-12/80-01/expression> ;
+    dzdoc:transformDate "2026-04-28"^^xsd:date .
+
+dzterm:court_of_auditors a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "مجلس محاسبة"@ar .
+
+<https://legal.dz/resource/law/1980-01-12/80-01#body> a dzdoc:Body ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1980-01-12/80-01> ;
+    dzdoc:directlyContains <https://legal.dz/resource/law/1980-01-12/80-01#chp_الثاني_السلطة_و_تنظيمها> ;
+    dzdoc:hasChapter <https://legal.dz/resource/law/1980-01-12/80-01#chp_الثاني_السلطة_و_تنظيمها> .
+
+<https://legal.dz/resource/law/1980-01-12/80-01#preamble_segment_0> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1980-01-12/80-01#preamble> ;
+    dzdoc:position 0 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "بناء على الدستور"@ar .
+
+<https://legal.dz/resource/law/1980-01-12/80-01#version_art_190_19800112_OpEnact_bef18da733> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1980-01-12"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1980-01-12/80-01#version_art_190_> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1980-01-12/80-01#art_190_> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1980-01-12/80-01#art_190_> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1980-01-12/80-01> ;
+    dzdoc:versionText "يؤسس مجلس محاسبة مكلف بمراقبة مالية الدولة والحزب والمجموعات المحلية والمؤسسات الاشتراكية بجميع أنواعها « (الباقي بدون تغيير)"@ar .
+
+<https://legal.dz/resource/law/1980-01-12/80-01#version_art_19800112_OpEnact_947bc4e064> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1980-01-12"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1980-01-12/80-01#version_art_الاولى> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1980-01-12/80-01#art_الاولى> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1980-01-12/80-01#art_الاولى> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1980-01-12/80-01> ;
+    dzdoc:versionText "تعدل الفقرة الأولى من المادة 190 من الدستور، کما یلي:"@ar .
+
+<https://legal.dz/resource/law/1980-01-12/80-01/expression> a dzdoc:Expression ;
+    dzdoc:expressionOf <https://legal.dz/resource/law/1980-01-12/80-01> ;
+    dzdoc:frbrUri "/akn/dz/act/law/1980-01-12/80-01/ara@"^^xsd:anyURI ;
+    dzdoc:hasManifestation <https://legal.dz/resource/law/1980-01-12/80-01/manifestation> ;
+    dzdoc:language "ara" ;
+    dzdoc:publicationDate "1980-01-12"^^xsd:date .
+
+dzorg:parliament a dzdoc:Organization ;
+    rdfs:label "البرلمان"@ar ;
+    dzdoc:frbrUri "/ontology/organization/dz/parliament"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/1980-01-12/80-01#chp_الثاني_السلطة_و_تنظيمها> a dzdoc:Chapter ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1980-01-12/80-01> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1980-01-12/80-01#body> ;
+    dzdoc:directlyContains <https://legal.dz/resource/law/1980-01-12/80-01#chp_الثاني_السلطة_و_تنظيمها_sec_الخامس_وظيفة_المراقبة> ;
+    dzdoc:eId "chp_الثاني_السلطة_و_تنظيمها" ;
+    dzdoc:hasSection <https://legal.dz/resource/law/1980-01-12/80-01#chp_الثاني_السلطة_و_تنظيمها_sec_الخامس_وظيفة_المراقبة> ;
+    dzdoc:number "الثاني السلطة و تنظيمها" ;
+    dzdoc:position 0 .
+
+<https://legal.dz/resource/law/1980-01-12/80-01#preamble> a dzdoc:Preamble ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1980-01-12/80-01> ;
+    dzdoc:hasCitation <https://legal.dz/resource/law/1980-01-12/80-01#preamble_segment_0> ;
+    dzdoc:hasSegment <https://legal.dz/resource/law/1980-01-12/80-01#preamble_segment_0>,
+        <https://legal.dz/resource/law/1980-01-12/80-01#preamble_segment_1> ;
+    dzdoc:text "يصدر القانون الآتي نصه"@ar .
+
+<https://legal.dz/resource/law/1980-01-12/80-01#version_art_190_> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1980-01-12/80-01> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يؤسس مجلس محاسبة مكلف بمراقبة مالية الدولة والحزب والمجموعات المحلية والمؤسسات الاشتراكية بجميع أنواعها « (الباقي بدون تغيير)"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1980-01-12/80-01#version_art_190_19800112_OpEnact_bef18da733> ;
+    dzdoc:replacementText "يؤسس مجلس محاسبة مكلف بمراقبة مالية الدولة والحزب والمجموعات المحلية والمؤسسات الاشتراكية بجميع أنواعها « (الباقي بدون تغيير)"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1980-01-12/80-01#art_190_> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1980-01-12/80-01> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1980-01-12/80-01#art_190_> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1980-01-12/80-01> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1980-01-12"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1980-01-12/80-01#version_art_الاولى> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1980-01-12/80-01> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تعدل الفقرة الأولى من المادة 190 من الدستور، کما یلي:"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1980-01-12/80-01#version_art_19800112_OpEnact_947bc4e064> ;
+    dzdoc:replacementText "تعدل الفقرة الأولى من المادة 190 من الدستور، کما یلي:"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1980-01-12/80-01#art_الاولى> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1980-01-12/80-01> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1980-01-12/80-01#art_الاولى> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1980-01-12/80-01> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1980-01-12"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1980-01-12/80-01#chp_الثاني_السلطة_و_تنظيمها_sec_الخامس_وظيفة_المراقبة> a dzdoc:Section ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1980-01-12/80-01> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1980-01-12/80-01#chp_الثاني_السلطة_و_تنظيمها> ;
+    dzdoc:directlyContains <https://legal.dz/resource/law/1980-01-12/80-01#art_190_>,
+        <https://legal.dz/resource/law/1980-01-12/80-01#art_الاولى> ;
+    dzdoc:eId "chp_الثاني_السلطة_و_تنظيمها_sec_الخامس_وظيفة_المراقبة" ;
+    dzdoc:hasArticle <https://legal.dz/resource/law/1980-01-12/80-01#art_190_>,
+        <https://legal.dz/resource/law/1980-01-12/80-01#art_الاولى> ;
+    dzdoc:number "الخامس وظيفة المراقبة" ;
+    dzdoc:position 0 .
+
+<https://legal.dz/resource/law/1980-01-12/80-01#art_الاولى> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1980-01-12/80-01> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1980-01-12/80-01#chp_الثاني_السلطة_و_تنظيمها_sec_الخامس_وظيفة_المراقبة> ;
+    dzdoc:eId "art_الاولى" ;
+    dzdoc:fullText "تعدل الفقرة الأولى من المادة 190 من الدستور، کما یلي:"@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1980-01-12/80-01#version_art_الاولى> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1980-01-12/80-01#art_الاولى_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1980-01-12/80-01#version_art_19800112_OpEnact_947bc4e064> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1980-01-12/80-01> ;
+    dzdoc:introducedOn "1980-01-12"^^xsd:date ;
+    dzdoc:number "المادة الاولى" ;
+    dzdoc:position 0 ;
+    dzdoc:references <https://legal.dz/resource/law/1980-01-12/80-01#art_190> ;
+    dzdoc:referencesInternal <https://legal.dz/resource/law/1980-01-12/80-01#art_190> .
+
+<https://legal.dz/resource/law/1980-01-12/80-01#art_190_> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1980-01-12/80-01> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1980-01-12/80-01#chp_الثاني_السلطة_و_تنظيمها_sec_الخامس_وظيفة_المراقبة> ;
+    dzdoc:eId "art_190_" ;
+    dzdoc:fullText "يؤسس مجلس محاسبة مكلف بمراقبة مالية الدولة والحزب والمجموعات المحلية والمؤسسات الاشتراكية بجميع أنواعها « (الباقي بدون تغيير)"@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1980-01-12/80-01#version_art_190_> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1980-01-12/80-01#art_190__para_0>,
+        <https://legal.dz/resource/law/1980-01-12/80-01#art_190__para_1> ;
+    dzdoc:hasStatus dzdoc:StatusModified ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1980-01-12/80-01#version_art_190_19800112_OpEnact_bef18da733> ;
+    dzdoc:imposesObligation <https://legal.dz/resource/law/1980-01-12/80-01#art_190__obligation_0_155edb63> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1980-01-12/80-01> ;
+    dzdoc:introducedOn "1980-01-12"^^xsd:date ;
+    dzdoc:number "المادة 190 »" ;
+    dzdoc:position 1 ;
+    dzdoc:usesTerm dzterm:court_of_auditors .
+
+<https://legal.dz/resource/law/1980-01-12/80-01> a dzdoc:Law ;
+    dzdoc:authoredBy dzorg:parliament ;
+    dzdoc:countryCode "dz" ;
+    dzdoc:dateText "12 يناير سنة 1980"@ar ;
+    dzdoc:documentNumber "80-01" ;
+    dzdoc:enactmentDate "1980-01-12"^^xsd:date ;
+    dzdoc:frbrThisUri "/akn/dz/act/law/1980-01-12/80-01/main"^^xsd:anyURI ;
+    dzdoc:frbrUri "/akn/dz/act/law/1980-01-12/80-01"^^xsd:anyURI ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1980-01-12/80-01#version_art_190_>,
+        <https://legal.dz/resource/law/1980-01-12/80-01#version_art_الاولى> ;
+    dzdoc:hasAuthority dzorg:parliament ;
+    dzdoc:hasBody <https://legal.dz/resource/law/1980-01-12/80-01#body> ;
+    dzdoc:hasExpression <https://legal.dz/resource/law/1980-01-12/80-01/expression> ;
+    dzdoc:hasPreamble <https://legal.dz/resource/law/1980-01-12/80-01#preamble> ;
+    dzdoc:hasPreface <https://legal.dz/resource/law/1980-01-12/80-01#preface> ;
+    dzdoc:publicationDate "1980-01-12"^^xsd:date ;
+    dzdoc:sourceFile "Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1980-01-12.xml" ;
+    dzdoc:title "قانون رقم 80-01 يتضمن التعديل الدستوري"@ar .
+

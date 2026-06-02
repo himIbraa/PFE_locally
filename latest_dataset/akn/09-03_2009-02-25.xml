@@ -1,0 +1,1282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="law">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/law/2009-02-25/09-03/main"/>
+      <FRBRuri value="/akn/dz/act/law/2009-02-25/09-03"/>
+      <FRBRdate date="2009-02-25" name="enactment"/>
+      <FRBRauthor href="#parliament"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="09-03"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/law/2009-02-25/09-03/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/law/2009-02-25/09-03/ara@"/>
+      <FRBRdate date="2009-02-25" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/law/2009-02-25/09-03/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/law/2009-02-25/09-03/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="parliament" href="/ontology/organization/dz/parliament" showAs="البرلمان"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="president" href="/ontology/person/dz/president" showAs="رئيس الجمهورية"/>
+  </references>
+</meta>
+    <preface>
+  <docTitle>قانون يتعلق بحماية المستهلك وقمع الغش</docTitle>
+  <docNumber>09-03</docNumber>
+  <docDate date="2009-02-25">29 صفر عام 1430 الموافق 25 فبراير سنة 2009</docDate>
+  <docAuthority>البرلمان</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>إن رئيس الجمهورية،</p>
+    </citation>
+    <citation>
+      <p>وبعد رأي مجلس الدولة،</p>
+    </citation>
+    <citation>
+      <p>وبعد مصادقة البرلمان،</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يصدر القانون الآتي نصه :</p>
+  </formula>
+</preamble>
+    <body>
+      <chapter eId="chp_1">
+        <num>الأول</num>
+        <heading>أحكام عامة</heading>
+        <section eId="chp_1_sec_1">
+          <num>الأول</num>
+          <heading>الهدف ومجال التطبيق</heading>
+          <article eId="art_1">
+            <num>المادة الأولى</num>
+            <content>
+            <paragraph>
+            <p>يهدف هذا القانون إلى تحديد القواعد المطبقة في مجال <term refersTo="#consumer_protection">حماية المستهلك</term> و<term refersTo="#fraud_repression">قمع الغش</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_2">
+            <num>المادة 2</num>
+            <content>
+            <paragraph>
+            <p>تطبق أحكام هذا القانون على كل <term refersTo="#goods">سلعة</term> أو <term refersTo="#service">خدمة</term> معروضة للاستهلاك بمقابل أو مجانا وعلى كل <term refersTo="#intervener">متدخل</term> وفي جميع مراحل عملية العرض للاستهلاك.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_1_sec_2">
+          <num>الثاني</num>
+          <heading>تعاريف</heading>
+          <article eId="art_3">
+            <num>3</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#definitions">يقصد في مفهوم أحكام هذا القانون ما يأتي :</def></p>
+            <list>
+            <point>
+            <p><term refersTo="#consumer">المستهلك</term> : كل شخص طبيعي أو معنوي يقتني، بمقابل أو مجانا، سلعة أو خدمة موجهة للاستعمال النهائي من أجل تلبية حاجته الشخصية أو تلبية حاجة شخص آخر أو حيوان متكفل به،</p>
+            </point>
+            <point>
+            <p><term refersTo="#food_stuff">المادة الغذائية</term> : كل مادة معالجة أو معالجة جزئيا أو خام، موجهة لتغذية الإنسان أو الحيوان، بما في ذلك المشروبات وعلك المضغ، وكل المواد المستعملة في تصنيع الأغذية وتحضيرها ومعالجتها، باستثناء المواد المستخدمة فقط في شكل أدوية أو مواد التجميل أو مواد التبغ،</p>
+            </point>
+            <point>
+            <p><term refersTo="#packaging">التغليف</term> : كل تعليب مكون من مواد أيا كانت طبيعتها موجهة لتوضيب وحفظ وحماية وعرض كل منتوج والسماح بشحنه وتفريغه وتخزينه ونقله وضمان إعلام المستهلك بذلك،</p>
+            </point>
+            <point>
+            <p><term refersTo="#labeling">الوسم</term> : كل البيانات أو الكتابات أو الإشارات أو العلامات أو المميزات أو الصور أو التماثيل أو الرموز المرتبطة بسلعة، تظهر على كل غلاف أو وثيقة أو لافتة أو سمة أو ملصقة أو بطاقة أو ختم أو معلقة مرفقة أو دالة على طبيعة منتوج مهما كان شكلها أو سندها، بغض النظر عن طريقة وضعها،</p>
+            </point>
+            <point>
+            <p><term refersTo="#special_requirements">المتطلبات الخاصة</term> : مجموع الخصائص التقنية للمنتوج المرتبطة بصحة وسلامة المستهلك ونزاهة المبادلات التي يحددها التنظيم، والتي <obligation>يجب احترامها</obligation>،</p>
+            </point>
+            <point>
+            <p><term refersTo="#product_safety">سلامة المنتوجات</term> : غياب كلي أو وجود، في مستويات مقبولة وبدون خط ، في مادة غذائية لملوثات أو مواد مغشوشة أو سموم طبيعية أو أية مادة أخرى بإمكانها جعل المنتوج مضرا بالصحة بصورة حادة أو مزمنة،</p>
+            </point>
+            <point>
+            <p><term refersTo="#intervener">المتدخل</term> : كل شخص طبيعي أو معنوي يتدخل في عملية عرض المنتوجات للاستهلاك،</p>
+            </point>
+            <point>
+            <p><term refersTo="#placing_on_market">عملية وضع المنتوج للاستهلاك</term> : مجموع مراحل الإنتاج والاستيراد والتخزين والنقل والتوزيع بالجملة وبالتجزئة،</p>
+            </point>
+            <point>
+            <p><term refersTo="#production">الإنتاج</term> : العمليات التي تتمثل في تربية المواشي وجمع المحصول و الجني والصيد البحري والذبح والمعالجة والتصنيع والتحويل والتركيب وتوضيب المنتوج، بما في ذلك تخزينه أثناء مرحلة تصنيعه وهذا قبل تسويقه الأول،</p>
+            </point>
+            <point>
+            <p><term refersTo="#product">المنتوج</term> : كل سلعة أو خدمة يمكن أن يكون موضوع تنازل بمقابل أو مجانا،</p>
+            </point>
+            <point>
+            <p><term refersTo="#sound_product">منتوج سليم و نزيه و قابل للتسويق</term> : منتوج خال من أي نقص و/أو عيب خفي يضمن عدم الإضرار بصحة وسلامة المستهلك و/ أو مصالحه المادية والمعنوية،</p>
+            </point>
+            <point>
+            <p><term refersTo="#safe_product">منتوج مضمون</term> : كل منتوج، في شروط استعماله العادية أو الممكن توقعها، بما في ذلك المدة، لا يشكل أي خطر أو يشكل أخطارا محدودة في أدنى مستوى تتناسب مع استعمال المنتوج و تعتبر مقبولة بتوفير مستوى حماية عالية لصحة وسلامة الأشخاص،</p>
+            </point>
+            <point>
+            <p><term refersTo="#dangerous_product">منتوج خطير</term> : كل منتوج لا يستجيب لمفهوم المنتوج المضمون المحدد <ref href="#art_3">أعلاه</ref>،</p>
+            </point>
+            <point>
+            <p><term refersTo="#product_recall">استرجاع المنتوج</term> : عملية تتضمن سحب منتوج من عملية العرض للاستهلاك من طرف المتدخل المعني،</p>
+            </point>
+            <point>
+            <p><term refersTo="#security">الأمن</term> : البحث عن التوازن الأمثل بين كل العناصر المعنية بهدف تقليل أخطار الإصابات في حدود ما يسمح به العمل،</p>
+            </point>
+            <point>
+            <p><term refersTo="#service">الخدمة</term> : كل عمل مقدم، غير تسليم السلعة، حتى ولو كان هذا التسليم تابعا أو مدعما للخدمة المقدمة،</p>
+            </point>
+            <point>
+            <p><term refersTo="#good">السلعة</term> : كل شيء مادي قابل للتنازل عنه بمقابل أو مجانا،</p>
+            </point>
+            <point>
+            <p><term refersTo="#conformity">المطابقة</term> : استجابة كل منتوج موضوع للاستهلاك للشروط المتضمنة في اللوائح الفنية، وللمتطلبات الصحية والبيئية والسلامة والأمن الخاصة به،</p>
+            </point>
+            <point>
+            <p><term refersTo="#warranty">الضمان</term> : <obligation>التزام كل متدخل</obligation> خلال فترة زمنية معينة، <condition>في حالة ظهور عيب بالمنتوج</condition>، باستبدال هذا الأخير أو إرجاع ثمنه أو تصليح السلعة أو تعديل الخدمة على نفقته،</p>
+            </point>
+            <point>
+            <p><term refersTo="#consumer_credit">قرض الاستهلاك</term> : كل عملية بيع للسلع أو الخدمات، يكون فيها الدفع مقسطا أو مؤجلا أو مجزءا.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+      <chapter eId="chp_2">
+        <num>الثاني</num>
+        <heading>حماية المستهلك</heading>
+        <section eId="chp_2_sec_1">
+          <num>الأول</num>
+          <heading>إلزامية النظافة والنظافة الصحية للمواد الغذائية وسلامتها</heading>
+          <article eId="art_4">
+            <num>المادة 4</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على كل <term refersTo="#intervener">متدخل</term> في عملية وضع <term refersTo="#food_products">المواد الغذائية</term> للاستهلاك احترام إلزامية سلامة هذه المواد، والسهر على أن لا تضر بصحة المستهلك</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد الشروط والكيفيات المطبقة في مجال الخصائص المكروبيولوجية <term refersTo="#food_products">للمواد الغذائية</term> عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_5">
+            <num>المادة 5</num>
+            <content>
+            <paragraph>
+            <p><obligation>يمنع وضع <term refersTo="#food_products">مواد غذائية</term> للاستهلاك، تحتوي على ملوث بكمية غير مقبولة، بالنظر إلى الصحة البشرية والحيوانية وخاصة فيما يتعلق بالجانب السام له</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد الشروط والكيفيات المطبقة في مجال الملوثات المسموح بها في <term refersTo="#food_products">المواد الغذائية</term> عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_6">
+            <num>المادة 6</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على كل <term refersTo="#intervener">متدخل</term> في عملية وضع <term refersTo="#food_products">المواد الغذائية</term> للاستهلاك أن يسهر على احترام شروط النظافة والنظافة الصحية للمستخدمين، ولأماكن ومحلات التصنيع أو المعالجة أو التحويل أو التخزين، وكذا وسائل نقل هذه المواد وضمان عدم تعرضها للإتلاف بواسطة عوامل بيولوجية أو كيميائية أو فيزيائية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد شروط عرض <term refersTo="#food_products">المواد الغذائية</term> للاستهلاك عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_7">
+            <num>المادة 7</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب أن لا تحتوي التجهيزات واللوازم والعتاد والتغليف، وغيرها من الآلات المخصصة لملامسة <term refersTo="#food_products">المواد الغذائية</term>، إلا على اللوازم التي لا تؤدي إلى إفسادها</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد شروط وكيفيات استعمال المنتوجات واللوازم الموجهة لملامسة <term refersTo="#food_products">المواد الغذائية</term>، وكذا مستحضرات تنظيف هذه اللوازم عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_8">
+            <num>المادة 8</num>
+            <content>
+            <paragraph>
+            <p>يمكن إدماج <term refersTo="#food_additives">المضافات الغذائية</term> في <term refersTo="#food_products">المواد الغذائية</term> الموجهة للاستهلاك البشري أو الحيواني. تحدد شروط وكيفيات استعمالها وكذا الحدود القصوى المرخص بها عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_2_sec_2">
+          <num>الثاني</num>
+          <heading>إلزامية أمن المنتوجات</heading>
+          <article eId="art_9">
+            <num>9</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب أن تكون <term refersTo="#products">المنتوجات</term> الموضوعة للاستهلاك مضمونة وتتوفر على الأمن بالنظر إلى الاستعمال المشروع المنتظر منها، وأن لا تلحق ضررا بصحة <term refersTo="#consumer">المستهلك</term> وأمنه ومصالحه</obligation>، وذلك <condition>ضمن الشروط العادية للاستعمال أو الشروط الأخرى الممكن توقعها من قبل <term refersTo="#interveners">المتدخلين</term></condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_10">
+            <num>10</num>
+            <content>
+            <paragraph>
+            <p><obligation>يتعين على كل <term refersTo="#intervener">متدخل</term> احترام إلزامية أمن <term refersTo="#product">المنتوج</term> الذي يضعه للاستهلاك</obligation> فيما يخص:</p>
+            <list>
+            <point>
+            <p>مميزاته وتركيبته وتغليفه وشروط تجميعه وصيانته،</p>
+            </point>
+            <point>
+            <p>تأثير <term refersTo="#product">المنتوج</term> على المنتوجات الأخرى عند توقع استعماله مع هذه المنتوجات،</p>
+            </point>
+            <point>
+            <p>عرض <term refersTo="#product">المنتوج</term> ووسمه والتعليمات المحتملة الخاصة باستعماله وإتلافه وكذا كل الإرشادات أو المعلومات الصادرة عن المنتج،</p>
+            </point>
+            <point>
+            <p>فئات <term refersTo="#consumers">المستهلكين</term> المعرضين لخطر جسيم نتيجة استعمال <term refersTo="#product">المنتوج</term> ، خاصة الأطفال.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>تحدد القواعد المطبقة في مجال أمن المنتوجات عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_2_sec_3">
+          <num>الثالث</num>
+          <heading>إلزامية مطابقة المنتوجات</heading>
+          <article eId="art_11">
+            <num>المادة 11</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب أن يلبي كل <term refersTo="#product">منتوج</term> معروض للاستهلاك، الرغبات المشروعة للمستهلك من حيث طبيعته وصنفه ومنشئه ومميزاته الأساسية وتركيبته ونسبة مقوماته اللازمة وهويته وكمياته وقابليته للاستعمال والأخطار الناجمة عن استعماله.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>كما يجب أن يستجيب <term refersTo="#product">المنتوج</term> للرغبات المشروعة للمستهلك من حيث مصدره والنتائج المرجوة منه والمميزات التنظيمية من ناحية تغليفه وتاريخ صنعه والتاريخ الأقصى لاستهلاكه وكيفية استعماله وشروط حفظه والاحتياطات المتعلقة بذلك والرقابة التي أجريت عليه.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_12">
+            <num>المادة 12</num>
+            <content>
+            <paragraph>
+            <p><obligation>يتعين على كل <term refersTo="#intervener">متدخل</term> إجراء رقابة مطابقة <term refersTo="#product">المنتوج</term> قبل عرضه للاستهلاك طبقا للأحكام التشريعية والتنظيمية السارية المفعول.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p>تتناسب هذه الرقابة مع طبيعة العمليات التي يقوم بها <term refersTo="#intervener">المتدخل</term> حسب حجم وتنوع <term refersTo="#product">المنتوجات</term> التي يضعها للاستهلاك والوسائل التي يجب أن يمتلكها مراعاة لاختصاصه والقواعد والعادات المتعارف عليها في هذا المجال.</p>
+            </paragraph>
+            <paragraph>
+            <p>لا تعفي الرقابة التي يجريها الأعوان المنصوص عليهم في <ref href="#art_25">المادة 25</ref> من هذا القانون <term refersTo="#intervener">المتدخل</term> من <obligation>إلزامية التحري حول مطابقة <term refersTo="#product">المنتوج</term> قبل عرضه للاستهلاك طبقا للأحكام التنظيمية السارية المفعول.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_2_sec_4">
+          <num>الرابع</num>
+          <heading>إلزامية الضمان والخدمة ما بعد البيع</heading>
+          <article eId="art_13">
+            <num>13</num>
+            <content>
+            <paragraph>
+            <p><right>يستفيد كل مقتن لأي <term refersTo="#product">منتوج</term> سواء كان جهازا أو أداة أو آلة أو عتادا أو مركبة أو أي مادة تجهيزية من <term refersTo="#guarantee">الضمان</term> بقوة القانون</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويمتد هذا <term refersTo="#guarantee">الضمان</term> أيضا إلى <term refersTo="#services">الخدمات</term>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يجب على كل <term refersTo="#intervener">متدخل</term> خلال فترة <term refersTo="#guarantee_period">الضمان</term> المحددة، <condition>في حالة ظهور عيب بالمنتوج</condition>، استبداله أو إرجاع ثمنه، أو تصليح المنتوج أو تعديل الخدمة على نفقته</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>يستفيد <term refersTo="#consumer">المستهلك</term> من تنفيذ <term refersTo="#guarantee">الضمان</term> المنصوص عليه أعلاه دون أعباء إضافية</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يعتبر باطلا كل شرط مخالف لأحكام هذه <ref href="#art_13">المادة</ref>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد شروط وكيفيات تطبيق أحكام هذه <ref href="#art_13">المادة</ref> عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_14">
+            <num>14</num>
+            <content>
+            <paragraph>
+            <p>كل ضمان آخر مقدم من <term refersTo="#intervener">المتدخل</term> بمقابل أو مجانا، لا يلغي الاستفادة من <term refersTo="#legal_guarantee">الضمان القانوني</term> المنصوص عليه في <ref href="#art_13">المادة 13</ref> أعلاه.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يجب أن تبين بنود وشروط تنفيذ هذه الضمانات في وثيقة مرافقة للمنتوج</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_15">
+            <num>15</num>
+            <content>
+            <paragraph>
+            <p><right>يستفيد كل مقتن لأي <term refersTo="#product">منتوج</term> مذكور في <ref href="#art_13">المادة 13</ref> من هذا القانون من حق تجربة المنتوج المقتنى</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_16">
+            <num>16</num>
+            <content>
+            <paragraph>
+            <p>في إطار <term refersTo="#after_sales_service">خدمة ما بعد البيع</term>، و<condition>بعد انقضاء فترة الضمان المحددة عن طريق التنظيم، أو في كل الحالات التي لا يمكن للضمان أن يلعب دوره</condition>، <obligation>يتعين على <term refersTo="#intervener">المتدخل</term> المعني ضمان صيانة وتصليح المنتوج المعروض في السوق</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_2_sec_5">
+          <num>الخامس</num>
+          <heading>إلزامية إعلام المستهلك</heading>
+          <article eId="art_17">
+            <num>17</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على كل <term refersTo="#intervener">متدخل</term> أن يعلم <term refersTo="#consumer">المستهلك</term> بكل المعلومات المتعلقة بالمنتوج الذي يضعه للاستهلاك بواسطة الوسم ووضع العلامات أو بأية وسيلة أخرى مناسبة</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>تحدد شروط وكيفيات تطبيق أحكام <ref href="#art_17">هذه المادة</ref> عن طريق التنظيم</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_18">
+            <num>18</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب أن تحرر بيانات الوسم وطريقة الاستخدام ودليل الاستعمال وشروط ضمان المنتوج وكل معلومة أخرى منصوص عليها في التنظيم الساري المفعول باللغة العربية أساسا</obligation>، وعلى سبيل الإضافة، يمكن استعمال لغة أو عدة لغات أخرى سهلة الفهم من المستهلكين، وبطريقة مرئية ومقروءة ومتعذر محوها.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_2_sec_6">
+          <num>السادس</num>
+          <heading>المصالح المادية والمعنوية للمستهلكين</heading>
+          <article eId="art_19">
+            <num>19</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب أن لا تمس الخدمة المقدمة <term refersTo="#consumer">للمستهلك</term> بمصلحته المادية، وأن لا تسبب له ضررا معنويا</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_20">
+            <num>20</num>
+            <content>
+            <paragraph>
+            <p><condition>دون الإخلال بالأحكام التشريعية السارية المفعول</condition>، <obligation>يجب أن تستجيب عروض <term refersTo="#consumer_loan">القرض للاستهلاك</term> للرغبات المشروعة <term refersTo="#consumer">للمستهلك</term> فيما يخص شفافية العرض المسبق وطبيعة ومضمون ومدة الالتزام وكذا أجال تسديده، ويحرر عقد بذلك</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد شروط وكيفيات العروض في مجال قروض الاستهلاك عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_2_sec_7">
+          <num>السابع</num>
+          <heading>جمعيات حماية المستهلكين</heading>
+          <article eId="art_21">
+            <num>المادة 21</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#consumer_protection_association">جمعية حماية المستهلكين هي كل جمعية منشأة طبقا للقانون، تهدف إلى ضمان حماية المستهلك من خلال إعلامه وتحسيسه وتوجيهه وتمثيله.</def></p>
+            </paragraph>
+            <paragraph>
+            <p>يمكن أن يعترف ل<term refersTo="#consumer_protection_association">جمعيات حماية المستهلكين</term> المذكورة في الفقرة أعلاه بالمنفعة العمومية ضمن <condition>الشروط والكيفيات المنصوص عليها في التشريع والتنظيم الساريي المفعول</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_22">
+            <num>المادة 22</num>
+            <content>
+            <paragraph>
+            <p>بغض النظر عن أحكام <ref href="/akn/dz/act/order/1971-08-05/71-57#art_1">المادة الأولى من الأمر رقم 71-57 المؤرخ في 5 غشت سنة 1971</ref> والمتعلق بالمساعدة القضائية، <right>يمكن أن تستفيد <term refersTo="#consumer_protection_association">جمعيات حماية المستهلكين</term> المعترف لها بالمنفعة العمومية من المساعدة القضائية</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_23">
+            <num>المادة 23</num>
+            <content>
+            <paragraph>
+            <p><condition>عندما يتعرض مستهلك أو عدة مستهلكين لأضرار فردية تسبب فيها نفس المتدخل وذات أصل مشترك</condition>، <right>يمكن <term refersTo="#consumer_protection_association">جمعيات حماية المستهلكين</term> أن تتأسس كطرف مدني</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_24">
+            <num>المادة 24</num>
+            <content>
+            <paragraph>
+            <p><obligation>ينشأ مجلس وطني لحماية المستهلكين، يقوم بإبداء الرأي، واقتراح التدابير التي تساهم في تطوير وترقية سياسات حماية المستهلك</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد تشكيلة المجلس واختصاصاته عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+      <chapter eId="chp_3">
+        <num>الثالث</num>
+        <heading>البحث ومعاينة المخالفات</heading>
+        <section eId="chp_3_sec_1">
+          <num>الأول</num>
+          <heading>أعوان قمع الغش</heading>
+          <article eId="art_25">
+            <num>25</num>
+            <content>
+            <paragraph>
+            <p>بالإضافة إلى <term refersTo="#police_officers">ضباط الشرطة القضائية</term> والأعوان الآخرين المرخص لهم بموجب النصوص الخاصة بهم، يؤهل للبحث ومعاينة مخالفات أحكام هذا القانون، <term refersTo="#fraud_control_agents">أعوان قمع الغش</term> التابعون للوزارة المكلفة بحماية المستهلك.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_26">
+            <num>26</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على <term refersTo="#fraud_control_agents">أعوان قمع الغش</term> المذكورين في <ref href="#art_25">المادة 25</ref> أعلاه، أن يفوضوا بالعمل طبقا للأحكام التشريعية والتنظيمية السارية المفعول، وأن يؤدوا أمام محكمة إقامتهم الإدارية اليمين الآتية:
+            "أقسم بالله العلي العظيم أن أقوم بأعمال وظيفتي بأمانة وصدق وأحافظ على السر المهني وأراعي في كل الأحوال الواجبات المفروضة علي .."</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p>تسلم المحكمة إشهادا بذلك يوضع على بطاقة التفويض بالعمل.</p>
+            </paragraph>
+            <paragraph>
+            <p>لا تجدد اليمين ما لم يكن انقطاع نهائي عن الوظيفة.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يجب على الأعوان المذكورين في <ref href="#art_25">المادة 25</ref> أعلاه، في إطار ممارسة مهامهم، تبيان وظيفتهم و تقديم تفويضهم بالعمل.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_27">
+            <num>27</num>
+            <content>
+            <paragraph>
+            <p><right>يتمتع الأعوان المذكورون في <ref href="#art_25">المادة 25</ref> أعلاه، بالحماية القانونية من جميع أشكال الضغط أو التهديد التي من شأنها أن تشكل عائقا في أداء مهامهم طبقا للأحكام التشريعية السارية المفعول.</right></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_28">
+            <num>28</num>
+            <content>
+            <paragraph>
+            <p>يمكن أعوان الرقابة المذكورين في <ref href="#art_25">المادة 25</ref> أعلاه، في إطار ممارسة وظائفهم، وعند الحاجة، طلب تدخل <term refersTo="#public_force">أعوان القوة العمومية</term>، الذين <obligation>يتعين عليهم مد ید المساعدة عند أول طلب</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويمكن اللجوء، عند الضرورة، إلى السلطة القضائية المختصة إقليميا طبقا للإجراءات السارية المفعول.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_3_sec_2">
+          <num>الثاني</num>
+          <heading>إجراءات الرقابة</heading>
+          <article eId="art_29">
+            <num>29</num>
+            <content>
+            <paragraph>
+            <p><obligation>يقوم <term refersTo="#agents">الأعوان</term> المذكورون في <ref href="#art_25">المادة 25</ref> أعلاه، بأي وسيلة وفي أي وقت وفي جميع مراحل عملية العرض للاستهلاك، برقابة مطابقة المنتوجات بالنسبة للمتطلبات المميزة الخاصة بها</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_30">
+            <num>30</num>
+            <content>
+            <paragraph>
+            <p>تتم الرقابة المنصوص عليها في هذا القانون، عن طريق فحص الوثائق و/أو بواسطة سماع المتدخلين المعنيين، أو عن طريق المعاينات المباشرة بالعين المجردة أو بأجهزة القياس، وتتمم <condition>عند الاقتضاء</condition>، باقتطاع العينات بغرض إجراء التحاليل أو الاختبارات أو التجارب.</p>
+            </paragraph>
+            <paragraph>
+            <p>تتم رقابة مطابقة المنتوجات المستوردة عند الحدود، قبل جمركتها.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد شروط و كيفيات الرقابة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_31">
+            <num>31</num>
+            <content>
+            <paragraph>
+            <p><obligation>يقوم <term refersTo="#agents">الأعوان</term> المذكورون في <ref href="#art_25">المادة 25</ref> أعلاه، في إطار مهامهم الرقابية، وطبقا لأحكام هذا القانون، بتحرير محاضر تدون فيها تواريخ و أماكن الرقابة المنجزة وتبين فيها الوقائع المعاينة والمخالفات المسجلة والعقوبات المتعلقة بها</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>وبالإضافة إلى ذلك، تتضمن هذه المحاضر هوية وصفة <term refersTo="#agents">الأعوان</term> الذين قاموا بالرقابة وكذا هوية ونسب ونشاط وعنوان المتدخل المعني بالرقابة.</p>
+            </paragraph>
+            <paragraph>
+            <p>يمكن أن ترفق المحاضر المحررة من قبل <term refersTo="#agents">الأعوان</term> المذكورين في <ref href="#art_25">المادة 25</ref> أعلاه ، بكل وثيقة أو مستند إثبات.</p>
+            </paragraph>
+            <paragraph>
+            <p>وتكون للمحاضر المنصوص عليها في الفقرات السابقة حجية قانونية حتى يثبت العكس.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_32">
+            <num>32</num>
+            <content>
+            <paragraph>
+            <p>تحرر وتوقع المحاضر من طرف <term refersTo="#agents">الأعوان</term> الذين عاينوا المخالفة.</p>
+            </paragraph>
+            <paragraph>
+            <p>يتم تحرير المحضر بحضور المتدخل الذي يوقعه.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وعندما يحرر المحضر في غياب المتدخل أو في حالة الرفض</condition>، يقيد فيه ذلك.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تسجل المحاضر المحررة من طرف <term refersTo="#agents">الأعوان</term> المذكورين في <ref href="#art_25">المادة 25</ref> أعلاه، في سجل مخصص لهذا الغرض مرقم ومؤشر عليه من طرف رئيس المحكمة المختصة إقليميا</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يحدد شكل ومحتوى المحاضر عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_33">
+            <num>33</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن <term refersTo="#agents">الأعوان</term> المذكورين في <ref href="#art_25">المادة 25</ref> أعلاه، في إطار أداء مهامهم و دون أن يحتج اتجاههم بالسر المهني، فحص كل وثيقة تقنية أو إدارية أو تجارية أو مالية أو محاسبية وكذا كل وسيلة مغناطيسية أو معلوماتية</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>ويمكنهم طلب الاطلاع على هذه الوثائق في أي يد وجدت والقيام بحجزها</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_34">
+            <num>34</num>
+            <content>
+            <paragraph>
+            <p><right>للأعوان المذكورين في <ref href="#art_25">المادة 25</ref> أعلاه، حرية الدخول نهارا أو ليلا، بما في ذلك أيام العطل، إلى المحلات التجارية والمكاتب والملحقات ومحلات الشحن والتخزين، وبصفة عامة إلى أي مكان</right>، <condition>باستثناء المحلات ذات الاستعمال السكني التي يتم الدخول إليها طبقا لأحكام قانون الإجراءات الجزائية</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يمارس <term refersTo="#agents">الأعوان</term> أيضا مهامهم أثناء نقل المنتوجات.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_3_sec_3">
+          <num>الثالث</num>
+          <heading>مخابر قمع الغش</heading>
+          <article eId="art_35">
+            <num>المادة 35</num>
+            <content>
+            <paragraph>
+            <p>تؤهل <term refersTo="#laboratories">المخابر</term> التابعة للوزارة المكلفة بـ <term refersTo="#consumer_protection">حماية المستهلك وقمع الغش</term> في إطار تطبيق أحكام هذا القانون للقيام بالتحاليل والاختبارات والتجارب قصد <right>حماية المستهلك وقمع الغش</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_36">
+            <num>المادة 36</num>
+            <content>
+            <paragraph>
+            <p>إضافة إلى <term refersTo="#laboratories">المخابر</term> المذكورة في <ref href="#art_35">المادة 35</ref> أعلاه، وطبقا للتشريع والتنظيم الساريي المفعول، يمكن أن تعتمد <term refersTo="#laboratories">مخابر</term> أخرى لإجراء التحاليل والاختبارات والتجارب المنصوص عليها في <ref href="#art_35">المادة 35</ref> أعلاه.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد <condition>شروط وكيفيات اعتماد المخابر عن طريق التنظيم</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p>لا تخضع لأحكام الفقرة أعلاه <term refersTo="#laboratories">المخابر</term> التي تتدخل في إطار النصوص المؤسسة لها أو في الميادين المسيرة بتنظيم خاص.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_37">
+            <num>المادة 37</num>
+            <content>
+            <paragraph>
+            <p><obligation>يتعين على <term refersTo="#laboratories">المخابر</term> المذكورة في <ref href="#art_35">المادتين 35</ref> و <ref href="#art_36">36</ref> أعلاه، في إطار مهامها، استعمال المناهج المحددة عن طريق التنظيم</obligation>. وفي حالة عدم وجودها، تستعمل المناهج المعترف بها على المستوى الدولي.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_38">
+            <num>المادة 38</num>
+            <content>
+            <paragraph>
+            <p><obligation>تعد <term refersTo="#laboratories">المخابر</term> المذكورة في <ref href="#art_35">المادتين 35</ref> و <ref href="#art_36">36</ref> أعلاه كشوفات أو تقارير نتائج التحاليل أو الاختبارات أو التجارب التي قامت بها وتذكر مراجع المناهج المستعملة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_3_sec_4">
+          <num>الرابع</num>
+          <heading>اقتطاع العينات</heading>
+          <article eId="art_39">
+            <num>المادة 39</num>
+            <content>
+            <paragraph>
+            <p>يجرى اقتطاع العينات قصد إجراء التحاليل أو الاختبارات أو التجارب المنصوص عليها في <ref href="#art_35">المادة 35</ref> أعلاه، طبقا لأحكام هذا القانون.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يحرر محضر فور اقتطاع العينات من طرف <term refersTo="#agents">الأعوان</term> المذكورين في <ref href="#art_25">المادة 25</ref> أعلاه.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد شروط وكيفيات اقتطاع العينات عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_40">
+            <num>المادة 40</num>
+            <content>
+            <paragraph>
+            <p><obligation>لإجراء التحاليل أو الاختبارات أو التجارب، تقتطع ثلاث (3) عينات متجانسة وممثلة للحصة موضوع الرقابة وتشمع.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ترسل العينة الأولى إلى المخبر المؤهل بموجب هذا القانون لإجراء التحاليل أو الاختبارات أو التجارب.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p>وتشكل العينتان الثانية والثالثة عينتين شاهدتين، واحدة تحتفظ بها مصالح الرقابة التي قامت بالاقتطاع، والأخرى يحتفظ بها المتدخل المعني.</p>
+            </paragraph>
+            <paragraph>
+            <p>تستعمل العينة التي يحتفظ بها المتدخل وتلك التي يحتفظ بها الأعوان الذين قاموا باقتطاع العينات في حالة إجراء الخبرة.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تحفظ العينتان الشاهدتان ضمن شروط الحفظ المناسبة.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد شروط وكيفيات تطبيق أحكام هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_41">
+            <num>المادة 41</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا كان المنتوج سريع التلف أو بالنظر إلى طبيعته أو وزنه أو كميته أو حجمه أو قيمته</condition>، <obligation>تقتطع عينة واحدة وتشمع ثم ترسل فورا إلى المخبر المؤهل لإجراء التحاليل أو الاختبارات أو التجارب بموجب هذا القانون.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق أحكام هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_42">
+            <num>المادة 42</num>
+            <content>
+            <paragraph>
+            <p>في إطار الدراسات التي تنجزها المصالح المكلفة بحماية المستهلك وقمع الغش، يمكن <term refersTo="#agents">الأعوان</term> المذكورين في <ref href="#art_25">المادة 25</ref> أعلاه، القيام باقتطاع عينة واحدة فقط.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_3_sec_5">
+          <num>الخامس</num>
+          <heading>الخبرة</heading>
+          <article eId="art_43">
+            <num>المادة 43</num>
+            <content>
+            <paragraph>
+            <p>تكون <term refersTo="#expertise">الخبرة</term> التي تجرى في إطار هذا القانون، قابلة للطعن ويؤمر بها وتنفذ حسب الإجراءات والأشكال المنصوص عليها في المواد من <ref href="/akn/dz/act/code/criminal_procedure#art_143">143</ref> إلى <ref href="/akn/dz/act/code/criminal_procedure#art_156">156</ref> من <term refersTo="#criminal_procedure_code">قانون الإجراءات الجزائية</term>، مع مراعاة الأحكام المنصوص عليها أدناه.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_44">
+            <num>المادة 44</num>
+            <content>
+            <paragraph>
+            <p><obligation>يحيل وكيل الجمهورية الملف إلى القاضي المختص</obligation> <condition>إذا ما رأى بناء على التقارير أو المحاضر التي أحيلت إليه من طرف الأعوان المذكورين في <ref href="#art_25">المادة 25</ref> أعلاه، أو طبقا لكشوفات أو تقارير المخابر المؤهلة، وعند الحاجة وبعد التحقيق المسبق، أنه يجب الشروع في المتابعة أو فتح تحقيق قضائي</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_45">
+            <num>المادة 45</num>
+            <content>
+            <paragraph>
+            <p><condition>في حالة احتمال الغش أو التزوير الناتج عن تحاليل أو اختبارات أو تجارب المخابر المؤهلة</condition>، <obligation>يشعر القاضي المختص المخالف المفترض أنه يمكنه الاطلاع على كشف أو تقرير المخبر</obligation>، و<obligation>تمنح له مهلة ثمانية (8) أيام عمل لتقديم ملاحظاته</obligation> وعند الاقتضاء، <right>يطلب إجراء الخبرة</right>. ولا يمكن المخالف المفترض أن يطالب بالخبرة بعد انقضاء هذه المهلة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_46">
+            <num>المادة 46</num>
+            <content>
+            <paragraph>
+            <p><condition>عندما تطلب الخبرة من طرف المخالف المفترض أو عندما تأمر بها الجهة القضائية المختصة</condition>، يختار خبيران (2)، أحدهما من طرف الجهة القضائية المختصة والآخر من طرف المخالف المفترض.</p>
+            </paragraph>
+            <paragraph>
+            <p>يتم تعيين الخبيرين (2) من طرف الجهة القضائية المختصة، طبقا للأحكام المنصوص عليها في <term refersTo="#criminal_procedure_code">قانون الإجراءات الجزائية</term>.</p>
+            </paragraph>
+            <paragraph>
+            <p>وبصفة استثنائية، وبعد موافقة الجهة القضائية المختصة، <right>يمكن المخالف المفترض أن يختار خبيرا غير مقيد في القائمة المحررة طبقا لأحكام <ref href="/akn/dz/act/code/criminal_procedure#art_144">المادة 144</ref> من <term refersTo="#criminal_procedure_code">قانون الإجراءات الجزائية</term></right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>للخبيرين (2) المعينين نفس الالتزامات ونفس الحقوق ونفس المسؤوليات ويتقاضيان نفس الأتعاب طبقا للشروط المنصوص عليها في التشريع والتنظيم المعمول بهما.</p>
+            </paragraph>
+            <paragraph>
+            <p>يمكن أن يعين مسؤول المخبر الذي قام بالتحليل الأول أو اختبار أو تجربة كخبير طبقا للشروط المحددة بموجب هذا القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_47">
+            <num>المادة 47</num>
+            <content>
+            <paragraph>
+            <p><obligation>تمنح الجهة القضائية المختصة مهلة للمخالف المفترض قصد اختيار الخبير</obligation>، وله <right>الحق في التنازل صراحة عن هذا الاختيار والاعتماد على استنتاجات الخبير الذي عينته الجهة القضائية</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>إذا لم يتنازل المعني عن هذا الحق ولم يختر خبيرا في الأجل الممنوح له</condition>، <obligation>تعين الجهة القضائية المختصة تلقائيا خبيرا</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_48">
+            <num>المادة 48</num>
+            <content>
+            <paragraph>
+            <p><obligation>تسلم الجهة القضائية المختصة الخبراء العينتين الثانية والثالثة المقتطعتين طبقا لأحكام <ref href="#art_40">المادة 40</ref> من هذا القانون</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يعذر المخالف المفترض مسبقا من طرف الجهة القضائية المختصة ليقدم في أجل ثمانية (8) أيام، العينة الثالثة التي بحوزته</obligation> كما هو منصوص عليه في <ref href="#art_40">المادة 40</ref> من هذا القانون.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>إذا لم يقدم المخالف المفترض العينة الثالثة سليمة خلال هذا الأجل</condition>، لا تؤخذ هذه العينة بعين الاعتبار، ويقوم الخبراء بالاستنتاج على أساس فحص العينة الثانية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_49">
+            <num>المادة 49</num>
+            <content>
+            <paragraph>
+            <p><condition>في حالة ما إذا اقتطعت عينة واحدة طبقا لأحكام <ref href="#art_41">المادة 41</ref> من هذا القانون</condition>، <obligation>تقوم الجهة القضائية المختصة، فورا بندب الخبراء المعينين قصد القيام باقتطاع جديد حسب الأشكال المنصوص عليها في <ref href="#art_39">المادة 39</ref> من هذا القانون</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_50">
+            <num>50</num>
+            <content>
+            <paragraph>
+            <p><obligation>تقوم <term refersTo="#judicial_authority">الجهة القضائية المختصة</term> بندب <term refersTo="#experts">الخبراء</term> المعينين، في مجال الرقابة البكتريولوجية أو البيولوجية المحضة، قصد الفحص المشترك للعينة الجديدة المنصوص عليها في <ref href="#art_49">المادة 49</ref> أعلاه.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يختار أحد الخبيرين من طرف القاضي المختص من بين مسؤولي المخابر المؤهلة طبقا للأحكام المنصوص عليها في هذا القانون، ويختار الآخر من طرف المخالف المفترض في الاختصاص المعني.</obligation> و<obligation>يعين الخبيران طبقا للأحكام المنصوص عليها في <ref href="#art_46">المادة 46</ref> من هذا القانون.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_51">
+            <num>51</num>
+            <content>
+            <paragraph>
+            <p><obligation>تأخذ <term refersTo="#judicial_authority">الجهة القضائية المختصة</term> جميع التدابير قصد اقتطاع العينات وإجراء الخبرة فورا من طرف <term refersTo="#experts">الخبراء</term> في التاريخ الذي حددته.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يقوم الخبيران بالفحص المشترك لهذه العينة</obligation>، و<condition>لا يمنع غياب أحدهما من إتمام الفحص واكتسابه الصبغة الحضورية</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_52">
+            <num>52</num>
+            <content>
+            <paragraph>
+            <p>تجرى التحاليل أو الاختبارات أو التجارب في إطار الإجراء الحضوري في المخابر المؤهلة طبقا للأحكام المنصوص عليها بموجب هذا القانون.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يجب على <term refersTo="#experts">الخبراء</term> استخدام منهج أو مناهج التحاليل المستعملة من طرف المخابر المؤهلة والقيام بنفس التحاليل أو الاختبارات أو التجارب.</obligation> كما <right>يمكنهم استخدام مناهج أخرى على سبيل الإضافة</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+      <chapter eId="chp_4">
+        <num>الرابع</num>
+        <heading>قمع الغش</heading>
+        <section eId="chp_4_sec_1">
+          <num>الأول</num>
+          <heading>التدابير التحفظية ومبدأ الاحتياط</heading>
+          <article eId="art_53">
+            <num>المادة 53</num>
+            <content>
+            <paragraph>
+            <p><obligation>يتخذ <term refersTo="#agents">الأعوان</term> المذكورون في <ref href="#art_25">المادة 25</ref> من هذا القانون، كافة التدابير التحفظية قصد حماية <term refersTo="#consumer">المستهلك</term> وصحته وسلامته ومصالحه</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>وبهذه الصفة، يمكن <term refersTo="#agents">الأعوان</term> القيام برفض الدخول المؤقت أو النهائي للمنتوجات المستوردة عند الحدود والإيداع والحجز والسحب المؤقت أو النهائي للمنتوجات أو إتلافها والتوقيف المؤقت للنشاطات طبقا للأحكام المنصوص عليها في هذا القانون.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>تحدد شروط وكيفيات تطبيق أحكام هذه المادة عن طريق التنظيم</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_54">
+            <num>المادة 54</num>
+            <content>
+            <paragraph>
+            <p>يصرح بالرفض المؤقت لدخول منتوج مستورد عند الحدود في حالة الشك في عدم مطابقة المنتوج المعني وهذا لغرض إجراء تحريات مدققة أو لضبط مطابقته.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويصرح بالرفض النهائي لدخول منتوج مستورد عند الحدود في حالة إثبات عدم مطابقته بالمعاينة المباشرة، أو بعد إجراء التحريات المدققة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_55">
+            <num>المادة 55</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#deposit">يتمثل الإيداع في وقف منتوج معروض للاستهلاك ثبت بعد المعاينة المباشرة، أنه غير مطابق</def>، وذلك بقرار من <term refersTo="#administration">الإدارة المكلفة بحماية المستهلك وقمع الغش</term>.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويتقرر الإيداع قصد ضبط مطابقة المنتوج المشتبه فيه من طرف المتدخل المعني.</p>
+            </paragraph>
+            <paragraph>
+            <p>يعلن عن رفع الإيداع من طرف <term refersTo="#administration">الإدارة المكلفة بحماية المستهلك وقمع الغش</term> بعد معاينة ضبط مطابقة المنتوج.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_56">
+            <num>المادة 56</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعذر المخالف المعني في حالة عدم مطابقة المنتوج باتخاذ التدابير الملائمة من أجل إزالة سبب عدم المطابقة أو إزالة ما يتعلق بعدم احترام القواعد والأعراف المعمول بها في عملية العرض للاستهلاك</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_57">
+            <num>المادة 57</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا ثبت عدم إمكانية ضبط مطابقة المنتوج، أو إذا رفض المتدخل المعني إجراء عملية ضبط مطابقة المنتوج المشتبه فيه</condition>، <obligation>يتم حجزه بغرض تغيير اتجاهه، أو إعادة توجيهه، أو إتلافه دون الإخلال بالمتابعة الجزائية المنصوص عليها في أحكام هذا القانون</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_58">
+            <num>المادة 58</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا كان المنتوج صالحا للاستهلاك وثبتت عدم مطابقته</condition>، إما أن يغير المتدخل المعني اتجاهه بإرساله إلى هيئة ذات منفعة عامة لاستعماله في غرض مباشر وشرعي، وإما يعيد توجيهه بإرساله إلى هيئة لاستعماله في غرض شرعي بعد تحويله.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_59">
+            <num>المادة 59</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#temporary_withdrawal">يتمثل السحب المؤقت في منع وضع كل منتوج للاستهلاك أينما وجد عند الاشتباه في عدم مطابقته</def> وذلك في انتظار نتائج التحريات المعمقة لا سيما نتائج التحاليل أو الاختبارات أو التجارب.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>إذا لم تجر هذه التحريات في أجل سبعة (7) أيام عمل أو إذا لم يثبت عدم مطابقة المنتوج</condition>، <obligation>يرفع فورا تدبير السحب المؤقت</obligation>. ويمكن تمديد هذا الأجل عندما تتطلب الشروط التقنية للرقابة والتحاليل أو الاختبارات أو التجارب ذلك.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>إذا ثبت عدم مطابقة منتوج</condition>، <obligation>يعلن عن حجزه، ويعلم فورا وكيل الجمهورية بذلك</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_60">
+            <num>المادة 60</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا ثبت عدم مطابقة المنتوج</condition>، <obligation>تسدد المصاريف الناتجة عن عمليات الرقابة أو التحاليل أو الاختبارات أو التجارب من طرف المتدخل المقصر</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وإذا لم تثبت عدم المطابقة عن طريق التحاليل أو الاختبارات أو التجارب</condition>، <right>تعوض قيمة العينة للمتدخل المعني على أساس القيمة المسجلة في محضر الاقتطاع</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_61">
+            <num>61</num>
+            <content>
+            <paragraph>
+            <p>يؤدي <term refersTo="#seizure">الحجز</term> و<term refersTo="#temporary_withdrawal">السحب المؤقت</term> أو <term refersTo="#final_withdrawal">النهائي</term> الذي يقوم به <term refersTo="#agents">الأعوان</term> المذكورون في <ref href="#art_25">المادة 25</ref> من هذا القانون، إلى تحرير محاضر وتشمع المنتوجات المشتبه فيها وتوضع تحت حراسة <term refersTo="#intervener">المتدخل</term> المعني.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_62">
+            <num>62</num>
+            <content>
+            <paragraph>
+            <p>ينفذ <term refersTo="#final_withdrawal">السحب النهائي</term> من طرف <term refersTo="#agents">الأعوان</term> المذكورين في <ref href="#art_25">المادة 25</ref> أعلاه، دون رخصة مسبقة من السلطة القضائية المختصة في الحالات الآتية:</p>
+            <list>
+            <point>
+            <p>المنتوجات التي ثبت أنها مزورة أو مغشوشة أو سامة أو التي انتهت مدة صلاحيتها،</p>
+            </point>
+            <point>
+            <p>المنتوجات التي ثبت عدم صلاحيتها للاستهلاك،</p>
+            </point>
+            <point>
+            <p>حيازة المنتوجات دون سبب شرعي والتي يمكن استعمالها في التزوير،</p>
+            </point>
+            <point>
+            <p>المنتوجات المقلدة،</p>
+            </point>
+            <point>
+            <p>الأشياء أو الأجهزة التي تستعمل للقيام بالتزوير.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يعلم وكيل الجمهورية بذلك فورا.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_63">
+            <num>63</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب أن يتحمل <term refersTo="#intervener">المتدخل</term> المصاريف والتكاليف لاسترجاع المنتوج المشتبه فيه أينما وجد في حالة <term refersTo="#final_withdrawal">السحب النهائي</term> المنصوص عليه في <ref href="#art_62">المادة 62</ref> أعلاه</obligation>، <condition>إذا كان هذا المنتوج قابلا للاستهلاك يوجه مجانا، حسب الحالة، إلى مركز ذي منفعة عامة، أو يوجه للإتلاف إذا كان مقلدا أو غير صالح للاستهلاك.</condition></p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويعلم وكيل الجمهورية بذلك فورا.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_64">
+            <num>64</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا قررت الإدارة المكلفة بحماية المستهلك وقمع الغش أو الجهة القضائية المختصة إتلاف المنتوجات</condition>، يتم ذلك من طرف <term refersTo="#intervener">المتدخل</term> بحضور <term refersTo="#agents">الأعوان</term> المذكورين في <ref href="#art_25">المادة 25</ref> أعلاه.</p>
+            </paragraph>
+            <paragraph>
+            <p>يمكن أن يتمثل الإتلاف أيضا في تشويه طبيعة المنتوج.</p>
+            </paragraph>
+            <paragraph>
+            <p>يحرر محضر الإتلاف من طرف <term refersTo="#agents">الأعوان</term> ويوقعون عليه مع <term refersTo="#intervener">المتدخل</term> المعني.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد شروط وكيفيات تطبيق أحكام هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_65">
+            <num>65</num>
+            <content>
+            <paragraph>
+            <p>يمكن أن تقوم المصالح المكلفة بحماية المستهلك وقمع الغش طبقا للتشريع والتنظيم الساريي المفعول، بالتوقيف المؤقت لنشاط المؤسسات التي ثبت عدم مراعاتها للقواعد المحددة في هذا القانون، إلى غاية إزالة كل الأسباب التي أدت إلى اتخاذ هذا التدبير، دون الإخلال بالعقوبات الجزائية المنصوص عليها في أحكام هذا القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_66">
+            <num>66</num>
+            <content>
+            <paragraph>
+            <p><obligation>يتحمل <term refersTo="#intervener">المتدخل</term> المقصر المصاريف الناتجة عن تطبيق الأحكام المتعلقة بالإيداع وإعادة المطابقة والسحب المؤقت وتغيير الاتجاه وإعادة التوجيه والحجز والإتلاف المنصوص عليها أعلاه.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_67">
+            <num>67</num>
+            <content>
+            <paragraph>
+            <p><obligation>تعلم المصالح المكلفة بحماية المستهلك وقمع الغش المستهلكين بكل الوسائل، عن الأخطار والمخاطر التي يشكلها كل منتوج مسحوب من عملية العرض للاستهلاك.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_4_sec_2">
+          <num>الثاني</num>
+          <heading>المخالفات و العقوبات</heading>
+          <article eId="art_68">
+            <num>المادة 68</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بالعقوبات المنصوص عليها في <ref href="/akn/dz/act/code/1966-06-08/66-156#art_429">المادة 429 من قانون العقوبات</ref>، كل من يخدع أو يحاول أن يخدع <term refersTo="#consumer">المستهلك</term> بأية وسيلة أو طريقة كانت حول:</obligation></p>
+            <list>
+            <point><p>كمية المنتوجات المسلمة،</p></point>
+            <point><p>تسليم المنتوجات غير تلك المعينة مسبقا،</p></point>
+            <point><p>قابلية استعمال المنتوج،</p></point>
+            <point><p>تاريخ أو مدد صلاحية المنتوج،</p></point>
+            <point><p>النتائج المنتظرة من المنتوج،</p></point>
+            <point><p>طرق الاستعمال أو الاحتياطات اللازمة لاستعمال المنتوج.</p></point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_69">
+            <num>المادة 69</num>
+            <content>
+            <paragraph>
+            <p><obligation>ترفع العقوبات المنصوص عليها في <ref href="#art_68">المادة 68 أعلاه</ref>، إلى خمس (5) سنوات حبسا وغرامة قدرها خمسمائة ألف دينار (500.000 دج)، <condition>إذا كان الخداع أو محاولة الخداع قد ارتكبت سواء بواسطة:</condition></obligation></p>
+            <list>
+            <point><p>الوزن أو الكيل أو بأدوات أخرى مزورة أو غير مطابقة،</p></point>
+            <point><p>طرق ترمي إلى التغليط في عمليات التحليل أو المقدار أو الوزن أو الكيل أو التغيير عن طريق الغش في تركيب أو وزن أو حجم المنتوج،</p></point>
+            <point><p>إشارات أو ادعاءات تدليسية،</p></point>
+            <point><p>كتيبات أو منشورات أو نشرات أو معلقات أو إعلانات أو بطاقات أو أية تعليمات أخرى.</p></point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_70">
+            <num>المادة 70</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بالعقوبات المنصوص عليها في <ref href="/akn/dz/act/code/1966-06-08/66-156#art_431">المادة 431 من قانون العقوبات</ref> كل من:</obligation></p>
+            <list>
+            <point><p>يزور أي منتوج موجه للاستهلاك أو للاستعمال البشري أو الحيواني،</p></point>
+            <point><p>يعرض أو يضع للبيع أو يبيع منتوجا يعلم أنه مزور أو فاسد أو سام أو خطير للاستعمال البشري أو الحيواني،</p></point>
+            <point><p>يعرض أو يضع للبيع أو يبيع، مع عمله بوجهتها، مواد أو أدوات أو أجهزة أو كل مادة خاصة من شأنها أن تؤدي إلى تزوير أي منتوج موجه للاستعمال البشري أو الحيواني.</p></point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_71">
+            <num>المادة 71</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من مائتي ألف دينار ( 200.000 دج) إلى خمسمائة ألف دينار ( 500.000 دج) كل من يخالف <term refersTo="#food_safety_obligation">إلزامية سلامة المواد الغذائية</term> المنصوص عليها في <ref href="#art_4">المادتين 4</ref> و <ref href="#art_5">5</ref> من هذا القانون.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_72">
+            <num>المادة 72</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من خمسين ألف دينار (50.000 دج) إلى مليون دينار (1.000.000 د ج)، كل من يخالف <term refersTo="#hygiene_obligation">إلزامية النظافة والنظافة الصحية</term> المنصوص عليها في <ref href="#art_6">المادتين 6</ref> و <ref href="#art_7">7</ref> من هذا القانون.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_73">
+            <num>المادة 73</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من مائتي ألف دينار ( 200.000 دج) إلى خمسمائة ألف دينار ( 500.000 دج) كل من يخالف <term refersTo="#product_security_obligation">إلزامية أمن المنتوج</term> المنصوص عليها في <ref href="#art_10">المادة 10</ref> من هذا القانون.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_74">
+            <num>المادة 74</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من خمسين ألف دينار ( 50.000 دج) إلى خمسمائة ألف دينار ( 50.000 دج)، كل من يخالف <term refersTo="#conformity_control_obligation">إلزامية رقابة المطابقة المسبقة</term> المنصوص عليها في <ref href="#art_12">المادة 12</ref> من هذا القانون.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_75">
+            <num>المادة 75</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من مائة ألف دينار ( 100.000 دج) إلى خمسمائة ألف دينار ( 500.000 دج)، كل من يخالف <term refersTo="#warranty_obligation">إلزامية الضمان أو تنفيذ ضمان المنتوج</term> المنصوص عليه في <ref href="#art_13">المادة 13</ref> من هذا القانون.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_76">
+            <num>المادة 76</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من خمسين ألف دينار المادة ( 50.000 دج) إلى مائة ألف دينار (100.000 دج)، كل من يخالف <term refersTo="#product_testing_obligation">إلزامية تجربة المنتوج</term> المنصوص عليه في <ref href="#art_15">المادة 15</ref> من هذا القانون.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_77">
+            <num>المادة 77</num>
+            <content>
+            <paragraph>
+            <p>يعاقب بغرامة من خمسين ألف دينار ( 50.000 دج) إلى مليون دينار (1.000.000 دج)، كل من يخالف <obligation>إلزامية تنفيذ <term refersTo="#after_sales_service">الخدمة ما بعد البيع</term></obligation> المنصوص عليها في <ref href="#art_16">المادة 16</ref> من هذا القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_78">
+            <num>المادة 78</num>
+            <content>
+            <paragraph>
+            <p>يعاقب بغرامة من مائة ألف دينار ( 100.000 دج) إلى مليون دينار (1.000.000 دج)، كل من يخالف <obligation>إلزامية <term refersTo="#product_labeling">وسم المنتوج</term></obligation> المنصوص عليها في المادتين <ref href="#art_17">17</ref> و <ref href="#art_18">18</ref> من هذا القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_79">
+            <num>المادة 79</num>
+            <content>
+            <paragraph>
+            <p>دون الإخلال بالأحكام المنصوص عليها في <ref href="/akn/dz/act/law/1966-06-08/66-156#art_155">المادة 155 من قانون العقوبات</ref>، يعاقب بالحبس من ستة (6) أشهر إلى ثلاث (3) سنوات وبغرامة من خمسمائة ألف دينار ( 500.000 دج) إلى مليوني دينار (2.000.000 دج) أو بإحدى هاتين العقوبتين، كل من يبيع منتوجا مشمعا أو مودعا لضبط المطابقة أو سحبه مؤقتا من عملية عرضه للاستهلاك أو يخالف إجراء التوقيف المؤقت للنشاط.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_80">
+            <num>المادة 80</num>
+            <content>
+            <paragraph>
+            <p>إضافة إلى العقوبات المنصوص عليها في <ref href="#art_79">المادة 79</ref> أعلاه، <obligation>يدفع مبلغ بيع المنتوجات موضوع هذه المخالفات للخزينة العمومية</obligation> ويقيم على أساس سعر البيع المطبق من طرف المخالف أو على أساس سعر السوق.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_81">
+            <num>المادة 81</num>
+            <content>
+            <paragraph>
+            <p>مع مراعاة الأحكام المنصوص عليها في التشريع الساري المفعول، يعاقب بغرامة مالية من خمسمائة ألف دينار (500.000 دج) إلى مليون دينار ( 1.000.000 دج)، كل من يخالف <obligation>الالتزامات المتعلقة بعرض <term refersTo="#consumer_loans">القروض للاستهلاك</term></obligation> المنصوص عليها في <ref href="#art_20">المادة 20</ref> من هذا القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_82">
+            <num>المادة 82</num>
+            <content>
+            <paragraph>
+            <p>إضافة إلى العقوبات المنصوص عليها في المواد <ref href="#art_68">68</ref> و <ref href="#art_69">69</ref> و <ref href="#art_70">70</ref> و <ref href="#art_71">71</ref> و <ref href="#art_73">73</ref> و <ref href="#art_78">78</ref> أعلاه ، تصادر المنتوجات والأدوات وكل وسيلة أخرى استعملت لارتكاب المخالفات المنصوص عليها في هذا القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_83">
+            <num>المادة 83</num>
+            <content>
+            <paragraph>
+            <p>يعاقب بالعقوبات المنصوص عليها في الفقرة الأولى من <ref href="/akn/dz/act/law/1966-06-08/66-156#art_432">المادة 432 من قانون العقوبات</ref>، كل من يغش أو يعرض أو يضع للبيع أو يبيع كل منتوج مزور أو فاسد أو سام أو لا يستجيب لـ <obligation>إلزامية الأمن</obligation> المنصوص عليها في <ref href="#art_10">المادة 10</ref> من هذا القانون، <condition>إذا ألحق هذا المنتوج بالمستهلك مرضا أو عجزا عن العمل</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويعاقب المتدخلون المعنيون بالسجن المؤقت من عشر (10) سنوات إلى عشرين (20) سنة وبغرامة من مليون دينار (1.000.000 دج) إلى مليوني دينار ( 2.000.000 دج)، <condition>إذا تسبب هذا المنتوج في مرض غير قابل للشفاء أو في فقدان استعمال عضو أو في الإصابة بعاهة مستديمة</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يتعرض هؤلاء المتدخلون لعقوبة السجن المؤبد <condition>إذا تسبب هذا المرض في وفاة شخص أو عدة أشخاص</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_84">
+            <num>المادة 84</num>
+            <content>
+            <paragraph>
+            <p>يعاقب بالعقوبات المنصوص عليها في <ref href="/akn/dz/act/law/1966-06-08/66-156#art_435">المادة 435 من قانون العقوبات</ref> كل من يعرقل أو يقوم بكل فعل آخر من شأنه أن يعيق إتمام مهام الرقابة التي يجريها الأعوان المنصوص عليهم في <ref href="#art_25">المادة 25</ref> من هذا القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_85">
+            <num>المادة 85</num>
+            <content>
+            <paragraph>
+            <p>طبقا لأحكام <ref href="/akn/dz/act/law/1966-06-08/66-156#art_36">المادة 36 من قانون العقوبات</ref>، تضم الغرامات المنصوص عليها في هذا أحكام القانون. وفي حالة العود، تضاعف الغرامات ويمكن الجهة القضائية المختصة إعلان شطب السجل التجاري للمخالف.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+      <chapter eId="chp_5">
+        <num>الخامس</num>
+        <heading>غرامة الصلح</heading>
+        <article eId="art_86">
+          <num>المادة 86</num>
+          <content>
+          <paragraph>
+          <p>يمكن <term refersTo="#agents">الأعوان</term> المنصوص عليهم في <ref href="#art_25">المادة 25</ref> من هذا القانون، فرض <term refersTo="#fine">غرامة صلح</term> على مرتكب المخالفة المعاقب عليها طبقا لأحكام هذا القانون.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>وإذا لم تسدد غرامة الصلح في الأجل المحدد في <ref href="#art_92">المادة 92</ref> أدناه</condition>، يرسل المحضر إلى الجهة القضائية المختصة.</p>
+          </paragraph>
+          <paragraph>
+          <p>وفي هذه الحالة، ترفع الغرامة إلى الحد الأقصى.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_87">
+          <num>المادة 87</num>
+          <content>
+          <paragraph>
+          <p>لا يمكن فرض غرامة الصلح:</p>
+          <list>
+          <point>
+          <p><condition>إذا كانت المخالفة المسجلة تعرض صاحبها، إما إلى عقوبة أخرى غير العقوبة المالية وإما تتعلق بتعويض ضرر مسبب للأشخاص أو الأملاك</condition>،</p>
+          </point>
+          <point>
+          <p><condition>في حالة تعدد المخالفات التي لا يطبق في إحداها على الأقل إجراء غرامة الصلح</condition> ،</p>
+          </point>
+          <point>
+          <p><condition>في حالة العود</condition>.</p>
+          </point>
+          </list>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_88">
+          <num>المادة 88</num>
+          <content>
+          <paragraph>
+          <p>يحدد مبلغ غرامة الصلح كما يأتي:</p>
+          <list>
+          <point>
+          <p>انعدام سلامة المواد الغذائية المعاقب عليها في <ref href="#art_71">المادة 71</ref> من هذا القانون: ثلاثمائة ألف دينار ( 300.000 دج)،</p>
+          </point>
+          <point>
+          <p>انعدام النظافة والنظافة الصحية المعاقب عليها في <ref href="#art_72">المادة 72</ref> من ه قانون : مائتا ألف دينار (200.000 دج)،</p>
+          </point>
+          <point>
+          <p>انعدام أمن المنتوج المعاقب عليه في <ref href="#art_73">المادة 73</ref> من هذا القانون : ثلاثمائة ألف دينار (300.000 دج)،</p>
+          </point>
+          <point>
+          <p>انعدام رقابة المطابقة المسبقة المعاقب عليها في <ref href="#art_74">المادة 74</ref> من هذا القانون : ثلاثمائة ألف دينار (300.000 دج)،</p>
+          </point>
+          <point>
+          <p>انعدام الضمان أو عدم تنفيذه المعاقب عليه في <ref href="#art_75">المادة 75</ref> من هذا القانون: ثلاثمائة ألف دينار (300.000 دج)،</p>
+          </point>
+          <point>
+          <p>عدم تجربة المنتوج المعاقب عليها في <ref href="#art_76">المادة 76</ref> من هذا القانون : خمسون ألف دينار ( 50.000 دج)،</p>
+          </point>
+          <point>
+          <p>رفض تنفيذ الخدمة ما بعد البيع المعاقب عليها في <ref href="#art_77">المادة 77</ref> من هذا القانون : (10%) من ثمن المنتوج المقتنى،</p>
+          </point>
+          <point>
+          <p>غياب بيانات وسم المنتوج المعاقب عليها في <ref href="#art_78">المادة 78</ref> من هذا القانون : مائتا ألف دينار ( 200.000 دج).</p>
+          </point>
+          </list>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_89">
+          <num>المادة 89</num>
+          <content>
+          <paragraph>
+          <p><condition>إذا سجلت عدة مخالفات على نفس المحضر</condition>، <obligation>يجب على المخالف أن يدفع مبلغا إجماليا لكل غرامات الصلح المستحقة</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_90">
+          <num>المادة 90</num>
+          <content>
+          <paragraph>
+          <p><obligation>تبلغ المصالح المكلفة بحماية المستهلك وقمع الغش المخالف، في أجل لا يتعدى سبعة (7) أيام ابتداء من تاريخ تحرير المحضر إنذارا برسالة موصى عليها مع إشعار بالاستلام</obligation>، يبين فيه محل إقامته، ومكان وتاريخ، وسبب المخالفة، ومراجع النصوص المطبقة، ومبلغ الغرامة المفروضة عليه وكذا أجال وكيفيات التسديد المحددة في <ref href="#art_92">المادة 92</ref> أدناه.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_91">
+          <num>المادة 91</num>
+          <content>
+          <paragraph>
+          <p>لا يقبل الطعن في القرار الذي يحدد مبلغ غرامة الصلح.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_92">
+          <num>المادة 92</num>
+          <content>
+          <paragraph>
+          <p><obligation>يجب على <term refersTo="#offender">المخالف</term> أن يدفع مرة واحدة مبلغ <term refersTo="#settlement_fine">غرامة الصلح</term> لدى <term refersTo="#tax_collector">قابض الضرائب</term> لمكان إقامة <term refersTo="#offender">المخالف</term> أو مكان المخالفة</obligation> في <condition>أجل الثلاثين (30) يوما التي تلي تاريخ الإنذار المذكور في <ref href="#art_90">المادة 90</ref> أعلاه</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يعلم <term refersTo="#tax_collector">قابض الضرائب</term> <term refersTo="#consumer_protection_services">المصالح المكلفة بحماية المستهلك وقمع الغش</term> المعنية بحصول الدفع</obligation> في <condition>أجل عشرة (10) أيام من تاريخ دفع الغرامة</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>في حالة عدم استلام الإشعار في أجل خمسة وأربعين (45) يوما ابتداء من تاريخ وصول الإنذار للمخالف</condition>، <obligation>ترسل <term refersTo="#consumer_protection_services">المصالح المكلفة بحماية المستهلك وقمع الغش</term> الملف إلى الجهة القضائية المختصة إقليميا</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يرسل جدول مجمل إشعارات الدفع المستلمة من طرف <term refersTo="#tax_collector">قابض الضرائب</term> في الشهر السابق، في الأسبوع الأول من كل شهر، إلى <term refersTo="#consumer_protection_services">المصالح المكلفة بحماية المستهلك وقمع الغش</term></obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_93">
+          <num>المادة 93</num>
+          <content>
+          <paragraph>
+          <p><condition>إذا سدد <term refersTo="#offender">المخالف</term> مبلغ <term refersTo="#settlement_fine">غرامة الصلح</term> في الآجال والشروط المحددة <ref href="#art_92">المادة 92</ref> أعلاه</condition>، <right>تنقضي الدعوى العمومية</right>.</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_6">
+        <num>السادس</num>
+        <heading>أحكام ختامية وانتقالية</heading>
+        <article eId="art_94">
+          <num>المادة 94</num>
+          <content>
+          <paragraph>
+          <p>تلغى أحكام <ref href="/akn/dz/act/law/1989-02-07/89-02">القانون رقم 89 - 02 المؤرخ في أول رجب عام 1409 الموافق 7 فبراير سنة 1989 والمتعلق بالقواعد العامة لحماية المستهلك</ref>، وتبقى نصوصه التطبيقية سارية المفعول إلى حين صدورالنصوص التطبيقية لهذا القانون التي تحل محلها.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_95">
+          <num>المادة 95</num>
+          <content>
+          <paragraph>
+          <p>ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية.</p>
+          </paragraph>
+          <paragraph>
+          <p>حرر بالجزائر في 29 صفر عام 1430 الموافق 25 فبراير سنة 2009.</p>
+          </paragraph>
+          <paragraph>
+          <p><term refersTo="#president">عبد العزيز بوتفليقة</term></p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+    </body>
+  </act>
+</akomaNtoso>

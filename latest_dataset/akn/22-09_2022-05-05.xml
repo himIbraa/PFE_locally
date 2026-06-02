@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="order">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/order/2022-05-05/22-09/main"/>
+      <FRBRuri value="/akn/dz/act/order/2022-05-05/22-09"/>
+      <FRBRdate date="2022-05-05" name="enactment"/>
+      <FRBRauthor href="#president"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="22-09"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/order/2022-05-05/22-09/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/order/2022-05-05/22-09/ara@"/>
+      <FRBRdate date="2022-05-05" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/order/2022-05-05/22-09/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/order/2022-05-05/22-09/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="president" href="/ontology/organization/dz/president" showAs="رئيس الجمهورية"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="converter" href="/ontology/person/dz/converter" showAs="Legal Markup Specialist"/>
+  </references>
+<lifecycle source="#source"><eventRef eId="evt_1" date="2022-05-05" source="#source" type="generation"/></lifecycle><analysis source="#source"><activeModifications><textualMod type="substitution" eId="amend_1"><source href="#art_1"/><destination href="/akn/dz/act/order/1975-09-26/75-59"/><force period="#evt_1"/></textualMod><textualMod type="substitution" eId="amend_2"><source href="#subsec_12_art_2"/><destination href="/akn/dz/act/order/1975-09-26/75-59#art_544"/><force period="#evt_1"/></textualMod><textualMod type="substitution" eId="amend_3"><source href="#subsec_12_art_2"/><destination href="/akn/dz/act/order/1975-09-26/75-59#art_544"/><force period="#evt_1"/></textualMod></activeModifications></analysis></meta>
+    <preface>
+  <docTitle>قانون رقم 22-09 يعدل ويتمم الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون التجاري</docTitle>
+  <docNumber>22-09</docNumber>
+  <docDate date="2022-05-05">4 شوال عام 1443 الموافق 5 مايو سنة 2022</docDate>
+  <docAuthority>رئيس الجمهورية</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>بناء على الدستور، لا سيما المواد 139 و 141 (الفقرة 2) و 145 و 148 منه،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون التجاري، المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>وبعد رأي مجلس الدولة،</p>
+    </citation>
+    <citation>
+      <p>وبعد مصادقة البرلمان،</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يصدر الأمر الآتي نصه:</p>
+  </formula>
+</preamble>
+    <body>
+      <subsection eId="subsec_12">
+        <num>الثاني عشر</num>
+        <heading>شركة المساهمة البسيطة</heading>
+        <article eId="art_1">
+          <num>المادة الأولى</num>
+          <content>
+          <paragraph>
+          <p>يهدف هذا القانون إلى تعديل وتتميم <ref href="/akn/dz/act/order/1975-09-26/75-59">الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975</ref> والمتضمن <term refersTo="#commercial_code">القانون التجاري</term>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="subsec_12_art_2">
+          <num>المادة 2</num>
+          <content>
+          <paragraph>
+          <p>تعدل وتتمم <ref href="/akn/dz/act/order/1975-09-26/75-59#art_544">المادة 544 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975</ref> والمذكور أعلاه، وتحرر كما يأتي :</p>
+          </paragraph>
+          <paragraph>
+          <p>"<ref href="#art_544">المادة 544</ref> : <def refersTo="#commercial_nature">يحدد الطابع التجاري للشركة إما بشكلها أو موضوعها</def>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تعد شركات التضامن وشركات التوصية والشركات ذات المسؤولية المحدودة وشركات المساهمة وشركات المساهمة البسيطة تجارية بحكم شكلها ومهما يكن موضوعها".</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_3">
+          <num>المادة 3</num>
+          <content>
+          <paragraph>
+          <p>يتمم الفصل الثالث من الباب الأول من الكتاب الخامس من <ref href="/akn/dz/act/order/1975-09-26/75-59">الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975</ref> والمذكور أعلاه، بقسم ثاني عشر عنوانه "<term refersTo="#simple_joint_stock_company">شركة المساهمة البسيطة</term>"، يتضمن المواد <ref href="#art_715_bis_133">715 مكرر 133</ref> و <ref href="#art_715_bis_134">715 مكرر 134</ref> و <ref href="#art_715_bis_135">715 مكرر 135</ref> و <ref href="#art_715_bis_136">715 مكرر 136</ref> و <ref href="#art_715_bis_137">715 مكرر 137</ref> و <ref href="#art_715_bis_138">715 مكرر 138</ref> و <ref href="#art_715_bis_139">715 مكرر 139</ref> و <ref href="#art_715_bis_140">715 مكرر 140</ref> و <ref href="#art_715_bis_141">715 مكرر 141</ref> و <ref href="#art_715_bis_142">715 مكرر 142</ref> و <ref href="#art_715_bis_143">715 مكرر 143</ref>، ويحرر كما يأتي :</p>
+          </paragraph>
+          <paragraph>
+          <p>"<ref href="#art_715_bis_136">المادة 715 مكرر 136</ref> : يمارس رئيس <term refersTo="#simple_joint_stock_company">شركة المساهمة البسيطة</term> أو القائم بالإدارة المعين في قانونها الأساسي كمدير عام أو مدير عام مفوض، صلاحيات مجلس الإدارة أو رئيسه.</p>
+          </paragraph>
+          <paragraph>
+          <p>في حالة <term refersTo="#single_member_sas">شركة المساهمة البسيطة ذات الشخص الوحيد</term>، يمارس المساهم الوحيد سلطات الرئيس ويتخذ القرارات الممنوحة لجمعية الشركاء ".</p>
+          </paragraph>
+          <paragraph>
+          <p>"<ref href="#art_715_bis_137">المادة 715 مكرر 137</ref> : تحدد القرارات التي يجب أن تتخذ جماعيا من طرف المساهمين في القانون الأساسي للشركة.</p>
+          </paragraph>
+          <paragraph>
+          <p>غير أن قرارات الجمعية العامة العادية وغير العادية المتعلقة بزيادة واستهلاك وتخفيض الرأسمال والإدماج والانفصال وحل الشركة وتحويلها إلى شكل آخر وتعيين محافظي الحسابات والحسابات السنوية والأرباح، <obligation>يجب أن تتخذ جماعيا من طرف المساهمين وفقا للكيفيات المحددة في القانون الأساسي للشركة</obligation>".</p>
+          </paragraph>
+          <paragraph>
+          <p>"<ref href="#art_715_bis_138">المادة 715 مكرر 138</ref> : يحدد رأسمال <term refersTo="#simple_joint_stock_company">شركة المساهمة البسيطة</term> في قانونها الأساسي".</p>
+          </paragraph>
+          <paragraph>
+          <p>"<ref href="#art_715_bis_139">المادة 715 مكرر 139</ref> : <obligation>يحظر على شركة المساهمة البسيطة اللجوء العلني للادخار أو طرح أسهمها في البورصة</obligation>".</p>
+          </paragraph>
+          <paragraph>
+          <p>"<ref href="#art_715_bis_140">المادة 715 مكرر 140</ref> : <right>يمكن شركة المساهمة البسيطة أن تصدر أسهم غير قابلة للتصرف فيها ناتجة عن تقديم عمل</right>.</p>
+          </paragraph>
+          <paragraph>
+          <p>لا تدخل أسهم تقديم عمل في تأسيس رأسمال الشركة، غير أنها تدخل في تقاسم الأرباح وصافي الأصول والخسائر، وتحدد كيفيات تقدير قيمتها وما تخوله من أرباح ضمن القانون الأساسي للشركة ".</p>
+          </paragraph>
+          <paragraph>
+          <p>"<ref href="#art_715_bis_141">المادة 715 مكرر 141</ref> : <right>يمكن المساهمين أن يقرروا بالإجماع عدم إلزامية اللجوء إلى مندوب الحصص</right> <condition>في حالة ما إذا كانت الحصص العينية التي لم يتم تقييمها مسبقا من طرف مندوب الحصص جميعها لا تتجاوز قيمتها نصف رأسمال الشركة</condition>".</p>
+          </paragraph>
+          <paragraph>
+          <p>"<ref href="#art_715_bis_142">المادة 715 مكرر 142</ref> : <condition>في حالة عدم تعيين مندوب للحصص أو في حالة اختلاف القيمة المحددة للحصص العينية عن تلك المقترحة من قبل مندوب الحصص</condition>، <obligation>يكون المساهمون مسؤولين تضامنيا أمام الغير لمدة خمس (5) سنوات على القيمة الممنوحة للحصص العينية في القانون الأساسي للشركة</obligation>".</p>
+          </paragraph>
+          <paragraph>
+          <p>"<ref href="#art_715_bis_143">المادة 715 مكرر 143</ref> : تطبق على رئيس <term refersTo="#simple_joint_stock_company">شركة المساهمة البسيطة</term> أو مديرها العام أو مديرها العام المفوض، قواعد المسؤولية المطبقة على رئيس شركة المساهمة أو القائمين بإدارتها".</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="subsec_12_art_4">
+          <num>المادة 4</num>
+          <content>
+          <paragraph>
+          <p>ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>في حالة شركة المساهمة البسيطة ذات الشخص الوحيد</condition>، يعين مندوب الحصص من قبل هذا الأخير، ولا يكون اللجوء إلى مندوب الحصص إلزاميا <condition>عندما تتوفر الشروط المنصوص عليها في الفقرة الأولى من هذه المادة</condition>".</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="subsec_12_art_2">
+          <num>المادة 2</num>
+          <content>
+          <paragraph>
+          <p>تعدل وتتمم <ref href="/akn/dz/act/order/1975-09-26/75-59#art_544">المادة 544 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975</ref> والمذكور أعلاه، وتحرر كما يأتي :</p>
+          </paragraph>
+          <paragraph>
+          <p>"<ref href="#art_544">المادة 544</ref> : <def refersTo="#commercial_nature">يحدد الطابع التجاري للشركة إما بشكلها أو موضوعها</def>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تعد شركات التضامن وشركات التوصية والشركات ذات المسؤولية المحدودة وشركات المساهمة وشركات المساهمة البسيطة تجارية بحكم شكلها ومهما يكن موضوعها".</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="subsec_12_art_4">
+          <num>المادة 4</num>
+          <content>
+          <paragraph>
+          <p>ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>في حالة شركة المساهمة البسيطة ذات الشخص الوحيد</condition>، يعين مندوب الحصص من قبل هذا الأخير، ولا يكون اللجوء إلى مندوب الحصص إلزاميا <condition>عندما تتوفر الشروط المنصوص عليها في الفقرة الأولى من هذه المادة</condition>".</p>
+          </paragraph>
+          </content>
+          </article>
+      </subsection>
+    </body>
+  </act>
+</akomaNtoso>

@@ -1,0 +1,2678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="law">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/law/1984-06-09/84-11/main"/>
+      <FRBRuri value="/akn/dz/act/law/1984-06-09/84-11"/>
+      <FRBRdate date="1984-06-09" name="enactment"/>
+      <FRBRauthor href="#parliament"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="84-11"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/law/1984-06-09/84-11/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/law/1984-06-09/84-11/ara@"/>
+      <FRBRdate date="1984-06-09" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/law/1984-06-09/84-11/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/law/1984-06-09/84-11/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="parliament" href="/ontology/organization/dz/parliament" showAs="البرلمان"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="president" href="/ontology/person/dz/president" showAs="رئيس الجمهورية"/>
+  </references>
+</meta>
+    <preface>
+  <docTitle>قانون الأسرة، المعدل والمتمم</docTitle>
+  <docNumber>84-11</docNumber>
+  <docDate date="1984-06-09">9 رمضان عام 1404 الموافق 9 يونيو سنة 1984</docDate>
+  <docAuthority>البرلمان</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>إن رئيس الجمهورية،</p>
+    </citation>
+    <citation>
+      <p>بناء على الدستور ولاسيما المادتان 151-2 و154 منه،</p>
+    </citation>
+    <citation>
+      <p>وبناء على ما أقره المجلس الشعبي الوطني،</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يصدر القانون التالي نصه:</p>
+  </formula>
+</preamble>
+    <body>
+      <article eId="art_1">
+        <num>المادة الأولى</num>
+        <content>
+        <paragraph>
+        <p><obligation>تخضع جميع العلاقات بين أفراد <term refersTo="#family">الأسرة</term> لأحكام هذا القانون</obligation>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_2">
+        <num>المادة 2</num>
+        <content>
+        <paragraph>
+        <p><def refersTo="#family">الأسرة هي الخلية الأساسية للمجتمع وتتكون من أشخاص تجمع بينهم صلة الزوجية وصلة القرابة</def>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_3">
+        <num>المادة 3</num>
+        <content>
+        <paragraph>
+        <p>تعتمد <term refersTo="#family">الأسرة</term> في حياتها على الترابط والتكافل وحسن المعاشرة والتربية الحسنة وحسن الخلق ونبذ الآفات الاجتماعية.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_3_bis" status="new">
+        <num>المادة 3 مكرر</num>
+        <content>
+        <paragraph>
+        <p><obligation>تعد <term refersTo="#prosecution">النيابة العامة</term> طرفا أصليا في جميع القضايا الرامية إلى تطبيق أحكام هذا القانون</obligation>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <book eId="book_1">
+        <num>الأول</num>
+        <heading>الزواج وانحلاله</heading>
+        <chapter eId="book_1_chp_1">
+          <num>الأول</num>
+          <heading>الزواج</heading>
+          <section eId="book_1_chp_1_sec_1">
+            <num>الأول</num>
+            <heading>الخطبة والزواج</heading>
+            <subsection eId="book_1_chp_1_sec_1_subsec_1">
+              <num>الأول</num>
+              <heading>في الخطبة</heading>
+              <article eId="art_4" status="modified">
+                <num>4</num>
+                <content>
+                <paragraph>
+                <p><def refersTo="#marriage">الزواج هو عقد رضائي يتم بين رجل وامرأة على الوجه الشرعي، من أهدافه، تكوين أسرة</def></p>
+                </paragraph>
+                </content>
+                </article>
+              <article eId="art_5" status="modified">
+                <num>5</num>
+                <content>
+                <paragraph>
+                <p><def refersTo="#betrothal">الخطبة وعد بالزواج.</def></p>
+                </paragraph>
+                <paragraph>
+                <p><right>يجوز للطرفين العدول عن الخطبة.</right></p>
+                </paragraph>
+                <paragraph>
+                <p><condition>إذا ترتب عن العدول عن الخطبة ضرر مادي أو معنوي لأحد الطرفين</condition> <right>جاز الحكم له بالتعويض.</right></p>
+                </paragraph>
+                <paragraph>
+                <p><right>يسترد الخاطب من المخطوبة شيئا مما أهداها</right> <condition>إن كان العدول منه</condition>، و<obligation>عليه أن يرد للمخطوبة ما لم يستهلك مما أهدته له أو قيمته.</obligation></p>
+                </paragraph>
+                <paragraph>
+                <p><condition>وإن كان العدول من المخطوبة</condition> ، <obligation>فعليها أن ترد للخاطب ما لم يستهلك من هدايا أو قيمته.</obligation></p>
+                </paragraph>
+                </content>
+                </article>
+              <article eId="art_6" status="modified">
+                <num>6</num>
+                <content>
+                <paragraph>
+                <p>إن اقتران الفاتحة بالخطبة لا يعد زواجا.</p>
+                </paragraph>
+                <paragraph>
+                <p>غير أن اقتران الفاتحة بالخطبة بمجلس العقد يعتبر زواجا <condition>متى توافر ركن الرضا وشروط الزواج المنصوص عليها في <ref href="#art_9_bis">المادة 9 مكرر</ref> من هذا القانون.</condition></p>
+                </paragraph>
+                </content>
+                </article>
+            </subsection>
+            <subsection eId="book_1_chp_1_sec_1_subsec_2">
+              <num>الثاني</num>
+              <heading>في الزواج</heading>
+              <article eId="art_7" status="modified">
+                <num>7</num>
+                <content>
+                <paragraph>
+                <p><obligation>تكتمل <term refersTo="#legal_capacity">أهلية</term> الرجل والمرأة في الزواج بتمام 19 سنة</obligation>. وللقاضي أن <condition>يرخص بالزواج قبل ذلك لمصلحة أو ضرورة، متى تأكدت قدرة الطرفين على الزواج</condition>.</p>
+                </paragraph>
+                <paragraph>
+                <p><right>يكتسب الزوج القاصر <term refersTo="#legal_capacity">أهلية التقاضي</term> فيما يتعلق بآثار عقد الزواج من حقوق والتزامات</right>.</p>
+                </paragraph>
+                </content>
+                </article>
+              <article eId="art_7_bis" status="new">
+                <num>7 مكرر</num>
+                <content>
+                <paragraph>
+                <p><obligation>يجب على طالبي الزواج أن يقدما وثيقة طبية، لا يزيد تاريخها عن ثلاثة (3) أشهر تثبت خلوهما من أي مرض أو أي عامل قد يشكل خطرا يتعارض مع الزواج</obligation>.</p>
+                </paragraph>
+                <paragraph>
+                <p><obligation>يتعين على <term refersTo="#notary">الموثق</term> أو <term refersTo="#civil_registrar">ضابط الحالة المدنية</term>، أن يتأكد قبل تحرير عقد الزواج من خضوع الطرفين للفحوصات الطبية ومن علمهما بما قد تكشف عنه من أمراض أو عوامل قد يشكل خطرا يتعارض مع الزواج</obligation>. ويؤشر بذلك في عقد الزواج.</p>
+                </paragraph>
+                <paragraph>
+                <p>تحدد شروط وكيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+                </paragraph>
+                </content>
+                </article>
+              <article eId="art_8" status="modified">
+                <num>8</num>
+                <content>
+                <paragraph>
+                <p>يسمح بالزواج بأكثر من زوجة واحدة في حدود الشريعة الإسلامية <condition>متى وجد المبرر الشرعي وتوفرت شروط ونية العدل</condition>.</p>
+                </paragraph>
+                <paragraph>
+                <p><obligation>يجب على الزوج إخبار الزوجة السابقة والمرأة التي يقبل على الزواج بها وأن يقدم طلب الترخيص بالزواج إلى رئيس المحكمة لمكان مسكن الزوجية</obligation>.</p>
+                </paragraph>
+                <paragraph>
+                <p>يمكن رئيس المحكمة أن يرخص بالزواج الجديد، <condition>إذا تأكد من موافقتهما وأثبت الزوج المبرر الشرعي وقدرته على توفير العدل والشروط الضرورية للحياة الزوجية</condition>.</p>
+                </paragraph>
+                </content>
+                </article>
+              <article eId="art_8_bis" status="new">
+                <num>8 مكرر</num>
+                <content>
+                <paragraph>
+                <p><condition>في حالة التدليس</condition>، <right>يجوز لكل زوجة رفع دعوى قضائية ضد الزوج للمطالبة بالتطليق</right>.</p>
+                </paragraph>
+                </content>
+                </article>
+              <article eId="art_8_bis_1" status="new">
+                <num>8 مكرر 1</num>
+                <content>
+                <paragraph>
+                <p>يفسخ الزواج الجديد قبل الدخول، <condition>إذا لم يستصدر الزوج ترخيصا من القاضي وفقا للشروط المنصوص عليها في <ref href="#art_8">المادة 8</ref> أعلاه</condition>.</p>
+                </paragraph>
+                </content>
+                </article>
+              <article eId="art_9" status="modified">
+                <num>9</num>
+                <content>
+                <paragraph>
+                <p>ينعقد الزواج بتبادل رضا الزوجين.</p>
+                </paragraph>
+                </content>
+                </article>
+              <article eId="art_9_bis" status="new">
+                <num>9 مكرر</num>
+                <content>
+                <paragraph>
+                <p><obligation>يجب أن تتوفر في عقد الزواج الشروط الآتية</obligation> :</p>
+                <list>
+                <point><p>أهلية الزواج،</p></point>
+                <point><p>الصداق،</p></point>
+                <point><p>الولي،</p></point>
+                <point><p>شاهدان</p></point>
+                <point><p>انعدام الموانع الشرعية للزواج.</p></point>
+                </list>
+                </paragraph>
+                </content>
+                </article>
+              <article eId="art_10">
+                <num>10</num>
+                <content>
+                <paragraph>
+                <p>يكون الرضا بإيجاب من أحد الطرفين وقبول من الطرف الآخر بكل لفظ يفيد معنى النكاح شرعا.</p>
+                </paragraph>
+                <paragraph>
+                <p>ويصح الإيجاب والقبول من العاجز بكل ما يفيد معنى النكاح لغة أو عرفا كالكتابة والإشارة.</p>
+                </paragraph>
+                </content>
+                </article>
+              <article eId="art_11" status="modified">
+                <num>11</num>
+                <content>
+                <paragraph>
+                <p>تعقد المرأة الراشدة زواجها بحضور واليها وهو أبوها أو أحد أقاربها أو أي شخص آخر تختاره. دون الإخلال بأحكام <ref href="#art_7">المادة 7</ref> من هذا القانون، يتولى زواج القصر أولياؤهم وهم الأب، فأحد الأقارب الأولين والقاضي ولي من لا ولي له.</p>
+                </paragraph>
+                </content>
+                </article>
+              <article eId="art_12" status="repealed">
+                <num>12</num>
+                <content>
+                <paragraph>
+                <p></p>
+                </paragraph>
+                </content>
+                </article>
+              <article eId="art_13" status="modified">
+                <num>13</num>
+                <content>
+                <paragraph>
+                <p><obligation>لا يجوز للولي، أبا كان أو غيره، أن يجبر القاصرة التي هي في ولايته على الزواج</obligation>، و<obligation>لا يجوز له أن يزوجها بدون موافقتها</obligation>.</p>
+                </paragraph>
+                </content>
+                </article>
+              <article eId="art_14">
+                <num>14</num>
+                <content>
+                <paragraph>
+                <p><def refersTo="#sadaq">الصداق هو ما يدفع نحلة للزوجة من نقود أو غيرها من كل ما هو مباح شرعا وهو ملك لها تتصرف فيه كما تشاء</def>.</p>
+                </paragraph>
+                </content>
+                </article>
+              <article eId="art_15" status="modified">
+                <num>15</num>
+                <content>
+                <paragraph>
+                <p><obligation>يحدد الصداق في العقد، سواء كان معجلا أو مؤجلا</obligation>.</p>
+                </paragraph>
+                <paragraph>
+                <p><condition>في حالة عدم تحديد قيمة الصداق</condition>، <right>تستحق الزوجة صداق المثل</right>.</p>
+                </paragraph>
+                </content>
+                </article>
+              <article eId="art_16">
+                <num>16</num>
+                <content>
+                <paragraph>
+                <p><right>تستحق <term refersTo="#wife">الزوجة</term> <term refersTo="#dower">الصداق</term> كاملا</right> <condition>بالدخول، أو بوفاة <term refersTo="#husband">الزوج</term></condition>، و<right>تستحق نصفه</right> <condition>عند الطلاق قبل الدخول</condition>.</p>
+                </paragraph>
+                </content>
+                </article>
+              <article eId="art_17">
+                <num>17</num>
+                <content>
+                <paragraph>
+                <p><condition>في حالة النزاع في <term refersTo="#dower">الصداق</term> بين الزوجين أو ورثتهما وليس لأحدهما بينة وكان قبل الدخول</condition>، فالقول <term refersTo="#wife">للزوجة</term> أو ورثتها مع اليمين و<condition>إذا كان بعد البناء</condition> فالقول <term refersTo="#husband">للزوج</term> أو ورثته مع اليمين.</p>
+                </paragraph>
+                </content>
+                </article>
+            </subsection>
+            <subsection eId="book_1_chp_1_sec_1_subsec_3">
+              <num>الثالث</num>
+              <heading>في عقد الزواج وإثباته</heading>
+              <article eId="art_18" status="modified">
+                <num>18</num>
+                <content>
+                <paragraph>
+                <p>يتم عقد <term refersTo="#marriage">الزواج</term> أمام <term refersTo="#notary">الموثق</term> أو أمام <term refersTo="#qualified_officer">موظف مؤهل قانونا</term> مع مراعاة ما ورد في <ref href="#art_9">المادتين 9</ref> و<ref href="#art_9_bis">9 مكرر</ref> من هذا القانون.</p>
+                </paragraph>
+                </content>
+                </article>
+              <article eId="art_19" status="modified">
+                <num>19</num>
+                <content>
+                <paragraph>
+                <p><right>للزوجين أن يشترطا في عقد الزواج أو في عقد رسمي لاحق كل الشروط التي يريانها ضرورية</right>، ولا سيما <term refersTo="#non_polygamy_condition">شرط عدم تعدد الزوجات</term> و<term refersTo="#womens_work_condition">عمل المرأة</term>، <condition>ما لم تتنافى هذه الشروط مع أحكام هذا القانون</condition>.</p>
+                </paragraph>
+                </content>
+                </article>
+              <article eId="art_20" status="repealed">
+                <num>20</num>
+                <content>
+                <paragraph>
+                <p></p>
+                </paragraph>
+                </content>
+                </article>
+              <article eId="art_21">
+                <num>21</num>
+                <content>
+                <paragraph>
+                <p><obligation>تطبق أحكام قانون الحالة المدنية في إجراءات تسجيل عقد الزواج</obligation>.</p>
+                </paragraph>
+                </content>
+                </article>
+              <article eId="art_22" status="modified">
+                <num>22</num>
+                <content>
+                <paragraph>
+                <p>يثبت <term refersTo="#marriage">الزواج</term> بمستخرج من <term refersTo="#civil_status_registry">سجل الحالة المدنية</term>، و<condition>في حالة عدم تسجيله يثبت بحكم قضائي</condition>.</p>
+                </paragraph>
+                <paragraph>
+                <p><obligation>يجب تسجيل حكم تثبيت الزواج في الحالة المدنية بسعي من النيابة العامة</obligation>.</p>
+                </paragraph>
+                </content>
+                </article>
+            </subsection>
+          </section>
+          <section eId="book_1_chp_1_sec_2">
+            <num>الثاني</num>
+            <heading>موانع الزواج</heading>
+            <article eId="art_23">
+              <num>23</num>
+              <content>
+              <paragraph>
+              <p><obligation>يجب أن يكون كل من الزوجين خلوا من <term refersTo="#impediments">الموانع الشرعية المؤبدة والمؤقتة</term></obligation>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_24">
+              <num>24</num>
+              <content>
+              <paragraph>
+              <p><def refersTo="#permanent_impediments">موانع النكاح المؤبدة هي :</def></p>
+              <list>
+              <point>
+              <p>القرابة،</p>
+              </point>
+              <point>
+              <p>المصاهرة،</p>
+              </point>
+              <point>
+              <p>الرضاع.</p>
+              </point>
+              </list>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_25">
+              <num>25</num>
+              <content>
+              <paragraph>
+              <p><def refersTo="#kinship_prohibitions">المحرمات بالقرابة هي :</def> الأمهات والبنات، والأخوات والعمات والخالات وبنات الأخ ، وبنات الأخت.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_26">
+              <num>26</num>
+              <content>
+              <paragraph>
+              <p><def refersTo="#affinity_prohibitions">المحرمات بالمصاهرة هي :</def></p>
+              <list>
+              <point>
+              <p>1 - أصول الزوجة بمجرد العقد عليها،</p>
+              </point>
+              <point>
+              <p>2 - فروعها إن حصل الدخول بها،</p>
+              </point>
+              <point>
+              <p>3 - أرامل أو مطلقات أصول الزوج وإن علوا،</p>
+              </point>
+              <point>
+              <p>4 - أرامل أو مطلقات فروع الزوج وإن نزلوا.</p>
+              </point>
+              </list>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_27">
+              <num>27</num>
+              <content>
+              <paragraph>
+              <p>يحرم من الرضاع ما يحرم من النسب.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_28">
+              <num>28</num>
+              <content>
+              <paragraph>
+              <p>يعد الطفل الرضيع وحده دون إخوته وأخواته ولدا للمرضعة وزوجها وأخا لجميع أولادها، ويسري التحريم عليه وعلى فروعه.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_29">
+              <num>29</num>
+              <content>
+              <paragraph>
+              <p>لا يحرم الرضاع إلا <condition>ما حصل قبل الفطام أو في الحولين سواء كان اللبن قليلا أو كثيرا</condition>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_30" status="modified">
+              <num>30</num>
+              <content>
+              <paragraph>
+              <p><def refersTo="#temporary_prohibitions">يحرم من النساء مؤقتا :</def></p>
+              <list>
+              <point>
+              <p>المحصنة،</p>
+              </point>
+              <point>
+              <p>المعتدة من طلاق أو وفاة،</p>
+              </point>
+              <point>
+              <p>المطلقة ثلاثا،</p>
+              </point>
+              </list>
+              </paragraph>
+              <paragraph>
+              <p>كما يحرم مؤقتا</p>
+              <list>
+              <point>
+              <p>الجمع بين الأختين أو بين المرأة وعمتها أو خالتها، سواء كانت شقيقة أو لأب أو لأم أو من رضاع،</p>
+              </point>
+              <point>
+              <p>زواج المسلمة مع غير المسلم.</p>
+              </point>
+              </list>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_31" status="modified">
+              <num>31</num>
+              <content>
+              <paragraph>
+              <p><obligation>يخضع زواج الجزائريين والجزائريات بالأجانب من الجنسين إلى أحكام تنظيمية</obligation>.</p>
+              </paragraph>
+              </content>
+              </article>
+          </section>
+          <section eId="book_1_chp_1_sec_3">
+            <num>الثالث</num>
+            <heading>النكاح الفاسد والباطل</heading>
+            <article eId="art_32" status="modified">
+              <num>32</num>
+              <content>
+              <paragraph>
+              <p><obligation>يبطل <term refersTo="#marriage">الزواج</term></obligation>، <condition>إذا اشتمل على مانع أو شرط يتنافى ومقتضيات العقد</condition>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_33" status="modified">
+              <num>33</num>
+              <content>
+              <paragraph>
+              <p><obligation>يبطل <term refersTo="#marriage">الزواج</term></obligation> <condition>إذا اختل ركن الرضا</condition>.</p>
+              </paragraph>
+              <paragraph>
+              <p><condition>إذا تم <term refersTo="#marriage">الزواج</term> بدون شاهدين أو صداق أو ولي في حالة وجوبه</condition>، <obligation>يفسخ قبل الدخول ولا صداق فيه</obligation>، و<obligation>يثبت بعد الدخول بصداق المثل</obligation>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_34" status="original">
+              <num>34</num>
+              <content>
+              <paragraph>
+              <p><condition>كل زواج بإحدى المحرمات</condition> <obligation>يفسخ قبل الدخول وبعده</obligation> ويترتب عليه <right>ثبوت النسب</right>، و<obligation>وجوب الاستبراء</obligation>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_35" status="original">
+              <num>35</num>
+              <content>
+              <paragraph>
+              <p><condition>إذا اقترن عقد الزواج بشرط ينافيه</condition> <obligation>كان ذلك الشرط باطلا والعقد صحيحا</obligation>.</p>
+              </paragraph>
+              </content>
+              </article>
+          </section>
+          <section eId="book_1_chp_1_sec_4">
+            <num>الرابع</num>
+            <heading>حقوق وواجبات الزوجين</heading>
+            <article eId="art_36" status="modified">
+              <num>36</num>
+              <content>
+              <paragraph>
+              <p><obligation>يجب على <term refersTo="#spouse">الزوجين</term> :</obligation></p>
+              <list>
+              <point>
+              <p>المحافظة على الروابط الزوجية وواجبات الحياة المشتركة،</p>
+              </point>
+              <point>
+              <p>المعاشرة بالمعروف، وتبادل الاحترام والمودة والرحمة،</p>
+              </point>
+              <point>
+              <p>التعاون على مصلحة الأسرة ورعاية الأولاد وحسن تربيتهم،</p>
+              </point>
+              <point>
+              <p>التشاور في تسيير شؤون الأسرة وتباعد الولادات،</p>
+              </point>
+              <point>
+              <p>حسن معاملة كل منهما لأبوي الآخر وأقاربه واحترامهم وزيارتهم،</p>
+              </point>
+              <point>
+              <p>المحافظة على روابط القرابة والتعامل مع الوالدين الأقربين بالحسنى والمعروف،</p>
+              </point>
+              <point>
+              <p>زيارة كل منهما لأبويه وأقاربه واستضافتهم بالمعروف.</p>
+              </point>
+              </list>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_37" status="modified">
+              <num>37</num>
+              <content>
+              <paragraph>
+              <p><right>لكل واحد من <term refersTo="#spouse">الزوجين</term> ذمة مالية مستقلة عن ذمة الآخر.</right></p>
+              </paragraph>
+              <paragraph>
+              <p>غير أنه <condition>يجوز <term refersTo="#spouse">للزوجين</term> أن يتفقا في عقد الزواج أو في عقد رسمي لاحق، حول الأموال المشتركة بينهما، التي يكتسبانها خلال الحياة الزوجية وتحديد النسب التي تؤول إلى كل واحد منها.</condition></p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_38" status="repealed">
+              <num>38</num>
+              <content>
+              <paragraph>
+              <p></p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_39" status="repealed">
+              <num>39</num>
+              <content>
+              <paragraph>
+              <p></p>
+              </paragraph>
+              </content>
+              </article>
+          </section>
+          <section eId="book_1_chp_1_sec_5">
+            <num>الخامس</num>
+            <heading>النسب</heading>
+            <article eId="art_40" status="modified">
+              <num>40</num>
+              <content>
+              <paragraph>
+              <p><obligation>يثبت <term refersTo="#lineage">النسب</term> بالزواج الصحيح أو بالإقرار أو بالبينة أو بنكاح الشبهة أو بكل زواج تم فسخه بعد الدخول</obligation> طبقا للمواد <ref href="#art_32">32</ref> و <ref href="#art_33">33</ref> و <ref href="#art_34">34</ref> من هذا القانون.</p>
+              </paragraph>
+              <paragraph>
+              <p><right>يجوز للقاضي اللجوء إلى الطرق العلمية لإثبات <term refersTo="#lineage">النسب</term></right>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_41">
+              <num>41</num>
+              <content>
+              <paragraph>
+              <p><obligation>ينسب الولد لأبيه</obligation> <condition>متى كان الزواج شرعيا وأمكن الاتصال ولم ينفه بالطرق المشروعة</condition>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_42">
+              <num>42</num>
+              <content>
+              <paragraph>
+              <p><condition>أقل مدة الحمل ستة أشهر وأقصاها عشر (10) أشهر</condition>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_43">
+              <num>43</num>
+              <content>
+              <paragraph>
+              <p><obligation>ينسب الولد لأبيه</obligation> <condition>إذا وضع الحمل خلال عشرة (10) أشهر من تاريخ الانفصال أو الوفاة</condition>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_44">
+              <num>44</num>
+              <content>
+              <paragraph>
+              <p><obligation>يثبت <term refersTo="#lineage">النسب</term> بالإقرار بالبنوة، أو الأبوة أو الأمومة، لمجهول النسب ولو في مرض الموت</obligation> <condition>متى صدقه العقل أو العادة</condition>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_45">
+              <num>45</num>
+              <content>
+              <paragraph>
+              <p>الإقرار <term refersTo="#lineage">بالنسب</term> في غير البنوة، والأبوة، والأمومة <obligation>لا يسري على غير المقر إلا بتصديقه</obligation>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_45_bis" status="new">
+              <num>45 مكرر</num>
+              <content>
+              <paragraph>
+              <p><right>يجوز للزوجين اللجوء إلى التلقيح الاصطناعي</right>.</p>
+              </paragraph>
+              <paragraph>
+              <p>يخضع التلقيح الاصطناعي للشروط الآتية :</p>
+              <list>
+              <point>
+              <p>أن يكون الزواج شرعيا،</p>
+              </point>
+              <point>
+              <p>أن يكون التلقيح برضا الزوجين وأثناء حياتهما،</p>
+              </point>
+              <point>
+              <p>أن يتم بمني الزوج وبويضة رحم الزوجة دون غيرهما.</p>
+              </point>
+              </list>
+              </paragraph>
+              <paragraph>
+              <p><obligation>لا يجوز اللجوء إلى التلقيح الاصطناعي باستعمال الأم البديلة</obligation>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_46">
+              <num>46</num>
+              <content>
+              <paragraph>
+              <p><obligation>يمنع التبني شرعا وقانونا</obligation>.</p>
+              </paragraph>
+              </content>
+              </article>
+          </section>
+        </chapter>
+        <chapter eId="book_1_chp_2">
+          <num>الثاني</num>
+          <heading>انحلال الزواج</heading>
+          <article eId="art_47">
+            <num>47</num>
+            <content>
+            <paragraph>
+            <p>تنحل <term refersTo="#marital_bond">الرابطة الزوجية</term> بـ <term refersTo="#divorce">الطلاق</term> أو <term refersTo="#death">الوفاة</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <section eId="book_1_chp_2_sec_1">
+            <num>الأول</num>
+            <heading>الطلاق</heading>
+            <article eId="art_48" status="modified">
+              <num>48</num>
+              <content>
+              <paragraph>
+              <p><condition>مع مراعاة أحكام <ref href="#art_49">المادة 49</ref> أدناه</condition>، يحل <term refersTo="#marriage_contract">عقد الزواج</term> بالطلاق الذي يتم بإرادة الزوج أو بتراضي الزوجين أو بطلب من الزوجة في حدود ما ورد في <ref href="#art_53">المادتين 53</ref> و <ref href="#art_54">54</ref> من هذا القانون.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_49" status="modified">
+              <num>49</num>
+              <content>
+              <paragraph>
+              <p><obligation>لا يثبت الطلاق إلا بحكم بعد عدة محاولات صلح يجريها <term refersTo="#judge">القاضي</term> دون أن تتجاوز مدته ثلاثة (3) أشهر ابتداء من تاريخ رفع الدعوى</obligation>.</p>
+              </paragraph>
+              <paragraph>
+              <p><obligation>يتعين على <term refersTo="#judge">القاضي</term> تحرير محضر يبين مساعي ونتائج محاولات الصلح ، يوقعه مع كاتب الضبط والطرفين</obligation>.</p>
+              </paragraph>
+              <paragraph>
+              <p><obligation>تسجل أحكام الطلاق وجوبا في الحالة المدنية بسعي من النيابة العامة</obligation>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_50">
+              <num>50</num>
+              <content>
+              <paragraph>
+              <p>من راجع زوجته أثناء محاولة الصلح لا يحتاج إلى عقد جديد ومن راجعها بعد صدور الحكم بالطلاق يحتاج إلى عقد جديد.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_51">
+              <num>51</num>
+              <content>
+              <paragraph>
+              <p><condition>لا يمكن أن يراجع الرجل من طلقها ثلاث مرات متتالية إلا بعد أن تتزوج غيره وتطلق منه أو يموت عنها بعد البناء</condition>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_52" status="modified">
+              <num>52</num>
+              <content>
+              <paragraph>
+              <p><condition>إذا تبين للقاضي تعسف الزوج في الطلاق</condition> <obligation>حكم للمطلقة بالتعويض عن الضرر اللاحق بها</obligation>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_53" status="modified">
+              <num>53</num>
+              <content>
+              <paragraph>
+              <p><right>يجوز للزوجة أن تطلب التطليق للأسباب الآتية</right> :</p>
+              <list>
+              <point><p>عدم الإنفاق بعد صدور الحكم بوجوبه ما لم تكن عالمة بإعساره وقت الزواج، مع مراعاة <ref href="#art_78">المواد 78</ref> و<ref href="#art_79">79</ref> و<ref href="#art_80">80</ref> من هذا القانون،</p></point>
+              <point><p>العيوب التي تحول دون تحقيق الهدف من الزواج،</p></point>
+              <point><p>الهجر في المضجع فوق أربعة أشهر،</p></point>
+              <point><p>الحكم على الزوج عن جريمة فيها مساس بشرف الأسرة وتستحيل معها مواصلة العشرة والحياة الزوجية،</p></point>
+              <point><p>الغيبة بعد مرور سنة بدون عذر ولا نفقة،</p></point>
+              <point><p>مخالفة الأحكام الواردة في <ref href="#art_8">المادة 8</ref> أعلاه،</p></point>
+              <point><p>ارتكاب فاحشة مبينة،</p></point>
+              <point><p>الشقاق المستمر بين الزوجين،</p></point>
+              <point><p>مخالفة الشروط المتفق عليها في عقد الزواج،</p></point>
+              <point><p>كل ضرر معتبر شرعا.</p></point>
+              </list>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_53_bis" status="new">
+              <num>53 مكرر</num>
+              <content>
+              <paragraph>
+              <p>يجوز للقاضي في حالة الحكم بالتطليق أن يحكم للمطلقة بالتعويض عن الضرر اللاحق بها.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_54" status="modified">
+              <num>54</num>
+              <content>
+              <paragraph>
+              <p><right>يجوز للزوجة دون موافقة الزوج أن تخالع نفسها بمقابل مالي</right>.</p>
+              </paragraph>
+              <paragraph>
+              <p><condition>إذا لم يتفق الزوجان على المقابل المالي للخلع</condition>، <obligation>يحكم القاضي بما لا يتجاوز قيمة صداق المثل وقت صدور الحكم</obligation>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_55">
+              <num>55</num>
+              <content>
+              <paragraph>
+              <p><condition>عند نشوز أحد الزوجين</condition> <obligation>يحكم القاضي بالطلاق وبالتعويض للطرف المتضرر</obligation>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_56">
+              <num>56</num>
+              <content>
+              <paragraph>
+              <p><condition>إذا اشتد الخصام بين الزوجين ولم يثبت الضرر</condition> <obligation>وجب تعيين حكمين للتوفيق بينهما</obligation>.</p>
+              </paragraph>
+              <paragraph>
+              <p><obligation>يعين القاضي الحكمين، حكما من أهل الزوج وحكما من أهل الزوجة، وعلى هذين الحكمين أن يقدما تقريرا عن مهمتهما في أجل شهرين</obligation>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_57" status="modified">
+              <num>57</num>
+              <content>
+              <paragraph>
+              <p>تكون الأحكام الصادرة في دعاوى الطلاق والتطليق والخلع غير قابلة للاستئناف فيما عدا جوانبها المادية.</p>
+              </paragraph>
+              <paragraph>
+              <p>تكون الأحكام المتعلقة بالحضانة قابلة للاستئناف.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_57_bis" status="new">
+              <num>57 مكرر</num>
+              <content>
+              <paragraph>
+              <p>يجوز للقاضي الفصل على وجه الاستعجال بموجب أمر على عريضة في جميع التدابير المؤقتة ولا سيما ما تعلق منها بالنفقة والحضانة والزيارة والمسكن.</p>
+              </paragraph>
+              </content>
+              </article>
+          </section>
+          <section eId="book_1_chp_2_sec_2">
+            <num>الثاني</num>
+            <heading>آثار الطلاق</heading>
+            <article eId="art_58">
+              <num>المادة 58</num>
+              <content>
+              <paragraph>
+              <p><obligation>تعتد المطلقة المدخول بها غير الحامل بثلاثة قروء، واليائس من المحيض بثلاثة أشهر من تاريخ التصريح بالطلاق</obligation>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_59">
+              <num>المادة 59</num>
+              <content>
+              <paragraph>
+              <p><obligation>تعتد المتوفى عنها زوجها بمضي أربعة أشهر وعشرة أيام، وكذا زوجة المفقود من تاريخ صدور الحكم</obligation>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_60">
+              <num>المادة 60</num>
+              <content>
+              <paragraph>
+              <p><obligation>عدة الحامل وضع حملها</obligation>، وأقصى مدة الحمل عشرة (10) أشهر من تاريخ الطلاق أو الوفاة.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_61">
+              <num>المادة 61</num>
+              <content>
+              <paragraph>
+              <p><obligation>لا تخرج الزوجة المطلقة ولا المتوفى عنها زوجها من السكن العائلي ما دامت في عدة طلاقها أو وفاة زوجها</obligation> <condition>إلا في حالة الفاحشة المبينة</condition> <right>ولها الحق في النفقة في عدة الطلاق</right>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_62">
+              <num>المادة 62</num>
+              <content>
+              <paragraph>
+              <p><def refersTo="#custody">الحضانة هي رعاية الولد وتعليمه والقيام بتربيته على دين أبيه والسهر على حمايته وحفظه صحة وخلقا</def>.</p>
+              </paragraph>
+              <paragraph>
+              <p><condition>ويشترط في الحاضن أن يكون أهلا للقيام بذلك</condition>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_63" status="repealed">
+              <num>المادة 63</num>
+              <content>
+              <paragraph>
+              <p></p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_64" status="modified">
+              <num>المادة 64</num>
+              <content>
+              <paragraph>
+              <p><term refersTo="#mother">الأم</term> أولى بحضانة ولدها، ثم <term refersTo="#father">الأب</term>، ثم الجدة لأم، ثم الجدة لأب، ثم الخالة، ثم العمة، ثم الأقربون درجة مع مراعاة مصلحة المحضون في كل ذلك، و<obligation>على القاضي عندما يحكم بإسناد الحضانة أن يحكم بحق الزيارة</obligation>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_65">
+              <num>المادة 65</num>
+              <content>
+              <paragraph>
+              <p>تنقضي مدة حضانة الذكر ببلوغه (10) سنوات، والأنثى ببلوغها سن الزواج، و<condition>للقاضي أن يمدد الحضانة بالنسبة للذكر إلى (16) سنة إذا كانت الحاضنة أما لم تتزوج ثانية</condition>.</p>
+              </paragraph>
+              <paragraph>
+              <p><obligation>على أن يراعى في الحكم بانتهائها مصلحة المحضون</obligation>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_66">
+              <num>المادة 66</num>
+              <content>
+              <paragraph>
+              <p>يسقط حق الحاضنة بالتزوج بغير قريب محرم، وبالتنازل <condition>ما لم يضر بمصلحة المحضون</condition>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_67" status="modified">
+              <num>المادة 67</num>
+              <content>
+              <paragraph>
+              <p>تسقط الحضانة باختلال أحد الشروط المنصوص عليها في <ref href="#art_62">المادة 62</ref> أعلاه.</p>
+              </paragraph>
+              <paragraph>
+              <p>ولا يمكن لعمل المرأة أن يشكل سببا من أسباب سقوط الحق عنها في ممارسة الحضانة.</p>
+              </paragraph>
+              <paragraph>
+              <p><obligation>غير أنه يجب في جميع الحالات مراعاة مصلحة المحضون</obligation>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_68">
+              <num>المادة 68</num>
+              <content>
+              <paragraph>
+              <p><condition>إذا لم يطلب من له الحق في الحضانة مدة تزيد عن سنة بدون عذر</condition> سقط حقه فيها.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_69">
+              <num>المادة 69</num>
+              <content>
+              <paragraph>
+              <p><condition>إذا أراد الشخص الموكول له حق الحضانة أن يستوطن في بلد أجنبي</condition> رجع الأمر للقاضي في إثبات الحضانة له أو إسقاطها عنه، مع مراعاة مصلحة المحضون.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_70">
+              <num>المادة 70</num>
+              <content>
+              <paragraph>
+              <p>تسقط حضانة الجدة أو الخالة <condition>إذا سكنت بمحضونها مع أم المحضون المتزوجة بغير قريب</condition>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_71">
+              <num>المادة 71</num>
+              <content>
+              <paragraph>
+              <p>يعود الحق في الحضانة <condition>إذا زال سبب سقوطه غير الاختياري</condition>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_72" status="modified">
+              <num>المادة 72</num>
+              <content>
+              <paragraph>
+              <p><condition>في حالة الطلاق</condition>، <obligation>يجب على الأب أن يوفر ، لممارسة الحضانة، سكنا ملائما للحاضنة</obligation>، و<condition>إن تعذر ذلك فعليه دفع بدل الإيجار</condition>.</p>
+              </paragraph>
+              <paragraph>
+              <p><right>وتبقى الحاضنة في بيت الزوجية حتى تنفيذ الأب للحكم القضائي المتعلق بالسكن</right>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_73">
+              <num>73</num>
+              <content>
+              <paragraph>
+              <p><condition>إذا وقع النزاع بين الزوجين أو ورثتهما في متاع البيت وليس لأحدهما بينة</condition> فالقول للزوجة أو ورثتها مع اليمين في المعتاد للنساء والقول للزوج أو ورثته مع اليمين في المعتاد للرجال.</p>
+              </paragraph>
+              <paragraph>
+              <p>والمشتركات بينهما يتقسمانها مع اليمين.</p>
+              </paragraph>
+              </content>
+              </article>
+          </section>
+          <section eId="book_1_chp_2_sec_3">
+            <num>الثالث</num>
+            <heading>النفقة</heading>
+            <article eId="art_74">
+              <num>74</num>
+              <content>
+              <paragraph>
+              <p><obligation>تجب <term refersTo="#maintenance">نفقة الزوجة</term> على زوجها</obligation> <condition>بالدخول بها أو دعوتها إليه ببينة</condition> مع مراعاة أحكام <ref href="#art_78">المواد 78</ref> و<ref href="#art_79">79</ref> و<ref href="#art_80">80</ref> من هذا القانون.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_75">
+              <num>75</num>
+              <content>
+              <paragraph>
+              <p><obligation>تجب <term refersTo="#maintenance">نفقة الولد</term> على الأب</obligation> <condition>ما لم يكن له مال</condition>، فبالنسبة للذكور إلى سن الرشد والإناث إلى الدخول وتستمر في حالة ما إذا كان الولد عاجزا لآفة عقلية أو بدنية أو مزاولا للدراسة وتسقط بالاستغناء عنها بالكسب.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_76">
+              <num>76</num>
+              <content>
+              <paragraph>
+              <p><condition>في حالة عجز الأب</condition> <obligation>تجب <term refersTo="#maintenance">نفقة الأولاد</term> على الأم</obligation> <condition>إذا كانت قادرة على ذلك</condition>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_77">
+              <num>77</num>
+              <content>
+              <paragraph>
+              <p><obligation>تجب <term refersTo="#maintenance">نفقة الأصول</term> على الفروع والفروع على الأصول</obligation> حسب القدرة والاحتياج ودرجة القرابة في الإرث.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_78">
+              <num>78</num>
+              <content>
+              <paragraph>
+              <p><def refersTo="#maintenance">تشمل <term refersTo="#maintenance">النفقة</term> : الغذاء والكسوة والعلاج، والسكن أو أجرته، وما يعتبر من الضروريات في العرف والعادة.</def></p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_79">
+              <num>79</num>
+              <content>
+              <paragraph>
+              <p><obligation>يراعي القاضي في تقدير <term refersTo="#maintenance">النفقة</term> حال الطرفين وظروف المعاش</obligation> ولا يراجع تقديره قبل مضى سنة من الحكم.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_80">
+              <num>80</num>
+              <content>
+              <paragraph>
+              <p><right>تستحق <term refersTo="#maintenance">النفقة</term> من تاريخ رفع الدعوى</right> وللقاضي أن يحكم باستحقاقها بناء على بينة لمدة لا تتجاوز سنة قبل رفع الدعوى.</p>
+              </paragraph>
+              </content>
+              </article>
+          </section>
+        </chapter>
+      </book>
+      <book eId="book_2">
+        <num>الثاني</num>
+        <heading>النيابة الشرعية</heading>
+        <section eId="book_2_sec_1">
+          <num>الأول</num>
+          <heading>أحكام عامة</heading>
+          <article eId="art_81">
+            <num>81</num>
+            <content>
+            <paragraph>
+            <p><condition>من كان فاقد الأهلية أو ناقصها لصغر السن، أو جنون، أو عته، أو سفه</condition>، <obligation>ينوب عنه قانونا ولي أو وصي أو مقدم طبقا لأحكام هذا القانون</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_82">
+            <num>82</num>
+            <content>
+            <paragraph>
+            <p><condition>من لم يبلغ سن التمييز لصغر سنه طبقا ل<ref href="/akn/dz/act/law/1975-09-26/75-58#art_42">المادة (42) من القانون المدني</ref></condition> <obligation>تعتبر جميع تصرفاته باطلة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_83">
+            <num>83</num>
+            <content>
+            <paragraph>
+            <p><condition>من بلغ سن التمييز ولم يبلغ سن الرشد طبقا ل<ref href="/akn/dz/act/law/1975-09-26/75-58#art_43">المادة (43) من القانون المدني</ref></condition> تكون تصرفاته نافذة <condition>إذا كانت نافعة له</condition>، وباطلة <condition>إذا كانت ضارة به</condition> وتتوقف على إجازة الولي أو الوصي <condition>فيما إذا كانت مترددة بين النفع والضرر</condition>، وفي حالة النزاع يرفع الأمر للقضاء.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_84">
+            <num>84</num>
+            <content>
+            <paragraph>
+            <p><right>للقاضي أن يأذن لمن يبلغ سن التمييز في التصرف جزئيا أو كليا في أمواله</right>، <condition>بناء على طلب من له مصلحة</condition>، وله الرجوع في الإذن <condition>إذا ثبت لديه ما يبرر ذلك</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_85">
+            <num>85</num>
+            <content>
+            <paragraph>
+            <p>تعتبر تصرفات المجنون والمعتوه والسفيه غير نافذة <condition>إذا صدرت في حالة الجنون، أو العته، أو السفه</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_86">
+            <num>86</num>
+            <content>
+            <paragraph>
+            <p><condition>من بلغ سن الرشد ولم يحجر عليه</condition> <def refersTo="#full_capacity">يعتبر كامل الأهلية</def> وفقا لأحكام <ref href="/akn/dz/act/law/1975-09-26/75-58#art_40">المادة 40 من القانون المدني</ref>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="book_2_sec_2">
+          <num>الثاني</num>
+          <heading>الولاية</heading>
+          <article eId="art_87" status="modified">
+            <num>87</num>
+            <content>
+            <paragraph>
+            <p>يكون <term refersTo="#father">الأب</term> وليا على أولاده القصر، وبعد وفاته تحل <term refersTo="#mother">الأم</term> محله قانونا.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وفي حالة غياب الأب أو حصول مانع له</condition>، <obligation>تحل الأم محله في القيام بالأمور المستعجلة المتعلقة بالأولاد</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وفي حالة الطلاق</condition>، <obligation>يمنح القاضي الولاية لمن أسندت له حضانة الأولاد</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_88">
+            <num>88</num>
+            <content>
+            <paragraph>
+            <p><obligation>على الولي أن يتصرف في أموال القاصر تصرف الرجل الحريص ويكون مسؤولا طبقا لمقتضيات القانون العام</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>وعليه أن يستأذن القاضي في التصرفات التالية</obligation>:</p>
+            <list>
+            <point>
+            <p>بيع العقار، وقسمته، ورهنه، وإجراء المصالحة،</p>
+            </point>
+            <point>
+            <p>بيع المنقولات ذات الأهمية الخاصة،</p>
+            </point>
+            <point>
+            <p>استثمار أموال القاصر بالإقراض، أو الاقتراض أو المساهمة في شركة،</p>
+            </point>
+            <point>
+            <p>إيجار عقار القاصر لمدة تزيد على ثلاث سنوات أو تمتد لأكثر من سنة بعد بلوغه سن الرشد.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_89">
+            <num>89</num>
+            <content>
+            <paragraph>
+            <p><obligation>على القاضي أن يراعي في الإذن : حالة الضرورة والمصلحة، وأن يتم بيع العقار بالمزاد العلني</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_90">
+            <num>90</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا تعارضت مصالح الولي ومصالح القاصر</condition> <obligation>يعين القاضي متصرفا خاصا تلقائيا أو بناء على طلب من له مصلحة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_91">
+            <num>91</num>
+            <content>
+            <paragraph>
+            <p>تنتهي وظيفة الولي :</p>
+            <list>
+            <point>
+            <p>بعجزه،</p>
+            </point>
+            <point>
+            <p>بموته،</p>
+            </point>
+            <point>
+            <p>بالحجر عليه،</p>
+            </point>
+            <point>
+            <p>بإسقاط الولاية عنه.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="book_2_sec_3">
+          <num>الثالث</num>
+          <heading>الوصاية</heading>
+          <article eId="art_92">
+            <num>92</num>
+            <content>
+            <paragraph>
+            <p><right>يجوز للأب أو الجد تعيين <term refersTo="#guardian">وصي</term> للولد القاصر</right> <condition>إذا لم تكن له أم تتولى أموره أو تثبت عدم أهليتها لذلك بالطرق القانونية</condition> وإذا تعدد الأوصياء فللقاضي اختيار الأصلح منهم مع مراعاة أحكام <ref href="#art_86">المادة (86)</ref> من هذا القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_93">
+            <num>93</num>
+            <content>
+            <paragraph>
+            <p><condition>يشترط في <term refersTo="#guardian">الوصي</term> أن يكون مسلما عاقلا بالغا قادرا أمينا حسن التصرف</condition> وللقاضي عزله إذا لم تتوفر فيه الشروط المذكورة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_94">
+            <num>94</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب عرض الوصاية على القاضي بمجرد وفاة الأب لتثبيتها أو رفضها</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_95">
+            <num>95</num>
+            <content>
+            <paragraph>
+            <p>للـ <term refersTo="#guardian">وصي</term> نفس سلطة الولي في التصرف وفقا لأحكام المواد <ref href="#art_88">88</ref> و <ref href="#art_89">89</ref> و <ref href="#art_90">90</ref> من هذا القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_96">
+            <num>96</num>
+            <content>
+            <paragraph>
+            <p>تنتهي مهمة <term refersTo="#guardian">الوصي</term>:</p>
+            <list>
+            <point>
+            <p>1 - بموت القاصر، أو زوال أهلية الوصي أو موته،</p>
+            </point>
+            <point>
+            <p>2 - ببلوغ القاصر سن الرشد ما لم يصدر حكم من القضاء بالحجر عليه،</p>
+            </point>
+            <point>
+            <p>3 - بانتهاء المهام التي أقيم الوصي من أجلها،</p>
+            </point>
+            <point>
+            <p>4 - بقبول عذره في التخلي عن مهمته،</p>
+            </point>
+            <point>
+            <p>5 - بعزله بناء على طلب من له مصلحة إذا ثبت من تصرفات الوصي ما يهدد مصلحة القاصر.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_97">
+            <num>97</num>
+            <content>
+            <paragraph>
+            <p><obligation>على الوصي الذي انتهت مهمته أن يسلم الأموال التي في عهدته ويقدم عنها حسابا بالمستندات إلى من يخلفه أو إلى القاصر الذي رشد أو إلى ورثته في مدة لا تتجاوز شهرين من تاريخ انتهاء مهمته</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>وأن يقدم صورة عن الحساب المذكور إلى القضاء</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وفي حالة وفاة الوصي أو فقده</condition> <obligation>فعلى ورثته تسليم أموال القاصر بواسطة القضاء إلى المعني بالأمر</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_98">
+            <num>98</num>
+            <content>
+            <paragraph>
+            <p><obligation>يكون الوصي مسؤولا عما يلحق أموال القاصر من ضرر بسبب تقصيره</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="book_2_sec_4">
+          <num>الرابع</num>
+          <heading>التقديم</heading>
+          <article eId="art_99">
+            <num>المادة 99</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#مقدم">المقدم هو من تعينه المحكمة في حالة عدم وجود ولي أوصي على من كان فاقد الأهلية أو ناقصها</def> بناء على طلب أحد أقاربه، أو ممن له مصلحة أو من <term refersTo="#النيابة_العامة">النيابة العامة</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_100">
+            <num>المادة 100</num>
+            <content>
+            <paragraph>
+            <p><obligation>يقوم <term refersTo="#مقدم">المقدم</term> مقام <term refersTo="#وصي">الوصي</term> ويخضع لنفس الأحكام</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="book_2_sec_5">
+          <num>الخامس</num>
+          <heading>الحجر</heading>
+          <article eId="art_101">
+            <num>101</num>
+            <content>
+            <paragraph>
+            <p><condition>من بلغ سن الرشد وهو مجنون، أو معتوه، أو سفيه، أو طرأت عليه إحدى الحالات المذكورة بعد رشده</condition> <obligation>يحجر عليه</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_102">
+            <num>102</num>
+            <content>
+            <paragraph>
+            <p>يكون الحجر بناء على طلب أحد الأقارب أو ممن له مصلحة ، أو من <term refersTo="#prosecution">النيابة العامة</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_103">
+            <num>103</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب أن يكون الحجر بحكم</obligation> وللقاضي أن يستعين بأهل الخبرة في إثبات أسباب الحجر.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_104">
+            <num>104</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا لم يكن للمحجور عليه ولي، أو وصي</condition> <obligation>وجب على القاضي أن يعين في نفس الحكم مقدما لرعاية المحجور عليه والقيام بشؤونه</obligation> مع مراعاة أحكام <ref href="#art_100">المادة 100</ref> من هذا القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_105">
+            <num>105</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب أن يمكن الشخص الذي يراد التحجير عليه من الدفاع عن حقوقه</obligation> وللمحكمة أن تعين له مساعدا إذا رأت في ذلك مصلحة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_106">
+            <num>106</num>
+            <content>
+            <paragraph>
+            <p>الحكم بالحجر قابل لكل طرق الطعن و<obligation>يجب نشره للإعلام</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_107">
+            <num>107</num>
+            <content>
+            <paragraph>
+            <p>تعتبر تصرفات المحجور عليه بعد الحكم باطلة، وقبل الحكم <condition>إذا كانت أسباب الحجر ظاهرة وفاشية وقت صدورها</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_108">
+            <num>108</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن رفع الحجر إذا زالت أسبابه</right> بناء على طلب المحجور عليه.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="book_2_sec_6">
+          <num>السادس</num>
+          <heading>المفقود والغائب</heading>
+          <article eId="art_109">
+            <num>109</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#missing_person">المفقود هو الشخص الغائب الذي لا يعرف مكانه ولا يعرف حياته أو موته</def> و<condition>لا يعتبر مفقودا إلا بحكم</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_110">
+            <num>110</num>
+            <content>
+            <paragraph>
+            <p><condition>الغائب الذي منعته ظروف قاهرة من الرجوع إلى محل إقامته أو إدارة شؤونه بنفسه أو بواسطة مدة سنة وتسبب غيابه في ضرر الغير</condition> يعتبر كالمفقود.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_111">
+            <num>111</num>
+            <content>
+            <paragraph>
+            <p><obligation>على القاضي عندما يحكم بالفقيد أن يحصر أموال المفقود وأن يعين في حكمه مقدما من الأقارب أو غيرهم لتسيير أموال المفقود ويتسلم ما استحقه من ميراث أو تبرع</obligation> مع مراعاة أحكام <ref href="#art_99">المادة (99)</ref> من هذا القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_112">
+            <num>112</num>
+            <content>
+            <paragraph>
+            <p><right>لزوجة المفقود أو الغائب أن تطلب الطلاق</right> بناء على الفقرة الخامسة من <ref href="#art_53">المادة 53</ref> من هذا القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_113">
+            <num>113</num>
+            <content>
+            <paragraph>
+            <p><condition>يجوز الحكم بموت المفقود في الحروب والحالات الاستثنائية بمضي أربع سنوات بعد التحري</condition>، وفي الحالات التي تغلب فيها السلامة يفوض الأمر إلى القاضي في تقدير المدة المناسبة بعد مضي أربع سنوات.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_114">
+            <num>114</num>
+            <content>
+            <paragraph>
+            <p>يصدر الحكم بفقدان أو موت المفقود بناء على طلب أحد الورثة أو من له مصلحة أو <term refersTo="#prosecution">النيابة العامة</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_115">
+            <num>115</num>
+            <content>
+            <paragraph>
+            <p><obligation>لا يورث المفقود ولا تقسم أمواله إلا بعد صدور الحكم بموته</obligation>، و<right>في حالة رجوعه أو ظهوره حيا يسترجع ما بقى عينا من أمواله أو قيمة ما بيع منها</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="book_2_sec_7">
+          <num>السابع</num>
+          <heading>الكفالة</heading>
+          <article eId="art_116">
+            <num>116</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#kafala">المادة 116 : الكفالة التزام على وجه التبرع بالقيام بولد قاصر من نفقة وتربية ورعاية قيام الأب بابنه وتتم بعقد شرعي.</def></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_117">
+            <num>117</num>
+            <content>
+            <paragraph>
+            <p><obligation>المادة 117 : يجب أن تكون <term refersTo="#kafala">الكفالة</term> أمام المحكمة أو أمام الموثق وأن تتم برضا من له أبوان.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_118">
+            <num>118</num>
+            <content>
+            <paragraph>
+            <p><condition>المادة 118 : يشترط أن يكون الكافل مسلما، عاقلا أهلا للقيام بشؤون المكفول وقادرا على رعايته.</condition></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_119">
+            <num>119</num>
+            <content>
+            <paragraph>
+            <p>المادة 119 : الولد المكفول إما أن يكون مجهول النسب أو معلوم النسب.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_120">
+            <num>120</num>
+            <content>
+            <paragraph>
+            <p><obligation>المادة 120 : يجب أن يحتفظ الولد المكفول بنسبه الأصلي إن كان معلوم النسب</obligation> <condition>وإن كان مجهول النسب تطبق عليه <ref href="/akn/dz/act/law/1970-02-19/70-20#art_64">المادة 64 من قانون الحالة المدنية</ref>.</condition></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_121">
+            <num>121</num>
+            <content>
+            <paragraph>
+            <p><right>المادة 121 : تخول الكفالة الكافل الولاية القانونية وجميع المنح العائلية والدراسية التي يتمتع بها الولد الأصلي.</right></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_122">
+            <num>122</num>
+            <content>
+            <paragraph>
+            <p><obligation>المادة 122 : يدير الكافل أموال الولد المكفول المكتسبة من الإرث والوصية، أو الهبة لصالح الولد المكفول.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_123">
+            <num>123</num>
+            <content>
+            <paragraph>
+            <p><right>المادة 123 : يجوز للكافل أن يوصي أو يتبرع للمكفول بماله في حدود الثلث</right>، <condition>وإن أوصى أو تبرع بأكثر من ذلك، بطل ما زاد على الثلث إلا إذا أجازه الورثة.</condition></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_124">
+            <num>124</num>
+            <content>
+            <paragraph>
+            <p><condition>المادة 124 : إذا طلب الأبوان أو أحدهما عودة الولد المكفول إلى ولايتهما يخير الولد في الالتحاق بهما إذا بلغ سن التمييز</condition> <condition>وإن لم يكن مميزا لا يسلم إلا بإذن من القاضي مع مراعاة مصلحة المكفول.</condition></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_125">
+            <num>125</num>
+            <content>
+            <paragraph>
+            <p><obligation>المادة 125 : التخلي عن الكفالة يتم أمام الجهة التي أقرت الكفالة ، وأن يكون بعلم النيابة العامة</obligation> <condition>وفي حالة الوفاة تنتقل الكفالة إلى الورثة إن التزموا بذلك</condition> وإلا فعلى القاضي أن يسند أمر القاصر إلى الجهة المختصة بالرعاية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_126">
+            <num>126</num>
+            <content>
+            <paragraph>
+            <p>المادة 126 : أسباب الإرث : القرابة، والزوجية.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </book>
+      <book eId="book_3">
+        <num>الثالث</num>
+        <heading>الميراث</heading>
+        <section eId="book_3_sec_1">
+          <num>الأول</num>
+          <heading>أحكام عامة</heading>
+          <article eId="art_127">
+            <num>127</num>
+            <content>
+            <paragraph>
+            <p><right>يستحق الإرث</right> بموت <term refersTo="#deceased">المورث</term> حقيقة أو باعتباره ميتا بحكم القاضي.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_128">
+            <num>128</num>
+            <content>
+            <paragraph>
+            <p><condition>يشترط لاستحقاق الإرث أن يكون الوارث حيا أو حملا وقت افتتاح التركة</condition>، مع ثبوت سبب الإرث وعدم وجود مانع من الإرث.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_129">
+            <num>129</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا توفى اثنان أو أكثر ولم يعلم أيهم هلك أولا</condition> فلا استحقاق لأحدهم في تركة الآخر سواء كان موتهم في حادث واحد أم لا.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_130">
+            <num>130</num>
+            <content>
+            <paragraph>
+            <p>يوجب النكاح التوارث بين الزوجين ولو لم يقع بناء.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_131">
+            <num>131</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا ثبت بطلان النكاح</condition> فلا توارث بين الزوجين.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_132">
+            <num>132</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا توفي أحد الزوجين قبل صدور الحكم بالطلاق أو كانت الوفاة في عدة الطلاق</condition>، <right>استحق الحي منهما الإرث</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_133">
+            <num>133</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا كان الوارث مفقودا ولم يحكم بموته</condition> يعتبر حيا وفقا لأحكام <ref href="#art_113">المادة 113</ref> من هذا القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_134">
+            <num>134</num>
+            <content>
+            <paragraph>
+            <p>لا يرث الحمل <condition>إلا إذا ولد حيا</condition> ، ويعتبر حيا <condition>إذا استهل صارخا أو بدت منه علامة ظاهرة بالحياة</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_135">
+            <num>135</num>
+            <content>
+            <paragraph>
+            <p><obligation>يمنع من الميراث الأشخاص الآتية أوصافهم</obligation> :</p>
+            <list>
+            <point>
+            <p>1- قاتل المورث عمدا أو عدوانا سواء كان القاتل فاعلا أصليا أو شريكا،</p>
+            </point>
+            <point>
+            <p>2- شاهد الزور الذي أدت شهادته إلى الحكم بالإعدام وتنفيذه،</p>
+            </point>
+            <point>
+            <p>3- العالم بالقتل أو تدبيره إذا لم يخبر السلطات المعنية.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_136">
+            <num>136</num>
+            <content>
+            <paragraph>
+            <p>الممنوع من الإرث للأسباب المذكورة أعلاه لا يحجب غيره.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_137">
+            <num>137</num>
+            <content>
+            <paragraph>
+            <p><right>يرث القاتل خطأ من المال</right> دون الدية أو التعويض.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_138">
+            <num>138</num>
+            <content>
+            <paragraph>
+            <p><obligation>يمنع من الإرث اللعان والردة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="book_3_sec_2">
+          <num>الثاني</num>
+          <heading>أصناف الورثة</heading>
+          <article eId="art_139">
+            <num>المادة 139</num>
+            <content>
+            <paragraph>
+            <p>ينقسم <term refersTo="#heirs">الورثة</term> إلى:</p>
+            <list>
+            <point>
+            <p>1- أصحاب فروض،</p>
+            </point>
+            <point>
+            <p>2- عصبة،</p>
+            </point>
+            <point>
+            <p>3- ذوي الأرحام.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_140">
+            <num>المادة 140</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#fard_heirs">ذوو الفروض هم الذين حددت أسهمهم في التركة شرعا.</def></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_141">
+            <num>المادة 141</num>
+            <content>
+            <paragraph>
+            <p><right>يرث من الرجال الأب والجد للأب، وإن علا، والزوج، والأخ للأم، والأخ الشقيق، في المسألة العمرية.</right></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_142">
+            <num>المادة 142</num>
+            <content>
+            <paragraph>
+            <p><right>يرث من النساء البنت وبنت الابن، وإن نزل، والأم والزوجة، والجدة من الجهتين وإن علت، والأخت الشقيقة، والأخت لأب، والأخت لأم.</right></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_143">
+            <num>المادة 143</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#fard">الفروض المحددة</term> ستة وهي : النصف، والربع، والثمن، والثلثان، والثلث، والسدس.</p>
+            </paragraph>
+            <paragraph>
+            <p>أصحاب النصف</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_144">
+            <num>المادة 144</num>
+            <content>
+            <paragraph>
+            <p>أصحاب النصف خمسة وهم :</p>
+            <list>
+            <point>
+            <p>1- الزوج و<right>يستحق النصف من تركة زوجته</right> <condition>بشرط عدم وجود الفرع الوارث لها</condition>،</p>
+            </point>
+            <point>
+            <p>2- البنت <condition>بشرط إنفرادها عن ولد الصلب ذكرا كان أو أنثى</condition>،</p>
+            </point>
+            <point>
+            <p>3- بنت الابن <condition>بشرط إنفرادها عن ولد الصلب ذكرا كان أو أنثى وولد الابن في درجتها</condition>،</p>
+            </point>
+            <point>
+            <p>4- الأخت الشقيقة <condition>بشرط إنفرادها، وعدم وجود الشقيق والأب، وولد الصلب، وولد الابن ذكرا أو أنثى، وعدم وجود الجد الذي يعصبها</condition>،</p>
+            </point>
+            <point>
+            <p>5- الأخت لأب <condition>بشرط انفرادها وعدم وجود الأخ والأخت لأب، وعدم وجود من ذكر في الشقيقة</condition>.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>أصحاب الربع</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_145">
+            <num>المادة 145</num>
+            <content>
+            <paragraph>
+            <p>أصحاب الربع اثنان وهما :</p>
+            <list>
+            <point>
+            <p>1- الزوج <condition>عند وجود الفرع الوارث لزوجته</condition>،</p>
+            </point>
+            <point>
+            <p>2- الزوجة أو الزوجات <condition>بشرط عدم وجود الفرع الوارث للزوج</condition>.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_146">
+            <num>المادة 146</num>
+            <content>
+            <paragraph>
+            <p>وارث الثمن</p>
+            </paragraph>
+            <paragraph>
+            <p>أصحاب الثمن</p>
+            </paragraph>
+            <paragraph>
+            <p>الزوجة أو الزوجات <condition>عند وجود الفرع الوارث للزوج</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p>أصحاب الثلثين</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_147">
+            <num>المادة 147</num>
+            <content>
+            <paragraph>
+            <p>أصحاب الثلثين أربعة وهن :</p>
+            <list>
+            <point>
+            <p>1- بنتان فأكثر <condition>بشرط عدم وجود الابن</condition>،</p>
+            </point>
+            <point>
+            <p>2- بنتا الابن فأكثر <condition>بشرط عدم وجود ولد الصلب، وابن الابن في درجتهما</condition>،</p>
+            </point>
+            <point>
+            <p>3- الشقيقتان فأكثر <condition>بشرط عدم وجود الشقيق الذكر، أو الأب أو ولد الصلب</condition>،</p>
+            </point>
+            <point>
+            <p>4- الأختان لأب فأكثر <condition>بشرط عدم وجود الأخ لأب، ومن ذكر في الشقيقتين</condition>.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>أصحاب الثلث</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_148">
+            <num>المادة 148</num>
+            <content>
+            <paragraph>
+            <p>أصحاب الثلث ثلاثة وهم :</p>
+            <list>
+            <point>
+            <p>1- الأم <condition>بشرط عدم وجود الفرع الوارث أو عدد من الإخوة سواء كانوا أشقاء أو لأب أو لأم ولو لم يرثوا</condition>،</p>
+            </point>
+            <point>
+            <p>2- الإخوة لأم <condition>بشرط انفرادهم عن الأب، والجد للأب، وولد الصلب وولد الابن ذكرا كان أو أنثى</condition>،</p>
+            </point>
+            <point>
+            <p>3- الجد <condition>إن كان مع إخوة وكان الثلث أحضي له</condition>.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>أصحاب السدس</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_149">
+            <num>149</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#ashab_al_sudus">أصحاب السدس</def> سبعة هم :</p>
+            <list>
+            <point>
+            <p>1- <term refersTo="#father">الأب</term> <condition>بشرط وجود الولد، أو ولد الابن ذكرا كان أو أنثى</condition>،</p>
+            </point>
+            <point>
+            <p>2- <term refersTo="#mother">الأم</term> <condition>بشرط وجود فرع وارث أو عدد من الإخوة سواء كانوا وارثين أو محجوبين</condition>،</p>
+            </point>
+            <point>
+            <p>3- <term refersTo="#paternal_grandfather">الجد للأب</term> <condition>عند وجود الولد، أو ولد الابن، وعند عدم وجود الأب</condition>،</p>
+            </point>
+            <point>
+            <p>4- <term refersTo="#grandmother">الجدة</term> سواء لأب أو لأم وكانت منفردة، <condition>فان اجتمعت جدتان وكانتا في درجة واحدة قسم السدس بينهما، أو كانت التي للأم أبعد، فان كانت هي الأقرب اختصت بالسدس</condition>،</p>
+            </point>
+            <point>
+            <p>5- <term refersTo="#son_daughter">بنت الابن</term> ولو تعددت <condition>بشرط أن تكون مع بنت واحدة وأن لا يكون معها ابن ابن في درجتها</condition>،</p>
+            </point>
+            <point>
+            <p>6- <term refersTo="#paternal_sister">الأخت للأب</term> ولو تعددت <condition>بشرط أن تكون مع شقيقة واحدة، وانفرادها عن الأخ للأب، والأب والولد ذكرا كان أو أنثى</condition></p>
+            </point>
+            <point>
+            <p>7- <term refersTo="#maternal_brother">الأخ للأم</term> <condition>بشرط أن يكون منفردا ذكرا كان أو أنثى، وعدم وجود الأصل والفرع الوارث</condition>.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="book_3_sec_3">
+          <num>الثالث</num>
+          <heading>العصبة</heading>
+          <article eId="art_150">
+            <num>150</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#عاصب">العاصب هو من يستحق التركة كلها عند إنفراده، أو ما بقى منها بعد أخذ أصحاب الفروض حقوقهم،</def> وان استغرقت الفروض التركة فلا شيء له.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_151">
+            <num>151</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#عصبة">العصبة</term> ثلاثة أنواع :</p>
+            <list>
+            <point>
+            <p>1- عاصب بنفسه،</p>
+            </point>
+            <point>
+            <p>2- عاصب بغيره.</p>
+            </point>
+            <point>
+            <p>3- عاصب غيره.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>العاصب بنفسه</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_152">
+            <num>152</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#عاصب_بنفسه">العاصب بنفسه هو كل ذكر ينتمي إلى الهالك، بواسطة ذكر.</def></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_153">
+            <num>153</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#عصبة_بالنفس">العصبة بالنفس</term> أربع جهات يقدم بعضها على بعض عند الاجتماع حسب الترتيب الآتي:</p>
+            <list>
+            <point>
+            <p>1- جهة البنوة وتشمل الابن وابن الابن مهما نزلت درجته،</p>
+            </point>
+            <point>
+            <p>2- جهة الأبوة وتشمل الأب، والجد الصحيح مهما علا . مع مر اعاة أحوال الجد،</p>
+            </point>
+            <point>
+            <p>3- جهة الأخوة وتشمل الإخوة الأشقاء أو لأب وأبناءهم مهما نزلوا،</p>
+            </point>
+            <point>
+            <p>4- جهة العمومة وتشمل أعمام الميت، وأعمام أبيه، وأعمام جده مهما علا، وأبناءهم مهما نزلوا.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_154">
+            <num>154</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا كان الموجود من العصبة أكثر من واحد واتحدوا في الجهة</condition> كان الترجيح بينهم بالدرجة فيقدم أقربهم درجة إلى الميت، و<condition>إذا اتحدوا في الجهة والدرجة</condition> كان الترجيح بقوة القرابة فمن كان ذا قرابتين قدم على من كان ذا قرابة واحدة، و<condition>إذا اتحدوا في الجهة والدرجة والقرابة</condition> ورثوا بالتعصيب واشتركوا في المال بالسوية.</p>
+            </paragraph>
+            <paragraph>
+            <p>العاصب بغيره</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_155">
+            <num>155</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#عاصب_بغيره">العاصب بغيره هو كل أنثى عصبها ذكر</def> وهي :</p>
+            <list>
+            <point>
+            <p>1- البنت مع أخيها،</p>
+            </point>
+            <point>
+            <p>2- بنت الابن مع أخيها، أو ابن عمها المساوي لها في الدرجة أو ابن ابن عمها الأسفل درجة <condition>بشرط أن لا ترث بالفرض</condition>،</p>
+            </point>
+            <point>
+            <p>3- الأخت الشقيقة مع أخيها الشقيق،</p>
+            </point>
+            <point>
+            <p>4- الأخت لأب مع أخيها لأب.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>وفي كل هذه الأحوال، يكون الإرث للذكر مثل حظ الأنثيين.</p>
+            </paragraph>
+            <paragraph>
+            <p>العاصب مع غيره</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_156">
+            <num>156</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#عاصب_مع_غيره">العاصب مع غيره</term> : الأخت الشقيقة، أو لأب وإن تعددت <condition>عند وجود واحدة فأكثر من بنات الصلب، أو بنات الابن بشرط عدم وجود الأخ المساوي لها في الدرجة، أو الجد</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_157">
+            <num>157</num>
+            <content>
+            <paragraph>
+            <p>لا تكون الأخت لأب عاصبة إلا <condition>عند عدم وجود أخت شقيقة</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="book_3_sec_4">
+          <num>الرابع</num>
+          <heading>أحوال الجد</heading>
+          <article eId="art_158">
+            <num>158</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا اجتمع <term refersTo="#grandfather">الجد العاصب</term> مع <term refersTo="#full_siblings">الإخوة الأشقاء</term>، أو مع <term refersTo="#paternal_siblings">الإخوة للأب</term> ذكورا أو إناثا أو مختلطين</condition> فله <right>الأفضل من جميع ثلث المال أو المقاسمة</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وإذا اجتمع مع <term refersTo="#siblings">الإخوة</term> و<term refersTo="#fard_heirs">ذوي الفروض</term></condition> فله <right>الأفضل من</right> :</p>
+            <list>
+            <point>
+            <p>سدس جميع المال،</p>
+            </point>
+            <point>
+            <p>أو ثلث ما بقى بعد <term refersTo="#fard_heirs">ذوي الفروض</term>،</p>
+            </point>
+            <point>
+            <p>أو مقاسمة <term refersTo="#siblings">الإخوة</term> كذكر منهم.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="book_3_sec_5">
+          <num>الخامس</num>
+          <heading>الحجب</heading>
+          <article eId="art_159">
+            <num>159</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#al_hajb">الحجب هو منع الوارث من الميراث كلا أو بعضا</def> وهو نوعان :</p>
+            <list>
+            <point>
+            <p>1- <term refersTo="#hajb_nuqsan">حجب نقصان</term>،</p>
+            </point>
+            <point>
+            <p>2- <term refersTo="#hajb_isqat">حجب إسقاط</term>.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>حجب النقصان</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_160">
+            <num>160</num>
+            <content>
+            <paragraph>
+            <p>الورثة الذين لهم فرضان خمسة وهم :</p>
+            <p><term refersTo="#husband">الزوج</term>، و<term refersTo="#wife">الزوجة</term>، و<term refersTo="#mother">الأم</term>، و<term refersTo="#son_daughter">بنت الابن</term>، و<term refersTo="#paternal_sister">الأخت لأب</term>.</p>
+            <list>
+            <point>
+            <p>1- <term refersTo="#husband">الزوج</term> يرث النصف <condition>عند عدم وجود الفرع الوارث</condition>، والربع <condition>عند وجوده</condition>،</p>
+            </point>
+            <point>
+            <p>2- <term refersTo="#wife">الزوجة</term> أو الزوجات ترث الربع <condition>عند عدم وجود الفرع الوارث</condition>، والثمن <condition>عند وجوده</condition>،</p>
+            </point>
+            <point>
+            <p>3- <term refersTo="#mother">الأم</term> ترث الثلث <condition>عند عدم وجود الفرع الوارث، أو عدم وجود عدد من الإخوة أو الأخوات مطلقا</condition>، وترث السدس <condition>مع وجود من ذكر</condition>،</p>
+            </point>
+            <point>
+            <p>4- <term refersTo="#son_daughter">بنت الابن</term> ترث النصف <condition>إذا انفردت</condition>، والسدس <condition>إذا كانت مع بنت الصلب الواحدة</condition>، وفي حالة تعدد بنات الابن يرثن السدس بدل الثلثين وحكم كل بنت ابن مع بنت ابن أعلى منها درجة كحكم بنت الابن مع بنت الصلب،</p>
+            </point>
+            <point>
+            <p>5- <term refersTo="#paternal_sister">الأخت لأب</term> ترث النصف <condition>إذا انفردت</condition>، والسدس <condition>إذا كانت مع الأخت الشقيقة</condition>، وفي حالة تعدد الأخوات للأب مع الأخت الشقيقة يشتركن في السدس.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>حجب الإسقاط</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_161">
+            <num>161</num>
+            <content>
+            <paragraph>
+            <p><obligation>تحجب <term refersTo="#mother">الأم</term> كل جدة</obligation>، و<obligation>تحجب الجدة لأم القريبة الجدة لأب البعيدة</obligation> و<obligation>يحجب <term refersTo="#father">الأب</term> و<term refersTo="#grandfather">الجد</term> أصلهما من الجدات</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_162">
+            <num>162</num>
+            <content>
+            <paragraph>
+            <p><obligation>يحجب كل من <term refersTo="#father">الأب</term>، و<term refersTo="#grandfather">الجد الصحيح</term> وإن علا، و<term refersTo="#son">الولد</term> و<term refersTo="#grandson">ولد الابن</term> وان نزل، أولاد الأخ</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_163">
+            <num>163</num>
+            <content>
+            <paragraph>
+            <p><obligation>يحجب كل من <term refersTo="#son">الابن</term> و<term refersTo="#grandson">ابن الابن</term> وان نزل <term refersTo="#son_daughter">بنت الابن</term> التي تكون انزل منه درجة</obligation> و<obligation>يحجبهما أيضا بنتان أو بنتا ابن أعلى منها درجة <condition>ما لم يكن معها من يعصبها</condition></obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_164">
+            <num>164</num>
+            <content>
+            <paragraph>
+            <p><obligation>يحجب كل من <term refersTo="#father">الأب</term> و<term refersTo="#son">الابن</term> و<term refersTo="#grandson">ابن الابن</term> وان نزل، <term refersTo="#full_sister">الأخت الشقيقة</term></obligation> و<obligation>يحجب <term refersTo="#paternal_sister">الأخت لأب</term> كل من <term refersTo="#father">الأب</term>، و<term refersTo="#son">الابن</term>، و<term refersTo="#grandson">ابن الابن</term> وان نزل، و<term refersTo="#full_brother">الأخ الشقيق</term> و<term refersTo="#full_sister">الأخت الشقيقة</term> <condition>إذا كانت عاصبة مع غيرها</condition>، والأختين الشقيقتين، <condition>إذا لم يوجد أخ للأب</condition></obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_165">
+            <num>165</num>
+            <content>
+            <paragraph>
+            <p><obligation>يحجب <term refersTo="#paternal_brother">الأخ للأب</term> أبناء الإخوة الأشقاء أو الأب</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يحجب أبناء الإخوة الأشقاء أبناء الإخوة لأب</obligation>،</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يحجب أبناء الإخوة الأشقاء أولاد الأعمام وبنيهم</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="book_3_sec_6">
+          <num>السادس</num>
+          <heading>العول - والرد - والدفع</heading>
+          <article eId="art_166">
+            <num>166</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#العول">العول هو زيادة سهام أصحاب الفروض على أصل المسألة.</def></p>
+            </paragraph>
+            <paragraph>
+            <p><condition>فإذا زادت أنصبة الفروض عليها</condition> قسمت التركة بينهم بنسبة أنصبائهم في الإرث.</p>
+            </paragraph>
+            <paragraph>
+            <p>الرد على ذوي الفروض</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_167">
+            <num>167</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا لم تستغرق التركة ولم يوجد عصبة من النسب</condition> رد الباقي على غير الزوجين من أصحاب الفروض بنسبة فروضهم.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويرد باقي التركة إلى أحد الزوجين <condition>إذا لم يوجد عصبة من النسب أو أحد أصحاب الفروض النسبية، أو أحد ذوي الأرحام</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p>الدفع إلى ذوي الأرحام</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_168">
+            <num>168</num>
+            <content>
+            <paragraph>
+            <p><right>يرث ذوو الأرحام عند الاستحقاق على الترتيب الآتي :</right></p>
+            <list>
+            <point>
+            <p>أولاد البنات وان نزلوا، وأولاد بنات الابن وان نزلوا، فأولادهم بالميراث أقربهم إلى الميت درجة، <condition>فان استووا في الدرجة</condition> فولد صاحب الفرض أولى من ولد ذوي الرحم، <condition>وان استووا في الدرجة ولم يكن فيهم ولد صاحب فرض أو كانوا كلهم يدلون بصاحب فرض</condition> اشتركوا في الإرث.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="book_3_sec_7">
+          <num>السابع</num>
+          <heading>التنزيل</heading>
+          <article eId="art_169">
+            <num>169</num>
+            <content>
+            <paragraph>
+            <p><obligation>من توفى وله <term refersTo="#grandchildren">أحفاد</term> وقد مات مورثهم قبله أو معه وجب تنزيلهم منزلة أصلهم في <term refersTo="#estate">التركة</term> بالشرائط التالية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_170">
+            <num>170</num>
+            <content>
+            <paragraph>
+            <p><condition>أسهم <term refersTo="#grandchildren">الأحفاد</term> تكون بمقدار حصة أصلهم لو بقي حيا</condition> على أن <condition>لا يتجاوز ذلك ثلث <term refersTo="#estate">التركة</term></condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_171">
+            <num>171</num>
+            <content>
+            <paragraph>
+            <p><condition>لا يستحق هؤلاء <term refersTo="#grandchildren">الأحفاد</term> التنزيل إن كانوا وارثين للأصل جدا كان أو جدة أو كان قد أوصى لهم، أو أعطاهم في حياته بلا عوض مقدار ما يستحق بهذه الوصية</condition>، <obligation>فان أوصى لهم أو لأحدهم بأقل من ذلك وجب التنزيل بمقدار ما يتم به نصيبهم أو نصيب أحدهم من <term refersTo="#estate">التركة</term></obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_172">
+            <num>172</num>
+            <content>
+            <paragraph>
+            <p><condition>أن لا يكون <term refersTo="#grandchildren">الأحفاد</term> قد ورثوا من أبيهم أو أمهم ما لا يقل عن مناب مورثهم من أبيه أو أمه</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويكون هذا التنزيل للذكر مثل حظ الأنثيين.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="book_3_sec_8">
+          <num>الثامن</num>
+          <heading>الحمل</heading>
+          <article eId="art_173">
+            <num>173</num>
+            <content>
+            <paragraph>
+            <p><obligation>يوقف من <term refersTo="#estate">التركة</term> للحمل الأكثر من حظ ابن واحد أو بنت واحدة</obligation> <condition>إذا كان الحمل يشارك الورثة أو يحجبهم حجب نقصان</condition>، <condition>فان كان يحجبهم حجب حرمان يوقف الكل ولا تقسم <term refersTo="#estate">التركة</term> إلى أن تضع الحامل حملها</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_174">
+            <num>174</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا ادعت المرأة الحمل وكذبها الورثة</condition> <obligation>تعرض على أهل المعرفة</obligation> مع مراعاة أحكام <ref href="#art_43">المادة 43</ref> من هذا القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="book_3_sec_9">
+          <num>التاسع</num>
+          <heading>المسائل الخاصة</heading>
+          <article eId="art_175">
+            <num>175</num>
+            <content>
+            <paragraph>
+            <p><obligation>لا يفرض <term refersTo="#sister">للأخت</term> مع <term refersTo="#grandfather">الجد</term> في مسألة إلا في <def refersTo="#akdariya">الاكدرية</def></obligation> وهي : <term refersTo="#husband">زوج</term>، و<term refersTo="#mother">أم</term>، و<term refersTo="#sister">أخت شقيقة</term> أو <term refersTo="#sister_paternal">لأب</term>، و<term refersTo="#grandfather">جد</term> فيضم <term refersTo="#grandfather">الجد</term> ما حسب له إلى ما حسب لها ويقسمان للذكر مثل حظ الأنثيين، أصلها من ستة، وتعول إلى تسعة، وتصح من سبعة وعشرين للزوج تسعة وللأم ستة، وللأخت أربعة، وللجد ثمانية.</p>
+            </paragraph>
+            <paragraph>
+            <p>مسألة مشتركة</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_176">
+            <num>176</num>
+            <content>
+            <paragraph>
+            <p>يأخذ الذكر من <term refersTo="#brothers">الإخوة</term> كالأنثى في <def refersTo="#mushtaraka">المشتركة</def> ، وهي <term refersTo="#husband">زوج</term> و<term refersTo="#mother">أم</term> أو <term refersTo="#grandmother">جدة</term> و<term refersTo="#brothers_maternal">إخوة لأم</term>، و<term refersTo="#brothers_full">إخوة أشقاء</term>، فيشتركان في الثلث <term refersTo="#brothers_maternal">الإخوة للأم</term> و<term refersTo="#brothers_full">الإخوة الأشقاء</term> الذكور والإناث في ذلك سواء على عدد رؤوسهم لأن جميعهم من أم واحدة.</p>
+            </paragraph>
+            <paragraph>
+            <p>مسألة الغراوين</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_177">
+            <num>177</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا اجتمعت <term refersTo="#wife">زوجة</term>، و<term refersTo="#parents">أبوان</term></condition>، فللزوجة الربع وللأم ثلث ما بقى وهو الربع وللأب ما بقي، <condition>فإذا اجتمع <term refersTo="#husband">زوج</term> و<term refersTo="#parents">أبوان</term></condition> فللزوج النصف وللأم ثلث ما بقي وهو السدس وما بقي للأب.</p>
+            </paragraph>
+            <paragraph>
+            <p>مسألة المباهلة</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_178">
+            <num>178</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا اجتمع <term refersTo="#husband">زوج</term>، و<term refersTo="#mother">أم</term>، و<term refersTo="#sister">أخت شقيقة</term> أو <term refersTo="#sister_paternal">لأب</term></condition> كان للزوج النصف، وللأخت النصف وللأم الثلث أصلها من ستة وتعول إلى ثمانية للزوج ثلاثة، وللأخت ثلاثة وللأم اثنان.</p>
+            </paragraph>
+            <paragraph>
+            <p>مسألة المنبرية</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_179">
+            <num>179</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا اجتمعت <term refersTo="#wife">زوجة</term> و<term refersTo="#daughters">بنتان</term> و<term refersTo="#parents">أبوان</term></condition> صحت فريضتهم من أربعة وعشرين وتعول إلى سبعة وعشرين، للبنتين الثلثان - ستة عشر - وللأبوين الثلث - ثمانية - وللزوجة الثمن - ثلاثة - ويصير ثمنها تسعا.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_180">
+            <num>180</num>
+            <content>
+            <paragraph>
+            <p><obligation>يؤخذ من <term refersTo="#estate">التركة</term> حسب الترتيب الآتي:</obligation></p>
+            <list>
+            <point>
+            <p>1- مصاريف التجهيز، والدفن بالقدر المشروع،</p>
+            </point>
+            <point>
+            <p>2- الديون الثابتة في ذمة المتوفى،</p>
+            </point>
+            <point>
+            <p>3- الوصية.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="book_3_sec_10">
+          <num>العاشر</num>
+          <heading>قسمة التركات</heading>
+          <article eId="art_181">
+            <num>المادة 181</num>
+            <content>
+            <paragraph>
+            <p><obligation>يراعي في <term refersTo="#division_of_estates">قسمة التركات</term> أحكام <ref href="#art_109">المادتين 109</ref> و <ref href="#art_173">173</ref> من هذا القانون وما ورد في القانون المدني فيما يتعلق ب<term refersTo="#common_property">الملكية الشائعة</term></obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وفي حالة وجود قاصر بين الورثة</condition> <obligation>يجب أن تكون القسمة عن طريق القضاء</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_182">
+            <num>المادة 182</num>
+            <content>
+            <paragraph>
+            <p><condition>في حالة عدم وجود ولي أو وصي</condition> <right>يجوز لمن له مصلحة أو للنيابة العامة أن يتقدم إلى المحكمة بطلب تصفية التركة وبتعيين مقدم</right>، و<right>لرئيس المحكمة أن يقرر وضع الأختام، وإيداع النقود والأشياء ذات القيمة، وأن يفصل في الطلب</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_183">
+            <num>المادة 183</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب أن تتبع الإجراءات المستعجلة في قسمة التركات فيما يتعلق بالمواعيد وسر موضوعها، وطرق الطعن في أحكامها</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </book>
+      <book eId="book_4">
+        <num>الرابع</num>
+        <heading>التبرعات</heading>
+        <section eId="book_4_sec_1">
+          <num>الأول</num>
+          <heading>الوصية</heading>
+          <article eId="art_184">
+            <num>المادة 184</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#وصية">الوصية</def> تمليك مضاف إلى ما بعد الموت بطريق التبرع.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_185">
+            <num>المادة 185</num>
+            <content>
+            <paragraph>
+            <p>تكون <term refersTo="#وصية">الوصية</term> في حدود ثلث التركة، وما زاد على الثلث <condition>توقف على إجازة الورثة</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_186">
+            <num>المادة 186</num>
+            <content>
+            <paragraph>
+            <p><condition>يشترط في الموصي أن يكون سليم العقل، بالغا من العمر تسع عشرة (19) سنة على الأقل</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_187">
+            <num>المادة 187</num>
+            <content>
+            <paragraph>
+            <p>تصح <term refersTo="#وصية">الوصية</term> للحمل <condition>بشرط أن يولد حيا</condition> ، وإذا ولد توائم يستحقونها بالتساوي ولو اختلف الجنس.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_188">
+            <num>المادة 188</num>
+            <content>
+            <paragraph>
+            <p>لا يستحق <term refersTo="#وصية">الوصية</term> من قتل الموصي عمدا.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_189">
+            <num>المادة 189</num>
+            <content>
+            <paragraph>
+            <p>لا وصية لوارث <condition>إلا إذا أجازها الورثة بعد وفاة الموصي</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_190">
+            <num>المادة 190</num>
+            <content>
+            <paragraph>
+            <p><right>للموصي أن يوصي بالأموال التي يملكها والتي تدخل في ملكه قبل موته عينا أو منفعة</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_191">
+            <num>المادة 191</num>
+            <content>
+            <paragraph>
+            <p>تثبت <term refersTo="#وصية">الوصية</term>:</p>
+            <list>
+            <point>
+            <p>1- بتصريح الموصي أمام الموثق وتحرير عقد بذلك،</p>
+            </point>
+            <point>
+            <p>2- وفي حالة وجود مانع قاهر تثبت الوصية بحكم، ويؤشر به على هامش أصل الملكية.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_192">
+            <num>المادة 192</num>
+            <content>
+            <paragraph>
+            <p><right>يجوز الرجوع في الوصية صراحة أو ضمنا</right> ، فالرجوع الصريح يكون بوسائل إثباتها والضمني يكون بكل تصرف يستخلص منه الرجوع فيها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_193">
+            <num>المادة 193</num>
+            <content>
+            <paragraph>
+            <p>رهن الموصى به لا يعد رجوعا في <term refersTo="#وصية">الوصية</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_194">
+            <num>المادة 194</num>
+            <content>
+            <paragraph>
+            <p>إذا أوصي لشخص ثم أوصي لثان يكون الموصى به مشتركا بينهما.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_195">
+            <num>المادة 195</num>
+            <content>
+            <paragraph>
+            <p>إذا كانت <term refersTo="#وصية">الوصية</term> لشخصين معينين دون أن يحدد ما يستحقه كل منهما ومات أحدهما وقت الوصية أو بعدها قبل وفاة الموصي، فالوصية كلها للحي منهما ، أما إذا حدد ما يستحقه كل منهما فالحي لا يستحق إلا ما حدد له.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_196">
+            <num>المادة 196</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#وصية">الوصية</term>، بمنفعة لمدة غير محدودة تنتهي بوفاة الموصى له وتعتبر عمرى.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_197">
+            <num>المادة 197</num>
+            <content>
+            <paragraph>
+            <p>يكون قبول <term refersTo="#وصية">الوصية</term> صراحة أو ضمنا بعد وفاة الوصي.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_198">
+            <num>المادة 198</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا مات الموصى له قبل القبول</condition> <right>فلورثته الحق في القبول أو الرد</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_199">
+            <num>المادة 199</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا علقت الوصية على شرط</condition> استحقها الموصى له بعد إنجاز الشرط وإذا كان الشرط غير صحت الوصية وبطل الشرط.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_200">
+            <num>المادة 200</num>
+            <content>
+            <paragraph>
+            <p>تصح <term refersTo="#وصية">الوصية</term> مع اختلاف الدين.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_201">
+            <num>المادة 201</num>
+            <content>
+            <paragraph>
+            <p>تبطل <term refersTo="#وصية">الوصية</term> بموت الموصى له قبل الموصي، أو بردها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_202">
+            <num>المادة 202</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#هبة">الهبة</def> تمليك بلا عوض.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>ويجوز للواهب أن يشترط على الموهب له القيام بالتزام</right> يتوقف على إنجاز الشرط.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="book_4_sec_2">
+          <num>الثاني</num>
+          <heading>الهبة</heading>
+          <article eId="art_203">
+            <num>المادة 203</num>
+            <content>
+            <paragraph>
+            <p><condition>تشترط في <term refersTo="#donor">الواهب</term> أن يكون سليم العقل، بالغا تسع عشرة (19) سنة وغير محجور عليه</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_204">
+            <num>المادة 204</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#gift">الهبة</term> في مرض الموت، والأمراض والحالات المخيفة، تعتبر وصية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_205">
+            <num>المادة 205</num>
+            <content>
+            <paragraph>
+            <p><right>يجوز <term refersTo="#donor">للواهب</term> أن يهب كل ممتلكاته أو جزءا منها عينا، أو منفعة، أو دينا لدى الغير</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_206">
+            <num>المادة 206</num>
+            <content>
+            <paragraph>
+            <p>تنعقد <term refersTo="#gift">الهبة</term> بالإيجاب والقبول، وتتم الحيازة، و<obligation>مراعاة أحكام قانون التوثيق في العقارات والإجراءات الخاصة في المنقولات</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وإذا اختل أحد القيود السابقة بطلت الهبة</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_207">
+            <num>المادة 207</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا كان الشيء الموهب بيد <term refersTo="#donee">الموهوب له</term> قبل الهبة يعتبر حيازة</condition> و<condition>إذا كان بيد الغير وجب إخباره بها ليعتبر حائزا</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_208">
+            <num>المادة 208</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا كان <term refersTo="#donor">الواهب</term> ولي <term refersTo="#donee">الموهوب له</term>، أو زوجه أو كان الموهوب مشاعا فان التوثيق والإجراءات الإدارية تغنى عن الحيازة</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_209">
+            <num>المادة 209</num>
+            <content>
+            <paragraph>
+            <p>تصح <term refersTo="#gift">الهبة</term> للحمل <condition>بشرط أن يولد حيا</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_210">
+            <num>المادة 210</num>
+            <content>
+            <paragraph>
+            <p>يحوز <term refersTo="#donee">الموهوب له</term> الشيء بنفسه أو بوكيله.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وإذا كان قاصرا ، أو محجورا عليه يتولى الحيازة من ينوب عنه قانونا</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_211">
+            <num>المادة 211</num>
+            <content>
+            <paragraph>
+            <p><right>للأبوين حق الرجوع في <term refersTo="#gift">الهبة</term> لولدهما مهما كانت سنه</right> إلا في الحالات التالية:
+            <list>
+            <point><p>إذا كانت الهبة من أجل زواج الموهوب له،</p></point>
+            <point><p>إذا كانت الهبة لضمان قرض أو قضاء دين،</p></point>
+            <point><p>إذا تصرف الموهوب له في الشيء الموهوب ببيع، أو تبرع منه أو أدخل عليه ما غير طبيعته.</p></point>
+            </list></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_212">
+            <num>المادة 212</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#gift">الهبة</term> بقصد المنفعة العامة لا رجوع فيها.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="book_4_sec_3">
+          <num>الثالث</num>
+          <heading>الوقف</heading>
+          <article eId="art_213">
+            <num>213</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#waqf">الوقف حبس المال عن التملك لأي شخص على وجه التأبيد والتصدق</def>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_214">
+            <num>214</num>
+            <content>
+            <paragraph>
+            <p><right>يجوز للواقف أن يحتفظ بمنفعة الشيء المحبس مدة حياته</right>، <condition>على أن يكون مآل الوقف بعد ذلك إلى الجهة المعنية</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_215">
+            <num>215</num>
+            <content>
+            <paragraph>
+            <p><obligation>يشترط في الوقف والموقوف ما يشترط في الواهب والموهوب</obligation> طبقا <ref href="#art_204">للمادتين 204</ref> و<ref href="#art_205">205</ref> من هذا القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_216">
+            <num>216</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب أن يكون المال المحبس مملوكا للواقف معينا، خاليا من النزاع، ولو كان مشاعا</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_217">
+            <num>217</num>
+            <content>
+            <paragraph>
+            <p>يثبت الوقف بما تثبت به الوصية طبقا <ref href="#art_191">للمادة 191</ref> من هذا القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_218">
+            <num>218</num>
+            <content>
+            <paragraph>
+            <p>ينفذ شرط الواقف <condition>ما لم يتناف ومقتضيات الوقف شرعا</condition>، وإلا بطل الشرط وبقي الوقف.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_219">
+            <num>219</num>
+            <content>
+            <paragraph>
+            <p>كل ما أحدثه المحبس عليه من بناء أو غرس في الحبس يعتبر من الشيء المحبس.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_220">
+            <num>220</num>
+            <content>
+            <paragraph>
+            <p>يبقى الحبس قائما مهما طرأ على الشيء المحبس تغيير في طبيعته.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وإذا نتج عن التغيير تعويض</condition> ينزل منزلة الحبس.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="book_4_sec_4">
+          <num>الرابع</num>
+          <heading>أحكام ختامية</heading>
+          <article eId="art_221">
+            <num>المادة 221</num>
+            <content>
+            <paragraph>
+            <p><obligation>يطبق هذا القانون على كل المواطنين الجزائريين وعلى غيرهم من المقيمين بالجزائر</obligation> مع مراعاة الأحكام الواردة في <ref href="/akn/dz/act/law/1975-09-26/75-58">القانون المدني</ref>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_222">
+            <num>المادة 222</num>
+            <content>
+            <paragraph>
+            <p>كل ما لم يرد النص عليه في هذا القانون <obligation>يرجع فيه إلى أحكام الشريعة الإسلامية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_223">
+            <num>المادة 223</num>
+            <content>
+            <paragraph>
+            <p>تلغى جميع الأحكام المخالفة لهذا القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_224">
+            <num>المادة 224</num>
+            <content>
+            <paragraph>
+            <p>ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية.</p>
+            </paragraph>
+            <paragraph>
+            <p>حرر بالجزائر في 9 رمضان عام 1404 الموافق 9 يونيو سنة 1984.</p>
+            </paragraph>
+            <paragraph>
+            <p>الشاذلي بن جديد</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="book_4_book_4_sec_4_art_1">
+            <num>المادة الأولى</num>
+            <content>
+            <paragraph>
+            <p><obligation>تخضع جميع العلاقات بين أفراد <term refersTo="#family">الأسرة</term> لأحكام هذا القانون</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="book_4_book_4_sec_4_art_2">
+            <num>المادة 2</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#family">الأسرة هي الخلية الأساسية للمجتمع وتتكون من أشخاص تجمع بينهم صلة الزوجية وصلة القرابة</def>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="book_4_book_4_sec_4_art_3">
+            <num>المادة 3</num>
+            <content>
+            <paragraph>
+            <p>تعتمد <term refersTo="#family">الأسرة</term> في حياتها على الترابط والتكافل وحسن المعاشرة والتربية الحسنة وحسن الخلق ونبذ الآفات الاجتماعية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="book_4_book_4_sec_4_art_4" status="modified">
+            <num>4</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#marriage">الزواج هو عقد رضائي يتم بين رجل وامرأة على الوجه الشرعي، من أهدافه، تكوين أسرة</def></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="book_4_book_4_sec_4_art_6" status="modified">
+            <num>6</num>
+            <content>
+            <paragraph>
+            <p>إن اقتران الفاتحة بالخطبة لا يعد زواجا.</p>
+            </paragraph>
+            <paragraph>
+            <p>غير أن اقتران الفاتحة بالخطبة بمجلس العقد يعتبر زواجا <condition>متى توافر ركن الرضا وشروط الزواج المنصوص عليها في <ref href="#art_9_bis">المادة 9 مكرر</ref> من هذا القانون.</condition></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="book_4_book_4_sec_4_art_7" status="modified">
+            <num>7</num>
+            <content>
+            <paragraph>
+            <p><obligation>تكتمل <term refersTo="#legal_capacity">أهلية</term> الرجل والمرأة في الزواج بتمام 19 سنة</obligation>. وللقاضي أن <condition>يرخص بالزواج قبل ذلك لمصلحة أو ضرورة، متى تأكدت قدرة الطرفين على الزواج</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>يكتسب الزوج القاصر <term refersTo="#legal_capacity">أهلية التقاضي</term> فيما يتعلق بآثار عقد الزواج من حقوق والتزامات</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="book_4_book_4_sec_4_art_8" status="modified">
+            <num>8</num>
+            <content>
+            <paragraph>
+            <p>يسمح بالزواج بأكثر من زوجة واحدة في حدود الشريعة الإسلامية <condition>متى وجد المبرر الشرعي وتوفرت شروط ونية العدل</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يجب على الزوج إخبار الزوجة السابقة والمرأة التي يقبل على الزواج بها وأن يقدم طلب الترخيص بالزواج إلى رئيس المحكمة لمكان مسكن الزوجية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يمكن رئيس المحكمة أن يرخص بالزواج الجديد، <condition>إذا تأكد من موافقتهما وأثبت الزوج المبرر الشرعي وقدرته على توفير العدل والشروط الضرورية للحياة الزوجية</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </book>
+    </body>
+  </act>
+</akomaNtoso>

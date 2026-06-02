@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="organic-law">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/organic-law/2005-07-17/05-11/main"/>
+      <FRBRuri value="/akn/dz/act/organic-law/2005-07-17/05-11"/>
+      <FRBRdate date="2005-07-17" name="enactment"/>
+      <FRBRauthor href="#parliament"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="05-11"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/organic-law/2005-07-17/05-11/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/organic-law/2005-07-17/05-11/ara@"/>
+      <FRBRdate date="2005-07-17" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/organic-law/2005-07-17/05-11/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/organic-law/2005-07-17/05-11/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="parliament" href="/ontology/organization/dz/parliament" showAs="البرلمان"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="president" href="/ontology/person/dz/president" showAs="رئيس الجمهورية"/>
+  </references>
+</meta>
+    <preface>
+  <docTitle>قانون عضوي رقم 05-11 يتعلق بالتنظيم القضائي</docTitle>
+  <docNumber>05-11</docNumber>
+  <docDate date="2005-07-17">10 جمادى الثانية عام 1426 الموافق 17 يوليو سنة 2005</docDate>
+  <docAuthority>البرلمان</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>إن رئيس الجمهورية،</p>
+    </citation>
+    <citation>
+      <p>بناء على الدستور، لا سيما المواد 19 و120 و123 و2-125 و126 و146 و152 و165 و180( الفقرة الأولى) منه،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون العضوي رقم 98-01 المؤرخ في 4 صفر عام 1419 الموافق 30 مايو سنة 1998 والمتعلق باختصاصات مجلس الدولة وتنظيمه وعمله،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون العضوي رقم 98-03 المؤرخ في 8 صفر عام 1419 الموافق 03 يونيو سنة 1998 والمتعلق باختصاصات محكمة التنازع وتنظيمها وعملها،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون العضوي رقم 04-11 المؤرخ في 21 رجب عام 1425 الموافق 06 سبتمبر سنة 2004 والمتضمن القانون الأساسي للقضاء،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون العضوي رقم 04-12 المؤرخ في 21 رجب عام 1425 الموافق 06 سبتمبر 2004 الذي يحدد تشكيل المجلس الأعلى للقضاء وعمله وصلاحياته، لا سيما المادة 35 منه،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 65-278 المؤرخ في 22 رجب عام 1385 الموافق 16 نوفمبر 1965 والمتضمن التنظيم القضائي،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 66-154 المؤرخ في 18 صفر عام 1386 الموافق 08 يونيو 1966 والمتضمن قانون الإجراءات المدنية، المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 66-155 المؤرخ في 18 صفر عام 1386 الموافق 08 يونيو 1966 والمتضمن قانون الإجراءات الجزائية، المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 66-156 المؤرخ في 18 صفر عام 1386 الموافق 08 يونيو 1966 والمتضمن قانون العقوبات، المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 71-28 المؤرخ في 26 صفر عام 1391 الموافق 22 أبريل 1971 والمتعلق بالقضاء العسكري،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 75-58 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون المدني، المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 89-22 المؤرخ في 14 جمادى الأولى عام 1410 الموافق 12 ديسمبر سنة 1989 والمتعلق بصلاحيات المحكمة العليا وتنظيمها وسيرها، المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 98-02 المؤرخ في 4 صفر عام 1419 الموافق 30 مايو سنة 1998 والمتعلق بالمحاكم الإدارية،</p>
+    </citation>
+    <citation>
+      <p>وبعد رأي مجلس الدولة،</p>
+    </citation>
+    <citation>
+      <p>وبعد مصادقة البرلمان،</p>
+    </citation>
+    <citation>
+      <p>وبعد الأخذ برأي المجلس الدستوري،</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يصدر القانون العضوي الآتي نصه،</p>
+  </formula>
+</preamble>
+    <body>
+      <section eId="sec_1">
+        <num>الأول</num>
+        <heading>أحكام عامة</heading>
+        <article eId="art_1">
+          <num>الأولى</num>
+          <content>
+          <paragraph>
+          <p>يهدف هذا <term refersTo="#organic_law">القانون العضوي</term> إلى تحديد <term refersTo="#judicial_organization">التنظيم القضائي</term>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_2">
+          <num>2</num>
+          <content>
+          <paragraph>
+          <p>يشمل <term refersTo="#judicial_organization">التنظيم القضائي</term> <term refersTo="#ordinary_judicial_system">النظام القضائي العادي</term> و<term refersTo="#administrative_judicial_system">النظام القضائي الإداري</term> و<term refersTo="#conflict_court">محكمة التنازع</term>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_3">
+          <num>3</num>
+          <content>
+          <paragraph>
+          <p>يشمل <term refersTo="#ordinary_judicial_system">النظام القضائي العادي</term> <term refersTo="#supreme_court">المحكمة العليا</term> و<term refersTo="#judicial_councils">المجالس القضائية</term> و<term refersTo="#courts">المحاكم</term>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_4">
+          <num>4</num>
+          <content>
+          <paragraph>
+          <p>يشمل <term refersTo="#administrative_judicial_system">النظام القضائي الإداري</term> <term refersTo="#council_of_state">مجلس الدولة</term> و<term refersTo="#administrative_courts">المحاكم الإدارية</term>.</p>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+      <section eId="sec_2">
+        <num>الثاني</num>
+        <heading>المجالس القضائية</heading>
+        <subsection eId="sec_2_subsec_1">
+          <num>الأول</num>
+          <heading>تنظيم المجالس القضائية وتشكيلها</heading>
+          <article eId="art_5">
+            <num>المادة 5</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#مجلس_قضائي">يعد <term refersTo="#مجلس_قضائي">المجلس القضائي</term> جهة استئناف للأحكام الصادرة عن المحاكم وكذا في الحالات المنصوص عليها قانونا.</def></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_6">
+            <num>المادة 6</num>
+            <content>
+            <paragraph>
+            <p>يشمل <term refersTo="#مجلس_قضائي">المجلس القضائي</term> الغرف الآتية :</p>
+            <list>
+            <point>
+            <p>الغرفة المدنية،</p>
+            </point>
+            <point>
+            <p>الغرفة الجزائية،</p>
+            </point>
+            <point>
+            <p>غرفة الاتهام،</p>
+            </point>
+            <point>
+            <p>الغرفة الاستعجالية،</p>
+            </point>
+            <point>
+            <p>غرفة شؤون الأسرة،</p>
+            </point>
+            <point>
+            <p>غرفة الأحداث،</p>
+            </point>
+            <point>
+            <p>الغرفة الاجتماعية،</p>
+            </point>
+            <point>
+            <p>الغرفة العقارية،</p>
+            </point>
+            <point>
+            <p>الغرفة البحرية،</p>
+            </point>
+            <point>
+            <p>الغرفة التجارية.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p><condition>غير أنه يمكن <term refersTo="#رئيس_المجلس_القضائي">رئيس المجلس القضائي</term>، بعد استطلاع رأي <term refersTo="#النائب_العام">النائب العام</term>، تقليص عدد الغرف أو تقسيمها إلى أقسام حسب أهمية وحجم النشاط القضائي.</condition> تفصل كل غرفة في القضايا المعروضة عليها، ما لم ينص القانون على خلاف ذلك.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_7">
+            <num>المادة 7</num>
+            <content>
+            <paragraph>
+            <p>يتشكل <term refersTo="#مجلس_قضائي">المجلس القضائي</term> من :</p>
+            <list>
+            <point>
+            <p>رئيس مجلس،</p>
+            </point>
+            <point>
+            <p>نائب رئيس أو أكثر،</p>
+            </point>
+            <point>
+            <p>رؤساء غرف،</p>
+            </point>
+            <point>
+            <p>مستشارين،</p>
+            </point>
+            <point>
+            <p>نائب عام ونواب عامين مساعدين،</p>
+            </point>
+            <point>
+            <p>أمانة الضبط.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+        <subsection eId="sec_2_subsec_2">
+          <num>الثاني</num>
+          <heading>سير المجالس القضائية</heading>
+          <article eId="art_8">
+            <num>المادة 8</num>
+            <content>
+            <paragraph>
+            <p>يفصل <term refersTo="#judicial_council">المجلس القضائي</term> بتشكيلة جماعية <condition>ما لم ينص القانون على خلاف ذلك</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_9">
+            <num>المادة 9</num>
+            <content>
+            <paragraph>
+            <p><obligation>يحدد <term refersTo="#president_judicial_council">رئيس المجلس القضائي</term> بموجب أمر ، توزيع القضاة على الغرف، وعند الاقتضاء على الأقسام، في بداية كل سنة قضائية، بعد استطلاع رأي النائب العام</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>ويجوز له أن يرأس أية غرفة</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يمكن تعيين نفس القاضي في أكثر من غرفة أو قسم.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة حدوث مانع لرئيس المجلس القضائي</condition> يستخلفه نائبه، وإذا تعذر ذلك ينوبه أقدم رئيس غرفة.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة حدوث مانع لأحد القضاة</condition> يستخلف بقاض آخر بموجب أمر من <term refersTo="#president_judicial_council">رئيس المجلس القضائي</term>، بعد استطلاع رأي النائب العام.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_10">
+            <num>المادة 10</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#court">المحكمة</def> درجة أولى للتقاضي.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+      </section>
+      <section eId="sec_3">
+        <num>الثالث</num>
+        <heading>المحاكم</heading>
+        <subsection eId="sec_3_subsec_1">
+          <num>الأول</num>
+          <heading>اختصاص المحاكم وتشكيلها</heading>
+          <article eId="art_11">
+            <num>11</num>
+            <content>
+            <paragraph>
+            <p>يحدد <term refersTo="#jurisdiction">اختصاص المحكمة</term> في <ref href="/akn/dz/act/law/code_civil_procedure">قانون الإجراءات المدنية</ref> و<ref href="/akn/dz/act/law/code_criminal_procedure">قانون الإجراءات الجزائية</ref> والقوانين الخاصة المعمول بها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_12">
+            <num>12</num>
+            <content>
+            <paragraph>
+            <p>تتشكل <term refersTo="#court">المحكمة</term> من :</p>
+            <list>
+            <point>
+            <p>رئيس المحكمة،</p>
+            </point>
+            <point>
+            <p>نائب رئيس المحكمة</p>
+            </point>
+            <point>
+            <p>قضاة،</p>
+            </point>
+            <point>
+            <p>قاضي التحقيق أو أكثر،</p>
+            </point>
+            <point>
+            <p>قاضي الأحداث أو أكثر،</p>
+            </point>
+            <point>
+            <p>وكيل الجمهورية ووكلاء جمهورية مساعدين،</p>
+            </point>
+            <point>
+            <p>أمانة الضبط.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+        <subsection eId="sec_3_subsec_2">
+          <num>الثاني</num>
+          <article eId="art_13">
+            <num>13</num>
+            <content>
+            <paragraph>
+            <p>تقسم <term refersTo="#court">المحكمة</term> إلى الأقسام الآتية :</p>
+            <list>
+            <point><p>القسم المدني،</p></point>
+            <point><p>قسم الجنح،</p></point>
+            <point><p>قسم المخالفات،</p></point>
+            <point><p>القسم الاستعجالي،</p></point>
+            <point><p>قسم شؤون الأسرة،</p></point>
+            <point><p>قسم الأحداث،</p></point>
+            <point><p>القسم الاجتماعي،</p></point>
+            <point><p>القسم العقاري،</p></point>
+            <point><p>القسم البحري،</p></point>
+            <point><p>القسم التجاري.</p></point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p><condition>غير أنه يمكن <term refersTo="#court_president">رئيس المحكمة</term>، بعد استطلاع رأي <term refersTo="#prosecutor">وكيل الجمهورية</term>، تقليص عدد الأقسام أو تقسيمها إلى فروع حسب أهمية وحجم النشاط القضائي.</condition></p>
+            </paragraph>
+            <paragraph>
+            <p>بفصل كل قسم في القضايا المعروضة عليه، ما لم ينص القانون على خلاف ذلك.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_14">
+            <num>14</num>
+            <content>
+            <paragraph>
+            <p>يرأس أقسام <term refersTo="#court">المحكمة</term> قضاة حسب تخصصاتهم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_15">
+            <num>15</num>
+            <content>
+            <paragraph>
+            <p>تفصل <term refersTo="#court">المحكمة</term> بقاض فرد، ما لم ينص القانون على خلاف ذلك.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_16">
+            <num>16</num>
+            <content>
+            <paragraph>
+            <p><obligation>يحدد <term refersTo="#court_president">رئيس المحكمة</term> بموجب أمر ، وبعد استطلاع رأي <term refersTo="#prosecutor">وكيل الجمهورية</term>، توزيع قضاة الحكم في بداية كل سنة قضائية على الأقسام أو الفروع عند الاقتضاء.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p>ويجوز له أن يرأس أي قسم.</p>
+            </paragraph>
+            <paragraph>
+            <p>يمكن تعيين نفس القاضي في أكثر من قسم أو فرع.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة حدوث مانع لأحد القضاة</condition> <obligation>يستخلف بقاض آخر بأمر من <term refersTo="#court_president">رئيس المحكمة</term>، بعد استطلاع رأي <term refersTo="#prosecutor">وكيل الجمهورية</term>.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_17">
+            <num>17</num>
+            <content>
+            <paragraph>
+            <p><obligation>ينوب <term refersTo="#court_president">رئيس المحكمة</term> <condition>في حالة حدوث مانع له</condition>، <term refersTo="#vice_president">نائب رئيس المحكمة</term>، وإذا تعذر ذلك، ينوبه أقدم قاض يعين بموجب أمر من <term refersTo="#judicial_council_president">رئيس المجلس القضائي</term>.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+      </section>
+      <section eId="sec_4">
+        <num>الرابع</num>
+        <heading>الجهات القضائية الجزائية المتخصصة</heading>
+        <subsection eId="sec_4_subsec_1">
+          <num>الأول</num>
+          <heading>محكمة الجنايات</heading>
+          <article eId="art_18">
+            <num>18</num>
+            <content>
+            <paragraph>
+            <p>توجد على مستوى كل <term refersTo="#judicial_council">مجلس قضائي</term> <term refersTo="#felony_court">محكمة جنايات</term> تختص بالفصل في الأفعال الموصوفة جنايات وكذا الجنح والمحالفات المرتبطة بها.</p>
+            </paragraph>
+            <paragraph>
+            <p>يحدد اختصاص <term refersTo="#felony_court">محكمة الجنايات</term> وتشكيلتها وسيرها بموجب التشريع المعمول به.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+        <subsection eId="sec_4_subsec_2">
+          <num>الثاني</num>
+          <heading>المحكمة العسكرية</heading>
+          <article eId="art_19">
+            <num>المادة 19</num>
+            <content>
+            <paragraph>
+            <p>تحدد القواعد المتعلقة باختصاص <term refersTo="#military_courts">المحاكم العسكرية</term> وتنظيمها وسيرها بموجب <term refersTo="#military_justice_law">قانون القضاء العسكري</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_20">
+            <num>المادة 20</num>
+            <content>
+            <paragraph>
+            <p>تلغى جميع الأحكام المخالفة لهذا القانون العضوي، لا سيما أحكام <ref href="/akn/dz/act/order/1965-11-16/65-278">الأمر رقم 65-278 المؤرخ في 22 رجب عام 1385 الموافق 16 نوفمبر سنة 1965</ref> والمذكور أعلاه.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_21">
+            <num>المادة 21</num>
+            <content>
+            <paragraph>
+            <p><obligation>ينشر هذا القانون العضوي في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p>حرر بالجزائر في 10 جمادى الثانية عام 1426 الموافق 17 يوليو سنة 2005.</p>
+            </paragraph>
+            <paragraph>
+            <p>عبد العزيز بوتفليقة</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+      </section>
+    </body>
+  </act>
+</akomaNtoso>

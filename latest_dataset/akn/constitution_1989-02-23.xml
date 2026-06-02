@@ -1,0 +1,2009 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="constitution">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/constitution/1989-02-23/main"/>
+      <FRBRuri value="/akn/dz/act/constitution/1989-02-23"/>
+      <FRBRdate date="1989-02-23" name="enactment"/>
+      <FRBRauthor href="#president"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="1989"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/constitution/1989-02-23/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/constitution/1989-02-23/ara@"/>
+      <FRBRdate date="1989-02-23" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/constitution/1989-02-23/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/constitution/1989-02-23/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="president" href="/ontology/organization/dz/president" showAs="رئيس الجمهورية"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="converter" href="/ontology/person/dz/converter" showAs="Legal Markup Specialist"/>
+  </references>
+</meta>
+    <preface>
+  <docTitle>التعديل الدستوري المصادق عليه في إستفتاء 23 فبراير سنة 1989</docTitle>
+  <docNumber>1989</docNumber>
+  <docDate date="1989-02-23">23 فبراير سنة 1989</docDate>
+  <docAuthority>رئيس الجمهورية</docAuthority>
+</preface>
+    <preamble>
+  <container name="prologue">
+    <p>الشعب الجزائري شعب حر ، ومصمم على البقاء حرا .</p>
+    <p>فتاريخه الطويل سلسلة متصلة الحلقات من الكفاح والجهاد ، جعلت الجزائر دائما منبت الحرية ، وأرض العزة والكرامة .</p>
+    <p>لقد عرفت الجزائر في أعز اللحظات الحاسمة التي عاشها البحر الأبيض المتوسط، كيف تجد في أبنائها ، منذ العهد النوميدي ، والفتح الإسلامي ، حتى الحروب التحريرية من الاستعمار ، روادا للحرية ، والوحدة والرقي ، وبناة دول ديمقراطية مزدهرة ، طوال فترات المجد والسلام .</p>
+    <p>وكان أول نوفمبر 1954 نقطة تحول فاصلة في تقرير مصيرها ، وتتويجا عظيما لمقاومة ضروس ، واجهت بها مختلف الاعتداءات على ثقافة شعبها ، وقيمه ، ومقومات شخصيته ، وتمتد جذور نضالها اليوم في شتى الميادين في ماضي أمتها المجيد .</p>
+    <p>لقد تجمع الشعب الجزائري في ظل الحركة الوطنية ، ثم انضوى تحت لواء جبهة التحرير الوطني ، وقدم تضحيات جساما من أجل أن يتكفل بمصيره الجماعي في كنف الحرية والهوية الثقافية الوطنية المستعادتين . ويشيد مؤسساته الدستورية الشعبية الأصيلة .</p>
+    <p>وقد توجت جبهة التحرير الوطني ما بذله خيرة أبناء الجزائر من تضحيات في الحرب التحريرية الشعبية بالاستقلال، وشيدت دولة عصرية كاملة السيادة</p>
+    <p>إن إيمان الشعب بالاختيارات الجماعية مكنه من تحقيق انتصارات كبرى ، طبعتها استعادة الثورات الوطنية بطابعها، وجعلتها دولة في خدمة الشعب وحده ، تمارس سلطاتها بكل استقلالية ، بعيدة عن أي ضغط خارجي .</p>
+    <p>إن الشعب الجزائري ناضل ويناضل دوما في سبيل الحرية والديمقراطية ، ويعتزم أن يبني بهذا الدستور مؤسسات دستورية ، أساسها مشاركة كل جزائري وجزائرية في تسيير الشؤون العمومية ، والقدرة على تحقيق العدالة الاجتماعية، والمساواة، وضمان الحرية لكل فرد</p>
+    <p>فالدستور يجسم عبقرية الشعب الخاصة ، ومرآته الصافية التي تعكس تطلعاته ، وثمرة إصراره ، ونتاج التحولات الاجتماعية العميقة التي أحدثها ، وبموافقته عليه يؤكد بكل عزم وتقدير أكثر من أي وقت مضى سمو القانون</p>
+    <p>إن الدستور فوق الجميع ، وهو القانون الأساسي الذي يضمن الحقوق والحريات الفردية والجماعية ، ويحمي مبدأ حرية اختيار الشعب ، ويضفي الشرعية على ممارسة السلطات ، ويكفل الحماية القانونية ، ورقابة عمل السلطات العمومية في مجتمع تسوده الشرعية ، ويتحقق فيه تفتح الإنسان بكل أبعاده .</p>
+    <p>فالشعب المتحصن بقيمه الروحية الراسخة ، والمحافظ على تقاليده في التضامن والعدل ، واثق في قدرته على المساهمة الفعالة في التقدم الثقافي ، والاجتماعي ، والاقتصادي ، في عالم اليوم والغد .</p>
+    <p>إن الجزائر ، أرض الإسلام وجزء لا يتجزأ من المغرب العربي الكبير ، وأرض عربية ، وبلاد متوسطية وإفريقية تعتز بإشعاع ثورتها ، ثورة أول نوفمبر ، ويشرفها الاحترام الذي أحرزته ، وعرفت كيف تحافظ عليه بالتزامها إزاء كل القضايا العادلة في العالم .</p>
+    <p>وفخر الشعب ، وتضحياته ، وإحساسه بالمسؤوليات ، وتمسكه العريق بالحرية ، والعدالة الاجتماعية ، تمثل كلها أحسن ضمان لاحترام مبادئ هذا الدستور الذي يصادق عليه وينقله إلى الأجيال القادمة ورثة رواد الحرية ، وبناة المجتمع الحر .</p>
+  </container>
+  <citations>
+    <citation>
+      <p>بناء على نتائج الاستفتاء المؤرخ في 23 فبراير 1989</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يمضي الدستور الآتي نصه</p>
+  </formula>
+</preamble>
+    <body>
+      <chapter eId="chp_الأول_المبادئ_العامة_التي_تحكم_المجتمع_الجزائري">
+        <num>الأول المبادئ العامة التي تحكم المجتمع الجزائري</num>
+        <section eId="chp_الأول_المبادئ_العامة_التي_تحكم_المجتمع_الجزائري_sec_الأول_الجزائر">
+          <num>الأول الجزائر</num>
+          <article eId="art_1">
+            <num>الأولى</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#algeria">الجزائر</term> جمهورية ديمقراطية شعبية .</p>
+            </paragraph>
+            <paragraph>
+            <p>وهي وحدة لا تتجزأ .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_2">
+            <num>2</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#islam">الإسلام</term> دين الدولة .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_3">
+            <num>3</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#arabic_language">اللغة العربية</term> هي اللغة الوطنية والرسمية .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_4">
+            <num>4</num>
+            <content>
+            <paragraph>
+            <p>عاصمة الجمهورية مدينة <term refersTo="#algiers">الجزائر</term> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_5">
+            <num>5</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#national_flag">العلم الوطني</term> ، و<term refersTo="#state_seal">خاتم الدولة</term> ، و<term refersTo="#national_anthem">النشيد الوطني</term> ، يحددها القانون</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_الأول_المبادئ_العامة_التي_تحكم_المجتمع_الجزائري_sec_الثاني_الشعب">
+          <num>الثاني الشعب</num>
+          <article eId="art_6">
+            <num>6</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#people">الشعب</term> مصدر كل سلطة .</p>
+            </paragraph>
+            <paragraph>
+            <p>” <term refersTo="#national_sovereignty">السيادة الوطنية</term> ملك <term refersTo="#people">الشعب</term> ” .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_7">
+            <num>7</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#constituent_power">السلطة التأسيسية</term> ملك <term refersTo="#people">الشعب</term> .</p>
+            </paragraph>
+            <paragraph>
+            <p>يمارس <term refersTo="#people">الشعب</term> سيادته بواسطة <term refersTo="#constitutional_institutions">المؤسسات الدستورية</term> التي يختارها .</p>
+            </paragraph>
+            <paragraph>
+            <p>يمارس <term refersTo="#people">الشعب</term> هذه السيادة عن طريق <term refersTo="#referendum">الاستفتاء</term> وبواسطة ممثليه المنتخبين .</p>
+            </paragraph>
+            <paragraph>
+            <p>ل<term refersTo="#president_of_the_republic">رئيس الجمهورية</term> أن يلتجئ إلى إرادة <term refersTo="#people">الشعب</term> مباشرة .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_8">
+            <num>8</num>
+            <content>
+            <paragraph>
+            <p>يختار <term refersTo="#people">الشعب</term> لنفسه مؤسسات ، غايتها ما يأتي :</p>
+            <list>
+            <point>
+            <p>المحافظة على الاستقلال الوطني ، ودعمه ،</p>
+            </point>
+            <point>
+            <p>المحافظة على الهوية ، والوحدة الوطنية ، ودعمهما ،</p>
+            </point>
+            <point>
+            <p><right>حماية الحريات الأساسية للمواطن</right> ، والازدهار الاجتماعي والثقافي للأمة ،</p>
+            </point>
+            <point>
+            <p>القضاء على استغلال الإنسان للإنسان،</p>
+            </point>
+            <point>
+            <p>حماية الاقتصاد الوطني من أي شكل من أشكال التلاعب ، أو الاختلاس ، أو الاستحواذ ، أو المصادرة غير المشروعة .</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_9">
+            <num>9</num>
+            <content>
+            <paragraph>
+            <p><obligation>لا يجوز للمؤسسات أن تقوم بما يأتي :</obligation></p>
+            <list>
+            <point>
+            <p>الممارسات الإقطاعية ، و الجهوية ، و المحسوبية ،</p>
+            </point>
+            <point>
+            <p>إقامة علاقات الاستغلال والتبعية ،</p>
+            </point>
+            <point>
+            <p>السلوك المخالف للخلق الإسلامي وقيم ثورة نوفمبر .</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_10">
+            <num>10</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#people">الشعب</term> حر في اختيار ممثليه .</p>
+            </paragraph>
+            <paragraph>
+            <p>لا حدود لتمثيل <term refersTo="#people">الشعب</term> إلا ما نص عليه <term refersTo="#constitution">الدستور</term> و<term refersTo="#electoral_law">قانون الانتخابات</term> .</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_الأول_المبادئ_العامة_التي_تحكم_المجتمع_الجزائري_sec_الثالث_الدولة">
+          <num>الثالث الدولة</num>
+          <article eId="art_11">
+            <num>المادة 11</num>
+            <content>
+            <paragraph>
+            <p>تستمد الدولة مشروعيتها وسبب وجودها من إرادة الشعب .</p>
+            </paragraph>
+            <paragraph>
+            <p>شعارها : ” بالشعب وللشعب” .</p>
+            </paragraph>
+            <paragraph>
+            <p>وهي في خدمته وحده .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_12">
+            <num>المادة 12</num>
+            <content>
+            <paragraph>
+            <p>تمارس سيادة الدولة على مجالها البري ، ومجالها الجوي ، وعلى مياهها .</p>
+            </paragraph>
+            <paragraph>
+            <p>كما تمارس الدولة الصلاحيات التي يقرها القانون الدولي على كل منطقة من مختلف مناطق المجال البحري التي ترجع إليها .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_13">
+            <num>المادة 13</num>
+            <content>
+            <paragraph>
+            <p><obligation>لا يجوز البتة التنازل أو التخلي عن أي جزء من التراب الوطني</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_14">
+            <num>المادة 14</num>
+            <content>
+            <paragraph>
+            <p>تقوم الدولة على مبادئ التنظيم الديمقراطي والعدالة الاجتماعية .</p>
+            </paragraph>
+            <paragraph>
+            <p>المجلس المنتخب هو الإطار الذي يعبر فيه الشعب عن إرادته ، ويراقب عمل السلطات العمومية .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_15">
+            <num>المادة 15</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#local_authorities">الجماعات الإقليمية للدولة هي البلدية والولاية</def> . <def refersTo="#municipality">البلدية هي الجماعة القاعدية</def> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_16">
+            <num>المادة 16</num>
+            <content>
+            <paragraph>
+            <p>يمثل المجلس المنتخب قاعدة اللامركزية ومكان مشاركة المواطنين في تسيير الشؤون العمومية .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_17">
+            <num>المادة 17</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#public_property">الملكية العامة هي ملك المجموعة الوطنية</def> .</p>
+            </paragraph>
+            <paragraph>
+            <p>وتشمل باطن الأرض، والمناجم ، و المقالع ، والموارد الطبيعية للطاقة ، والثروات المعدنية، الطبيعية ، والحية ، في مختلف مناطق الأملاك الوطنية البحرية ، والمياه، والغابات .</p>
+            </paragraph>
+            <paragraph>
+            <p>كما تشمل النقل بالسكك الحديدية ، والنقل البحري والجوي ، والبريد والمواصلات السلكية واللاسلكية، وأملاكا أخرى محددة في القانون .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_18">
+            <num>المادة 18</num>
+            <content>
+            <paragraph>
+            <p>الأملاك الوطنية يحددها القانون ، وتتكون من الأملاك العمومية والخاصة التي تملكها كل من الدولة والولاية ، والبلدية .</p>
+            </paragraph>
+            <paragraph>
+            <p>يتم تسيير الأملاك الوطنية طبقا للقانون .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_19">
+            <num>المادة 19</num>
+            <content>
+            <paragraph>
+            <p>تنظيم التجارة الخارجية من اختصاص الدولة .</p>
+            </paragraph>
+            <paragraph>
+            <p>يحدد القانون شروط ممارسة التجارة الخارجية ومراقبتها .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_20">
+            <num>المادة 20</num>
+            <content>
+            <paragraph>
+            <p><condition>لا يتم نزع الملكية إلا في إطار القانون</condition> ، ويترتب عليه تعويض قبلي عادل، ومنصف .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_21">
+            <num>المادة 21</num>
+            <content>
+            <paragraph>
+            <p><obligation>لا يمكن أن تكون الوظائف في مؤسسات الدولة مصدرا للثراء ، ولا وسيلة لخدمة المصالح الخاصة</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_22">
+            <num>المادة 22</num>
+            <content>
+            <paragraph>
+            <p>يعاقب القانون على التعسف في استعمال السلطة .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_23">
+            <num>المادة 23</num>
+            <content>
+            <paragraph>
+            <p><obligation>الدولة مسؤولة عن أمن كل مواطن</obligation> . <obligation>وتتكفل بحمايته في الخارج</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_24">
+            <num>المادة 24</num>
+            <content>
+            <paragraph>
+            <p>تنتظم الطاقة الدفاعية للأمة ، ودعمها ، وتطويرها ، حول <term refersTo="#anp">الجيش الوطني الشعبي</term> .</p>
+            </paragraph>
+            <paragraph>
+            <p>تتمثل المهمة الدائمة <term refersTo="#anp">للجيش الوطني الشعبي</term> في المحافظة على الاستقلال الوطني ، والدفاع عن السيادة الوطنية .</p>
+            </paragraph>
+            <paragraph>
+            <p>كما يضطلع بالدفاع عن وحدة البلاد ، وسلامتها الترابية ، وحماية مجالها البري والجوي ، ومختلف مناطق أملاكها البحرية .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_25">
+            <num>المادة 25</num>
+            <content>
+            <paragraph>
+            <p><obligation>تمتنع الجزائر عن اللجوء إلى الحرب من أجل المساس بالسيادة المشروعة للشعوب الأخرى وحريتها</obligation> .</p>
+            </paragraph>
+            <paragraph>
+            <p>وتبذل جهدها لتسوية الخلافات الدولية بالوسائل السلمية .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_26">
+            <num>المادة 26</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#algeria">الجزائر</term> <obligation>متضامنة مع جميع الشعوب التي تكافح من أجل التحرير السياسي والاقتصادي</obligation> ، و<right>الحق في تقرير المصير</right> ، وضد كل تمييز عنصري .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_27">
+            <num>المادة 27</num>
+            <content>
+            <paragraph>
+            <p><obligation>تعمل <term refersTo="#algeria">الجزائر</term> من أجل دعم التعاون الدولي ، وتنمية العلاقات الودية بين الدول ، على أساس المساواة ، والمصلحة المتبادلة ، وعدم التدخل في الشؤون الداخلية</obligation> ، وتتبنى مبادئ ميثاق الأمم المتحدة وأهدافه .</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_الأول_المبادئ_العامة_التي_تحكم_المجتمع_الجزائري_sec_الرابع_الحقوق_والحريات">
+          <num>الرابع الحقوق والحريات</num>
+          <article eId="art_28">
+            <num>28</num>
+            <content>
+            <paragraph>
+            <p><right>كل المواطنين سواسية أمام القانون</right> . ولا يمكن أن يتذرع بأي تمييز يعود سببه إلى المولد ، أو العرق ، أو الجنس ، أو الرأي ، أو أي شرط أو ظرف آخر ، شخصي أو اجتماعي .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_29">
+            <num>29</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#nationality">الجنسية الجزائرية</term> ، معرفة بالقانون .<condition>شروط اكتساب الجنسية الجزائرية، والاحتفاظ بها، أو فقدانها، أو إسقاطها، محددة بالقانون</condition> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_30">
+            <num>30</num>
+            <content>
+            <paragraph>
+            <p><obligation>تستهدف المؤسسات ضمان مساواة كل المواطنين والمواطنات في الحقوق والواجبات</obligation> بإزالة العقبات التي تعوق تفتح شخصية الإنسان، وتحول دون مشاركة الجميع الفعلية في الحياة السياسية ، والاقتصادية، والاجتماعية، والثقافية .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_31">
+            <num>31</num>
+            <content>
+            <paragraph>
+            <p><right>الحريات الأساسية وحقوق الإنسان والمواطن مضمونة</right> ، وتكون تراثا مشتركا بين جميع الجزائريين والجزائريات ، <obligation>واجبهم أن ينقلوه من جيل إلى جيل كي يحافظوا على سلامته ، وعدم انتهاك حرمته</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_32">
+            <num>32</num>
+            <content>
+            <paragraph>
+            <p><right>الدفاع الفردي أو عن طريق الجمعية عن الحقوق الأساسية للإنسان وعن الحريات الفردية والجماعية ، مضمون</right> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_33">
+            <num>33</num>
+            <content>
+            <paragraph>
+            <p><obligation>تضمن الدولة عدم انتهاك حرمة الإنسان</obligation> . ويحظر أي عنف بدني أو معنوي .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_34">
+            <num>34</num>
+            <content>
+            <paragraph>
+            <p>يعاقب القانون على المخالفات المرتكبة ضد الحقوق والحريات ، وعلى كل ما يمس سلامة الإنسان البدنية والمعنوية .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_35">
+            <num>35</num>
+            <content>
+            <paragraph>
+            <p>لا مساس ب<right>حرمة حرية المعتقد</right> ، و<right>حرمة حرية الرأي</right> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_36">
+            <num>36</num>
+            <content>
+            <paragraph>
+            <p><right>حرية الابتكار الفكري والفني والعلمي مضمونة للمواطن</right> . <right>حقوق المؤلف يحميها القانون</right> .</p>
+            </paragraph>
+            <paragraph>
+            <p>لا يجوز حجز أي مطبوع أو تسجيل أو أية وسيلة أخرى من وسائل التبليغ والإعلام إلا بمقتضى أمر قضائي .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_37">
+            <num>37</num>
+            <content>
+            <paragraph>
+            <p>لا يجوز انتهاك <right>حرمة حياة المواطن الخاصة</right> ، و<right>حرمة شرفه</right> ، ويحميهما القانون .</p>
+            </paragraph>
+            <paragraph>
+            <p><right>سرية المراسلات والاتصالات الخاصة بكل أشكالها مضمونة</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_38">
+            <num>38</num>
+            <content>
+            <paragraph>
+            <p><obligation>تضمن الدولة عدم انتهاك حرمة المسكن</obligation> .</p>
+            </paragraph>
+            <paragraph>
+            <p>فلا تفتيش إلا بمقتضى القانون، وفي إطار احترامه .</p>
+            </paragraph>
+            <paragraph>
+            <p>ولا تفتيش إلا بأمر مكتوب صادر عن السلطة القضائية المختصة .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_39">
+            <num>39</num>
+            <content>
+            <paragraph>
+            <p><right>حريات التعبير ، وإنشاء الجمعيات ، والاجتماع ، مضمونة للمواطن</right> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_40">
+            <num>40</num>
+            <content>
+            <paragraph>
+            <p><right>حق إنشاء الجمعيات ذات الطابع السياسي معترف به</right> .</p>
+            </paragraph>
+            <paragraph>
+            <p>ولا يمكن التذرع بهذا الحق لضرب الحريات الأساسية، والوحدة الوطنية، والسلامة الترابية ، واستقلال البلاد ، وسيادة الشعب .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_41">
+            <num>41</num>
+            <content>
+            <paragraph>
+            <p><right>يحق لكل مواطن يتمتع بحقوقه المدنية والسياسية، أن يختار بحرية موطن إقامته ، وأن ينتقل عبر التراب الوطني</right> .</p>
+            </paragraph>
+            <paragraph>
+            <p><right>حق الدخول إلى التراب الوطني والخروج منه مضمون له</right> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_42">
+            <num>42</num>
+            <content>
+            <paragraph>
+            <p><right>كل شخص يعتبر بريئا حتى تثبت جهة قضائية نظامية إدانته</right> ، مع كل الضمانات التي يتطلبها القانون .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_43">
+            <num>43</num>
+            <content>
+            <paragraph>
+            <p>لا إدانة إلا بمقتضى قانون صادر قبل ارتكاب الفعل المجرم .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_44">
+            <num>المادة 44</num>
+            <content>
+            <paragraph>
+            <p>لا يتابع أحد ، ولا يوقف أو يحتجز إلا في <condition>الحالات المحددة بالقانون</condition>، وطبقا للأشكال التي نص عليها .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_45">
+            <num>المادة 45</num>
+            <content>
+            <paragraph>
+            <p>يخضع <term refersTo="#detention">التوقيف للنظر</term> في مجال التحريات الجزائية للرقابة القضائية، ولا يمكن أن يتجاوز مدة ثمان وأربعين (48 ) ساعة .</p>
+            </paragraph>
+            <paragraph>
+            <p>يملك الشخص الذي يوقف للنظر <right>حق الاتصال فورا بأسرته</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>ولا يمكن تمديد مدة التوقيف للنظر، إلا استثناء و وفقا للشروط المحددة بالقانون .</p>
+            </paragraph>
+            <paragraph>
+            <p>ولدى انتهاء مدة التوقيف للنظر، <obligation>يجب أن يجرى فحص طبي على الشخص الموقوف، إن طلب ذلك، على أن يعلم بهذه الإمكانية</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_46">
+            <num>المادة 46</num>
+            <content>
+            <paragraph>
+            <p>يترتب على الخطأ القضائي <right>تعويض من الدولة</right> .</p>
+            </paragraph>
+            <paragraph>
+            <p>ويحدد القانون شروط التعويض و كيفياته .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_47">
+            <num>المادة 47</num>
+            <content>
+            <paragraph>
+            <p>لكل مواطن <condition>تتوفر فيه الشروط القانونية</condition> أن <right>ينتخب وينتخب</right> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_48">
+            <num>المادة 48</num>
+            <content>
+            <paragraph>
+            <p><right>يتساوى جميع المواطنين في تقلد المهام والوظائف في الدولة</right> دون أية شروط أخرى غير الشروط التي يحددها القانون .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_49">
+            <num>المادة 49</num>
+            <content>
+            <paragraph>
+            <p><right>الملكية الخاصة مضمونة</right> .</p>
+            </paragraph>
+            <paragraph>
+            <p><right>حق الإرث مضمون</right> .</p>
+            </paragraph>
+            <paragraph>
+            <p>الأملاك الوقفية وأملاك الجمعيات الخيرية معترف بها .</p>
+            </paragraph>
+            <paragraph>
+            <p>ويحمي القانون تخصيصها .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_50">
+            <num>المادة 50</num>
+            <content>
+            <paragraph>
+            <p><right>الحق في التعليم مضمون</right> .</p>
+            </paragraph>
+            <paragraph>
+            <p>التعليم مجاني حسب الشروط التي يحددها القانون .</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>التعليم الأساسي إجباري</obligation> .</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تنظم الدولة المنظومة التعليمية</obligation> .</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تسهر الدولة على التساوي في الالتحاق بالتعليم والتكوين المهني</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_51">
+            <num>المادة 51</num>
+            <content>
+            <paragraph>
+            <p><right>الرعاية الصحية حق للمواطنين</right> .</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تتكفل الدولة بالوقاية من الأمراض الوبائية والمعدية ومكافحتها</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_52">
+            <num>المادة 52</num>
+            <content>
+            <paragraph>
+            <p>لكل المواطنين <right>الحق في العمل</right> .</p>
+            </paragraph>
+            <paragraph>
+            <p>يضمن القانون في أثناء العمل <right>الحق في الحماية ، والأمن ، والنظافة</right> .</p>
+            </paragraph>
+            <paragraph>
+            <p><right>الحق في الراحة مضمون</right> ، ويحدد القانون كيفيات ممارسته .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_53">
+            <num>المادة 53</num>
+            <content>
+            <paragraph>
+            <p><right>الحق النقابي معترف به لجميع المواطنين</right> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_54">
+            <num>المادة 54</num>
+            <content>
+            <paragraph>
+            <p><right>الحق في الإضراب معترف به</right> ، ويمارس في إطار القانون .</p>
+            </paragraph>
+            <paragraph>
+            <p>ويمكن أن يمنع القانون ممارسة هذا الحق ، أو يجعل حدودا لممارسته في ميادين الدفاع الوطني والأمن ، أو في جميع الخدمات أو الأعمال العمومية ذات المنفعة الحيوية للمجتمع .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_55">
+            <num>المادة 55</num>
+            <content>
+            <paragraph>
+            <p><obligation>تحظى الأسرة بحماية الدولة والمجتمع</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_56">
+            <num>المادة 56</num>
+            <content>
+            <paragraph>
+            <p>ظروف معيشة المواطنين الذين لم يبلغوا سن العمل ، والذين لا يستطيعون القيام به ، والذين عجزوا عنه نهائيا، مضمونة</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_الأول_المبادئ_العامة_التي_تحكم_المجتمع_الجزائري_sec_الخامس_الواجبات">
+          <num>الخامس الواجبات</num>
+          <article eId="art_57">
+            <num>المادة 57</num>
+            <content>
+            <paragraph>
+            <p>لا يعذر بجهل <term refersTo="#law">القانون</term> .</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يجب على كل شخص أن يحترم الدستور وقوانين الجمهورية</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_58">
+            <num>المادة 58</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على كل مواطن أن يحمي ويصون استقلال الوطن، وسيادته، وسلامة ترابه</obligation> .</p>
+            </paragraph>
+            <paragraph>
+            <p>يعاقب <term refersTo="#law">القانون</term> بكل صرامة على الخيانة والتجسس والولاء للعدو، وعلى جميع الجرائم المرتكبة ضد أمن الدولة .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_59">
+            <num>المادة 59</num>
+            <content>
+            <paragraph>
+            <p><obligation>على كل مواطن أن يؤدي بإخلاص واجباته تجاه المجموعة الوطنية</obligation> .</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>التزام المواطن إزاء الوطن وإجبارية المشاركة في الدفاع عنه ، واجبان مقدسان دائمان</obligation> .</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تضمن الدولة احترام رموز الثورة، و أرواح الشهداء، و كرامة ذويهم، والمجاهدين</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_60">
+            <num>المادة 60</num>
+            <content>
+            <paragraph>
+            <p>يمارس كل واحد جميع حرياته، في احترام <right>الحقوق المعترف بها للغير في الدستور</right>، لا سيما احترام <right>الحق في الشرف</right> ، و<right>ستر الحياة الخاصة</right> ، و<right>حماية الأسرة والشبيبة والطفولة</right> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_61">
+            <num>المادة 61</num>
+            <content>
+            <paragraph>
+            <p>كل المواطنين متساوون في أداء الضريبة .</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويجب على كل واحد أن يشارك في تمويل التكاليف العمومية، حسب قدرته الضريبية</obligation> .</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>لا يجوز أن تحدث أية ضريبة إلا بمقتضى القانون</condition> .</p>
+            </paragraph>
+            <paragraph>
+            <p>ولا يجوز أن تحدث بأثر رجعي ، أية ضريبة ، أو جباية ، أو رسم ، أو أي حق كيفما كان نوعه.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_62">
+            <num>المادة 62</num>
+            <content>
+            <paragraph>
+            <p>يجازي <term refersTo="#law">القانون</term> الآباء على القيام بـ<obligation>واجب تربية أبنائهم ورعايتهم</obligation>، كما يجازي الأبناء على القيام بـ<obligation>واجب الإحسان إلى آبائهم ومساعدتهم</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_63">
+            <num>المادة 63</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على كل مواطن أن يحمي الملكية العامة ، ومصالح المجموعة الوطنية ، ويحترم ملكية الغير</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_64">
+            <num>المادة 64</num>
+            <content>
+            <paragraph>
+            <p>يتمتع كل أجنبي يكون وجوده فوق التراب الوطني قانونيا بـ<right>حماية شخصه وأملاكه</right> طباق لـ<term refersTo="#law">القانون</term> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_65">
+            <num>المادة 65</num>
+            <content>
+            <paragraph>
+            <p>لا يسلم أحد خارج التراب الوطني إلا بناء على <term refersTo="#extradition_law">قانون تسليم المجرمين</term> وتطبيقا له .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_66">
+            <num>المادة 66</num>
+            <content>
+            <paragraph>
+            <p>لا يمكن بأي حال من الأحوال أن يسلم أو يطرد لاجئ سياسي يتمتع قنونا بـ<right>حق اللجوء</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+      <chapter eId="chp_2">
+        <num>الثاني</num>
+        <heading>تنظيم السلطات</heading>
+        <section eId="chp_2_sec_1">
+          <num>الأول</num>
+          <heading>السلطة التنفيذية</heading>
+          <article eId="art_67">
+            <num>المادة 67</num>
+            <content>
+            <paragraph>
+            <p>يجسد <term refersTo="#president">رئيس الجمهورية</term> ، رئيس الدولة ، وحدة الأمة .</p>
+            </paragraph>
+            <paragraph>
+            <p>وهو حامي <term refersTo="#constitution">الدستور</term> .</p>
+            </paragraph>
+            <paragraph>
+            <p>ويجسد الدولة داخل البلاد وخارجها.</p>
+            </paragraph>
+            <paragraph>
+            <p>له أن يخاطب الأمة مباشرة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_68">
+            <num>المادة 68</num>
+            <content>
+            <paragraph>
+            <p>ينتخب <term refersTo="#president">رئيس الجمهورية</term> ، عن طريق الاقتراع العام المباشر والسري .</p>
+            </paragraph>
+            <paragraph>
+            <p>يتم الفوز في الانتخابات بالحصول على الأغلبية المطلقة من أصوات الناخبين المعبر عنها .</p>
+            </paragraph>
+            <paragraph>
+            <p>ويحدد القانون الكيفيات الأخرى للانتخابات الرئاسية .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_69">
+            <num>المادة 69</num>
+            <content>
+            <paragraph>
+            <p>يمارس <term refersTo="#president">رئيس الجمهورية</term> ، السلطة السامية في الحدود المثبتة في <term refersTo="#constitution">الدستور</term> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_70">
+            <num>المادة 70</num>
+            <content>
+            <paragraph>
+            <p><condition>لا يحق أن ينتخب لرئاسة الجمهورية إلا من كان جزائري الجنسية أصلا، ويدين بالإسلام ، وعمره أربعون سنة كاملة يوم الانتخاب ، ويتمتع بكامل حقوقه المدنية والسياسية</condition> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_71">
+            <num>المادة 71</num>
+            <content>
+            <paragraph>
+            <p>مدة المهمة الرئاسية خمس (5) سنوات .</p>
+            </paragraph>
+            <paragraph>
+            <p><right>يمكن تجديد انتخاب رئيس الجمهورية</right> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_72">
+            <num>المادة 72</num>
+            <content>
+            <paragraph>
+            <p><obligation>يؤدي رئيس الجمهورية اليمين أمام الشعب بحضور جميع الهيئات العليا في الأمة ، خلال الأسبوع الموالي لانتخابه</obligation> .</p>
+            </paragraph>
+            <paragraph>
+            <p>ويباشر مهمته فور أدائه اليمين .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_73">
+            <num>المادة 73</num>
+            <content>
+            <paragraph>
+            <p><obligation>يؤدي رئيس الجمهورية اليمين حسب النص الآتي : “وفاء للتضحيات الكبرى ولأرواح شهدائنا الأبرار وقيم ثورة نوفمبر، أقسم بالله العلي العظيم أن أحترم الدين الإسلامي و أمجده، و أدافع عن الدستور، و أحترم حرية اختيار الشعب، ومؤسسات الجمهورية وقوانينها، و أحافظ على سلامة التراب الوطني و وحدة الشعب و الأمة ، و أحمي الحريات والحقوق الأساسية للإنسان والمواطن ، وأعمل بدون هوادة من أجل تطور الشعب وازدهاره ، وأسعى بكل قواي في سبيل تحقيق المثل العليا للعدالة ، والحرية ، والسلم في العالم”</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_74">
+            <num>المادة 74</num>
+            <content>
+            <paragraph>
+            <p>يضطلع <term refersTo="#president">رئيس الجمهورية</term> ، بالإضافة إلى السلطات التي تخولها إياه صراحة أحكام أخرى في <term refersTo="#constitution">الدستور</term> ، بالسلطات والصلاحيات الآتية :</p>
+            <list>
+            <point>
+            <p>1)- هو القائد الأعلى لجميع القوات المسلحة للجمهورية ،</p>
+            </point>
+            <point>
+            <p>2)- يتولى مسؤولية الدفاع الوطني ،</p>
+            </point>
+            <point>
+            <p>3)- يقرر السياسة الخارجية للأمة ويوجهها ،</p>
+            </point>
+            <point>
+            <p>4)- يرأس مجلس الوزراء ،</p>
+            </point>
+            <point>
+            <p>5)- يعين رئيس الحكومة وينهي مهامه ،</p>
+            </point>
+            <point>
+            <p>6)- يوقع المراسيم الرئاسية ،</p>
+            </point>
+            <point>
+            <p>7)- يعين في الوظائف المدنية والعسكرية للدولة ،</p>
+            </point>
+            <point>
+            <p>8)- له حق إصدار العفو وحق تخفيض العقوبات أو استبدالها ،</p>
+            </point>
+            <point>
+            <p>9)- يمكنه أن يستشير الشعب في كل قضية ذات أهمية وطنية عن طريق الاستفتاء ،</p>
+            </point>
+            <point>
+            <p>10)- يعين سفراء الجمهورية والمبعوثين فوق العادة إلى الخارج، وينهي مهامهم، ويتسلم أوراق اعتماد الممثلين الدبلوماسيين الأجانب ، وأوراق إنهاء مهامهم،</p>
+            </point>
+            <point>
+            <p>11)- يبرم المعاهدات الدولية ويصادق عليها ،</p>
+            </point>
+            <point>
+            <p>12)- يسلم أوسمة الدولة ، و نياشينها، وشهاداتها التشريفية.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_75">
+            <num>المادة 75</num>
+            <content>
+            <paragraph>
+            <p>يقدم <term refersTo="#head_of_government">رئيس الحكومة</term> أعضاء حكومته الذين اختارهم لـ <term refersTo="#president">رئيس الجمهورية</term> الذي يعينهم .</p>
+            </paragraph>
+            <paragraph>
+            <p>يضبط <term refersTo="#head_of_government">رئيس الحكومة</term> برنامج حكومته، ويعرضه في مجلس الوزراء .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_76">
+            <num>76</num>
+            <content>
+            <paragraph>
+            <p><obligation>يقدم <term refersTo="#head_of_government">رئيس الحكومة</term> برنامجه إلى <term refersTo="#apn">المجلس الشعبي الوطني</term> للموافقة عليه</obligation> <obligation>يجري <term refersTo="#apn">المجلس الشعبي الوطني</term> لهذا الغرض مناقشة عامة</obligation> .</p>
+            </paragraph>
+            <paragraph>
+            <p>ويمكن <term refersTo="#head_of_government">رئيس الحكومة</term> أن يكيف برنامجه في ضوء هذه المناقشة .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_77">
+            <num>77</num>
+            <content>
+            <paragraph>
+            <p><condition>في حالة عدم موافقة <term refersTo="#apn">المجلس الشعبي الوطني</term> على البرنامج المعروض عليه</condition> ، <obligation>يقدم <term refersTo="#head_of_government">رئيس الحكومة</term> استقالة حكومته ل<term refersTo="#president">رئيس الجمهورية</term></obligation> .</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يعين <term refersTo="#president">رئيس الجمهورية</term> من جديد <term refersTo="#head_of_government">رئيس حكومة</term> حسب الكيفيات نفسها</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_78">
+            <num>78</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا لم تحصل من جديد موافقة <term refersTo="#apn">المجلس الشعبي الوطني</term></condition> <obligation>ينحل وجوبا</obligation> .</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>وتجري انتخابات تشريعية جديدة في أجل أقصاه ثلاثة أشهر</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_79">
+            <num>79</num>
+            <content>
+            <paragraph>
+            <p><obligation>ينفذ <term refersTo="#head_of_government">رئيس الحكومة</term> وينسق البرنامج الذي يوافق عليه <term refersTo="#apn">المجلس الشعبي الوطني</term></obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_80">
+            <num>80</num>
+            <content>
+            <paragraph>
+            <p><obligation>تقدم الحكومة سنويا ل<term refersTo="#apn">المجلس الشعبي الوطني</term> بيانا عن السياسة العامة</obligation> .</p>
+            </paragraph>
+            <paragraph>
+            <p>تعقب بيان السياسة العامة مناقشة لعمل الحكومة .</p>
+            </paragraph>
+            <paragraph>
+            <p>يمكن <term refersTo="#apn">المجلس الشعبي الوطني</term> أن يختتم هذه المناقشة بلائحة أو بإيداع ملتمس رقابة، طبقا لأحكام <ref href="#art_126">المواد 126</ref> و <ref href="#art_127">127</ref> و <ref href="#art_128">128</ref> ، أدناه .</p>
+            </paragraph>
+            <paragraph>
+            <p>ل<term refersTo="#head_of_government">رئيس الحكومة</term> أن يطلب تصويتا بالثقة .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_81">
+            <num>81</num>
+            <content>
+            <paragraph>
+            <p>يمارس <term refersTo="#head_of_government">رئيس الحكومة</term> ، زيادة على السلطات التي تخولها إياه صراحة أحكام أخرى في الدستور ، الصلاحيات الآتية :</p>
+            <list>
+            <point>
+            <p>يوزع الصلاحيات بين أعضاء الحكومة مع احترام الأحكام الدستورية ،</p>
+            </point>
+            <point>
+            <p>يرأس مجلس الحكومة ،</p>
+            </point>
+            <point>
+            <p>يسهر على تنفيذ القوانين والتنظيمات ،</p>
+            </point>
+            <point>
+            <p>يوقع المراسيم التنفيذية ،</p>
+            </point>
+            <point>
+            <p>يعين في وظائف الدولة دون المساس بأحكام الفقرتين 7 و 10 من <ref href="#art_74">المادة 74</ref> .</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_82">
+            <num>82</num>
+            <content>
+            <paragraph>
+            <p>يمكن <term refersTo="#head_of_government">رئيس الحكومة</term> أن يقدم استقالة حكومته ل<term refersTo="#president">رئيس الجمهورية</term> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_83">
+            <num>83</num>
+            <content>
+            <paragraph>
+            <p><obligation>لا يجوز بأي حال من الأحوال أن يفوض <term refersTo="#president">رئيس الجمهورية</term> سلطته في تعيين أعضاء المجلس الدستوري الذي يختص بتعيينهم، وفي تعيين <term refersTo="#head_of_government">رئيس الحكومة</term> وأعضائها، وأعضاء المجلس الأعلى للأمن، وأعضاء المجلس الإسلامي الأعلى، وإنها مهامهم</obligation> .</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>كما لا يجوز أن يفوض سلطته في اللجوء إلى الاستفتاء ، وحل <term refersTo="#apn">المجلس الشعبي الوطني</term>، وتقرير إجراء الانتخابات التشريعية قبل أو في أوانها، وتطبيق الأحكام المنصوص عليها في <ref href="#art_86">المواد من 86</ref> إلى <ref href="#art_91">91</ref> في الدستور، وكذلك السلطات المحددة في الفقرات : 1، 2 ، 3 ، 4 ، 6، 8 ، 10، 11، من <ref href="#art_74">المادة 74</ref> ، وأحكام <ref href="#art_117">المادتين 117</ref> و <ref href="#art_118">118</ref> من الدستور</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_84">
+            <num>84</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا استحال على <term refersTo="#president">رئيس الجمهورية</term> أن يمارس مهامه بسبب مرض خطيرمزمن</condition> ، <obligation>يجتمع <term refersTo="#constitutional_council">المجلس الدستوري</term> وجوبا</obligation> ، وبعد أن يتثبت من حقيقة هذا المانع بكل الوسائل الملائمة ، يقترح بالإجماع على <term refersTo="#national_assembly">المجلس الشعبي الوطني</term> التصريح بثبوت المانع .</p>
+            </paragraph>
+            <paragraph>
+            <p>يعلن <term refersTo="#national_assembly">المجلس الشعبي الوطني</term> ثبوت المانع لـ <term refersTo="#president">رئيس الجمهورية</term> بأغلبية ثلثي أعضائه ، ويكلف رئيسه بتولي رئاسة الدولة بالنيابة مدة أقصاها خمسة وأربعون يوما، ويمارس صلاحياته مع مراعاة أحكام <ref href="#art_85">المادة 85</ref> من الدستور</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وفي حالة استمرار المانع ، بعد انقضاء خمسة وأربعين يوما</condition> ، يعلن الشغور بالاستقالة وجوبا ، حسب الإجراء المنصوص عليه في الفقرتين السابقتين ، وطبقا لأحكام الفقرات الآتية من هذه المادة .</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة استقالة <term refersTo="#president">رئيس الجمهورية</term> أو وفاته</condition>، <obligation>يجتمع <term refersTo="#constitutional_council">المجلس الدستوري</term>، وجوبا، ويثبت الشغور النهائي لرئاسة الجمهورية</obligation> .</p>
+            </paragraph>
+            <paragraph>
+            <p>وتبلغ فورا شهادة الشغور النهائي لـ <term refersTo="#national_assembly">المجلس الشعبي الوطني</term> الذي يجتمع وجوبا .</p>
+            </paragraph>
+            <paragraph>
+            <p>يتولى رئيس <term refersTo="#national_assembly">المجلس الشعبي الوطني</term> مهام رئيس الدولة مدة أقصاها خمسة وأربعون يوما ، تنظم خلالها انتخابات رئاسية .</p>
+            </paragraph>
+            <paragraph>
+            <p>ولا يحق لرئيس الدولة المعين بهذه الطريقة أن يترشح لرئاسة الجمهورية</p>
+            </paragraph>
+            <paragraph>
+            <p>يمارس <term refersTo="#president">رئيس الجمهورية</term> المنتخب مهامه طبقا لأحكام المواد من <ref href="#art_67">67</ref> إلى <ref href="#art_74">74</ref> من الدستور .</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وإذا اقترنت وفاة <term refersTo="#president">رئيس الجمهورية</term> بشغور <term refersTo="#national_assembly">المجلس الشعبي الوطني</term> بسبب حله</condition>، <obligation>يجتمع <term refersTo="#constitutional_council">المجلس الدستوري</term> وجوبا لإثبات الشغور النهائي لرئاسة الجمهورية</obligation> .</p>
+            </paragraph>
+            <paragraph>
+            <p>يضطلع رئيس <term refersTo="#constitutional_council">المجلس الدستوري</term> بمهمة رئيس الدولة في الظروف المبينة في الفقرات السابقة من هذه المادة وفي <ref href="#art_85">المادة 85</ref> من الدستور .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_85">
+            <num>85</num>
+            <content>
+            <paragraph>
+            <p>لا يمكن أن تقال أو تعدل الحكومة القائمة إبان حصول المانع لـ <term refersTo="#president">رئيس الجمهورية</term> ، أو وفاته ، أو استقالته ، حتى يشرع <term refersTo="#president">رئيس الجمهورية</term> الجديد في ممارسة مهامه .</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يستقيل وجوبا <term refersTo="#head_of_government">رئيس الحكومة</term> القائمة قانونا ، <condition>إذا ترشح لرئاسة الجمهورية</condition></obligation>، ويمارس وظيفة <term refersTo="#head_of_government">رئيس الحكومة</term> حينئذ أحد أعضائها الذي يعينه رئيس الدولة .</p>
+            </paragraph>
+            <paragraph>
+            <p>لا يمكن في فترتي الخمسة والأربعين يوما، تطبيق الأحكام المنصوص عيها في الفقرتين 8 ، و 9 من <ref href="#art_74">المادة 74</ref> ، والمواد <ref href="#art_75">75</ref>، <ref href="#art_90">90</ref>، <ref href="#art_120">120</ref>، <ref href="#art_127">127</ref>، و <ref href="#art_128">128</ref> من الدستور .</p>
+            </paragraph>
+            <paragraph>
+            <p>لا يمكن ، خلال الفترتين السابق ذكرهما ، تطبيق أحكام المواد <ref href="#art_87">87</ref>، و <ref href="#art_88">88</ref>، و <ref href="#art_89">89</ref>، و <ref href="#art_91">91</ref> من الدستور، إلا بموافقة <term refersTo="#national_assembly">المجلس الشعبي الوطني</term> ، بعد استشارة <term refersTo="#constitutional_council">المجلس الدستوري</term> ، و <term refersTo="#high_security_council">المجلس الأعلى للأمن</term> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_86">
+            <num>86</num>
+            <content>
+            <paragraph>
+            <p>يقرر <term refersTo="#president">رئيس الجمهورية</term>، <condition>إذا دعت الضرورة الملحة</condition>، حالة الطوارئ أو الحصار، لمدة معينة بعد اجتماع <term refersTo="#high_security_council">المجلس الأعلى للأمن</term>، واستشارة رئيس <term refersTo="#national_assembly">المجلس الشعبي الوطني</term> ورئيس الحكومة ، ورئيس <term refersTo="#constitutional_council">المجلس الدستوري</term> ، ويتخذ كل التدابير اللازمة لاستتباب الوضع .</p>
+            </paragraph>
+            <paragraph>
+            <p>ولا يمكن تمديد حالة الطوارئ أو الحصار، إلا بموافقة <term refersTo="#national_assembly">المجلس الشعبي الوطني</term> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_87">
+            <num>87</num>
+            <content>
+            <paragraph>
+            <p><obligation>يقرر <term refersTo="#president">رئيس الجمهورية</term>، <term refersTo="#exceptional_state">الحالة الاستثنائية</term></obligation> ، <condition>إذا كانت البلاد مهددة بخطر داهم يوشك أن يصيب مؤسساتها الدستورية ، أو استقلالها ، أو سلامة ترابها</condition></p>
+            </paragraph>
+            <paragraph>
+            <p><condition>و لا يتخذ مثل هذا الإجراء إلا بعد استشارة <term refersTo="#constitutional_council">المجلس الدستوري</term>، و الاستماع إلى <term refersTo="#high_security_council">المجلس الأعلى للأمن</term> ، و<term refersTo="#council_of_ministers">مجلس الوزراء</term></condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تخول <term refersTo="#exceptional_state">الحالة الاستثنائية</term> <term refersTo="#president">رئيس الجمهورية</term> أن يتخذ الإجراءات الاستثنائية التي تستوجبها المحافظة على استقلال الأمة والمؤسسات الدستورية في الجمهورية .</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يجتمع <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> وجوبا</obligation> .</p>
+            </paragraph>
+            <paragraph>
+            <p>تنتهي <term refersTo="#exceptional_state">الحالة الاستثنائية</term>، حسب الأشكال والإجراءات السالفة الذكر التي أوجبت إعلانها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_88">
+            <num>88</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#general_mobilization">التعبئة العامة</term> يقررها <term refersTo="#president">رئيس الجمهورية</term> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_89">
+            <num>89</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا وقع عدوان فعلي على البلاد ، أو يوشك أن يقع حسبما نصت عليه الترتيبات الملائمة لميثاق الأمم المتحدة</condition> ، <obligation>يعلن <term refersTo="#president">رئيس الجمهورية</term> الحرب، بعد اجتماع <term refersTo="#council_of_ministers">مجلس الوزراء</term>، والاستماع إلى <term refersTo="#high_security_council">المجلس الأعلى للأمن</term></obligation> .</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يجتمع <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> وجوبا</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويوجه <term refersTo="#president">رئيس الجمهورية</term> خطابا للأمة يعلمها بذلك .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_90">
+            <num>90</num>
+            <content>
+            <paragraph>
+            <p>يوقف العمل بالدستور مدة <term refersTo="#state_of_war">حالة الحرب</term> ، ويتولى <term refersTo="#president">رئيس الجمهورية</term> جميع السلطات .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_91">
+            <num>91</num>
+            <content>
+            <paragraph>
+            <p>يوقع <term refersTo="#president">رئيس الجمهورية</term> اتفاقيات الهدنة ومعاهدات السلم .</p>
+            </paragraph>
+            <paragraph>
+            <p>ويتلقى رأي <term refersTo="#constitutional_council">المجلس الدستوري</term> في الاتفاقيات المتعلقة بهما .</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويعرضها فورا على <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> ليوافق عليها صراحة</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_2_sec_الثاني_السلطة_التشريعية">
+          <num>الثاني السلطة التشريعية</num>
+          <article eId="art_92">
+            <num>المادة 92</num>
+            <content>
+            <paragraph>
+            <p>يمارس <term refersTo="#legislative_power">السلطة التشريعية</term> مجلس واحد يسمى <term refersTo="#apn">المجلس الشعبي الوطني</term> .</p>
+            </paragraph>
+            <paragraph>
+            <p>وله السيادة في إعداد القانون والتصويت عليه .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_93">
+            <num>المادة 93</num>
+            <content>
+            <paragraph>
+            <p>يراقب <term refersTo="#apn">المجلس الشعبي الوطني</term> عمل الحكومة وفقا للشروط المحددة في <ref href="/akn/dz/act/constitution/1989#art_76">المادتين 76</ref> و <ref href="/akn/dz/act/constitution/1989#art_80">80</ref> من الدستور .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_94">
+            <num>المادة 94</num>
+            <content>
+            <paragraph>
+            <p><obligation>واجب <term refersTo="#apn">المجلس الشعبي الوطني</term> في إطار اختصاصاته الدستورية، أن يبقى وفيا لثقة الشعب ، ويظل يتحسس تطلعاته</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_95">
+            <num>المادة 95</num>
+            <content>
+            <paragraph>
+            <p>ينتخب أعضاء <term refersTo="#apn">المجلس الشعبي الوطني</term> عن طريق الاقتراع العام المباشر والسري .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_96">
+            <num>المادة 96</num>
+            <content>
+            <paragraph>
+            <p>ينتخب <term refersTo="#apn">المجلس الشعبي الوطني</term> لمدة خمس سنوات .</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>ولا يمكن تمديد الفترة النيابية إلا في ظروف خطيرة جدا لا تسمح بإجراء انتخابات عادية</condition> .</p>
+            </paragraph>
+            <paragraph>
+            <p>ويثبت <term refersTo="#apn">المجلس الشعبي الوطني</term> هذه الحالة بقرار، بناء على اقتراح رئيس الجمهورية، واستشارة المجلس الدستوري .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_97">
+            <num>المادة 97</num>
+            <content>
+            <paragraph>
+            <p>يحدد القانون كيفيات انتخاب النواب ، لا سيما عددهم ، وشروط قابليتهم للانتخاب ، وحالات التنافي مع العضوية في المجلس .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_98">
+            <num>المادة 98</num>
+            <content>
+            <paragraph>
+            <p>إثبات عضوية النواب من اختصاص <term refersTo="#apn">المجلس الشعبي الوطني</term> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_99">
+            <num>المادة 99</num>
+            <content>
+            <paragraph>
+            <p>النيابة في <term refersTo="#apn">المجلس الشعبي الوطني</term> ذات طابع وطني وهي قابلة للتجديد .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_100">
+            <num>المادة 100</num>
+            <content>
+            <paragraph>
+            <p><condition>كل نائب لا يستوفي شروط قابلية انتخابه أو يفقدها</condition> ، يتعرض لإسقاط صفته النيابية .</p>
+            </paragraph>
+            <paragraph>
+            <p>ويقرر <term refersTo="#apn">المجلس الشعبي الوطني</term> هذا الإسقاط بأغلبية أعضائه .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_101">
+            <num>المادة 101</num>
+            <content>
+            <paragraph>
+            <p>النائب مسؤول أمام زملائه الذين يمكنهم تجريده من صفته النيابية، <condition>إذا اقترف فعلا يخل بشرف وظيفته</condition> .</p>
+            </paragraph>
+            <paragraph>
+            <p>يحدد القانون الحالات التي يتعرض فيها النائب للإقصاء .</p>
+            </paragraph>
+            <paragraph>
+            <p>ويقرر <term refersTo="#apn">المجلس الشعبي الوطني</term> هذا الإقصاء بأغلبية أعضائه، دون المساس بحق المتابعات الأخرى الواردة في القانون .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_102">
+            <num>المادة 102</num>
+            <content>
+            <paragraph>
+            <p>يحدد القانون الحالات التي يقبل فيها <term refersTo="#apn">المجلس الشعبي الوطني</term> استقالة أحد أعضائه .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_103">
+            <num>المادة 103</num>
+            <content>
+            <paragraph>
+            <p><right><term refersTo="#immunity">الحصانة النيابية</term> معترف بها للنائب مدة نيابته</right> .</p>
+            </paragraph>
+            <paragraph>
+            <p>لا يمكن أن يتابع أي نائب أو يوقف ، وعلى العموم ، لا يمكن أن ترفع عليه دعوى مدنية أو جزائية ، أو يسلط عليه أي شكل من أشكال الضغط ، بسبب ما عبر عنه من آراء ، أو ما تلفظ به من كلام ، أو بسبب تصويته خلال ممارسة مهمته النيابية .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_104">
+            <num>المادة 104</num>
+            <content>
+            <paragraph>
+            <p>لا يجوز الشروع في متابعة أي نائب بسبب فعل إجرامي إلا <condition>بتنازل صريح منه أو بإذن من <term refersTo="#apn">المجلس الشعبي الوطني</term></condition> الذي يقرر رفع الحصانة عن النائب بأغلبية أعضائه .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_105">
+            <num>المادة 105</num>
+            <content>
+            <paragraph>
+            <p><condition>في حالة تلبس أحد النواب بجنحة أو جناية</condition> ، يمكن توقيفه ، ويخطر مكتب <term refersTo="#apn">المجلس الشعبي الوطني</term> فورا .</p>
+            </paragraph>
+            <paragraph>
+            <p>يمكن مكتب <term refersTo="#apn">المجلس الشعبي الوطني</term> أن يطلب إيقاف المتابعة وإطلاق سراح النائب ، على أن يعمل فيما بعد بأحكام <ref href="#art_104">المادة 104</ref> أعلاه .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_106">
+            <num>المادة 106</num>
+            <content>
+            <paragraph>
+            <p>يحدد القانون شروط استخلاف النائب في حالة شغور مقعده .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_107">
+            <num>المادة 107</num>
+            <content>
+            <paragraph>
+            <p><obligation>تبتدئ الفترة التشريعية وجوبا ، في اليوم العاشر الموالي لتاريخ انتخاب <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> ، تحت رئاسة أكبر النواب سنا ، وبمساعدة أصغر نائبين منهم</obligation> .</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ينتخب <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> مكتبه ، ويشكل لجانه</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_108">
+            <num>المادة 108</num>
+            <content>
+            <paragraph>
+            <p><obligation>ينتخب رئيس <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> للفترة التشريعية</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_109">
+            <num>المادة 109</num>
+            <content>
+            <paragraph>
+            <p><obligation>يحدد القانون تنظيم <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> ، وعلمه ، وميزانيته ، والتعويضات التي تدفع لأعضائه</obligation> .</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يعد <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> نظامه الداخلي ، ويصادق عليه</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_110">
+            <num>المادة 110</num>
+            <content>
+            <paragraph>
+            <p>جلسات <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> علانية . وتدون مداولاته في محاضر تنشر طبقا لما يحدده القانون .</p>
+            </paragraph>
+            <paragraph>
+            <p><right>يجوز <term refersTo="#national_peoples_assembly">للمجلس الشعبي الوطني</term> أن يعقد جلسات مغلقة</right> <condition>بطلب من رئيسه ، أو من أغلبية أعضائه الحاضرين ، أو بطلب من الحكومة</condition> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_111">
+            <num>المادة 111</num>
+            <content>
+            <paragraph>
+            <p>يكون <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> لجانه ، في إطار نظامه الداخلي .</p>
+            </paragraph>
+            <paragraph>
+            <p>لجان <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> دائمة .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_112">
+            <num>المادة 112</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجتمع <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> في دورتين كل سنة</obligation> . ومدة كل دورة ثلاثة أشهر على الأكثر .</p>
+            </paragraph>
+            <paragraph>
+            <p><right>يمكن أن يجتمع <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> في دورة غير عادية</right> بمبادرة من رئيس الجمهورية ، أو بطلب من ثلثي أعضاء المجلس ، أو بطلب من رئيس الحكومة .</p>
+            </paragraph>
+            <paragraph>
+            <p>تختتم الدورة غير العادية بمجرد ما يستنفذ <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> جدول الأعمال الذي استدعي للاجتماع من أجله .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_113">
+            <num>المادة 113</num>
+            <content>
+            <paragraph>
+            <p><right>لكل من رئيس الحكومة وأعضاء <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> حق المبادرة بالقوانين</right> .</p>
+            </paragraph>
+            <paragraph>
+            <p>تكون اقتراحات القوانين قابلة للمناقشة ، <condition>إذا قدمها عشرون نائبا</condition> .</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تعرض مشاريع القوانين على مجلس الوزراء ، ثم يودعها رئيس الحكومة مكتب <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term></obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_114">
+            <num>المادة 114</num>
+            <content>
+            <paragraph>
+            <p><obligation>لا يقبل اقتراح أي قانون ، مضمونه أو نتيجته تخفيض الموارد العمومية ، أو زيادة النفقات العمومية ، إلا إذا كان مرفقا بتدابير تستهدف الزيادة في إيرادات الدولة ، أو توفير مبالغ مالية في فصل آخر من النفقات العمومية تساوي على الأقل المبالغ المقترح إنفاقها</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_115">
+            <num>المادة 115</num>
+            <content>
+            <paragraph>
+            <p>يشرع <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> في المجالات التي خولها إياه <ref href="/akn/dz/act/constitution/1996-11-28/1#">الدستور</ref> .</p>
+            </paragraph>
+            <paragraph>
+            <p>ويدخل كذلك في مجال القانون ما يأتي .</p>
+            <list>
+            <point>
+            <p>1)- <right>حقوق الأشخاص وواجباتهم الأساسية</right> ، لا سيما <term refersTo="#public_liberties">نظام الحريات العمومية</term> ، و<right>حماية الحريات الفردية</right> ، و<obligation>واجبات المواطنين</obligation> ،</p>
+            </point>
+            <point>
+            <p>2)- القواعد العامة المتعلقة بـ <term refersTo="#personal_status_law">قانون الأحوال الشخصية</term> ، و<term refersTo="#family_law">حق الأسرة</term> ، لا سيما الزواج ، و الطلاق ، والبنوة ، والأهلية ، والتركات ،</p>
+            </point>
+            <point>
+            <p>3)- شروط استقرار الأشخاص ،</p>
+            </point>
+            <point>
+            <p>4)- التشريع الأساسي المتعلق بالجنسية ،</p>
+            </point>
+            <point>
+            <p>5)- القواعد العامة المتعلقة بوضعية الأجانب ،</p>
+            </point>
+            <point>
+            <p>6)- القواعد المتعلقة بالتنظيم القضائي ، وإنشاء الهيئات القضائية ،</p>
+            </point>
+            <point>
+            <p>7)- القواعد العامة للقانون الجزائي ، والإجراءات الجزائية ، لا سيما تحديد الجنايات والجنح ، والعقوبات المختلفة المطابقة لها ، والعفو الشامل ، وتسليم المجرمين .</p>
+            </point>
+            <point>
+            <p>8)- القواعد العامة للإجراءات المدنية وطرق التنفيذ ،</p>
+            </point>
+            <point>
+            <p>9)- نظام الالتزامات المدنية والتجارية ،</p>
+            </point>
+            <point>
+            <p>10)- نظام الانتخابات ،</p>
+            </point>
+            <point>
+            <p>11)- التقسيم الإقليمي للبلاد ،</p>
+            </point>
+            <point>
+            <p>12)- المصادقة على المخطط الوطني ،</p>
+            </point>
+            <point>
+            <p>13)- التصويت على ميزانية الدولة ،</p>
+            </point>
+            <point>
+            <p>14)- إحداث الضرائب و الجبايات والرسوم والحقوق المختلفة، وتحديد أساسها ونسبها</p>
+            </point>
+            <point>
+            <p>15)- النظام الجمركي ،</p>
+            </point>
+            <point>
+            <p>16)- نظام البنوك والقروض والتأمينات ،</p>
+            </point>
+            <point>
+            <p>17)- القواعد العامة المتعلقة بالتعليم ،</p>
+            </point>
+            <point>
+            <p>18)- القواعد العامة المتعلقة بـ <term refersTo="#public_health">الصحة العمومية</term> ، والسكان ،</p>
+            </point>
+            <point>
+            <p>19)- القواعد العامة المتعلقة بقانون العمل والضمان الاجتماعي ،</p>
+            </point>
+            <point>
+            <p>20)- القواعد العامة المتعلقة بالبيئة وإطار المعيشة ،</p>
+            </point>
+            <point>
+            <p>21)- القواعد العامة المتعلقة بحماية الثروة الحيوانية والنباتية ،</p>
+            </point>
+            <point>
+            <p>22)- <right>حماية التراث الثقافي والتاريخي ، والمحافظة عليه</right> ،</p>
+            </point>
+            <point>
+            <p>23)- النظام العام للغابات والأراضي الرعوية ،</p>
+            </point>
+            <point>
+            <p>24)- النظام العام للمياه ،</p>
+            </point>
+            <point>
+            <p>25)- النظام العام للمناجم والمحروقات ،</p>
+            </point>
+            <point>
+            <p>26)- إنشاء أوسمة الدولة ونياشينها وألقابها التشريفية .</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_116">
+            <num>المادة 116</num>
+            <content>
+            <paragraph>
+            <p>يمارس <term refersTo="#president">رئيس الجمهورية</term> السلطة التنظيمية في المسائل غير المخصصة للقانون .</p>
+            </paragraph>
+            <paragraph>
+            <p>يندرج تطبيق القوانين في المجال التنظيمي الذي يعود لـ <term refersTo="#head_of_government">رئيس الحكومة</term></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_117">
+            <num>المادة 117</num>
+            <content>
+            <paragraph>
+            <p><obligation>يصدر <term refersTo="#president">رئيس الجمهورية</term> القانون في أجل ثلاثين يوما ، ابتداء من تاريخ تسلمه إياه</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_118">
+            <num>المادة 118</num>
+            <content>
+            <paragraph>
+            <p>يمكن <term refersTo="#president">رئيس الجمهورية</term> أن يطلب من <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> إجراء مداولة ثانية في قانون تم التصويت عليه ، ويكون هذا الطلب خلال الثلاثين يوما الموالية لتاريخ إقراره .</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وفي هذه الحالة لا يتم إقرار القانون إلا بأغلبية ثلثي أعضاء <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term></condition> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_119">
+            <num>المادة 119</num>
+            <content>
+            <paragraph>
+            <p>يمكن <term refersTo="#president">رئيس الجمهورية</term> أن يوجه خطابا إلى <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_120">
+            <num>المادة 120</num>
+            <content>
+            <paragraph>
+            <p>يمكن <term refersTo="#president">رئيس الجمهورية</term> أن يقرر حل <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> أو إجراء انتخابات تشريعية قبل أوانها ، <condition>بعد استشارة رئيس المجلس الشعبي الوطني ورئيس الحكومة</condition> .</p>
+            </paragraph>
+            <paragraph>
+            <p>وتجري هذه الانتخابات في أجل أقصاه ثلاثة أشهر .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_121">
+            <num>المادة 121</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> أن يفتح مناقشة حول السياسة الخارجية</right>، <condition>بناء على طلب <term refersTo="#president">رئيس الجمهورية</term> ، أو رئيس المجلس</condition> .</p>
+            </paragraph>
+            <paragraph>
+            <p>يمكن ، عند الاقتضاء ، أن تتوج هذه المناقشة بإصدار لائحة من <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> ، يبلغها رئيسه إلى <term refersTo="#president">رئيس الجمهورية</term> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_122">
+            <num>المادة 122</num>
+            <content>
+            <paragraph>
+            <p><obligation>يصادق <term refersTo="#president">رئيس الجمهورية</term> على اتفاقيات الهدنة ، ومعاهدات السلم والتحالف والاتحاد، والمعاهدات المتعلقة بحدود الدولة ، والمعاهدات المتعلقة بقانون الأشخاص، والمعاهدات التي تترتب عليها نفقات غير واردة في ميزانية الدولة</obligation> <condition>بعد أن يوافق عليها <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> صراحة</condition> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_123">
+            <num>المادة 123</num>
+            <content>
+            <paragraph>
+            <p>المعاهدات التي يصادق عليها <term refersTo="#president">رئيس الجمهورية</term>، <condition>حسب الشروط المنصوص عليها في الدستور</condition>، تسمو على القانون .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_124">
+            <num>المادة 124</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن أعضاء <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> استجواب الحكومة في إحدى قضايا الساعة</right> .</p>
+            </paragraph>
+            <paragraph>
+            <p><right>يمكن لجان <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> أن تستمع إلى أعضاء الحكومة</right> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_125">
+            <num>المادة 125</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن أعضاء <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> أن يوجهوا أي سؤال شفوي أو كتابي إلى أي عضو في الحكومة</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويكون الجواب عن السؤال الكتابي كتابيا ، خلال أجل أقصاه ثلاثون يوما</obligation> وتتم الإجابة عن الأسئلة الشفوية في جلسات المجلس .</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>إذا رأى <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> أن جواب عضو الحكومة شفويا كان أو كتابيا يبرر إجراء مناقشة</condition>، تجري المناقشة حسب الشروط التي ينص عليها النظام الداخلي للمجلس الشعبي الوطني .</p>
+            </paragraph>
+            <paragraph>
+            <p>تنشر الأسئلة والأجوبة طبقا للشروط التي يخضع لها نشر محاضر مناقشات <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_126">
+            <num>المادة 126</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> لدى مناقشة بيان السياسة العامة، أن يصوت على ملتمس رقابة ينصب على مسؤولية الحكومة</right> .</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>ولا يقبل هذا الملتمس إلا إذا وقعه سبع (7/1) النواب على الأقل</condition> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_127">
+            <num>المادة 127</num>
+            <content>
+            <paragraph>
+            <p><condition>تتم الموافقة على ملتمس الرقابة بتصويت أغلبية ثلثي النواب</condition> .</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>ولا يتم التصويت إلا بعد ثلاثة أيام من تاريخ إيداع ملتمس الرقابة</condition> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_128">
+            <num>المادة 128</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا صادق <term refersTo="#national_peoples_assembly">المجلس الشعبي الوطني</term> على ملتمس الرقابة</condition> ، <obligation>يقدم رئيس الحكومة استقالة حكومته إلى <term refersTo="#president">رئيس الجمهورية</term></obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_2_sec_الثالث_السلطة_القضائية">
+          <num>الثالث السلطة القضائية</num>
+          <article eId="art_129">
+            <num>المادة 129</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#judicial_authority">السلطة القضائية</term> مستقلة .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_130">
+            <num>المادة 130</num>
+            <content>
+            <paragraph>
+            <p><obligation>تحمي <term refersTo="#judicial_authority">السلطة القضائية</term> والحريات، وتضمن للجميع ولكل واحد المحافظة على حقوقهم الأساسية</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_131">
+            <num>المادة 131</num>
+            <content>
+            <paragraph>
+            <p>أساس القضاء مبادئ الشرعية والمساواة .</p>
+            </paragraph>
+            <paragraph>
+            <p>الكل سواسية أمام القضاء، و هو في متناول الجميع ويجسده احترام القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_132">
+            <num>المادة 132</num>
+            <content>
+            <paragraph>
+            <p>يصدر القضاء أحكامه باسم الشعب .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_133">
+            <num>المادة 133</num>
+            <content>
+            <paragraph>
+            <p>تخضع العقوبات الجزائية إلى مبدأي الشرعية والشخصية .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_134">
+            <num>المادة 134</num>
+            <content>
+            <paragraph>
+            <p>ينظر القضاء في الطعن في قرارات السلطات العمومية .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_135">
+            <num>المادة 135</num>
+            <content>
+            <paragraph>
+            <p><obligation>تعلل الأحكام القضائية</obligation> ، وينطق بها في جلسات علانية .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_136">
+            <num>المادة 136</num>
+            <content>
+            <paragraph>
+            <p><obligation>على كل أجهزة الدولة المختصة أن تقوم ، في كل وقت وفي كل مكان ، وفي جميع الظروف ، بتنفيذ أحكام القضاء</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_137">
+            <num>المادة 137</num>
+            <content>
+            <paragraph>
+            <p>يختص <term refersTo="#judge">القضاة</term> بإصدار الأحكام .</p>
+            </paragraph>
+            <paragraph>
+            <p>ويمكن أن يعينهم في ذلك مساعدون شعبيون <condition>حسب الشروط التي يحددها القانون</condition> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_138">
+            <num>المادة 138</num>
+            <content>
+            <paragraph>
+            <p>لا يخضع <term refersTo="#judge">القاضي</term> إلا للقانون .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_139">
+            <num>المادة 139</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#judge">القاضي</term> محمي من كل أشكال الضغوط والتدخلات والمناورات التي قد تضر بأداء مهمته أو تمس نزاهة حكمه .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_140">
+            <num>المادة 140</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#judge">القاضي</term> مسؤول أمام <term refersTo="#supreme_council_judiciary">المجلس الأعلى للقضاء</term> عن كيفية قيامه بمهمته ، <condition>حسب الأشكال المنصوص عليها في القانون</condition> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_141">
+            <num>المادة 141</num>
+            <content>
+            <paragraph>
+            <p><obligation>يحمي القانون المتقاضي من أي تعسف أو أي انحراف يصدر من <term refersTo="#judge">القاضي</term></obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_142">
+            <num>المادة 142</num>
+            <content>
+            <paragraph>
+            <p><right>الحق في الدفاع معترف به</right> .</p>
+            </paragraph>
+            <paragraph>
+            <p><right>الحق في الدفاع مضمون في القضايا الجزائية</right> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_143">
+            <num>المادة 143</num>
+            <content>
+            <paragraph>
+            <p>تمثل <term refersTo="#supreme_court">المحكمة العليا</term> ، في جميع مجالات القانون ، الهيئة المقومة لأعمال المجالس القضائية والمحاكم .</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تضمن <term refersTo="#supreme_court">المحكمة العليا</term> توحيد الاجتهاد القضائي في جميع أنحاء البلاد ، وتسهر على احترام القانون</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_144">
+            <num>المادة 144</num>
+            <content>
+            <paragraph>
+            <p>يحدد القانون تنظيم <term refersTo="#supreme_court">المحكمة العليا</term> ، وعملها ، واختصاصاتها الأخرى .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_145">
+            <num>المادة 145</num>
+            <content>
+            <paragraph>
+            <p>يرأس <term refersTo="#president">رئيس الجمهورية</term> ، <term refersTo="#supreme_council_judiciary">المجلس الأعلى للقضاء</term> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_146">
+            <num>المادة 146</num>
+            <content>
+            <paragraph>
+            <p>يقرر <term refersTo="#supreme_council_judiciary">المجلس الأعلى للقضاء</term> ، <condition>طبقا للشروط التي يحددها القانون</condition> ، تعيين <term refersTo="#judge">القضاة</term> ، ونقلهم ، وسير سلمهم الوظيفي .</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويسهر على احترام أحكام القانون الأساسي للقضاء، وعلى رقابة انضباط القضاة تحت رئاسة الرئيس الأول للمحكمة العليا</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_147">
+            <num>المادة 147</num>
+            <content>
+            <paragraph>
+            <p>يبدي <term refersTo="#supreme_council_judiciary">المجلس الأعلى للقضاء</term> رأيا استشاريا قبليا في ممارسة <term refersTo="#president">رئيس الجمهورية</term> حق العفو .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_148">
+            <num>المادة 148</num>
+            <content>
+            <paragraph>
+            <p>يحدد القانون تأليف <term refersTo="#supreme_council_judiciary">المجلس الأعلى للقضاء</term>، وطرق تسييره، وصلاحياته الأخرى .</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+      <chapter eId="chp_الثالث_الرقابة_والمؤسسات_الاستشارية">
+        <num>الثالث الرقابة والمؤسسات الاستشارية</num>
+        <section eId="chp_الثالث_الرقابة_والمؤسسات_الاستشارية_sec_الأول_الرقابة">
+          <num>الأول الرقابة</num>
+          <article eId="art_149">
+            <num>المادة 149</num>
+            <content>
+            <paragraph>
+            <p><obligation>تضطلع <term refersTo="#elected_councils">المجالس المنتخبة</term> بوظيفة الرقابة في مدلولها الشعبي</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_150">
+            <num>المادة 150</num>
+            <content>
+            <paragraph>
+            <p><obligation>تقدم <term refersTo="#government">الحكومة</term> <term refersTo="#apn">للمجلس الشعبي الوطني</term> ، عرضا عن استعمال الاعتمادات المالية التي أقرها لكل سنة مالية</obligation> .</p>
+            </paragraph>
+            <paragraph>
+            <p>تختتم السنة المالية ، فيما يخص <term refersTo="#apn">المجلس الشعبي الوطني</term> ، بالتصويت على قانون يتضمن تسوية ميزانية السنة المالية المعنية .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_151">
+            <num>المادة 151</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن <term refersTo="#apn">المجلس الشعبي الوطني</term> ، في إطار اختصاصاته ، أن ينشئ في أي وقت ، لجنة تحقيق في أية قضية ذات مصلحة عامة</right> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_152">
+            <num>المادة 152</num>
+            <content>
+            <paragraph>
+            <p><obligation><term refersTo="#constitutional_institutions">المؤسسات الدستورية</term> وأجهزة الرقابة مكلفة بالتحقيق في تطابق العمل التشريعي والتنفيذي مع <term refersTo="#constitution">الدستور</term> ، وفي ظروف استخدام الوسائل المادية والأموال العمومية وتسييرها</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_153">
+            <num>المادة 153</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#constitutional_council">يؤسس مجلس دستوري يكلف بالسهر على احترام الدستور</def> .</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>كما يسهر <term refersTo="#constitutional_council">المجلس الدستوري</term> على صحة عمليات الاستفتاء، وانتخاب رئيس الجمهورية، والانتخابات التشريعية ، ويعلن نتائج هذه العمليات</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_154">
+            <num>المادة 154</num>
+            <content>
+            <paragraph>
+            <p>يتكون <term refersTo="#constitutional_council">المجلس الدستوري</term> من سبعة أعضاء :</p>
+            <list>
+            <point>
+            <p>اثنان منهم ، يعينهما رئيس الجمهورية ، واثنان ينتخبهما <term refersTo="#apn">المجلس الشعبي الوطني</term> ، واثنان تنتخبهما المحكمة العليا من بين أعضائها .</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p><condition>وبمجرد انتخابهم أو تعيينهم</condition> ، <obligation>يتوقفون عن ممارسة أي عضوية أو أي وظيفة أو تكليف أو مهمة أخرى</obligation> .</p>
+            </paragraph>
+            <paragraph>
+            <p>يضطلع أعضاء <term refersTo="#constitutional_council">المجلس الدستوري</term> بمهامهم مرة واحدة غير قابلة للتجديد مدتها ست سنوات .</p>
+            </paragraph>
+            <paragraph>
+            <p>ويجدد نصف عدد أعضاء <term refersTo="#constitutional_council">المجلس الدستوري</term> كل ثلاث سنوات .</p>
+            </paragraph>
+            <paragraph>
+            <p>يعين رئيس الجمهورية رئيس <term refersTo="#constitutional_council">المجلس الدستوري</term> لفترة واحدة مدتها ست سنوات غير قابلة للتجديد.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_155">
+            <num>المادة 155</num>
+            <content>
+            <paragraph>
+            <p>يفصل <term refersTo="#constitutional_council">المجلس الدستوري</term> ، بالإضافة إلى الاختصاصات التي خولتها إياه صراحة أحكام أخرى في <term refersTo="#constitution">الدستور</term>، في دستورية المعاهدات والقوانين ، والتنظيمات ، إما برأي قبل أن تصبح واجبة التنفيذ . أو بقرار في الحالة العكسية .</p>
+            </paragraph>
+            <paragraph>
+            <p>كما يفصل في مطابقة النظام الداخلي <term refersTo="#apn">للمجلس الشعبي الوطني</term> <term refersTo="#constitution">للدستور</term> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_156">
+            <num>المادة 156</num>
+            <content>
+            <paragraph>
+            <p><right>يخطر رئيس الجمهورية ، أو رئيس <term refersTo="#apn">المجلس الشعبي الوطني</term> ، <term refersTo="#constitutional_council">المجلس الدستوري</term></right> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_157">
+            <num>المادة 157</num>
+            <content>
+            <paragraph>
+            <p>يتداول <term refersTo="#constitutional_council">المجلس الدستوري</term> في جلسة مغلقة ، ويعطي رأيه أو يصدر قراره في ظرف العشرين يوما الموالية لتاريخ الإخطار .</p>
+            </paragraph>
+            <paragraph>
+            <p>يحدد <term refersTo="#constitutional_council">المجلس الدستوري</term> قواعد عمله .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_158">
+            <num>المادة 158</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا ارتأى <term refersTo="#constitutional_council">المجلس الدستوري</term> عدم دستورية معاهدة أو اتفاق ، أو اتفاقية</condition> ، <obligation>فلا تتم المصادقة عليها</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_159">
+            <num>المادة 159</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا قرر <term refersTo="#constitutional_council">المجلس الدستوري</term> أن نصا تشريعيا أو تنظيميا غير دستوري</condition> ، <obligation>يفقد هذا النص أثره ، ابتداء من يوم قرار المجلس</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_160">
+            <num>المادة 160</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#court_of_auditors">يؤسس مجلس محاسبة ، يكلف بالرقابة البعدية لأموال الدولة ، والجماعات الإقليمية ، والمرافق العمومية</def> .</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يعد <term refersTo="#court_of_auditors">مجلس المحاسبة</term> تقريرا سنويا ، ثم يرفعه إلى رئيس الجمهورية</obligation> .</p>
+            </paragraph>
+            <paragraph>
+            <p>يحدد القانون تنظيم <term refersTo="#court_of_auditors">مجلس المحاسبة</term> ، وعمله ، وجزاء تحقيقاته .</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_الثالث_الرقابة_والمؤسسات_الاستشارية_sec_الثاني_المؤسسات_الاستشارية">
+          <num>الثاني المؤسسات الاستشارية</num>
+          <article eId="art_163">
+            <num>المادة 163</num>
+            <content>
+            <paragraph>
+            <p><right>ل<term refersTo="#president">رئيس الجمهورية</term> حق المبادرة بالتعديل الدستوري</right>، و <condition>بعد أن يصوت عليه <term refersTo="#apn">المجلس الشعبي الوطني</term></condition>، يعرض على إستفتاء الشعب للموافقة عليه ثم يصدره <term refersTo="#president">رئيس الجمهورية</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_164">
+            <num>المادة 164</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا رأى <term refersTo="#constitutional_council">المجلس الدستوري</term> أي تعديل دستوري لا يمس البتة المبادئ العامة التي تحكم المجتمع الجزائري</condition> و <right>حقوق الإنسان و المواطن و حرياتهما</right>، و <condition>لا يمس بأي شيء التوازنات الأساسية للسلطات و المؤسسات الدستورية، و علل رأيه</condition> أمكن ل<term refersTo="#president">رئيس الجمهورية</term> أن يصدر القانون الذي يتضمن التعديل الدستوري مباشرة دون أن يعرضه على الإستفتاء الشعبي، <condition>متى أحرز ثلاثة أرباع من أصوات أعضاء <term refersTo="#apn">المجلس الشعبي الوطني</term></condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_165">
+            <num>المادة 165</num>
+            <content>
+            <paragraph>
+            <p>يعرض القانون الذي يتضمن مشروع التعديل الدستوري، <condition>بعد أن يقره <term refersTo="#apn">المجلس الشعبي الوطني</term>، حسب الشروط نفسها التي تطبق على النص التشريعي</condition>، على إستفتاء الشعب للموافقة عليه، خلال الخمسة و الأربعين يوما الموالية لإقرار المجلس إياه.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_166">
+            <num>المادة 166</num>
+            <content>
+            <paragraph>
+            <p>يصبح القانون الذي يتضمن مشروع التعديل الدستوري لاغيا، <condition>إذا رفضه الشعب</condition> و لا يمكن عرضه من جديد على الشعب من خلال نفس الفترة التشريعية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_167">
+            <num>المادة 167</num>
+            <content>
+            <paragraph>
+            <p><obligation>يصدر <term refersTo="#president">رئيس الجمهورية</term> نص التعديل الدستوري الذي أقره الشعب</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+      <chapter eId="chp_الرابع_التعديل_الدستوري">
+        <num>الرابع التعديل الدستوري</num>
+        <article eId="chp_الرابع_التعديل_الدستوري_art_163">
+          <num>المادة 163</num>
+          <content>
+          <paragraph>
+          <p><right>ل<term refersTo="#president">رئيس الجمهورية</term> حق المبادرة بالتعديل الدستوري</right>، و <condition>بعد أن يصوت عليه <term refersTo="#apn">المجلس الشعبي الوطني</term></condition>، يعرض على إستفتاء الشعب للموافقة عليه ثم يصدره <term refersTo="#president">رئيس الجمهورية</term>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="chp_الرابع_التعديل_الدستوري_art_164">
+          <num>المادة 164</num>
+          <content>
+          <paragraph>
+          <p><condition>إذا رأى <term refersTo="#constitutional_council">المجلس الدستوري</term> أي تعديل دستوري لا يمس البتة المبادئ العامة التي تحكم المجتمع الجزائري</condition> و <right>حقوق الإنسان و المواطن و حرياتهما</right>، و <condition>لا يمس بأي شيء التوازنات الأساسية للسلطات و المؤسسات الدستورية، و علل رأيه</condition> أمكن ل<term refersTo="#president">رئيس الجمهورية</term> أن يصدر القانون الذي يتضمن التعديل الدستوري مباشرة دون أن يعرضه على الإستفتاء الشعبي، <condition>متى أحرز ثلاثة أرباع من أصوات أعضاء <term refersTo="#apn">المجلس الشعبي الوطني</term></condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="chp_الرابع_التعديل_الدستوري_art_165">
+          <num>المادة 165</num>
+          <content>
+          <paragraph>
+          <p>يعرض القانون الذي يتضمن مشروع التعديل الدستوري، <condition>بعد أن يقره <term refersTo="#apn">المجلس الشعبي الوطني</term>، حسب الشروط نفسها التي تطبق على النص التشريعي</condition>، على إستفتاء الشعب للموافقة عليه، خلال الخمسة و الأربعين يوما الموالية لإقرار المجلس إياه.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="chp_الرابع_التعديل_الدستوري_art_166">
+          <num>المادة 166</num>
+          <content>
+          <paragraph>
+          <p>يصبح القانون الذي يتضمن مشروع التعديل الدستوري لاغيا، <condition>إذا رفضه الشعب</condition> و لا يمكن عرضه من جديد على الشعب من خلال نفس الفترة التشريعية.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="chp_الرابع_التعديل_الدستوري_art_167">
+          <num>المادة 167</num>
+          <content>
+          <paragraph>
+          <p><obligation>يصدر <term refersTo="#president">رئيس الجمهورية</term> نص التعديل الدستوري الذي أقره الشعب</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+    </body>
+  </act>
+</akomaNtoso>

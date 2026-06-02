@@ -1,0 +1,869 @@
+@prefix dzdoc: <https://legal.dz/ontology/document#> .
+@prefix dznorm: <https://legal.dz/ontology/norm#> .
+@prefix dzorg: <https://legal.dz/resource/organization/> .
+@prefix dzterm: <https://legal.dz/resource/term/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dzorg:الجريدة_الرسمية a dzdoc:Organization ;
+    rdfs:label "الجريدة الرسمية"@ar ;
+    dzdoc:frbrUri "/ontology/organization/dz/joradp"^^xsd:anyURI .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#amend_1> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:confidenceScore 0.99 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpReplace ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/order/2022-05-05/22-09#art_1> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:targetDocument <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:validFrom "2022-05-05"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_1_extref_c5504d34> a dzdoc:ExternalReference ;
+    rdfs:label "الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/order/1975-09-26/75-59"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/order/1975-09-26/75-59"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/order/1975-09-26/75-59" ;
+    dzdoc:referencesTarget <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:resolutionReason "canonical_akn_path_alias" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/order/1975-09-26/75-59"^^xsd:anyURI .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_1_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_1> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يهدف هذا القانون إلى تعديل وتتميم الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون التجاري."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_condition_0_9901e272> a dznorm:Condition ;
+    dznorm:conditionText "في حالة ما إذا كانت الحصص العينية التي لم يتم تقييمها مسبقا من طرف مندوب الحصص جميعها لا تتجاوز قيمتها نصف رأسمال الشركة"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dznorm:position 0 .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_condition_1_86a75ab7> a dznorm:Condition ;
+    dznorm:conditionText "في حالة عدم تعيين مندوب للحصص أو في حالة اختلاف القيمة المحددة للحصص العينية عن تلك المقترحة من قبل مندوب الحصص"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dznorm:position 1 .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_extref_c5504d34> a dzdoc:ExternalReference ;
+    rdfs:label "الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/order/1975-09-26/75-59"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/order/1975-09-26/75-59"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/order/1975-09-26/75-59" ;
+    dzdoc:referencesTarget <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:resolutionReason "canonical_akn_path_alias" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/order/1975-09-26/75-59"^^xsd:anyURI .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_obligation_0_9919bf63> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dzdoc:hasAction <https://legal.dz/resource/order/2022-05-05/22-09#art_3_obligation_0_9919bf63_action_d289d2d919> ;
+    dznorm:expressedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يجب أن تتخذ جماعيا من طرف المساهمين وفقا للكيفيات المحددة في القانون الأساسي للشركة"@ar ;
+    dznorm:sourceArticle "art_3" .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_obligation_0_9919bf63_action_d289d2d919> a dznorm:Action ;
+    rdfs:label "أن تتخذ جماعيا من طرف"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يجب أن تتخذ جماعيا من طرف المساهمين وفقا للكيفيات المحددة في القانون الأساسي للشركة"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_obligation_1_d99716fd> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dzdoc:hasAction <https://legal.dz/resource/order/2022-05-05/22-09#art_3_obligation_1_d99716fd_action_68835b643b> ;
+    dzdoc:hasRole <https://legal.dz/resource/order/2022-05-05/22-09#art_3_obligation_1_d99716fd_role_a9e18c7744> ;
+    dznorm:expressedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dznorm:position 1 ;
+    dznorm:provisionText "يحظر على شركة المساهمة البسيطة اللجوء العلني للادخار أو طرح أسهمها في البورصة"@ar ;
+    dznorm:sourceArticle "art_3" .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_obligation_1_d99716fd_action_68835b643b> a dznorm:Action ;
+    rdfs:label "المساهمة البسيطة اللجوء العلني للادخار"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يحظر على شركة المساهمة البسيطة اللجوء العلني للادخار أو طرح أسهمها في البورصة"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_obligation_1_d99716fd_role_a9e18c7744> a dznorm:Role ;
+    rdfs:label "شركة المساهمة البسيطة اللجوء"@ar ;
+    dzdoc:confidenceScore 0.66 ;
+    dzdoc:extractionMethod "lexical_role_pattern" ;
+    dzdoc:sourceTextSpan "يحظر على شركة المساهمة البسيطة اللجوء العلني للادخار أو طرح أسهمها في البورصة"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_obligation_2_4c6181ad> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dzdoc:hasPeriod <https://legal.dz/resource/order/2022-05-05/22-09#art_3_obligation_2_4c6181ad_period_aabcaa19ec> ;
+    dzdoc:hasRole <https://legal.dz/resource/order/2022-05-05/22-09#art_3_obligation_2_4c6181ad_role_11e204fadc> ;
+    dznorm:expressedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dznorm:position 2 ;
+    dznorm:provisionText "يكون المساهمون مسؤولين تضامنيا أمام الغير لمدة خمس (5) سنوات على القيمة الممنوحة للحصص العينية في القانون الأساسي للشركة"@ar ;
+    dznorm:sourceArticle "art_3" .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_obligation_2_4c6181ad_period_aabcaa19ec> a dznorm:Period ;
+    rdfs:label "لمدة خمس (5) سنوات على القيمة الممن"@ar ;
+    dzdoc:confidenceScore 0.68 ;
+    dzdoc:extractionMethod "lexical_period_pattern" ;
+    dzdoc:sourceTextSpan "يكون المساهمون مسؤولين تضامنيا أمام الغير لمدة خمس (5) سنوات على القيمة الممنوحة للحصص العينية في القانون الأساسي للشركة"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_obligation_2_4c6181ad_role_11e204fadc> a dznorm:Role ;
+    rdfs:label "القيمة الممنوحة للحصص العينية"@ar ;
+    dzdoc:confidenceScore 0.66 ;
+    dzdoc:extractionMethod "lexical_role_pattern" ;
+    dzdoc:sourceTextSpan "يكون المساهمون مسؤولين تضامنيا أمام الغير لمدة خمس (5) سنوات على القيمة الممنوحة للحصص العينية في القانون الأساسي للشركة"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يتمم الفصل الثالث من الباب الأول من الكتاب الخامس من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، بقسم ثاني عشر عنوانه \"شركة المساهمة البسيطة\"، يتضمن المواد 715 مكرر 133 و 715 مكرر 134 و 715 مكرر 135 و 715 مكرر 136 و 715 مكرر 137 و 715 مكرر 138 و 715 مكرر 139 و 715 مكرر 140 و 715 مكرر 141 و 715 مكرر 142 و 715 مكرر 143، ويحرر كما يأتي :"@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dzdoc:position 1 ;
+    dzdoc:text "\"المادة 715 مكرر 136 : يمارس رئيس شركة المساهمة البسيطة أو القائم بالإدارة المعين في قانونها الأساسي كمدير عام أو مدير عام مفوض، صلاحيات مجلس الإدارة أو رئيسه."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_para_10> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dzdoc:position 10 ;
+    dzdoc:text "\"المادة 715 مكرر 142 : في حالة عدم تعيين مندوب للحصص أو في حالة اختلاف القيمة المحددة للحصص العينية عن تلك المقترحة من قبل مندوب الحصص، يكون المساهمون مسؤولين تضامنيا أمام الغير لمدة خمس (5) سنوات على القيمة الممنوحة للحصص العينية في القانون الأساسي للشركة\"."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_para_11> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dzdoc:position 11 ;
+    dzdoc:text "\"المادة 715 مكرر 143 : تطبق على رئيس شركة المساهمة البسيطة أو مديرها العام أو مديرها العام المفوض، قواعد المسؤولية المطبقة على رئيس شركة المساهمة أو القائمين بإدارتها\"."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dzdoc:position 2 ;
+    dzdoc:text "في حالة شركة المساهمة البسيطة ذات الشخص الوحيد، يمارس المساهم الوحيد سلطات الرئيس ويتخذ القرارات الممنوحة لجمعية الشركاء \"."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_para_3> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dzdoc:position 3 ;
+    dzdoc:text "\"المادة 715 مكرر 137 : تحدد القرارات التي يجب أن تتخذ جماعيا من طرف المساهمين في القانون الأساسي للشركة."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_para_4> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dzdoc:position 4 ;
+    dzdoc:text "غير أن قرارات الجمعية العامة العادية وغير العادية المتعلقة بزيادة واستهلاك وتخفيض الرأسمال والإدماج والانفصال وحل الشركة وتحويلها إلى شكل آخر وتعيين محافظي الحسابات والحسابات السنوية والأرباح، يجب أن تتخذ جماعيا من طرف المساهمين وفقا للكيفيات المحددة في القانون الأساسي للشركة\"."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_para_5> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dzdoc:position 5 ;
+    dzdoc:text "\"المادة 715 مكرر 138 : يحدد رأسمال شركة المساهمة البسيطة في قانونها الأساسي\"."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_para_6> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dzdoc:position 6 ;
+    dzdoc:text "\"المادة 715 مكرر 139 : يحظر على شركة المساهمة البسيطة اللجوء العلني للادخار أو طرح أسهمها في البورصة\"."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_para_7> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dzdoc:position 7 ;
+    dzdoc:text "\"المادة 715 مكرر 140 : يمكن شركة المساهمة البسيطة أن تصدر أسهم غير قابلة للتصرف فيها ناتجة عن تقديم عمل."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_para_8> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dzdoc:position 8 ;
+    dzdoc:text "لا تدخل أسهم تقديم عمل في تأسيس رأسمال الشركة، غير أنها تدخل في تقاسم الأرباح وصافي الأصول والخسائر، وتحدد كيفيات تقدير قيمتها وما تخوله من أرباح ضمن القانون الأساسي للشركة \"."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_para_9> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dzdoc:position 9 ;
+    dzdoc:text "\"المادة 715 مكرر 141 : يمكن المساهمين أن يقرروا بالإجماع عدم إلزامية اللجوء إلى مندوب الحصص في حالة ما إذا كانت الحصص العينية التي لم يتم تقييمها مسبقا من طرف مندوب الحصص جميعها لا تتجاوز قيمتها نصف رأسمال الشركة\"."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_permission_0_12638ef2> a dznorm:Permission ;
+    dzdoc:confidenceScore 0.72 ;
+    dzdoc:extractionMethod "lexical_permission_cue" ;
+    dzdoc:hasAction <https://legal.dz/resource/order/2022-05-05/22-09#art_3_permission_0_12638ef2_action_3e8a6e8a38> ;
+    dznorm:expressedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dznorm:position 7 ;
+    dznorm:provisionText "\"المادة 715 مكرر 140 : يمكن شركة المساهمة البسيطة أن تصدر أسهم غير قابلة للتصرف فيها ناتجة عن تقديم عمل."@ar ;
+    dznorm:sourceArticle "art_3" .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_permission_0_12638ef2_action_3e8a6e8a38> a dznorm:Action ;
+    rdfs:label "شركة المساهمة البسيطة أن تصدر"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "\"المادة 715 مكرر 140 : يمكن شركة المساهمة البسيطة أن تصدر أسهم غير قابلة للتصرف فيها ناتجة عن تقديم عمل."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_permission_1_4b91edff> a dznorm:Permission ;
+    dzdoc:confidenceScore 0.72 ;
+    dzdoc:extractionMethod "lexical_permission_cue" ;
+    dzdoc:hasAction <https://legal.dz/resource/order/2022-05-05/22-09#art_3_permission_1_4b91edff_action_7ae96798b3> ;
+    dznorm:expressedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dznorm:position 9 ;
+    dznorm:provisionText "\"المادة 715 مكرر 141 : يمكن المساهمين أن يقرروا بالإجماع عدم إلزامية اللجوء إلى مندوب الحصص في حالة ما إذا كانت الحصص العينية التي لم يتم تقييمها مسبقا من طرف مندوب الحصص جميعها لا تتجاوز قيمتها نصف رأسمال الشركة\"."@ar ;
+    dznorm:sourceArticle "art_3" .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_permission_1_4b91edff_action_7ae96798b3> a dznorm:Action ;
+    rdfs:label "المساهمين أن يقرروا بالإجماع عدم"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "\"المادة 715 مكرر 141 : يمكن المساهمين أن يقرروا بالإجماع عدم إلزامية اللجوء إلى مندوب الحصص في حالة ما إذا كانت الحصص العينية التي لم يتم تقييمها مسبقا من طرف مندوب الحصص جميعها لا تتجاوز قيمتها نصف رأسمال الشركة\"."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_prohibition_0_0461b993> a dznorm:Prohibition ;
+    dzdoc:confidenceScore 0.72 ;
+    dzdoc:extractionMethod "lexical_prohibition_cue" ;
+    dzdoc:hasAction <https://legal.dz/resource/order/2022-05-05/22-09#art_3_prohibition_0_0461b993_action_df2729cbfd> ;
+    dzdoc:hasRole <https://legal.dz/resource/order/2022-05-05/22-09#art_3_prohibition_0_0461b993_role_9944e3647d> ;
+    dznorm:expressedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dznorm:position 6 ;
+    dznorm:provisionText "\"المادة 715 مكرر 139 : يحظر على شركة المساهمة البسيطة اللجوء العلني للادخار أو طرح أسهمها في البورصة\"."@ar ;
+    dznorm:sourceArticle "art_3" .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_prohibition_0_0461b993_action_df2729cbfd> a dznorm:Action ;
+    rdfs:label "المساهمة البسيطة اللجوء العلني للادخار"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "\"المادة 715 مكرر 139 : يحظر على شركة المساهمة البسيطة اللجوء العلني للادخار أو طرح أسهمها في البورصة\"."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_prohibition_0_0461b993_role_9944e3647d> a dznorm:Role ;
+    rdfs:label "شركة المساهمة البسيطة اللجوء"@ar ;
+    dzdoc:confidenceScore 0.66 ;
+    dzdoc:extractionMethod "lexical_role_pattern" ;
+    dzdoc:sourceTextSpan "\"المادة 715 مكرر 139 : يحظر على شركة المساهمة البسيطة اللجوء العلني للادخار أو طرح أسهمها في البورصة\"."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_right_0_54ce35e8> a dznorm:Right ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_right_tag" ;
+    dzdoc:hasAction <https://legal.dz/resource/order/2022-05-05/22-09#art_3_right_0_54ce35e8_action_ac96c8eeb2> ;
+    dznorm:expressedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يمكن شركة المساهمة البسيطة أن تصدر أسهم غير قابلة للتصرف فيها ناتجة عن تقديم عمل"@ar ;
+    dznorm:sourceArticle "art_3" .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_right_0_54ce35e8_action_ac96c8eeb2> a dznorm:Action ;
+    rdfs:label "شركة المساهمة البسيطة أن تصدر"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يمكن شركة المساهمة البسيطة أن تصدر أسهم غير قابلة للتصرف فيها ناتجة عن تقديم عمل"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_right_1_930f2523> a dznorm:Right ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_right_tag" ;
+    dzdoc:hasAction <https://legal.dz/resource/order/2022-05-05/22-09#art_3_right_1_930f2523_action_acd5f43039> ;
+    dznorm:expressedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dznorm:position 1 ;
+    dznorm:provisionText "يمكن المساهمين أن يقرروا بالإجماع عدم إلزامية اللجوء إلى مندوب الحصص"@ar ;
+    dznorm:sourceArticle "art_3" .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3_right_1_930f2523_action_acd5f43039> a dznorm:Action ;
+    rdfs:label "المساهمين أن يقرروا بالإجماع عدم"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يمكن المساهمين أن يقرروا بالإجماع عدم إلزامية اللجوء إلى مندوب الحصص"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/order/2022-05-05/22-09#art_3> .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#legal_basis_0ac1dbe511a2> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/75-59> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون التجاري، المعدل والمتمم،"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/order/2022-05-05/22-09#preamble_segment_1> .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#lifecycle_2300c7ee7027> a dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:confidenceScore 0.79 ;
+    dzdoc:evidenceText "تعدل وتتمم المادة 544 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، وتحرر كما يأتي : \" المادة 544 : يحدد الطابع التجاري للشركة إما بشكلها أو موضوعها . تعد شركات التضامن وشركات التوصية والشركات ذات المسؤولية المحدودة وشركات المساهمة وشركات المساهمة البسيطة تجارية بحكم شكلها ومهما يكن موضوعها\"."@ar ;
+    dzdoc:isContradictory false ;
+    dzdoc:lifecycleRelationType "amends" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:ruleId "lifecycle_explicit_amend_phrase" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2> .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#lifecycle_3fac8e65d004> a dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:confidenceScore 0.92 ;
+    dzdoc:evidenceText "يتمم الفصل الثالث من الباب الأول من الكتاب الخامس من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، بقسم ثاني عشر عنوانه \" شركة المساهمة البسيطة \"، يتضمن المواد 715 مكرر 133 و 715 مكرر 134 و 715 مكرر 135 و 715 مكرر 136 و 715 مكرر 137 و 715 مكرر 138 و 715 مكرر 139 و 715 مكرر 140 و 715 مكرر 141 و 715 مكرر 142 و 715 مكرر 143 ، ويحرر كما يأتي : \" المادة 715 مكرر 136 : يمارس رئيس شركة المساهمة البسيطة أو القائم بالإدارة المعين في قانونها الأساسي كمدير عام أو مدير عام مفوض، صلاحيات مجلس الإدارة أو رئيسه. في حالة شركة المساهمة البسيطة ذات الشخص الوحيد ، يمارس المساهم الوحيد سلطات الرئيس ويتخذ القرارات الممنوحة لجمعية الشركاء \". \" المادة 715 مكرر 137 : تحدد القرارات التي يجب أن تتخذ جماعيا من طرف المساهمين في القانون الأساسي للشركة. غير أن قرارات الجمعية العامة العادية وغير العادية المتعلقة بزيادة واستهلاك وتخفيض الرأسمال والإدماج والانفصال وحل الشركة وتحويلها إلى شكل آخر وتعيين محافظي الحسابات والحسابات السنوية والأرباح، يجب أن تتخذ جماعيا من طرف المساهمين وفقا للكيفيات المحددة في القانون الأساسي للشركة \". \" المادة 715 مكرر 138 : يحدد رأسمال شركة المساهمة البسيطة في قانونها الأساسي\". \" المادة 715 مكرر 139 : يحظر على شركة المساهمة البسيطة اللجوء العلني للادخار أو طرح أسهمها في البورصة \". \" المادة 715 مكرر 140 : يمكن شركة المساهمة البسيطة أن تصدر أسهم غير قابلة للتصرف فيها ناتجة عن تقديم عمل . لا تدخل أسهم تقديم عمل في تأسيس رأسمال الشركة، غير أنها تدخل في تقاسم الأرباح وصافي الأصول والخسائر، وتحدد كيفيات تقدير قيمتها وما تخوله من أرباح ضمن القانون الأساسي للشركة \". \" المادة 715 مكرر 141 : يمكن المساهمين أن يقرروا بالإجماع عدم إلزامية اللجوء إلى مندوب الحصص في حالة ما إذا كانت الحصص العينية التي لم يتم تقييمها مسبقا من طرف مندوب الحصص جميعها لا تتجاوز قيمتها نصف رأسمال الشركة \". \" المادة 715 مكرر 142 : في حالة عدم تعيين مندوب للحصص أو في حالة اختلاف القيمة المحددة للحصص العينية عن تلك المقترحة من قبل مندوب الحصص ، يكون المساهمون مسؤولين تضامنيا أمام الغير لمدة خمس (5) سنوات على القيمة الممنوحة للحصص العينية في القانون الأساسي للشركة \". \" المادة 715 مكرر 143 : تطبق على رئيس شركة المساهمة البسيطة أو مديرها العام أو مديرها العام المفوض، قواعد المسؤولية المطبقة على رئيس شركة المساهمة أو القائمين بإدارتها\"."@ar ;
+    dzdoc:isContradictory false ;
+    dzdoc:lifecycleRelationType "amends" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:ruleId "lifecycle_explicit_amend_phrase" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/order/2022-05-05/22-09#art_3> .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#lifecycle_56bae1512599> a dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:confidenceScore 0.92 ;
+    dzdoc:evidenceText "يهدف هذا القانون إلى تعديل وتتميم الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون التجاري ."@ar ;
+    dzdoc:isContradictory false ;
+    dzdoc:lifecycleRelationType "amends" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:ruleId "lifecycle_explicit_amend_phrase" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/order/2022-05-05/22-09#art_1> .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#lifecycle_d39a37690ae6> a dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:confidenceScore 0.79 ;
+    dzdoc:evidenceText "تعدل وتتمم المادة 544 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، وتحرر كما يأتي : \" المادة 544 : يحدد الطابع التجاري للشركة إما بشكلها أو موضوعها . تعد شركات التضامن وشركات التوصية والشركات ذات المسؤولية المحدودة وشركات المساهمة وشركات المساهمة البسيطة تجارية بحكم شكلها ومهما يكن موضوعها\"."@ar ;
+    dzdoc:isContradictory false ;
+    dzdoc:lifecycleRelationType "amends" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:ruleId "lifecycle_explicit_amend_phrase" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2> .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#preamble_segment_4> a dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#preamble> ;
+    dzdoc:position 4 ;
+    dzdoc:segmentType "formula" ;
+    dzdoc:text "يصدر الأمر الآتي نصه:"@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#preface> a dzdoc:Preface ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09> .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_dup_1_extref_02ce7b14> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 544 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/order/1975-09-26/75-59#art_544"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/order/1975-09-26/75-59#art_544"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/order/1975-09-26/75-59#art_544" ;
+    dzdoc:resolutionReason "cross_document_fragment_unverified" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/order/1975-09-26/75-59"^^xsd:anyURI ;
+    dzdoc:targetEId "art_544" .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_dup_1_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_dup_1> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تعدل وتتمم المادة 544 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، وتحرر كما يأتي :"@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_dup_1_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_dup_1> ;
+    dzdoc:position 2 ;
+    dzdoc:text "تعد شركات التضامن وشركات التوصية والشركات ذات المسؤولية المحدودة وشركات المساهمة وشركات المساهمة البسيطة تجارية بحكم شكلها ومهما يكن موضوعها\"."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_extref_02ce7b14> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 544 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/order/1975-09-26/75-59#art_544"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/order/1975-09-26/75-59#art_544"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/order/1975-09-26/75-59#art_544" ;
+    dzdoc:resolutionReason "cross_document_fragment_unverified" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/order/1975-09-26/75-59"^^xsd:anyURI ;
+    dzdoc:targetEId "art_544" .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تعدل وتتمم المادة 544 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، وتحرر كما يأتي :"@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2> ;
+    dzdoc:position 2 ;
+    dzdoc:text "تعد شركات التضامن وشركات التوصية والشركات ذات المسؤولية المحدودة وشركات المساهمة وشركات المساهمة البسيطة تجارية بحكم شكلها ومهما يكن موضوعها\"."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4_condition_0_c4a6911a> a dznorm:Condition ;
+    dznorm:conditionText "في حالة شركة المساهمة البسيطة ذات الشخص الوحيد"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4> ;
+    dznorm:position 0 .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4_condition_1_de35a074> a dznorm:Condition ;
+    dznorm:conditionText "عندما تتوفر الشروط المنصوص عليها في الفقرة الأولى من هذه المادة"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4> ;
+    dznorm:position 1 .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4_dup_1_condition_0_c4a6911a> a dznorm:Condition ;
+    dznorm:conditionText "في حالة شركة المساهمة البسيطة ذات الشخص الوحيد"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4_dup_1> ;
+    dznorm:position 0 .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4_dup_1_condition_1_de35a074> a dznorm:Condition ;
+    dznorm:conditionText "عندما تتوفر الشروط المنصوص عليها في الفقرة الأولى من هذه المادة"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4_dup_1> ;
+    dznorm:position 1 .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4_dup_1_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4_dup_1> ;
+    dzdoc:position 0 ;
+    dzdoc:text "ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4_dup_1_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4_dup_1> ;
+    dzdoc:position 1 ;
+    dzdoc:text "في حالة شركة المساهمة البسيطة ذات الشخص الوحيد، يعين مندوب الحصص من قبل هذا الأخير، ولا يكون اللجوء إلى مندوب الحصص إلزاميا عندما تتوفر الشروط المنصوص عليها في الفقرة الأولى من هذه المادة\"."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4> ;
+    dzdoc:position 0 ;
+    dzdoc:text "ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4> ;
+    dzdoc:position 1 ;
+    dzdoc:text "في حالة شركة المساهمة البسيطة ذات الشخص الوحيد، يعين مندوب الحصص من قبل هذا الأخير، ولا يكون اللجوء إلى مندوب الحصص إلزاميا عندما تتوفر الشروط المنصوص عليها في الفقرة الأولى من هذه المادة\"."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09/manifestation> a dzdoc:Manifestation ;
+    dzdoc:frbrUri "/akn/dz/act/order/2022-05-05/22-09/ara@.xml"^^xsd:anyURI ;
+    dzdoc:manifestationOf <https://legal.dz/resource/order/2022-05-05/22-09/expression> ;
+    dzdoc:transformDate "2026-04-28"^^xsd:date .
+
+dzterm:commercial_code a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "القانون التجاري"@ar .
+
+dzterm:simple_joint_stock_company a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "شركة المساهمة البسيطة"@ar .
+
+dzterm:single_member_sas a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "شركة المساهمة البسيطة ذات الشخص الوحيد"@ar .
+
+<https://legal.dz/resource/order/1975-09-26/75-59#art_544> dzdoc:hasAmendmentEvent <https://legal.dz/resource/order/2022-05-05/22-09#amend_2> ;
+    dzdoc:hasVersion <https://legal.dz/resource/order/1975-09-26/75-59#version_art_544_20220505_OpReplace_7f8398c475> ;
+    dzdoc:lastModifiedBy <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:lastModifiedOn "2022-05-05"^^xsd:date .
+
+<https://legal.dz/resource/order/1975-09-26/75-59#version_art_544_20220505_OpReplace_7f8398c475> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2022-05-05"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" ;
+    dzdoc:versionEvent <https://legal.dz/resource/order/2022-05-05/22-09#amend_2> ;
+    dzdoc:versionOf <https://legal.dz/resource/order/1975-09-26/75-59#art_544> .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#body> a dzdoc:Body ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:directlyContains <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12> ;
+    dzdoc:hasSubsection <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12> .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#preamble_segment_0> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#preamble> ;
+    dzdoc:position 0 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "بناء على الدستور، لا سيما المواد 139 و 141 (الفقرة 2) و 145 و 148 منه،"@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#preamble_segment_2> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#preamble> ;
+    dzdoc:position 2 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبعد رأي مجلس الدولة،"@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#preamble_segment_3> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#preamble> ;
+    dzdoc:position 3 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبعد مصادقة البرلمان،"@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_defocc_f3c854099cbf> a dzdoc:DefinitionOccurrence ;
+    dzdoc:charEnd 62 ;
+    dzdoc:charStart 14 ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:definesTerm dzterm:commercial_nature ;
+    dzdoc:extractionMethod "akn_def_tag" ;
+    dzdoc:occursInArticle <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2> ;
+    dzdoc:occursInParagraph <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_para_1> ;
+    dzdoc:paragraphPosition 1 ;
+    dzdoc:snippet "\"المادة 544 : يحدد الطابع التجاري للشركة إما بشكلها أو موضوعها."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_dup_1_defocc_7a122f36a644> a dzdoc:DefinitionOccurrence ;
+    dzdoc:charEnd 62 ;
+    dzdoc:charStart 14 ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:definesTerm dzterm:commercial_nature ;
+    dzdoc:extractionMethod "akn_def_tag" ;
+    dzdoc:occursInArticle <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_dup_1> ;
+    dzdoc:occursInParagraph <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_dup_1_para_1> ;
+    dzdoc:paragraphPosition 1 ;
+    dzdoc:snippet "\"المادة 544 : يحدد الطابع التجاري للشركة إما بشكلها أو موضوعها."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_dup_1_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_dup_1> ;
+    dzdoc:position 1 ;
+    dzdoc:text "\"المادة 544 : يحدد الطابع التجاري للشركة إما بشكلها أو موضوعها."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2> ;
+    dzdoc:position 1 ;
+    dzdoc:text "\"المادة 544 : يحدد الطابع التجاري للشركة إما بشكلها أو موضوعها."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#version_art_1_20220505_OpEnact_a0c6eca792> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2022-05-05"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/order/2022-05-05/22-09#version_art_1> ;
+    dzdoc:versionOf <https://legal.dz/resource/order/2022-05-05/22-09#art_1> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/order/2022-05-05/22-09#art_1> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:versionText "يهدف هذا القانون إلى تعديل وتتميم الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون التجاري ."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#version_art_3_20220505_OpEnact_2f13cfdfaa> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2022-05-05"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/order/2022-05-05/22-09#version_art_3> ;
+    dzdoc:versionOf <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:versionText "يتمم الفصل الثالث من الباب الأول من الكتاب الخامس من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، بقسم ثاني عشر عنوانه \" شركة المساهمة البسيطة \"، يتضمن المواد 715 مكرر 133 و 715 مكرر 134 و 715 مكرر 135 و 715 مكرر 136 و 715 مكرر 137 و 715 مكرر 138 و 715 مكرر 139 و 715 مكرر 140 و 715 مكرر 141 و 715 مكرر 142 و 715 مكرر 143 ، ويحرر كما يأتي : \" المادة 715 مكرر 136 : يمارس رئيس شركة المساهمة البسيطة أو القائم بالإدارة المعين في قانونها الأساسي كمدير عام أو مدير عام مفوض، صلاحيات مجلس الإدارة أو رئيسه. في حالة شركة المساهمة البسيطة ذات الشخص الوحيد ، يمارس المساهم الوحيد سلطات الرئيس ويتخذ القرارات الممنوحة لجمعية الشركاء \". \" المادة 715 مكرر 137 : تحدد القرارات التي يجب أن تتخذ جماعيا من طرف المساهمين في القانون الأساسي للشركة. غير أن قرارات الجمعية العامة العادية وغير العادية المتعلقة بزيادة واستهلاك وتخفيض الرأسمال والإدماج والانفصال وحل الشركة وتحويلها إلى شكل آخر وتعيين محافظي الحسابات والحسابات السنوية والأرباح، يجب أن تتخذ جماعيا من طرف المساهمين وفقا للكيفيات المحددة في القانون الأساسي للشركة \". \" المادة 715 مكرر 138 : يحدد رأسمال شركة المساهمة البسيطة في قانونها الأساسي\". \" المادة 715 مكرر 139 : يحظر على شركة المساهمة البسيطة اللجوء العلني للادخار أو طرح أسهمها في البورصة \". \" المادة 715 مكرر 140 : يمكن شركة المساهمة البسيطة أن تصدر أسهم غير قابلة للتصرف فيها ناتجة عن تقديم عمل . لا تدخل أسهم تقديم عمل في تأسيس رأسمال الشركة، غير أنها تدخل في تقاسم الأرباح وصافي الأصول والخسائر، وتحدد كيفيات تقدير قيمتها وما تخوله من أرباح ضمن القانون الأساسي للشركة \". \" المادة 715 مكرر 141 : يمكن المساهمين أن يقرروا بالإجماع عدم إلزامية اللجوء إلى مندوب الحصص في حالة ما إذا كانت الحصص العينية التي لم يتم تقييمها مسبقا من طرف مندوب الحصص جميعها لا تتجاوز قيمتها نصف رأسمال الشركة \". \" المادة 715 مكرر 142 : في حالة عدم تعيين مندوب للحصص أو في حالة اختلاف القيمة المحددة للحصص العينية عن تلك المقترحة من قبل مندوب الحصص ، يكون المساهمون مسؤولين تضامنيا أمام الغير لمدة خمس (5) سنوات على القيمة الممنوحة للحصص العينية في القانون الأساسي للشركة \". \" المادة 715 مكرر 143 : تطبق على رئيس شركة المساهمة البسيطة أو مديرها العام أو مديرها العام المفوض، قواعد المسؤولية المطبقة على رئيس شركة المساهمة أو القائمين بإدارتها\"."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#version_subsec_12_art_2_20220505_OpEnact_d38f6c60fa> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2022-05-05"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/order/2022-05-05/22-09#version_subsec_12_art_2> ;
+    dzdoc:versionOf <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:versionText "تعدل وتتمم المادة 544 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، وتحرر كما يأتي : \" المادة 544 : يحدد الطابع التجاري للشركة إما بشكلها أو موضوعها . تعد شركات التضامن وشركات التوصية والشركات ذات المسؤولية المحدودة وشركات المساهمة وشركات المساهمة البسيطة تجارية بحكم شكلها ومهما يكن موضوعها\"."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#version_subsec_12_art_4_20220505_OpEnact_f5fdddcd14> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2022-05-05"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/order/2022-05-05/22-09#version_subsec_12_art_4> ;
+    dzdoc:versionOf <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:versionText "ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية. في حالة شركة المساهمة البسيطة ذات الشخص الوحيد ، يعين مندوب الحصص من قبل هذا الأخير، ولا يكون اللجوء إلى مندوب الحصص إلزاميا عندما تتوفر الشروط المنصوص عليها في الفقرة الأولى من هذه المادة \"."@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09/expression> a dzdoc:Expression ;
+    dzdoc:expressionOf <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:frbrUri "/akn/dz/act/order/2022-05-05/22-09/ara@"^^xsd:anyURI ;
+    dzdoc:hasManifestation <https://legal.dz/resource/order/2022-05-05/22-09/manifestation> ;
+    dzdoc:language "ara" ;
+    dzdoc:publicationDate "2022-05-05"^^xsd:date .
+
+dzorg:president a dzdoc:Organization ;
+    rdfs:label "رئيس الجمهورية"@ar ;
+    dzdoc:frbrUri "/ontology/organization/dz/president"^^xsd:anyURI .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#amend_2> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:confidenceScore 0.99 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpReplace ;
+    dzdoc:producesVersion <https://legal.dz/resource/order/1975-09-26/75-59#version_art_544_20220505_OpReplace_7f8398c475> ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:targetArticle <https://legal.dz/resource/order/1975-09-26/75-59#art_544> ;
+    dzdoc:targetDocument <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:validFrom "2022-05-05"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#preamble_segment_1> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#preamble> ;
+    dzdoc:position 1 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون التجاري، المعدل والمتمم،"@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#version_art_1> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يهدف هذا القانون إلى تعديل وتتميم الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون التجاري ."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/order/2022-05-05/22-09#version_art_1_20220505_OpEnact_a0c6eca792> ;
+    dzdoc:replacementText "يهدف هذا القانون إلى تعديل وتتميم الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون التجاري ."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/order/2022-05-05/22-09#art_1> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:targetArticle <https://legal.dz/resource/order/2022-05-05/22-09#art_1> ;
+    dzdoc:targetDocument <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2022-05-05"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#version_art_3> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يتمم الفصل الثالث من الباب الأول من الكتاب الخامس من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، بقسم ثاني عشر عنوانه \" شركة المساهمة البسيطة \"، يتضمن المواد 715 مكرر 133 و 715 مكرر 134 و 715 مكرر 135 و 715 مكرر 136 و 715 مكرر 137 و 715 مكرر 138 و 715 مكرر 139 و 715 مكرر 140 و 715 مكرر 141 و 715 مكرر 142 و 715 مكرر 143 ، ويحرر كما يأتي : \" المادة 715 مكرر 136 : يمارس رئيس شركة المساهمة البسيطة أو القائم بالإدارة المعين في قانونها الأساسي كمدير عام أو مد"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/order/2022-05-05/22-09#version_art_3_20220505_OpEnact_2f13cfdfaa> ;
+    dzdoc:replacementText "يتمم الفصل الثالث من الباب الأول من الكتاب الخامس من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، بقسم ثاني عشر عنوانه \" شركة المساهمة البسيطة \"، يتضمن المواد 715 مكرر 133 و 715 مكرر 134 و 715 مكرر 135 و 715 مكرر 136 و 715 مكرر 137 و 715 مكرر 138 و 715 مكرر 139 و 715 مكرر 140 و 715 مكرر 141 و 715 مكرر 142 و 715 مكرر 143 ، ويحرر كما يأتي : \" المادة 715 مكرر 136 : يمارس رئيس شركة المساهمة البسيطة أو القائم بالإدارة المعين في قانونها الأساسي كمدير عام أو مدير عام مفوض، صلاحيات مجلس الإدارة أو رئيسه. في حالة شركة المساهمة البسيطة ذات الشخص الوحيد ، يمارس المساهم الوحيد سلطات الرئيس ويتخذ القرارات الممنوحة لجمعية الشركاء \". \" المادة 715 مكرر 137 : تحدد القرارات التي يجب أن تتخذ جماعيا من طرف المساهمين في القانون الأساسي للشركة. غير أن قرارات الجمعية العامة العادية وغير العادية المتعلقة بزيادة واستهلاك وتخفيض الرأسمال والإدماج والانفصال وحل الشركة وتحويلها إلى شكل آخر وتعيين محافظي الحسابات والحسابات السنوية والأرباح، يجب أن تتخذ جماعيا من طرف المساهمين وفقا للكيفيات المحددة في القانون الأساسي للشركة \". \" المادة 715 مكرر 138 : يحدد رأسمال شركة المساهمة البسيطة في قانونها الأساسي\". \" المادة 715 مكرر 139 : يحظر على شركة المساهمة البسيطة اللجوء العلني للادخار أو طرح أسهمها في البورصة \". \" المادة 715 مكرر 140 : يمكن شركة المساهمة البسيطة أن تصدر أسهم غير قابلة للتصرف فيها ناتجة عن تقديم عمل . لا تدخل أسهم تقديم عمل في تأسيس رأسمال الشركة، غير أنها تدخل في تقاسم الأرباح وصافي الأصول والخسائر، وتحدد كيفيات تقدير قيمتها وما تخوله من أرباح ضمن القانون الأساسي للشركة \". \" المادة 715 مكرر 141 : يمكن المساهمين أن يقرروا بالإجماع عدم إلزامية اللجوء إلى مندوب الحصص في حالة ما إذا كانت الحصص العينية التي لم يتم تقييمها مسبقا من طرف مندوب الحصص جميعها لا تتجاوز قيمتها نصف رأسمال الشركة \". \" المادة 715 مكرر 142 : في حالة عدم تعيين مندوب للحصص أو في حالة اختلاف القيمة المحددة للحصص العينية عن تلك المقترحة من قبل مندوب الحصص ، يكون المساهمون مسؤولين تضامنيا أمام الغير لمدة خمس (5) سنوات على القيمة الممنوحة للحصص العينية في القانون الأساسي للشركة \". \" المادة 715 مكرر 143 : تطبق على رئيس شركة المساهمة البسيطة أو مديرها العام أو مديرها العام المفوض، قواعد المسؤولية المطبقة على رئيس شركة المساهمة أو القائمين بإدارتها\"."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:targetArticle <https://legal.dz/resource/order/2022-05-05/22-09#art_3> ;
+    dzdoc:targetDocument <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2022-05-05"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#version_subsec_12_art_2> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تعدل وتتمم المادة 544 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، وتحرر كما يأتي : \" المادة 544 : يحدد الطابع التجاري للشركة إما بشكلها أو موضوعها . تعد شركات التضامن وشركات التوصية والشركات ذات المسؤولية المحدودة وشركات المساهمة وشركات المساهمة البسيطة تجارية بحكم شكلها ومهما يكن موضوعها\"."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/order/2022-05-05/22-09#version_subsec_12_art_2_20220505_OpEnact_d38f6c60fa> ;
+    dzdoc:replacementText "تعدل وتتمم المادة 544 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، وتحرر كما يأتي : \" المادة 544 : يحدد الطابع التجاري للشركة إما بشكلها أو موضوعها . تعد شركات التضامن وشركات التوصية والشركات ذات المسؤولية المحدودة وشركات المساهمة وشركات المساهمة البسيطة تجارية بحكم شكلها ومهما يكن موضوعها\"."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:targetArticle <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2> ;
+    dzdoc:targetDocument <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2022-05-05"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#version_subsec_12_art_4> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية. في حالة شركة المساهمة البسيطة ذات الشخص الوحيد ، يعين مندوب الحصص من قبل هذا الأخير، ولا يكون اللجوء إلى مندوب الحصص إلزاميا عندما تتوفر الشروط المنصوص عليها في الفقرة الأولى من هذه المادة \"."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/order/2022-05-05/22-09#version_subsec_12_art_4_20220505_OpEnact_f5fdddcd14> ;
+    dzdoc:replacementText "ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية. في حالة شركة المساهمة البسيطة ذات الشخص الوحيد ، يعين مندوب الحصص من قبل هذا الأخير، ولا يكون اللجوء إلى مندوب الحصص إلزاميا عندما تتوفر الشروط المنصوص عليها في الفقرة الأولى من هذه المادة \"."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:targetArticle <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4> ;
+    dzdoc:targetDocument <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2022-05-05"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+dzterm:commercial_nature a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "يحدد الطابع التجاري للشركة إما بشكلها أو موضوعها"@ar ;
+    dzdoc:hasDefinitionOccurrence <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_defocc_f3c854099cbf>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_dup_1_defocc_7a122f36a644> .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#preamble> a dzdoc:Preamble ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:hasCitation <https://legal.dz/resource/order/2022-05-05/22-09#preamble_segment_0>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#preamble_segment_1>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#preamble_segment_2>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#preamble_segment_3> ;
+    dzdoc:hasSegment <https://legal.dz/resource/order/2022-05-05/22-09#preamble_segment_0>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#preamble_segment_1>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#preamble_segment_2>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#preamble_segment_3>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#preamble_segment_4> ;
+    dzdoc:text "يصدر الأمر الآتي نصه:"@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_dup_1> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:definesTerm dzterm:commercial_nature ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12> ;
+    dzdoc:eId "subsec_12_art_2_dup_1" ;
+    dzdoc:fullText "تعدل وتتمم المادة 544 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، وتحرر كما يأتي : \" المادة 544 : يحدد الطابع التجاري للشركة إما بشكلها أو موضوعها . تعد شركات التضامن وشركات التوصية والشركات ذات المسؤولية المحدودة وشركات المساهمة وشركات المساهمة البسيطة تجارية بحكم شكلها ومهما يكن موضوعها\"."@ar ;
+    dzdoc:hasDefinitionOccurrence <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_dup_1_defocc_7a122f36a644> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_dup_1_para_0>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_dup_1_para_1>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_dup_1_para_2> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:number "المادة 2" ;
+    dzdoc:originalEId "subsec_12_art_2" ;
+    dzdoc:position 4 ;
+    dzdoc:references <https://legal.dz/resource/order/2022-05-05/22-09#art_544> ;
+    dzdoc:referencesExternal <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_dup_1_extref_02ce7b14> ;
+    dzdoc:referencesInternal <https://legal.dz/resource/order/2022-05-05/22-09#art_544> .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4_dup_1> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12> ;
+    dzdoc:eId "subsec_12_art_4_dup_1" ;
+    dzdoc:fullText "ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية. في حالة شركة المساهمة البسيطة ذات الشخص الوحيد ، يعين مندوب الحصص من قبل هذا الأخير، ولا يكون اللجوء إلى مندوب الحصص إلزاميا عندما تتوفر الشروط المنصوص عليها في الفقرة الأولى من هذه المادة \"."@ar ;
+    dzdoc:hasParagraph <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4_dup_1_para_0>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4_dup_1_para_1> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:number "المادة 4" ;
+    dzdoc:originalEId "subsec_12_art_4" ;
+    dzdoc:position 5 ;
+    dzdoc:specifiesCondition <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4_dup_1_condition_0_c4a6911a>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4_dup_1_condition_1_de35a074> .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#subsec_12> a dzdoc:Subsection ;
+    dzdoc:containedIn <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#body> ;
+    dzdoc:directlyContains <https://legal.dz/resource/order/2022-05-05/22-09#art_1>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_3>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_dup_1>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4_dup_1> ;
+    dzdoc:eId "subsec_12" ;
+    dzdoc:hasArticle <https://legal.dz/resource/order/2022-05-05/22-09#art_1>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_3>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_dup_1>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4_dup_1> ;
+    dzdoc:heading "شركة المساهمة البسيطة"@ar ;
+    dzdoc:number "الثاني عشر" ;
+    dzdoc:position 0 .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_1> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12> ;
+    dzdoc:eId "art_1" ;
+    dzdoc:fullText "يهدف هذا القانون إلى تعديل وتتميم الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون التجاري ."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/order/2022-05-05/22-09#version_art_1> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/order/2022-05-05/22-09#art_1_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/order/2022-05-05/22-09#version_art_1_20220505_OpEnact_a0c6eca792> ;
+    dzdoc:introducedBy <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:introducedOn "2022-05-05"^^xsd:date ;
+    dzdoc:number "المادة الأولى" ;
+    dzdoc:position 0 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/order/2022-05-05/22-09#art_1_extref_c5504d34> ;
+    dzdoc:usesTerm dzterm:commercial_code .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12> ;
+    dzdoc:eId "subsec_12_art_4" ;
+    dzdoc:fullText "ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية. في حالة شركة المساهمة البسيطة ذات الشخص الوحيد ، يعين مندوب الحصص من قبل هذا الأخير، ولا يكون اللجوء إلى مندوب الحصص إلزاميا عندما تتوفر الشروط المنصوص عليها في الفقرة الأولى من هذه المادة \"."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/order/2022-05-05/22-09#version_subsec_12_art_4> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4_para_0>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4_para_1> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/order/2022-05-05/22-09#version_subsec_12_art_4_20220505_OpEnact_f5fdddcd14> ;
+    dzdoc:introducedBy <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:introducedOn "2022-05-05"^^xsd:date ;
+    dzdoc:number "المادة 4" ;
+    dzdoc:position 3 ;
+    dzdoc:specifiesCondition <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4_condition_0_c4a6911a>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_4_condition_1_de35a074> .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:definesTerm dzterm:commercial_nature ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12> ;
+    dzdoc:eId "subsec_12_art_2" ;
+    dzdoc:fullText "تعدل وتتمم المادة 544 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، وتحرر كما يأتي : \" المادة 544 : يحدد الطابع التجاري للشركة إما بشكلها أو موضوعها . تعد شركات التضامن وشركات التوصية والشركات ذات المسؤولية المحدودة وشركات المساهمة وشركات المساهمة البسيطة تجارية بحكم شكلها ومهما يكن موضوعها\"."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/order/2022-05-05/22-09#version_subsec_12_art_2> ;
+    dzdoc:hasDefinitionOccurrence <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_defocc_f3c854099cbf> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_para_0>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_para_1>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_para_2> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/order/2022-05-05/22-09#version_subsec_12_art_2_20220505_OpEnact_d38f6c60fa> ;
+    dzdoc:introducedBy <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:introducedOn "2022-05-05"^^xsd:date ;
+    dzdoc:number "المادة 2" ;
+    dzdoc:position 1 ;
+    dzdoc:references <https://legal.dz/resource/order/2022-05-05/22-09#art_544> ;
+    dzdoc:referencesExternal <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12_art_2_extref_02ce7b14> ;
+    dzdoc:referencesInternal <https://legal.dz/resource/order/2022-05-05/22-09#art_544> .
+
+<https://legal.dz/resource/order/2022-05-05/22-09> a dzdoc:Order ;
+    dzdoc:amends <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:authoredBy dzorg:president ;
+    dzdoc:candidateAmends <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:citesLegalBasis <https://legal.dz/resource/law/unknown/75-59> ;
+    dzdoc:countryCode "dz" ;
+    dzdoc:dateText "4 شوال عام 1443 الموافق 5 مايو سنة 2022"@ar ;
+    dzdoc:documentNumber "22-09" ;
+    dzdoc:enactmentDate "2022-05-05"^^xsd:date ;
+    dzdoc:frbrThisUri "/akn/dz/act/order/2022-05-05/22-09/main"^^xsd:anyURI ;
+    dzdoc:frbrUri "/akn/dz/act/order/2022-05-05/22-09"^^xsd:anyURI ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/order/2022-05-05/22-09#amend_1>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#amend_2>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#version_art_1>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#version_art_3>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#version_subsec_12_art_2>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#version_subsec_12_art_4> ;
+    dzdoc:hasAuthority dzorg:president ;
+    dzdoc:hasBody <https://legal.dz/resource/order/2022-05-05/22-09#body> ;
+    dzdoc:hasExpression <https://legal.dz/resource/order/2022-05-05/22-09/expression> ;
+    dzdoc:hasLegalBasisAssertion <https://legal.dz/resource/order/2022-05-05/22-09#legal_basis_0ac1dbe511a2> ;
+    dzdoc:hasLifecycleAssertion <https://legal.dz/resource/order/2022-05-05/22-09#lifecycle_2300c7ee7027>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#lifecycle_3fac8e65d004>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#lifecycle_56bae1512599>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#lifecycle_d39a37690ae6> ;
+    dzdoc:hasPreamble <https://legal.dz/resource/order/2022-05-05/22-09#preamble> ;
+    dzdoc:hasPreface <https://legal.dz/resource/order/2022-05-05/22-09#preface> ;
+    dzdoc:publicationDate "2022-05-05"^^xsd:date ;
+    dzdoc:sourceFile "Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/22-09_2022-05-05__partial_code_commerce_pp12-13.xml" ;
+    dzdoc:title "قانون رقم 22-09 يعدل ويتمم الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون التجاري"@ar .
+
+<https://legal.dz/resource/order/2022-05-05/22-09#art_3> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/order/2022-05-05/22-09#subsec_12> ;
+    dzdoc:eId "art_3" ;
+    dzdoc:fullText "يتمم الفصل الثالث من الباب الأول من الكتاب الخامس من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، بقسم ثاني عشر عنوانه \" شركة المساهمة البسيطة \"، يتضمن المواد 715 مكرر 133 و 715 مكرر 134 و 715 مكرر 135 و 715 مكرر 136 و 715 مكرر 137 و 715 مكرر 138 و 715 مكرر 139 و 715 مكرر 140 و 715 مكرر 141 و 715 مكرر 142 و 715 مكرر 143 ، ويحرر كما يأتي : \" المادة 715 مكرر 136 : يمارس رئيس شركة المساهمة البسيطة أو القائم بالإدارة المعين في قانونها الأساسي كمدير عام أو مدير عام مفوض، صلاحيات مجلس الإدارة أو رئيسه. في حالة شركة المساهمة البسيطة ذات الشخص الوحيد ، يمارس المساهم الوحيد سلطات الرئيس ويتخذ القرارات الممنوحة لجمعية الشركاء \". \" المادة 715 مكرر 137 : تحدد القرارات التي يجب أن تتخذ جماعيا من طرف المساهمين في القانون الأساسي للشركة. غير أن قرارات الجمعية العامة العادية وغير العادية المتعلقة بزيادة واستهلاك وتخفيض الرأسمال والإدماج والانفصال وحل الشركة وتحويلها إلى شكل آخر وتعيين محافظي الحسابات والحسابات السنوية والأرباح، يجب أن تتخذ جماعيا من طرف المساهمين وفقا للكيفيات المحددة في القانون الأساسي للشركة \". \" المادة 715 مكرر 138 : يحدد رأسمال شركة المساهمة البسيطة في قانونها الأساسي\". \" المادة 715 مكرر 139 : يحظر على شركة المساهمة البسيطة اللجوء العلني للادخار أو طرح أسهمها في البورصة \". \" المادة 715 مكرر 140 : يمكن شركة المساهمة البسيطة أن تصدر أسهم غير قابلة للتصرف فيها ناتجة عن تقديم عمل . لا تدخل أسهم تقديم عمل في تأسيس رأسمال الشركة، غير أنها تدخل في تقاسم الأرباح وصافي الأصول والخسائر، وتحدد كيفيات تقدير قيمتها وما تخوله من أرباح ضمن القانون الأساسي للشركة \". \" المادة 715 مكرر 141 : يمكن المساهمين أن يقرروا بالإجماع عدم إلزامية اللجوء إلى مندوب الحصص في حالة ما إذا كانت الحصص العينية التي لم يتم تقييمها مسبقا من طرف مندوب الحصص جميعها لا تتجاوز قيمتها نصف رأسمال الشركة \". \" المادة 715 مكرر 142 : في حالة عدم تعيين مندوب للحصص أو في حالة اختلاف القيمة المحددة للحصص العينية عن تلك المقترحة من قبل مندوب الحصص ، يكون المساهمون مسؤولين تضامنيا أمام الغير لمدة خمس (5) سنوات على القيمة الممنوحة للحصص العينية في القانون الأساسي للشركة \". \" المادة 715 مكرر 143 : تطبق على رئيس شركة المساهمة البسيطة أو مديرها العام أو مديرها العام المفوض، قواعد المسؤولية المطبقة على رئيس شركة المساهمة أو القائمين بإدارتها\"."@ar ;
+    dzdoc:grantsPermission <https://legal.dz/resource/order/2022-05-05/22-09#art_3_permission_0_12638ef2>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_3_permission_1_4b91edff> ;
+    dzdoc:grantsRight <https://legal.dz/resource/order/2022-05-05/22-09#art_3_right_0_54ce35e8>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_3_right_1_930f2523> ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/order/2022-05-05/22-09#version_art_3> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/order/2022-05-05/22-09#art_3_para_0>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_3_para_1>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_3_para_10>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_3_para_11>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_3_para_2>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_3_para_3>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_3_para_4>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_3_para_5>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_3_para_6>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_3_para_7>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_3_para_8>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_3_para_9> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/order/2022-05-05/22-09#version_art_3_20220505_OpEnact_2f13cfdfaa> ;
+    dzdoc:imposesObligation <https://legal.dz/resource/order/2022-05-05/22-09#art_3_obligation_0_9919bf63>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_3_obligation_1_d99716fd>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_3_obligation_2_4c6181ad> ;
+    dzdoc:imposesProhibition <https://legal.dz/resource/order/2022-05-05/22-09#art_3_prohibition_0_0461b993> ;
+    dzdoc:introducedBy <https://legal.dz/resource/order/2022-05-05/22-09> ;
+    dzdoc:introducedOn "2022-05-05"^^xsd:date ;
+    dzdoc:number "المادة 3" ;
+    dzdoc:position 2 ;
+    dzdoc:references <https://legal.dz/resource/order/2022-05-05/22-09#art_715_bis_133>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_715_bis_134>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_715_bis_135>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_715_bis_136>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_715_bis_137>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_715_bis_138>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_715_bis_139>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_715_bis_140>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_715_bis_141>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_715_bis_142>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_715_bis_143> ;
+    dzdoc:referencesExternal <https://legal.dz/resource/order/2022-05-05/22-09#art_3_extref_c5504d34> ;
+    dzdoc:referencesInternal <https://legal.dz/resource/order/2022-05-05/22-09#art_715_bis_133>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_715_bis_134>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_715_bis_135>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_715_bis_136>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_715_bis_137>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_715_bis_138>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_715_bis_139>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_715_bis_140>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_715_bis_141>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_715_bis_142>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_715_bis_143> ;
+    dzdoc:specifiesCondition <https://legal.dz/resource/order/2022-05-05/22-09#art_3_condition_0_9901e272>,
+        <https://legal.dz/resource/order/2022-05-05/22-09#art_3_condition_1_86a75ab7> ;
+    dzdoc:usesTerm dzterm:simple_joint_stock_company,
+        dzterm:single_member_sas .
+

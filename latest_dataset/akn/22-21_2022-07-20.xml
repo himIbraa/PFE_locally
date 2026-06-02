@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="law">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/law/2022-07-20/22-21/main"/>
+      <FRBRuri value="/akn/dz/act/law/2022-07-20/22-21"/>
+      <FRBRdate date="2022-07-20" name="enactment"/>
+      <FRBRauthor href="#parliament"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="22-21"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/law/2022-07-20/22-21/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/law/2022-07-20/22-21/ara@"/>
+      <FRBRdate date="2022-07-20" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/law/2022-07-20/22-21/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/law/2022-07-20/22-21/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="parliament" href="/ontology/organization/dz/parliament" showAs="البرلمان"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="president" href="/ontology/person/dz/president" showAs="رئيس الجمهورية"/>
+  </references>
+<lifecycle source="#source"><eventRef eId="evt_1" date="2022-07-20" source="#source" type="generation"/></lifecycle><analysis source="#source"><activeModifications><textualMod type="insertion" eId="amend_1"><source href="#art_2"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_56_bis"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_2"><source href="#art_2"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_56_bis_1"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_3"><source href="#art_2"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_56_bis_2"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_4"><source href="#art_2"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_56_bis_3"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_5"><source href="#art_2"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_56_bis_4"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_6"><source href="#art_2"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_56_bis_5"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_7"><source href="#art_2"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_56_bis_6"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_8"><source href="#art_3"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_64"/><force period="#evt_1"/></textualMod></activeModifications></analysis></meta>
+    <preface>
+  <docTitle>قانون رقم 22-21 يتمم القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل</docTitle>
+  <docNumber>22-21</docNumber>
+  <docDate date="2022-07-20">21 ذي الحجة عام 1443 الموافق 20 يوليو سنة 2022</docDate>
+  <docAuthority>البرلمان</docAuthority>
+</preface>
+    <preamble>
+  <formula name="enactingAuthority">
+    <p>إن رئيس الجمهورية،</p>
+  </formula>
+  <citations>
+    <citation>
+      <p>بناء على الدستور، لا سيما المواد 61 و 66 و 139-18 و 141 الفقرة (2) و (143) الفقرة (2 و 145 و 148 منه</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 75-58 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون المدني المعدل والمتمم</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 83-11 المؤرخ في 21 رمضان عام 1403 الموافق 2 يوليو سنة 1983 والمتعلق بالتأمينات الاجتماعية المعدل والمتمم</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 83-12 المؤرخ في 21 رمضان عام 1403 الموافق 2 يوليو سنة 1983 والمتعلق بالتقاعد، المعدل والمتمم</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 83-14 المؤرخ في 21 رمضان عام 1403 الموافق 2 يوليو سنة 1983 والمتعلق بالتزامات المكلفين في مجال الضمان الاجتماعي، المعدل والمتمم لا سيما المادة 6 منه</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 90-03 المؤرخ في 10 رجب عام 1410 الموافق 6 فبراير سنة 1990 والمتعلق بمفتشية العمل المعدل والمتمم</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 90-104 المؤرخ في 10 رجب عام 1410 الموافق 6 فبراير سنة 1990 والمتعلق بتسوية النزاعات الفردية في العمل المعدل والمتمم</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل المعدل والمتمم</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 08-09 المؤرخ في 18 صفر عام 1429 الموافق 25 فبراير سنة 2008 والمتضمن قانون الإجراءات المدنية والإدارية المعدل والمتمم</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 153-01 المؤرخ في 7 شوال عام 1436 الموافق 23 يوليو سنة 2015 والمتضمن قانون المالية التكميلي لسنة 2015، لا سيما المادة 60 منه</p>
+    </citation>
+    <citation>
+      <p>وبعد رأي مجلس الدولة</p>
+    </citation>
+    <citation>
+      <p>وبعد مصادقة البرلمان</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يصدر القانون الآتي نصه :</p>
+  </formula>
+</preamble>
+    <body>
+      <article eId="art_1">
+        <num>الأولى</num>
+        <content>
+        <paragraph>
+        <p>يهدف هذا القانون إلى تتميم أحكام <ref href="/akn/dz/act/law/1990-04-21/90-11">القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل</ref> المعدل والمتمم</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_2">
+        <num>2</num>
+        <content>
+        <paragraph>
+        <p>تتمم أحكام <ref href="/akn/dz/act/law/1990-04-21/90-11">القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990</ref> والمذكور أعلاه، بمواد <ref href="#art_56_bis">56 مكرر</ref> و <ref href="#art_56_bis_1">56 مكرر 1</ref> و <ref href="#art_56_bis_2">56 مكرر 2</ref> و <ref href="#art_56_bis_3">56 مكرر 3</ref> و <ref href="#art_56_bis_4">56 مكرر 4</ref> و <ref href="#art_56_bis_5">56 مكرر 5</ref> و <ref href="#art_56_bis_6">56 مكرر 6</ref>، وتحرر كما يأتي :</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_56_bis" status="new">
+        <num>56 مكرر</num>
+        <content>
+        <paragraph>
+        <p><right>يحق للعامل الاستفادة، مرة واحدة (1) خلال مساره المهني من عطلة غير مدفوعة الأجر لإنشاء مؤسسة</right>.</p>
+        </paragraph>
+        <paragraph>
+        <p><right>كما يحق للعامل اللجوء إلى العمل بالتوقيت الجزئي لإنشاء مؤسسة</right> طبقا لأحكام التشريع والتنظيم المعمول بهما".</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_56_bis_4" status="new">
+        <num>56 مكرر 4</num>
+        <content>
+        <paragraph>
+        <p><right>يمكن العامل، في حالة عدم إنجاز مشروعه في الآجال المحددة، أن يطلب إعادة إدماجه في منصب عمله أو إعادة تشغيله بالتوقيت الكامل</right>، في أجل شهر واحد (1) على الأقل، قبل انتهاء فترة العطلة أو فترة العمل بالتوقيت الجزئي لإنشاء مؤسسة".</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_56_bis_5" status="new">
+        <num>56 مكرر 5</num>
+        <content>
+        <paragraph>
+        <p>دون الإخلال بالأحكام التشريعية والتنظيمية المعمول بها <obligation>تنتهي علاقة العمل إذا أنجز العامل مؤسسته</obligation>، وعند الاقتضاء، <condition>إذا لم يقدم طلب إعادة إدماجه في الآجال المحددة بموجب أحكام <ref href="#art_56_bis_4">المادة 56 مكرر 4</ref> أعلاه</condition>".</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_3">
+        <num>3</num>
+        <content>
+        <paragraph>
+        <p>تتمم أحكام <ref href="/akn/dz/act/law/1990-04-21/90-11#art_64">المادة 64 من القانون رقم 90-11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990</ref> والمذكور أعلاه، كما يأتي:</p>
+        </paragraph>
+        <paragraph>
+        <p>"المادة 64 : تعلق علاقة العمل قانونا للأسباب الآتية :</p>
+        <list>
+        <point><p>............................... (بدون تغيير حتى)</p></point>
+        <point><p>عطلة بدون أجر</p></point>
+        <point><p>عطلة لإنشاء مؤسسة</p></point>
+        </list>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_4">
+        <num>4</num>
+        <content>
+        <paragraph>
+        <p>تحدد شروط وكيفيات تطبيق أحكام هذا القانون عند الاقتضاء، عن طريق التنظيم.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_5">
+        <num>المادة 5</num>
+        <content>
+        <paragraph>
+        <p><obligation>ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية</obligation></p>
+        </paragraph>
+        <paragraph>
+        <p>حرر بالجزائر في 21 ذي الحجة عام 1443 الموافق 20 يوليو سنة 2022.</p>
+        </paragraph>
+        <paragraph>
+        <p>عبد المجيد تبون</p>
+        </paragraph>
+        </content>
+        </article>
+    </body>
+  </act>
+</akomaNtoso>

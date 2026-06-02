@@ -1,0 +1,337 @@
+2026-04-28 16:07:41,731 - backend.pipeline.kg.pipeline - INFO - Logging to file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/logs/pipeline.log
+2026-04-28 16:07:41,731 - backend.pipeline.kg.pipeline - INFO - ============================================================
+2026-04-28 16:07:41,731 - backend.pipeline.kg.pipeline - INFO - ALGERIAN LEGAL KNOWLEDGE GRAPH - ETL PIPELINE
+2026-04-28 16:07:41,731 - backend.pipeline.kg.pipeline - INFO - ============================================================
+2026-04-28 16:07:41,731 - backend.pipeline.kg.pipeline - INFO - Input: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn
+2026-04-28 16:07:41,731 - backend.pipeline.kg.pipeline - INFO - Output: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf
+2026-04-28 16:07:41,731 - backend.pipeline.kg.pipeline - INFO - ============================================================
+2026-04-28 16:07:41,732 - backend.pipeline.kg.pipeline - INFO - Processing directory: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn
+2026-04-28 16:07:41,732 - backend.pipeline.kg.pipeline - INFO - Found 45 XML files
+2026-04-28 16:07:41,734 - backend.pipeline.kg.pipeline - INFO - Processing: 01-14.xml
+2026-04-28 16:07:41,734 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/01-14.xml
+2026-04-28 16:07:41,766 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/01-14.xml: 129 articles, 112 terms, 7 rights, 120 obligations
+2026-04-28 16:07:41,766 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/01-14.xml
+2026-04-28 16:07:42,041 - backend.pipeline.kg.extractor - INFO - Extracted 10756 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/01-14.xml
+2026-04-28 16:07:42,369 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/01-14.ttl
+2026-04-28 16:07:42,369 - backend.pipeline.kg.pipeline - INFO - Processing: 04-18_2004-12-25.xml
+2026-04-28 16:07:42,369 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/04-18_2004-12-25.xml
+2026-04-28 16:07:42,376 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/04-18_2004-12-25.xml: 31 articles, 20 terms, 9 rights, 27 obligations
+2026-04-28 16:07:42,376 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/04-18_2004-12-25.xml
+2026-04-28 16:07:42,406 - backend.pipeline.kg.extractor - INFO - Extracted 3086 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/04-18_2004-12-25.xml
+2026-04-28 16:07:42,514 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/04-18_2004-12-25.ttl
+2026-04-28 16:07:42,514 - backend.pipeline.kg.pipeline - INFO - Processing: 05-01_2005-02-06.xml
+2026-04-28 16:07:42,514 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/05-01_2005-02-06.xml
+2026-04-28 16:07:42,524 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/05-01_2005-02-06.xml: 47 articles, 81 terms, 12 rights, 39 obligations
+2026-04-28 16:07:42,525 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/05-01_2005-02-06.xml
+2026-04-28 16:07:42,579 - backend.pipeline.kg.extractor - INFO - Extracted 4286 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/05-01_2005-02-06.xml
+2026-04-28 16:07:42,721 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/05-01_2005-02-06.ttl
+2026-04-28 16:07:42,721 - backend.pipeline.kg.pipeline - INFO - Processing: 05-2004_2005-02-06.xml
+2026-04-28 16:07:42,721 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/05-2004_2005-02-06.xml
+2026-04-28 16:07:42,753 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/05-2004_2005-02-06.xml: 174 articles, 293 terms, 48 rights, 112 obligations
+2026-04-28 16:07:42,754 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/05-2004_2005-02-06.xml
+2026-04-28 16:07:42,911 - backend.pipeline.kg.extractor - INFO - Extracted 13966 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/05-2004_2005-02-06.xml
+2026-04-28 16:07:43,336 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/05-2004_2005-02-06.ttl
+2026-04-28 16:07:43,336 - backend.pipeline.kg.pipeline - INFO - Processing: 06-01_2006-02-20.xml
+2026-04-28 16:07:43,336 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/06-01_2006-02-20.xml
+2026-04-28 16:07:43,347 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/06-01_2006-02-20.xml: 47 articles, 80 terms, 12 rights, 39 obligations
+2026-04-28 16:07:43,347 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/06-01_2006-02-20.xml
+2026-04-28 16:07:43,409 - backend.pipeline.kg.extractor - INFO - Extracted 4285 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/06-01_2006-02-20.xml
+2026-04-28 16:07:43,530 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/06-01_2006-02-20.ttl
+2026-04-28 16:07:43,530 - backend.pipeline.kg.pipeline - INFO - Processing: 06-05_2006-01-09.xml
+2026-04-28 16:07:43,530 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/06-05_2006-01-09.xml
+2026-04-28 16:07:43,533 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/06-05_2006-01-09.xml: 8 articles, 14 terms, 0 rights, 11 obligations
+2026-04-28 16:07:43,533 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/06-05_2006-01-09.xml
+2026-04-28 16:07:43,543 - backend.pipeline.kg.extractor - INFO - Extracted 737 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/06-05_2006-01-09.xml
+2026-04-28 16:07:43,564 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/06-05_2006-01-09.ttl
+2026-04-28 16:07:43,564 - backend.pipeline.kg.pipeline - INFO - Processing: 07-12_21-02-2012.xml
+2026-04-28 16:07:43,564 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/07-12_21-02-2012.xml
+2026-04-28 16:07:43,597 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/07-12_21-02-2012.xml: 181 articles, 223 terms, 31 rights, 138 obligations
+2026-04-28 16:07:43,598 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/07-12_21-02-2012.xml
+2026-04-28 16:07:43,761 - backend.pipeline.kg.extractor - INFO - Extracted 13990 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/07-12_21-02-2012.xml
+2026-04-28 16:07:44,201 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/07-12_21-02-2012.ttl
+2026-04-28 16:07:44,201 - backend.pipeline.kg.pipeline - INFO - Processing: 08-09_2008-02-25.xml
+2026-04-28 16:07:44,201 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/08-09_2008-02-25.xml
+2026-04-28 16:07:44,417 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/08-09_2008-02-25.xml: 1065 articles, 1115 terms, 293 rights, 698 obligations
+2026-04-28 16:07:44,418 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/08-09_2008-02-25.xml
+2026-04-28 16:07:45,514 - backend.pipeline.kg.extractor - INFO - Extracted 87318 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/08-09_2008-02-25.xml
+2026-04-28 16:07:48,361 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/08-09_2008-02-25.ttl
+2026-04-28 16:07:48,361 - backend.pipeline.kg.pipeline - INFO - Processing: 09-03_2009-02-25.xml
+2026-04-28 16:07:48,361 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/09-03_2009-02-25.xml
+2026-04-28 16:07:48,382 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/09-03_2009-02-25.xml: 95 articles, 148 terms, 16 rights, 78 obligations
+2026-04-28 16:07:48,383 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/09-03_2009-02-25.xml
+2026-04-28 16:07:48,466 - backend.pipeline.kg.extractor - INFO - Extracted 8119 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/09-03_2009-02-25.xml
+2026-04-28 16:07:48,714 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/09-03_2009-02-25.ttl
+2026-04-28 16:07:48,714 - backend.pipeline.kg.pipeline - INFO - Processing: 11-05_2005-07-17.xml
+2026-04-28 16:07:48,714 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/11-05_2005-07-17.xml
+2026-04-28 16:07:48,718 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/11-05_2005-07-17.xml: 21 articles, 40 terms, 1 rights, 5 obligations
+2026-04-28 16:07:48,719 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/11-05_2005-07-17.xml
+2026-04-28 16:07:48,737 - backend.pipeline.kg.extractor - INFO - Extracted 1860 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/11-05_2005-07-17.xml
+2026-04-28 16:07:48,791 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/11-05_2005-07-17.ttl
+2026-04-28 16:07:48,791 - backend.pipeline.kg.pipeline - INFO - Processing: 11-10_2011-06-22.xml
+2026-04-28 16:07:48,791 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/11-10_2011-06-22.xml
+2026-04-28 16:07:48,832 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/11-10_2011-06-22.xml: 220 articles, 327 terms, 28 rights, 138 obligations
+2026-04-28 16:07:48,833 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/11-10_2011-06-22.xml
+2026-04-28 16:07:48,841 - backend.pipeline.kg.extractor - WARNING - Duplicate eId found: 'chp_1', using 'chp_1_dup_1'
+2026-04-28 16:07:48,878 - backend.pipeline.kg.extractor - WARNING - Duplicate eId found: 'chp_2', using 'chp_2_dup_1'
+2026-04-28 16:07:48,896 - backend.pipeline.kg.extractor - WARNING - Duplicate eId found: 'chp_1', using 'chp_1_dup_2'
+2026-04-28 16:07:48,897 - backend.pipeline.kg.extractor - WARNING - Duplicate eId found: 'chp_1_sec_1', using 'chp_1_sec_1_dup_1'
+2026-04-28 16:07:48,901 - backend.pipeline.kg.extractor - WARNING - Duplicate eId found: 'chp_1_sec_2', using 'chp_1_sec_2_dup_1'
+2026-04-28 16:07:48,908 - backend.pipeline.kg.extractor - WARNING - Duplicate eId found: 'chp_1_sec_3', using 'chp_1_sec_3_dup_1'
+2026-04-28 16:07:48,914 - backend.pipeline.kg.extractor - WARNING - Duplicate eId found: 'chp_2', using 'chp_2_dup_2'
+2026-04-28 16:07:48,922 - backend.pipeline.kg.extractor - WARNING - Duplicate eId found: 'chp_3', using 'chp_3_dup_1'
+2026-04-28 16:07:48,939 - backend.pipeline.kg.extractor - WARNING - Duplicate eId found: 'chp_1', using 'chp_1_dup_3'
+2026-04-28 16:07:48,945 - backend.pipeline.kg.extractor - WARNING - Duplicate eId found: 'chp_2', using 'chp_2_dup_3'
+2026-04-28 16:07:48,946 - backend.pipeline.kg.extractor - WARNING - Duplicate eId found: 'chp_2_sec_1', using 'chp_2_sec_1_dup_1'
+2026-04-28 16:07:48,967 - backend.pipeline.kg.extractor - WARNING - Duplicate eId found: 'chp_2_sec_2', using 'chp_2_sec_2_dup_1'
+2026-04-28 16:07:48,973 - backend.pipeline.kg.extractor - WARNING - Duplicate eId found: 'chp_2_sec_3', using 'chp_2_sec_3_dup_1'
+2026-04-28 16:07:48,974 - backend.pipeline.kg.extractor - WARNING - Duplicate eId found: 'chp_1', using 'chp_1_dup_4'
+2026-04-28 16:07:48,975 - backend.pipeline.kg.extractor - WARNING - Duplicate eId found: 'chp_2', using 'chp_2_dup_4'
+2026-04-28 16:07:48,979 - backend.pipeline.kg.extractor - WARNING - Duplicate eId found: 'chp_1', using 'chp_1_dup_5'
+2026-04-28 16:07:48,979 - backend.pipeline.kg.extractor - WARNING - Duplicate eId found: 'chp_1_sec_1', using 'chp_1_sec_1_dup_2'
+2026-04-28 16:07:49,042 - backend.pipeline.kg.extractor - INFO - Extracted 16481 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/11-10_2011-06-22.xml
+2026-04-28 16:07:49,551 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/11-10_2011-06-22.ttl
+2026-04-28 16:07:49,551 - backend.pipeline.kg.pipeline - INFO - Processing: 12-2003_2012-11-28.xml
+2026-04-28 16:07:49,551 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/12-2003_2012-11-28.xml
+2026-04-28 16:07:49,562 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/12-2003_2012-11-28.xml: 29 articles, 137 terms, 3 rights, 57 obligations
+2026-04-28 16:07:49,562 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/12-2003_2012-11-28.xml
+2026-04-28 16:07:49,599 - backend.pipeline.kg.extractor - INFO - Extracted 3282 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/12-2003_2012-11-28.xml
+2026-04-28 16:07:49,694 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/12-2003_2012-11-28.ttl
+2026-04-28 16:07:49,694 - backend.pipeline.kg.pipeline - INFO - Processing: 12-2015_2012-01-12.xml
+2026-04-28 16:07:49,694 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/12-2015_2012-01-12.xml
+2026-04-28 16:07:49,716 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/12-2015_2012-01-12.xml: 133 articles, 112 terms, 25 rights, 91 obligations
+2026-04-28 16:07:49,717 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/12-2015_2012-01-12.xml
+2026-04-28 16:07:49,821 - backend.pipeline.kg.extractor - INFO - Extracted 10381 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/12-2015_2012-01-12.xml
+2026-04-28 16:07:50,133 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/12-2015_2012-01-12.ttl
+2026-04-28 16:07:50,133 - backend.pipeline.kg.pipeline - INFO - Processing: 13-12_1971-04-22.xml
+2026-04-28 16:07:50,133 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/13-12_1971-04-22.xml
+2026-04-28 16:07:50,206 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/13-12_1971-04-22.xml: 336 articles, 478 terms, 90 rights, 319 obligations
+2026-04-28 16:07:50,207 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/13-12_1971-04-22.xml
+2026-04-28 16:07:50,614 - backend.pipeline.kg.extractor - INFO - Extracted 30108 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/13-12_1971-04-22.xml
+2026-04-28 16:07:51,618 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/13-12_1971-04-22.ttl
+2026-04-28 16:07:51,618 - backend.pipeline.kg.pipeline - INFO - Processing: 15-247_2015-09-16.xml
+2026-04-28 16:07:51,618 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/15-247_2015-09-16.xml
+2026-04-28 16:07:51,693 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/15-247_2015-09-16.xml: 220 articles, 677 terms, 93 rights, 334 obligations
+2026-04-28 16:07:51,694 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/15-247_2015-09-16.xml
+2026-04-28 16:07:51,762 - backend.pipeline.kg.extractor - WARNING - Duplicate eId found: 'chp_1_sec_2_subsec_1', using 'chp_1_sec_2_subsec_1_dup_1'
+2026-04-28 16:07:51,783 - backend.pipeline.kg.extractor - WARNING - Duplicate eId found: 'chp_1_sec_2_subsec_2', using 'chp_1_sec_2_subsec_2_dup_1'
+2026-04-28 16:07:51,786 - backend.pipeline.kg.extractor - WARNING - Duplicate eId found: 'chp_1_sec_2_subsec_3', using 'chp_1_sec_2_subsec_3_dup_1'
+2026-04-28 16:07:52,325 - backend.pipeline.kg.extractor - INFO - Extracted 27090 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/15-247_2015-09-16.xml
+2026-04-28 16:07:53,163 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/15-247_2015-09-16.ttl
+2026-04-28 16:07:53,163 - backend.pipeline.kg.pipeline - INFO - Processing: 17-05.xml
+2026-04-28 16:07:53,163 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/17-05.xml
+2026-04-28 16:07:53,171 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/17-05.xml: 19 articles, 21 terms, 2 rights, 24 obligations
+2026-04-28 16:07:53,171 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/17-05.xml
+2026-04-28 16:07:53,212 - backend.pipeline.kg.extractor - INFO - Extracted 3658 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/17-05.xml
+2026-04-28 16:07:53,339 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/17-05.ttl
+2026-04-28 16:07:53,339 - backend.pipeline.kg.pipeline - INFO - Processing: 18-05_2018-05-10.xml
+2026-04-28 16:07:53,339 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/18-05_2018-05-10.xml
+2026-04-28 16:07:53,361 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/18-05_2018-05-10.xml: 49 articles, 96 terms, 8 rights, 55 obligations
+2026-04-28 16:07:53,362 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/18-05_2018-05-10.xml
+2026-04-28 16:07:53,418 - backend.pipeline.kg.extractor - INFO - Extracted 4840 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/18-05_2018-05-10.xml
+2026-04-28 16:07:53,580 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/18-05_2018-05-10.ttl
+2026-04-28 16:07:53,580 - backend.pipeline.kg.pipeline - INFO - Processing: 18-11_2018-07-02.xml
+2026-04-28 16:07:53,580 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/18-11_2018-07-02.xml
+2026-04-28 16:07:53,660 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/18-11_2018-07-02.xml: 448 articles, 441 terms, 50 rights, 325 obligations
+2026-04-28 16:07:53,661 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/18-11_2018-07-02.xml
+2026-04-28 16:07:54,014 - backend.pipeline.kg.extractor - INFO - Extracted 34562 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/18-11_2018-07-02.xml
+2026-04-28 16:07:55,140 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/18-11_2018-07-02.ttl
+2026-04-28 16:07:55,140 - backend.pipeline.kg.pipeline - INFO - Processing: 75-59_1975-09-26.xml
+2026-04-28 16:07:55,140 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/75-59_1975-09-26.xml
+2026-04-28 16:07:55,401 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/75-59_1975-09-26.xml: 1060 articles, 1633 terms, 438 rights, 808 obligations
+2026-04-28 16:07:55,404 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/75-59_1975-09-26.xml
+2026-04-28 16:07:56,730 - backend.pipeline.kg.extractor - INFO - Extracted 98584 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/75-59_1975-09-26.xml
+2026-04-28 16:08:01,185 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/75-59_1975-09-26.ttl
+2026-04-28 16:08:01,185 - backend.pipeline.kg.pipeline - INFO - Processing: constitution_2020-12-30.xml
+2026-04-28 16:08:01,185 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_2020-12-30.xml
+2026-04-28 16:08:01,241 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_2020-12-30.xml: 225 articles, 435 terms, 96 rights, 201 obligations
+2026-04-28 16:08:01,242 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_2020-12-30.xml
+2026-04-28 16:08:01,430 - backend.pipeline.kg.extractor - INFO - Extracted 20028 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_2020-12-30.xml
+2026-04-28 16:08:02,026 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/constitution_2020-12-30.ttl
+2026-04-28 16:08:02,026 - backend.pipeline.kg.pipeline - INFO - Processing: 22-16.xml
+2026-04-28 16:08:02,026 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/22-16.xml
+2026-04-28 16:08:02,028 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/22-16.xml: 8 articles, 0 terms, 3 rights, 2 obligations
+2026-04-28 16:08:02,028 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/22-16.xml
+2026-04-28 16:08:02,038 - backend.pipeline.kg.extractor - INFO - Extracted 1024 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/22-16.xml
+2026-04-28 16:08:02,068 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/22-16.ttl
+2026-04-28 16:08:02,068 - backend.pipeline.kg.pipeline - INFO - Processing: 22-18_2022-07-24.xml
+2026-04-28 16:08:02,068 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/22-18_2022-07-24.xml
+2026-04-28 16:08:02,078 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/22-18_2022-07-24.xml: 41 articles, 47 terms, 24 rights, 18 obligations
+2026-04-28 16:08:02,079 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/22-18_2022-07-24.xml
+2026-04-28 16:08:02,114 - backend.pipeline.kg.extractor - INFO - Extracted 3703 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/22-18_2022-07-24.xml
+2026-04-28 16:08:02,221 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/22-18_2022-07-24.ttl
+2026-04-28 16:08:02,221 - backend.pipeline.kg.pipeline - INFO - Processing: 25-14_2025-08-03.xml
+2026-04-28 16:08:02,221 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/25-14_2025-08-03.xml
+2026-04-28 16:08:02,419 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/25-14_2025-08-03.xml: 889 articles, 1400 terms, 286 rights, 832 obligations
+2026-04-28 16:08:02,421 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/25-14_2025-08-03.xml
+2026-04-28 16:08:03,357 - backend.pipeline.kg.extractor - INFO - Extracted 83027 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/25-14_2025-08-03.xml
+2026-04-28 16:08:05,990 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/25-14_2025-08-03.ttl
+2026-04-28 16:08:05,991 - backend.pipeline.kg.pipeline - INFO - Processing: 6-5_1966-06-08.xml
+2026-04-28 16:08:05,991 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/6-5_1966-06-08.xml
+2026-04-28 16:08:06,172 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/6-5_1966-06-08.xml: 660 articles, 381 terms, 38 rights, 509 obligations
+2026-04-28 16:08:06,174 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/6-5_1966-06-08.xml
+2026-04-28 16:08:06,339 - backend.pipeline.kg.extractor - WARNING - Duplicate eId found: 'book_3_book_3_chp_2_book_3_chp_2_sec_1_book_3_chp_2_sec_1_subsec_5_art_303_bis', using 'book_3_book_3_chp_2_book_3_chp_2_sec_1_book_3_chp_2_sec_1_subsec_5_art_303_bis_dup_1'
+2026-04-28 16:08:06,644 - backend.pipeline.kg.extractor - INFO - Extracted 51458 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/6-5_1966-06-08.xml
+2026-04-28 16:08:08,669 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/6-5_1966-06-08.ttl
+2026-04-28 16:08:08,669 - backend.pipeline.kg.pipeline - INFO - Processing: 70-86_1970-12-15.xml
+2026-04-28 16:08:08,669 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/70-86_1970-12-15.xml
+2026-04-28 16:08:08,677 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/70-86_1970-12-15.xml: 43 articles, 42 terms, 10 rights, 15 obligations
+2026-04-28 16:08:08,678 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/70-86_1970-12-15.xml
+2026-04-28 16:08:08,709 - backend.pipeline.kg.extractor - INFO - Extracted 3370 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/70-86_1970-12-15.xml
+2026-04-28 16:08:08,809 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/70-86_1970-12-15.ttl
+2026-04-28 16:08:08,809 - backend.pipeline.kg.pipeline - INFO - Processing: 75-8_1975-09-26.xml
+2026-04-28 16:08:08,809 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/75-8_1975-09-26.xml
+2026-04-28 16:08:08,992 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/75-8_1975-09-26.xml: 1055 articles, 1262 terms, 356 rights, 526 obligations
+2026-04-28 16:08:08,995 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/75-8_1975-09-26.xml
+2026-04-28 16:08:09,840 - backend.pipeline.kg.extractor - INFO - Extracted 83080 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/75-8_1975-09-26.xml
+2026-04-28 16:08:12,804 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/75-8_1975-09-26.ttl
+2026-04-28 16:08:12,805 - backend.pipeline.kg.pipeline - INFO - Processing: 84-11_1984-06-09.xml
+2026-04-28 16:08:12,805 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/84-11_1984-06-09.xml
+2026-04-28 16:08:13,027 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/84-11_1984-06-09.xml: 239 articles, 175 terms, 44 rights, 107 obligations
+2026-04-28 16:08:13,029 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/84-11_1984-06-09.xml
+2026-04-28 16:08:13,904 - backend.pipeline.kg.extractor - INFO - Extracted 16501 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/84-11_1984-06-09.xml
+2026-04-28 16:08:14,452 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/84-11_1984-06-09.ttl
+2026-04-28 16:08:14,452 - backend.pipeline.kg.pipeline - INFO - Processing: 96-21.xml
+2026-04-28 16:08:14,452 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/96-21.xml
+2026-04-28 16:08:14,457 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/96-21.xml: 20 articles, 9 terms, 4 rights, 11 obligations
+2026-04-28 16:08:14,457 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/96-21.xml
+2026-04-28 16:08:14,483 - backend.pipeline.kg.extractor - INFO - Extracted 2606 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/96-21.xml
+2026-04-28 16:08:14,561 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/96-21.ttl
+2026-04-28 16:08:14,561 - backend.pipeline.kg.pipeline - INFO - Processing: 97-02.xml
+2026-04-28 16:08:14,561 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/97-02.xml
+2026-04-28 16:08:14,563 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/97-02.xml: 5 articles, 2 terms, 0 rights, 2 obligations
+2026-04-28 16:08:14,563 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/97-02.xml
+2026-04-28 16:08:14,570 - backend.pipeline.kg.extractor - INFO - Extracted 657 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/97-02.xml
+2026-04-28 16:08:14,591 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/97-02.ttl
+2026-04-28 16:08:14,591 - backend.pipeline.kg.pipeline - INFO - Processing: constitution_1963-12-08.xml
+2026-04-28 16:08:14,591 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1963-12-08.xml
+2026-04-28 16:08:14,601 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1963-12-08.xml: 78 articles, 82 terms, 27 rights, 28 obligations
+2026-04-28 16:08:14,602 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1963-12-08.xml
+2026-04-28 16:08:14,660 - backend.pipeline.kg.extractor - INFO - Extracted 5311 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1963-12-08.xml
+2026-04-28 16:08:14,845 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/constitution_1963.ttl
+2026-04-28 16:08:14,845 - backend.pipeline.kg.pipeline - INFO - Processing: constitution_1976-11-19.xml
+2026-04-28 16:08:14,845 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1976-11-19.xml
+2026-04-28 16:08:14,875 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1976-11-19.xml: 198 articles, 209 terms, 54 rights, 109 obligations
+2026-04-28 16:08:14,876 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1976-11-19.xml
+2026-04-28 16:08:15,000 - backend.pipeline.kg.extractor - INFO - Extracted 13740 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1976-11-19.xml
+2026-04-28 16:08:15,435 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/constitution_1976.ttl
+2026-04-28 16:08:15,435 - backend.pipeline.kg.pipeline - INFO - Processing: constitution_1979-07-01.xml
+2026-04-28 16:08:15,435 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1979-07-01.xml
+2026-04-28 16:08:15,438 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1979-07-01.xml: 13 articles, 10 terms, 3 rights, 2 obligations
+2026-04-28 16:08:15,438 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1979-07-01.xml
+2026-04-28 16:08:15,452 - backend.pipeline.kg.extractor - INFO - Extracted 1211 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1979-07-01.xml
+2026-04-28 16:08:15,487 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/constitution_1979.ttl
+2026-04-28 16:08:15,487 - backend.pipeline.kg.pipeline - INFO - Processing: constitution_1980-01-12.xml
+2026-04-28 16:08:15,487 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1980-01-12.xml
+2026-04-28 16:08:15,488 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1980-01-12.xml: 2 articles, 1 terms, 0 rights, 1 obligations
+2026-04-28 16:08:15,488 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1980-01-12.xml
+2026-04-28 16:08:15,490 - backend.pipeline.kg.extractor - INFO - Extracted 184 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1980-01-12.xml
+2026-04-28 16:08:15,496 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/constitution_1980.ttl
+2026-04-28 16:08:15,497 - backend.pipeline.kg.pipeline - INFO - Processing: constitution_1988-11-03.xml
+2026-04-28 16:08:15,497 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1988-11-03.xml
+2026-04-28 16:08:15,501 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1988-11-03.xml: 19 articles, 37 terms, 7 rights, 6 obligations
+2026-04-28 16:08:15,501 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1988-11-03.xml
+2026-04-28 16:08:15,516 - backend.pipeline.kg.extractor - INFO - Extracted 1576 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1988-11-03.xml
+2026-04-28 16:08:15,563 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/constitution_1988.ttl
+2026-04-28 16:08:15,563 - backend.pipeline.kg.pipeline - INFO - Processing: constitution_1989-02-23.xml
+2026-04-28 16:08:15,563 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1989-02-23.xml
+2026-04-28 16:08:15,590 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1989-02-23.xml: 170 articles, 231 terms, 57 rights, 78 obligations
+2026-04-28 16:08:15,591 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1989-02-23.xml
+2026-04-28 16:08:15,701 - backend.pipeline.kg.extractor - INFO - Extracted 12147 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1989-02-23.xml
+2026-04-28 16:08:16,083 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/constitution_1989.ttl
+2026-04-28 16:08:16,083 - backend.pipeline.kg.pipeline - INFO - Processing: constitution_1996-11-28.xml
+2026-04-28 16:08:16,083 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1996-11-28.xml
+2026-04-28 16:08:16,118 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1996-11-28.xml: 178 articles, 287 terms, 60 rights, 122 obligations
+2026-04-28 16:08:16,119 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1996-11-28.xml
+2026-04-28 16:08:16,251 - backend.pipeline.kg.extractor - INFO - Extracted 14011 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_1996-11-28.xml
+2026-04-28 16:08:16,669 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/constitution_1996.ttl
+2026-04-28 16:08:16,669 - backend.pipeline.kg.pipeline - INFO - Processing: constitution_2002-04-10.xml
+2026-04-28 16:08:16,669 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_2002-04-10.xml
+2026-04-28 16:08:16,670 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_2002-04-10.xml: 4 articles, 4 terms, 0 rights, 1 obligations
+2026-04-28 16:08:16,670 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_2002-04-10.xml
+2026-04-28 16:08:16,673 - backend.pipeline.kg.extractor - INFO - Extracted 305 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_2002-04-10.xml
+2026-04-28 16:08:16,682 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/constitution_2002.ttl
+2026-04-28 16:08:16,682 - backend.pipeline.kg.pipeline - INFO - Processing: constitution_2008-11-15.xml
+2026-04-28 16:08:16,682 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_2008-11-15.xml
+2026-04-28 16:08:16,716 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_2008-11-15.xml: 182 articles, 301 terms, 62 rights, 134 obligations
+2026-04-28 16:08:16,717 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_2008-11-15.xml
+2026-04-28 16:08:16,867 - backend.pipeline.kg.extractor - INFO - Extracted 14887 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_2008-11-15.xml
+2026-04-28 16:08:17,374 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/constitution_2008.ttl
+2026-04-28 16:08:17,374 - backend.pipeline.kg.pipeline - INFO - Processing: constitution_2016-03-06.xml
+2026-04-28 16:08:17,374 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_2016-03-06.xml
+2026-04-28 16:08:17,420 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_2016-03-06.xml: 213 articles, 361 terms, 91 rights, 188 obligations
+2026-04-28 16:08:17,421 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_2016-03-06.xml
+2026-04-28 16:08:17,635 - backend.pipeline.kg.extractor - INFO - Extracted 18435 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_2016-03-06.xml
+2026-04-28 16:08:18,196 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/constitution_2016.ttl
+2026-04-28 16:08:18,196 - backend.pipeline.kg.pipeline - INFO - Processing: constitution_2020-11-01.xml
+2026-04-28 16:08:18,196 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_2020-11-01.xml
+2026-04-28 16:08:18,248 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_2020-11-01.xml: 220 articles, 447 terms, 106 rights, 186 obligations
+2026-04-28 16:08:18,249 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_2020-11-01.xml
+2026-04-28 16:08:18,453 - backend.pipeline.kg.extractor - INFO - Extracted 20066 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_2020-11-01.xml
+2026-04-28 16:08:19,124 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/constitution_2020.ttl
+2026-04-28 16:08:19,125 - backend.pipeline.kg.pipeline - INFO - Processing: labor_law_90-11.xml
+2026-04-28 16:08:19,125 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/labor_law_90-11.xml
+2026-04-28 16:08:19,154 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/labor_law_90-11.xml: 150 articles, 164 terms, 60 rights, 108 obligations
+2026-04-28 16:08:19,155 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/labor_law_90-11.xml
+2026-04-28 16:08:19,275 - backend.pipeline.kg.extractor - INFO - Extracted 12439 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/labor_law_90-11.xml
+2026-04-28 16:08:19,655 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/labor_law_90-11.ttl
+2026-04-28 16:08:19,655 - backend.pipeline.kg.pipeline - INFO - Processing: 15-20_2015-12-30__partial_code_commerce_pp_5-6.xml
+2026-04-28 16:08:19,655 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/15-20_2015-12-30__partial_code_commerce_pp_5-6.xml
+2026-04-28 16:08:19,656 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/15-20_2015-12-30__partial_code_commerce_pp_5-6.xml: 8 articles, 4 terms, 1 rights, 4 obligations
+2026-04-28 16:08:19,657 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/15-20_2015-12-30__partial_code_commerce_pp_5-6.xml
+2026-04-28 16:08:19,666 - backend.pipeline.kg.extractor - INFO - Extracted 879 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/15-20_2015-12-30__partial_code_commerce_pp_5-6.xml
+2026-04-28 16:08:19,692 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/15-20_2015-12-30__partial_code_commerce_pp_5-6.ttl
+2026-04-28 16:08:19,692 - backend.pipeline.kg.pipeline - INFO - Processing: 22-09_2022-05-05__partial_code_commerce_pp12-13.xml
+2026-04-28 16:08:19,692 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/22-09_2022-05-05__partial_code_commerce_pp12-13.xml
+2026-04-28 16:08:19,695 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/22-09_2022-05-05__partial_code_commerce_pp12-13.xml: 6 articles, 6 terms, 2 rights, 3 obligations
+2026-04-28 16:08:19,695 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/22-09_2022-05-05__partial_code_commerce_pp12-13.xml
+2026-04-28 16:08:19,699 - backend.pipeline.kg.extractor - WARNING - Duplicate eId found: 'subsec_12_art_2', using 'subsec_12_art_2_dup_1'
+2026-04-28 16:08:19,700 - backend.pipeline.kg.extractor - WARNING - Duplicate eId found: 'subsec_12_art_4', using 'subsec_12_art_4_dup_1'
+2026-04-28 16:08:19,704 - backend.pipeline.kg.extractor - INFO - Extracted 766 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/22-09_2022-05-05__partial_code_commerce_pp12-13.xml
+2026-04-28 16:08:19,728 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/22-09_2022-05-05__partial_code_commerce_pp12-13.ttl
+2026-04-28 16:08:19,728 - backend.pipeline.kg.pipeline - INFO - Processing: 03-07_2003-07-19.xml
+2026-04-28 16:08:19,728 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/03-07_2003-07-19.xml
+2026-04-28 16:08:19,743 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/03-07_2003-07-19.xml: 61 articles, 80 terms, 35 rights, 37 obligations
+2026-04-28 16:08:19,744 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/03-07_2003-07-19.xml
+2026-04-28 16:08:19,804 - backend.pipeline.kg.extractor - INFO - Extracted 6103 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/03-07_2003-07-19.xml
+2026-04-28 16:08:20,000 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/03-07_2003-07-19.ttl
+2026-04-28 16:08:20,000 - backend.pipeline.kg.pipeline - INFO - Processing: 94-03_1994-04-11.xml
+2026-04-28 16:08:20,000 - backend.pipeline.kg.parser - INFO - Parsing file: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/94-03_1994-04-11.xml
+2026-04-28 16:08:20,001 - backend.pipeline.kg.parser - INFO - Parsed Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/94-03_1994-04-11.xml: 3 articles, 3 terms, 0 rights, 1 obligations
+2026-04-28 16:08:20,001 - backend.pipeline.kg.extractor - INFO - Extracting RDF from: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/94-03_1994-04-11.xml
+2026-04-28 16:08:20,005 - backend.pipeline.kg.extractor - INFO - Extracted 312 triples from Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/94-03_1994-04-11.xml
+2026-04-28 16:08:20,015 - backend.pipeline.kg.pipeline - INFO - Saved: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/94-03_1994-04-11.ttl
+2026-04-28 16:08:40,644 - backend.pipeline.kg.pipeline - INFO - Saved merged: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/algerian_legal_kg.ttl
+2026-04-28 16:08:40,646 - backend.pipeline.kg.pipeline - INFO - Saved report: Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/rdf/extraction_report.json
+2026-04-28 16:08:40,646 - backend.pipeline.kg.pipeline - INFO - 
+2026-04-28 16:08:40,646 - backend.pipeline.kg.pipeline - INFO - ============================================================
+2026-04-28 16:08:40,646 - backend.pipeline.kg.pipeline - INFO - EXTRACTION SUMMARY
+2026-04-28 16:08:40,646 - backend.pipeline.kg.pipeline - INFO - ============================================================
+2026-04-28 16:08:40,646 - backend.pipeline.kg.pipeline - INFO - Files processed:    45
+2026-04-28 16:08:40,646 - backend.pipeline.kg.pipeline - INFO - Files failed:       0
+2026-04-28 16:08:40,646 - backend.pipeline.kg.pipeline - INFO - Total triples:      765,215
+2026-04-28 16:08:40,646 - backend.pipeline.kg.pipeline - INFO - ----------------------------------------
+2026-04-28 16:08:40,646 - backend.pipeline.kg.pipeline - INFO - Articles:           9,002
+2026-04-28 16:08:40,646 - backend.pipeline.kg.pipeline - INFO - Terms used:         12,028
+2026-04-28 16:08:40,646 - backend.pipeline.kg.pipeline - INFO - Definitions:        611
+2026-04-28 16:08:40,646 - backend.pipeline.kg.pipeline - INFO - Rights:             2,592
+2026-04-28 16:08:40,646 - backend.pipeline.kg.pipeline - INFO - Obligations:        6,649
+2026-04-28 16:08:40,646 - backend.pipeline.kg.pipeline - INFO - Conditions:         5,253
+2026-04-28 16:08:40,646 - backend.pipeline.kg.pipeline - INFO - Permissions:        2,806
+2026-04-28 16:08:40,646 - backend.pipeline.kg.pipeline - INFO - Prohibitions:       436
+2026-04-28 16:08:40,646 - backend.pipeline.kg.pipeline - INFO - Exceptions:         0
+2026-04-28 16:08:40,646 - backend.pipeline.kg.pipeline - INFO - Roles:              0
+2026-04-28 16:08:40,646 - backend.pipeline.kg.pipeline - INFO - Actions:            0
+2026-04-28 16:08:40,646 - backend.pipeline.kg.pipeline - INFO - Activities:         0
+2026-04-28 16:08:40,647 - backend.pipeline.kg.pipeline - INFO - Periods:            0
+2026-04-28 16:08:40,647 - backend.pipeline.kg.pipeline - INFO - Internal refs:      3,209
+2026-04-28 16:08:40,647 - backend.pipeline.kg.pipeline - INFO - External refs:      468
+2026-04-28 16:08:40,647 - backend.pipeline.kg.pipeline - INFO - Semantic int refs:  1,258
+2026-04-28 16:08:40,647 - backend.pipeline.kg.pipeline - INFO - Semantic ext refs:  111
+2026-04-28 16:08:40,647 - backend.pipeline.kg.pipeline - INFO - Article versions:   9,075
+2026-04-28 16:08:40,647 - backend.pipeline.kg.pipeline - INFO - WP7 conf (H/M/L):   0/16312/0
+2026-04-28 16:08:40,647 - backend.pipeline.kg.pipeline - INFO - ----------------------------------------
+2026-04-28 16:08:40,647 - backend.pipeline.kg.pipeline - INFO - Duration:           58.91 seconds
+2026-04-28 16:08:40,647 - backend.pipeline.kg.pipeline - INFO - ----------------------------------------
+2026-04-28 16:08:40,647 - backend.pipeline.kg.pipeline - INFO - Unique terms:       0
+2026-04-28 16:08:40,647 - backend.pipeline.kg.pipeline - INFO - Defined terms:      0
+2026-04-28 16:08:40,647 - backend.pipeline.kg.pipeline - INFO - ============================================================

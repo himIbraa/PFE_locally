@@ -1,0 +1,826 @@
+@prefix dzdoc: <https://legal.dz/ontology/document#> .
+@prefix dznorm: <https://legal.dz/ontology/norm#> .
+@prefix dzorg: <https://legal.dz/resource/organization/> .
+@prefix dzterm: <https://legal.dz/resource/term/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dzorg:prime_minister a dzdoc:Organization ;
+    rdfs:label "الوزير الأول"@ar ;
+    dzdoc:frbrUri "/ontology/organization/dz/prime-minister"^^xsd:anyURI .
+
+dzorg:الجريدة_الرسمية a dzdoc:Organization ;
+    rdfs:label "الجريدة الرسمية"@ar ;
+    dzdoc:frbrUri "/ontology/organization/dz/joradp"^^xsd:anyURI .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_1_extref_e684ed22> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 20 ( الفقرة 4 ) من القانون رقم 05-01 المؤرخ في 27 ذي الحجة عام 1425 الموافق 6 فبراير سنة 2005"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/law/2005-02-06/05-01#art_20_para_4"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/law/2005-02-06/05-01#art_20_para_4"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/law/2005-02-06/05-01#art_20_para_4" ;
+    dzdoc:resolutionReason "cross_document_fragment_unverified" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/law/2005-02-06/05-01"^^xsd:anyURI ;
+    dzdoc:targetEId "art_20_para_4" .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_1_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_1> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يحدد هذا المرسوم شكل الإخطار بالشبهة ونموذجه ومحتواه ووصل استلامه كما هو منصوص عليه في المادة 20 ( الفقرة 4 ) من القانون رقم 05-01 المؤرخ في 27 ذي الحجة عام 1425 الموافق 6 فبراير سنة 2005 والمذكور أعلاه."@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_2_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_2> ;
+    dzdoc:position 0 ;
+    dzdoc:text "ينشأ نموذج وحيد للإخطار بالشبهة ووصل استلام الإخطار بالشبهة."@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_3_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_3> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يحرر الإخطار بالشبهة ووصل الاستلام المذكوران في المادة 2 أعلاه على المطبوعين المطابقين لنموذج المحفوظ لدى الهيئة المختصة \"خلية معالجة الاستعلام المالي\" المرفقين بالملحقين الأول والثاني."@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_4_extref_78254a5f> a dzdoc:ExternalReference ;
+    rdfs:label "للمادة 19 من القانون رقم 05-01 المؤرخ في 27 ذي الحجة عام 1425 الموافق 6 فبراير سنة 2005"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/law/2005-02-06/05-01#art_19"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/law/2005-02-06/05-01#art_19"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/law/2005-02-06/05-01#art_19" ;
+    dzdoc:resolutionReason "cross_document_fragment_unverified" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/law/2005-02-06/05-01"^^xsd:anyURI ;
+    dzdoc:targetEId "art_19" .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_4_obligation_0_2ed66457> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dzdoc:hasReference <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_4_obligation_0_2ed66457_ref_78254a5f0ee3> ;
+    dzdoc:referencesExternal <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_4_obligation_0_2ed66457_ref_78254a5f0ee3> ;
+    dznorm:expressedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_4> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "تتحمل تصميم الإخطار بالشبهة الهيئات الخاضعة للمادة 19 من القانون رقم 05-01 المؤرخ في 27 ذي الحجة عام 1425 الموافق 6 فبراير سنة 2005 والمذكور أعلاه."@ar ;
+    dznorm:sourceArticle "art_4" .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_4_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_4> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تتحمل تصميم الإخطار بالشبهة الهيئات الخاضعة للمادة 19 من القانون رقم 05-01 المؤرخ في 27 ذي الحجة عام 1425 الموافق 6 فبراير سنة 2005 والمذكور أعلاه."@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_4_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_4> ;
+    dzdoc:position 1 ;
+    dzdoc:text "وتختص بتصميم وصل استلام الإخطار بالشبهة خلية معالجة الاستعلام المالي دون سواها."@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_0_8c0ab94c> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dzdoc:hasAction <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_0_8c0ab94c_action_5d3d0a5a49> ;
+    dznorm:expressedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يجب أن يكون الإخطار بالشبهة كما يأتي"@ar ;
+    dznorm:sourceArticle "art_5" .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_0_8c0ab94c_action_5d3d0a5a49> a dznorm:Action ;
+    rdfs:label "أن يكون الإخطار بالشبهة كما"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يجب أن يكون الإخطار بالشبهة كما يأتي"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5> .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_1_f90b42f8> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dzdoc:hasAction <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_1_f90b42f8_action_4ae8eb0fa3> ;
+    dznorm:expressedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5> ;
+    dznorm:position 1 ;
+    dznorm:provisionText "يجب تحديد الهوية الكاملة وكذا تاريخ ومكان الازدياد"@ar ;
+    dznorm:sourceArticle "art_5" .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_1_f90b42f8_action_4ae8eb0fa3> a dznorm:Action ;
+    rdfs:label "تحديد الهوية الكاملة وكذا تاريخ"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يجب تحديد الهوية الكاملة وكذا تاريخ ومكان الازدياد"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5> .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_2_1866eec5> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dzdoc:hasAction <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_2_1866eec5_action_5b90c16b12> ;
+    dznorm:expressedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5> ;
+    dznorm:position 2 ;
+    dznorm:provisionText "يجب تحديد عنوان الشركة، الطبيعة القانونية، النشاط، التعريف الجبائي، أو رقم المؤشر الإحصائي"@ar ;
+    dznorm:sourceArticle "art_5" .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_2_1866eec5_action_5b90c16b12> a dznorm:Action ;
+    rdfs:label "تحديد عنوان الشركة"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يجب تحديد عنوان الشركة، الطبيعة القانونية، النشاط، التعريف الجبائي، أو رقم المؤشر الإحصائي"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5> .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_3_734506a0> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dzdoc:hasAction <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_3_734506a0_action_2d59bdb022> ;
+    dznorm:expressedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5> ;
+    dznorm:position 3 ;
+    dznorm:provisionText "يجب القيام بوصف دقيق للعمليات والعلاقات المحتملة بين الأطراف المعنية"@ar ;
+    dznorm:sourceArticle "art_5" .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_3_734506a0_action_2d59bdb022> a dznorm:Action ;
+    rdfs:label "القيام بوصف دقيق للعمليات والعلاقات"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يجب القيام بوصف دقيق للعمليات والعلاقات المحتملة بين الأطراف المعنية"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5> .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_4_36a89987> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dzdoc:hasAction <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_4_36a89987_action_afe1ba7cc7> ;
+    dznorm:expressedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5> ;
+    dznorm:position 4 ;
+    dznorm:provisionText "يجب إعطاء كل المعلومات المطلوبة حسب طبيعة العملية العابرة للحدود أو المحلية"@ar ;
+    dznorm:sourceArticle "art_5" .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_4_36a89987_action_afe1ba7cc7> a dznorm:Action ;
+    rdfs:label "إعطاء كل المعلومات المطلوبة حسب"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يجب إعطاء كل المعلومات المطلوبة حسب طبيعة العملية العابرة للحدود أو المحلية"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5> .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_5_6249e1a4> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dzdoc:hasAction <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_5_6249e1a4_action_721a3a2f1e> ;
+    dzdoc:hasRole <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_5_6249e1a4_role_63df44c0e0> ;
+    dznorm:expressedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5> ;
+    dznorm:position 5 ;
+    dznorm:provisionText "يجب وصف دواعي الشبهة بالاعتماد على العناصر الآتية"@ar ;
+    dznorm:sourceArticle "art_5" .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_5_6249e1a4_action_721a3a2f1e> a dznorm:Action ;
+    rdfs:label "وصف دواعي الشبهة بالاعتماد على"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يجب وصف دواعي الشبهة بالاعتماد على العناصر الآتية"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5> .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_5_6249e1a4_role_63df44c0e0> a dznorm:Role ;
+    rdfs:label "العناصر الآتية"@ar ;
+    dzdoc:confidenceScore 0.66 ;
+    dzdoc:extractionMethod "lexical_role_pattern" ;
+    dzdoc:sourceTextSpan "يجب وصف دواعي الشبهة بالاعتماد على العناصر الآتية"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5> .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_6_66fe1fd4> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dzdoc:hasAction <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_6_66fe1fd4_action_3436fe3068> ;
+    dznorm:expressedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5> ;
+    dznorm:position 6 ;
+    dznorm:provisionText "يجب إعطاء كل المعلومات المتعلقة بطبيعة العملية"@ar ;
+    dznorm:sourceArticle "art_5" .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_6_66fe1fd4_action_3436fe3068> a dznorm:Action ;
+    rdfs:label "إعطاء كل المعلومات المتعلقة بطبيعة"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يجب إعطاء كل المعلومات المتعلقة بطبيعة العملية"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5> .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يجب أن يكون الإخطار بالشبهة كما يأتي : 1.5 - يحرر بخط واضح دون حشو أو إضافة عن طريق الرقن أو آليا، 2.5 - يتضمن التفاصيل المتعلقة بما يأتي : 1.2.5 - المخطر ( مؤسسة بنكية - العنوان – الهاتف - الفاكس)، 2.2.5 - المعلومات حول الحساب موضوع الشبهة، صاحبه والموقع عليه ( رقم الحساب – تاريخ فتح الحساب - الوكالة العنوان)، 3.2.5 - الهوية : بالنسبة للأشخاص الطبيعيين، يجب تحديد الهوية الكاملة وكذا تاريخ ومكان الازدياد، بالنسبة للأشخاص المعنويين، يجب تحديد عنوان الشركة، الطبيعة القانونية، النشاط، التعريف الجبائي، أو رقم المؤشر الإحصائي، بالنسبة للشركاء، يذكر زيادة على النسب الكامل، تاريخ ومكان الازدياد والمهنة وقيمة حصص الشركة والعنوان الشخصي، بالنسبة للمسير، يذكر النسب الكامل، وتاريخ ومكان الازدياد، والمعلومات المتعلقة بوثيقة الهوية المستعملة ( النوع - الرقم – تاريخ ومكان الإصدار)، 4.2.5 - الوثائق التي استعملت لفتح الحساب وكل تعليق أو ملاحظات خاصة تتعلق بها، 5.2.5- نوع الزبون – اعتيادي أو غير اعتيادي، 6.2.5- هوية وصفة الموقعين المؤهلين بتفويض التصرف في الحساب. 3.5- يتضمن التفاصيل المتعلقة بما يأتي 1.3.5- العمليات محل الشبهة ) التاريخ أو الفترة - نوع العملية - القيمة الإجمالية – عدد العمليات )."@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5> ;
+    dzdoc:position 1 ;
+    dzdoc:text "يجب القيام بوصف دقيق للعمليات والعلاقات المحتملة بين الأطراف المعنية،"@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5> ;
+    dzdoc:position 2 ;
+    dzdoc:text "2.3.5 - طبيعة الأموال المشبوهة ) عملة وطنية - قيم عقارية - معادن نفيسة – غيره )، 3.3.5 - تفاصيل العملية المشبوهة - يجب إعطاء كل المعلومات المطلوبة حسب طبيعة العملية العابرة للحدود أو المحلية ( تحويل – إرجاع الأموال للوطن – دفع صك – مصدر الأموال - المؤسسة البنكية أو المالية – الوكالة - البلد - رقم الحساب - صاحب الحساب - المؤسسة البنكية المطابقة - رقم الصك وتاريخ إصداره – وجهة الأموال – الدفع نقدا – تسليم صك المؤسسة البنكية - الوكالة - رقم الحساب - صاحب الحساب – المؤسسة الوسيطة - رقم الصك وتاريخه )، 4.3.5 – دواعي الشبهة - يجب وصف دواعي الشبهة بالاعتماد على العناصر الآتية : هوية صاحب الأمر أو وكيله – هوية المستفيد – مصدر الأموال - وجهة الأموال - المظهر السلوكي أو غير ذلك – أهمية مبلغ العملية – عملية غير اعتيادية – عملية معقدة - غياب المبرر الاقتصادي - غياب المحل الشرعي، 5.3.5 - سوابق المشتبه فيه أو المشتبه فيهم ( معلومات )، 6.3.5 – الجهات الأخرى الخاضعة للإخطار، يجب إعطاء كل المعلومات المتعلقة بطبيعة العملية ( إيداع - مبادلات – توظيفات - تحويلات – أو أية حركة لرؤوس الأموال ( المتعلقة بعلاقة الأعمال ( مكان علاقة الأعمال ومكان مسك المحاسبة ومكان البيع ومكان التصريح بالأعمال، طريقة الدفع نقدا أو غيرها...) ومعلومات حول غرض وطبيعة العملية وإبراز دواعي إثارة الشبهة بدقة، 7.3.5 - الخاتمة والرأي : حسب الحالة، هوية وصفة وتوقيع مراسل المؤسسة لدى خلية معالجة الاستعلام المالي، تاريخ إصدار الإخطار بالشبهة."@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_6_obligation_0_2633d273> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dzdoc:hasAction <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_6_obligation_0_2633d273_action_a1b95209c2> ;
+    dznorm:expressedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_6> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يجب أن يرفق الإخطار بالشبهة بكل الوثائق الجازمة المتعلقة بالعملية المعنية."@ar ;
+    dznorm:sourceArticle "art_6" .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_6_obligation_0_2633d273_action_a1b95209c2> a dznorm:Action ;
+    rdfs:label "أن يرفق الإخطار بالشبهة بكل"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يجب أن يرفق الإخطار بالشبهة بكل الوثائق الجازمة المتعلقة بالعملية المعنية."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_6> .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_6_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_6> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يجب أن يرفق الإخطار بالشبهة بكل الوثائق الجازمة المتعلقة بالعملية المعنية."@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_6_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_6> ;
+    dzdoc:position 1 ;
+    dzdoc:text "كما يمكن الهيئة المختصة (خلية معالجة الاستعلام المالي) أن تطلب في أي وقت أي معلومة مفيدة أو وثيقة تتعلقان بالشبهة وتساعدان في تقدم التحريات."@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_6_permission_0_f1de2707> a dznorm:Permission ;
+    dzdoc:confidenceScore 0.72 ;
+    dzdoc:extractionMethod "lexical_permission_cue" ;
+    dzdoc:hasAction <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_6_permission_0_f1de2707_action_f9c7358bd9> ;
+    dznorm:expressedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_6> ;
+    dznorm:position 1 ;
+    dznorm:provisionText "كما يمكن الهيئة المختصة (خلية معالجة الاستعلام المالي) أن تطلب في أي وقت أي معلومة مفيدة أو وثيقة تتعلقان بالشبهة وتساعدان في تقدم التحريات."@ar ;
+    dznorm:sourceArticle "art_6" .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_6_permission_0_f1de2707_action_f9c7358bd9> a dznorm:Action ;
+    rdfs:label "الهيئة المختصة (خلية معالجة الاستعلام"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "كما يمكن الهيئة المختصة (خلية معالجة الاستعلام المالي) أن تطلب في أي وقت أي معلومة مفيدة أو وثيقة تتعلقان بالشبهة وتساعدان في تقدم التحريات."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_6> .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7_extref_65f7c327> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 19 الفقرة (2) من القانون رقم 05-01 المؤرخ في 6 فبراير سنة 2005"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/law/2005-02-06/05-01#art_19__para_2"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/law/2005-02-06/05-01#art_19__para_2"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/law/2005-02-06/05-01#art_19__para_2" ;
+    dzdoc:resolutionReason "cross_document_fragment_unverified" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/law/2005-02-06/05-01"^^xsd:anyURI ;
+    dzdoc:targetEId "art_19__para_2" .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7_obligation_0_dd592c7d> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dzdoc:hasAction <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7_obligation_0_dd592c7d_action_89d1ffe16d> ;
+    dzdoc:hasReference <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7_obligation_0_dd592c7d_ref_65f7c3274019> ;
+    dzdoc:referencesExternal <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7_obligation_0_dd592c7d_ref_65f7c3274019> ;
+    dznorm:expressedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يجب أن يوقع الإخطار بالشبهة، حسب الحالات، ممثل المؤسسة البنكية أو المالية لدى خلية معالجة الاستعلام المالي، أو أحد الخاضعين لواجب الإخطار المذكورين في المادة 19 الفقرة (2) من القانون رقم 05-01 المؤرخ في 6 فبراير سنة 2005 والمذكور علاه."@ar ;
+    dznorm:sourceArticle "art_7" .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7_obligation_0_dd592c7d_action_89d1ffe16d> a dznorm:Action ;
+    rdfs:label "أن يوقع الإخطار بالشبهة"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يجب أن يوقع الإخطار بالشبهة، حسب الحالات، ممثل المؤسسة البنكية أو المالية لدى خلية معالجة الاستعلام المالي، أو أحد الخاضعين لواجب الإخطار المذكورين في المادة 19 الفقرة (2) من القانون رقم 05-01 المؤرخ في 6 فبراير سنة 2005 والمذكور علاه."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7> .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7_obligation_1_554d11c8> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dzdoc:hasAction <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7_obligation_1_554d11c8_action_8a1b489222> ;
+    dznorm:expressedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7> ;
+    dznorm:position 1 ;
+    dznorm:provisionText "يجب أن يكون التوقيع خطيا دون اللجوء إلى الاستنساخ أو التأشير."@ar ;
+    dznorm:sourceArticle "art_7" .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7_obligation_1_554d11c8_action_8a1b489222> a dznorm:Action ;
+    rdfs:label "أن يكون التوقيع خطيا دون"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يجب أن يكون التوقيع خطيا دون اللجوء إلى الاستنساخ أو التأشير."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7> .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يجب أن يوقع الإخطار بالشبهة، حسب الحالات، ممثل المؤسسة البنكية أو المالية لدى خلية معالجة الاستعلام المالي، أو أحد الخاضعين لواجب الإخطار المذكورين في المادة 19 الفقرة (2) من القانون رقم 05-01 المؤرخ في 6 فبراير سنة 2005 والمذكور علاه."@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7> ;
+    dzdoc:position 1 ;
+    dzdoc:text "يجب أن يكون التوقيع خطيا دون اللجوء إلى الاستنساخ أو التأشير."@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_8_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_8> ;
+    dzdoc:position 0 ;
+    dzdoc:text "ينشر هذا المرسوم في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية."@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_8_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_8> ;
+    dzdoc:position 1 ;
+    dzdoc:text "حرر بالجزائر في 9 ذي الحجة عام 1426 الموافق 9 يناير سنة 2006 ."@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_8_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_8> ;
+    dzdoc:position 2 ;
+    dzdoc:text "أحمد أويحيى"@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#preamble_segment_1> a dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#preamble> ;
+    dzdoc:position 1 ;
+    dzdoc:segmentType "formula" ;
+    dzdoc:text "يرسم ما يأتي :"@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#preface> a dzdoc:Preface ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05> .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05/manifestation> a dzdoc:Manifestation ;
+    dzdoc:frbrUri "/akn/dz/act/executive-decree/2006-01-09/06-05/ara@.xml"^^xsd:anyURI ;
+    dzdoc:manifestationOf <https://legal.dz/resource/executive-decree/2006-01-09/06-05/expression> ;
+    dzdoc:transformDate "2026-04-28"^^xsd:date .
+
+dzterm:suspicion_report a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "الإخطار بالشبهة"@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_4_obligation_0_2ed66457_ref_78254a5f0ee3> a dzdoc:ExternalReference,
+        dzdoc:Reference ;
+    rdfs:label "للمادة 19 من القانون رقم 05-01 المؤرخ في 27 ذي الحجة عام 1425 الموافق 6 فبراير سنة 2005"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/law/2005-02-06/05-01#art_19"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/law/2005-02-06/05-01#art_19"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/law/2005-02-06/05-01#art_19" ;
+    dzdoc:resolutionReason "cross_document_fragment_unverified" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:sourceEId "art_4" ;
+    dzdoc:sourceElementType "obligation" ;
+    dzdoc:sourceTextSpan "تتحمل تصميم الإخطار بالشبهة الهيئات الخاضعة للمادة 19 من القانون رقم 05-01 المؤرخ في 27 ذي الحجة عام 1425 الموافق 6 فبراير سنة 2005 والمذكور أعلاه."@ar ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/law/2005-02-06/05-01"^^xsd:anyURI ;
+    dzdoc:targetEId "art_19" .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7_obligation_0_dd592c7d_ref_65f7c3274019> a dzdoc:ExternalReference,
+        dzdoc:Reference ;
+    rdfs:label "المادة 19 الفقرة (2) من القانون رقم 05-01 المؤرخ في 6 فبراير سنة 2005"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/law/2005-02-06/05-01#art_19__para_2"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/law/2005-02-06/05-01#art_19__para_2"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/law/2005-02-06/05-01#art_19__para_2" ;
+    dzdoc:resolutionReason "cross_document_fragment_unverified" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:sourceEId "art_7" ;
+    dzdoc:sourceElementType "obligation" ;
+    dzdoc:sourceTextSpan "يجب أن يوقع الإخطار بالشبهة، حسب الحالات، ممثل المؤسسة البنكية أو المالية لدى خلية معالجة الاستعلام المالي، أو أحد الخاضعين لواجب الإخطار المذكورين في المادة 19 الفقرة (2) من القانون رقم 05-01 المؤرخ في 6 فبراير سنة 2005 والمذكور علاه."@ar ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/law/2005-02-06/05-01"^^xsd:anyURI ;
+    dzdoc:targetEId "art_19__para_2" .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#preamble_segment_0> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#preamble> ;
+    dzdoc:position 0 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "إن رئيس الحكومة"@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_1_20060109_OpEnact_4bc5b1dd5e> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2006-01-09"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_1> ;
+    dzdoc:versionOf <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_1> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_1> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:versionText "يحدد هذا المرسوم شكل الإخطار بالشبهة ونموذجه ومحتواه ووصل استلامه كما هو منصوص عليه في المادة 20 ( الفقرة 4 ) من القانون رقم 05-01 المؤرخ في 27 ذي الحجة عام 1425 الموافق 6 فبراير سنة 2005 والمذكور أعلاه."@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_2_20060109_OpEnact_fa60f07484> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2006-01-09"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_2> ;
+    dzdoc:versionOf <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_2> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_2> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:versionText "ينشأ نموذج وحيد للإخطار بالشبهة ووصل استلام الإخطار بالشبهة ."@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_3_20060109_OpEnact_d36e66fe91> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2006-01-09"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_3> ;
+    dzdoc:versionOf <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_3> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_3> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:versionText "يحرر الإخطار بالشبهة ووصل الاستلام المذكوران في المادة 2 أعلاه على المطبوعين المطابقين لنموذج المحفوظ لدى الهيئة المختصة \" خلية معالجة الاستعلام المالي \" المرفقين بالملحقين الأول والثاني."@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_4_20060109_OpEnact_6d9c825083> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2006-01-09"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_4> ;
+    dzdoc:versionOf <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_4> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_4> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:versionText "تتحمل تصميم الإخطار بالشبهة الهيئات الخاضعة للمادة 19 من القانون رقم 05-01 المؤرخ في 27 ذي الحجة عام 1425 الموافق 6 فبراير سنة 2005 والمذكور أعلاه. وتختص بتصميم وصل استلام الإخطار بالشبهة خلية معالجة الاستعلام المالي دون سواها."@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_5_20060109_OpEnact_e834dc2487> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2006-01-09"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_5> ;
+    dzdoc:versionOf <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:versionText "يجب أن يكون الإخطار بالشبهة كما يأتي : 1.5 - يحرر بخط واضح دون حشو أو إضافة عن طريق الرقن أو آليا، 2.5 - يتضمن التفاصيل المتعلقة بما يأتي : 1.2.5 - المخطر ( مؤسسة بنكية - العنوان – الهاتف - الفاكس)، 2.2.5 - المعلومات حول الحساب موضوع الشبهة، صاحبه والموقع عليه ( رقم الحساب – تاريخ فتح الحساب - الوكالة العنوان)، 3.2.5 - الهوية : بالنسبة للأشخاص الطبيعيين، يجب تحديد الهوية الكاملة وكذا تاريخ ومكان الازدياد ، بالنسبة للأشخاص المعنويين، يجب تحديد عنوان الشركة، الطبيعة القانونية، النشاط، التعريف الجبائي، أو رقم المؤشر الإحصائي ، بالنسبة للشركاء، يذكر زيادة على النسب الكامل، تاريخ ومكان الازدياد والمهنة وقيمة حصص الشركة والعنوان الشخصي، بالنسبة للمسير، يذكر النسب الكامل، وتاريخ ومكان الازدياد، والمعلومات المتعلقة بوثيقة الهوية المستعملة ( النوع - الرقم – تاريخ ومكان الإصدار)، 4.2.5 - الوثائق التي استعملت لفتح الحساب وكل تعليق أو ملاحظات خاصة تتعلق بها، 5.2.5- نوع الزبون – اعتيادي أو غير اعتيادي، 6.2.5- هوية وصفة الموقعين المؤهلين بتفويض التصرف في الحساب. 3.5- يتضمن التفاصيل المتعلقة بما يأتي 1.3.5- العمليات محل الشبهة ) التاريخ أو الفترة - نوع العملية - القيمة الإجمالية – عدد العمليات ). يجب القيام بوصف دقيق للعمليات والعلاقات المحتملة بين الأطراف المعنية ، 2.3.5 - طبيعة الأموال المشبوهة ) عملة وطنية - قيم عقارية - معادن نفيسة – غيره )، 3.3.5 - تفاصيل العملية المشبوهة - يجب إعطاء كل المعلومات المطلوبة حسب طبيعة العملية العابرة للحدود أو المحلية ( تحويل – إرجاع الأموال للوطن – دفع صك – مصدر الأموال - المؤسسة البنكية أو المالية – الوكالة - البلد - رقم الحساب - صاحب الحساب - المؤسسة البنكية المطابقة - رقم الصك وتاريخ إصداره – وجهة الأموال – الدفع نقدا – تسليم صك المؤسسة البنكية - الوكالة - رقم الحساب - صاحب الحساب – المؤسسة الوسيطة - رقم الصك وتاريخه )، 4.3.5 – دواعي الشبهة - يجب وصف دواعي الشبهة بالاعتماد على العناصر الآتية : هوية صاحب الأمر أو وكيله – هوية المستفيد – مصدر الأموال - وجهة الأموال - المظهر السلوكي أو غير ذلك – أهمية مبلغ العملية – عملية غير اعتيادية – عملية معقدة - غياب المبرر الاقتصادي - غياب المحل الشرعي، 5.3.5 - سوابق المشتبه فيه أو المشتبه فيهم ( معلومات )، 6.3.5 – الجهات الأخرى الخاضعة للإخطار، يجب إعطاء كل المعلومات المتعلقة بطبيعة العملية ( إيداع - مبادلات – توظيفات - تحويلات – أو أية حركة لرؤوس الأموال ( المتعلقة بعلاقة الأعمال ( مكان علاقة الأعمال ومكان مسك المحاسبة ومكان البيع ومكان التصريح بالأعمال، طريقة الدفع نقدا أو غيرها...) ومعلومات حول غرض وطبيعة العملية وإبراز دواعي إثارة الشبهة بدقة، 7.3.5 - الخاتمة والرأي : حسب الحالة، هوية وصفة وتوقيع مراسل المؤسسة لدى خلية معالجة الاستعلام المالي ، تاريخ إصدار الإخطار بالشبهة."@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_6_20060109_OpEnact_67a02f0d60> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2006-01-09"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_6> ;
+    dzdoc:versionOf <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_6> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_6> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:versionText "يجب أن يرفق الإخطار بالشبهة بكل الوثائق الجازمة المتعلقة بالعملية المعنية. كما يمكن الهيئة المختصة (خلية معالجة الاستعلام المالي) أن تطلب في أي وقت أي معلومة مفيدة أو وثيقة تتعلقان بالشبهة وتساعدان في تقدم التحريات."@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_7_20060109_OpEnact_909ca8e852> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2006-01-09"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_7> ;
+    dzdoc:versionOf <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:versionText "يجب أن يوقع الإخطار بالشبهة ، حسب الحالات، ممثل المؤسسة البنكية أو المالية لدى خلية معالجة الاستعلام المالي ، أو أحد الخاضعين لواجب الإخطار المذكورين في المادة 19 الفقرة (2) من القانون رقم 05-01 المؤرخ في 6 فبراير سنة 2005 والمذكور علاه. يجب أن يكون التوقيع خطيا دون اللجوء إلى الاستنساخ أو التأشير."@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_8_20060109_OpEnact_64387fbfa9> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2006-01-09"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_8> ;
+    dzdoc:versionOf <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_8> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_8> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:versionText "ينشر هذا المرسوم في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية. حرر بالجزائر في 9 ذي الحجة عام 1426 الموافق 9 يناير سنة 2006 . أحمد أويحيى"@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05/expression> a dzdoc:Expression ;
+    dzdoc:expressionOf <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:frbrUri "/akn/dz/act/executive-decree/2006-01-09/06-05/ara@"^^xsd:anyURI ;
+    dzdoc:hasManifestation <https://legal.dz/resource/executive-decree/2006-01-09/06-05/manifestation> ;
+    dzdoc:language "ara" ;
+    dzdoc:publicationDate "2006-01-09"^^xsd:date .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#preamble> a dzdoc:Preamble ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:hasCitation <https://legal.dz/resource/executive-decree/2006-01-09/06-05#preamble_segment_0> ;
+    dzdoc:hasSegment <https://legal.dz/resource/executive-decree/2006-01-09/06-05#preamble_segment_0>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#preamble_segment_1> ;
+    dzdoc:text "يرسم ما يأتي :"@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_1> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يحدد هذا المرسوم شكل الإخطار بالشبهة ونموذجه ومحتواه ووصل استلامه كما هو منصوص عليه في المادة 20 ( الفقرة 4 ) من القانون رقم 05-01 المؤرخ في 27 ذي الحجة عام 1425 الموافق 6 فبراير سنة 2005 والمذكور أعلاه."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_1_20060109_OpEnact_4bc5b1dd5e> ;
+    dzdoc:replacementText "يحدد هذا المرسوم شكل الإخطار بالشبهة ونموذجه ومحتواه ووصل استلامه كما هو منصوص عليه في المادة 20 ( الفقرة 4 ) من القانون رقم 05-01 المؤرخ في 27 ذي الحجة عام 1425 الموافق 6 فبراير سنة 2005 والمذكور أعلاه."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_1> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:targetArticle <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_1> ;
+    dzdoc:targetDocument <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2006-01-09"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_2> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "ينشأ نموذج وحيد للإخطار بالشبهة ووصل استلام الإخطار بالشبهة ."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_2_20060109_OpEnact_fa60f07484> ;
+    dzdoc:replacementText "ينشأ نموذج وحيد للإخطار بالشبهة ووصل استلام الإخطار بالشبهة ."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_2> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:targetArticle <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_2> ;
+    dzdoc:targetDocument <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2006-01-09"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_3> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يحرر الإخطار بالشبهة ووصل الاستلام المذكوران في المادة 2 أعلاه على المطبوعين المطابقين لنموذج المحفوظ لدى الهيئة المختصة \" خلية معالجة الاستعلام المالي \" المرفقين بالملحقين الأول والثاني."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_3_20060109_OpEnact_d36e66fe91> ;
+    dzdoc:replacementText "يحرر الإخطار بالشبهة ووصل الاستلام المذكوران في المادة 2 أعلاه على المطبوعين المطابقين لنموذج المحفوظ لدى الهيئة المختصة \" خلية معالجة الاستعلام المالي \" المرفقين بالملحقين الأول والثاني."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_3> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:targetArticle <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_3> ;
+    dzdoc:targetDocument <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2006-01-09"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_4> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تتحمل تصميم الإخطار بالشبهة الهيئات الخاضعة للمادة 19 من القانون رقم 05-01 المؤرخ في 27 ذي الحجة عام 1425 الموافق 6 فبراير سنة 2005 والمذكور أعلاه. وتختص بتصميم وصل استلام الإخطار بالشبهة خلية معالجة الاستعلام المالي دون سواها."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_4_20060109_OpEnact_6d9c825083> ;
+    dzdoc:replacementText "تتحمل تصميم الإخطار بالشبهة الهيئات الخاضعة للمادة 19 من القانون رقم 05-01 المؤرخ في 27 ذي الحجة عام 1425 الموافق 6 فبراير سنة 2005 والمذكور أعلاه. وتختص بتصميم وصل استلام الإخطار بالشبهة خلية معالجة الاستعلام المالي دون سواها."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_4> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:targetArticle <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_4> ;
+    dzdoc:targetDocument <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2006-01-09"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_5> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يجب أن يكون الإخطار بالشبهة كما يأتي : 1.5 - يحرر بخط واضح دون حشو أو إضافة عن طريق الرقن أو آليا، 2.5 - يتضمن التفاصيل المتعلقة بما يأتي : 1.2.5 - المخطر ( مؤسسة بنكية - العنوان – الهاتف - الفاكس)، 2.2.5 - المعلومات حول الحساب موضوع الشبهة، صاحبه والموقع عليه ( رقم الحساب – تاريخ فتح الحساب - الوكالة العنوان)، 3.2.5 - الهوية : بالنسبة للأشخاص الطبيعيين، يجب تحديد الهوية الكاملة وكذا تاريخ ومكان الازدياد ، بالنسبة للأشخاص المعنويين، يجب تحديد عنوان الشركة، الطبيعة القانونية، النشاط، التعريف الجب"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_5_20060109_OpEnact_e834dc2487> ;
+    dzdoc:replacementText "يجب أن يكون الإخطار بالشبهة كما يأتي : 1.5 - يحرر بخط واضح دون حشو أو إضافة عن طريق الرقن أو آليا، 2.5 - يتضمن التفاصيل المتعلقة بما يأتي : 1.2.5 - المخطر ( مؤسسة بنكية - العنوان – الهاتف - الفاكس)، 2.2.5 - المعلومات حول الحساب موضوع الشبهة، صاحبه والموقع عليه ( رقم الحساب – تاريخ فتح الحساب - الوكالة العنوان)، 3.2.5 - الهوية : بالنسبة للأشخاص الطبيعيين، يجب تحديد الهوية الكاملة وكذا تاريخ ومكان الازدياد ، بالنسبة للأشخاص المعنويين، يجب تحديد عنوان الشركة، الطبيعة القانونية، النشاط، التعريف الجبائي، أو رقم المؤشر الإحصائي ، بالنسبة للشركاء، يذكر زيادة على النسب الكامل، تاريخ ومكان الازدياد والمهنة وقيمة حصص الشركة والعنوان الشخصي، بالنسبة للمسير، يذكر النسب الكامل، وتاريخ ومكان الازدياد، والمعلومات المتعلقة بوثيقة الهوية المستعملة ( النوع - الرقم – تاريخ ومكان الإصدار)، 4.2.5 - الوثائق التي استعملت لفتح الحساب وكل تعليق أو ملاحظات خاصة تتعلق بها، 5.2.5- نوع الزبون – اعتيادي أو غير اعتيادي، 6.2.5- هوية وصفة الموقعين المؤهلين بتفويض التصرف في الحساب. 3.5- يتضمن التفاصيل المتعلقة بما يأتي 1.3.5- العمليات محل الشبهة ) التاريخ أو الفترة - نوع العملية - القيمة الإجمالية – عدد العمليات ). يجب القيام بوصف دقيق للعمليات والعلاقات المحتملة بين الأطراف المعنية ، 2.3.5 - طبيعة الأموال المشبوهة ) عملة وطنية - قيم عقارية - معادن نفيسة – غيره )، 3.3.5 - تفاصيل العملية المشبوهة - يجب إعطاء كل المعلومات المطلوبة حسب طبيعة العملية العابرة للحدود أو المحلية ( تحويل – إرجاع الأموال للوطن – دفع صك – مصدر الأموال - المؤسسة البنكية أو المالية – الوكالة - البلد - رقم الحساب - صاحب الحساب - المؤسسة البنكية المطابقة - رقم الصك وتاريخ إصداره – وجهة الأموال – الدفع نقدا – تسليم صك المؤسسة البنكية - الوكالة - رقم الحساب - صاحب الحساب – المؤسسة الوسيطة - رقم الصك وتاريخه )، 4.3.5 – دواعي الشبهة - يجب وصف دواعي الشبهة بالاعتماد على العناصر الآتية : هوية صاحب الأمر أو وكيله – هوية المستفيد – مصدر الأموال - وجهة الأموال - المظهر السلوكي أو غير ذلك – أهمية مبلغ العملية – عملية غير اعتيادية – عملية معقدة - غياب المبرر الاقتصادي - غياب المحل الشرعي، 5.3.5 - سوابق المشتبه فيه أو المشتبه فيهم ( معلومات )، 6.3.5 – الجهات الأخرى الخاضعة للإخطار، يجب إعطاء كل المعلومات المتعلقة بطبيعة العملية ( إيداع - مبادلات – توظيفات - تحويلات – أو أية حركة لرؤوس الأموال ( المتعلقة بعلاقة الأعمال ( مكان علاقة الأعمال ومكان مسك المحاسبة ومكان البيع ومكان التصريح بالأعمال، طريقة الدفع نقدا أو غيرها...) ومعلومات حول غرض وطبيعة العملية وإبراز دواعي إثارة الشبهة بدقة، 7.3.5 - الخاتمة والرأي : حسب الحالة، هوية وصفة وتوقيع مراسل المؤسسة لدى خلية معالجة الاستعلام المالي ، تاريخ إصدار الإخطار بالشبهة."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:targetArticle <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5> ;
+    dzdoc:targetDocument <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2006-01-09"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_6> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يجب أن يرفق الإخطار بالشبهة بكل الوثائق الجازمة المتعلقة بالعملية المعنية. كما يمكن الهيئة المختصة (خلية معالجة الاستعلام المالي) أن تطلب في أي وقت أي معلومة مفيدة أو وثيقة تتعلقان بالشبهة وتساعدان في تقدم التحريات."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_6_20060109_OpEnact_67a02f0d60> ;
+    dzdoc:replacementText "يجب أن يرفق الإخطار بالشبهة بكل الوثائق الجازمة المتعلقة بالعملية المعنية. كما يمكن الهيئة المختصة (خلية معالجة الاستعلام المالي) أن تطلب في أي وقت أي معلومة مفيدة أو وثيقة تتعلقان بالشبهة وتساعدان في تقدم التحريات."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_6> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:targetArticle <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_6> ;
+    dzdoc:targetDocument <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2006-01-09"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_7> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يجب أن يوقع الإخطار بالشبهة ، حسب الحالات، ممثل المؤسسة البنكية أو المالية لدى خلية معالجة الاستعلام المالي ، أو أحد الخاضعين لواجب الإخطار المذكورين في المادة 19 الفقرة (2) من القانون رقم 05-01 المؤرخ في 6 فبراير سنة 2005 والمذكور علاه. يجب أن يكون التوقيع خطيا دون اللجوء إلى الاستنساخ أو التأشير."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_7_20060109_OpEnact_909ca8e852> ;
+    dzdoc:replacementText "يجب أن يوقع الإخطار بالشبهة ، حسب الحالات، ممثل المؤسسة البنكية أو المالية لدى خلية معالجة الاستعلام المالي ، أو أحد الخاضعين لواجب الإخطار المذكورين في المادة 19 الفقرة (2) من القانون رقم 05-01 المؤرخ في 6 فبراير سنة 2005 والمذكور علاه. يجب أن يكون التوقيع خطيا دون اللجوء إلى الاستنساخ أو التأشير."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:targetArticle <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7> ;
+    dzdoc:targetDocument <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2006-01-09"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_8> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "ينشر هذا المرسوم في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية. حرر بالجزائر في 9 ذي الحجة عام 1426 الموافق 9 يناير سنة 2006 . أحمد أويحيى"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_8_20060109_OpEnact_64387fbfa9> ;
+    dzdoc:replacementText "ينشر هذا المرسوم في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية. حرر بالجزائر في 9 ذي الحجة عام 1426 الموافق 9 يناير سنة 2006 . أحمد أويحيى"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_8> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:targetArticle <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_8> ;
+    dzdoc:targetDocument <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2006-01-09"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+dzterm:ctrf a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "الهيئة المختصة (خلية معالجة الاستعلام المالي)"@ar,
+        "خلية معالجة الاستعلام المالي"@ar .
+
+dzterm:suspicion_notification a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "الإخطار بالشبهة"@ar,
+        "للإخطار بالشبهة"@ar .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_1> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#body> ;
+    dzdoc:eId "art_1" ;
+    dzdoc:fullText "يحدد هذا المرسوم شكل الإخطار بالشبهة ونموذجه ومحتواه ووصل استلامه كما هو منصوص عليه في المادة 20 ( الفقرة 4 ) من القانون رقم 05-01 المؤرخ في 27 ذي الحجة عام 1425 الموافق 6 فبراير سنة 2005 والمذكور أعلاه."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_1> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_1_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_1_20060109_OpEnact_4bc5b1dd5e> ;
+    dzdoc:introducedBy <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:introducedOn "2006-01-09"^^xsd:date ;
+    dzdoc:number "المادة الأولى" ;
+    dzdoc:position 0 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_1_extref_e684ed22> ;
+    dzdoc:usesTerm dzterm:suspicion_notification .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_3> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#body> ;
+    dzdoc:eId "art_3" ;
+    dzdoc:fullText "يحرر الإخطار بالشبهة ووصل الاستلام المذكوران في المادة 2 أعلاه على المطبوعين المطابقين لنموذج المحفوظ لدى الهيئة المختصة \" خلية معالجة الاستعلام المالي \" المرفقين بالملحقين الأول والثاني."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_3> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_3_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_3_20060109_OpEnact_d36e66fe91> ;
+    dzdoc:introducedBy <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:introducedOn "2006-01-09"^^xsd:date ;
+    dzdoc:number "المادة 3" ;
+    dzdoc:position 2 ;
+    dzdoc:references <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_2> ;
+    dzdoc:referencesInternal <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_2> ;
+    dzdoc:usesTerm dzterm:ctrf,
+        dzterm:suspicion_notification .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_2> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#body> ;
+    dzdoc:eId "art_2" ;
+    dzdoc:fullText "ينشأ نموذج وحيد للإخطار بالشبهة ووصل استلام الإخطار بالشبهة ."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_2> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_2_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_2_20060109_OpEnact_fa60f07484> ;
+    dzdoc:introducedBy <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:introducedOn "2006-01-09"^^xsd:date ;
+    dzdoc:number "المادة 2" ;
+    dzdoc:position 1 ;
+    dzdoc:usesTerm dzterm:suspicion_notification .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_4> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#body> ;
+    dzdoc:eId "art_4" ;
+    dzdoc:fullText "تتحمل تصميم الإخطار بالشبهة الهيئات الخاضعة للمادة 19 من القانون رقم 05-01 المؤرخ في 27 ذي الحجة عام 1425 الموافق 6 فبراير سنة 2005 والمذكور أعلاه. وتختص بتصميم وصل استلام الإخطار بالشبهة خلية معالجة الاستعلام المالي دون سواها."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_4> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_4_para_0>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_4_para_1> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_4_20060109_OpEnact_6d9c825083> ;
+    dzdoc:imposesObligation <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_4_obligation_0_2ed66457> ;
+    dzdoc:introducedBy <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:introducedOn "2006-01-09"^^xsd:date ;
+    dzdoc:number "المادة 4" ;
+    dzdoc:position 3 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_4_extref_78254a5f> ;
+    dzdoc:usesTerm dzterm:ctrf,
+        dzterm:suspicion_notification .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_8> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#body> ;
+    dzdoc:eId "art_8" ;
+    dzdoc:fullText "ينشر هذا المرسوم في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية. حرر بالجزائر في 9 ذي الحجة عام 1426 الموافق 9 يناير سنة 2006 . أحمد أويحيى"@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_8> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_8_para_0>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_8_para_1>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_8_para_2> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_8_20060109_OpEnact_64387fbfa9> ;
+    dzdoc:introducedBy <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:introducedOn "2006-01-09"^^xsd:date ;
+    dzdoc:number "8" ;
+    dzdoc:position 7 .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#body> a dzdoc:Body ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:directlyContains <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_1>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_2>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_3>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_4>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_6>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_8> ;
+    dzdoc:hasArticle <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_1>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_2>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_3>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_4>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_6>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_8> .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_6> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#body> ;
+    dzdoc:eId "art_6" ;
+    dzdoc:fullText "يجب أن يرفق الإخطار بالشبهة بكل الوثائق الجازمة المتعلقة بالعملية المعنية. كما يمكن الهيئة المختصة (خلية معالجة الاستعلام المالي) أن تطلب في أي وقت أي معلومة مفيدة أو وثيقة تتعلقان بالشبهة وتساعدان في تقدم التحريات."@ar ;
+    dzdoc:grantsPermission <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_6_permission_0_f1de2707> ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_6> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_6_para_0>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_6_para_1> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_6_20060109_OpEnact_67a02f0d60> ;
+    dzdoc:imposesObligation <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_6_obligation_0_2633d273> ;
+    dzdoc:introducedBy <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:introducedOn "2006-01-09"^^xsd:date ;
+    dzdoc:number "6" ;
+    dzdoc:position 5 ;
+    dzdoc:usesTerm dzterm:ctrf,
+        dzterm:suspicion_notification .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#body> ;
+    dzdoc:eId "art_7" ;
+    dzdoc:fullText "يجب أن يوقع الإخطار بالشبهة ، حسب الحالات، ممثل المؤسسة البنكية أو المالية لدى خلية معالجة الاستعلام المالي ، أو أحد الخاضعين لواجب الإخطار المذكورين في المادة 19 الفقرة (2) من القانون رقم 05-01 المؤرخ في 6 فبراير سنة 2005 والمذكور علاه. يجب أن يكون التوقيع خطيا دون اللجوء إلى الاستنساخ أو التأشير."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_7> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7_para_0>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7_para_1> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_7_20060109_OpEnact_909ca8e852> ;
+    dzdoc:imposesObligation <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7_obligation_0_dd592c7d>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7_obligation_1_554d11c8> ;
+    dzdoc:introducedBy <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:introducedOn "2006-01-09"^^xsd:date ;
+    dzdoc:number "7" ;
+    dzdoc:position 6 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_7_extref_65f7c327> ;
+    dzdoc:usesTerm dzterm:ctrf,
+        dzterm:suspicion_notification .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/executive-decree/2006-01-09/06-05#body> ;
+    dzdoc:eId "art_5" ;
+    dzdoc:fullText "يجب أن يكون الإخطار بالشبهة كما يأتي : 1.5 - يحرر بخط واضح دون حشو أو إضافة عن طريق الرقن أو آليا، 2.5 - يتضمن التفاصيل المتعلقة بما يأتي : 1.2.5 - المخطر ( مؤسسة بنكية - العنوان – الهاتف - الفاكس)، 2.2.5 - المعلومات حول الحساب موضوع الشبهة، صاحبه والموقع عليه ( رقم الحساب – تاريخ فتح الحساب - الوكالة العنوان)، 3.2.5 - الهوية : بالنسبة للأشخاص الطبيعيين، يجب تحديد الهوية الكاملة وكذا تاريخ ومكان الازدياد ، بالنسبة للأشخاص المعنويين، يجب تحديد عنوان الشركة، الطبيعة القانونية، النشاط، التعريف الجبائي، أو رقم المؤشر الإحصائي ، بالنسبة للشركاء، يذكر زيادة على النسب الكامل، تاريخ ومكان الازدياد والمهنة وقيمة حصص الشركة والعنوان الشخصي، بالنسبة للمسير، يذكر النسب الكامل، وتاريخ ومكان الازدياد، والمعلومات المتعلقة بوثيقة الهوية المستعملة ( النوع - الرقم – تاريخ ومكان الإصدار)، 4.2.5 - الوثائق التي استعملت لفتح الحساب وكل تعليق أو ملاحظات خاصة تتعلق بها، 5.2.5- نوع الزبون – اعتيادي أو غير اعتيادي، 6.2.5- هوية وصفة الموقعين المؤهلين بتفويض التصرف في الحساب. 3.5- يتضمن التفاصيل المتعلقة بما يأتي 1.3.5- العمليات محل الشبهة ) التاريخ أو الفترة - نوع العملية - القيمة الإجمالية – عدد العمليات ). يجب القيام بوصف دقيق للعمليات والعلاقات المحتملة بين الأطراف المعنية ، 2.3.5 - طبيعة الأموال المشبوهة ) عملة وطنية - قيم عقارية - معادن نفيسة – غيره )، 3.3.5 - تفاصيل العملية المشبوهة - يجب إعطاء كل المعلومات المطلوبة حسب طبيعة العملية العابرة للحدود أو المحلية ( تحويل – إرجاع الأموال للوطن – دفع صك – مصدر الأموال - المؤسسة البنكية أو المالية – الوكالة - البلد - رقم الحساب - صاحب الحساب - المؤسسة البنكية المطابقة - رقم الصك وتاريخ إصداره – وجهة الأموال – الدفع نقدا – تسليم صك المؤسسة البنكية - الوكالة - رقم الحساب - صاحب الحساب – المؤسسة الوسيطة - رقم الصك وتاريخه )، 4.3.5 – دواعي الشبهة - يجب وصف دواعي الشبهة بالاعتماد على العناصر الآتية : هوية صاحب الأمر أو وكيله – هوية المستفيد – مصدر الأموال - وجهة الأموال - المظهر السلوكي أو غير ذلك – أهمية مبلغ العملية – عملية غير اعتيادية – عملية معقدة - غياب المبرر الاقتصادي - غياب المحل الشرعي، 5.3.5 - سوابق المشتبه فيه أو المشتبه فيهم ( معلومات )، 6.3.5 – الجهات الأخرى الخاضعة للإخطار، يجب إعطاء كل المعلومات المتعلقة بطبيعة العملية ( إيداع - مبادلات – توظيفات - تحويلات – أو أية حركة لرؤوس الأموال ( المتعلقة بعلاقة الأعمال ( مكان علاقة الأعمال ومكان مسك المحاسبة ومكان البيع ومكان التصريح بالأعمال، طريقة الدفع نقدا أو غيرها...) ومعلومات حول غرض وطبيعة العملية وإبراز دواعي إثارة الشبهة بدقة، 7.3.5 - الخاتمة والرأي : حسب الحالة، هوية وصفة وتوقيع مراسل المؤسسة لدى خلية معالجة الاستعلام المالي ، تاريخ إصدار الإخطار بالشبهة."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_5> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_para_0>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_para_1>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_para_2> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_5_20060109_OpEnact_e834dc2487> ;
+    dzdoc:imposesObligation <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_0_8c0ab94c>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_1_f90b42f8>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_2_1866eec5>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_3_734506a0>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_4_36a89987>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_5_6249e1a4>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#art_5_obligation_6_66fe1fd4> ;
+    dzdoc:introducedBy <https://legal.dz/resource/executive-decree/2006-01-09/06-05> ;
+    dzdoc:introducedOn "2006-01-09"^^xsd:date ;
+    dzdoc:number "5" ;
+    dzdoc:position 4 ;
+    dzdoc:usesTerm dzterm:ctrf,
+        dzterm:suspicion_report .
+
+<https://legal.dz/resource/executive-decree/2006-01-09/06-05> a dzdoc:ExecutiveDecree ;
+    dzdoc:authoredBy dzorg:رئيس_الحكومة ;
+    dzdoc:countryCode "dz" ;
+    dzdoc:dateText "9 ذي الحجة عام 1426 الموافق 9 يناير سنة 2006"@ar ;
+    dzdoc:documentNumber "06-05" ;
+    dzdoc:enactmentDate "2006-01-09"^^xsd:date ;
+    dzdoc:frbrThisUri "/akn/dz/act/executive-decree/2006-01-09/06-05/main"^^xsd:anyURI ;
+    dzdoc:frbrUri "/akn/dz/act/executive-decree/2006-01-09/06-05"^^xsd:anyURI ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_1>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_2>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_3>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_4>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_5>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_6>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_7>,
+        <https://legal.dz/resource/executive-decree/2006-01-09/06-05#version_art_8> ;
+    dzdoc:hasAuthority dzorg:رئيس_الحكومة ;
+    dzdoc:hasBody <https://legal.dz/resource/executive-decree/2006-01-09/06-05#body> ;
+    dzdoc:hasExpression <https://legal.dz/resource/executive-decree/2006-01-09/06-05/expression> ;
+    dzdoc:hasPreamble <https://legal.dz/resource/executive-decree/2006-01-09/06-05#preamble> ;
+    dzdoc:hasPreface <https://legal.dz/resource/executive-decree/2006-01-09/06-05#preface> ;
+    dzdoc:publicationDate "2006-01-09"^^xsd:date ;
+    dzdoc:sourceFile "Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/06-05_2006-01-09.xml" ;
+    dzdoc:title "المرسوم التنفيذي رقم 06-05 المتضمن شكل الإخطار بالشبهة ونموذجه ومحتواه ووصل استلامه"@ar .
+

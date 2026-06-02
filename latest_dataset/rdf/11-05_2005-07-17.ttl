@@ -1,0 +1,2077 @@
+@prefix dzdoc: <https://legal.dz/ontology/document#> .
+@prefix dznorm: <https://legal.dz/ontology/norm#> .
+@prefix dzorg: <https://legal.dz/resource/organization/> .
+@prefix dzterm: <https://legal.dz/resource/term/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dzorg:الجريدة_الرسمية a dzdoc:Organization ;
+    rdfs:label "الجريدة الرسمية"@ar ;
+    dzdoc:frbrUri "/ontology/organization/dz/joradp"^^xsd:anyURI .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_11_extref_6aeff204> a dzdoc:ExternalReference ;
+    rdfs:label "قانون الإجراءات المدنية"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/law/code_civil_procedure"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/law/code_civil_procedure"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/law/code_civil_procedure" ;
+    dzdoc:resolutionReason "non_canonical_or_malformed_akn_uri" ;
+    dzdoc:resolutionStatus "unresolved" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_11_extref_8d9b9552> a dzdoc:ExternalReference ;
+    rdfs:label "قانون الإجراءات الجزائية"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/law/code_criminal_procedure"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/law/code_criminal_procedure"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/law/code_criminal_procedure" ;
+    dzdoc:resolutionReason "non_canonical_or_malformed_akn_uri" ;
+    dzdoc:resolutionStatus "unresolved" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_11_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_11> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يحدد اختصاص المحكمة في قانون الإجراءات المدنية وقانون الإجراءات الجزائية والقوانين الخاصة المعمول بها."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_12_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_12> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تتشكل المحكمة من : رئيس المحكمة، نائب رئيس المحكمة قضاة، قاضي التحقيق أو أكثر، قاضي الأحداث أو أكثر، وكيل الجمهورية ووكلاء جمهورية مساعدين، أمانة الضبط."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13_condition_0_65efe2ea> a dznorm:Condition ;
+    dzdoc:hasAction <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13_condition_0_65efe2ea_action_4112860099> ;
+    dzdoc:hasActivity <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13_condition_0_65efe2ea_activity_6dd761a922> ;
+    dznorm:conditionText "غير أنه يمكن رئيس المحكمة، بعد استطلاع رأي وكيل الجمهورية، تقليص عدد الأقسام أو تقسيمها إلى فروع حسب أهمية وحجم النشاط القضائي."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13> ;
+    dznorm:position 0 .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13_condition_0_65efe2ea_action_4112860099> a dznorm:Action ;
+    rdfs:label "رئيس المحكمة"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "غير أنه يمكن رئيس المحكمة، بعد استطلاع رأي وكيل الجمهورية، تقليص عدد الأقسام أو تقسيمها إلى فروع حسب أهمية وحجم النشاط القضائي."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13_condition_0_65efe2ea_activity_6dd761a922> a dznorm:Activity ;
+    rdfs:label "نشاط القضائي"@ar ;
+    dzdoc:confidenceScore 0.6 ;
+    dzdoc:extractionMethod "lexical_activity_pattern" ;
+    dzdoc:sourceTextSpan "غير أنه يمكن رئيس المحكمة، بعد استطلاع رأي وكيل الجمهورية، تقليص عدد الأقسام أو تقسيمها إلى فروع حسب أهمية وحجم النشاط القضائي."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تقسم المحكمة إلى الأقسام الآتية : القسم المدني، قسم الجنح، قسم المخالفات، القسم الاستعجالي، قسم شؤون الأسرة، قسم الأحداث، القسم الاجتماعي، القسم العقاري، القسم البحري، القسم التجاري."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13> ;
+    dzdoc:position 1 ;
+    dzdoc:text "غير أنه يمكن رئيس المحكمة، بعد استطلاع رأي وكيل الجمهورية، تقليص عدد الأقسام أو تقسيمها إلى فروع حسب أهمية وحجم النشاط القضائي."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13> ;
+    dzdoc:position 2 ;
+    dzdoc:text "بفصل كل قسم في القضايا المعروضة عليه، ما لم ينص القانون على خلاف ذلك."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13_permission_0_65efe2ea> a dznorm:Permission ;
+    dzdoc:confidenceScore 0.72 ;
+    dzdoc:extractionMethod "lexical_permission_cue" ;
+    dzdoc:hasAction <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13_permission_0_65efe2ea_action_ef54a635ec> ;
+    dzdoc:hasActivity <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13_permission_0_65efe2ea_activity_7442b24cc5> ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13> ;
+    dznorm:position 1 ;
+    dznorm:provisionText "غير أنه يمكن رئيس المحكمة، بعد استطلاع رأي وكيل الجمهورية، تقليص عدد الأقسام أو تقسيمها إلى فروع حسب أهمية وحجم النشاط القضائي."@ar ;
+    dznorm:sourceArticle "art_13" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13_permission_0_65efe2ea_action_ef54a635ec> a dznorm:Action ;
+    rdfs:label "رئيس المحكمة"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "غير أنه يمكن رئيس المحكمة، بعد استطلاع رأي وكيل الجمهورية، تقليص عدد الأقسام أو تقسيمها إلى فروع حسب أهمية وحجم النشاط القضائي."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13_permission_0_65efe2ea_activity_7442b24cc5> a dznorm:Activity ;
+    rdfs:label "نشاط القضائي"@ar ;
+    dzdoc:confidenceScore 0.6 ;
+    dzdoc:extractionMethod "lexical_activity_pattern" ;
+    dzdoc:sourceTextSpan "غير أنه يمكن رئيس المحكمة، بعد استطلاع رأي وكيل الجمهورية، تقليص عدد الأقسام أو تقسيمها إلى فروع حسب أهمية وحجم النشاط القضائي."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_14_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_14> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يرأس أقسام المحكمة قضاة حسب تخصصاتهم."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_15_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_15> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تفصل المحكمة بقاض فرد، ما لم ينص القانون على خلاف ذلك."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16_condition_0_38ac9d5d> a dznorm:Condition ;
+    dznorm:conditionText "في حالة حدوث مانع لأحد القضاة"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16> ;
+    dznorm:position 0 .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16_obligation_0_58aaf9d2> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dzdoc:hasRole <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16_obligation_0_58aaf9d2_role_5499680618> ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يحدد رئيس المحكمة بموجب أمر ، وبعد استطلاع رأي وكيل الجمهورية، توزيع قضاة الحكم في بداية كل سنة قضائية على الأقسام أو الفروع عند الاقتضاء."@ar ;
+    dznorm:sourceArticle "art_16" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16_obligation_0_58aaf9d2_role_5499680618> a dznorm:Role ;
+    rdfs:label "الأقسام أو الفروع عند"@ar ;
+    dzdoc:confidenceScore 0.66 ;
+    dzdoc:extractionMethod "lexical_role_pattern" ;
+    dzdoc:sourceTextSpan "يحدد رئيس المحكمة بموجب أمر ، وبعد استطلاع رأي وكيل الجمهورية، توزيع قضاة الحكم في بداية كل سنة قضائية على الأقسام أو الفروع عند الاقتضاء."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16_obligation_1_a4ffd84d> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16> ;
+    dznorm:position 1 ;
+    dznorm:provisionText "يستخلف بقاض آخر بأمر من رئيس المحكمة، بعد استطلاع رأي وكيل الجمهورية."@ar ;
+    dznorm:sourceArticle "art_16" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يحدد رئيس المحكمة بموجب أمر ، وبعد استطلاع رأي وكيل الجمهورية، توزيع قضاة الحكم في بداية كل سنة قضائية على الأقسام أو الفروع عند الاقتضاء."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16> ;
+    dzdoc:position 1 ;
+    dzdoc:text "ويجوز له أن يرأس أي قسم."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16> ;
+    dzdoc:position 2 ;
+    dzdoc:text "يمكن تعيين نفس القاضي في أكثر من قسم أو فرع."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16_para_3> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16> ;
+    dzdoc:position 3 ;
+    dzdoc:text "في حالة حدوث مانع لأحد القضاة يستخلف بقاض آخر بأمر من رئيس المحكمة، بعد استطلاع رأي وكيل الجمهورية."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16_permission_0_c5dcdd17> a dznorm:Permission ;
+    dzdoc:confidenceScore 0.72 ;
+    dzdoc:extractionMethod "lexical_permission_cue" ;
+    dzdoc:hasAction <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16_permission_0_c5dcdd17_action_37b556083c> ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16> ;
+    dznorm:position 2 ;
+    dznorm:provisionText "يمكن تعيين نفس القاضي في أكثر من قسم أو فرع."@ar ;
+    dznorm:sourceArticle "art_16" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16_permission_0_c5dcdd17_action_37b556083c> a dznorm:Action ;
+    rdfs:label "تعيين نفس القاضي في أكثر"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يمكن تعيين نفس القاضي في أكثر من قسم أو فرع."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_17_obligation_0_f2e32917_condition_0> a dznorm:Condition ;
+    dznorm:conditionOf <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_17_obligation_0_f2e32917> ;
+    dznorm:conditionText "في حالة حدوث مانع له"@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_17_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_17> ;
+    dzdoc:position 0 ;
+    dzdoc:text "ينوب رئيس المحكمة في حالة حدوث مانع له، نائب رئيس المحكمة، وإذا تعذر ذلك، ينوبه أقدم قاض يعين بموجب أمر من رئيس المجلس القضائي."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_18_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_18> ;
+    dzdoc:position 0 ;
+    dzdoc:text "توجد على مستوى كل مجلس قضائي محكمة جنايات تختص بالفصل في الأفعال الموصوفة جنايات وكذا الجنح والمحالفات المرتبطة بها."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_18_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_18> ;
+    dzdoc:position 1 ;
+    dzdoc:text "يحدد اختصاص محكمة الجنايات وتشكيلتها وسيرها بموجب التشريع المعمول به."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_19_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_19> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تحدد القواعد المتعلقة باختصاص المحاكم العسكرية وتنظيمها وسيرها بموجب قانون القضاء العسكري."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_1_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_1> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يهدف هذا القانون العضوي إلى تحديد التنظيم القضائي."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_20_extref_f5515a17> a dzdoc:ExternalReference ;
+    rdfs:label "الأمر رقم 65-278 المؤرخ في 22 رجب عام 1385 الموافق 16 نوفمبر سنة 1965"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/order/1965-11-16/65-278"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/order/1965-11-16/65-278"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/order/1965-11-16/65-278" ;
+    dzdoc:referencesTarget <https://legal.dz/resource/order/1965-11-16/65-278> ;
+    dzdoc:resolutionReason "canonical_akn_path" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/order/1965-11-16/65-278"^^xsd:anyURI .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_20_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_20> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تلغى جميع الأحكام المخالفة لهذا القانون العضوي، لا سيما أحكام الأمر رقم 65-278 المؤرخ في 22 رجب عام 1385 الموافق 16 نوفمبر سنة 1965 والمذكور أعلاه."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_21_obligation_0_5dcba947> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_21> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "ينشر هذا القانون العضوي في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية."@ar ;
+    dznorm:sourceArticle "art_21" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_21_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_21> ;
+    dzdoc:position 0 ;
+    dzdoc:text "ينشر هذا القانون العضوي في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_21_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_21> ;
+    dzdoc:position 1 ;
+    dzdoc:text "حرر بالجزائر في 10 جمادى الثانية عام 1426 الموافق 17 يوليو سنة 2005."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_21_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_21> ;
+    dzdoc:position 2 ;
+    dzdoc:text "عبد العزيز بوتفليقة"@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_2_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_2> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يشمل التنظيم القضائي النظام القضائي العادي والنظام القضائي الإداري ومحكمة التنازع."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_3_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_3> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يشمل النظام القضائي العادي المحكمة العليا والمجالس القضائية والمحاكم."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_4_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_4> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يشمل النظام القضائي الإداري مجلس الدولة والمحاكم الإدارية."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6_condition_0_3cec4fbd> a dznorm:Condition ;
+    dzdoc:hasAction <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6_condition_0_3cec4fbd_action_0bd886c404> ;
+    dzdoc:hasActivity <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6_condition_0_3cec4fbd_activity_551191bc38> ;
+    dznorm:conditionText "غير أنه يمكن رئيس المجلس القضائي، بعد استطلاع رأي النائب العام، تقليص عدد الغرف أو تقسيمها إلى أقسام حسب أهمية وحجم النشاط القضائي."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6> ;
+    dznorm:position 0 .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6_condition_0_3cec4fbd_action_0bd886c404> a dznorm:Action ;
+    rdfs:label "رئيس المجلس القضائي"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "غير أنه يمكن رئيس المجلس القضائي، بعد استطلاع رأي النائب العام، تقليص عدد الغرف أو تقسيمها إلى أقسام حسب أهمية وحجم النشاط القضائي."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6_condition_0_3cec4fbd_activity_551191bc38> a dznorm:Activity ;
+    rdfs:label "نشاط القضائي"@ar ;
+    dzdoc:confidenceScore 0.6 ;
+    dzdoc:extractionMethod "lexical_activity_pattern" ;
+    dzdoc:sourceTextSpan "غير أنه يمكن رئيس المجلس القضائي، بعد استطلاع رأي النائب العام، تقليص عدد الغرف أو تقسيمها إلى أقسام حسب أهمية وحجم النشاط القضائي."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يشمل المجلس القضائي الغرف الآتية : الغرفة المدنية، الغرفة الجزائية، غرفة الاتهام، الغرفة الاستعجالية، غرفة شؤون الأسرة، غرفة الأحداث، الغرفة الاجتماعية، الغرفة العقارية، الغرفة البحرية، الغرفة التجارية."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6> ;
+    dzdoc:position 1 ;
+    dzdoc:text "غير أنه يمكن رئيس المجلس القضائي، بعد استطلاع رأي النائب العام، تقليص عدد الغرف أو تقسيمها إلى أقسام حسب أهمية وحجم النشاط القضائي. تفصل كل غرفة في القضايا المعروضة عليها، ما لم ينص القانون على خلاف ذلك."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6_permission_0_109b0451> a dznorm:Permission ;
+    dzdoc:confidenceScore 0.72 ;
+    dzdoc:extractionMethod "lexical_permission_cue" ;
+    dzdoc:hasAction <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6_permission_0_109b0451_action_6ea9e3bdfe> ;
+    dzdoc:hasActivity <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6_permission_0_109b0451_activity_ab65e41e28> ;
+    dzdoc:hasRole <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6_permission_0_109b0451_role_abce905f26> ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6> ;
+    dznorm:position 1 ;
+    dznorm:provisionText "غير أنه يمكن رئيس المجلس القضائي، بعد استطلاع رأي النائب العام، تقليص عدد الغرف أو تقسيمها إلى أقسام حسب أهمية وحجم النشاط القضائي. تفصل كل غرفة في القضايا المعروضة عليها، ما لم ينص القانون على خلاف ذلك."@ar ;
+    dznorm:sourceArticle "art_6" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6_permission_0_109b0451_action_6ea9e3bdfe> a dznorm:Action ;
+    rdfs:label "رئيس المجلس القضائي"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "غير أنه يمكن رئيس المجلس القضائي، بعد استطلاع رأي النائب العام، تقليص عدد الغرف أو تقسيمها إلى أقسام حسب أهمية وحجم النشاط القضائي. تفصل كل غرفة في القضايا المعروضة عليها، ما لم ينص القانون على خلاف ذلك."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6_permission_0_109b0451_activity_ab65e41e28> a dznorm:Activity ;
+    rdfs:label "نشاط القضائي"@ar ;
+    dzdoc:confidenceScore 0.6 ;
+    dzdoc:extractionMethod "lexical_activity_pattern" ;
+    dzdoc:sourceTextSpan "غير أنه يمكن رئيس المجلس القضائي، بعد استطلاع رأي النائب العام، تقليص عدد الغرف أو تقسيمها إلى أقسام حسب أهمية وحجم النشاط القضائي. تفصل كل غرفة في القضايا المعروضة عليها، ما لم ينص القانون على خلاف ذلك."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6_permission_0_109b0451_role_abce905f26> a dznorm:Role ;
+    rdfs:label "خلاف ذلك"@ar ;
+    dzdoc:confidenceScore 0.66 ;
+    dzdoc:extractionMethod "lexical_role_pattern" ;
+    dzdoc:sourceTextSpan "غير أنه يمكن رئيس المجلس القضائي، بعد استطلاع رأي النائب العام، تقليص عدد الغرف أو تقسيمها إلى أقسام حسب أهمية وحجم النشاط القضائي. تفصل كل غرفة في القضايا المعروضة عليها، ما لم ينص القانون على خلاف ذلك."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_7_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_7> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يتشكل المجلس القضائي من : رئيس مجلس، نائب رئيس أو أكثر، رؤساء غرف، مستشارين، نائب عام ونواب عامين مساعدين، أمانة الضبط."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_8_condition_0_df257e89> a dznorm:Condition ;
+    dzdoc:hasRole <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_8_condition_0_df257e89_role_f1be6f4781> ;
+    dznorm:conditionText "ما لم ينص القانون على خلاف ذلك"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_8> ;
+    dznorm:position 0 .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_8_condition_0_df257e89_role_f1be6f4781> a dznorm:Role ;
+    rdfs:label "خلاف ذلك"@ar ;
+    dzdoc:confidenceScore 0.66 ;
+    dzdoc:extractionMethod "lexical_role_pattern" ;
+    dzdoc:sourceTextSpan "ما لم ينص القانون على خلاف ذلك"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_8> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_8_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_8> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يفصل المجلس القضائي بتشكيلة جماعية ما لم ينص القانون على خلاف ذلك."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_condition_0_b6a8227a> a dznorm:Condition ;
+    dznorm:conditionText "في حالة حدوث مانع لرئيس المجلس القضائي"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9> ;
+    dznorm:position 0 .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_condition_1_38ac9d5d> a dznorm:Condition ;
+    dznorm:conditionText "في حالة حدوث مانع لأحد القضاة"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9> ;
+    dznorm:position 1 .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_obligation_0_4e357443> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dzdoc:hasRole <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_obligation_0_4e357443_role_3b46a56724>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_obligation_0_4e357443_role_7f90285c6b> ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يحدد رئيس المجلس القضائي بموجب أمر ، توزيع القضاة على الغرف، وعند الاقتضاء على الأقسام، في بداية كل سنة قضائية، بعد استطلاع رأي النائب العام"@ar ;
+    dznorm:sourceArticle "art_9" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_obligation_0_4e357443_role_3b46a56724> a dznorm:Role ;
+    rdfs:label "الغرف"@ar ;
+    dzdoc:confidenceScore 0.66 ;
+    dzdoc:extractionMethod "lexical_role_pattern" ;
+    dzdoc:sourceTextSpan "يحدد رئيس المجلس القضائي بموجب أمر ، توزيع القضاة على الغرف، وعند الاقتضاء على الأقسام، في بداية كل سنة قضائية، بعد استطلاع رأي النائب العام"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_obligation_0_4e357443_role_7f90285c6b> a dznorm:Role ;
+    rdfs:label "الأقسام"@ar ;
+    dzdoc:confidenceScore 0.66 ;
+    dzdoc:extractionMethod "lexical_role_pattern" ;
+    dzdoc:sourceTextSpan "يحدد رئيس المجلس القضائي بموجب أمر ، توزيع القضاة على الغرف، وعند الاقتضاء على الأقسام، في بداية كل سنة قضائية، بعد استطلاع رأي النائب العام"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يحدد رئيس المجلس القضائي بموجب أمر ، توزيع القضاة على الغرف، وعند الاقتضاء على الأقسام، في بداية كل سنة قضائية، بعد استطلاع رأي النائب العام."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9> ;
+    dzdoc:position 1 ;
+    dzdoc:text "ويجوز له أن يرأس أية غرفة."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9> ;
+    dzdoc:position 2 ;
+    dzdoc:text "يمكن تعيين نفس القاضي في أكثر من غرفة أو قسم."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_para_3> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9> ;
+    dzdoc:position 3 ;
+    dzdoc:text "في حالة حدوث مانع لرئيس المجلس القضائي يستخلفه نائبه، وإذا تعذر ذلك ينوبه أقدم رئيس غرفة."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_para_4> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9> ;
+    dzdoc:position 4 ;
+    dzdoc:text "في حالة حدوث مانع لأحد القضاة يستخلف بقاض آخر بموجب أمر من رئيس المجلس القضائي، بعد استطلاع رأي النائب العام."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_permission_0_e782fa86> a dznorm:Permission ;
+    dzdoc:confidenceScore 0.72 ;
+    dzdoc:extractionMethod "lexical_permission_cue" ;
+    dzdoc:hasAction <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_permission_0_e782fa86_action_70e7982a3d> ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9> ;
+    dznorm:position 2 ;
+    dznorm:provisionText "يمكن تعيين نفس القاضي في أكثر من غرفة أو قسم."@ar ;
+    dznorm:sourceArticle "art_9" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_permission_0_e782fa86_action_70e7982a3d> a dznorm:Action ;
+    rdfs:label "تعيين نفس القاضي في أكثر"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يمكن تعيين نفس القاضي في أكثر من غرفة أو قسم."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_right_0_d3f37bd8> a dznorm:Right ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_right_tag" ;
+    dzdoc:hasAction <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_right_0_d3f37bd8_action_2153b4702c> ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "ويجوز له أن يرأس أية غرفة"@ar ;
+    dznorm:sourceArticle "art_9" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_right_0_d3f37bd8_action_2153b4702c> a dznorm:Action ;
+    rdfs:label "له أن يرأس أية غرفة"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "ويجوز له أن يرأس أية غرفة"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_19f612f80715> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/order/unknown/65-278> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى الأمر رقم 65-278 المؤرخ في 22 رجب عام 1385 الموافق 16 نوفمبر 1965 والمتضمن التنظيم القضائي،"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_6> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_371b0e2bffb1> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/constitution/unknown/2-125> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "بناء على الدستور، لا سيما المواد 19 و120 و123 و2-125 و126 و146 و152 و165 و180( الفقرة الأولى) منه،"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_1> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_5e27eb6f1cc8> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/98-01> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى القانون العضوي رقم 98-01 المؤرخ في 4 صفر عام 1419 الموافق 30 مايو سنة 1998 والمتعلق باختصاصات مجلس الدولة وتنظيمه وعمله،"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_2> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_71b25777e489> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/04-11> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى القانون العضوي رقم 04-11 المؤرخ في 21 رجب عام 1425 الموافق 06 سبتمبر سنة 2004 والمتضمن القانون الأساسي للقضاء،"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_4> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_81d27b0c615e> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/98-02> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى القانون رقم 98-02 المؤرخ في 4 صفر عام 1419 الموافق 30 مايو سنة 1998 والمتعلق بالمحاكم الإدارية،"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_13> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_8db57a873bcf> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/98-03> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى القانون العضوي رقم 98-03 المؤرخ في 8 صفر عام 1419 الموافق 03 يونيو سنة 1998 والمتعلق باختصاصات محكمة التنازع وتنظيمها وعملها،"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_3> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_91e3030dcdd6> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/75-58> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى الأمر رقم 75-58 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون المدني، المعدل والمتمم،"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_11> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_af64db0596b7> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/89-22> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى القانون رقم 89-22 المؤرخ في 14 جمادى الأولى عام 1410 الموافق 12 ديسمبر سنة 1989 والمتعلق بصلاحيات المحكمة العليا وتنظيمها وسيرها، المعدل والمتمم،"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_12> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_bbd15721e62c> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/66-155> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى الأمر رقم 66-155 المؤرخ في 18 صفر عام 1386 الموافق 08 يونيو 1966 والمتضمن قانون الإجراءات الجزائية، المعدل والمتمم،"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_8> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_ca70a414db95> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/04-12> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى القانون العضوي رقم 04-12 المؤرخ في 21 رجب عام 1425 الموافق 06 سبتمبر 2004 الذي يحدد تشكيل المجلس الأعلى للقضاء وعمله وصلاحياته، لا سيما المادة 35 منه،"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_5> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_d0076d92e226> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/66-156> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى الأمر رقم 66-156 المؤرخ في 18 صفر عام 1386 الموافق 08 يونيو 1966 والمتضمن قانون العقوبات، المعدل والمتمم،"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_9> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_d192469433fd> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/66-154> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى الأمر رقم 66-154 المؤرخ في 18 صفر عام 1386 الموافق 08 يونيو 1966 والمتضمن قانون الإجراءات المدنية، المعدل والمتمم،"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_7> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_f9eb12353b06> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/order/unknown/71-28> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى الأمر رقم 71-28 المؤرخ في 26 صفر عام 1391 الموافق 22 أبريل 1971 والمتعلق بالقضاء العسكري،"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_10> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#lifecycle_1c7c5688908b> a dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/order/1965-11-16/65-278> ;
+    dzdoc:confidenceScore 0.94 ;
+    dzdoc:evidenceText "تلغى جميع الأحكام المخالفة لهذا القانون العضوي، لا سيما أحكام الأمر رقم 65-278 المؤرخ في 22 رجب عام 1385 الموافق 16 نوفمبر سنة 1965 والمذكور أعلاه."@ar ;
+    dzdoc:isContradictory false ;
+    dzdoc:lifecycleRelationType "repeals" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:ruleId "lifecycle_explicit_repeal_phrase" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_20> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_17> a dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble> ;
+    dzdoc:position 17 ;
+    dzdoc:segmentType "formula" ;
+    dzdoc:text "يصدر القانون العضوي الآتي نصه،"@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#preface> a dzdoc:Preface ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11/manifestation> a dzdoc:Manifestation ;
+    dzdoc:frbrUri "/akn/dz/act/organic-law/2005-07-17/05-11/ara@.xml"^^xsd:anyURI ;
+    dzdoc:manifestationOf <https://legal.dz/resource/organic-law/2005-07-17/05-11/expression> ;
+    dzdoc:transformDate "2026-04-28"^^xsd:date .
+
+dzterm:administrative_courts a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "المحاكم الإدارية"@ar .
+
+dzterm:conflict_court a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "محكمة التنازع"@ar .
+
+dzterm:council_of_state a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "مجلس الدولة"@ar .
+
+dzterm:courts a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "المحاكم"@ar .
+
+dzterm:felony_court a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "محكمة الجنايات"@ar,
+        "محكمة جنايات"@ar .
+
+dzterm:judicial_council_president a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "رئيس المجلس القضائي"@ar .
+
+dzterm:judicial_councils a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "المجالس القضائية"@ar .
+
+dzterm:jurisdiction a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "اختصاص المحكمة"@ar .
+
+dzterm:military_courts a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "المحاكم العسكرية"@ar .
+
+dzterm:military_justice_law a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "قانون القضاء العسكري"@ar .
+
+dzterm:organic_law a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "القانون العضوي"@ar .
+
+dzterm:president_judicial_council a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "رئيس المجلس القضائي"@ar .
+
+dzterm:supreme_court a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "المحكمة العليا"@ar .
+
+dzterm:vice_president a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "نائب رئيس المحكمة"@ar .
+
+dzterm:النائب_العام a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "النائب العام"@ar .
+
+dzterm:رئيس_المجلس_القضائي a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "رئيس المجلس القضائي"@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_10_defocc_82f1e6a6525c> a dzdoc:DefinitionOccurrence ;
+    dzdoc:charEnd 7 ;
+    dzdoc:charStart 0 ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:definesTerm dzterm:court ;
+    dzdoc:extractionMethod "akn_def_tag" ;
+    dzdoc:occursInArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_10> ;
+    dzdoc:occursInParagraph <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_10_para_0> ;
+    dzdoc:paragraphPosition 0 ;
+    dzdoc:snippet "المحكمة درجة أولى للتقاضي."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_10_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_10> ;
+    dzdoc:position 0 ;
+    dzdoc:text "المحكمة درجة أولى للتقاضي."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_17_obligation_0_f2e32917> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dznorm:expressedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_17> ;
+    dznorm:hasCondition <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_17_obligation_0_f2e32917_condition_0> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "ينوب رئيس المحكمة في حالة حدوث مانع له، نائب رئيس المحكمة، وإذا تعذر ذلك، ينوبه أقدم قاض يعين بموجب أمر من رئيس المجلس القضائي."@ar ;
+    dznorm:sourceArticle "art_17" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_5_defocc_47737ae44f36> a dzdoc:DefinitionOccurrence ;
+    dzdoc:charEnd 95 ;
+    dzdoc:charStart 0 ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:definesTerm dzterm:مجلس_قضائي ;
+    dzdoc:extractionMethod "akn_def_tag" ;
+    dzdoc:occursInArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_5> ;
+    dzdoc:occursInParagraph <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_5_para_0> ;
+    dzdoc:paragraphPosition 0 ;
+    dzdoc:snippet "يعد المجلس القضائي جهة استئناف للأحكام الصادرة عن المحاكم وكذا في الحالات المنصوص عليها قانونا."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_5_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_5> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يعد المجلس القضائي جهة استئناف للأحكام الصادرة عن المحاكم وكذا في الحالات المنصوص عليها قانونا."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_0> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble> ;
+    dzdoc:position 0 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "إن رئيس الجمهورية،"@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_14> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble> ;
+    dzdoc:position 14 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبعد رأي مجلس الدولة،"@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_15> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble> ;
+    dzdoc:position 15 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبعد مصادقة البرلمان،"@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_16> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble> ;
+    dzdoc:position 16 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبعد الأخذ برأي المجلس الدستوري،"@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_10_20050717_OpEnact_bf7b2b39f6> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_10> ;
+    dzdoc:versionOf <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_10> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_10> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:versionText "المحكمة درجة أولى للتقاضي."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_11_20050717_OpEnact_36a243588e> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_11> ;
+    dzdoc:versionOf <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_11> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_11> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:versionText "يحدد اختصاص المحكمة في قانون الإجراءات المدنية و قانون الإجراءات الجزائية والقوانين الخاصة المعمول بها."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_12_20050717_OpEnact_2ed7a7f829> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_12> ;
+    dzdoc:versionOf <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_12> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_12> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:versionText "تتشكل المحكمة من : رئيس المحكمة، نائب رئيس المحكمة قضاة، قاضي التحقيق أو أكثر، قاضي الأحداث أو أكثر، وكيل الجمهورية ووكلاء جمهورية مساعدين، أمانة الضبط."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_13_20050717_OpEnact_684a2ccd05> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_13> ;
+    dzdoc:versionOf <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:versionText "تقسم المحكمة إلى الأقسام الآتية : القسم المدني، قسم الجنح، قسم المخالفات، القسم الاستعجالي، قسم شؤون الأسرة، قسم الأحداث، القسم الاجتماعي، القسم العقاري، القسم البحري، القسم التجاري. غير أنه يمكن رئيس المحكمة ، بعد استطلاع رأي وكيل الجمهورية ، تقليص عدد الأقسام أو تقسيمها إلى فروع حسب أهمية وحجم النشاط القضائي. بفصل كل قسم في القضايا المعروضة عليه، ما لم ينص القانون على خلاف ذلك."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_14_20050717_OpEnact_9b2271951a> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_14> ;
+    dzdoc:versionOf <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_14> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_14> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:versionText "يرأس أقسام المحكمة قضاة حسب تخصصاتهم."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_15_20050717_OpEnact_049cc34777> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_15> ;
+    dzdoc:versionOf <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_15> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_15> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:versionText "تفصل المحكمة بقاض فرد، ما لم ينص القانون على خلاف ذلك."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_16_20050717_OpEnact_36503ed90e> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_16> ;
+    dzdoc:versionOf <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:versionText "يحدد رئيس المحكمة بموجب أمر ، وبعد استطلاع رأي وكيل الجمهورية ، توزيع قضاة الحكم في بداية كل سنة قضائية على الأقسام أو الفروع عند الاقتضاء. ويجوز له أن يرأس أي قسم. يمكن تعيين نفس القاضي في أكثر من قسم أو فرع. في حالة حدوث مانع لأحد القضاة يستخلف بقاض آخر بأمر من رئيس المحكمة ، بعد استطلاع رأي وكيل الجمهورية ."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_17_20050717_OpEnact_8983edc952> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_17> ;
+    dzdoc:versionOf <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_17> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_17> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:versionText "ينوب رئيس المحكمة في حالة حدوث مانع له ، نائب رئيس المحكمة ، وإذا تعذر ذلك، ينوبه أقدم قاض يعين بموجب أمر من رئيس المجلس القضائي ."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_18_20050717_OpEnact_60a64286cb> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_18> ;
+    dzdoc:versionOf <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_18> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_18> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:versionText "توجد على مستوى كل مجلس قضائي محكمة جنايات تختص بالفصل في الأفعال الموصوفة جنايات وكذا الجنح والمحالفات المرتبطة بها. يحدد اختصاص محكمة الجنايات وتشكيلتها وسيرها بموجب التشريع المعمول به."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_19_20050717_OpEnact_5079d2f293> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_19> ;
+    dzdoc:versionOf <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_19> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_19> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:versionText "تحدد القواعد المتعلقة باختصاص المحاكم العسكرية وتنظيمها وسيرها بموجب قانون القضاء العسكري ."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_1_20050717_OpEnact_dff8b1b227> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_1> ;
+    dzdoc:versionOf <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_1> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_1> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:versionText "يهدف هذا القانون العضوي إلى تحديد التنظيم القضائي ."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_20_20050717_OpEnact_0ed9662e43> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_20> ;
+    dzdoc:versionOf <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_20> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_20> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:versionText "تلغى جميع الأحكام المخالفة لهذا القانون العضوي، لا سيما أحكام الأمر رقم 65-278 المؤرخ في 22 رجب عام 1385 الموافق 16 نوفمبر سنة 1965 والمذكور أعلاه."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_21_20050717_OpEnact_3f6474ab41> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_21> ;
+    dzdoc:versionOf <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_21> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_21> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:versionText "ينشر هذا القانون العضوي في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية. حرر بالجزائر في 10 جمادى الثانية عام 1426 الموافق 17 يوليو سنة 2005. عبد العزيز بوتفليقة"@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_2_20050717_OpEnact_935c9bd502> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_2> ;
+    dzdoc:versionOf <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_2> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_2> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:versionText "يشمل التنظيم القضائي النظام القضائي العادي و النظام القضائي الإداري و محكمة التنازع ."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_3_20050717_OpEnact_ff12abc229> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_3> ;
+    dzdoc:versionOf <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_3> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_3> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:versionText "يشمل النظام القضائي العادي المحكمة العليا و المجالس القضائية و المحاكم ."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_4_20050717_OpEnact_075732cd13> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_4> ;
+    dzdoc:versionOf <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_4> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_4> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:versionText "يشمل النظام القضائي الإداري مجلس الدولة و المحاكم الإدارية ."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_5_20050717_OpEnact_7953afd454> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_5> ;
+    dzdoc:versionOf <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_5> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_5> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:versionText "يعد المجلس القضائي جهة استئناف للأحكام الصادرة عن المحاكم وكذا في الحالات المنصوص عليها قانونا."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_6_20050717_OpEnact_dd405fd5e0> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_6> ;
+    dzdoc:versionOf <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:versionText "يشمل المجلس القضائي الغرف الآتية : الغرفة المدنية، الغرفة الجزائية، غرفة الاتهام، الغرفة الاستعجالية، غرفة شؤون الأسرة، غرفة الأحداث، الغرفة الاجتماعية، الغرفة العقارية، الغرفة البحرية، الغرفة التجارية. غير أنه يمكن رئيس المجلس القضائي ، بعد استطلاع رأي النائب العام ، تقليص عدد الغرف أو تقسيمها إلى أقسام حسب أهمية وحجم النشاط القضائي. تفصل كل غرفة في القضايا المعروضة عليها، ما لم ينص القانون على خلاف ذلك."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_7_20050717_OpEnact_4ae049a0da> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_7> ;
+    dzdoc:versionOf <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_7> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_7> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:versionText "يتشكل المجلس القضائي من : رئيس مجلس، نائب رئيس أو أكثر، رؤساء غرف، مستشارين، نائب عام ونواب عامين مساعدين، أمانة الضبط."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_8_20050717_OpEnact_265b2c2911> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_8> ;
+    dzdoc:versionOf <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_8> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_8> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:versionText "يفصل المجلس القضائي بتشكيلة جماعية ما لم ينص القانون على خلاف ذلك ."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_9_20050717_OpEnact_faa86b1c71> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_9> ;
+    dzdoc:versionOf <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:versionText "يحدد رئيس المجلس القضائي بموجب أمر ، توزيع القضاة على الغرف، وعند الاقتضاء على الأقسام، في بداية كل سنة قضائية، بعد استطلاع رأي النائب العام . ويجوز له أن يرأس أية غرفة . يمكن تعيين نفس القاضي في أكثر من غرفة أو قسم. في حالة حدوث مانع لرئيس المجلس القضائي يستخلفه نائبه، وإذا تعذر ذلك ينوبه أقدم رئيس غرفة. في حالة حدوث مانع لأحد القضاة يستخلف بقاض آخر بموجب أمر من رئيس المجلس القضائي ، بعد استطلاع رأي النائب العام."@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11/expression> a dzdoc:Expression ;
+    dzdoc:expressionOf <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:frbrUri "/akn/dz/act/organic-law/2005-07-17/05-11/ara@"^^xsd:anyURI ;
+    dzdoc:hasManifestation <https://legal.dz/resource/organic-law/2005-07-17/05-11/manifestation> ;
+    dzdoc:language "ara" ;
+    dzdoc:publicationDate "2005-07-17"^^xsd:date .
+
+dzorg:parliament a dzdoc:Organization ;
+    rdfs:label "البرلمان"@ar ;
+    dzdoc:frbrUri "/ontology/organization/dz/parliament"^^xsd:anyURI .
+
+dzterm:administrative_judicial_system a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "النظام القضائي الإداري"@ar .
+
+dzterm:judicial_council a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "المجلس القضائي"@ar,
+        "مجلس قضائي"@ar .
+
+dzterm:judicial_organization a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "التنظيم القضائي"@ar .
+
+dzterm:ordinary_judicial_system a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "النظام القضائي العادي"@ar .
+
+dzterm:prosecutor a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "وكيل الجمهورية"@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_1> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble> ;
+    dzdoc:position 1 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "بناء على الدستور، لا سيما المواد 19 و120 و123 و2-125 و126 و146 و152 و165 و180( الفقرة الأولى) منه،"@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_10> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble> ;
+    dzdoc:position 10 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى الأمر رقم 71-28 المؤرخ في 26 صفر عام 1391 الموافق 22 أبريل 1971 والمتعلق بالقضاء العسكري،"@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_11> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble> ;
+    dzdoc:position 11 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى الأمر رقم 75-58 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون المدني، المعدل والمتمم،"@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_12> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble> ;
+    dzdoc:position 12 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى القانون رقم 89-22 المؤرخ في 14 جمادى الأولى عام 1410 الموافق 12 ديسمبر سنة 1989 والمتعلق بصلاحيات المحكمة العليا وتنظيمها وسيرها، المعدل والمتمم،"@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_13> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble> ;
+    dzdoc:position 13 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى القانون رقم 98-02 المؤرخ في 4 صفر عام 1419 الموافق 30 مايو سنة 1998 والمتعلق بالمحاكم الإدارية،"@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_2> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble> ;
+    dzdoc:position 2 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى القانون العضوي رقم 98-01 المؤرخ في 4 صفر عام 1419 الموافق 30 مايو سنة 1998 والمتعلق باختصاصات مجلس الدولة وتنظيمه وعمله،"@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_3> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble> ;
+    dzdoc:position 3 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى القانون العضوي رقم 98-03 المؤرخ في 8 صفر عام 1419 الموافق 03 يونيو سنة 1998 والمتعلق باختصاصات محكمة التنازع وتنظيمها وعملها،"@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_4> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble> ;
+    dzdoc:position 4 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى القانون العضوي رقم 04-11 المؤرخ في 21 رجب عام 1425 الموافق 06 سبتمبر سنة 2004 والمتضمن القانون الأساسي للقضاء،"@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_5> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble> ;
+    dzdoc:position 5 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى القانون العضوي رقم 04-12 المؤرخ في 21 رجب عام 1425 الموافق 06 سبتمبر 2004 الذي يحدد تشكيل المجلس الأعلى للقضاء وعمله وصلاحياته، لا سيما المادة 35 منه،"@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_6> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble> ;
+    dzdoc:position 6 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى الأمر رقم 65-278 المؤرخ في 22 رجب عام 1385 الموافق 16 نوفمبر 1965 والمتضمن التنظيم القضائي،"@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_7> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble> ;
+    dzdoc:position 7 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى الأمر رقم 66-154 المؤرخ في 18 صفر عام 1386 الموافق 08 يونيو 1966 والمتضمن قانون الإجراءات المدنية، المعدل والمتمم،"@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_8> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble> ;
+    dzdoc:position 8 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى الأمر رقم 66-155 المؤرخ في 18 صفر عام 1386 الموافق 08 يونيو 1966 والمتضمن قانون الإجراءات الجزائية، المعدل والمتمم،"@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_9> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble> ;
+    dzdoc:position 9 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى الأمر رقم 66-156 المؤرخ في 18 صفر عام 1386 الموافق 08 يونيو 1966 والمتضمن قانون العقوبات، المعدل والمتمم،"@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_4_subsec_1> a dzdoc:Subsection ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_4> ;
+    dzdoc:directlyContains <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_18> ;
+    dzdoc:eId "sec_4_subsec_1" ;
+    dzdoc:hasArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_18> ;
+    dzdoc:heading "محكمة الجنايات"@ar ;
+    dzdoc:number "الأول" ;
+    dzdoc:position 0 .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_1> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يهدف هذا القانون العضوي إلى تحديد التنظيم القضائي ."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_1_20050717_OpEnact_dff8b1b227> ;
+    dzdoc:replacementText "يهدف هذا القانون العضوي إلى تحديد التنظيم القضائي ."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_1> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_1> ;
+    dzdoc:targetDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_10> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "المحكمة درجة أولى للتقاضي."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_10_20050717_OpEnact_bf7b2b39f6> ;
+    dzdoc:replacementText "المحكمة درجة أولى للتقاضي."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_10> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_10> ;
+    dzdoc:targetDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_11> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يحدد اختصاص المحكمة في قانون الإجراءات المدنية و قانون الإجراءات الجزائية والقوانين الخاصة المعمول بها."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_11_20050717_OpEnact_36a243588e> ;
+    dzdoc:replacementText "يحدد اختصاص المحكمة في قانون الإجراءات المدنية و قانون الإجراءات الجزائية والقوانين الخاصة المعمول بها."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_11> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_11> ;
+    dzdoc:targetDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_12> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تتشكل المحكمة من : رئيس المحكمة، نائب رئيس المحكمة قضاة، قاضي التحقيق أو أكثر، قاضي الأحداث أو أكثر، وكيل الجمهورية ووكلاء جمهورية مساعدين، أمانة الضبط."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_12_20050717_OpEnact_2ed7a7f829> ;
+    dzdoc:replacementText "تتشكل المحكمة من : رئيس المحكمة، نائب رئيس المحكمة قضاة، قاضي التحقيق أو أكثر، قاضي الأحداث أو أكثر، وكيل الجمهورية ووكلاء جمهورية مساعدين، أمانة الضبط."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_12> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_12> ;
+    dzdoc:targetDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_13> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تقسم المحكمة إلى الأقسام الآتية : القسم المدني، قسم الجنح، قسم المخالفات، القسم الاستعجالي، قسم شؤون الأسرة، قسم الأحداث، القسم الاجتماعي، القسم العقاري، القسم البحري، القسم التجاري. غير أنه يمكن رئيس المحكمة ، بعد استطلاع رأي وكيل الجمهورية ، تقليص عدد الأقسام أو تقسيمها إلى فروع حسب أهمية وحجم النشاط القضائي. بفصل كل قسم في القضايا المعروضة عليه، ما لم ينص القانون على خلاف ذلك."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_13_20050717_OpEnact_684a2ccd05> ;
+    dzdoc:replacementText "تقسم المحكمة إلى الأقسام الآتية : القسم المدني، قسم الجنح، قسم المخالفات، القسم الاستعجالي، قسم شؤون الأسرة، قسم الأحداث، القسم الاجتماعي، القسم العقاري، القسم البحري، القسم التجاري. غير أنه يمكن رئيس المحكمة ، بعد استطلاع رأي وكيل الجمهورية ، تقليص عدد الأقسام أو تقسيمها إلى فروع حسب أهمية وحجم النشاط القضائي. بفصل كل قسم في القضايا المعروضة عليه، ما لم ينص القانون على خلاف ذلك."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13> ;
+    dzdoc:targetDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_14> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يرأس أقسام المحكمة قضاة حسب تخصصاتهم."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_14_20050717_OpEnact_9b2271951a> ;
+    dzdoc:replacementText "يرأس أقسام المحكمة قضاة حسب تخصصاتهم."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_14> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_14> ;
+    dzdoc:targetDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_15> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تفصل المحكمة بقاض فرد، ما لم ينص القانون على خلاف ذلك."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_15_20050717_OpEnact_049cc34777> ;
+    dzdoc:replacementText "تفصل المحكمة بقاض فرد، ما لم ينص القانون على خلاف ذلك."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_15> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_15> ;
+    dzdoc:targetDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_16> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يحدد رئيس المحكمة بموجب أمر ، وبعد استطلاع رأي وكيل الجمهورية ، توزيع قضاة الحكم في بداية كل سنة قضائية على الأقسام أو الفروع عند الاقتضاء. ويجوز له أن يرأس أي قسم. يمكن تعيين نفس القاضي في أكثر من قسم أو فرع. في حالة حدوث مانع لأحد القضاة يستخلف بقاض آخر بأمر من رئيس المحكمة ، بعد استطلاع رأي وكيل الجمهورية ."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_16_20050717_OpEnact_36503ed90e> ;
+    dzdoc:replacementText "يحدد رئيس المحكمة بموجب أمر ، وبعد استطلاع رأي وكيل الجمهورية ، توزيع قضاة الحكم في بداية كل سنة قضائية على الأقسام أو الفروع عند الاقتضاء. ويجوز له أن يرأس أي قسم. يمكن تعيين نفس القاضي في أكثر من قسم أو فرع. في حالة حدوث مانع لأحد القضاة يستخلف بقاض آخر بأمر من رئيس المحكمة ، بعد استطلاع رأي وكيل الجمهورية ."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16> ;
+    dzdoc:targetDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_17> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "ينوب رئيس المحكمة في حالة حدوث مانع له ، نائب رئيس المحكمة ، وإذا تعذر ذلك، ينوبه أقدم قاض يعين بموجب أمر من رئيس المجلس القضائي ."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_17_20050717_OpEnact_8983edc952> ;
+    dzdoc:replacementText "ينوب رئيس المحكمة في حالة حدوث مانع له ، نائب رئيس المحكمة ، وإذا تعذر ذلك، ينوبه أقدم قاض يعين بموجب أمر من رئيس المجلس القضائي ."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_17> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_17> ;
+    dzdoc:targetDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_18> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "توجد على مستوى كل مجلس قضائي محكمة جنايات تختص بالفصل في الأفعال الموصوفة جنايات وكذا الجنح والمحالفات المرتبطة بها. يحدد اختصاص محكمة الجنايات وتشكيلتها وسيرها بموجب التشريع المعمول به."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_18_20050717_OpEnact_60a64286cb> ;
+    dzdoc:replacementText "توجد على مستوى كل مجلس قضائي محكمة جنايات تختص بالفصل في الأفعال الموصوفة جنايات وكذا الجنح والمحالفات المرتبطة بها. يحدد اختصاص محكمة الجنايات وتشكيلتها وسيرها بموجب التشريع المعمول به."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_18> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_18> ;
+    dzdoc:targetDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_19> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تحدد القواعد المتعلقة باختصاص المحاكم العسكرية وتنظيمها وسيرها بموجب قانون القضاء العسكري ."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_19_20050717_OpEnact_5079d2f293> ;
+    dzdoc:replacementText "تحدد القواعد المتعلقة باختصاص المحاكم العسكرية وتنظيمها وسيرها بموجب قانون القضاء العسكري ."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_19> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_19> ;
+    dzdoc:targetDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_2> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يشمل التنظيم القضائي النظام القضائي العادي و النظام القضائي الإداري و محكمة التنازع ."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_2_20050717_OpEnact_935c9bd502> ;
+    dzdoc:replacementText "يشمل التنظيم القضائي النظام القضائي العادي و النظام القضائي الإداري و محكمة التنازع ."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_2> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_2> ;
+    dzdoc:targetDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_20> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تلغى جميع الأحكام المخالفة لهذا القانون العضوي، لا سيما أحكام الأمر رقم 65-278 المؤرخ في 22 رجب عام 1385 الموافق 16 نوفمبر سنة 1965 والمذكور أعلاه."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_20_20050717_OpEnact_0ed9662e43> ;
+    dzdoc:replacementText "تلغى جميع الأحكام المخالفة لهذا القانون العضوي، لا سيما أحكام الأمر رقم 65-278 المؤرخ في 22 رجب عام 1385 الموافق 16 نوفمبر سنة 1965 والمذكور أعلاه."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_20> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_20> ;
+    dzdoc:targetDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_21> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "ينشر هذا القانون العضوي في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية. حرر بالجزائر في 10 جمادى الثانية عام 1426 الموافق 17 يوليو سنة 2005. عبد العزيز بوتفليقة"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_21_20050717_OpEnact_3f6474ab41> ;
+    dzdoc:replacementText "ينشر هذا القانون العضوي في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية. حرر بالجزائر في 10 جمادى الثانية عام 1426 الموافق 17 يوليو سنة 2005. عبد العزيز بوتفليقة"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_21> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_21> ;
+    dzdoc:targetDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_3> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يشمل النظام القضائي العادي المحكمة العليا و المجالس القضائية و المحاكم ."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_3_20050717_OpEnact_ff12abc229> ;
+    dzdoc:replacementText "يشمل النظام القضائي العادي المحكمة العليا و المجالس القضائية و المحاكم ."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_3> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_3> ;
+    dzdoc:targetDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_4> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يشمل النظام القضائي الإداري مجلس الدولة و المحاكم الإدارية ."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_4_20050717_OpEnact_075732cd13> ;
+    dzdoc:replacementText "يشمل النظام القضائي الإداري مجلس الدولة و المحاكم الإدارية ."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_4> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_4> ;
+    dzdoc:targetDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_5> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يعد المجلس القضائي جهة استئناف للأحكام الصادرة عن المحاكم وكذا في الحالات المنصوص عليها قانونا."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_5_20050717_OpEnact_7953afd454> ;
+    dzdoc:replacementText "يعد المجلس القضائي جهة استئناف للأحكام الصادرة عن المحاكم وكذا في الحالات المنصوص عليها قانونا."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_5> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_5> ;
+    dzdoc:targetDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_6> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يشمل المجلس القضائي الغرف الآتية : الغرفة المدنية، الغرفة الجزائية، غرفة الاتهام، الغرفة الاستعجالية، غرفة شؤون الأسرة، غرفة الأحداث، الغرفة الاجتماعية، الغرفة العقارية، الغرفة البحرية، الغرفة التجارية. غير أنه يمكن رئيس المجلس القضائي ، بعد استطلاع رأي النائب العام ، تقليص عدد الغرف أو تقسيمها إلى أقسام حسب أهمية وحجم النشاط القضائي. تفصل كل غرفة في القضايا المعروضة عليها، ما لم ينص القانون على خلاف ذلك."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_6_20050717_OpEnact_dd405fd5e0> ;
+    dzdoc:replacementText "يشمل المجلس القضائي الغرف الآتية : الغرفة المدنية، الغرفة الجزائية، غرفة الاتهام، الغرفة الاستعجالية، غرفة شؤون الأسرة، غرفة الأحداث، الغرفة الاجتماعية، الغرفة العقارية، الغرفة البحرية، الغرفة التجارية. غير أنه يمكن رئيس المجلس القضائي ، بعد استطلاع رأي النائب العام ، تقليص عدد الغرف أو تقسيمها إلى أقسام حسب أهمية وحجم النشاط القضائي. تفصل كل غرفة في القضايا المعروضة عليها، ما لم ينص القانون على خلاف ذلك."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6> ;
+    dzdoc:targetDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_7> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يتشكل المجلس القضائي من : رئيس مجلس، نائب رئيس أو أكثر، رؤساء غرف، مستشارين، نائب عام ونواب عامين مساعدين، أمانة الضبط."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_7_20050717_OpEnact_4ae049a0da> ;
+    dzdoc:replacementText "يتشكل المجلس القضائي من : رئيس مجلس، نائب رئيس أو أكثر، رؤساء غرف، مستشارين، نائب عام ونواب عامين مساعدين، أمانة الضبط."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_7> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_7> ;
+    dzdoc:targetDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_8> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يفصل المجلس القضائي بتشكيلة جماعية ما لم ينص القانون على خلاف ذلك ."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_8_20050717_OpEnact_265b2c2911> ;
+    dzdoc:replacementText "يفصل المجلس القضائي بتشكيلة جماعية ما لم ينص القانون على خلاف ذلك ."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_8> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_8> ;
+    dzdoc:targetDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_9> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يحدد رئيس المجلس القضائي بموجب أمر ، توزيع القضاة على الغرف، وعند الاقتضاء على الأقسام، في بداية كل سنة قضائية، بعد استطلاع رأي النائب العام . ويجوز له أن يرأس أية غرفة . يمكن تعيين نفس القاضي في أكثر من غرفة أو قسم. في حالة حدوث مانع لرئيس المجلس القضائي يستخلفه نائبه، وإذا تعذر ذلك ينوبه أقدم رئيس غرفة. في حالة حدوث مانع لأحد القضاة يستخلف بقاض آخر بموجب أمر من رئيس المجلس القضائي ، بعد استطلاع رأي النائب العام."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_9_20050717_OpEnact_faa86b1c71> ;
+    dzdoc:replacementText "يحدد رئيس المجلس القضائي بموجب أمر ، توزيع القضاة على الغرف، وعند الاقتضاء على الأقسام، في بداية كل سنة قضائية، بعد استطلاع رأي النائب العام . ويجوز له أن يرأس أية غرفة . يمكن تعيين نفس القاضي في أكثر من غرفة أو قسم. في حالة حدوث مانع لرئيس المجلس القضائي يستخلفه نائبه، وإذا تعذر ذلك ينوبه أقدم رئيس غرفة. في حالة حدوث مانع لأحد القضاة يستخلف بقاض آخر بموجب أمر من رئيس المجلس القضائي ، بعد استطلاع رأي النائب العام."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9> ;
+    dzdoc:targetDocument <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2005-07-17"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+dzterm:court_president a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "رئيس المحكمة"@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_2> a dzdoc:Section ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#body> ;
+    dzdoc:directlyContains <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_2_subsec_1>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_2_subsec_2> ;
+    dzdoc:eId "sec_2" ;
+    dzdoc:hasSubsection <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_2_subsec_1>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_2_subsec_2> ;
+    dzdoc:heading "المجالس القضائية"@ar ;
+    dzdoc:number "الثاني" ;
+    dzdoc:position 1 .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_3> a dzdoc:Section ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#body> ;
+    dzdoc:directlyContains <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_3_subsec_1>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_3_subsec_2> ;
+    dzdoc:eId "sec_3" ;
+    dzdoc:hasSubsection <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_3_subsec_1>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_3_subsec_2> ;
+    dzdoc:heading "المحاكم"@ar ;
+    dzdoc:number "الثالث" ;
+    dzdoc:position 2 .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_3_subsec_1> a dzdoc:Subsection ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_3> ;
+    dzdoc:directlyContains <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_11>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_12> ;
+    dzdoc:eId "sec_3_subsec_1" ;
+    dzdoc:hasArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_11>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_12> ;
+    dzdoc:heading "اختصاص المحاكم وتشكيلها"@ar ;
+    dzdoc:number "الأول" ;
+    dzdoc:position 0 .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_4> a dzdoc:Section ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#body> ;
+    dzdoc:directlyContains <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_4_subsec_1>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_4_subsec_2> ;
+    dzdoc:eId "sec_4" ;
+    dzdoc:hasSubsection <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_4_subsec_1>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_4_subsec_2> ;
+    dzdoc:heading "الجهات القضائية الجزائية المتخصصة"@ar ;
+    dzdoc:number "الرابع" ;
+    dzdoc:position 3 .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#body> a dzdoc:Body ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContains <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_1>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_2>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_3>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_4> ;
+    dzdoc:hasSection <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_1>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_2>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_3>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_4> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_2_subsec_1> a dzdoc:Subsection ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_2> ;
+    dzdoc:directlyContains <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_5>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_7> ;
+    dzdoc:eId "sec_2_subsec_1" ;
+    dzdoc:hasArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_5>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_7> ;
+    dzdoc:heading "تنظيم المجالس القضائية وتشكيلها"@ar ;
+    dzdoc:number "الأول" ;
+    dzdoc:position 0 .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_2_subsec_2> a dzdoc:Subsection ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_2> ;
+    dzdoc:directlyContains <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_10>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_8>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9> ;
+    dzdoc:eId "sec_2_subsec_2" ;
+    dzdoc:hasArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_10>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_8>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9> ;
+    dzdoc:heading "سير المجالس القضائية"@ar ;
+    dzdoc:number "الثاني" ;
+    dzdoc:position 1 .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_4_subsec_2> a dzdoc:Subsection ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_4> ;
+    dzdoc:directlyContains <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_19>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_20>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_21> ;
+    dzdoc:eId "sec_4_subsec_2" ;
+    dzdoc:hasArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_19>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_20>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_21> ;
+    dzdoc:heading "المحكمة العسكرية"@ar ;
+    dzdoc:number "الثاني" ;
+    dzdoc:position 1 .
+
+dzterm:مجلس_قضائي a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "المجلس القضائي"@ar,
+        "يعد المجلس القضائي جهة استئناف للأحكام الصادرة عن المحاكم وكذا في الحالات المنصوص عليها قانونا."@ar ;
+    dzdoc:hasDefinitionOccurrence <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_5_defocc_47737ae44f36> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_1> a dzdoc:Section ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#body> ;
+    dzdoc:directlyContains <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_1>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_2>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_3>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_4> ;
+    dzdoc:eId "sec_1" ;
+    dzdoc:hasArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_1>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_2>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_3>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_4> ;
+    dzdoc:heading "أحكام عامة"@ar ;
+    dzdoc:number "الأول" ;
+    dzdoc:position 0 .
+
+dzterm:court a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "المحكمة"@ar ;
+    dzdoc:hasDefinitionOccurrence <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_10_defocc_82f1e6a6525c> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_1> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_1> ;
+    dzdoc:eId "art_1" ;
+    dzdoc:fullText "يهدف هذا القانون العضوي إلى تحديد التنظيم القضائي ."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_1> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_1_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_1_20050717_OpEnact_dff8b1b227> ;
+    dzdoc:introducedBy <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:introducedOn "2005-07-17"^^xsd:date ;
+    dzdoc:number "الأولى" ;
+    dzdoc:position 0 ;
+    dzdoc:usesTerm dzterm:judicial_organization,
+        dzterm:organic_law .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_11> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_3_subsec_1> ;
+    dzdoc:eId "art_11" ;
+    dzdoc:fullText "يحدد اختصاص المحكمة في قانون الإجراءات المدنية و قانون الإجراءات الجزائية والقوانين الخاصة المعمول بها."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_11> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_11_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_11_20050717_OpEnact_36a243588e> ;
+    dzdoc:introducedBy <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:introducedOn "2005-07-17"^^xsd:date ;
+    dzdoc:number "11" ;
+    dzdoc:position 10 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_11_extref_6aeff204>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_11_extref_8d9b9552> ;
+    dzdoc:usesTerm dzterm:jurisdiction .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_12> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_3_subsec_1> ;
+    dzdoc:eId "art_12" ;
+    dzdoc:fullText "تتشكل المحكمة من : رئيس المحكمة، نائب رئيس المحكمة قضاة، قاضي التحقيق أو أكثر، قاضي الأحداث أو أكثر، وكيل الجمهورية ووكلاء جمهورية مساعدين، أمانة الضبط."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_12> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_12_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_12_20050717_OpEnact_2ed7a7f829> ;
+    dzdoc:introducedBy <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:introducedOn "2005-07-17"^^xsd:date ;
+    dzdoc:number "12" ;
+    dzdoc:position 11 ;
+    dzdoc:usesTerm dzterm:court .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_14> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_3_subsec_2> ;
+    dzdoc:eId "art_14" ;
+    dzdoc:fullText "يرأس أقسام المحكمة قضاة حسب تخصصاتهم."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_14> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_14_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_14_20050717_OpEnact_9b2271951a> ;
+    dzdoc:introducedBy <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:introducedOn "2005-07-17"^^xsd:date ;
+    dzdoc:number "14" ;
+    dzdoc:position 13 ;
+    dzdoc:usesTerm dzterm:court .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_15> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_3_subsec_2> ;
+    dzdoc:eId "art_15" ;
+    dzdoc:fullText "تفصل المحكمة بقاض فرد، ما لم ينص القانون على خلاف ذلك."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_15> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_15_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_15_20050717_OpEnact_049cc34777> ;
+    dzdoc:introducedBy <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:introducedOn "2005-07-17"^^xsd:date ;
+    dzdoc:number "15" ;
+    dzdoc:position 14 ;
+    dzdoc:usesTerm dzterm:court .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_19> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_4_subsec_2> ;
+    dzdoc:eId "art_19" ;
+    dzdoc:fullText "تحدد القواعد المتعلقة باختصاص المحاكم العسكرية وتنظيمها وسيرها بموجب قانون القضاء العسكري ."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_19> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_19_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_19_20050717_OpEnact_5079d2f293> ;
+    dzdoc:introducedBy <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:introducedOn "2005-07-17"^^xsd:date ;
+    dzdoc:number "المادة 19" ;
+    dzdoc:position 18 ;
+    dzdoc:usesTerm dzterm:military_courts,
+        dzterm:military_justice_law .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_2> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_1> ;
+    dzdoc:eId "art_2" ;
+    dzdoc:fullText "يشمل التنظيم القضائي النظام القضائي العادي و النظام القضائي الإداري و محكمة التنازع ."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_2> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_2_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_2_20050717_OpEnact_935c9bd502> ;
+    dzdoc:introducedBy <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:introducedOn "2005-07-17"^^xsd:date ;
+    dzdoc:number "2" ;
+    dzdoc:position 1 ;
+    dzdoc:usesTerm dzterm:administrative_judicial_system,
+        dzterm:conflict_court,
+        dzterm:judicial_organization,
+        dzterm:ordinary_judicial_system .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_3> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_1> ;
+    dzdoc:eId "art_3" ;
+    dzdoc:fullText "يشمل النظام القضائي العادي المحكمة العليا و المجالس القضائية و المحاكم ."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_3> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_3_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_3_20050717_OpEnact_ff12abc229> ;
+    dzdoc:introducedBy <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:introducedOn "2005-07-17"^^xsd:date ;
+    dzdoc:number "3" ;
+    dzdoc:position 2 ;
+    dzdoc:usesTerm dzterm:courts,
+        dzterm:judicial_councils,
+        dzterm:ordinary_judicial_system,
+        dzterm:supreme_court .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_4> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_1> ;
+    dzdoc:eId "art_4" ;
+    dzdoc:fullText "يشمل النظام القضائي الإداري مجلس الدولة و المحاكم الإدارية ."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_4> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_4_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_4_20050717_OpEnact_075732cd13> ;
+    dzdoc:introducedBy <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:introducedOn "2005-07-17"^^xsd:date ;
+    dzdoc:number "4" ;
+    dzdoc:position 3 ;
+    dzdoc:usesTerm dzterm:administrative_courts,
+        dzterm:administrative_judicial_system,
+        dzterm:council_of_state .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_7> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_2_subsec_1> ;
+    dzdoc:eId "art_7" ;
+    dzdoc:fullText "يتشكل المجلس القضائي من : رئيس مجلس، نائب رئيس أو أكثر، رؤساء غرف، مستشارين، نائب عام ونواب عامين مساعدين، أمانة الضبط."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_7> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_7_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_7_20050717_OpEnact_4ae049a0da> ;
+    dzdoc:introducedBy <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:introducedOn "2005-07-17"^^xsd:date ;
+    dzdoc:number "المادة 7" ;
+    dzdoc:position 6 ;
+    dzdoc:usesTerm dzterm:مجلس_قضائي .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_3_subsec_2> a dzdoc:Subsection ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_3> ;
+    dzdoc:directlyContains <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_14>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_15>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_17> ;
+    dzdoc:eId "sec_3_subsec_2" ;
+    dzdoc:hasArticle <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_14>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_15>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_17> ;
+    dzdoc:number "الثاني" ;
+    dzdoc:position 1 .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_10> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:definesTerm dzterm:court ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_2_subsec_2> ;
+    dzdoc:eId "art_10" ;
+    dzdoc:fullText "المحكمة درجة أولى للتقاضي."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_10> ;
+    dzdoc:hasDefinitionOccurrence <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_10_defocc_82f1e6a6525c> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_10_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_10_20050717_OpEnact_bf7b2b39f6> ;
+    dzdoc:introducedBy <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:introducedOn "2005-07-17"^^xsd:date ;
+    dzdoc:number "المادة 10" ;
+    dzdoc:position 9 .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_17> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_3_subsec_2> ;
+    dzdoc:eId "art_17" ;
+    dzdoc:fullText "ينوب رئيس المحكمة في حالة حدوث مانع له ، نائب رئيس المحكمة ، وإذا تعذر ذلك، ينوبه أقدم قاض يعين بموجب أمر من رئيس المجلس القضائي ."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_17> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_17_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_17_20050717_OpEnact_8983edc952> ;
+    dzdoc:imposesObligation <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_17_obligation_0_f2e32917> ;
+    dzdoc:introducedBy <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:introducedOn "2005-07-17"^^xsd:date ;
+    dzdoc:number "17" ;
+    dzdoc:position 16 ;
+    dzdoc:usesTerm dzterm:court_president,
+        dzterm:judicial_council_president,
+        dzterm:vice_president .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_18> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_4_subsec_1> ;
+    dzdoc:eId "art_18" ;
+    dzdoc:fullText "توجد على مستوى كل مجلس قضائي محكمة جنايات تختص بالفصل في الأفعال الموصوفة جنايات وكذا الجنح والمحالفات المرتبطة بها. يحدد اختصاص محكمة الجنايات وتشكيلتها وسيرها بموجب التشريع المعمول به."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_18> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_18_para_0>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_18_para_1> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_18_20050717_OpEnact_60a64286cb> ;
+    dzdoc:introducedBy <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:introducedOn "2005-07-17"^^xsd:date ;
+    dzdoc:number "18" ;
+    dzdoc:position 17 ;
+    dzdoc:usesTerm dzterm:felony_court,
+        dzterm:judicial_council .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_20> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_4_subsec_2> ;
+    dzdoc:eId "art_20" ;
+    dzdoc:fullText "تلغى جميع الأحكام المخالفة لهذا القانون العضوي، لا سيما أحكام الأمر رقم 65-278 المؤرخ في 22 رجب عام 1385 الموافق 16 نوفمبر سنة 1965 والمذكور أعلاه."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_20> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_20_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_20_20050717_OpEnact_0ed9662e43> ;
+    dzdoc:introducedBy <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:introducedOn "2005-07-17"^^xsd:date ;
+    dzdoc:number "المادة 20" ;
+    dzdoc:position 19 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_20_extref_f5515a17> .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_5> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:definesTerm dzterm:مجلس_قضائي ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_2_subsec_1> ;
+    dzdoc:eId "art_5" ;
+    dzdoc:fullText "يعد المجلس القضائي جهة استئناف للأحكام الصادرة عن المحاكم وكذا في الحالات المنصوص عليها قانونا."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_5> ;
+    dzdoc:hasDefinitionOccurrence <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_5_defocc_47737ae44f36> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_5_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_5_20050717_OpEnact_7953afd454> ;
+    dzdoc:introducedBy <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:introducedOn "2005-07-17"^^xsd:date ;
+    dzdoc:number "المادة 5" ;
+    dzdoc:position 4 ;
+    dzdoc:usesTerm dzterm:مجلس_قضائي .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_8> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_2_subsec_2> ;
+    dzdoc:eId "art_8" ;
+    dzdoc:fullText "يفصل المجلس القضائي بتشكيلة جماعية ما لم ينص القانون على خلاف ذلك ."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_8> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_8_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_8_20050717_OpEnact_265b2c2911> ;
+    dzdoc:introducedBy <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:introducedOn "2005-07-17"^^xsd:date ;
+    dzdoc:number "المادة 8" ;
+    dzdoc:position 7 ;
+    dzdoc:specifiesCondition <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_8_condition_0_df257e89> ;
+    dzdoc:usesTerm dzterm:judicial_council .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_21> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_4_subsec_2> ;
+    dzdoc:eId "art_21" ;
+    dzdoc:fullText "ينشر هذا القانون العضوي في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية. حرر بالجزائر في 10 جمادى الثانية عام 1426 الموافق 17 يوليو سنة 2005. عبد العزيز بوتفليقة"@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_21> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_21_para_0>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_21_para_1>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_21_para_2> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_21_20050717_OpEnact_3f6474ab41> ;
+    dzdoc:imposesObligation <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_21_obligation_0_5dcba947> ;
+    dzdoc:introducedBy <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:introducedOn "2005-07-17"^^xsd:date ;
+    dzdoc:number "المادة 21" ;
+    dzdoc:position 20 .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_3_subsec_2> ;
+    dzdoc:eId "art_13" ;
+    dzdoc:fullText "تقسم المحكمة إلى الأقسام الآتية : القسم المدني، قسم الجنح، قسم المخالفات، القسم الاستعجالي، قسم شؤون الأسرة، قسم الأحداث، القسم الاجتماعي، القسم العقاري، القسم البحري، القسم التجاري. غير أنه يمكن رئيس المحكمة ، بعد استطلاع رأي وكيل الجمهورية ، تقليص عدد الأقسام أو تقسيمها إلى فروع حسب أهمية وحجم النشاط القضائي. بفصل كل قسم في القضايا المعروضة عليه، ما لم ينص القانون على خلاف ذلك."@ar ;
+    dzdoc:grantsPermission <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13_permission_0_65efe2ea> ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_13> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13_para_0>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13_para_1>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13_para_2> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_13_20050717_OpEnact_684a2ccd05> ;
+    dzdoc:introducedBy <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:introducedOn "2005-07-17"^^xsd:date ;
+    dzdoc:number "13" ;
+    dzdoc:position 12 ;
+    dzdoc:specifiesCondition <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_13_condition_0_65efe2ea> ;
+    dzdoc:usesTerm dzterm:court,
+        dzterm:court_president,
+        dzterm:prosecutor .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_2_subsec_1> ;
+    dzdoc:eId "art_6" ;
+    dzdoc:fullText "يشمل المجلس القضائي الغرف الآتية : الغرفة المدنية، الغرفة الجزائية، غرفة الاتهام، الغرفة الاستعجالية، غرفة شؤون الأسرة، غرفة الأحداث، الغرفة الاجتماعية، الغرفة العقارية، الغرفة البحرية، الغرفة التجارية. غير أنه يمكن رئيس المجلس القضائي ، بعد استطلاع رأي النائب العام ، تقليص عدد الغرف أو تقسيمها إلى أقسام حسب أهمية وحجم النشاط القضائي. تفصل كل غرفة في القضايا المعروضة عليها، ما لم ينص القانون على خلاف ذلك."@ar ;
+    dzdoc:grantsPermission <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6_permission_0_109b0451> ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_6> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6_para_0>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6_para_1> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_6_20050717_OpEnact_dd405fd5e0> ;
+    dzdoc:introducedBy <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:introducedOn "2005-07-17"^^xsd:date ;
+    dzdoc:number "المادة 6" ;
+    dzdoc:position 5 ;
+    dzdoc:specifiesCondition <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_6_condition_0_3cec4fbd> ;
+    dzdoc:usesTerm dzterm:النائب_العام,
+        dzterm:رئيس_المجلس_القضائي,
+        dzterm:مجلس_قضائي .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_3_subsec_2> ;
+    dzdoc:eId "art_16" ;
+    dzdoc:fullText "يحدد رئيس المحكمة بموجب أمر ، وبعد استطلاع رأي وكيل الجمهورية ، توزيع قضاة الحكم في بداية كل سنة قضائية على الأقسام أو الفروع عند الاقتضاء. ويجوز له أن يرأس أي قسم. يمكن تعيين نفس القاضي في أكثر من قسم أو فرع. في حالة حدوث مانع لأحد القضاة يستخلف بقاض آخر بأمر من رئيس المحكمة ، بعد استطلاع رأي وكيل الجمهورية ."@ar ;
+    dzdoc:grantsPermission <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16_permission_0_c5dcdd17> ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_16> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16_para_0>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16_para_1>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16_para_2>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16_para_3> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_16_20050717_OpEnact_36503ed90e> ;
+    dzdoc:imposesObligation <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16_obligation_0_58aaf9d2>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16_obligation_1_a4ffd84d> ;
+    dzdoc:introducedBy <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:introducedOn "2005-07-17"^^xsd:date ;
+    dzdoc:number "16" ;
+    dzdoc:position 15 ;
+    dzdoc:specifiesCondition <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_16_condition_0_38ac9d5d> ;
+    dzdoc:usesTerm dzterm:court_president,
+        dzterm:prosecutor .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble> a dzdoc:Preamble ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:hasCitation <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_0>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_1>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_10>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_11>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_12>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_13>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_14>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_15>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_16>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_2>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_3>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_4>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_5>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_6>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_7>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_8>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_9> ;
+    dzdoc:hasSegment <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_0>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_1>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_10>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_11>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_12>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_13>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_14>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_15>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_16>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_17>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_2>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_3>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_4>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_5>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_6>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_7>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_8>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble_segment_9> ;
+    dzdoc:text "يصدر القانون العضوي الآتي نصه،"@ar .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/organic-law/2005-07-17/05-11#sec_2_subsec_2> ;
+    dzdoc:eId "art_9" ;
+    dzdoc:fullText "يحدد رئيس المجلس القضائي بموجب أمر ، توزيع القضاة على الغرف، وعند الاقتضاء على الأقسام، في بداية كل سنة قضائية، بعد استطلاع رأي النائب العام . ويجوز له أن يرأس أية غرفة . يمكن تعيين نفس القاضي في أكثر من غرفة أو قسم. في حالة حدوث مانع لرئيس المجلس القضائي يستخلفه نائبه، وإذا تعذر ذلك ينوبه أقدم رئيس غرفة. في حالة حدوث مانع لأحد القضاة يستخلف بقاض آخر بموجب أمر من رئيس المجلس القضائي ، بعد استطلاع رأي النائب العام."@ar ;
+    dzdoc:grantsPermission <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_permission_0_e782fa86> ;
+    dzdoc:grantsRight <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_right_0_d3f37bd8> ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_9> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_para_0>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_para_1>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_para_2>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_para_3>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_para_4> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_9_20050717_OpEnact_faa86b1c71> ;
+    dzdoc:imposesObligation <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_obligation_0_4e357443> ;
+    dzdoc:introducedBy <https://legal.dz/resource/organic-law/2005-07-17/05-11> ;
+    dzdoc:introducedOn "2005-07-17"^^xsd:date ;
+    dzdoc:number "المادة 9" ;
+    dzdoc:position 8 ;
+    dzdoc:specifiesCondition <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_condition_0_b6a8227a>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#art_9_condition_1_38ac9d5d> ;
+    dzdoc:usesTerm dzterm:president_judicial_council .
+
+<https://legal.dz/resource/organic-law/2005-07-17/05-11> a dzdoc:OrganicLaw ;
+    dzdoc:authoredBy dzorg:parliament ;
+    dzdoc:citesLegalBasis <https://legal.dz/resource/constitution/unknown/2-125>,
+        <https://legal.dz/resource/law/unknown/04-11>,
+        <https://legal.dz/resource/law/unknown/04-12>,
+        <https://legal.dz/resource/law/unknown/66-154>,
+        <https://legal.dz/resource/law/unknown/66-155>,
+        <https://legal.dz/resource/law/unknown/66-156>,
+        <https://legal.dz/resource/law/unknown/75-58>,
+        <https://legal.dz/resource/law/unknown/89-22>,
+        <https://legal.dz/resource/law/unknown/98-01>,
+        <https://legal.dz/resource/law/unknown/98-02>,
+        <https://legal.dz/resource/law/unknown/98-03>,
+        <https://legal.dz/resource/order/unknown/65-278>,
+        <https://legal.dz/resource/order/unknown/71-28> ;
+    dzdoc:countryCode "dz" ;
+    dzdoc:dateText "10 جمادى الثانية عام 1426 الموافق 17 يوليو سنة 2005"@ar ;
+    dzdoc:documentNumber "05-11" ;
+    dzdoc:enactmentDate "2005-07-17"^^xsd:date ;
+    dzdoc:frbrThisUri "/akn/dz/act/organic-law/2005-07-17/05-11/main"^^xsd:anyURI ;
+    dzdoc:frbrUri "/akn/dz/act/organic-law/2005-07-17/05-11"^^xsd:anyURI ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_1>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_10>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_11>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_12>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_13>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_14>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_15>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_16>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_17>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_18>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_19>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_2>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_20>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_21>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_3>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_4>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_5>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_6>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_7>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_8>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#version_art_9> ;
+    dzdoc:hasAuthority dzorg:parliament ;
+    dzdoc:hasBody <https://legal.dz/resource/organic-law/2005-07-17/05-11#body> ;
+    dzdoc:hasExpression <https://legal.dz/resource/organic-law/2005-07-17/05-11/expression> ;
+    dzdoc:hasLegalBasisAssertion <https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_19f612f80715>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_371b0e2bffb1>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_5e27eb6f1cc8>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_71b25777e489>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_81d27b0c615e>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_8db57a873bcf>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_91e3030dcdd6>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_af64db0596b7>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_bbd15721e62c>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_ca70a414db95>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_d0076d92e226>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_d192469433fd>,
+        <https://legal.dz/resource/organic-law/2005-07-17/05-11#legal_basis_f9eb12353b06> ;
+    dzdoc:hasLifecycleAssertion <https://legal.dz/resource/organic-law/2005-07-17/05-11#lifecycle_1c7c5688908b> ;
+    dzdoc:hasPreamble <https://legal.dz/resource/organic-law/2005-07-17/05-11#preamble> ;
+    dzdoc:hasPreface <https://legal.dz/resource/organic-law/2005-07-17/05-11#preface> ;
+    dzdoc:publicationDate "2005-07-17"^^xsd:date ;
+    dzdoc:repeals <https://legal.dz/resource/order/1965-11-16/65-278> ;
+    dzdoc:sourceFile "Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/11-05_2005-07-17.xml" ;
+    dzdoc:title "قانون عضوي رقم 05-11 يتعلق بالتنظيم القضائي"@ar .
+

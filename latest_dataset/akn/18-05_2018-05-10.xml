@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="law">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/law/2018-05-10/18-05/main"/>
+      <FRBRuri value="/akn/dz/act/law/2018-05-10/18-05"/>
+      <FRBRdate date="2018-05-10" name="enactment"/>
+      <FRBRauthor href="#parliament"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="18-05"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/law/2018-05-10/18-05/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/law/2018-05-10/18-05/ara@"/>
+      <FRBRdate date="2018-05-10" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/law/2018-05-10/18-05/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/law/2018-05-10/18-05/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="parliament" href="/ontology/organization/dz/parliament" showAs="البرلمان"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="president" href="/ontology/person/dz/president" showAs="رئيس الجمهورية"/>
+  </references>
+</meta>
+    <preface>
+  <docTitle>قانون يتعلق بالتجارة الإلكترونية</docTitle>
+  <docNumber>18-05</docNumber>
+  <docDate date="2018-05-10">24 شعبان عام 1439 الموافق 10 مايو سنة 2018</docDate>
+  <docAuthority>البرلمان</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>إن رئيس الجمهورية،</p>
+    </citation>
+    <citation>
+      <p>وبعد رأي مجلس الدولة،</p>
+    </citation>
+    <citation>
+      <p>وبعد مصادقة البرلمان</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يصدر القانون الآتي نصه :</p>
+  </formula>
+</preamble>
+    <body>
+      <chapter eId="chp_1">
+        <num>الأول</num>
+        <heading>أحكام عامة</heading>
+        <article eId="art_1">
+          <num>الأولى</num>
+          <content>
+          <paragraph>
+          <p>يحدد هذا القانون القواعد العامة المتعلقة بـ<term refersTo="#e-commerce">التجارة الإلكترونية</term> للسلع والخدمات.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_2">
+          <num>2</num>
+          <content>
+          <paragraph>
+          <p><obligation>يطبق القانون الجزائري في مجال المعاملات التجارية الإلكترونية</obligation> <condition>في حالة ما إذا كان أحد أطراف العقد الإلكتروني: متمتعا بالجنسية الجزائرية، أو مقيما إقامة شرعية في الجزائر، أو شخصا معنويا خاضعا للقانون الجزائري، أو كان العقد محل إبرام أو تنفيذ في الجزائر</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_3">
+          <num>3</num>
+          <content>
+          <paragraph>
+          <p>تمارس <term refersTo="#e-commerce">التجارة الإلكترونية</term> في إطار التشريع والتنظيم المعمول بهما.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>غير أنه تمنع كل معاملة عن طريق الاتصالات الإلكترونية تتعلق بما يأتي :</obligation>
+          <list>
+          <point><p>لعب القمار والرهان واليانصيب،</p></point>
+          <point><p>المشروبات الكحولية والتبغ،</p></point>
+          <point><p>المنتجات الصيدلانية،</p></point>
+          <point><p>المنتجات التي تمس بحقوق الملكية الفكرية أو الصناعية أو التجارية،</p></point>
+          <point><p>كل سلعة أو خدمة محظورة بموجب التشريع المعمول به،</p></point>
+          <point><p>كل سلعة أو خدمة تستوجب إعداد عقد رسمي.</p></point>
+          </list>
+          </p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>تخضع كل المعاملات التي تتم عن طريق الاتصالات الإلكترونية إلى الحقوق والرسوم التي ينص عليها التشريع والتنظيم المعمول بهما</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_4">
+          <num>4</num>
+          <content>
+          <paragraph>
+          <p><right>يمكن أن تكون الاستثمارات الداعمة لأنشطة التجارة الإلكترونية موضوع تدابير تحفيزية طبقا للتشريع المعمول به</right>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_5">
+          <num>5</num>
+          <content>
+          <paragraph>
+          <p><obligation>تمنع كل معاملة عن طريق الاتصالات الإلكترونية في العتاد والتجهيزات والمنتجات الحساسة المحددة عن طريق التنظيم المعمول به، وكذا كل المنتجات و/أو الخدمات الأخرى التي من شأنها المساس بمصالح الدفاع الوطني والنظام العام والأمن العمومي</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_6">
+          <num>6</num>
+          <content>
+          <paragraph>
+          <p>يقصد في مفهوم هذا القانون بما يأتي:</p>
+          </paragraph>
+          <paragraph>
+          <p><def refersTo="#e-commerce">التجارة الإلكترونية : النشاط الذي يقوم بموجبه مورد إلكتروني باقتراح أو ضمان توفير سلع وخدمات عن بعد لمستهلك إلكتروني، عن طريق الاتصالات الإلكترونية.</def></p>
+          </paragraph>
+          <paragraph>
+          <p><def refersTo="#e-contract">العقد الإلكتروني : العقد بمفهوم <ref href="/akn/dz/act/law/2004-06-23/04-02">القانون رقم 04-02 المؤرخ في 5 جمادى الأولى عام 1425 الموافق 23 يونيو سنة 2004</ref> الذي يحدد القواعد المطبقة على الممارسات التجارية، ويتم إبرامه عن بعد، دون الحضور الفعلي والمتزامن لأطرافه باللجوء حصريا لتقنية الاتصال الإلكتروني.</def></p>
+          </paragraph>
+          <paragraph>
+          <p><def refersTo="#e-consumer">المستهلك الإلكتروني : كل شخص طبيعي أو معنوي يقتني بعوض أو بصفة مجانية سلعة أو خدمة عن طريق الاتصالات الإلكترونية من المورد الإلكتروني بغرض الاستخدام النهائي.</def></p>
+          </paragraph>
+          <paragraph>
+          <p><def refersTo="#e-supplier">المورد الإلكتروني : كل شخص طبيعي أو معنوي يقوم بتسويق أو اقتراح توفير السلع أو الخدمات عن طريق الاتصالات الإلكترونية.</def></p>
+          </paragraph>
+          <paragraph>
+          <p><def refersTo="#e-payment-method">وسيلة الدفع الإلكتروني : كل وسيلة دفع مرخص بها طبقا للتشريع المعمول به تمكن صاحبها من القيام بالدفع عن قرب أو عن بعد عبر منظومة إلكترونية.</def></p>
+          </paragraph>
+          <paragraph>
+          <p><def refersTo="#e-advertising">الإشهار الإلكتروني : كل إعلان يهدف بصفة مباشرة أو غير مباشرة إلى ترويج بيع سلع أو خدمات عن طريق الاتصالات الإلكترونية.</def></p>
+          </paragraph>
+          <paragraph>
+          <p><def refersTo="#pre-order">الطلبية المسبقة : هو تعهد بالبيع يمكن أن يقترحه المورد الإلكتروني على المستهلك الالكتروني في حالة عدم توفر المنتوج في المخزون.</def></p>
+          </paragraph>
+          <paragraph>
+          <p><def refersTo="#domain-name">اسم النطاق : عبارة عن سلسلة أحرف و/أو أرقام مقيسة ومسجلة لدى السجل الوطني لأسماء النطاق، وتسمح بالتعرف والولوج إلى الموقع الإلكتروني.</def></p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_2">
+        <num>الثاني</num>
+        <heading>ممارسات التجارة الإلكترونية</heading>
+        <section eId="chp_2_sec_1">
+          <num>الأول</num>
+          <heading>المعاملات التجارية العابرة للحدود</heading>
+          <article eId="art_7">
+            <num>7</num>
+            <content>
+            <paragraph>
+            <p><right>يعفى من إجراءات مراقبة التجارة الخارجية والصرف البيع عن طريق الاتصالات الإلكترونية لسلعة و/أو خدمة من طرف <term refersTo="#electronic_supplier">مورد إلكتروني</term> مقيم لمستهلك إلكتروني موجود في بلد أجنبي</right>، <condition>عندما لا تتجاوز قيمة هذه السلعة أو الخدمة ما يعادلها بالدينار الحد المنصوص عليه في التشريع والتنظيم المعمول بهما</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يجب أن تحول عائدات هذا البيع بعد الدفع إلى حساب <term refersTo="#electronic_supplier">المورد الإلكتروني</term> الموطن في الجزائر لدى بنك معتمد من قبل بنك الجزائر، أو لدى بريد الجزائر</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>يعفى من إجراءات مراقبة التجارة الخارجية والصرف شراء السلع و/أو الخدمات الرقمية الموجهة حصريا للاستعمال الشخصي من قبل مستهلك إلكتروني مقيم بالجزائر لدى مورد إلكتروني موجود في بلد أجنبي</right> <condition>عندما لا تتجاوز قيمة هذه السلعة أو الخدمة ما يعادلها بالدينار الحد المنصوص عليه في التشريع والتنظيم المعمول بهما</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تتم تغطية الدفع الإلكتروني بمناسبة هذا الشراء عن طريق الحساب البنكي بالعملة الصعبة "شخص طبيعي" للمستهلك الإلكتروني الموطن بالجزائر.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد شروط وكيفيات تطبيق هذه المادة، عند الحاجة، عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_2_sec_2">
+          <num>الثاني</num>
+          <heading>شروط ممارسة التجارة الإلكترونية</heading>
+          <article eId="art_8">
+            <num>المادة 8</num>
+            <content>
+            <paragraph>
+            <p><obligation>يخضع <term refersTo="#ecommerce_activity">نشاط التجارة الإلكترونية</term> للتسجيل في <term refersTo="#commercial_register">السجل التجاري</term> أو في <term refersTo="#crafts_register">سجل الصناعات التقليدية والحرفية</term>، حسب الحالة، ولنشر موقع إلكتروني أو صفحة إلكترونية على الإنترنت، مستضاف في الجزائر بامتداد ".com.dz"</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يجب أن يتوفر الموقع الإلكتروني <term refersTo="#e_supplier">للمورد الإلكتروني</term> على وسائل تسمح بالتأكد من صحته</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_9">
+            <num>المادة 9</num>
+            <content>
+            <paragraph>
+            <p>تنشأ <term refersTo="#national_file_e_suppliers">بطاقية وطنية للموردين الإلكترونيين</term> لدى <term refersTo="#cnrc">المركز الوطني للسجل التجاري</term>، تضم <term refersTo="#e_suppliers">الموردين الإلكترونيين</term> المسجلين في <term refersTo="#commercial_register">السجل التجاري</term>، أو <term refersTo="#crafts_register">سجل الصناعات التقليدية والحرفية</term>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>لا يمكن ممارسة <term refersTo="#ecommerce_activity">نشاط التجارة الإلكترونية</term> إلا بعد إيداع اسم النطاق لدى مصالح <term refersTo="#cnrc">المركز الوطني للسجل التجاري</term></condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تنشر <term refersTo="#national_file_e_suppliers">البطاقية الوطنية للموردين الإلكترونيين</term> عن طريق الاتصالات الإلكترونية وتكون في متناول <term refersTo="#e_consumer">المستهلك الإلكتروني</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_2_sec_3">
+          <num>الثالث</num>
+          <heading>المتطلبات المتعلقة بالمعاملات التجارية عن طريق الاتصال الإلكتروني</heading>
+          <article eId="art_10">
+            <num>10</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب أن تكون كل <term refersTo="#transaction">معاملة تجارية إلكترونية</term> مسبوقة ب<term refersTo="#offer">عرض تجاري إلكتروني</term> وأن توثق بموجب <term refersTo="#contract">عقد إلكتروني</term> يصادق عليه <term refersTo="#consumer">المستهلك الإلكتروني</term></obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_11">
+            <num>11</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب أن يقدم <term refersTo="#supplier">المورد الإلكتروني</term> <term refersTo="#offer">العرض التجاري الإلكتروني</term> بطريقة مرئية ومقروءة ومفهومة، ويجب أن يتضمن على الأقل، ولكن ليس على سبيل الحصر، المعلومات الآتية :</obligation></p>
+            <list>
+            <point>
+            <p>رقم التعريف الجبائي، والعناوين المادية والإلكترونية، ورقم هاتف المورد الإلكتروني،</p>
+            </point>
+            <point>
+            <p>رقم السجل التجاري أو رقم البطاقة المهنية للحرفي،</p>
+            </point>
+            <point>
+            <p>طبيعة، وخصائص وأسعار السلع أو الخدمات المقترحة باحتساب كل الرسوم،</p>
+            </point>
+            <point>
+            <p>حالة توفر السلعة أو الخدمة،</p>
+            </point>
+            <point>
+            <p>كيفيات ومصاريف وأجال التسليم،</p>
+            </point>
+            <point>
+            <p>الشروط العامة للبيع، لاسيما البنود المتعلقة بحماية المعطيات ذات الطابع الشخصي،</p>
+            </point>
+            <point>
+            <p>شروط الضمان التجاري وخدمة ما بعد البيع،</p>
+            </point>
+            <point>
+            <p>طريقة حساب السعر، عندما لا يمكن تحديده مسبقا،</p>
+            </point>
+            <point>
+            <p>كيفيات وإجراءات الدفع،</p>
+            </point>
+            <point>
+            <p>شروط فسخ العقد عند الاقتضاء،</p>
+            </point>
+            <point>
+            <p>وصف كامل لمختلف مراحل تنفيذ المعاملة الإلكترونية،</p>
+            </point>
+            <point>
+            <p>مدة صلاحية العرض، عند الاقتضاء،</p>
+            </point>
+            <point>
+            <p>شروط وأجال العدول عند الاقتضاء،</p>
+            </point>
+            <point>
+            <p>طريقة تأكيد الطلبية،</p>
+            </point>
+            <point>
+            <p>موعد التسليم وسعر المنتوج موضوع الطلبية المسبقة وكيفيات إلغاء الطلبية المسبقة، عند الاقتضاء،</p>
+            </point>
+            <point>
+            <p>طريقة إرجاع المنتوج أو استبداله أو تعويضه،</p>
+            </point>
+            <point>
+            <p>تكلفة استخدام وسائل الاتصالات الإلكترونية عندما تحتسب على أساس آخر غير التعريفات المعمول بها.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_12">
+            <num>12</num>
+            <content>
+            <paragraph>
+            <p>تمر طلبية منتوج أو خدمة عبر ثلاث مراحل إلزامية :</p>
+            <list>
+            <point>
+            <p>وضع الشروط التعاقدية في متناول <term refersTo="#consumer">المستهلك الإلكتروني</term>، بحيث يتم تمكينه من التعاقد بعلم ودراية تامة،</p>
+            </point>
+            <point>
+            <p>التحقق من تفاصيل الطلبية من طرف <term refersTo="#consumer">المستهلك الإلكتروني</term>، لاسيما فيما يخص ماهية المنتوجات أو الخدمات المطلوبة، والسعر الإجمالي والوحدوي، والكميات المطلوبة بغرض تمكينه من تعديل الطلبية، وإلغائها أو تصحيح الأخطاء المحتملة،</p>
+            </point>
+            <point>
+            <p>تأكيد الطلبية الذي يؤدي إلى تكوين العقد.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يجب أن يكون الاختيار الذي يقوم به <term refersTo="#consumer">المستهلك الإلكتروني</term> معبرا عنه بصراحة</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يجب ألا تتضمن الخانات المعدة للملء من قبل <term refersTo="#consumer">المستهلك الإلكتروني</term>، أية معطيات تهدف إلى توجيه اختياره</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_13">
+            <num>13</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب أن يتضمن <term refersTo="#contract">العقد الإلكتروني</term> على الخصوص المعلومات الآتية :</obligation></p>
+            <list>
+            <point>
+            <p>الخصائص التفصيلية للسلع أو الخدمات،</p>
+            </point>
+            <point>
+            <p>شروط وكيفيات التسليم،</p>
+            </point>
+            <point>
+            <p>شروط الضمان وخدمات ما بعد البيع،</p>
+            </point>
+            <point>
+            <p>شروط فسخ العقد الإلكتروني،</p>
+            </point>
+            <point>
+            <p>شروط وكيفيات الدفع،</p>
+            </point>
+            <point>
+            <p>شروط وكيفيات إعادة المنتوج،</p>
+            </point>
+            <point>
+            <p>كيفيات معالجة الشكاوى،</p>
+            </point>
+            <point>
+            <p>شروط وكيفيات الطلبية المسبقة عند الاقتضاء،</p>
+            </point>
+            <point>
+            <p>الشروط والكيفيات الخاصة المتعلقة بالبيع بالتجريب عند الاقتضاء،</p>
+            </point>
+            <point>
+            <p>الجهة القضائية المختصة في حالة النزاع، طبقا لأحكام <ref href="#art_2">المادة 2</ref> أعلاه ،</p>
+            </point>
+            <point>
+            <p>مدة العقد حسب الحالة.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_14">
+            <num>14</num>
+            <content>
+            <paragraph>
+            <p><condition>حالة في عدم احترام أحكام <ref href="#art_10">المادة 10</ref> أو أحكام <ref href="#art_13">المادة 13</ref> أعلاه، من طرف <term refersTo="#supplier">المورد الإلكتروني</term></condition>، <right>يمكن <term refersTo="#consumer">المستهلك الالكتروني</term> أن يطلب إبطال العقد والتعويض عن الضرر الذي لحق به</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_15">
+            <num>15</num>
+            <content>
+            <paragraph>
+            <p><obligation>لا يمكن أن تكون <term refersTo="#pre_order">الطلبية المسبقة</term> محل دفع إلا <condition>في حالة توفر المنتوج في المخزون</condition></obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>بمجرد توفر المنتوج</condition> تتحول <term refersTo="#pre_order">الطلبية المسبقة</term> بصفة ضمنية إلى طلبية مؤكدة.</p>
+            </paragraph>
+            <paragraph>
+            <p>دون المساس بـ <right>حق <term refersTo="#e_consumer">المستهلك الإلكتروني</term> في التعويض</right>، <obligation>يجب على <term refersTo="#e_supplier">المورد الإلكتروني</term> إرجاع الثمن <condition>في حالة دفعه قبل توفر المنتوج في المخزون</condition></obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_2_sec_4">
+          <num>الرابع</num>
+          <heading>التزامات المستهلك الإلكتروني</heading>
+          <article eId="art_16">
+            <num>16</num>
+            <content>
+            <paragraph>
+            <p><condition>ما لم ينص العقد الإلكتروني على خلاف ذلك</condition>، <obligation>يلتزم <term refersTo="#consumer">المستهلك الإلكتروني</term> بدفع الثمن المتفق عليه في العقد الإلكتروني بمجرد إبرامه</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_17">
+            <num>17</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على <term refersTo="#supplier">المورد الإلكتروني</term> أن يطلب من <term refersTo="#consumer">المستهلك الإلكتروني</term> توقيع وصل استلام عند التسليم الفعلي للمنتوج أو تأدية الخدمة موضوع العقد الإلكتروني</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>لا يمكن <term refersTo="#consumer">المستهلك الإلكتروني</term> أن يرفض توقيع وصل الاستلام</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تسلم نسخة من وصل الاستلام وجوبا <term refersTo="#consumer">للمستهلك الإلكتروني</term></obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_2_sec_5">
+          <num>الخامس</num>
+          <heading>واجبات المورد الإلكتروني ومسؤولياته</heading>
+          <article eId="art_18">
+            <num>المادة 18</num>
+            <content>
+            <paragraph>
+            <p>بعد إبرام <term refersTo="#electronic_contract">العقد الإلكتروني</term>، يصبح <term refersTo="#electronic_supplier">المورد الإلكتروني</term> <obligation>مسؤولا بقوة القانون أمام <term refersTo="#electronic_consumer">المستهلك الإلكتروني</term> عن حسن تنفيذ الالتزامات المترتبة على هذا العقد</obligation>، سواء تم تنفيذها من قبله أو من قبل مؤديي خدمات آخرين، دون المساس بحقه في الرجوع ضدهم.</p>
+            </paragraph>
+            <paragraph>
+            <p>غير أنه، <condition>يمكن <term refersTo="#electronic_supplier">المورد الإلكتروني</term> أن يتحلل من كامل مسؤوليته أو جزء منها إذا أثبت أن عدم التنفيذ أو سوءه يعود إلى <term refersTo="#electronic_consumer">المستهلك الإلكتروني</term> أو إلى قوة قاهرة</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_19">
+            <num>المادة 19</num>
+            <content>
+            <paragraph>
+            <p>بمجرد إبرام العقد، <obligation>يلزم <term refersTo="#electronic_supplier">المورد الإلكتروني</term> بإرسال نسخة إلكترونية من العقد إلى <term refersTo="#electronic_consumer">المستهلك الإلكتروني</term></obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_20">
+            <num>المادة 20</num>
+            <content>
+            <paragraph>
+            <p>يترتب على كل بيع لمنتوج أو تأدية خدمة عن طريق الاتصالات الإلكترونية، <obligation>إعداد فاتورة من قبل <term refersTo="#electronic_supplier">المورد الإلكتروني</term>، تسلم <term refersTo="#electronic_consumer">للمستهلك الإلكتروني</term></obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يجب أن تعد الفاتورة طبقا للتشريع والتنظيم المعمول بهما</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>يمكن أن يطلب <term refersTo="#electronic_consumer">المستهلك الإلكتروني</term> الفاتورة في شكلها الورقي</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_21">
+            <num>المادة 21</num>
+            <content>
+            <paragraph>
+            <p><condition>عندما يسلم <term refersTo="#electronic_supplier">المورد الإلكتروني</term> منتوجا أو خدمة لم يتم طلبها من طرف <term refersTo="#electronic_consumer">المستهلك الإلكتروني</term></condition>، لا يمكنه المطالبة بدفع الثمن أو مصاريف التسليم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_22">
+            <num>المادة 22</num>
+            <content>
+            <paragraph>
+            <p><condition>في حالة عدم احترام <term refersTo="#electronic_supplier">المورد الإلكتروني</term> لآجال التسليم</condition>، <right>يمكن <term refersTo="#electronic_consumer">المستهلك الإلكتروني</term> إعادة إرسال المنتوج على حالته في أجل أقصاه أربعة (4) أيام عمل ابتداء من تاريخ التسليم الفعلي للمنتوج</right>، دون المساس بحقه في المطالبة بالتعويض عن الضرر.</p>
+            </paragraph>
+            <paragraph>
+            <p>وفي هذه الحالة، <obligation>يجب على <term refersTo="#electronic_supplier">المورد الإلكتروني</term> أن يرجع إلى <term refersTo="#electronic_consumer">المستهلك الإلكتروني</term> المبلغ المدفوع والنفقات المتعلقة بإعادة إرسال المنتوج، خلال أجل خمسة عشر (15) يوما ابتداء من تاريخ استلامه المنتوج</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_23">
+            <num>المادة 23</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على <term refersTo="#electronic_supplier">المورد الإلكتروني</term> استعادة سلعته، في حالة تسليم غرض غير مطابق للطلبية أو في حالة ما إذا كان المنتوج معيبا</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يجب على <term refersTo="#electronic_consumer">المستهلك الإلكتروني</term> إعادة إرسال السلعة في غلافها الأصلي، خلال مدة أقصاها أربعة (4) أيام عمل ابتداء من تاريخ التسليم الفعلي للمنتوج، مع الإشارة إلى سبب الرفض</obligation>، وتكون تكاليف إعادة الإرسال على عاتق <term refersTo="#electronic_supplier">المورد الإلكتروني</term>.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويلزم <term refersTo="#electronic_supplier">المورد الإلكتروني</term> بما يأتي :</p>
+            <list>
+            <point><p>تسليم جديد موافق للطلبية، أو</p></point>
+            <point><p>إصلاح المنتوج المعيب، أو</p></point>
+            <point><p>استبدال المنتوج بآخر مماثل، أو</p></point>
+            <point><p>إلغاء الطلبية وإرجاع المبالغ المدفوعة دون الإخلال بإمكانية مطالبة <term refersTo="#electronic_consumer">المستهلك الإلكتروني</term> بالتعويض في حالة وقوع ضرر.</p></point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يجب أن يتم إرجاع المبالغ المدفوعة خلال أجل خمسة عشر (15) يوما من تاريخ استلامه المنتوج</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_24">
+            <num>المادة 24</num>
+            <content>
+            <paragraph>
+            <p><obligation>على <term refersTo="#electronic_supplier">المورد الإلكتروني</term> عدم الموافقة على طلبية منتوج غير متوفر في مخزونه</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_25">
+            <num>المادة 25</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على كل <term refersTo="#electronic_supplier">مورد إلكتروني</term> حفظ سجلات المعاملات التجارية المنجزة وتواريخها وإرسالها إلكترونيا إلى المركز الوطني للسجل التجاري</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق أحكام <ref href="#art_25">هذه المادة</ref> عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_26">
+            <num>26</num>
+            <content>
+            <paragraph>
+            <p><obligation>ينبغي ل<term refersTo="#electronic_supplier">لمورد الإلكتروني</term> الذي يقوم بجمع <term refersTo="#personal_data">المعطيات ذات الطابع الشخصي</term> ويشكل ملفات الزبائن والزبائن المحتملين، ألا يجمع إلا البيانات الضرورية لإبرام المعاملات التجارية</obligation>. كما <obligation>يجب عليه</obligation> :
+            <list>
+            <point>
+            <p><obligation>الحصول على موافقة <term refersTo="#electronic_consumers">المستهلكين الإلكترونيين</term> قبل جمع البيانات</obligation>،</p>
+            </point>
+            <point>
+            <p><obligation>ضمان أمن نظم المعلومات وسرية البيانات</obligation>،</p>
+            </point>
+            <point>
+            <p><obligation>الالتزام بالأحكام القانونية والتنظيمية المعمول بها في هذا المجال</obligation>.</p>
+            </point>
+            </list></p>
+            </paragraph>
+            <paragraph>
+            <p>يتم تحديد كيفيات تخزين <term refersTo="#personal_data">المعطيات ذات الطابع الشخصي</term> وتأمينها وفقا للتشريع والتنظيم المعمول بهما.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_2_sec_6">
+          <num>السادس</num>
+          <heading>الدفع في المعاملات الإلكترونية</heading>
+          <article eId="art_27">
+            <num>27</num>
+            <content>
+            <paragraph>
+            <p>يتم الدفع في <term refersTo="#e_commerce_transactions">المعاملات التجارية الإلكترونية</term> إما عن بعد أو عند تسليم المنتوج، عن طريق <term refersTo="#payment_methods">وسائل الدفع المرخص بها</term>، وفقا للتشريع المعمول به.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>عندما يكون الدفع إلكترونيا</condition>، فإنه يتم من خلال <term refersTo="#payment_platforms">منصات دفع مخصصة لهذا الغرض</term>، منشأة ومستغلة حصريا من طرف <term refersTo="#banks">البنوك المعتمدة</term> من قبل <term refersTo="#bank_of_algeria">بنك الجزائر</term> و<term refersTo="#algeria_post">بريد الجزائر</term> وموصولة بأي نوع من أنواع <term refersTo="#pos_terminals">محطات الدفع الإلكتروني</term> عبر شبكة <term refersTo="#public_telecom_operator">المتعامل العمومي للمواصلات السلكية واللاسلكية</term>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يتم الدفع في <term refersTo="#cross_border_transactions">المعاملات التجارية العابرة للحدود</term>، حصريا عن بعد عبر الاتصالات الإلكترونية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_28">
+            <num>28</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب أن يكون وصل موقع الإنترنت الخاص بـ <term refersTo="#e_supplier">المورد الإلكتروني</term> بـ <term refersTo="#payment_platform">منصة الدفع الإلكترونية</term> مؤمنا بواسطة <term refersTo="#e_authentication_system">نظام تصديق إلكتروني</term></obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_29">
+            <num>29</num>
+            <content>
+            <paragraph>
+            <p>تخضع <term refersTo="#payment_platforms">منصات الدفع الإلكتروني</term> المنشأة والمستغلة طبقا لـ <ref href="#art_27">المادة 27 أعلاه</ref>، لرقابة <term refersTo="#bank_of_algeria">بنك الجزائر</term> لضمان استجابتها لمتطلبات التشغيل البيني وسرية البيانات وسلامتها وأمن تبادلها.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_2_sec_7">
+          <num>السابع</num>
+          <heading>الإشهار الإلكتروني</heading>
+          <article eId="art_30">
+            <num>30</num>
+            <content>
+            <paragraph>
+            <p>دون المساس بالأحكام التشريعية والتنظيمية المعمول بها في هذا المجال، <obligation>كل إشهار أو ترويج أو رسالة ذات طبيعة أو هدف تجاري تتم عن طريق الاتصالات الإلكترونية يجب أن يلبي المقتضيات الآتية</obligation> :</p>
+            <list>
+            <point>
+            <p>أن تكون محددة بوضوح كرسالة تجارية أو إشهارية،</p>
+            </point>
+            <point>
+            <p>أن تسمح بتحديد الشخص الذي تم تصميم الرسالة لحسابه،</p>
+            </point>
+            <point>
+            <p>ألا تمس بالآداب العامة والنظام العام.</p>
+            </point>
+            <point>
+            <p>أن تحدد بوضوح ما إذا كان هذا العرض التجاري يشمل تخفيضا أو مكافآت أو هدايا، في حالة ما إذا كان هذا العرض تجاريا أو تنافسيا أو ترويجيا،</p>
+            </point>
+            <point>
+            <p>التأكد من أن جميع الشروط الواجب استيفاؤها للاستفادة من العرض التجاري، ليست مضللة ولا غامضة.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_32">
+            <num>32</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على <term refersTo="#e_supplier">المورد الإلكتروني</term> أن يضع منظومة إلكترونية يسمح من خلالها لكل شخص بالتعبير عن رغبته في عدم تلقي أي إشهار منه عن طريق الاتصالات الإلكترونية، دون مصاريف أو مبررات</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>و في هذه الحالة، <obligation>يلزم <term refersTo="#e_supplier">المورد الإلكتروني</term> بما يأتي</obligation> :</p>
+            <list>
+            <point>
+            <p>تسليم وصل استلام عن طريق الاتصالات الإلكترونية يؤكد من خلاله للشخص المعني تسجيل طلبه،</p>
+            </point>
+            <point>
+            <p>اتخاذ التدابير اللازمة لتلبية رغبته في غضون 24 ساعة،</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_33">
+            <num>33</num>
+            <content>
+            <paragraph>
+            <p><condition>في حالة نزاع</condition>، <obligation>ينبغي ل<term refersTo="#e_supplier">المورد الإلكتروني</term> أن يثبت أن إرسال الإشهارات الإلكترونية خضع للموافقة المسبقة والحرة ، وأن شروط <ref href="#art_30">المادة 30</ref> أعلاه قد تم استيفاؤها</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_34">
+            <num>34</num>
+            <content>
+            <paragraph>
+            <p><obligation>يمنع نشر أي إشهار أو ترويج عن طريق الاتصالات الإلكترونية لكل منتوج أو خدمة ممنوعة من التسويق عن طريق الاتصالات الإلكترونية بموجب التشريع والتنظيم المعمول بهما</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+      <chapter eId="chp_3">
+        <num>الثالث</num>
+        <heading>الجرائم والعقوبات</heading>
+        <section eId="chp_3_sec_1">
+          <num>الأول</num>
+          <heading>مراقبة الموردين الإلكترونيين ومعاينة المخالفات</heading>
+          <article eId="art_35">
+            <num>35</num>
+            <content>
+            <paragraph>
+            <p><obligation>يخضع <term refersTo="#electronic_supplier">المورد الإلكتروني</term> للتشريع والتنظيم المعمول بهما المطبقين على الأنشطة التجارية وحماية المستهلك</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_36">
+            <num>36</num>
+            <content>
+            <paragraph>
+            <p>زيادة على ضباط وأعوان الشرطة القضائية المنصوص عليهم بموجب <ref href="/akn/dz/act/code/1966-06-08/66-155">قانون الإجراءات الجزائية</ref>، يؤهل لمعاينة مخالفات أحكام هذا القانون، الأعوان المنتمون للأسلاك الخاصة بالرقابة التابعون للإدارات المكلفة بالتجارة.</p>
+            </paragraph>
+            <paragraph>
+            <p>تتم كيفيات الرقابة ومعاينة المخالفات المنصوص عليها في هذا القانون حسب نفس الأشكال المحددة في التشريع والتنظيم المعمول بهما، لا سيما تلك المطبقة على الممارسات التجارية وعلى شروط ممارسة الأنشطة التجارية وعلى حماية المستهلك وقمع الغش.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يجب على <term refersTo="#electronic_supplier">المورد الإلكتروني</term> السماح للأعوان المؤهلين لمعاينة المخالفات بالولوج بحرية إلى تواريخ المعاملات التجارية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_3_sec_2">
+          <num>الثاني</num>
+          <heading>الجرائم والعقوبات</heading>
+          <article eId="art_37">
+            <num>37</num>
+            <content>
+            <paragraph>
+            <p><condition>دون المساس بتطبيق العقوبات الأشد المنصوص عليها في التشريع المعمول به</condition>، <obligation>يعاقب بغرامة من 200.000 دج إلى 1.000.000 دج كل من يعرض للبيع، أو يبيع عن طريق الاتصال الإلكتروني، المنتجات أو الخدمات المذكورة في <ref href="#art_3">المادة 3</ref> من هذا القانون</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يمكن القاضي أن يأمر بغلق الموقع الإلكتروني لمدة تتراوح من شهر (1) إلى ستة (6) أشهر.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_38">
+            <num>38</num>
+            <content>
+            <paragraph>
+            <p><condition>دون المساس بتطبيق العقوبات الأشد المنصوص عليها في التشريع المعمول به</condition>، <obligation>يعاقب بغرامة من 500.000 دج إلى 2.000.000 دج كل من يخالف أحكام <ref href="#art_5">المادة 5</ref> من هذا القانون</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يمكن القاضي أن يأمر بغلق الموقع الإلكتروني والشطب من السجل التجاري.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_39">
+            <num>39</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من 50.000 دج إلى 500.000 دج، كل <term refersTo="#e_supplier">مورد إلكتروني</term> يخالف أحد الإلتزامات المنصوص عليها في <ref href="#art_11">المادتين 11</ref> و <ref href="#art_12">12</ref> من هذا القانون</obligation>. كما يجوز للجهة القضائية التي رفعت أمامها الدعوى أن تأمر بتعليق نفاذه إلى جميع منصات الدفع الإلكتروني، لمدة لا تتجاوز ستة (6) أشهر.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_40">
+            <num>40</num>
+            <content>
+            <paragraph>
+            <p><condition>دون المساس بحقوق الضحايا في التعويض</condition>، <obligation>يعاقب بغرامة من 50.000 دج إلى 500.000 دج كل من يخالف أحكام <ref href="#art_30">المواد 30</ref> و <ref href="#art_31">31</ref> و<ref href="#art_32">32</ref> و<ref href="#art_34">34</ref> من هذا القانون</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_41">
+            <num>41</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من 20.000 دج إلى 200.000 دج ، كل <term refersTo="#e_supplier">مورد إلكتروني</term> يخالف أحكام <ref href="#art_25">المادة 25</ref> من هذا القانون</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_42">
+            <num>42</num>
+            <content>
+            <paragraph>
+            <p><obligation>تقوم الهيئة المؤهلة لمنح أسماء النطاق في الجزائر، بناء على مقرر من <term refersTo="#minister_commerce">وزارة التجارة</term>، بالتعليق الفوري لتسجيل أسماء النطاق لأي شخص طبيعي أو معنوي متواجد في الجزائر، يقترح توفير سلع وخدمات عن طريق الاتصالات الإلكترونية من دون تسجيل مسبق في السجل التجاري</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يبقى تعليق هذا الموقع الإلكتروني ساري المفعول إلى غاية تسوية وضعيته.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_43">
+            <num>43</num>
+            <content>
+            <paragraph>
+            <p><condition>دون المساس بالأحكام التشريعية والتنظيمية المعمول بها عندما يرتكب <term refersTo="#e_supplier">المورد الإلكتروني</term> أثناء ممارسة نشاطه مخالفات تكون تحت طائلة عقوبة غلق المحل بمفهوم التشريع المتعلق بممارسة الأنشطة التجارية</condition>، <obligation>يتم تعليق تسجيل أسماء نطاق المورد الإلكتروني بشكل تحفظي من طرف الهيئة المكلفة بمنح أسماء النطاق في الجزائر بناء على مقرر من <term refersTo="#minister_commerce">وزارة التجارة</term></obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>لا يمكن أن تتجاوز مدة التعليق التحفظي لاسم النطاق ثلاثين (30) يوما</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_44">
+            <num>44</num>
+            <content>
+            <paragraph>
+            <p><obligation>كل مخالفة لأحكام <ref href="#art_20">المادة 20</ref> من هذا القانون يعاقب عليها طبقا لأحكام <ref href="/akn/dz/act/law/2004-06-23/04-02">القانون رقم 04-02 المؤرخ في 5 جمادى الأولى عام 1425 الموافق 23 يونيو سنة 2004</ref> والمذكور أعلاه</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_45">
+            <num>45</num>
+            <content>
+            <paragraph>
+            <p><condition>دون المساس بحقوق الضحايا في التعويض</condition>، <right>تؤهل الإدارة المكلفة بحماية المستهلك بالقيام بإجراءات غرامة الصلح مع الأشخاص المتابعين بمخالفة أحكام هذا القانون</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يجب على الأعوان المنصوص عليهم في <ref href="#art_36">المادة 36</ref> من هذا القانون اقتراح غرامة صلح على المخالفين</obligation>. <condition>لا يمكن إجراء غرامة الصلح في حالة العود أو المخالفات المنصوص عليها في <ref href="#art_37">المادتين 37</ref> و <ref href="#art_38">38</ref> من هذا القانون</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_46">
+            <num>46</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#fine_amount">مبلغ غرامة الصلح</term> هو الحد الأدنى من الغرامة المنصوص عليها في أحكام هذا القانون.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة قبول <term refersTo="#electronic_supplier">المورد الإلكتروني</term> لغرامة الصلح</condition>، <obligation>تقوم الإدارة المؤهلة بإقرار تخفيض قدره 10 %</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_47">
+            <num>47</num>
+            <content>
+            <paragraph>
+            <p><obligation>تبلغ المصالح التابعة لإدارة التجارة <term refersTo="#electronic_supplier">المورد الإلكتروني</term> المخالف خلال مدة لا تتجاوز سبعة (7) أيام ابتداء من تاريخ تحرير المحضر، الأمر بالدفع عن طريق جميع الوسائل المناسبة مصحوبا بإشعار بالاستلام</obligation>، يتضمن هوية المورد الإلكتروني، عنوان بريده الإلكتروني، وتاريخ وسبب المخالفة، ومراجع النصوص المطبقة ومبلغ الغرامة المفروضة بالإضافة إلى مواعيد وكيفيات الدفع.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>إذا لم يتم دفع الغرامة أو لم يمتثل المخالف للأحكام التشريعية والتنظيمية المعمول بها في أجل خمسة وأربعين (45) يوما</condition>، <obligation>يرسل المحضر إلى الجهة القضائية المختصة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_48">
+            <num>48</num>
+            <content>
+            <paragraph>
+            <p><obligation>يضاعف مبلغ الغرامة في حالة تكرار نفس الجريمة خلال مدة لا تتجاوز اثني عشر (12) شهرا من تاريخ العقوبة المتعلقة بالجريمة السابقة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+      <chapter eId="chp_4">
+        <num>الرابع</num>
+        <heading>أحكام انتقالية وختامية</heading>
+        <article eId="art_49">
+          <num>المادة 49</num>
+          <content>
+          <paragraph>
+          <p><obligation>يتعين على <term refersTo="#natural_persons">الأشخاص الطبيعيين</term> و<term refersTo="#legal_persons">المعنويين</term> الذين يمارسون <term refersTo="#e-commerce">التجارة الإلكترونية</term> عند تاريخ نشر هذا القانون، الامتثال لأحكامه في أجل لا يتجاوز ستة (6) أشهر</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_50">
+          <num>المادة 50</num>
+          <content>
+          <paragraph>
+          <p>ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية.</p>
+          </paragraph>
+          <paragraph>
+          <p>حرر بالجزائر في 24 شعبان عام 1439 الموافق 10 مايو سنة 2018.</p>
+          </paragraph>
+          <paragraph>
+          <p>عبد العزيز بوتفليقة</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+    </body>
+  </act>
+</akomaNtoso>

@@ -1,0 +1,1311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="law">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/law/1983-07-02/83-11/main"/>
+      <FRBRuri value="/akn/dz/act/law/1983-07-02/83-11"/>
+      <FRBRdate date="1983-07-02" name="enactment"/>
+      <FRBRauthor href="#parliament"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="83-11"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/law/1983-07-02/83-11/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/law/1983-07-02/83-11/ara@"/>
+      <FRBRdate date="1983-07-02" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/law/1983-07-02/83-11/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/law/1983-07-02/83-11/ara@.xml"/>
+      <FRBRdate date="2026-05-05" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="parliament" href="/ontology/organization/dz/parliament" showAs="البرلمان"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="president" href="/ontology/person/dz/president" showAs="رئيس الجمهورية"/>
+  </references>
+</meta>
+    <preface>
+  <docTitle>قانون يتعلق بالتأمينات الاجتماعية</docTitle>
+  <docNumber>83 - 11</docNumber>
+  <docDate date="1983-07-02">21 رمضان عام 1403 الموافق 2 يوليو سنة 1983</docDate>
+  <docAuthority>البرلمان</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>ان رئيس الجمهورية</p>
+    </citation>
+    <citation>
+      <p>بناء على الميثاق الوطني، ولاسيما الباب السادس - خامسا - 7 منه،</p>
+    </citation>
+    <citation>
+      <p>وبناء على الدستور، لاسيما المواد 15 و 154 و 155 منه ،</p>
+    </citation>
+    <citation>
+      <p>و بمقتضى القانون رقم 78 - 12 المؤرخ في أول رمضان عام 1398 الموافق 5 غشت سنة 1978 المتضمن القانون الأساسي العام للعامل، ولاسيما المواد 9 و 129 و 143 و 146 ومن 187 الى 198 و 212 و 216</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 74 - 8 المؤرخ في 6 محرم عام 1394 الموافق 30 يناير سنة 1974 والمتعلق بوصاية هيئات الضمان الاجتماعي</p>
+    </citation>
+    <citation>
+      <p>و بناء على ما أقره المجلس الشعبي الوطني،</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يصدر القانون التالى نصه :</p>
+  </formula>
+</preamble>
+    <body>
+      <article eId="art_الاولى">
+        <num>المادة الاولى</num>
+        <content>
+        <paragraph>
+        <p>يهدف هذا القانون الى انشاء <term refersTo="#نظام_وحيد_للتأمينات_الاجتماعية">نظام وحيد للتأمينات الاجتماعية</term>.</p>
+        </paragraph>
+        </content>
+        </article>
+        
+      <chapter eId="chp_الاول">
+        <num>الاول</num>
+        <heading>المستفيدون</heading>
+        <article eId="art_3">
+          <num>المادة 3</num>
+          <content>
+          <paragraph>
+          <p><right>يستفيد من أحكام هذا القانون، كل <term refersTo="#workers">العمال</term> سواء أكانوا أجراء أم ملحقي بالاجراء أيا كان قطاع النشاط الذي ينتمون اليه، والنظام الذي كان يسرى عليهم قبل تاريخ دخول هذا القانون حيز التطبيق</right>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تطبق أحكام هذه المادة بموجب مرسوم.</p>
+          </paragraph>
+          </content>
+          </article>
+          
+        <article eId="art_4">
+          <num>المادة 4</num>
+          <content>
+          <paragraph>
+          <p><right>يستفيد من <term refersTo="#benefits_in_kind">الاداءات العينية</term> : <term refersTo="#natural_persons">الاشخاص الطبيعيون</term> غير الاجراء الذين يمارسون بالفعل الحسابهم الخاص نشاطا حرا صناعيا أو تجاريا أو حرفيا أو فلاحيا أو أي نشاط آخر مماثل</right> <condition>وفقا للشروط المحددة في التنظيم المعمول به</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p><right>كما يستفيد الاشخاص المذكورين أعلاه من الاداءات التقديم المتمثلة في <term refersTo="#death_grant">منحة الوفاة</term> و<term refersTo="#disability_grant">العجز</term></right>.</p>
+          </paragraph>
+          <paragraph>
+          <p>وتحدد قائمة المستفيدين وكذا الشروط الخاصة لتطبيق هذه المادة بموجب مرسوم</p>
+          </paragraph>
+          </content>
+          </article>
+          
+        <article eId="art_5">
+          <num>المادة 5</num>
+          <content>
+          <paragraph>
+          <p><right>يستفيد ذوو حقوق صاحب معاش عجز أو تقاعد أو ريع حادث عمل كما جاء تعريفهم في <ref href="#art_67">المادة 67</ref> أدناه، وفقا للشروط المنصوص عليها في <ref href="#art_49">المادتين 49</ref> و <ref href="#art_50">50</ref> أعلاه من <term refersTo="#death_grant">منحة وفاة</term> يساوى مبلغها قيمة المبلغ السنوى لمعاش العجز أو معاش التقاعد أو ريع حادث عمل</right> على <obligation>ألا يقل هذا المبلغ من القيمة الدنيا المنصوص عليها في <ref href="#art_48">المادة 48</ref> من هذا القانون</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_6">
+          <num>المادة 6</num>
+          <content>
+          <paragraph>
+          <p><obligation>ينطوى وجوبا تحت <term refersTo="#social_insurance">التأمينات الاجتماعية</term> الاشخاص الذين يشتغلون في التراب الوطني أيا كانت جنسيتهم سواء كانوا يعملون بأية صفة من الصفات وحيثما كان الصالح فرد أو جماعة من أصحاب العمل، ومهما كان مبلسغ أو طبيعة أجرهم وشكل وطبيعة أو صلاحية عقد عملهم أو علاقتهم فيه</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تطبق أحكام هذه المادة بموجب مرسوم.</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_2">
+        <num>الثاني</num>
+        <heading>الإداءات</heading>
+        <section eId="chp_2_sec_الاول">
+          <num>الاول</num>
+          <heading>التأمين على المرض</heading>
+          <article eId="art_7_تشمل_أداءات_التأمين_على_المرض">
+            <num>:7 تشمل أداءات التأمين على المرض</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#sick_insurance_benefits">تشمل أداءات التأمين على المرض</def> :</p>
+            <list>
+            <point>
+            <p>1) <term refersTo="#in_kind_benefits">الاداءات العينية</term> : <right>التكفل بمصاريف العناية الطبية والوقائية والعلاجية الصالح المؤمن له و دوی حقوقه</right>.</p>
+            </point>
+            <point>
+            <p>2) <term refersTo="#cash_benefits">الاداءات النقدية</term> : <right>منح تعويضة يومية للعامل</right> <condition>الذي يضطره المرض إلى الانقطاع مؤقتا من عمله</condition>.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <subsection eId="chp_2_sec_الاول_subsec_الاول">
+            <num>الاول</num>
+            <heading>الاداءات العينية</heading>
+            <article eId="art_8">
+              <num>المادة 8</num>
+              <content>
+              <paragraph>
+              <p>تشمل <term refersTo="#benefits">الاداءات العينية</term> للتأمين على المرض المصاريف التالية :</p>
+              <list>
+              <point><p>العلاج</p></point>
+              <point><p>الجراحة،</p></point>
+              <point><p>الادوية</p></point>
+              <point><p>الاقامة بالمستشفى.</p></point>
+              <point><p>الفحوص البيولوجية والكهروديوغرافية.</p></point>
+              <point><p>والمجوافية، والنظيرية</p></point>
+              <point><p>علاج الاسنان واستغلافها الاصطناعي</p></point>
+              <point><p>النظارات الطبية</p></point>
+              <point><p>المعالجات بالمياه المعدنية والمتخصصة</p></point>
+              <point><p>الاجهزة والاعضاء الاصطناعية</p></point>
+              <point><p>ب الجبارة الفكية والوجهية</p></point>
+              <point><p>اعادة التدريب الوظيفي للاعضاء</p></point>
+              <point><p>اعادة التأهيل المهني</p></point>
+              <point><p>النقل بسيارة الاسعاف أو غيرها من وسائل النقل <condition>عندما تستلزم حالة المريض ذلك</condition>،</p></point>
+              </list>
+              </paragraph>
+              <paragraph>
+              <p>ويمكن اتمام قائمة المصاريف الواردة في هذه المادة بموجب مرسوم.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_و">
+              <num>المادة و</num>
+              <content>
+              <paragraph>
+              <p><obligation>تكفل مصاريف تنقل <term refersTo="#insured">المؤمع له</term> أو <term refersTo="#dependents">دوی حقوقه</term> أو مرافقه <condition>اذا ما اقتضى الأمر ذلك</condition> حسب الشروط المحددة بموجب التنظيم في حالة استدعاء من المراقبة الطبية <term refersTo="#social_security_body">لهيئة الضمان الاجتماعي</term> أو طبيب خبير أو عندما يجب تقديم العلاج في مؤسسة صحية غير التي توجد في مقر اقامته</obligation>.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_r">
+              <num>المادة r</num>
+              <content>
+              <paragraph>
+              <p>لا تشمل مصاريف الاسنان الاصطناعية سوى الاجهزة الوظيفية أو العلاجية أو تلك الضرورية لممارسة بعض المهن.</p>
+              </paragraph>
+              <paragraph>
+              <p>و تحدد هذه المهن عن طريق التنظيم.</p>
+              </paragraph>
+              </content>
+              </article>
+            <article eId="art_13">
+              <num>المادة 13</num>
+              <content>
+              <paragraph>
+              <p><obligation>يجب ارسال الملف الطبي أو تقديمه الى <term refersTo="#social_security_body">هيئة الضمان الاجتماعي</term> في ظرف الاشهر الثلاثة التالية للاجراء الطبي الاول</obligation> <condition>ما لم يتعلق الامن بعلاج طبی مستمر، وفي هذه الحالة يجب تقديم الملف في ظرف ثلاثة أشهر بعد انتهاء هذا العلاج</condition>.</p>
+              </paragraph>
+              <paragraph>
+              <p>يترتب عن عدم استيفاء الاجراءات المنصوص عليها في الفقرة السابقة سقوط الحق في الاداءات بالنسبة للفترة التي منعت خلالها هيئة الضمان الاجتماعي من ممارسة مراقبتها وذلك <condition>ما لم يثبت المستفيد حدوث أسباب قاهرة</condition>.</p>
+              </paragraph>
+              </content>
+              </article>
+          </subsection>
+          <subsection eId="chp_2_sec_الاول_subsec_2">
+            <num>الثاني</num>
+            <heading>الاداءات النقدية</heading>
+            <article eId="art_15">
+              <num>المادة 15</num>
+              <content>
+              <paragraph>
+              <p><right>تستحق <term refersTo="#daily_allowance">التعويضة اليومية</term> عن كل يوم عمل أو راحة</right>، <condition>على ألا تتجاوز قدر واحد من ثلاثين من أجر المنصب الشهري، المتقاضي</condition>، وهو ما يؤخذ أساسا لحساب أداءات <term refersTo="#social_insurance">التأمينات الاجتماعية</term>.</p>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_16">
+              <num>المادة 16</num>
+              <content>
+              <paragraph>
+              <p>تدفع التعويضات المشار اليها في <ref href="#art_15">المادة 15</ref> أعلاه، طوال مدة فترة أقصاها ثلاث (3) سنوات محسوبة، وفقا للشروط التالية :</p>
+              <list>
+              <point>
+              <p>(1) <condition>اذا تعلق الامر بعلل طويلة الامد</condition>، يجوز دفع <term refersTo="#daily_allowance">التعويضة اليومية</term> طوال فترة مدتها ثلاث (3) سنوات ومحسوية من تاريخ الى تاريخ عن كل علة .</p>
+              </point>
+              </list>
+              </paragraph>
+              <paragraph>
+              <p>و في حالة توقف يتبعه استئناف للعمل يتاح أجل جديد مدته ثلاث (3) سنوات على أن تمن على هذا الاستئناف سنة على الاقل.</p>
+              </paragraph>
+              <paragraph>
+              <list>
+              <point>
+              <p>(2) <condition>اذا تعلق الامر يعلل من غير العلل الطويلة الامد</condition> تدفع <term refersTo="#daily_allowance">التعويضة اليومية</term>، على نحو يضمه طوال فترة ما مدتها سنتان متتالیتان يتقاضى فيها العامل ثلاثمائة تعويضة يومية على الأكثر وذلك على علة أو عدة علل.</p>
+              </point>
+              </list>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_18">
+              <num>المادة 18</num>
+              <content>
+              <paragraph>
+              <p><obligation>يجب أن تشعن <term refersTo="#social_security_body">هيئة الضمان الاجتماعي</term> في ظرف أجل يحدد عن طريق التنظيم بكل مرض يمترى العامل من شأنه أن يخول له الحق في تعويضة يومية</obligation>، <condition>الا اذا حالت أسباب قاهرة دون ذلك</condition>.</p>
+              </paragraph>
+              <paragraph>
+              <p>و يمكن أن تترتب عن عدم مراعاة هذا الاجراء عقوبات قد تؤدى الى سقوط الحق في التعويضات اليومية بالنسبة للمدة التي منعت أثناءها هيئة الفتمان الاجتماعي من اجراء المراقبة بسبب عدم التصريح.</p>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_20">
+              <num>المادة 20</num>
+              <content>
+              <paragraph>
+              <p>تحدد قائمة الملل الطويلة الأمد عن طريق التنظيم.</p>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_21">
+              <num>المادة 21</num>
+              <content>
+              <paragraph>
+              <p>يعاد النظر في قيمة التعويضات اليومية حسب تطور أجر منصب العمل.</p>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_22">
+              <num>المادة 22</num>
+              <content>
+              <paragraph>
+              <p><condition>لا يمكن أن يكون مبلغ التعويضة اليومية بنسية /100 أدني من 8 أضعاف المبلغ الصافي المعدل الساعات للاجر الوطني الادني المضمون</condition>.</p>
+              </paragraph>
+              </content>
+              </article>
+          </subsection>
+        </section>
+        <section eId="chp_2_sec_2">
+          <num>الثاني</num>
+          <heading>التأمين على الولادة</heading>
+          <article eId="art_23">
+            <num>المادة 23</num>
+            <content>
+            <paragraph>
+            <p>تشمل <term refersTo="#maternity_insurance_benefits">أداءات التأمين على الولادة</term> :</p>
+            <list>
+            <point>
+            <p>(1) <term refersTo="#in_kind_benefits">الاداءات العينية</term> : كفالة المصاريف المترتبة من الحمل والوضع وتبعاته.</p>
+            </point>
+            <point>
+            <p>(2) <term refersTo="#cash_benefits">الاداءات النقدية</term> : دفع تعويضة يومية للمرأة العاملة التي تضطر بسبب الولادة الى الانقطاع من العمل.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+            
+          <article eId="art_24">
+            <num>المادة 24</num>
+            <content>
+            <paragraph>
+            <p><obligation>لا يجوز منح <term refersTo="#maternity_insurance_benefits">أداءات التأمين على الولادة</term> <condition>مالم يتم الوضع على يد طبيب أو مساعدين طبيين مؤهليه</condition></obligation>، <condition>ما عدا ما خالف ذلك الاسباب قاهرة</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+            
+          <subsection eId="chp_2_sec_2_subsec_4">
+            <num>الرابع</num>
+            <heading>الاداءات العينية</heading>
+            <article eId="art_26">
+              <num>المادة 26</num>
+              <content>
+              <paragraph>
+              <p><obligation>تعوض المصاريف المتعلقة بالتأمين على الولادة</obligation> وفقا <condition>للشروط التالية</condition> :</p>
+              <list>
+              <point>
+              <p>(1) <obligation>تعوض المصاريف الطبية والصيدلية على أساس %100 من التعريفات المحددة عن طريق التنظيم</obligation>.</p>
+              </point>
+              <point>
+              <p>(2) <obligation>تعوض مصاريف اقامة الام والمولود في المستشفى على نفس الاساس لمدة أقصاها ثمانية أيام</obligation>.</p>
+              </point>
+              </list>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_27">
+              <num>المادة 27</num>
+              <content>
+              <paragraph>
+              <p>تحدد الشروط التي تجري وفقها الفحوص قبل الوضع وبعده وكذا المراقبة التي قد تجريها <term refersTo="#social_security_body">هيئة الضمان الاجتماعي</term> قبل الولادة وبعدها، عن طريق التنظيم.</p>
+              </paragraph>
+              </content>
+              </article>
+          </subsection>
+          <subsection eId="chp_2_sec_2_subsec_2">
+            <num>الثاني</num>
+            <heading>الاداءات النقدية</heading>
+            <article eId="art_30">
+              <num>المادة 30</num>
+              <content>
+              <paragraph>
+              <p>تطبق أحكام <ref href="#art_22">المادة 22</ref> أعلاه، على <term refersTo="#maternity_allowance">التعويضة اليومية للتأمين على الولادة</term>.</p>
+              </paragraph>
+              </content>
+              </article>
+          </subsection>
+        </section>
+        <section eId="chp_2_sec_3">
+          <num>الثالث</num>
+          <heading>التأمين على العجز</heading>
+          <article eId="art_31">
+            <num>31</num>
+            <content>
+            <paragraph>
+            <p>يستهدف <term refersTo="#insurance_against_disability">التأمين على العجز</term>، منح <right>معاش للمؤمن له</right> الذي <condition>يضطره العجز إلى الانقطاع عن عمله</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <subsection eId="chp_2_sec_3_subsec_الاول">
+            <num>الاول</num>
+            <heading>قياس مدى العجز وتقديره</heading>
+            <article eId="art_32">
+              <num>32</num>
+              <content>
+              <paragraph>
+              <p><right>يكون ل<term refersTo="#insured">لمؤمن له</term> الحق في <term refersTo="#disability_pension">معاش العجز</term></right> <condition>عندما يكون مصابا بعجز ذهب بنصف قدرته على العمل أو الكسب على الأقل</condition>.</p>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_33">
+              <num>33</num>
+              <content>
+              <paragraph>
+              <p>يقدر مدى العجز باعتبار ما بقي من قدرة <term refersTo="#insured">المؤمع له</term> على العمل وحالته العامة وعمره وقواه البدنية والعقلية وكذا مؤهلاته وتكوينه المهني.</p>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_34">
+              <num>34</num>
+              <content>
+              <paragraph>
+              <p><condition>لا يقبل طلب <term refersTo="#disability_pension">معاش العجز</term> الا اذا كان عمر <term refersTo="#insured">المؤمن له</term> أقل من السن التي تخول له الحق في التقاعد</condition>.</p>
+              </paragraph>
+              <paragraph>
+              <p>غير أنه لا يعتد بشرط السن في حق المؤمن الذي لا يستوفي شروط مدة العمل للاستفادة من <term refersTo="#retirement_pension">معاش التقاعد</term>.</p>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_35">
+              <num>35</num>
+              <content>
+              <paragraph>
+              <p><condition>عند القضاء المدة التي قدمت خلالها الاداءات النقدية للتأميع على المرض</condition> <obligation>تتولى <term refersTo="#social_security_body">هيئة الضمان الاجتماعي</term> تلقائيا النظر في الحقوق من باب التأمين على العجز دون انتظار الطلب من المعنى بالامر</obligation>.</p>
+              </paragraph>
+              </content>
+              </article>
+          </subsection>
+          <subsection eId="chp_2_sec_3_subsec_2">
+            <num>الثاني</num>
+            <heading>مبلغ المعاش</heading>
+            <article eId="art_36">
+              <num>36</num>
+              <content>
+              <paragraph>
+              <p>يصنف <term refersTo="#disabled">العجزة</term> من حيث تحضير مبلغ المعاش الى ثلاثة أصناف :</p>
+              <list>
+              <point>
+              <p>الصنف الأول : <term refersTo="#disabled_class_1">العجزة الذين ما زالوا قادرين على ممارسة نشاط ماجور</term></p>
+              </point>
+              <point>
+              <p>الصنف الثاني : <term refersTo="#disabled_class_2">العجزة الذين يتعذر عليهم اطلاقا القيام بأي نشاط مأجور</term></p>
+              </point>
+              <point>
+              <p>الصنف الثالث : <term refersTo="#disabled_class_3">العجزة الذين يتعذر عليهم اطلاق القيام بأي نشاط ماجور ويحتاجون الى مساعدة من غيرهم</term>.</p>
+              </point>
+              </list>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_37">
+              <num>37</num>
+              <content>
+              <paragraph>
+              <p>يساوى المبلغ السنوى للمعاش المدفوع <term refersTo="#disabled_class_1">للعجزة من الصنف الأول</term> %60 منع الاجر السنوي المتوسط للمنصب الذي يحسب بالرجوع الى :</p>
+              <list>
+              <point>
+              <p>اما إلى أخر أجر سنوى تم تقاضيه</p>
+              </point>
+              <point>
+              <p>واما إلى الاجر السنوى المتوسط للثلاث سنوات حيث بلغ أجر المعنى بالأمر أقصاء خلال حياته المهنية، <condition>اذا كان هذا الاجر هو أحسن مواتاة له</condition>.</p>
+              </point>
+              </list>
+              </paragraph>
+              <paragraph>
+              <p><condition>وعندما لا تتم للمعنى بالامر ثلاث سنوات من التأمين</condition>، يحسب المعاش حسب الاجر السنوى المتوسط المناسب لفترات العمل التي أداها.</p>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_38">
+              <num>38</num>
+              <content>
+              <paragraph>
+              <p>يساوى المبلغ السنوى المعاش <term refersTo="#disabled_class_2">العجزة من الصنف الثاني</term> 80% من الأجر المحدد في <ref href="#art_37">المادة السابقة</ref>.</p>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_39">
+              <num>39)</num>
+              <content>
+              <paragraph>
+              <p>يساوى المبلغ السنوي لمعاش <term refersTo="#disabled_class_3">المجزة من الصنف الثالث</term> /80 من الاجر المحدد في <ref href="#art_37">المادة 37</ref> أعلاه، ويضاعف بنسبة %40 دون أن نقل الزيادة عن قدر أدنى يحدد عن المريق التنظيم.</p>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_40">
+              <num>40</num>
+              <content>
+              <paragraph>
+              <p><right>يستفيد كل من زوج صاحب معاش عجز توفي وأولاده وأصوله من معاش عجز منقول اليهم</right>.</p>
+              </paragraph>
+              <paragraph>
+              <p>و تطبق على ذوى الحقوق المذكورين في <ref href="#art_40">الفقرة أعلاه</ref> الاحكام المتملقة بمعاشات ذوى الحقوق في مجال التقاعد.</p>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="chp_2_chp_2_sec_3_chp_2_sec_3_subsec_2_art_4">
+              <num>المادة 4</num>
+              <content>
+              <paragraph>
+              <p><right>يستفيد من <term refersTo="#benefits_in_kind">الاداءات العينية</term> : <term refersTo="#natural_persons">الاشخاص الطبيعيون</term> غير الاجراء الذين يمارسون بالفعل الحسابهم الخاص نشاطا حرا صناعيا أو تجاريا أو حرفيا أو فلاحيا أو أي نشاط آخر مماثل</right> <condition>وفقا للشروط المحددة في التنظيم المعمول به</condition>.</p>
+              </paragraph>
+              <paragraph>
+              <p><right>كما يستفيد الاشخاص المذكورين أعلاه من الاداءات التقديم المتمثلة في <term refersTo="#death_grant">منحة الوفاة</term> و<term refersTo="#disability_grant">العجز</term></right>.</p>
+              </paragraph>
+              <paragraph>
+              <p>وتحدد قائمة المستفيدين وكذا الشروط الخاصة لتطبيق هذه المادة بموجب مرسوم</p>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_42">
+              <num>42</num>
+              <content>
+              <paragraph>
+              <p>تراجع معاشات المجز حسب تطور النقطة الاستدلالية المعتمدة كأساس لحساب الاجر الاساسي للعمال.</p>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_43">
+              <num>43</num>
+              <content>
+              <paragraph>
+              <p><obligation>تدفع معاشات العجز والمعاشات المنقولة شهرها وعند حلول اجل الاستحقاق</obligation>.</p>
+              </paragraph>
+              </content>
+              </article>
+          </subsection>
+          <subsection eId="chp_2_sec_3_subsec_3">
+            <num>الثالث</num>
+            <heading>مراجعة المعاش</heading>
+            <article eId="art_44">
+              <num>المادة 44</num>
+              <content>
+              <paragraph>
+              <p><right>يمنح <term refersTo="#disability_pension">معاش العجز</term> بصفة مؤقتة</right></p>
+              </paragraph>
+              <paragraph>
+              <p><condition>ويمكن أن يراجع أثر حدوث تغيير في حالة العجز</condition></p>
+              </paragraph>
+              <paragraph>
+              <p><obligation>ويلغى <condition>إذا ما ثبت بأن نسبة قدرة المستفيد على العمل تفوق 50 %</condition></obligation>.</p>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_45">
+              <num>المادة 45</num>
+              <content>
+              <paragraph>
+              <p><obligation>تلغى مستحقات <term refersTo="#disability_pension">معاش العجز</term> المدفوع للمستفيدين المذكورين في <ref href="#art_36">المادتين 36</ref> و <ref href="#art_39">39</ref> أعلاه، <condition>عند انقضاء شهر الاستحقاق الذي مارس خلاله المستفيدون نشاطا مأجورا</condition></obligation>.</p>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_46">
+              <num>المادة 46</num>
+              <content>
+              <paragraph>
+              <p><obligation>يستبدل <term refersTo="#disability_pension">معاش العجز</term> <condition>عند بلوغ سن التقاعد</condition>، بـ <term refersTo="#retirement_pension">معاش تقاعد</term> يعادل مبلغه <term refersTo="#disability_pension">معاش العجز</term> على الأقل وتضاف إليه عند الاقتضاء الزيادة عن الزوج المكفول</obligation>.</p>
+              </paragraph>
+              </content>
+              </article>
+          </subsection>
+        </section>
+        <section eId="chp_2_sec_4">
+          <num>الرابع</num>
+          <heading>التأمين على الوفاة</heading>
+          <article eId="art_47">
+            <num>المادة 47</num>
+            <content>
+            <paragraph>
+            <p>يستهدف <term refersTo="#insurance_death">التأمين على الوفاة</term> افادة <right>ذوي حقوق <term refersTo="#insured">المؤمن له</term> المتوفي المعرفين في <ref href="#art_67">المادة 67</ref> أدناه، من <term refersTo="#death_grant">منحة الوفاة</term></right>.</p>
+            </paragraph>
+            </content>
+            </article>
+            
+          <article eId="art_48">
+            <num>المادة 48</num>
+            <content>
+            <paragraph>
+            <p>يقدر مبلغ <term refersTo="#death_grant">منحة الوفاة</term> بأثني عشرة مرة مبلغ آخر أجر شهرى في المنصب.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>لا يجوز في أي حال من الاحوال أن يقل هذا المبلغ اثني عشرة مرة قيمة المبلغ الشهري للأجر الوطني الأدنى المضمون</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تدفع <term refersTo="#death_grant">منحة الوفاة</term> دفعة واحدة.</p>
+            </paragraph>
+            </content>
+            </article>
+            
+          <article eId="art_49">
+            <num>المادة 49</num>
+            <content>
+            <paragraph>
+            <p><obligation>تدفع <term refersTo="#death_grant">منحة الوفاة</term> لذوى حقوق الهالك</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+            
+          <article eId="chp_2_chp_2_sec_4_art_30">
+            <num>المادة 30</num>
+            <content>
+            <paragraph>
+            <p>تطبق أحكام <ref href="#art_22">المادة 22</ref> أعلاه، على <term refersTo="#maternity_allowance">التعويضة اليومية للتأمين على الولادة</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="chp_2_chp_2_sec_4_art_5">
+            <num>المادة 5</num>
+            <content>
+            <paragraph>
+            <p><right>يستفيد ذوو حقوق صاحب معاش عجز أو تقاعد أو ريع حادث عمل كما جاء تعريفهم في <ref href="#art_67">المادة 67</ref> أدناه، وفقا للشروط المنصوص عليها في <ref href="#art_49">المادتين 49</ref> و <ref href="#art_50">50</ref> أعلاه من <term refersTo="#death_grant">منحة وفاة</term> يساوى مبلغها قيمة المبلغ السنوى لمعاش العجز أو معاش التقاعد أو ريع حادث عمل</right> على <obligation>ألا يقل هذا المبلغ من القيمة الدنيا المنصوص عليها في <ref href="#art_48">المادة 48</ref> من هذا القانون</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_2_sec_5">
+          <num>الخامس</num>
+          <heading>أحكام مشركة</heading>
+          <subsection eId="chp_2_sec_5_subsec_1">
+            <num>الأول</num>
+            <heading>الشروط المغولة للحق في الاداءات</heading>
+            <article eId="art_53">
+              <num>المادة 53</num>
+              <content>
+              <paragraph>
+              <p><right>ينشأ الحق في <term refersTo="#death_grant">منحة الوفاة</term> لذوى حقوق العامل</right> <condition>ابتداء من اليوم الأول من مباشرة حمله الفعلي</condition>.</p>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_54">
+              <num>المادة 54</num>
+              <content>
+              <paragraph>
+              <p><obligation>يجب على <term refersTo="#insured">المؤمن له</term> لكي يؤول له الحق في أداءات <term refersTo="#maternity_insurance">التأمين على الولادة</term> وليتشنه في اطار <ref href="#art_20">المادة 20</ref> أعلاه أن يكون قد عمل</obligation> :</p>
+              <list>
+              <point>
+              <p>اما تسعة أيام أو ستين ساعة على الأقل أثناء الثلاثة أشهر التي سبقت تاريخ الاداءات العينية المطلوب تعويضها.</p>
+              </point>
+              <point>
+              <p>اما ستة وثلاثين يوما أو أربعين ومائتي ساعة على الاقل أثناء الاثنتي عشن شهرا التي سبقت تاريخ الاداءات العينية المطلوب تعويضها.</p>
+              </point>
+              </list>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_55">
+              <num>المادة 55</num>
+              <content>
+              <paragraph>
+              <p><obligation>يجب على المؤم لها لكي يؤول لها الحق في الاداءات النقدية ل<term refersTo="#maternity_insurance">لتأمين على الولادة</term> في إطار <ref href="#art_28">المادة 28</ref> أعلاه أن تكون قد عملت</obligation> :</p>
+              <list>
+              <point>
+              <p>اما تسعة أيام أو ستين ساعة على الأقل أثناء الثلاثة أشهر التي سبقت تاريخ المعاينة الطبية الأولى للحمل</p>
+              </point>
+              <point>
+              <p>اما ستة وثلاثين يوما أو أربعين ومائتي ساحة على الاقل أثناء الاثنتي عشر شهرا التي سبقت المعاينة الطبية الأولى للحمل.</p>
+              </point>
+              </list>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_56">
+              <num>المادة 56</num>
+              <content>
+              <paragraph>
+              <p><obligation>يجب على <term refersTo="#insured">المؤمن له</term> لكي يؤول له الحق في التعويضات اليومية ل<term refersTo="#sickness_insurance">لتأمين على المرض</term> فيما بعد الشهر السادس وكذا <term refersTo="#disability_pension">معاش المجز</term> أن يكون قد عمل</obligation> :</p>
+              <list>
+              <point>
+              <p>اما ستة وثلاثين يوما أو أربعين ومانتي ساعة على الاقل أثناء الاثنتي عشر شهرا التي سبقت الانقطاع عن العمل وثبوت المجزء</p>
+              </point>
+              <point>
+              <p>اما ثمانية ومائة يوما أو عشرين وسبعمائة ساعة على الاقل أثناء الثلاث سنوات التي سبقت الانقطاع من العمل أو ثبوت العجز.</p>
+              </point>
+              </list>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_57">
+              <num>المادة 57</num>
+              <content>
+              <paragraph>
+              <p>لا تطبق الشروط المحددة في <ref href="#art_56">المادة 56</ref> أعلاه على المؤمه له في حالة مرض أو عجز ناتج عن اصابته بحادث.</p>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_58">
+              <num>المادة 58</num>
+              <content>
+              <paragraph>
+              <p>تمد بمثابة ثماني ساعات منع العمل المأجور التقدير الحق في الاداءات :</p>
+              <list>
+              <point>
+              <p>(1) كل يوم تقاضى فيه <term refersTo="#insured">المؤمن له</term> التعويضات اليومية ل<term refersTo="#sickness_insurance">لتأمين على المرض</term> والولادة وحوادث العمل والامراض المهنية</p>
+              </point>
+              <point>
+              <p>(2)كل يوم انقطع فيه من العمل بسبب مرض عندما يكون <term refersTo="#insured">المؤمن له</term> قد استنفذ حقوقه في التعويض كما جاء تعريفها في <ref href="#art_15">المادة 15</ref> أعلاه، <condition>شريطة أن تقر هيئة الضمان الاجتماعي عدم قدرته البدنية على مواصلة عمله أو استئنافه</condition>.</p>
+              </point>
+              <point>
+              <p>(3) كل يوم من أيام المعطلة القانونية المدفوعة う</p>
+              </point>
+              <point>
+              <p>(4) كل يوم قضى في أداء التزامات الخدمة الوطنية أو في حالة التعبئة العامة.</p>
+              </point>
+              </list>
+              </paragraph>
+              </content>
+              </article>
+          </subsection>
+          <subsection eId="chp_2_sec_5_subsec_2">
+            <num>الثاني</num>
+            <heading>أحكام متعلقة بالعلاجات الصحية</heading>
+            <article eId="art_59">
+              <num>المادة 59</num>
+              <content>
+              <paragraph>
+              <p>(1) <condition>مع مراعاة أحكام <ref href="#art_6">المادة 6</ref> أدناه وفي القطاعات غير الهياكل الصحية العمومية</condition> <obligation>يدفع مبلغ المصاريف المنصوص عليها في <ref href="#art_8">المادتين 8</ref> و<ref href="#art_26">26</ref> مع هذا القانون من طرف <term refersTo="#insured">المؤمن له</term> وتسددها له <term refersTo="#social_security_body">هيئة الضمان الاجتماعي</term>، على أساس نسبة %80 من التعريفات المحددة عن طريق التنظيم</obligation>.</p>
+              </paragraph>
+              <paragraph>
+              <p>(2) تطبق أيضا هذه النسبة على الاستجمام والحمامات والاستجمامات المتخصصة مهما كانت طبيعة المؤسسة التي يتم فيها الاستجمام.</p>
+              </paragraph>
+              <paragraph>
+              <p>(3) يتم تسديد المنتوجات الصيدلية القابلة للتسديد على أساس نسبة أقصاها %80، تحدد قائمة المنتوجات القابلة للتسديد وكذا نسب التسديد المماثلة عن طريق التنظيم.</p>
+              </paragraph>
+              <paragraph>
+              <p>وفي انتظار صدور النصوص المشار إليها في الفقرة السابقة يتم التسديد بنسبة 50 %.</p>
+              </paragraph>
+              <paragraph>
+              <p>(4) تحول نسب التسديد المنصوص عليها في الفقرتين 1 و 3 الى %100 في بعض الحالات باعتبار على الخصوص أما نوعية، أو أهمية، أو هدة العلاج المطلوب واما صفة صاحب المعاش أو الريع للضمان الاجتماعي.</p>
+              </paragraph>
+              <paragraph>
+              <p>(5) تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_60">
+              <num>المادة 60</num>
+              <content>
+              <paragraph>
+              <p><right>يستفيد من نظام الدفع من قبل الغير، كل <term refersTo="#insured">المؤمنين لهم اجتماعيا</term> وذوي حقوقهم الذين يقصدون الاطباء ومؤدو الخدمات شبه الطبية والمؤسسات الصحية الخاصة والصيدليات الخاصة أو العمومية الذين تربطهم اتفاقيات مع <term refersTo="#social_security_body">هيئات الضمان الاجتماعي</term></right>.</p>
+              </paragraph>
+              <paragraph>
+              <p><obligation>ويجب على الصيدليات العمومية أن تبرم اتفاقيات مع <term refersTo="#social_security_body">هيئات الضمان الاجتماعي</term></obligation>.</p>
+              </paragraph>
+              <paragraph>
+              <p>وتحدد اتفاقيات نموذجية عن طريق التنظيم لكي تتقيد بأحكامها الاتفاقيات المنصوص عليها في هذه المادة.</p>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_67">
+              <num>المادة 67</num>
+              <content>
+              <paragraph>
+              <p><def refersTo="#beneficiaries">يقصد بذوى الحقوق</def> :</p>
+              <list>
+              <point>
+              <p>(1) زوج المؤمن له، <condition>غير أنه لا تغول الاستفادة من الاداءات العينية للزوج اذا كان يمارس نشاطا مهنيا مأجورا</condition>، <condition>اذا كان الزوج نفسه أجيرا يمكن أن يستفيد من الاداءات بصفته صاحب الحق ان كان لا يستوفى شروط تحويل الحقوق بحكم نشاطه</condition>.</p>
+              </point>
+              <point>
+              <p>(2) الاولاد المكفولين كما هم محدودن في التنظيم المتعلق بالضمان الاجتماعي والذين يقل عمرهم عن الثامنة عشرة سنة.</p>
+              </point>
+              </list>
+              </paragraph>
+              <paragraph>
+              <p>و يعتبر أيضا أولاد مكفولون :</p>
+              <list>
+              <point>
+              <p>الاولاد الذين يقل عمرهم عن الواحد- والعشرين سنة وأبرم بشأنهم عقد تمهين يقضى بمنحهم أجرا يقل عن نصف الاجر الوطني الادني المضمون.</p>
+              </point>
+              <point>
+              <p>الاولاد الذين يقل عمرهم عن الواحد- والعشرين سنة ويواصلون الدراسة، وفي حالة <condition>اذا بدأ العلاج الطبي قبل سن الواحدة والعشرين لا يعتد بشرط السن قبل نهاية العلاج</condition>.</p>
+              </point>
+              <point>
+              <p>البنات دون دخل أيا كان عمر هن.</p>
+              </point>
+              <point>
+              <p>الاولاد أيا كان عمرهم والذين تتعذر عليهم ممارسة نشاط ما مأجور بسبب عامة أو مرض مزمن.</p>
+              </point>
+              </list>
+              </paragraph>
+              <paragraph>
+              <p>ويعد باقين على صفة ذوى الحقوق الاولاد الذين يستوفون شروط السه المطلوبة ووجب عليهم الانقطاع عن التمهين أو الدراسة بحكم حالتهم الصحية.</p>
+              </paragraph>
+              <paragraph>
+              <list>
+              <point>
+              <p>(3) أصول المؤمن له أو أصول زوجه المكفولين <condition>لما لا تتجاوز مواردهم الشخصية المبلخ الادنى معاش التقاعد</condition>.</p>
+              </point>
+              </list>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_62">
+              <num>المادة 62</num>
+              <content>
+              <paragraph>
+              <p>تحدد القائمة العامة للاعمال المهنية عن طريق التنظيم.</p>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_64">
+              <num>المادة 64</num>
+              <content>
+              <paragraph>
+              <p>يمكن <term refersTo="#social_security_body">لهيئات الضمان الاجتماعي</term> أن تقرر مع تحملها المصاريف اجراء فحوص طبية على <term refersTo="#insured">المؤمنين لهم</term> بواسطة طبيب.</p>
+              </paragraph>
+              <paragraph>
+              <p>كما يمكن لها أن تجرى مراقبة على <term refersTo="#insured">المؤمنين لهم</term> بواسطة أحد ممثليها.</p>
+              </paragraph>
+              <paragraph>
+              <p><condition>واذا امتنع <term refersTo="#insured">المؤمن له</term> عن هذه الفحوص الطبية أو المراقبة المطلوبة أو عندما لا يمتثل للاستدعاء</condition> تسقط حقوقه في الاداءات بالنسبة للفترة حيث أعيقت المراقبة.</p>
+              </paragraph>
+              <paragraph>
+              <p>تحدد الشروط التي تجرى وفقها المراقبة الطبية على <term refersTo="#insured">المؤمنين لهم اجتماعيا</term> عن طريق التنظيم.</p>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_65">
+              <num>المادة 65</num>
+              <content>
+              <paragraph>
+              <p>يحدد مبلغ المشاركة الجزافية <term refersTo="#social_security_body">لهيئات الضمان الاجتماعي</term> في نفقات القطاعات الصحية والمؤسسات الاستشفائية المتخصصة بموجب مرسوم يتخذ بناء على تقرير مشترك من <term refersTo="#minister">الوزير المكلف بالضمان الاجتماعي</term> و<term refersTo="#minister">الوزير المكلف بالصحة</term> و<term refersTo="#minister">الوزير المكلف بالمالية</term>، في اطار قانون المالية السنوى.</p>
+              </paragraph>
+              <paragraph>
+              <p>يحدد المبلغ المشار اليه في الفقرة أعلاه حسب تطور التكاليف الصحية وعدد <term refersTo="#insured">المؤمنين لهم اجتماعيا</term>.</p>
+              </paragraph>
+              </content>
+              </article>
+          </subsection>
+          <subsection eId="chp_2_sec_5_subsec_3">
+            <num>الثالث</num>
+            <heading>حق ذوى الحقوق في الاداءات العينية</heading>
+            <article eId="art_66">
+              <num>المادة 66</num>
+              <content>
+              <paragraph>
+              <p><right>يستفيد <term refersTo="#beneficiaries">ذوو الحقوق</term> <term refersTo="#insured">المؤمن لهم اجتماعيا</term> من الاداءات المشار اليها في <ref href="#art_8">المادتين 8</ref> و <ref href="#art_26">26</ref> أعلاه، بالنسبة للزوج فقط، وفي <ref href="#art_8">المادة 8</ref> أعلاه، بالنسبة للأولاد والاصول.</right></p>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="chp_2_chp_2_sec_5_chp_2_sec_5_subsec_3_art_67">
+              <num>المادة 67</num>
+              <content>
+              <paragraph>
+              <p><def refersTo="#beneficiaries">يقصد بذوى الحقوق</def> :</p>
+              <list>
+              <point>
+              <p>(1) زوج المؤمن له، <condition>غير أنه لا تغول الاستفادة من الاداءات العينية للزوج اذا كان يمارس نشاطا مهنيا مأجورا</condition>، <condition>اذا كان الزوج نفسه أجيرا يمكن أن يستفيد من الاداءات بصفته صاحب الحق ان كان لا يستوفى شروط تحويل الحقوق بحكم نشاطه</condition>.</p>
+              </point>
+              <point>
+              <p>(2) الاولاد المكفولين كما هم محدودن في التنظيم المتعلق بالضمان الاجتماعي والذين يقل عمرهم عن الثامنة عشرة سنة.</p>
+              </point>
+              </list>
+              </paragraph>
+              <paragraph>
+              <p>و يعتبر أيضا أولاد مكفولون :</p>
+              <list>
+              <point>
+              <p>الاولاد الذين يقل عمرهم عن الواحد- والعشرين سنة وأبرم بشأنهم عقد تمهين يقضى بمنحهم أجرا يقل عن نصف الاجر الوطني الادني المضمون.</p>
+              </point>
+              <point>
+              <p>الاولاد الذين يقل عمرهم عن الواحد- والعشرين سنة ويواصلون الدراسة، وفي حالة <condition>اذا بدأ العلاج الطبي قبل سن الواحدة والعشرين لا يعتد بشرط السن قبل نهاية العلاج</condition>.</p>
+              </point>
+              <point>
+              <p>البنات دون دخل أيا كان عمر هن.</p>
+              </point>
+              <point>
+              <p>الاولاد أيا كان عمرهم والذين تتعذر عليهم ممارسة نشاط ما مأجور بسبب عامة أو مرض مزمن.</p>
+              </point>
+              </list>
+              </paragraph>
+              <paragraph>
+              <p>ويعد باقين على صفة ذوى الحقوق الاولاد الذين يستوفون شروط السه المطلوبة ووجب عليهم الانقطاع عن التمهين أو الدراسة بحكم حالتهم الصحية.</p>
+              </paragraph>
+              <paragraph>
+              <list>
+              <point>
+              <p>(3) أصول المؤمن له أو أصول زوجه المكفولين <condition>لما لا تتجاوز مواردهم الشخصية المبلخ الادنى معاش التقاعد</condition>.</p>
+              </point>
+              </list>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_68">
+              <num>المادة 68</num>
+              <content>
+              <paragraph>
+              <p><right>يستفيد <term refersTo="#beneficiaries">ذوو حقوق مسجون</term>، يقوم بعمل أثناء تنفيذ عقوبة جزائية كما جاء تعريفهم في <ref href="#art_67">المادة 67</ref> أعلاه، من الاداءات العينية للتأمين على المرض ومنحة الوفاة المنصوص عليها في <ref href="#art_8">المادتين 8</ref> و <ref href="#art_47">47</ref> أعلاه.</right></p>
+              </paragraph>
+              </content>
+              </article>
+          </subsection>
+          <subsection eId="chp_2_sec_5_subsec_4">
+            <num>الرابع</num>
+            <heading>حق الاشخاص العاطلين عن العمل في الاداءات</heading>
+            <article eId="art_69">
+              <num>المادة 69</num>
+              <content>
+              <paragraph>
+              <p><right>يتمتع بالحق في <term refersTo="#in-kind-benefits">الاداءات العينية</term> للتأمينات عن المرض</right> وينشته من أجرى له :</p>
+              <list>
+              <point>
+              <p>معاش مباشرة للعجسن من التأمينات الاجتماعية</p>
+              </point>
+              <point>
+              <p>عجزا 2 ريع عن حادث عمل أو مرض مهني يناسب عن العمل يساوى 50 % على الاقل</p>
+              </point>
+              <point>
+              <p>3 معاش تقاعد</p>
+              </point>
+              <point>
+              <p>4 معاش تقاعد منقول</p>
+              </point>
+              <point>
+              <p>5 - معاش تقاعد بدل معاش عجز،</p>
+              </point>
+              <point>
+              <p>6 - منحة تقاعد</p>
+              </point>
+              <point>
+              <p>7 - منحة تقاعد منقولة ،</p>
+              </point>
+              <point>
+              <p>8 - منحة للعمال المسنين الاجراء</p>
+              </point>
+              <point>
+              <p>9 - مساعدة عمرية</p>
+              </point>
+              <point>
+              <p>10 - معاش عجز منقول</p>
+              </point>
+              <point>
+              <p>11 - معاش تقاعد منقول بدل معاش عجز منقول</p>
+              </point>
+              <point>
+              <p>12 - ريع عن حادث أو مرض مهني للزوج أو الولد اليتيم أو الوالد أو الوالدة.</p>
+              </point>
+              </list>
+              </paragraph>
+              </content>
+              </article>
+              
+            <article eId="art_70">
+              <num>المادة 70</num>
+              <content>
+              <paragraph>
+              <p><right>يتمتع بالحق في <term refersTo="#maternity-benefits">الاداءات العينية للتأمين عن الولادة</term></right> وينشئه من أجرى له :</p>
+              <list>
+              <point>
+              <p>(1) معاش مباشر للعجز من التأمينات الاجتماعية.</p>
+              </point>
+              <point>
+              <p>(2) ريع عن حادث عمل أو مرض مهني يناسب عجزا عن العمل يساوى /50 على الأقل.</p>
+              </point>
+              <point>
+              <p>(3) معاش تقاعد مباشر <condition>وفقا للمشروط التي يحددها التنظيم</condition>.</p>
+              </point>
+              </list>
+              </paragraph>
+              </content>
+              </article>
+          </subsection>
+          <subsection eId="chp_2_sec_5_subsec_5">
+            <num>الخامس</num>
+            <heading>القواعد المتعلقة بالجمع</heading>
+            <article eId="art_77">
+              <num>77</num>
+              <content>
+              <paragraph>
+              <p><obligation>يمنع الجمع بين الاداءات التالية :</obligation></p>
+              <list>
+              <point>
+              <p><term refersTo="#daily_allowance_sickness">التعويضات اليومية للتأمين عن المرض</term>،</p>
+              </point>
+              <point>
+              <p><term refersTo="#daily_allowance_maternity">التعويضات اليومية للتأمين عن الولادة</term>،</p>
+              </point>
+              <point>
+              <p><term refersTo="#daily_allowance_work_accidents">التعويضات اليومية للتأمين عن حوادث العمل والامراض المهنية</term>.</p>
+              </point>
+              </list>
+              </paragraph>
+              </content>
+              </article>
+          </subsection>
+        </section>
+      </chapter>
+      <chapter eId="chp_3">
+        <num>الثالث</num>
+        <heading>التمويل</heading>
+        <article eId="art_72">
+          <num>المادة 72</num>
+          <content>
+          <paragraph>
+          <p>يتم تمويل نفقات <term refersTo="#social_insurance">التأمينات الاجتماعية</term> اعتمادا على <obligation>قسط اشتراك اجباري على نفقة أصحاب العمل وكذا المستفيدين المشار اليهم في الباب الأول من هذا القانون</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+          
+        <article eId="art_73_يعفى_من_دفع_الاشتراكات">
+          <num>المادة :73 يعفى من دفع الاشتراكات</num>
+          <content>
+          <paragraph>
+          <p><right>يعفى من دفع الاشتراكات</right> :</p>
+          <list>
+          <point>
+          <p>المجاهدون وأصحاب المعاشات المشار اليهم في <ref href="#art_5-أ">المادة 5-أ</ref></p>
+          </point>
+          <point>
+          <p>الاشخاص المعوقون بدنيا أو عقليا المشار اليهم في <ref href="#art_5-ب">المادة 5 ب</ref>،</p>
+          </point>
+          <point>
+          <p>الطلبة</p>
+          </point>
+          <point>
+          <p>الاشخاص المشار اليهم في المواد <ref href="#art_89">89</ref> و <ref href="#art_70">70</ref> و <ref href="#art_71">71</ref> أعلاه، <condition>عندما يساوى مبلغ دخلهم الاجر الوطني الادنى المضمون أو يقل عنه</condition>.</p>
+          </point>
+          </list>
+          </paragraph>
+          </content>
+          </article>
+          
+        <article eId="art_74">
+          <num>المادة 74</num>
+          <content>
+          <paragraph>
+          <p>يشكل قسط اشتراك <term refersTo="#social_insurance">التأمينات الاجتماعية</term> جزءا من اشتراك <term refersTo="#social_security">الضمان الاجتماعي</term> الذي يحدد بموجب القانون.</p>
+          </paragraph>
+          <paragraph>
+          <p>ویرصد لتمويل الاداءات ذات الطابع الفردي ولنفقات الخدمة الصحية والاجتماعية المشار اليها في <ref href="#art_92">المادة 92</ref> أدناه، وكذا نفقات سير وتسيير هيئات <term refersTo="#social_security_bodies">الضمان الاجتماعي</term>.</p>
+          </paragraph>
+          </content>
+          </article>
+          
+        <article eId="art_75">
+          <num>المادة 75</num>
+          <content>
+          <paragraph>
+          <p>يؤسس الاشتراك في <term refersTo="#social_insurance">التأمينات الاجتماعية</term> على أجر منصب العمل.</p>
+          </paragraph>
+          <paragraph>
+          <p>يحدد معدل قسط الاشتراك في <term refersTo="#social_insurance">التأمينات الاجتماعية</term> وكذلك الحصة التي يكملها صاحب العمل والمستفيد بموجب مرسوم.</p>
+          </paragraph>
+          <paragraph>
+          <p>ويمكن في مرحلة انتقالية أن يختلف معدل قسط الاشتراك الذي يكفله صاحب العمل في القطاع الفلاحي الاشتراكي.</p>
+          </paragraph>
+          </content>
+          </article>
+          
+        <article eId="art_76">
+          <num>المادة 76</num>
+          <content>
+          <paragraph>
+          <p>يحدد مبلغ قسط الاشتراك في <term refersTo="#social_insurance">التأمينات الاجتماعية</term> وكذا كيفيات دفعه بالنسبة البعض الفئات من العمال ولاسيما الاشخاص المستخدمين من طرف الحواص، بموجب مرسوم.</p>
+          </paragraph>
+          </content>
+          </article>
+          
+        <article eId="chp_3_art_77">
+          <num>77</num>
+          <content>
+          <paragraph>
+          <p><obligation>يمنع الجمع بين الاداءات التالية :</obligation></p>
+          <list>
+          <point>
+          <p><term refersTo="#daily_allowance_sickness">التعويضات اليومية للتأمين عن المرض</term>،</p>
+          </point>
+          <point>
+          <p><term refersTo="#daily_allowance_maternity">التعويضات اليومية للتأمين عن الولادة</term>،</p>
+          </point>
+          <point>
+          <p><term refersTo="#daily_allowance_work_accidents">التعويضات اليومية للتأمين عن حوادث العمل والامراض المهنية</term>.</p>
+          </point>
+          </list>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_4">
+        <num>الرابع</num>
+        <heading>التسيير</heading>
+        <article eId="art_78">
+          <num>المادة 78</num>
+          <content>
+          <paragraph>
+          <p>تسير تبعات المخاطر المنصوص عليها في هذا القانون من طرف <term refersTo="#social_security_bodies">هيئات الضمان الاجتماعي</term> موضوعة تحت وصاية <term refersTo="#minister_social_affairs">الوزير المكلف بالشؤون الاجتماعية</term>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تطبيق هذه المادة بموجب مرسوم.</p>
+          </paragraph>
+          </content>
+          </article>
+          
+        <article eId="art_79">
+          <num>المادة 79</num>
+          <content>
+          <paragraph>
+          <p>تحدد صلاحيات <term refersTo="#social_security_bodies">هيئات الضمان الاجتماعي</term> وكذا تنظيمها الاداري والمالي رسير ها بموجب مرسوم.</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_5">
+        <num>الخامس</num>
+        <heading>أحكام مختلفة</heading>
+        <article eId="art_80">
+          <num>80</num>
+          <content>
+          <paragraph>
+          <p><obligation>يبطل العمل بنظم التأمينات الاجتماعية الجارى بها العمل</obligation> عند تاريخ دخول أحكام هذا القانون حيز التطبيق.</p>
+          </paragraph>
+          </content>
+          </article>
+          
+        <article eId="chp_5_art_8">
+          <num>المادة 8</num>
+          <content>
+          <paragraph>
+          <p>تشمل <term refersTo="#benefits">الاداءات العينية</term> للتأمين على المرض المصاريف التالية :</p>
+          <list>
+          <point><p>العلاج</p></point>
+          <point><p>الجراحة،</p></point>
+          <point><p>الادوية</p></point>
+          <point><p>الاقامة بالمستشفى.</p></point>
+          <point><p>الفحوص البيولوجية والكهروديوغرافية.</p></point>
+          <point><p>والمجوافية، والنظيرية</p></point>
+          <point><p>علاج الاسنان واستغلافها الاصطناعي</p></point>
+          <point><p>النظارات الطبية</p></point>
+          <point><p>المعالجات بالمياه المعدنية والمتخصصة</p></point>
+          <point><p>الاجهزة والاعضاء الاصطناعية</p></point>
+          <point><p>ب الجبارة الفكية والوجهية</p></point>
+          <point><p>اعادة التدريب الوظيفي للاعضاء</p></point>
+          <point><p>اعادة التأهيل المهني</p></point>
+          <point><p>النقل بسيارة الاسعاف أو غيرها من وسائل النقل <condition>عندما تستلزم حالة المريض ذلك</condition>،</p></point>
+          </list>
+          </paragraph>
+          <paragraph>
+          <p>ويمكن اتمام قائمة المصاريف الواردة في هذه المادة بموجب مرسوم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_82">
+          <num>82</num>
+          <content>
+          <paragraph>
+          <p>تبقى مبالغ التعويضات اليومية ومعاشات العجز المدفوعة في تاريخ دخول هذا القانون حيز التطبيق على حالها وتراجع من حيث القيمة طبقا لاحكام <ref href="#art_21">المادتين 21</ref> و <ref href="#art_42">42</ref> اعلام.</p>
+          </paragraph>
+          <paragraph>
+          <p>يتم فتح الحقوق الخاصة بمعاش العر المنقول وكذا حسابه، على أساس مبلغ المعاش المباشر وتطبيقا لاحكام التشريع الجديد.</p>
+          </paragraph>
+          </content>
+          </article>
+          
+        <article eId="art_83">
+          <num>83</num>
+          <content>
+          <paragraph>
+          <p><obligation>لا يجوز دفع الاداءات المنصوص عليها في هذا القانون خارج التراب الوطني</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p>غير أنه تحدد الشروط التي تمنح فيها الاداءات العينية أو النقدية في <condition>حالة استعجال</condition> او عند <condition>ضرورة التحويل الى الخارج</condition> بموجب التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+          
+        <article eId="art_84">
+          <num>84</num>
+          <content>
+          <paragraph>
+          <p>تكفل الاداءات المستحقة للاعوان العاملين في البعثات الدبلوماسية والتمثيليات الجزائرية والطلبة والمتربصين وذوى حقوفهم من قبل <term refersTo="#social_security_bodies">هيئات الضمان الاجتماعي</term> وفقا لشروط تحدد بموجب مرسوم.</p>
+          </paragraph>
+          </content>
+          </article>
+          
+        <article eId="art_85">
+          <num>85</num>
+          <content>
+          <paragraph>
+          <p><obligation>لا يجوز لهيئات الضمان الاجتماعي أن تعتد بعدم وفاء أصحاب العملى بالالتزامات الملقاة على هاتفهم، لرفض تقديم الاداءات للمؤمرع له الذي يستوفى الشروط المنشئة للحقوق</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>عندما لا يعفى اصحاب العمل بالتزاماتهم</condition>، <obligation>يتعين على هيئات الصمان الاجتماعي تقديم الاداءات للمؤمن له</obligation> ثم تتولى مطالية هؤلاء بعد ذلك .</p>
+          </paragraph>
+          </content>
+          </article>
+          
+        <article eId="art_87">
+          <num>87</num>
+          <content>
+          <paragraph>
+          <p><obligation>يمنع على كل صاحب عمل أن يتحمل كليا أو جزئيا نفقة اشتراكات أو علاوات التأمين الصالح عماله</obligation> سواء أكانت فردية أم جماعية لدى شركة تأمين أو أي هيئة أخرى للتأمين وسواء أكان ذلك على سبيل تكميل الاداءات المنصوص عليها في هذا القانون أو الاضافة اليها.</p>
+          </paragraph>
+          <paragraph>
+          <p>تفسخ قانونا العقود السارية المفعول والمتعلقة بالتأمينات المشار اليها في الفقرة أعلاه اعتبارا من دخول هذا القانون حيز التطبيق.</p>
+          </paragraph>
+          </content>
+          </article>
+          
+        <article eId="art_88">
+          <num>88</num>
+          <content>
+          <paragraph>
+          <p><right>تعد الاداءات العينية والتمويضات اليومية ومعاشات العجز ومنحة الوفاة غير قابلة للتنازل عنها وغير قابلة للحجز</right>.</p>
+          </paragraph>
+          </content>
+          </article>
+          
+        <article eId="art_89">
+          <num>89</num>
+          <content>
+          <paragraph>
+          <p>تسرى الاحكام المتعلقة بأخطاء الغير في مجال حوادث العمل على الاداءات المنصوص عليها في هذا القانون.</p>
+          </paragraph>
+          </content>
+          </article>
+          
+        <article eId="art_مو">
+          <num>90</num>
+          <content>
+          <paragraph>
+          <p>ينشأ <def refersTo="#assistance_fund">صندوق للمساعدة والاسعاف</def> يخصص المنح في بعض الحالات الاستثنائية امتيازات للمؤمنة لهم اجتماعيا ولذوى حقوقهم :</p>
+          <list>
+          <point>
+          <p><condition>هندما لا يستوفي المعنيون الشروط التي تخول لهم الاستفادة من أداءات التأمين الاجتماعي</condition></p>
+          </point>
+          <point>
+          <p><condition>عندما يكون من ذوي الدخل المحدود</condition>.</p>
+          </point>
+          </list>
+          </paragraph>
+          <paragraph>
+          <p>يول صندوق المساعدة والاسعاف يجزء من اشتركات الضمان الاجتماعي.</p>
+          </paragraph>
+          <paragraph>
+          <p>تمنح الامتيازات من طرف لجنة تعمل ضمي <term refersTo="#social_security_bodies">هيئات الضمان الاجتماعي</term> وتسالف من ممثلى المؤمنين لهم اجتماعيا.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد طبيعة الامتيازات الممنوحة من صندوق المساعدة والاسعاف ومبلنها وقواعد منحها بموجب</p>
+          </paragraph>
+          </content>
+          </article>
+          
+        <article eId="art_97">
+          <num>91</num>
+          <content>
+          <paragraph>
+          <p><right>يمكن تقديم مكملات للاداءات المنصوص عليها في هذا القانون، في اطار تأمين اختیاری ضمن تعاضديات</right>، وذلك وفقا لشروط تحدد بمقتضى التشريع.</p>
+          </paragraph>
+          </content>
+          </article>
+          
+        <article eId="art_92">
+          <num>92</num>
+          <content>
+          <paragraph>
+          <p><obligation>تتولى هيئات الضمان الاجتماعي القيام بأعمال تتمثل في اقامة مرافق ذات النفع الصحي والاجتماعي لافادة العمال وذوى حقوقهم بالاداءات الجماعية</obligation> ويتم ذلك في اطار المخطط الستوى وطبقا للاجراءات الجارى بها العمل في مجال الاستثمارات المخططة.</p>
+          </paragraph>
+          <paragraph>
+          <p>وتحدد مختلف اشکال الخدمة الصحية والاجتماعية الهيئات المسمان الاجتماعي بموجب مرسوم.</p>
+          </paragraph>
+          </content>
+          </article>
+          
+      </chapter>
+      <chapter eId="chp_6">
+        <num>السادس</num>
+        <heading>أحكام ختامية</heading>
+        <article eId="art_هو">
+          <num>هو</num>
+          <content>
+          <paragraph>
+          <p><obligation>تحدد كيفيات تطبيق هذا القانون عند الحاجة بموجب <term refersTo="#decree">مرسوم</term></obligation></p>
+          </paragraph>
+          </content>
+          </article>
+          
+        <article eId="art_96">
+          <num>96</num>
+          <content>
+          <paragraph>
+          <p>تستمد الاحكام المتعلقة بالتأمينات الاجتماعية والخاصة بالعسكريين والملحقين بهم من هذا القانون.</p>
+          </paragraph>
+          </content>
+          </article>
+          
+        <article eId="art_98">
+          <num>98</num>
+          <content>
+          <paragraph>
+          <p>يدخل هذا القانون حين التطبيق ابتداء من أول يناير سنة 1984.</p>
+          </paragraph>
+          </content>
+          </article>
+          
+        <article eId="art_99">
+          <num>99</num>
+          <content>
+          <paragraph>
+          <p>ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية .</p>
+          </paragraph>
+          <paragraph>
+          <p>حرر بالجزائر في 27 رمضان عام 1403 الموافق 2 يوليو سنة 1983.</p>
+          </paragraph>
+          <paragraph>
+          <p>الشاذلي بن جديد</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+    </body>
+  </act>
+</akomaNtoso>

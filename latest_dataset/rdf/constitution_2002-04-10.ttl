@@ -1,0 +1,349 @@
+@prefix dzdoc: <https://legal.dz/ontology/document#> .
+@prefix dznorm: <https://legal.dz/ontology/norm#> .
+@prefix dzorg: <https://legal.dz/resource/organization/> .
+@prefix dzterm: <https://legal.dz/resource/term/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dzorg:الجريدة_الرسمية a dzdoc:Organization ;
+    rdfs:label "الجريدة الرسمية"@ar ;
+    dzdoc:frbrUri "/ontology/organization/dz/joradp"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#art_1_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2002-04-10/02-03#art_1> ;
+    dzdoc:position 0 ;
+    dzdoc:text "الجزائر جمهورية ديمقراطية شعبية. وهي وحدة لا تتجزأ"@ar .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#art_2_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2002-04-10/02-03#art_2> ;
+    dzdoc:position 0 ;
+    dzdoc:text "الإسلام دين الدولة."@ar .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#art_3_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2002-04-10/02-03#art_3> ;
+    dzdoc:position 0 ;
+    dzdoc:text "اللغة العربية هي اللغة الوطنية والرسمية."@ar .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#art_3_مكرر1_obligation_0_ea2056f5> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dznorm:expressedIn <https://legal.dz/resource/law/2002-04-10/02-03#art_3_مكرر1> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "تعمل الدولة لترقيتها وتطويرها بكل تنوعاتها اللسانية المستعملة عبر التراب الوطني."@ar ;
+    dznorm:sourceArticle "art_3_مكرر1" .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#art_3_مكرر1_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2002-04-10/02-03#art_3_مكرر1> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تمازيغت هي كذلك لغة وطنية."@ar .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#art_3_مكرر1_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2002-04-10/02-03#art_3_مكرر1> ;
+    dzdoc:position 1 ;
+    dzdoc:text "تعمل الدولة لترقيتها وتطويرها بكل تنوعاتها اللسانية المستعملة عبر التراب الوطني."@ar .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#art_3_مكرر1_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2002-04-10/02-03#art_3_مكرر1> ;
+    dzdoc:position 2 ;
+    dzdoc:text "(دسترة تمازيغت كلغة وطنية)"@ar .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#legal_basis_8be336544085> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/02-03> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "بمقتضى القانون رقم 02-03 المتضمن التعديل الدستوري"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/law/2002-04-10/02-03#preamble_segment_1> .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#preamble_segment_2> a dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2002-04-10/02-03#preamble> ;
+    dzdoc:position 2 ;
+    dzdoc:segmentType "formula" ;
+    dzdoc:text "يصدر القانون الآتي نصه"@ar .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#preface> a dzdoc:Preface ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2002-04-10/02-03> .
+
+<https://legal.dz/resource/law/2002-04-10/02-03/manifestation> a dzdoc:Manifestation ;
+    dzdoc:frbrUri "/akn/dz/act/law/2002-04-10/02-03/ara@.xml"^^xsd:anyURI ;
+    dzdoc:manifestationOf <https://legal.dz/resource/law/2002-04-10/02-03/expression> ;
+    dzdoc:transformDate "2026-04-28"^^xsd:date .
+
+dzterm:algeria a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "الجزائر"@ar .
+
+dzterm:arabic_language a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "اللغة العربية"@ar .
+
+dzterm:islam a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "الإسلام"@ar .
+
+dzterm:tamazight a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "تمازيغت"@ar .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#body> a dzdoc:Body ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:directlyContains <https://legal.dz/resource/law/2002-04-10/02-03#sec_1> ;
+    dzdoc:hasSection <https://legal.dz/resource/law/2002-04-10/02-03#sec_1> .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#preamble_segment_0> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2002-04-10/02-03#preamble> ;
+    dzdoc:position 0 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "بناء على الدستور"@ar .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#version_art_1_20020410_OpEnact_eca8f79a1d> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2002-04-10"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2002-04-10/02-03#version_art_1> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/2002-04-10/02-03#art_1> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/2002-04-10/02-03#art_1> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:versionText "الجزائر جمهورية ديمقراطية شعبية. وهي وحدة لا تتجزأ"@ar .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#version_art_2_20020410_OpEnact_de75a17220> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2002-04-10"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2002-04-10/02-03#version_art_2> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/2002-04-10/02-03#art_2> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/2002-04-10/02-03#art_2> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:versionText "الإسلام دين الدولة."@ar .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#version_art_3_20020410_OpEnact_8de0716b74> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2002-04-10"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2002-04-10/02-03#version_art_3> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/2002-04-10/02-03#art_3> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/2002-04-10/02-03#art_3> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:versionText "اللغة العربية هي اللغة الوطنية والرسمية."@ar .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#version_art_3__1_20020410_OpEnact_87487dc9e2> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2002-04-10"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2002-04-10/02-03#version_art_3_مكرر1> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/2002-04-10/02-03#art_3_مكرر1> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/2002-04-10/02-03#art_3_مكرر1> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:versionText "تمازيغت هي كذلك لغة وطنية. تعمل الدولة لترقيتها وتطويرها بكل تنوعاتها اللسانية المستعملة عبر التراب الوطني. (دسترة تمازيغت كلغة وطنية)"@ar .
+
+<https://legal.dz/resource/law/2002-04-10/02-03/expression> a dzdoc:Expression ;
+    dzdoc:expressionOf <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:frbrUri "/akn/dz/act/law/2002-04-10/02-03/ara@"^^xsd:anyURI ;
+    dzdoc:hasManifestation <https://legal.dz/resource/law/2002-04-10/02-03/manifestation> ;
+    dzdoc:language "ara" ;
+    dzdoc:publicationDate "2002-04-10"^^xsd:date .
+
+dzorg:parliament a dzdoc:Organization ;
+    rdfs:label "البرلمان"@ar ;
+    dzdoc:frbrUri "/ontology/organization/dz/parliament"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#preamble_segment_1> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2002-04-10/02-03#preamble> ;
+    dzdoc:position 1 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "بمقتضى القانون رقم 02-03 المتضمن التعديل الدستوري"@ar .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#version_art_1> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "الجزائر جمهورية ديمقراطية شعبية. وهي وحدة لا تتجزأ"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/2002-04-10/02-03#version_art_1_20020410_OpEnact_eca8f79a1d> ;
+    dzdoc:replacementText "الجزائر جمهورية ديمقراطية شعبية. وهي وحدة لا تتجزأ"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2002-04-10/02-03#art_1> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/2002-04-10/02-03#art_1> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2002-04-10"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#version_art_2> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "الإسلام دين الدولة."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/2002-04-10/02-03#version_art_2_20020410_OpEnact_de75a17220> ;
+    dzdoc:replacementText "الإسلام دين الدولة."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2002-04-10/02-03#art_2> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/2002-04-10/02-03#art_2> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2002-04-10"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#version_art_3> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "اللغة العربية هي اللغة الوطنية والرسمية."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/2002-04-10/02-03#version_art_3_20020410_OpEnact_8de0716b74> ;
+    dzdoc:replacementText "اللغة العربية هي اللغة الوطنية والرسمية."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2002-04-10/02-03#art_3> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/2002-04-10/02-03#art_3> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2002-04-10"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#version_art_3_مكرر1> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تمازيغت هي كذلك لغة وطنية. تعمل الدولة لترقيتها وتطويرها بكل تنوعاتها اللسانية المستعملة عبر التراب الوطني. (دسترة تمازيغت كلغة وطنية)"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/2002-04-10/02-03#version_art_3__1_20020410_OpEnact_87487dc9e2> ;
+    dzdoc:replacementText "تمازيغت هي كذلك لغة وطنية. تعمل الدولة لترقيتها وتطويرها بكل تنوعاتها اللسانية المستعملة عبر التراب الوطني. (دسترة تمازيغت كلغة وطنية)"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2002-04-10/02-03#art_3_مكرر1> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/2002-04-10/02-03#art_3_مكرر1> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2002-04-10"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#preamble> a dzdoc:Preamble ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:hasCitation <https://legal.dz/resource/law/2002-04-10/02-03#preamble_segment_0>,
+        <https://legal.dz/resource/law/2002-04-10/02-03#preamble_segment_1> ;
+    dzdoc:hasSegment <https://legal.dz/resource/law/2002-04-10/02-03#preamble_segment_0>,
+        <https://legal.dz/resource/law/2002-04-10/02-03#preamble_segment_1>,
+        <https://legal.dz/resource/law/2002-04-10/02-03#preamble_segment_2> ;
+    dzdoc:text "يصدر القانون الآتي نصه"@ar .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#sec_1> a dzdoc:Section ;
+    dzdoc:containedIn <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2002-04-10/02-03#body> ;
+    dzdoc:directlyContains <https://legal.dz/resource/law/2002-04-10/02-03#art_1>,
+        <https://legal.dz/resource/law/2002-04-10/02-03#art_2>,
+        <https://legal.dz/resource/law/2002-04-10/02-03#art_3>,
+        <https://legal.dz/resource/law/2002-04-10/02-03#art_3_مكرر1> ;
+    dzdoc:eId "sec_1" ;
+    dzdoc:hasArticle <https://legal.dz/resource/law/2002-04-10/02-03#art_1>,
+        <https://legal.dz/resource/law/2002-04-10/02-03#art_2>,
+        <https://legal.dz/resource/law/2002-04-10/02-03#art_3>,
+        <https://legal.dz/resource/law/2002-04-10/02-03#art_3_مكرر1> ;
+    dzdoc:heading "الجزائر"@ar ;
+    dzdoc:number "الأول" ;
+    dzdoc:position 0 .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#art_1> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2002-04-10/02-03#sec_1> ;
+    dzdoc:eId "art_1" ;
+    dzdoc:fullText "الجزائر جمهورية ديمقراطية شعبية. وهي وحدة لا تتجزأ"@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2002-04-10/02-03#version_art_1> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/2002-04-10/02-03#art_1_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/2002-04-10/02-03#version_art_1_20020410_OpEnact_eca8f79a1d> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:introducedOn "2002-04-10"^^xsd:date ;
+    dzdoc:number "الأولى" ;
+    dzdoc:position 0 ;
+    dzdoc:usesTerm dzterm:algeria .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#art_2> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2002-04-10/02-03#sec_1> ;
+    dzdoc:eId "art_2" ;
+    dzdoc:fullText "الإسلام دين الدولة."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2002-04-10/02-03#version_art_2> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/2002-04-10/02-03#art_2_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/2002-04-10/02-03#version_art_2_20020410_OpEnact_de75a17220> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:introducedOn "2002-04-10"^^xsd:date ;
+    dzdoc:number "2" ;
+    dzdoc:position 1 ;
+    dzdoc:usesTerm dzterm:islam .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#art_3> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2002-04-10/02-03#sec_1> ;
+    dzdoc:eId "art_3" ;
+    dzdoc:fullText "اللغة العربية هي اللغة الوطنية والرسمية."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2002-04-10/02-03#version_art_3> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/2002-04-10/02-03#art_3_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/2002-04-10/02-03#version_art_3_20020410_OpEnact_8de0716b74> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:introducedOn "2002-04-10"^^xsd:date ;
+    dzdoc:number "3" ;
+    dzdoc:position 2 ;
+    dzdoc:usesTerm dzterm:arabic_language .
+
+<https://legal.dz/resource/law/2002-04-10/02-03#art_3_مكرر1> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2002-04-10/02-03#sec_1> ;
+    dzdoc:eId "art_3_مكرر1" ;
+    dzdoc:fullText "تمازيغت هي كذلك لغة وطنية. تعمل الدولة لترقيتها وتطويرها بكل تنوعاتها اللسانية المستعملة عبر التراب الوطني. (دسترة تمازيغت كلغة وطنية)"@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2002-04-10/02-03#version_art_3_مكرر1> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/2002-04-10/02-03#art_3_مكرر1_para_0>,
+        <https://legal.dz/resource/law/2002-04-10/02-03#art_3_مكرر1_para_1>,
+        <https://legal.dz/resource/law/2002-04-10/02-03#art_3_مكرر1_para_2> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/2002-04-10/02-03#version_art_3__1_20020410_OpEnact_87487dc9e2> ;
+    dzdoc:imposesObligation <https://legal.dz/resource/law/2002-04-10/02-03#art_3_مكرر1_obligation_0_ea2056f5> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2002-04-10/02-03> ;
+    dzdoc:introducedOn "2002-04-10"^^xsd:date ;
+    dzdoc:number "3 مكرر(1)" ;
+    dzdoc:position 3 ;
+    dzdoc:usesTerm dzterm:tamazight .
+
+<https://legal.dz/resource/law/2002-04-10/02-03> a dzdoc:Law ;
+    dzdoc:authoredBy dzorg:parliament ;
+    dzdoc:citesLegalBasis <https://legal.dz/resource/law/unknown/02-03> ;
+    dzdoc:countryCode "dz" ;
+    dzdoc:dateText "10 أفريل سنة 2002"@ar ;
+    dzdoc:documentNumber "02-03" ;
+    dzdoc:enactmentDate "2002-04-10"^^xsd:date ;
+    dzdoc:frbrThisUri "/akn/dz/act/law/2002-04-10/02-03/main"^^xsd:anyURI ;
+    dzdoc:frbrUri "/akn/dz/act/law/2002-04-10/02-03"^^xsd:anyURI ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2002-04-10/02-03#version_art_1>,
+        <https://legal.dz/resource/law/2002-04-10/02-03#version_art_2>,
+        <https://legal.dz/resource/law/2002-04-10/02-03#version_art_3>,
+        <https://legal.dz/resource/law/2002-04-10/02-03#version_art_3_مكرر1> ;
+    dzdoc:hasAuthority dzorg:parliament ;
+    dzdoc:hasBody <https://legal.dz/resource/law/2002-04-10/02-03#body> ;
+    dzdoc:hasExpression <https://legal.dz/resource/law/2002-04-10/02-03/expression> ;
+    dzdoc:hasLegalBasisAssertion <https://legal.dz/resource/law/2002-04-10/02-03#legal_basis_8be336544085> ;
+    dzdoc:hasPreamble <https://legal.dz/resource/law/2002-04-10/02-03#preamble> ;
+    dzdoc:hasPreface <https://legal.dz/resource/law/2002-04-10/02-03#preface> ;
+    dzdoc:publicationDate "2002-04-10"^^xsd:date ;
+    dzdoc:sourceFile "Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/constitution_2002-04-10.xml" ;
+    dzdoc:title "قانون رقم 02-03 يتضمن التعديل الدستوري"@ar .
+

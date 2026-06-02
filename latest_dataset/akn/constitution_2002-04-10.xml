@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="law">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/law/2002-04-10/02-03/main"/>
+      <FRBRuri value="/akn/dz/act/law/2002-04-10/02-03"/>
+      <FRBRdate date="2002-04-10" name="enactment"/>
+      <FRBRauthor href="#parliament"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="02-03"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/law/2002-04-10/02-03/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/law/2002-04-10/02-03/ara@"/>
+      <FRBRdate date="2002-04-10" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/law/2002-04-10/02-03/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/law/2002-04-10/02-03/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="parliament" href="/ontology/organization/dz/parliament" showAs="البرلمان"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="converter" href="/ontology/person/dz/converter" showAs="Markup Specialist"/>
+  </references>
+</meta>
+    <preface>
+  <docTitle>قانون رقم 02-03 يتضمن التعديل الدستوري</docTitle>
+  <docNumber>02-03</docNumber>
+  <docDate date="2002-04-10">10 أفريل سنة 2002</docDate>
+  <docAuthority>البرلمان</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>بناء على الدستور</p>
+    </citation>
+    <citation>
+      <p>بمقتضى القانون رقم 02-03 المتضمن التعديل الدستوري</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يصدر القانون الآتي نصه</p>
+  </formula>
+</preamble>
+    <body>
+      <section eId="sec_1">
+        <num>الأول</num>
+        <heading>الجزائر</heading>
+        <article eId="art_1">
+          <num>الأولى</num>
+          <content>
+          <paragraph>
+          <p><term refersTo="#algeria">الجزائر</term> جمهورية ديمقراطية شعبية. وهي وحدة لا تتجزأ</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_2">
+          <num>2</num>
+          <content>
+          <paragraph>
+          <p><term refersTo="#islam">الإسلام</term> دين الدولة.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_3">
+          <num>3</num>
+          <content>
+          <paragraph>
+          <p><term refersTo="#arabic_language">اللغة العربية</term> هي اللغة الوطنية والرسمية.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_3_مكرر1">
+          <num>3 مكرر(1)</num>
+          <content>
+          <paragraph>
+          <p><term refersTo="#tamazight">تمازيغت</term> هي كذلك لغة وطنية.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>تعمل الدولة لترقيتها وتطويرها بكل تنوعاتها اللسانية المستعملة عبر التراب الوطني.</obligation></p>
+          </paragraph>
+          <paragraph>
+          <p>(دسترة تمازيغت كلغة وطنية)</p>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+    </body>
+  </act>
+</akomaNtoso>

@@ -1,0 +1,28 @@
+% Table: Gate fairness — HCR and Cite F1 with and without the citation-existence gate.
+% AKN-RLM with gate    = rlm_dispatched_full_adu_pervasive (canonical Phase C run).
+% AKN-RLM without gate = locked_no_citation_gate (AKN_NO_CITATION_GATE=1; same config).
+% Best baseline = baseline_hybrid_rerank_full.
+% 95\% bootstrap CIs in parentheses (1000 resamples, seed 42).
+% \dag In the dispatcher path, citations originate from BM25/dense retrieval over the closed
+%      corpus, so the LLM-generated set passed to the gate already references valid articles
+%      by construction. The dedicated --no-citation-gate run empirically confirms this:
+%      HCR is unchanged whether the gate runs or is bypassed.
+% \ddag Baselines use deterministic BM25/dense retrieval over a closed corpus;
+%       citations are always valid retrieved chunks.
+\begin{table}[htbp]
+\centering
+\caption{Citation-existence gate fairness analysis. Cite~F1 and Hallucinated Citation Rate
+(HCR\,$\downarrow$) for AKN-RLM and the best Phase-1 baseline with and without the gate.
+95\,\% bootstrap CIs in parentheses.}
+\label{tab:gate_fairness}
+\begin{tabular}{lcccc}
+\toprule
+ & \multicolumn{2}{c}{\textbf{With gate}} & \multicolumn{2}{c}{\textbf{Without gate}} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+System & Cite F1 & HCR$\downarrow$ & Cite F1 & HCR$\downarrow$ \\
+\midrule
+AKN-RLM (Phase C) & 0.3010 (0.2524,\ 0.3470) & 0.0000 (0.0000,\ 0.0000) & 0.2972 (0.2507,\ 0.3450)$^\dag$ & 0.0000 (0.0000,\ 0.0000)$^\dag$ \\
+Hybrid+Rerank (best baseline) & 0.1052 (0.0863,\ 0.1250) & 0.0000 (0.0000,\ 0.0000)$^\ddag$ & 0.1052 (0.0863,\ 0.1250) & 0.0000 (0.0000,\ 0.0000)$^\ddag$ \\
+\bottomrule
+\end{tabular}
+\end{table}

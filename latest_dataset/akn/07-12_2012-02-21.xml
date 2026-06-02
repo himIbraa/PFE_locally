@@ -1,0 +1,2457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="organic-law">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/organic-law/2012-02-21/07-12/main"/>
+      <FRBRuri value="/akn/dz/act/organic-law/2012-02-21/07-12"/>
+      <FRBRdate date="2012-02-21" name="enactment"/>
+      <FRBRauthor href="#parliament"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="07-12"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/organic-law/2012-02-21/07-12/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/organic-law/2012-02-21/07-12/ara@"/>
+      <FRBRdate date="2012-02-21" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/organic-law/2012-02-21/07-12/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/organic-law/2012-02-21/07-12/ara@.xml"/>
+      <FRBRdate date="2024-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="parliament" href="/ontology/organization/dz/parliament" showAs="البرلمان"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="converter" href="/ontology/person/dz/converter" showAs="Markup Specialist"/>
+  </references>
+</meta>
+    <preface>
+  <docTitle>قانون رقم 07-12 يتعلق بالولاية</docTitle>
+  <docNumber>07-12</docNumber>
+  <docDate date="2012-02-21">28 ربيع الأول عام 1433 الموافق 21 فبراير سنة 2012</docDate>
+  <docAuthority>البرلمان</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>إن رئيس الجمهورية،</p>
+    </citation>
+    <citation>
+      <p>بناء على الدستور، لا سيما المواد الأولى و4 و10 و14 و15 و16 و31 مكرر و119 و122 و125 و126 و159 منه،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون العضوي رقم 01-12 المؤرخ في 18 صفر عام 1433 الموافق 12 يناير سنة 2012 والمتعلق بنظام الانتخابات،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون العضوي رقم 04-12 المؤرخ في 18 صفر عام 1433 الموافق 12 يناير سنة 2012 والمتعلق بالأحزاب السياسية،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون العضوي رقم 05-12 المؤرخ في 18 صفر عام 1433 الموافق 12 يناير سنة 2012 والمتعلق بالإعلام،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 278-63 المؤرخ في 26 يوليو سنة 1963 الذي يحدد قائمة الأعياد الرسمية، المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 66-155 المؤرخ في 18 صفر عام 1386 الموافق 8 يونيو سنة 1966 والمتضمن قانون الإجراءات الجزائية، المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 156-66 المؤرخ في 18 صفر عام 1386 الموافق 8 يونيو سنة 1966 والمتضمن قانون العقوبات، المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 20-70 المؤرخ في 13 ذي الحجة عام 1389 الموافق 19 فبراير سنة 1970 والمتعلق بالحالة المدنية،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 58-75 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون المدني، المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 59-75 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون التجاري، المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 74-75 المؤرخ في 8 ذي القعدة عام 1395 الموافق 12 نوفمبر سنة 1975 والمتضمن إنشاء مسح الأراضي العام وتأسيس الدفتر العقاري،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 101-76 المؤرخ في 17 ذي الحجة عام 1396 الموافق 9 ديسمبر سنة 1976 والمتضمن قانون الضرائب المباشرة والرسوم المماثلة، المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 10-11 المؤرخ في 20 رجب عام 1432 الموافق 22 يونيو سنة 2011 والمتعلق بالبلدية،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 06-12 المؤرخ في 18 صفر عام 1433 الموافق 12 يناير سنة 2012 والمتعلق بالجمعيات،</p>
+    </citation>
+    <citation>
+      <p>وبعد رأي مجلس الدولة،</p>
+    </citation>
+    <citation>
+      <p>وبعد مصادقة البرلمان،</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يصدر القانون الآتي نصه :</p>
+  </formula>
+</preamble>
+    <body>
+      <chapter eId="chp_1">
+        <num>الأول</num>
+        <heading>تنظيم الولاية</heading>
+        <section eId="chp_1_sec_1">
+          <num>الأول</num>
+          <heading>أحكام عامة</heading>
+          <article eId="art_1">
+            <num>الأولى</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#wilaya">الولاية هي الجماعة الإقليمية للدولة.</def></p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>وتتمتع بالشخصية المعنوية والذمة المالية المستقلة.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p>وهي أيضا الدائرة الإدارية غير الممركزة للدولة وتشكل بهذه الصفة فضاء لتنفيذ السياسات العمومية التضامنية والتشاورية بين الجماعات الإقليمية والدولة.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>وتساهم مع الدولة في إدارة وتهيئة الإقليم والتنمية الاقتصادية والاجتماعية والثقافية وحماية البيئة وكذا حماية وترقية وتحسين الإطار المعيشي للمواطنين.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p>وتتدخل في كل مجالات الاختصاص المخولة لها بموجب القانون .</p>
+            </paragraph>
+            <paragraph>
+            <p>شعارها هو بالشعب وللشعب.</p>
+            </paragraph>
+            <paragraph>
+            <p>وتحدث بموجب القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_2">
+            <num>2</num>
+            <content>
+            <paragraph>
+            <p>للولاية هيئتان هما :</p>
+            <list>
+            <point>
+            <p><term refersTo="#apw">المجلس الشعبي الولائي</term>،</p>
+            </point>
+            <point>
+            <p><term refersTo="#wali">الوالي</term>.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_3">
+            <num>3</num>
+            <content>
+            <paragraph>
+            <p><right>تتوفر الولاية بصفتها الجماعة الإقليمية اللامركزية على ميزانية خاصة بها لتمويل الأعمال والبرامج المصادق عليها من <term refersTo="#apw">المجلس الشعبي الولائي</term></right> ولا سيما تلك المتعلقة بما يأتي :</p>
+            <list>
+            <point>
+            <p>التنمية المحلية ومساعدة البلديات</p>
+            </point>
+            <point>
+            <p>تغطية أعباء تسييرها،</p>
+            </point>
+            <point>
+            <p>المحافظة على أملاكها وترقيتها.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_4">
+            <num>4</num>
+            <content>
+            <paragraph>
+            <p><obligation>تكلف الولاية بصفتها الدائرة الإدارية بالأعمال غير الممركزة للدولة وتساهم في تنفيذ السياسات العمومية ضمن الإطار المحدد لتوزيع صلاحيات ووسائل الدولة بين مستوياتها المركزية والإقليمية.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_5">
+            <num>5</num>
+            <content>
+            <paragraph>
+            <p><obligation>تخصص الدولة للولاية بصفتها الجماعة الإقليمية، الموارد المخصصة لتغطية الأعباء والصلاحيات المخولة لها بموجب القانون.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p>وفي إطار القانون :</p>
+            <list>
+            <point>
+            <p><obligation>يرافق كل مهمة تحول من الدولة إلى الولاية توفير الموارد المالية الضرورية للتكفل بها بصفة دائمة</obligation>،</p>
+            </point>
+            <point>
+            <p><obligation>يجب أن يعوض كل تخفيض في الموارد الجبائية للولاية ناجم عن إجراء تتخذه الدولة ويتضمن إعفاء جبائيا أو تخفيضا في نسب الضريبة أو إلغائها بمورد يساوي على الأقل مبلغ الفارق عند التحصيل</obligation>.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_6">
+            <num>6</num>
+            <content>
+            <paragraph>
+            <p><right>تتوفر الولاية على أملاك</right> <obligation>تتولى صيانتها والحفاظ عليها وتثمينها.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_7">
+            <num>7</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن الولاية إنشاء مصالح عمومية للتكفل باحتياجات المواطن</right> <obligation>وتضمن له الاستمرارية والتساوي في الانتفاع.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_8">
+            <num>8</num>
+            <content>
+            <paragraph>
+            <p><right>تستطيع الولاية في حدود صلاحياتها إقامة علاقات مع جماعات إقليمية أجنبية قصد إرساء علاقات تبادل وتعاون</right> <condition>طبقا لأحكام التشريع والتنظيم المعمول بهما في ظل احترام القيم والثوابت الوطنية.</condition></p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وتتطلب إقامة هذه العلاقات وجود مصلحة عمومية وطنية ومحلية مؤكدة</condition> و<obligation>يجب ألا تكون بأي حال من الأحوال مصدر إفقار للولاية.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تندرج علاقات تعاون الولاية مع الجماعات الإقليمية الأجنبية ضمن الاحترام الصارم لمصالح الجزائر والتزاماتها الدولية.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويصادق على الاتفاقيات المتعلقة بذلك بموجب مداولة يوافق عليها <term refersTo="#minister_interior">الوزير المكلف بالداخلية</term> بعد أخذ رأي <term refersTo="#minister_foreign_affairs">الوزير المكلف بالشؤون الخارجية</term>.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق <ref href="#art_8">هذه المادة</ref> عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_1_sec_2">
+          <num>الثاني</num>
+          <heading>الاسم والإقليم والمقر الرئيسي</heading>
+          <article eId="art_9">
+            <num>المادة 9</num>
+            <content>
+            <paragraph>
+            <p>لل<term refersTo="#wilaya">ولاية</term> اسم وإقليم ومقر رئيسي.</p>
+            </paragraph>
+            <paragraph>
+            <p>يحدد الاسم والمقر الرئيسي لل<term refersTo="#wilaya">ولاية</term> بموجب مرسوم رئاسي.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويتم كل تعديل لذلك حسب الأشكال نفسها.</p>
+            </paragraph>
+            <paragraph>
+            <p>يتطابق إقليم ال<term refersTo="#wilaya">ولاية</term> مع أقاليم البلديات التي تتكون منها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_10">
+            <num>المادة 10</num>
+            <content>
+            <paragraph>
+            <p><condition>يخضع كل تعديل في الحدود الإقليمية للولاية إلى القانون</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_11">
+            <num>المادة 11</num>
+            <content>
+            <paragraph>
+            <p><condition>في حالة تعديل الحدود الإقليمية</condition>، فإن <right>حقوق</right> و<obligation>التزامات الولايات المعنية تعدل تبعا لذلك</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق <ref href="#art_11">هذه المادة</ref> عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+      <chapter eId="chp_2">
+        <num>الثاني</num>
+        <heading>المجلس الشعبي الولائي</heading>
+        <section eId="chp_2_sec_1">
+          <num>الأول</num>
+          <heading>سير المجلس الشعبي الولائي</heading>
+          <article eId="art_12">
+            <num>المادة 12</num>
+            <content>
+            <paragraph>
+            <p><obligation>للولاية مجلس منتخب عن طريق الاقتراع العام ويدعى <term refersTo="#apw">المجلس الشعبي الولائي</term></obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><def refersTo="#apw">وهو هيئة المداولة في الولاية</def>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_13">
+            <num>المادة 13</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعد <term refersTo="#apw">المجلس الشعبي الولائي</term> نظامه الداخلي ويصادق عليه</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يحدد النظام الداخلي النموذجي للمجلس عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_14">
+            <num>المادة 14</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعقد <term refersTo="#apw">المجلس الشعبي الولائي</term>، أربع (4) دورات عادية في السنة، مدة كل دورة منها خمسة عشر (15) يوما على الأكثر</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تنعقد هذه الدورات وجوبا خلال أشهر مارس ويونيو وسبتمبر وديسمبر ولا يمكن جمعها</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_15">
+            <num>المادة 15</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن <term refersTo="#apw">المجلس الشعبي الولائي</term> أن يجتمع في دورة غير عادية بطلب من رئيسه أو ثلث (3/1) أعضائه أو بطلب من الوالي</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تختتم الدورة غير العادية باستنفاد جدول أعمالها.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يجتمع <term refersTo="#apw">المجلس الشعبي الولائي</term> بقوة القانون في حالة كارثة طبيعية أو تكنولوجية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_16">
+            <num>المادة 16</num>
+            <content>
+            <paragraph>
+            <p><obligation>ترسل الاستدعاءات إلى دورات <term refersTo="#apw">المجلس الشعبي الولائي</term> مرفقة بمشروع جدول الأعمال من رئيسه أو ممثله الذي يعين من ضمن نواب الرئيس</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>وتدون في سجل مداولات <term refersTo="#apw">المجلس الشعبي الولائي</term>.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويحدد جدول أعمال الدورة وتاريخ انعقادها بمشاركة الوالي بعد مشاورة أعضاء المكتب.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_17">
+            <num>المادة 17</num>
+            <content>
+            <paragraph>
+            <p><obligation>يرسل الرئيس الاستدعاءات لدورات <term refersTo="#apw">المجلس الشعبي الولائي</term> إلى أعضاء <term refersTo="#apw">المجلس الشعبي الولائي</term> كتابيا وعن طريق البريد الإلكتروني وتكون مرفقة بجدول الأعمال وتسلم لهم في مقر سكناهم مقابل وصل استلام قبل عشرة (10) أيام كاملة على الأقل من الاجتماع</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>ويمكن تقليص هذه الآجال في حالة الاستعجال على ألا يقل عن يوم واحد كامل</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p>وفي هذه الحالة يتخذ رئيس <term refersTo="#apw">المجلس الشعبي الولائي</term> كل التدابير اللازمة لتسليم الاستدعاءات.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_18">
+            <num>المادة 18</num>
+            <content>
+            <paragraph>
+            <p><obligation>يلصق جدول أعمال الدورة فور استدعاء أعضاء <term refersTo="#apw">المجلس الشعبي الولائي</term> عند مدخل قاعة المداولات وفي أماكن الإلصاق المخصصة لإعلام الجمهور ، ولا سيما الإكترونية منها، وفي مقر الولاية والبلديات التابعة لها</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_19">
+            <num>المادة 19</num>
+            <content>
+            <paragraph>
+            <p><condition>لا تصح اجتماعات <term refersTo="#apw">المجلس الشعبي الولائي</term> إلا بحضور الأغلبية المطلقة لأعضائه الممارسين</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وإذا لم يجتمع <term refersTo="#apw">المجلس الشعبي الولائي</term> بعد الاستدعاء الأول لعدم اكتمال النصاب القانوني، فإن المداولات المتخذة بعد الاستدعاء الثاني بفارق خمسة (5) أيام كاملة على الأقل، تكون صحيحة مهما يكن عدد الأعضاء الحاضرين</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_20">
+            <num>المادة 20</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن عضو <term refersTo="#apw">المجلس الشعبي الولائي</term> الذي حصل له مانع لحضور الجلسة أو الدورة أن يوكل كتابيا أحد الأعضاء من اختياره، ليصوت نيابة عنه</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>لا يجوز لنفس العضو أن يكون حاملا لأكثر من وكالة واحدة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_21">
+            <num>المادة 21</num>
+            <content>
+            <paragraph>
+            <p>يتم إعداد الوكالة بطلب من الموكل أمام أي سلطة مؤهلة لهذا الغرض. وتحدد الوكالة صراحة الجلسة أو الدورة التي حررت من أجلها هذه الوكالة.</p>
+            </paragraph>
+            <paragraph>
+            <p>تقدم الوكالة إلى مكتب الدورة ولا تصح إلا لجلسة أو لدورة واحدة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_22">
+            <num>المادة 22</num>
+            <content>
+            <paragraph>
+            <p>تجرى مداولات وأشغال <term refersTo="#council">المجلس الشعبي الولائي</term> بما فيها مداولات وأشغال اللجان في المقرات المخصصة للمجلس الشعبي الولائي.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_23">
+            <num>المادة 23</num>
+            <content>
+            <paragraph>
+            <p><condition>في حالة القوة القاهرة المؤكدة التي تحول دون الدخول إلى المجلس الشعبي الولائي</condition>، يمكن عقد مداولات وأشغال <term refersTo="#council">المجلس الشعبي الولائي</term> في مكان آخر من إقليم الولاية بعد التشاور مع <term refersTo="#wali">الوالي</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_24">
+            <num>المادة 24</num>
+            <content>
+            <paragraph>
+            <p>يحضر <term refersTo="#wali">الوالي</term> دورات <term refersTo="#council">المجلس الشعبي الولائي</term>. و<condition>في حالة حصول مانع</condition> ينوب عنه ممثله.</p>
+            </paragraph>
+            <paragraph>
+            <p>يتدخل <term refersTo="#wali">الوالي</term> أو ممثله أثناء الأشغال بناء على طلبه أو بطلب من أعضاء المجلس.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_25">
+            <num>المادة 25</num>
+            <content>
+            <paragraph>
+            <p>تجرى مداولات وأشغال <term refersTo="#council">المجلس الشعبي الولائي</term> بلغة وطنية وتحرر، تحت طائلة البطلان، باللغة العربية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_26">
+            <num>المادة 26</num>
+            <content>
+            <paragraph>
+            <p>تكون جلسات <term refersTo="#council">المجلس الشعبي الولائي</term> علنية.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويمكن أن يقرر <term refersTo="#council">المجلس الشعبي الولائي</term> التداول في جلسة مغلقة في الحالتين الآتيتين :</p>
+            <list>
+            <point>
+            <p>الكوارث الطبيعية أو التكنولوجية،</p>
+            </point>
+            <point>
+            <p>دراسة الحالات التأديبية للمنتخبين.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_27">
+            <num>المادة 27</num>
+            <content>
+            <paragraph>
+            <p>يتولى رئيس الجلسة ضبط المناقشات ويمكنه طرد أي شخص غير عضو بالمجلس يخل بحسن سير المناقشات، بعد إنذاره.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_28">
+            <num>المادة 28</num>
+            <content>
+            <paragraph>
+            <p>للمجلس الشعبي الولائي مكتب يتكون من الأعضاء الآتي ذكرهم :</p>
+            <list>
+            <point>
+            <p>رئيس المجلس الشعبي الولائي، رئيسا،</p>
+            </point>
+            <point>
+            <p>نواب رئيس المجلس الشعبي الولائي، أعضاء،</p>
+            </point>
+            <point>
+            <p>رؤساء اللجان الدائمة، أعضاء.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>تحدد مهام هذا المكتب وكيفيات سيره عن طريق النظام الداخلي للمجلس الشعبي الولائي.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_29">
+            <num>المادة 29</num>
+            <content>
+            <paragraph>
+            <p>ينتخب <term refersTo="#council">المجلس الشعبي الولائي</term> خلال كل دورة بناء على اقتراح من رئيسه مكتبا يتكون من عضوين (2) إلى أربعة (4) أعضاء لتسييره وتتولى أمانة تتكون من موظفين ملحقين بديوان رئيس المجلس الشعبي الولائي مساعدة مكتب دورة المجلس الشعبي الولائي.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_30">
+            <num>المادة 30</num>
+            <content>
+            <paragraph>
+            <p>يتولى أمانة الجلسة موظف يختاره رئيس المجلس الشعبي الولائي من بين الموظفين الملحقين بديوانه.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_31">
+            <num>المادة 31</num>
+            <content>
+            <paragraph>
+            <p>مع مراعاة أحكام <ref href="#art_32">المادة 32</ref> أدناه، <obligation>يلصق مستخلص مداولة المجلس الشعبي الولائي، المصادق عليه بصفة من الوالي خلال الثمانية (8) أيام التي تلي دخولها حيز التنفيذ، في الأماكن المخصصة لإعلام الجمهور وبمقرات الولاية والبلديات وبكل وسيلة إعلام أخرى</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_32">
+            <num>المادة 32</num>
+            <content>
+            <paragraph>
+            <p>مع مراعاة الأحكام التشريعية والتنظيمية الملزمة باحترام الحياة الخاصة للمواطن وبسرية الإعلام والنظام العام، <right>يحق لكل شخص له مصلحة أن يطلع في عين المكان على محاضر مداولات المجلس الشعبي الولائي وأن يحصلعلى نسخة كاملة أو جزئية منها على نفقته</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_33">
+            <num>33</num>
+            <content>
+            <paragraph>
+            <p><obligation>يشكل <term refersTo="#apw">المجلس الشعبي الولائي</term> من بين أعضائه لجانا دائمة للمسائل التابعة لمجال اختصاصه</obligation> ولا سيما المتعلقة بما يأتي :
+            <list>
+            <point><p>التربية والتعليم العالي والتكوين المهني،</p></point>
+            <point><p>الاقتصاد والمالية،</p></point>
+            <point><p>الصحة والنظافة وحماية البيئة،</p></point>
+            <point><p>الاتصال وتكنولوجيات الإعلام،</p></point>
+            <point><p>تهيئة الإقليم والنقل،</p></point>
+            <point><p>التعمير والسكن،</p></point>
+            <point><p>الري والفلاحة والغابات والصيد البحري والسياحة،</p></point>
+            <point><p>الشؤون الاجتماعية والثقافة والشؤون الدينية والوقف والرياضة والشباب،</p></point>
+            <point><p>التنمية المحلية، التجهيز والاستثمار والتشغيل.</p></point>
+            </list></p>
+            </paragraph>
+            <paragraph>
+            <p>ويمكنه أيضا تشكيل لجان خاصة لدراسة كل المسائل الأخرى التي تهم الولاية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_34">
+            <num>34</num>
+            <content>
+            <paragraph>
+            <p><condition>تشكل اللجان الدائمة أو الخاصة عن طريق مداولة يصادق عليها بالأغلبية المطلقة لأعضاء المجلس الشعبي الولائي بناء على اقتراح من رئيسه أو الأغلبية المطلقة لأعضائه</condition>. و<obligation>يجب أن يضمن تشكيل هذه اللجان تمثيلا نسبيا يعكس التركيبة السياسية للمجلس الشعبي الولائي</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تعد كل لجنة نظامها الداخلي وتصادق عليه</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يحدد النظام الداخلي النموذجي للجان عن طريق التنظيم.</p>
+            </paragraph>
+            <paragraph>
+            <p>يرأس كل لجنة عضو من المجلس الشعبي الولائي منتخب من طرفها.</p>
+            </paragraph>
+            <paragraph>
+            <p>تعتبر اللجنة الخاصة محلة عند انتهاء أشغالها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_35">
+            <num>35</num>
+            <content>
+            <paragraph>
+            <p>تنشأ لجنة تحقيق بطلب من رئيس المجلس الشعبي الولائي أو من ثلث (3/1) أعضائه الممارسين.</p>
+            </paragraph>
+            <paragraph>
+            <p>وتنتخب عن طريق الأغلبية المطلقة لأعضائه الحاضرين.</p>
+            </paragraph>
+            <paragraph>
+            <p>يحدد الموضوع والآجال الممنوحة للجنة التحقيق قصد إتمام مهمتها في المداولة التي أنشأتها.</p>
+            </paragraph>
+            <paragraph>
+            <p>يخطر رئيس المجلس الشعبي الولائي بذلك <term refersTo="#wali">الوالي</term> و<term refersTo="#minister_interior">الوزير المكلف بالداخلية</term>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تقدم السلطات المحلية المساعدة للجنة التحقيق لتمكينها من إتمام مهمتها</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>وتقدم نتائج التحقيق للمجلس الشعبي الولائي وتتبع بمناقشة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_36">
+            <num>36</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن لجان المجلس الشعبي الولائي دعوة كل شخص من شأنه تقديم معلومات مفيدة لأشغال اللجنة بحكم مؤهلاته أو خبرته</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_37">
+            <num>37</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن أي عضو من أعضاء المجلس الشعبي الولائي توجيه سؤال كتابي لأي مدير أو مسؤول من مديري أو مسؤولي المصالح أو المديريات غير الممركزة للدولة المكلفة بمختلف قطاعات النشاط في إقليم الولاية</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يجب على مديري ومسؤولي هذه المديريات والمصالح الإجابة كتابة عن أي سؤال يتعلق بنشاطهم على مستوى تراب الولاية</obligation> <condition>في أجل لا يمكن أن يتجاوز الخمسة عشر (15) يوما من تاريخ تبليغه نص السؤال المبين على الإشعار بالاستلام</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_38">
+            <num>38</num>
+            <content>
+            <paragraph>
+            <p>مع مراعاة أحكام <ref href="#art_39">المادة 39</ref> أدناه تكون العهدة الانتخابية مجانية.</p>
+            </paragraph>
+            <paragraph>
+            <p>إلا أن <right>المنتخبين يستفيدون من تعويضات بمناسبة انعقاد دورات المجلس الشعبي الولائي أو مختلف اللجان التي يكونون أعضاء فيها</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_39">
+            <num>39</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على <term refersTo="#employer_entities">الهيئات المستخدمة</term> منح مستخدميها، الأعضاء في <term refersTo="#apw">مجلس شعبي ولائي</term>، الوقت الضروري لممارسة عهدتهم الانتخابية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يعتبر الاستدعاء لأشغال <term refersTo="#apw">المجلس الشعبي الولائي</term> مبررا للغياب. ومع مراعاة أحكام <ref href="#art_38">المادة 38</ref> من هذا القانون، <obligation>تدفع الدولة أجر المنتخب غير الدائم مقابل الوقت المخصص لأداء العهدة</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>لا يمكن أن يشكل التوقف عن العمل المنصوص عليه في هذه المادة سببا لفسخ عقد العمل من طرف <term refersTo="#employer_entities">الهيئة المستخدمة</term>.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>يستفيد المنتخب من الحقوق المرتبطة بمساره المهني خلال كل الفترة المخصصة لعهدته الانتخابية</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_40">
+            <num>40</num>
+            <content>
+            <paragraph>
+            <p>تزول صفة المنتخب بـ <term refersTo="#apw">المجلس الشعبي الولائي</term> في حالة الوفاة أو الاستقالة أو الإقصاء أو حصول مانع قانوني.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويقر <term refersTo="#apw">المجلس الشعبي الولائي</term> ذلك بموجب مداولة ويخطر <term refersTo="#wali">الوالي</term> بذلك.</p>
+            </paragraph>
+            <paragraph>
+            <p>يثبت فقدان صفة المنتخب بموجب قرار من <term refersTo="#minister_interior">الوزير المكلف بالداخلية</term>.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>يمكن أن يكون قرار <term refersTo="#minister_interior">الوزير المكلف بالداخلية</term> المثبت لفقدان صفة المنتخب محل طعن أمام <term refersTo="#council_state">مجلس الدولة</term></right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_41">
+            <num>41</num>
+            <content>
+            <paragraph>
+            <p><condition>في حالة الوفاة أو الاستقالة النهائية أو الإقصاء أو حصول المانع القانوني لمنتخب بـ <term refersTo="#apw">المجلس الشعبي الولائي</term></condition> <obligation>يتم استخلافه قانونا في أجل لا يتجاوز الشهر بالمرشح الذي يلي مباشرة آخر منتخب من نفس القائمة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_42">
+            <num>42</num>
+            <content>
+            <paragraph>
+            <p><obligation>ترسل استقالة عضو من <term refersTo="#apw">المجلس الشعبي الولائي</term> إلى رئيسه بواسطة ظرف محمول مقابل وصل استلام</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويقر <term refersTo="#apw">المجلس الشعبي الولائي</term> ذلك بموجب مداولة.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويبلغ <term refersTo="#wali">الوالي</term> بذلك فورا.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_43">
+            <num>43</num>
+            <content>
+            <paragraph>
+            <p>يعلن في حالة تخلي عن العهدة، كل منتخب تغيب بدون عذر مقبول في أكثر من ثلاث (3) دورات عادية خلال نفس السنة. ويثبت التخلي عن العهدة من طرف <term refersTo="#apw">المجلس الشعبي الولائي</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_44">
+            <num>44</num>
+            <content>
+            <paragraph>
+            <p>يقصى بقوة القانون، كل منتخب بـ <term refersTo="#apw">المجلس الشعبي الولائي</term> يثبت أنه يوجد تحت طائلة عدم القابلية للانتخاب أو في حالة تناف منصوص عليها قانونا.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويقر <term refersTo="#apw">المجلس الشعبي الولائي</term> ذلك بموجب مداولة .</p>
+            </paragraph>
+            <paragraph>
+            <p>ويثبت <term refersTo="#minister_interior">الوزير المكلف بالداخلية</term> هذا الإقصاء بموجب قرار.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>يمكن أن يكون قرار <term refersTo="#minister_interior">الوزير المكلف بالداخلية</term> المتضمن إقصاء أحد الأعضاء بسبب عدم القابلية للانتخاب أو التنافي، محل طعن أمام <term refersTo="#council_state">مجلس الدولة</term></right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_45">
+            <num>45</num>
+            <content>
+            <paragraph>
+            <p><condition>يمكن أن يوقف بموجب مداولة لـ <term refersTo="#apw">المجلس الشعبي الولائي</term>، كل منتخب يكون محل متابعة قضائية بسبب جناية أو جنحة لها صلة بالمال العام أو لأسباب مخلة بالشرف ولا تمكنه من متابعة عهدته الانتخابية بصفة صحيحة</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يعلن التوقيف بموجب قرار معلل من <term refersTo="#minister_interior">الوزير المكلف بالداخلية</term> إلى غاية صدور الحكم النهائي من الجهة القضائية المختصة.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وفي حالة صدور حكم قضائي نهائي بالبراءة</condition>، <right>يستأنف المنتخب تلقائيا وفوريا ممارسة مهامه الانتخابية</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_46">
+            <num>46</num>
+            <content>
+            <paragraph>
+            <p><obligation>يقصى بقوة القانون من <term refersTo="#provincial_assembly">المجلس الشعبي الولائي</term> كل منتخب كان محل إدانة جزائية نهائية لها علاقة بعهدته تضعه تحت طائلة عدم القابلية للانتخاب</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويقر <term refersTo="#provincial_assembly">المجلس الشعبي الولائي</term> ذلك بموجب مداولة .</p>
+            </paragraph>
+            <paragraph>
+            <p>ويثبت هذا الإقصاء بموجب قرار من <term refersTo="#minister_interior">الوزير المكلف بالداخلية</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_47">
+            <num>47</num>
+            <content>
+            <paragraph>
+            <p>يتم حل <term refersTo="#provincial_assembly">المجلس الشعبي الولائي</term> وتجديده بموجب مرسوم رئاسي بناء على تقرير <term refersTo="#minister_interior">الوزير المكلف بالداخلية</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_48">
+            <num>48</num>
+            <content>
+            <paragraph>
+            <p>يتم حل <term refersTo="#provincial_assembly">المجلس الشعبي الولائي</term> وتجديده الكلي :</p>
+            <list>
+            <point>
+            <p><condition>في حالة خرق أحكام دستورية</condition>،</p>
+            </point>
+            <point>
+            <p><condition>في حالة إلغاء انتخاب جميع أعضاء المجلس</condition>،</p>
+            </point>
+            <point>
+            <p><condition>في حالة استقالة جماعية لأعضاء المجلس الشعبي الولائي</condition>،</p>
+            </point>
+            <point>
+            <p><condition>عندما يكون الإبقاء على المجلس مصدرا لاختلالات خطيرة تم إثباتها أو من طبيعته المساس بمصالح المواطنين وطمأنينتهم</condition>،</p>
+            </point>
+            <point>
+            <p><condition>عندما يصبح عدد المنتخبين أقل من الأغلبية المطلقة وذلك رغم تطبيق أحكام <ref href="#art_41">المادة 41</ref> أعلاه</condition>،</p>
+            </point>
+            <point>
+            <p><condition>في حالة اندماج بلديات أو ضمها أو تجزئتها</condition>،</p>
+            </point>
+            <point>
+            <p><condition>في حالة حدوث ظروف استثنائية تحول دون تنصيب المجلس المنتخب</condition>.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_49">
+            <num>49</num>
+            <content>
+            <paragraph>
+            <p><condition>في حالة حل المجلس الشعبي الولائي</condition>، <obligation>يعين <term refersTo="#minister_interior">الوزير المكلف بالداخلية</term>، بناء على اقتراح من <term refersTo="#wali">الوالي</term>، خلال العشرة (10) أيام التي تلي حل المجلس، مندوبية ولائية لممارسة الصلاحيات المخول إياها بموجب القوانين والتنظيمات المعمول بها إلى حين تنصيب المجلس الجديد</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تنتهي مهمة المندوبية الولائية بقوة القانون فور تنصيب <term refersTo="#provincial_assembly">المجلس الشعبي الولائي</term> الجديد.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_50">
+            <num>50</num>
+            <content>
+            <paragraph>
+            <p><obligation>تجرى انتخابات تجديد <term refersTo="#provincial_assembly">المجلس الشعبي الولائي</term> المحل في أجل أقصاه ثلاثة (3) أشهر ابتداء من تاريخ الحل</obligation>، <condition>إلا في حالة المساس الخطير بالنظام العام</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p>ولا يمكن بأي حال من الأحوال إجراؤها خلال السنة الأخيرة من العهدة الجارية.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_2_sec_2">
+          <num>الثاني</num>
+          <heading>نظام المداولات</heading>
+          <article eId="art_51">
+            <num>51</num>
+            <content>
+            <paragraph>
+            <p><obligation>يتداول <term refersTo="#council">المجلس الشعبي الولائي</term> في الشؤون التي تدخل في مجال اختصاصاته</obligation>. <condition>باستثناء الحالات المنصوص عليها صراحة في هذا القانون</condition> <obligation>تتخذ المداولات بالأغلبية البسيطة لأعضاء <term refersTo="#council">المجلس الشعبي الولائي</term> الحاضرين أو الممثلين عند التصويت</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وفي حالة تساوي الأصوات</condition> يكون صوت الرئيس مرجحا.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_52">
+            <num>52</num>
+            <content>
+            <paragraph>
+            <p><obligation>تحرر المداولات وتسجل حسب ترتيبها الزمني في سجل خاص مرقم ومؤشر عليه من رئيس المحكمة المختص إقليميا</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>وتوقع هذه المداولات وجوبا أثناء الجلسة من جميع الأعضاء الحاضرين أو الممثلين عند التصويت</obligation>. <obligation>ويرسل مستخلص من المداولة في أجل ثمانية (8) أيام من رئيس <term refersTo="#council">المجلس الشعبي الولائي</term> إلى الوالي مقابل وصل استلام</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يعتبر تاريخ إيداع مستخلص المداولة التاريخ المسجل على وصل الاستلام.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_53">
+            <num>53</num>
+            <content>
+            <paragraph>
+            <p>تبطل بقوة القانون مداولات <term refersTo="#council">المجلس الشعبي الولائي</term> :</p>
+            <list>
+            <point>
+            <p>المتخذة خرقا للدستور وغير المطابقة للقوانين والتنظيمات،</p>
+            </point>
+            <point>
+            <p>التي تمس برموز الدولة وشعاراتها،</p>
+            </point>
+            <point>
+            <p>غير المحررة باللغة العربية</p>
+            </point>
+            <point>
+            <p>التي تتناول موضوعا لا يدخل ضمن اختصاصاته،</p>
+            </point>
+            <point>
+            <p>المتخذة خارج الاجتماعات القانونية للمجلس،</p>
+            </point>
+            <point>
+            <p>المتخذة خارج مقر <term refersTo="#council">المجلس الشعبي الولائي</term> مع مراعاة أحكام <ref href="#art_23">المادة 23</ref> أعلاه .</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p><condition>إذا تبين للوالي أن مداولة ما اتخذت خرقا لهذه المادة</condition>، فإنه <obligation>يرفع دعوى أمام المحكمة الإدارية المختصة إقليميا لإقرار بطلانها</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_54">
+            <num>54</num>
+            <content>
+            <paragraph>
+            <p>مع مراعاة أحكام المواد <ref href="#art_55">55</ref> و <ref href="#art_56">56</ref> و <ref href="#art_57">57</ref> من هذا القانون تصبح مداولات <term refersTo="#council">المجلس الشعبي الولائي</term> نافذة بقوة القانون بعد واحد وعشرين (21) يوما من إيداعها بالولاية.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>إذا تبين للوالي أن مداولة ما غير مطابقة للقوانين والتنظيمات طبقا للمادة 53 أعلاه</condition>، فإنه <obligation>يرفع دعوى أمام المحكمة الإدارية المختصة إقليميا في أجل الواحد والعشرين (21) يوما التي تلي اتخاذ المداولة لإقرار بطلانها</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_55">
+            <num>55</num>
+            <content>
+            <paragraph>
+            <p><condition>لا تنفذ إلا بعد مصادقة <term refersTo="#minister">الوزير المكلف بالداخلية</term> عليها، في أجل أقصاه شهران (2)</condition>، مداولات <term refersTo="#council">المجلس الشعبي الولائي</term> المتضمنة ما يأتي :</p>
+            <list>
+            <point>
+            <p>الميزانيات والحسابات،</p>
+            </point>
+            <point>
+            <p>التنازل عن العقار واقتناءه أو تبادله،</p>
+            </point>
+            <point>
+            <p>اتفاقيات التوأمة،</p>
+            </point>
+            <point>
+            <p>الهبات والوصايا الأجنبية.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_56">
+            <num>56</num>
+            <content>
+            <paragraph>
+            <p><obligation>لا يمكن رئيس <term refersTo="#council">المجلس الشعبي الولائي</term> أو عضو في المجلس يكون في وضعية تعارض مصالحه مع مصالح الولاية، بأسمائهم الشخصية أو أزواجهم أو أصولهم أو فروعهم إلى الدرجة الرابعة أو كوكلاء، حضور المداولة التي تعالج هذا الموضوع</obligation>. وفي حالة المخالفة تكون هذه المداولة باطلة.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يلزم كل عضو مجلس شعبي ولائي، يكون في وضعية تعارض مصالح بالتصريح بذلك لرئيس <term refersTo="#council">المجلس الشعبي الولائي</term></obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وفي حالة ما يكون رئيس <term refersTo="#council">المجلس الشعبي الولائي</term> في وضعية تعارض مصالح متعلقة به</condition>، <obligation>يجب عليه التصريح بذلك للمجلس الشعبي الولائي</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_57">
+            <num>57</num>
+            <content>
+            <paragraph>
+            <p>يمكن أن يثير <term refersTo="#wali">الوالي</term> بطلان المداولة المنصوص عليها في <ref href="#art_56">المادة 56</ref> أعلاه، <condition>خلال الخمسة عشر (15) يوما التي تلي اختتام دورة المجلس الشعبي الولائي التي اتخذت خلالها المداولة</condition> .</p>
+            </paragraph>
+            <paragraph>
+            <p>ويمكن المطالبة بها من قبل كل منتخب أو مكلف بالضريبة في الولاية له مصلحة في ذلك، <condition>خلال أجل خمسة عشر (15) يوما بعد إلصاق المداولة</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويرسل هذا الطلب برسالة موصى عليها إلى الوالي مقابل وصل استلام</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يرفع الوالي دعوى أمام المحكمة الإدارية قصد الإقرار ببطلان المداولات التي اتخذت خرقا لأحكام <ref href="#art_56">المادة 56</ref> أعلاه</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_2_sec_3">
+          <num>الثالث</num>
+          <heading>رئيس المجلس الشعبي الولائي</heading>
+          <article eId="art_58">
+            <num>المادة 58</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجتمع <term refersTo="#provincial_popular_council">المجلس الشعبي الولائي</term> تحت رئاسة المنتخب الأكبر سنا ، قصد انتخاب وتنصيب رئيسه خلال الثمانية (8) أيام التي تلي إعلان نتائج الانتخابات</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يتم وضع مكتب مؤقت للإشراف على الانتخابات يتشكل من المنتخب الأكبر سنا، ويساعده المنتخبان الأصغر سنا ويكونون غير مترشحين</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يستقبل المكتب المؤقت المذكور أعلاه الترشيحات لانتخاب الرئيس ويقوم بإعداد قائمة المترشحين.</p>
+            </paragraph>
+            <paragraph>
+            <p>يحل هذا المكتب بقوة القانون فور إعلان النتائج.</p>
+            </paragraph>
+            <paragraph>
+            <p>يحدد المحضر النموذجي المتعلق بتنصيب الرئيس عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_59">
+            <num>المادة 59</num>
+            <content>
+            <paragraph>
+            <p>ينتخب <term refersTo="#provincial_popular_council">المجلس الشعبي الولائي</term> رئيسه من بين أعضائه، للعهدة الانتخابية.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>يقدم المترشح لانتخاب رئيس المجلس الشعبي الولائي من القائمة الحائزة الأغلبية المطلقة للمقاعد</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة عدم حصول أي قائمة على الأغلبية المطلقة للمقاعد، يمكن القائمتين الحائزتين خمسة وثلاثين بالمائة (35 %) على الأقل من المقاعد تقديم مرشح</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وفي حالة عدم حصول أي قائمة على خمسة وثلاثين بالمائة (35) على الأقل من المقاعد، يمكن جميع القوائم تقديم مرشح عنها</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يكون الانتخاب سريا. ويعلن رئيسا للمجلس الشعبي الولائي المترشح الذي تحصل على الأغلبية المطلقة للأصوات.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وإذا لم يحصل أي مترشح على الأغلبية المطلقة للأصوات، يجرى دور ثان بين المترشحين الحائزين المرتبتين الأولى والثانية</condition>، ويعلن فائزا المترشح المتحصل على أغلبية الأصوات.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة تساوي الأصوات المحصل عليها ، يعلن فائزا المترشح الأكبر سنا</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_60">
+            <num>المادة 60</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعد المكتب المؤقت المذكور في <ref href="#art_58">المادة 58</ref> أعلاه محضر النتائج النهائية لانتخاب رئيس المجلس الشعبي الولائي ويرسل إلى الوالي</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويلصق بمقر الولاية والبلديات والملحقات الإدارية والمندوبيات البلدية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_61">
+            <num>المادة 61</num>
+            <content>
+            <paragraph>
+            <p><obligation>ينصب رئيس المجلس الشعبي الولائي المنتخب في مهامه بمقر الولاية بحضور الوالي وأعضاء المجلس الشعبي الولائي وأعضاء البرلمان ورؤساء المجالس الشعبية البلدية خلال جلسة علنية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_62">
+            <num>المادة 62</num>
+            <content>
+            <paragraph>
+            <p>يختار رئيس المجلس الشعبي الولائي خلال الثمانية (8) أيام التي تلي تنصيبه، نوابه من بين أعضاء المجلس ويعرضهم للمصادقة بالأغلبية المطلقة للمجلس الشعبي الولائي، ولا يمكن أن يتجاوز عددهم :</p>
+            <list>
+            <point><p>اثنين (2) بالنسبة للمجالس الشعبية الولائية المتكونة من 35 إلى 39 منتخبا،</p></point>
+            <point><p>ثلاثة (3) بالنسبة للمجالس الشعبية الولائية المتكونة من 43 إلى 47 منتخبا،</p></point>
+            <point><p>ستة (6) بالنسبة للمجالس الشعبية الولائية المتكونة من 51 إلى 55 منتخبا.</p></point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_63">
+            <num>المادة 63</num>
+            <content>
+            <paragraph>
+            <p><obligation>يتفرغ رئيس المجلس الشعبي الولائي بصفة دائمة لممارسة عهدته وهو ملزم بالإقامة على إقليم الولاية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة مانع مؤقت</condition>، <obligation>يعين رئيس المجلس الشعبي الولائي أحد نواب الرئيس لاستخلافه في مهامه</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>إذا استحال على الرئيس تعيين مستخلف له</condition>، <obligation>يقوم المجلس الشعبي الولائي بتعيين أحد نواب الرئيس، وإن تعذر ذلك أحد أعضاء المجلس</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_64">
+            <num>المادة 64</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا تغيب رئيس المجلس الشعبي الولائي عن دورتين عاديتين في السنة دون عذر مقبول</condition>، فإنه يعلن في حالة تخل عن العهدة من طرف المجلس.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_65">
+            <num>المادة 65</num>
+            <content>
+            <paragraph>
+            <p>يعلن <term refersTo="#president_apw">رئيس المجلس الشعبي الولائي</term> استقالته أمام المجلس المجتمع طبقا لأحكام هذا القانون ويبلغ <term refersTo="#wali">الوالي</term> بذلك. تكون الاستقالة سارية المفعول ابتداء من تاريخ تقديمها أمام المجلس.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_66">
+            <num>المادة 66</num>
+            <content>
+            <paragraph>
+            <p>يستخلف <term refersTo="#president_apw">رئيس المجلس الشعبي الولائي</term> المتوفى أو المستقيل أو المعفى أو الذي يكون محل مانع قانوني أو المنتهية مهامه بسبب التخلي عن العهدة الانتخابية، في أجل ثلاثين (30) يوما حسب الكيفيات المنصوص عليها في <ref href="#art_59">المادة 59</ref> أعلاه.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_67">
+            <num>المادة 67</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على <term refersTo="#wali">الوالي</term> أن يضع تحت تصرف <term refersTo="#president_apw">رئيس المجلس الشعبي الولائي</term> الوثائق والمعلومات والإمكانيات والوسائل الضرورية لتأدية مهام المجلس</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_68">
+            <num>المادة 68</num>
+            <content>
+            <paragraph>
+            <p>ل<term refersTo="#president_apw">رئيس المجلس الشعبي الولائي</term> ديوان يعمل على نحو دائم.</p>
+            </paragraph>
+            <paragraph>
+            <p>يتكون هذا الديوان من موظفين يختارهم <term refersTo="#president_apw">رئيس المجلس الشعبي الولائي</term> من بين موظفي القطاعات التابعة للولاية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_69">
+            <num>المادة 69</num>
+            <content>
+            <paragraph>
+            <p><obligation>يتفرغ <term refersTo="#president_apw">رئيس المجلس الشعبي الولائي</term> ونواب الرئيس ورؤساء اللجان الدائمة بصفة تامة لعهدتهم الانتخابية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يتم انتداب المنتخبين المذكورين أعلاه، بصفة دائمة من أجل أداء مهامهم.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_70">
+            <num>المادة 70</num>
+            <content>
+            <paragraph>
+            <p>يتقاضى <term refersTo="#president_apw">رئيس المجلس الشعبي الولائي</term> ونوابه ورؤساء اللجان الدائمة وكذا أعضاء المندوبيات الولائية المنصوص عليهم في المواد <ref href="#art_34">34</ref> و <ref href="#art_49">49</ref> و <ref href="#art_59">59</ref> و <ref href="#art_62">62</ref> بمناسبة ممارسة عهدتهم، علاوات وتعويضات ملائمة تتكفل بها ميزانية الولاية.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_71">
+            <num>المادة 71</num>
+            <content>
+            <paragraph>
+            <p><obligation>يبلغ <term refersTo="#president_apw">رئيس المجلس الشعبي الولائي</term> المجلس بالمسائل التابعة لاختصاصاته ويعلمه بالوضعية العامة للولاية ولا سيما منها النشاطات المسجلة بالولاية في الفترة ما بين الدورات</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_72">
+            <num>المادة 72</num>
+            <content>
+            <paragraph>
+            <p>يمثل <term refersTo="#president_apw">رئيس المجلس الشعبي الولائي</term> المجلس الشعبي الولائي في جميع المراسم التشريفية والتظاهرات الرسمية.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_2_sec_4">
+          <num>الرابع</num>
+          <heading>صلاحيات المجلس الشعبي الولائي</heading>
+          <article eId="art_73">
+            <num>المادة 73</num>
+            <content>
+            <paragraph>
+            <p>تمارس <term refersTo="#wilaya">الولاية</term> باعتبارها <term refersTo="#local_authority">جماعة إقليمية لا مركزية</term> صلاحياتها طبقا للمبادئ المحددة في <ref href="#art_1">المواد الأولى</ref> و<ref href="#art_3">3</ref> و<ref href="#art_4">4</ref> من هذا القانون</p>
+            </paragraph>
+            <paragraph>
+            <p>يمكن <term refersTo="#apw">المجلس الشعبي الولائي</term>، بالإضافة إلى التكفل بالمهام المنوطة به التدخل في المجالات التابعة لاختصاصات الدولة بالمساهمة في تنفيذ النشاطات المقررة في إطار السياسات العمومية الاقتصادية والاجتماعية.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد هذه المساهمة بموجب القوانين والتنظيمات التي تضبط بصفة خاصة كيفيات التكفل المالي.</p>
+            </paragraph>
+            <paragraph>
+            <p>يمكن <term refersTo="#apw">المجلس الشعبي الولائي</term> أن يقترح سنويا قائمة مشاريع قصد تسجيلها في البرامج القطاعية العمومية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_74">
+            <num>المادة 74</num>
+            <content>
+            <paragraph>
+            <p>يقدم <term refersTo="#apw">المجلس الشعبي الولائي</term> المساعدة للبلديات في إطار التكامل وانسجام الأعمال التي ينبغي القيام بها.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويمكنه المبادرة بكل الأعمال التي تهدف إلى إنجاز التجهيزات التي بحكم حجمها وأهميتها أو استعمالها، تتجاوز قدرات البلديات.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_75">
+            <num>المادة 75</num>
+            <content>
+            <paragraph>
+            <p>يبادر <term refersTo="#apw">المجلس الشعبي الولائي</term> حسب قدرات وطابع و خصوصيات كل ولاية على عاتق الميزانية الخاصة بالولاية، بكل الأعمال التي من طبيعتها المساهمة في التنمية الاقتصادية والاجتماعية والثقافية وكذا إنجاز المعالم التذكارية بالتعاون مع البلديات.</p>
+            </paragraph>
+            <paragraph>
+            <p>كما يمكنه طبقا للتشريع المعمول به في مجال ترقية الاستثمار، تشجيع كل مبادرة ترمي إلى تفضيل التنمية المنسجمة والمتوازنة لإقليمها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_76">
+            <num>المادة 76</num>
+            <content>
+            <paragraph>
+            <p>يعالج <term refersTo="#apw">المجلس الشعبي الولائي</term> الشؤون التي تدخل ضمن صلاحياته عن طريق المداولة.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويتداول حول المواضيع التابعة لاختصاصات المخول إياها بموجب القوانين والتنظيمات وكذا كل القضايا التي تهم الولاية التي ترفع إليه بناء على اقتراح ثلث (3/1) أعضائه أو رئيسه أو <term refersTo="#wali">الوالي</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_77">
+            <num>المادة 77</num>
+            <content>
+            <paragraph>
+            <p>يمارس <term refersTo="#apw">المجلس الشعبي الولائي</term> اختصاصات في إطار الصلاحيات المخولة للولاية بموجب القوانين والتنظيمات ويتداول في مجال :</p>
+            <list>
+            <point><p>الصحة العمومية وحماية الطفولة والأشخاص ذوي الاحتياجات الخاصة،</p></point>
+            <point><p>السياحة،</p></point>
+            <point><p>الإعلام والاتصال،</p></point>
+            <point><p>التربية والتعليم العالي والتكوين</p></point>
+            <point><p>الشباب والرياضة والتشغيل،</p></point>
+            <point><p>السكن والتعمير وتهيئة إقليم الولاية،</p></point>
+            <point><p>الفلاحة والري والغابات،</p></point>
+            <point><p>التجارة والأسعار والنقل،</p></point>
+            <point><p>الهياكل القاعدية والاقتصادية،</p></point>
+            <point><p>التضامن ما بين البلديات لفائدة البلديات المحتاجة والتي يجب ترقيتها،</p></point>
+            <point><p>التراث الثقافي المادي وغير المادي والتاريخي،</p></point>
+            <point><p>حماية البيئة،</p></point>
+            <point><p>التنمية الاقتصادية والاجتماعية والثقافية،</p></point>
+            <point><p>ترقية المؤهلات النوعية المحلية.</p></point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_78">
+            <num>المادة 78</num>
+            <content>
+            <paragraph>
+            <p>يساهم <term refersTo="#apw">المجلس الشعبي الولائي</term> في إعداد مخطط تهيئة إقليم الولاية ويراقب تطبيقه طبقا للقوانين والتنظيمات المعمول بها.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويعلمه <term refersTo="#wali">الوالي</term> بالنشاطات المحلية أو الجهوية أو الوطنية الخاصة بتهيئة الإقليم ويتداول قبل المصادقة على كل أداة مقررة في هذا المجال لها انعكاسات على مخطط تهيئة الولاية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_79">
+            <num>المادة 79</num>
+            <content>
+            <paragraph>
+            <p>يقدم <term refersTo="#apw">المجلس الشعبي الولائي</term> الآراء التي تقتضيها القوانين والتنظيمات، ويمكنه أن يقدم الاقتراحات ويبدي الملاحظات في كل ما يخص شؤون الولاية إلى <term refersTo="#minister">الوزير المختص</term> وذلك في أجل أقصاه ثلاثون (30) يوما.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_80">
+            <num>80</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعد <term refersTo="#council">المجلس الشعبي الولائي</term> مخططا للتنمية على المدى المتوسط يبين الأهداف والبرامج والوسائل المعبأة من الدولة في إطار مشاريع الدولة والبرامج البلدية للتنمية</obligation>. ويعتمد هذا المخطط كإطار للترقية والعمل من أجل التنمية الاقتصادية والاجتماعية للولاية .</p>
+            </paragraph>
+            <paragraph>
+            <p>يناقش <term refersTo="#council">المجلس الشعبي الولائي</term> مخطط التنمية الولائي ويبدي اقتراحات بشأنه.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_81">
+            <num>81</num>
+            <content>
+            <paragraph>
+            <p><obligation>ينشأ على مستوى كل ولاية بنك معلومات يجمع كل الدراسات والمعلومات والإحصائيات الاقتصادية والاجتماعية والبيئية المتعلقة بالولاية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>وتعد الولاية جدولا سنويا يبين النتائج المحصل عليها في كل القطاعات ومعدلات نمو كل قطاع</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تنظيم هذا البنك وسيره عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_82">
+            <num>82</num>
+            <content>
+            <paragraph>
+            <p>في إطار المخطط المذكور في <ref href="#art_80">المادة 80</ref> أعلاه، يقوم <term refersTo="#council">المجلس الشعبي الولائي</term> بما يأتي :</p>
+            <list>
+            <point>
+            <p>يحدد المناطق الصناعية التي سيتم إنشاؤها ويساهم في إعادة تأهيل المناطق الصناعية ومناطق النشاط في إطار البرامج الوطنية لإعادة التأهيل ويبدي رأيه في ذلك،</p>
+            </point>
+            <point>
+            <p>يسهل استفادة المتعاملين من العقار الاقتصادي،</p>
+            </point>
+            <point>
+            <p>يسهل ويشجع تمويل الاستثمارات في الولاية،</p>
+            </point>
+            <point>
+            <p>يساهم في إنعاش نشاطات المؤسسات العمومية المتواجدة بالولاية باتخاذ كل التدابير الضرورية.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_83">
+            <num>83</num>
+            <content>
+            <paragraph>
+            <p><obligation>يطور <term refersTo="#council">المجلس الشعبي الولائي</term> أعمال التعاون والتواصل بين المتعاملين الاقتصاديين ومؤسسات التكوين والبحث العلمي والإدارات المحلية من أجل ترقية الإبداع في القطاعات الاقتصادية</obligation>. ويعمل على ترقية التشاور مع المتعاملين الاقتصاديين قصد ضمان محيط ملائم للاستثمار.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_84">
+            <num>84</num>
+            <content>
+            <paragraph>
+            <p>يبادر <term refersTo="#council">المجلس الشعبي الولائي</term> ويضع حيز التنفيذ كل عمل في مجال حماية وتوسيع وترقية الأراضي الفلاحية والتهيئة والتجهيز الريفي.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويشجع أعمال الوقاية من الكوارث والآفات الطبيعية.</p>
+            </paragraph>
+            <paragraph>
+            <p>وبهذه الصفة، يبادر بكل الأعمال لمحاربة مخاطر الفيضانات والجفاف.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويتخذ كل الإجراءات الرامية إلى إنجاز أشغال تهيئة وتطهير وتنقية مجاري المياه في حدود إقليمه</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_85">
+            <num>85</num>
+            <content>
+            <paragraph>
+            <p>يبادر <term refersTo="#council">المجلس الشعبي الولائي</term> بالاتصال مع المصالح المعنية، بكل الأعمال الموجهة إلى تنمية وحماية الأملاك الغابية في مجال التشجير وحماية التربة وإصلاحها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_86">
+            <num>86</num>
+            <content>
+            <paragraph>
+            <p>يساهم <term refersTo="#council">المجلس الشعبي الولائي</term>، بالاتصال مع المصالح المعنية، في تطوير كل أعمال الوقاية ومكافحة الأوبئة في مجال الصحة الحيوانية والنباتية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_87">
+            <num>87</num>
+            <content>
+            <paragraph>
+            <p>يعمل <term refersTo="#council">المجلس الشعبي الولائي</term> على تنمية الري المتوسط والصغير.</p>
+            </paragraph>
+            <paragraph>
+            <p>كما يساعد تقنيا وماليا بلديات الولاية في مشاريع التزويد بالمياه الصالحة للشرب والتطهير وإعادة استعمال المياه التي تتجاوز الإطار الإقليمي للبلديات المعنية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_88">
+            <num>88</num>
+            <content>
+            <paragraph>
+            <p>يبادر <term refersTo="#council">المجلس الشعبي الولائي</term> بالأعمال المرتبطة بأشغال تهيئة الطرق والمسالك الولائية وصيانتها والحفاظ عليها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_89">
+            <num>المادة 89</num>
+            <content>
+            <paragraph>
+            <p><obligation>يقوم <term refersTo="#apw">المجلس الشعبي الولائي</term> بتصنيف وإعادة تصنيف الطرق والمسالك الولائية</obligation> <condition>حسب الشروط المحددة في التنظيم المعمول به</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_90">
+            <num>المادة 90</num>
+            <content>
+            <paragraph>
+            <p><obligation>يبادر <term refersTo="#apw">المجلس الشعبي الولائي</term>، بالاتصال مع المصالح المعنية بالأعمال المتعلقة بترقية وتنمية هياكل استقبال الاستثمارات</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_91">
+            <num>المادة 91</num>
+            <content>
+            <paragraph>
+            <p><obligation>يبادر <term refersTo="#apw">المجلس الشعبي الولائي</term> بكل عمل يرمي إلى تشجيع التنمية الريفية ولا سيما في مجال الكهرباء وفك العزلة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_92">
+            <num>المادة 92</num>
+            <content>
+            <paragraph>
+            <p><obligation>تتولى <term refersTo="#wilaya">الولاية</term>، في إطار المعايير الوطنية وتطبيقا للخريطة المدرسية والتكوينية، إنجاز مؤسسات التعليم المتوسط والثانوي والمهني وتتكفل بصيانتها والمحافظة عليها وكذا تجديد تجهيزاتها المدرسية على حساب الميزانية غير الممركزة للدولة المسجلة في حسابها</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_93">
+            <num>المادة 93</num>
+            <content>
+            <paragraph>
+            <p><obligation>يشجع <term refersTo="#apw">المجلس الشعبي الولائي</term> أو يساهم في برامج ترقية التشغيل بالتشاور مع البلديات والمتعاملين الاقتصاديين ولا سيما تجاه الشباب أو المناطق المراد ترقيتها</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_94">
+            <num>المادة 94</num>
+            <content>
+            <paragraph>
+            <p><obligation>يتولى <term refersTo="#apw">المجلس الشعبي الولائي</term>، في ظل احترام المعايير الوطنية في مجال <term refersTo="#public_health">الصحة العمومية</term>، إنجاز تجهيزات الصحة التي تتجاوز إمكانيات البلديات</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويسهر على تطبيق تدابير الوقاية الصحية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويتخذ في هذا الإطار، كل التدابير لتشجيع إنشاء هياكل مكلفة بمراقبة وحفظ الصحة في المؤسسات المستقبلة للجمهور وفي المواد الاستهلاكية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_95">
+            <num>المادة 95</num>
+            <content>
+            <paragraph>
+            <p><obligation>يساهم <term refersTo="#apw">المجلس الشعبي الولائي</term>، بالاتصال مع البلديات، في تنفيذ كل الأعمال المتعلقة بمخطط تنظيم الإسعافات والكوارث والآفات الطبيعية والوقاية من الأوبئة ومكافحتها</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_96">
+            <num>المادة 96</num>
+            <content>
+            <paragraph>
+            <p><obligation>يساهم <term refersTo="#apw">المجلس الشعبي الولائي</term> بالتنسيق مع البلدية في كل نشاط اجتماعي يهدف إلى ضمان</obligation> :</p>
+            <list>
+            <point>
+            <p>تنفيذ البرنامج الوطني للتحكم في النمو الديمغرافي،</p>
+            </point>
+            <point>
+            <p>حماية الأم والطفل،</p>
+            </point>
+            <point>
+            <p>مساعدة الطفولة،</p>
+            </point>
+            <point>
+            <p>مساعدة المسنين والأشخاص ذوي الاحتياجات الخاصة،</p>
+            </point>
+            <point>
+            <p>مساعدة الأشخاص في وضع صعب والمحتاجين،</p>
+            </point>
+            <point>
+            <p>التكفل بالمشردين والمختلين عقليا.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق <ref href="#art_96">هذه المادة</ref> عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_97">
+            <num>المادة 97</num>
+            <content>
+            <paragraph>
+            <p><obligation>يساهم <term refersTo="#apw">المجلس الشعبي الولائي</term> في إنشاء الهياكل القاعدية الثقافية والرياضية والترفيهية والخاصة بالشباب وحماية التراث التاريخي والحفاظ عليه، بالتشاور مع البلديات وكل الهيئات الأخرى المكلفة بترقية هذه النشاطات أو الجمعيات التي تنشط في هذا الميدان</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويقدم مساعدته و ومساهمته في برامج النشاطات الرياضية والثقافية والخاصة بالشباب</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_98">
+            <num>المادة 98</num>
+            <content>
+            <paragraph>
+            <p><obligation>يساهم <term refersTo="#apw">المجلس الشعبي الولائي</term> في حماية التراث الثقافي والفني والتاريخي والحفاظ عليه بمساهمة المصالح التقنية المؤهلة وبالتنسيق مع البلديات وكل هيئة وجمعية معنية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويطور كل عمل يرمي إلى ترقية التراث الثقافي والفني والتاريخي بالاتصال مع المؤسسات والجمعيات المعنية ويقترح كل التدابير الضرورية لتثمينه والحفاظ عليه</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_99">
+            <num>المادة 99</num>
+            <content>
+            <paragraph>
+            <p><obligation>يسهر <term refersTo="#provincial_popular_assembly">المجلس الشعبي الولائي</term> على حماية القدرات السياحية للولاية وتثمينها ويشجع كل استثمار متعلق بذلك</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_100">
+            <num>المادة 100</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن <term refersTo="#provincial_popular_assembly">المجلس الشعبي الولائي</term> أن يساهم في إنجاز برامج السكن</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_101">
+            <num>المادة 101</num>
+            <content>
+            <paragraph>
+            <p><obligation>يساهم <term refersTo="#provincial_popular_assembly">المجلس الشعبي الولائي</term> في عمليات تجديد وإعادة تأهيل الحظيرة العقارية المبنية وكذا الحفاظ على الطابع المعماري</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>كما يساهم <term refersTo="#provincial_popular_assembly">المجلس الشعبي الولائي</term>، بالتنسيق مع البلديات والمصالح التقنية المعنية في برنامج القضاء على السكن الهش وغير الصحي ومحاربته</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+      <chapter eId="chp_3">
+        <num>الثالث</num>
+        <heading>الوالي</heading>
+        <section eId="chp_3_sec_1">
+          <num>الأول</num>
+          <heading>سلطات الوالي بصفته ممثلا للولاية</heading>
+          <article eId="art_102">
+            <num>المادة 102</num>
+            <content>
+            <paragraph>
+            <p><obligation>يسهر <term refersTo="#wali">الوالي</term> على نشر مداولات <term refersTo="#apw">المجلس الشعبي الولائي</term> وتنفيذها</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_103">
+            <num>المادة 103</num>
+            <content>
+            <paragraph>
+            <p><obligation>يقدم <term refersTo="#wali">الوالي</term> عند افتتاح كل دورة عادية تقريرا عن تنفيذ المداولات المتخذة خلال الدورات السابقة</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>كما يطلع <term refersTo="#apw">المجلس الشعبي الولائي</term> سنويا على نشاط القطاعات غير الممركزة بالولاية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_104">
+            <num>المادة 104</num>
+            <content>
+            <paragraph>
+            <p><obligation>يطلع <term refersTo="#wali">الوالي</term> رئيس <term refersTo="#apw">المجلس الشعبي الولائي</term> بانتظام خلال الفترات الفاصلة بين الدورات، على مدى تنفيذ التوصيات الصادرة عن <term refersTo="#apw">المجلس الشعبي الولائي</term> في إطار التشريع والتنظيم المعمول بهما</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_105">
+            <num>المادة 105</num>
+            <content>
+            <paragraph>
+            <p><obligation>يمثل <term refersTo="#wali">الوالي</term> الولاية في جميع أعمال الحياة المدنية والإدارية حسب الأشكال والشروط المنصوص عليها في القوانين والتنظيمات المعمول بها</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>و يؤدي باسم الولاية، طبقا لأحكام هذا القانون كل أعمال إدارة الأملاك والحقوق التي تتكون منها ممتلكات الولاية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويبلغ <term refersTo="#apw">المجلس الشعبي الولائي</term> بذلك</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_106">
+            <num>المادة 106</num>
+            <content>
+            <paragraph>
+            <p><obligation>يمثل <term refersTo="#wali">الوالي</term> الولاية أمام القضاء</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_107">
+            <num>المادة 107</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعد <term refersTo="#wali">الوالي</term> مشروع الميزانية ويتولى تنفيذها <condition>بعد مصادقة <term refersTo="#apw">المجلس الشعبي الولائي</term> عليها</condition></obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>وهو الأمر بصرفها</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_108">
+            <num>المادة 108</num>
+            <content>
+            <paragraph>
+            <p><obligation>يسهر <term refersTo="#wali">الوالي</term> على وضع المصالح الولائية ومؤسساتها العمومية وحسن سيرها ويتولى تنشيط ومراقبة نشاطاتها طبقا للتشريع والتنظيم المعمول بهما</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_109">
+            <num>المادة 109</num>
+            <content>
+            <paragraph>
+            <p><obligation>يقدم <term refersTo="#wali">الوالي</term> أمام <term refersTo="#apw">المجلس الشعبي الولائي</term> بيانا سنويا حول نشاطات الولاية يتبع بمناقشة</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يمكن أن تنتج عن ذلك توصيات يتم إرسالها إلى <term refersTo="#minister_interior">الوزير المكلف بالداخلية</term> وإلى القطاعات المعنية.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_3_sec_2">
+          <num>الثاني</num>
+          <heading>سلطات الوالي بصفته ممثلا للدولة</heading>
+          <article eId="art_110">
+            <num>المادة 110</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#wali">الوالي</def> ممثل الدولة على مستوى الولاية.</p>
+            </paragraph>
+            <paragraph>
+            <p>وهو مفوض الحكومة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_111">
+            <num>المادة 111</num>
+            <content>
+            <paragraph>
+            <p><obligation>ينشط <term refersTo="#wali">الوالي</term> وينسق ويراقب نشاط المصالح غير الممركزة للدولة المكلفة بمختلف قطاعات النشاط في الولاية</obligation>، غير أنه يستثنى :</p>
+            <list>
+            <point>
+            <p>أ) العمل التربوي والتنظيم في مجال التربية والتكوين والتعليم العالي والبحث العلمي،</p>
+            </point>
+            <point>
+            <p>ب وعاء الضرائب وتحصيلها،</p>
+            </point>
+            <point>
+            <p>ج) الرقابة المالية،</p>
+            </point>
+            <point>
+            <p>د) إدارة الجمارك،</p>
+            </point>
+            <point>
+            <p>ه) مفتشية العمل،</p>
+            </point>
+            <point>
+            <p>و) مفتشية الوظيفة العمومية،</p>
+            </point>
+            <point>
+            <p>ز) المصالح التي يتجاوز نشاطها بالنظر إلى طبيعته أو خصوصيته إقليم الولاية.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_112">
+            <num>المادة 112</num>
+            <content>
+            <paragraph>
+            <p><obligation>يسهر <term refersTo="#wali">الوالي</term> أثناء ممارسة مهامه وفي حدود اختصاصاته على حماية <right>حقوق المواطنين وحرياتهم</right></obligation>، حسب الأشكال والشروط المنصوص عليها في القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_113">
+            <num>المادة 113</num>
+            <content>
+            <paragraph>
+            <p><obligation>يسهر <term refersTo="#wali">الوالي</term> على تنفيذ القوانين والتنظيمات وعلى احترام رموز الدولة وشعاراتها على إقليم الولاية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_114">
+            <num>المادة 114</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#wali">الوالي</term> مسؤول على المحافظة على النظام والأمن والسلامة والسكينة العمومية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_115">
+            <num>المادة 115</num>
+            <content>
+            <paragraph>
+            <p>يتولى <term refersTo="#wali">الوالي</term> لتطبيق القرارات المتخذة في إطار المهام المبينة في <ref href="#art_112">المواد 112</ref> و<ref href="#art_113">113</ref> و<ref href="#art_114">114</ref> أعلاه، تنسيق نشاطات مصالح الأمن المتواجدة على إقليم الولاية.</p>
+            </paragraph>
+            <paragraph>
+            <p>وبهذه الصفة <obligation>يلزم رؤساء مصالح الأمن بإعلامه في المقام الأول بكل القضايا المتعلقة بالأمن العام والنظام العمومي على مستوى الولاية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_116">
+            <num>المادة 116</num>
+            <content>
+            <paragraph>
+            <p><condition>عندما تقتضي الظروف الاستثنائية ذلك</condition>، يمكن <term refersTo="#wali">الوالي</term>، أن يطلب تدخل قوات الشرطة والدرك الوطني المتواجدة على إقليم الولاية، عن طريق التسخير.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_117">
+            <num>المادة 117</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#wali">الوالي</term> مسؤول حسب الشروط التي تحددها القوانين والتنظيمات على وضع تدابير الدفاع والحماية التي لا تكتسي طابعا عسكريا وتنفيذها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_118">
+            <num>المادة 118</num>
+            <content>
+            <paragraph>
+            <p>توضع تحت تصرف <term refersTo="#wali">الوالي</term> مصالح الأمن قصد تطبيق القرارات المتخذة في إطار المهام المنصوص عليها في <ref href="#art_112">المواد 112</ref> إلى <ref href="#art_117">117</ref> أعلاه.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_119">
+            <num>المادة 119</num>
+            <content>
+            <paragraph>
+            <p><obligation>يسهر <term refersTo="#wali">الوالي</term> على إعداد مخططات تنظيم الإسعافات في الولاية وتحيينها وتنفيذها</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويمكنه في إطار هذه المخططات، أن يسخر الأشخاص والممتلكات طبقا للتشريع المعمول به.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_120">
+            <num>المادة 120</num>
+            <content>
+            <paragraph>
+            <p><obligation>يسهر <term refersTo="#wali">الوالي</term> على حفظ أرشيف الدولة والولاية والبلديات</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_121">
+            <num>المادة 121</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#wali">الوالي</term> هو الأمر بصرف ميزانية الدولة للتجهيز المخصصة له بالنسبة لكل البرامج المقررة لصالح تنمية الولاية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_122">
+            <num>المادة 122</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على <term refersTo="#wali">الوالي</term> الإقامة بالمقر الرئيسي للولاية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_123">
+            <num>المادة 123</num>
+            <content>
+            <paragraph>
+            <p>يحدد القانون الأساسي لسلك الولاة بموجب مرسوم.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_3_sec_3">
+          <num>الثالث</num>
+          <heading>قرارات الوالي</heading>
+          <article eId="art_124">
+            <num>المادة 124</num>
+            <content>
+            <paragraph>
+            <p><obligation>يصدر <term refersTo="#wali">الوالي</term> قرارات من أجل تنفيذ مداولات <term refersTo="#apw">المجلس الشعبي الولائي</term> وممارسة السلطات المحددة في الفصلين الأول والثاني من هذا الباب</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_125">
+            <num>المادة 125</num>
+            <content>
+            <paragraph>
+            <p><obligation>تنشر القرارات المتضمنة التنظيمات الدائمة <condition>إذا كانت تكتسي طابعا عاما</condition></obligation>. وفي الحالات المخالفة <obligation>تبلغ للمعنيين دون المساس بأجال الطعون المنصوص عليها في القوانين المعمول بها</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>وتدمج ضمن مدونة القرارات الإدارية الخاصة بالولاية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_126">
+            <num>المادة 126</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن <term refersTo="#wali">الوالي</term> تفويض توقيعه لكل موظف</right> <condition>حسب الشروط والأشكال المنصوص عليها في القوانين والتنظيمات المعمول بها</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+      <chapter eId="chp_4">
+        <num>الرابع</num>
+        <heading>تنظيم إدارة الولاية</heading>
+        <section eId="chp_4_sec_1">
+          <num>الأول</num>
+          <heading>إدارة الولاية</heading>
+          <article eId="art_127">
+            <num>المادة 127</num>
+            <content>
+            <paragraph>
+            <p><obligation>تتوفر <term refersTo="#wilaya">الولاية</term> على إدارة توضع تحت سلطة <term refersTo="#wali">الوالي</term></obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>وتكون مختلف المصالح غير الممركزة للدولة جزءا منها.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويتولى <term refersTo="#wali">الوالي</term> تنشيط وتنسيق ومراقبة ذلك.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_128">
+            <num>المادة 128</num>
+            <content>
+            <paragraph>
+            <p>تكيف إدارة <term refersTo="#wilaya">الولاية</term> حسب أهمية وحجم المهام المنوطة بها وكذا طبيعة كل <term refersTo="#wilaya">ولاية</term> وخصوصياتها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_129">
+            <num>المادة 129</num>
+            <content>
+            <paragraph>
+            <p><right>توظف <term refersTo="#wilaya">الولاية</term> على حساب الميزانية اللامركزية للولاية المستخدمين الضروريين لسير مصالحها بما يناسب إمكانياتها وبناء على احتياجاتها</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد شروط تسيير هؤلاء المستخدمين وتعيينهم طبقا للتشريع والتنظيم المعمول بهما.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق <ref href="#art_129">هذه المادة</ref> عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_130">
+            <num>المادة 130</num>
+            <content>
+            <paragraph>
+            <p><obligation>يزود مستخدمو المصالح الولائية والمؤسسات العمومية المحلية التابعة لها بقانون أساسي</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق <ref href="#art_130">هذه المادة</ref> عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_131">
+            <num>المادة 131</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن <term refersTo="#wilaya">الولاية</term> اللجوء إلى توظيف خبراء ومختصين عن طريق التعاقد</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق <ref href="#art_131">هذه المادة</ref> عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_4_sec_2">
+          <num>الثاني</num>
+          <heading>أملاك الولاية</heading>
+          <article eId="art_132">
+            <num>المادة 132</num>
+            <content>
+            <paragraph>
+            <p>تتم عمليات <term refersTo="#acquisition">اقتناء الأملاك العقارية</term> وعقود امتلاكها من طرف <term refersTo="#wilaya">الولاية</term> ومؤسساتها العمومية وفق <condition>الشروط المحددة في القوانين والتنظيمات المعمول بها</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_133">
+            <num>المادة 133</num>
+            <content>
+            <paragraph>
+            <p>يبت <term refersTo="#apw">المجلس الشعبي الولائي</term> في قبول أو رفض <term refersTo="#donations">الهبات والوصايا</term> الممنوحة <term refersTo="#wilaya">للولاية</term> سواء أكانت مقرونة بأعباء أو شروط أو تخصيصات خاصة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_134">
+            <num>المادة 134</num>
+            <content>
+            <paragraph>
+            <p>تبت المؤسسات العمومية الولائية في قبول أو رفض <term refersTo="#donations">الهبات والوصايا</term> الممنوحة لها والتي <condition>لا تكون مقرونة بأعباء أو شروط أو تخصيصات خاصة</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وإذا كانت هذه الهبات والوصايا مقرونة بأعباء أو شروط أو تخصيصات خاصة</condition>، فإن قبولها أو رفضها يتم ترخيصه بموجب مداولة <term refersTo="#apw">المجلس الشعبي الولائي</term>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يخضع قبول الهبات والوصايا الممنوحة للولاية من الخارج إلى الموافقة المسبقة من <term refersTo="#minister_interior">الوزير المكلف بالداخلية</term></obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_135">
+            <num>المادة 135</num>
+            <content>
+            <paragraph>
+            <p>تبرم <term refersTo="#public_procurement">الصفقات الخاصة بالأشغال أو الخدمات أو التوريدات</term> للولاية ومؤسساتها العمومية ذات الطابع الإداري <condition>طبقا للقوانين والتنظيمات المعمول بها والمطبقة على الصفقات العمومية</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_136">
+            <num>المادة 136</num>
+            <content>
+            <paragraph>
+            <p><condition>عندما تجرى مناقصة عمومية لحساب الولاية</condition>، فإن الموظف الذي يجريها يساعده ثلاثة (3) منتخبين من تشكيلات سياسية مختلفة يعينهم <term refersTo="#apw">المجلس الشعبي الولائي</term> ويحضر المناقصة المحاسب المعين أو ممثله بصفة استشارية.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويتم إعداد محضر لهذه المناقصة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_137">
+            <num>المادة 137</num>
+            <content>
+            <paragraph>
+            <p><condition>عندما تبرم سلطة مكلفة بتسيير مؤسسة عمومية ولائية ذات طابع إداري مناقصة عمومية</condition> فإنه يجب أن يحضرها ثلاثة (3) منتخبين من تشكيلات سياسية مختلفة بأصوات تداولية وكذا المحاسب أو ممثله بصفة استشارية.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويتم إعداد محضر لهذه المناقصة.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_4_sec_3">
+          <num>الثالث</num>
+          <heading>مسؤولية الولاية</heading>
+          <article eId="art_138">
+            <num>المادة 138</num>
+            <content>
+            <paragraph>
+            <p><obligation>تتحمل <term refersTo="#wilaya">الولاية</term> مبالغ التعويضات الناجمة عن الأضرار التي تطرأ ل<term refersTo="#president_apw">رئيس المجلس الشعبي الولائي</term> ونواب الرئيس ورؤساء اللجان والمنتخبين ونواب المندوبيات الولائية الناجمة مباشرة عن ممارسة عهدتهم أو بمناسبة مزاولة مهامهم</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_139">
+            <num>المادة 139</num>
+            <content>
+            <paragraph>
+            <p><obligation>يتعين على <term refersTo="#wilaya">الولاية</term> حماية الأشخاص المذكورين في <ref href="#art_138">المادة 138</ref> أعلاه، والدفاع عنهم من التهديدات أو الإهانات أو الافتراء أو التهجمات مهما تكن طبيعتها التي قد يتعرضون لها أثناء أداء مهامهم أو بمناسبتها</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>ويكون ل<term refersTo="#wilaya">الولاية</term> حق دعوى الرجوع ضد محدثي الأضرار</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_140">
+            <num>المادة 140</num>
+            <content>
+            <paragraph>
+            <p><obligation><term refersTo="#wilaya">الولاية</term> مسؤولة مدنيا عن الأخطاء التي يرتكبها <term refersTo="#president_apw">رئيس المجلس الشعبي الولائي</term> والمنتخبون</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>وتتولى <term refersTo="#wilaya">الولاية</term> ممارسة حق دعوى الرجوع أمام الجهة القضائية المختصة ضد هؤلاء <condition>في حالة خطأ شخصي من جانبهم</condition></obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_4_sec_4">
+          <num>الرابع</num>
+          <heading>المصالح العمومية الولائية</heading>
+          <article eId="art_141">
+            <num>المادة 141</num>
+            <content>
+            <paragraph>
+            <p>مع مراعاة الأحكام القانونية المطبقة في هذا المجال، <right>يمكن <term refersTo="#wilaya">الولاية</term> أن تنشئ قصد تلبية الحاجات الجماعية لمواطنيها بموجب مداولة <term refersTo="#apw">المجلس الشعبي الولائي</term> مصالح عمومية ولائية</right> للتكفل على وجه الخصوص بما يأتي :</p>
+            <list>
+            <point>
+            <p>الطرق والشبكات المختلفة،</p>
+            </point>
+            <point>
+            <p>مساعدة ورعاية الطفولة والأشخاص المسنين أو الذين يعانون من إعاقة أو أمراض مزمنة،</p>
+            </point>
+            <point>
+            <p>النقل العمومي،</p>
+            </point>
+            <point>
+            <p>النظافة والصحة العمومية ومراقبة الجودة،</p>
+            </point>
+            <point>
+            <p>المساحات الخضراء،</p>
+            </point>
+            <point>
+            <p>الصناعات التقليدية والحرف.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>يكيف عدد هذه المصالح العمومية وحجمها حسب إمكانيات كل <term refersTo="#wilaya">ولاية</term> ووسائلها واحتياجاتها.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذا الحكم عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_142">
+            <num>المادة 142</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن <term refersTo="#apw">المجلس الشعبي الولائي</term> أن يستغل مباشرة مصالحه العمومية عن طريق الاستغلال المباشر</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_143">
+            <num>المادة 143</num>
+            <content>
+            <paragraph>
+            <p>يحدد <term refersTo="#apw">المجلس الشعبي الولائي</term> المصالح العمومية التي يقرر استغلالها عن طريق الاستغلال المباشر.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_144">
+            <num>المادة 144</num>
+            <content>
+            <paragraph>
+            <p><obligation>تسجل إيرادات ونفقات الاستغلال المباشر في ميزانية <term refersTo="#wilaya">الولاية</term> حسب قواعد المحاسبة العمومية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_145">
+            <num>المادة 145</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن <term refersTo="#apw">المجلس الشعبي الولائي</term> أن يقرر ميزانية مستقلة لصالح بعض المصالح العمومية الولائية المستغلة عن طريق الاستغلال المباشر</right> و<obligation>يجب عليه ضمان توازنها المالي</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_146">
+            <num>المادة 146</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن <term refersTo="#apw">المجلس الشعبي الولائي</term> أن ينشئ مؤسسات عمومية ولائية تتمتع بالشخصية المعنوية والاستقلال المالي قصد تسيير المصالح العمومية</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_147">
+            <num>المادة 147</num>
+            <content>
+            <paragraph>
+            <p>تأخذ المؤسسة العمومية الولائية شكل مؤسسة عمومية ذات طابع إداري أو مؤسسة عمومية ذات طابع صناعي أو تجاري حسب الهدف المرجو منها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_148">
+            <num>المادة 148</num>
+            <content>
+            <paragraph>
+            <p>تحدث المؤسسات العمومية الولائية بموجب مداولة من <term refersTo="#apw">المجلس الشعبي الولائي</term> طبقا لأحكام <ref href="#art_54">المادة 54</ref> من هذا القانون.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_149">
+            <num>المادة 149</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا تعذر استغلال المصالح العمومية الولائية المذكورة في <ref href="#art_146">المادة 146</ref> أعلاه عن طريق الاستغلال المباشر أو مؤسسة</condition>، فإنه <right>يمكن <term refersTo="#apw">المجلس الشعبي الولائي</term> الترخيص باستغلالها عن طريق الامتياز طبقا للتنظيم المعمول به</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يخضع الامتياز لدفتر شروط نموذجي يحدد عن طريق التنظيم ويصادق عليه حسب القواعد والإجراءات المعمول بها.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويصادق على العقود المبرمة في هذا الشأن طبقا لأحكام <ref href="#art_54">المادة 54</ref> من هذا القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_150">
+            <num>المادة 150</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن ولايتين أو أكثر إنشاء مؤسسات ولائية مشتركة لإدارة الممتلكات أو التجهيزات المنجزة بصفة مشتركة والتي يكون تسييرها المشترك ضروريا من الناحية التقنية والقانونية</right> وذلك بعد مداولة مجالسها الشعبية الولائية، طبقا لأحكام <ref href="#art_54">المادة 54</ref> من هذا القانون.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+      <chapter eId="chp_5">
+        <num>الخامس</num>
+        <heading>مالية الولاية</heading>
+        <section eId="chp_5_sec_1">
+          <num>الأول</num>
+          <heading>أحكام عامة</heading>
+          <article eId="art_151">
+            <num>المادة 151</num>
+            <content>
+            <paragraph>
+            <p>تتكون <term refersTo="#budget_resources">موارد الميزانية والمالية للولاية</term> بصفة خاصة مما يأتي :</p>
+            <list>
+            <point>
+            <p>التخصيصات،</p>
+            </point>
+            <point>
+            <p>ناتج الجباية والرسوم،</p>
+            </point>
+            <point>
+            <p>الإعانات وناتج الهبات والوصايا،</p>
+            </point>
+            <point>
+            <p>مداخيل ممتلكاتها،</p>
+            </point>
+            <point>
+            <p>مداخيل أملاك الولاية،</p>
+            </point>
+            <point>
+            <p>القروض،</p>
+            </point>
+            <point>
+            <p>ناتج مقابل الخدمات الخاصة التي تؤديها الولاية،</p>
+            </point>
+            <point>
+            <p>جزء من ناتج حق الامتياز للفضاءات العمومية بما فيما الفضاءات الإشهارية التابعة للأملاك الخاصة للدولة،</p>
+            </point>
+            <point>
+            <p>الناتج المحصل مقابل مختلف الخدمات.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_152">
+            <num>المادة 152</num>
+            <content>
+            <paragraph>
+            <p><obligation>الولاية مسؤولة عن تسيير مواردها المالية الخاصة</obligation>. وهي <obligation>مسؤولة أيضا عن تعبئة مواردها</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_153">
+            <num>المادة 153</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن الولاية في إطار تسيير أملاكها وسير المصالح العمومية المحلية أن تحدد بموجب مداولة المجلس الشعبي الولائي مساهمة مالية للمرتفقين تتناسب مع طبيعة الخدمات المقدمة ونوعيتها</right> .</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_154">
+            <num>المادة 154</num>
+            <content>
+            <paragraph>
+            <p>تتلقى الولاية من الدولة إعانات ومخصصات تسيير بالنظر على الخصوص لما يأتي:</p>
+            <list>
+            <point>
+            <p>عدم مساواة مداخيل الولايات</p>
+            </point>
+            <point>
+            <p>عدم كفاية مداخيلها مقارنة بمهامها وصلاحياتها كما هو محدد في هذا القانون،</p>
+            </point>
+            <point>
+            <p>عدم كفاية التغطية المالية للنفقات الإجبارية،</p>
+            </point>
+            <point>
+            <p>التبعات الناجمة عن التكفل بحالات القوة القاهرة ولاسيما منها الكوارث الطبيعية أو الأضرار كما القانون، هي محددة في</p>
+            </point>
+            <point>
+            <p>الأهداف الرامية إلى تلبية الاحتياجات المخولة لها قانونا،</p>
+            </point>
+            <point>
+            <p>نقص القيمة للإيرادات الجبائية الولائية ولا سيما في إطار التشجيع على الاستثمار المنصوص عليه في قانون المالية.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p><obligation>وتخصص إعانات الدولة الممنوحة للولاية للغرض الذي منحت من أجله</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_155">
+            <num>المادة 155</num>
+            <content>
+            <paragraph>
+            <p><obligation>تقيد بتخصيص خاص الاعتمادات المالية للتجهيز بعنوان مساهمة الدولة في ميزانية الولاية أو الصندوق المشترك للجماعات المحلية وكل الإعانات الأخرى</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_156">
+            <num>المادة 156</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن المجلس الشعبي الولائي اللجوء إلى القرض لإنجاز مشاريع منتجة للمداخيل</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_5_sec_2">
+          <num>الثاني</num>
+          <heading>ميزانية الولاية</heading>
+          <article eId="art_157">
+            <num>157</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#wilaya_budget">ميزانية الولاية هي جدول تقديرات الإيرادات والنفقات السنوية الخاصة بالولاية ، وكما هي عقد ترخيص وإدارة يسمح بسير مصالح الولاية وتنفيذ برنامجها للتجهيز والاستثمار.</def></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_158">
+            <num>158</num>
+            <content>
+            <paragraph>
+            <p>تشتمل <term refersTo="#wilaya_budget">ميزانية الولاية</term> على قسمين متوازنين في الإيرادات والنفقات وهما :</p>
+            <list>
+            <point>
+            <p>قسم التسيير،</p>
+            </point>
+            <point>
+            <p>قسم التجهيز والاستثمار.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ينقسم كل قسم إلى إيرادات ونفقات متوازنة وجوبا.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p>يقتطع من إيرادات التسيير مبلغ يخصص لتغطية نفقات قسم التجهيز والاستثمار <condition>وفقا للشروط التي يحددها التنظيم.</condition></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_159">
+            <num>159</num>
+            <content>
+            <paragraph>
+            <p>ترتب الإيرادات والنفقات في آن واحد حسب الطبيعة أو المصلحة أو البرنامج أو العملية خارج البرنامج.</p>
+            </paragraph>
+            <paragraph>
+            <p>يحدد شكل <term refersTo="#wilaya_budget">ميزانية الولاية</term> ومحتواها عن طريق التنظيم .</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_5_sec_3">
+          <num>الثالث</num>
+          <heading>التصويت على الميزانية وضبطها</heading>
+          <article eId="art_160">
+            <num>المادة 160</num>
+            <content>
+            <paragraph>
+            <p><obligation>يتولى <term refersTo="#wali">الوالي</term> إعداد مشروع ميزانية الولاية وعرضه على <term refersTo="#apw">المجلس الشعبي الولائي</term> الذي يصوت ويصادق عليه</obligation> وفق <condition>الشروط المنصوص عليها في هذا القانون</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويوافق عليه <term refersTo="#minister_interior">الوزير المكلف بالداخلية</term></obligation> وفقا لأحكام <ref href="#art_55">المادة 55</ref> أعلاه.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_161">
+            <num>المادة 161</num>
+            <content>
+            <paragraph>
+            <p><obligation>يصوت <term refersTo="#apw">المجلس الشعبي الولائي</term> على مشروع ميزانية الولاية بالتوازن وجوبا</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_162">
+            <num>المادة 162</num>
+            <content>
+            <paragraph>
+            <p><obligation>يصوت على مشروع ميزانية الولاية بابا بابا</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويشمل فضلا عن ذلك توزيعا للنفقات والإيرادات في شكل فصول وفصول فرعية ومواد.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_163">
+            <num>المادة 163</num>
+            <content>
+            <paragraph>
+            <p><obligation>تسجل السلطة المكلفة بضبط ميزانية الولاية تلقائيا النفقات الإجبارية التي لم يصوت عليها <term refersTo="#apw">المجلس الشعبي الولائي</term></obligation> وفقا للتنظيم المعمول به.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_164">
+            <num>المادة 164</num>
+            <content>
+            <paragraph>
+            <p>يعد مشروع ميزانية أولية قبل بدء السنة المالية. وتتم موازنة النفقات والإيرادات خلال السنة المالية بناء على نتائج السنة المالية السابقة بواسطة ميزانية إضافية.</p>
+            </paragraph>
+            <paragraph>
+            <p>تأخذ الاعتمادات المصوت عليها بصفة منفردة <condition>في حالة الضرورة وبصفة استثنائية</condition> اسم <def refersTo="#pre_opened_credits">"الاعتمادات المفتوحة مسبقا"</def> قبل التصويت على الميزانية الإضافية واسم <def refersTo="#special_authorizations">"الترخيصات الخاصة "</def> بعد التصويت على هذه الميزانية . وتكون هذه الاعتمادات محددة <condition>بشرط توفر موارد جديدة</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_165">
+            <num>المادة 165</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب أن يصوت على مشروع الميزانية الأولية قبل 31 أكتوبر من السنة المالية التي تسبق سنة تنفيذها</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويجب أن يصوت على الميزانية الإضافية قبل 15 يونيو من السنة المالية التي تطبق فيها</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_166">
+            <num>المادة 166</num>
+            <content>
+            <paragraph>
+            <p><condition>عند غلق السنة المالية المعنية بتاريخ 31 مارس</condition>، <obligation>يعد <term refersTo="#wali">الوالي</term> الحساب الإداري للولاية ويعرضه على <term refersTo="#apw">المجلس الشعبي الولائي</term> للمصادقة عليه</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تتم المصادقة على الحساب الإداري وإعداد حساب التسيير وكذا التقارب الدوري للحسابات طبقا للقوانين والتنظيمات المعمول بها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_167">
+            <num>المادة 167</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا لم تضبط ميزانية الولاية نهائيا لسبب ما ، قبل بداية السنة المالية</condition>، فإنه يستمر العمل بالنفقات والإيرادات العادية المقيدة في السنة المالية الأخيرة إلى غاية المصادقة على الميزانية الجديدة.</p>
+            </paragraph>
+            <paragraph>
+            <p>غير أنه <obligation>لا يجوز الالتزام بالنفقات وصرفها إلا في حدود الجزء الثاني عشر (12/1) المؤقت لكل شهر من مبلغ اعتمادات السنة المالية السابقة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_168">
+            <num>المادة 168</num>
+            <content>
+            <paragraph>
+            <p><condition>عندما لا يصوت على مشروع الميزانية بسبب اختلال داخل <term refersTo="#apw">المجلس الشعبي الولائي</term></condition>، فإن <term refersTo="#wali">الوالي</term> يقوم استثناء باستدعاء <term refersTo="#apw">المجلس الشعبي الولائي</term> في دورة غير عادية للمصادقة عليه.</p>
+            </paragraph>
+            <paragraph>
+            <p>غير أن هذه الدورة لا تعقد إلا <condition>إذا تجاوزت الفترة القانونية للمصادقة على مشروع الميزانية وبعد تطبيق أحكام <ref href="#art_167">المادة 167</ref> أعلاه</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وفي حالة عدم توصل هذه الدورة إلى المصادقة على مشروع الميزانية</condition>، <obligation>يبلغ <term refersTo="#wali">الوالي</term> <term refersTo="#minister_interior">الوزير المكلف بالداخلية</term> الذي يتخذ التدابير الملائمة لضبطها</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_169">
+            <num>169</num>
+            <content>
+            <paragraph>
+            <p><condition>عندما يظهر تنفيذ ميزانية الولاية عجزا</condition> فإنه <obligation>يجب على <term refersTo="#wilaya_assembly">المجلس الشعبي الولائي</term> اتخاذ جميع التدابير اللازمة لامتصاص هذا العجز وضمان التوازن الصارم للميزانية الإضافية للسنة المالية الموالية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>إذا لم يتخذ <term refersTo="#wilaya_assembly">المجلس الشعبي الولائي</term> التدابير التصحيحية الضرورية</condition> ، <obligation>يتولى اتخاذها <term refersTo="#minister_interior">الوزير المكلف بالداخلية</term> و<term refersTo="#minister_finance">الوزير المكلف بالمالية</term> اللذين يمكنهما الإذن بامتصاص العجز على مدى سنتين أو عدة سنوات مالية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_170">
+            <num>170</num>
+            <content>
+            <paragraph>
+            <p><right>يجوز للوالي نقل الاعتمادات داخل الباب الواحد</right> و<right>يمكنه في حالة الاستعجال نقل الاعتمادات من باب إلى باب بالاتفاق مع مكتب <term refersTo="#wilaya_assembly">المجلس الشعبي الولائي</term> الذي يتولى إخطار المجلس بذلك خلال دورته القادمة</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>غير أنه لا يجوز إجراء أي نقل للاعتمادات المقيدة بتخصيص خاص</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_171">
+            <num>171</num>
+            <content>
+            <paragraph>
+            <p><obligation>تودع ميزانية الولاية بمقر الولاية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_172">
+            <num>172</num>
+            <content>
+            <paragraph>
+            <p>تعد ميزانية الولاية للسنة المدنية وتمتد فترة تنفيذها :</p>
+            <list>
+            <point>
+            <p>إلى غاية 15 مارس من السنة الموالية بالنسبة لعمليات التصفية ودفع النفقات،</p>
+            </point>
+            <point>
+            <p>إلى غاية 31 مارس بالنسبة لعمليات تصفية وتحصيل الإيرادات ودفع النفقات.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_173">
+            <num>173</num>
+            <content>
+            <paragraph>
+            <p>تعتبر منجزة عند نهاية السنة المالية :</p>
+            <list>
+            <point>
+            <p>كل النفقات المأمور بصرفها والمعترف بصحتها،</p>
+            </point>
+            <point>
+            <p>كل الإيرادات التي كانت موضوع إصدار سندات تحصيل.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>تتولى <term refersTo="#public_treasury">الخزينة العمومية</term>، من أجل تغطية حاجات خزينة الولايات تحصيل الإيرادات وتقدم تسبيقات على الإيرادات الجبائية وفقا للأحكام المحددة في قانون المالية وطبقا للإجراءات المحددة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_174">
+            <num>174</num>
+            <content>
+            <paragraph>
+            <p><obligation>ترفع الولاية الديون المستحقة على الولاية التي لم تتم تصفيتها أو الإذن بصرفها أو دفعها في أجل أربع (4) سنوات من بداية السنة المالية التي ترتبط بها أمام المحكمة المختصة إقليميا لمعاينة انقضاء الأجل الرباعي للديون المذكورة أعلاه</obligation> .</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_5_sec_4">
+          <num>الرابع</num>
+          <heading>مراقبة الحسابات وتطهيرها</heading>
+          <article eId="art_175">
+            <num>175</num>
+            <content>
+            <paragraph>
+            <p><obligation>يمارس <term refersTo="#court_of_accounts">مجلس المحاسبة</term> مراقبة الحساب الإداري للوالي وحساب تسيير المحاسب وتطهيرهما طبقا للتشريع المعمول به</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+      <chapter eId="chp_6">
+        <num>السادس</num>
+        <heading>التضامن</heading>
+        <section eId="chp_6_sec_1">
+          <num>الأول</num>
+          <heading>التضامن المالي</heading>
+          <article eId="art_176">
+            <num>المادة 176</num>
+            <content>
+            <paragraph>
+            <p><obligation>تتوفر <term refersTo="#wilayas">الولايات</term> قصد تجسيد التضامن المالي بينها وضمان المداخيل الجبائية، على صندوقين</obligation> :</p>
+            <list>
+            <point>
+            <p><term refersTo="#solidarity_fund">صندوق تضامن الجماعات المحلية</term>،</p>
+            </point>
+            <point>
+            <p><term refersTo="#guarantee_fund">صندوق ضمان الجماعات المحلية</term>.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p><condition>تحدد شروط تنظيم هذين الصندوقين وتسييرهما عن طريق التنظيم</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_177">
+            <num>المادة 177</num>
+            <content>
+            <paragraph>
+            <p><obligation>يدفع <term refersTo="#solidarity_fund">صندوق تضامن الجماعات المحلية</term> المذكور في <ref href="#art_176">المادة 176</ref> أعلاه، للولايات</obligation> :</p>
+            <list>
+            <point>
+            <p>تخصيص سنوي للمعادلة، موجه لقسم تسيير ميزانية الولاية،</p>
+            </point>
+            <point>
+            <p>إعانات تجهيز موجهة لقسم التجهيز والاستثمار في ميزانية الولاية،</p>
+            </point>
+            <point>
+            <p>إعانات استثنائية للولايات التي تواجه على الخصوص وضعية مالية صعبة، أو التي تواجه أحداثا كارثية أو غير متوقعة،</p>
+            </point>
+            <point>
+            <p>إعانات تشجيع خاصة بالبحث والتكوين والاتصال،</p>
+            </point>
+            <point>
+            <p>إعانات موجهة إلى تنمية المناطق الواجب ترقيتها.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p><condition>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_178">
+            <num>المادة 178</num>
+            <content>
+            <paragraph>
+            <p><obligation>يخصص <term refersTo="#guarantee_fund">صندوق ضمان الجماعات المحلية</term> المذكور في <ref href="#art_176">المادة 176</ref> أعلاه لتعويض نواقص القيمة على تقديرات الإيرادات الجبائية في مجال الجباية المحلية المقيدة في ميزانية الولاية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تتكون إيرادات <term refersTo="#guarantee_fund">صندوق ضمان الجماعات المحلية</term> من مساهمات الولايات و<condition>تحدد نسبة هذه المساهمة عن طريق التنظيم</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يدفع الرصيد الدائن لصندوق ضمان الجماعات المحلية المستخلص من كل سنة مالية إلى صندوق ضمان الجماعات المحلية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_179">
+            <num>المادة 179</num>
+            <content>
+            <paragraph>
+            <p><condition>تحدد موارد الصندوقين المذكورين في <ref href="#art_176">المادة 176</ref> أعلاه بموجب القانون</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+      <chapter eId="chp_7">
+        <num>السابع</num>
+        <heading>أحكام ختامية</heading>
+        <article eId="art_180">
+          <num>المادة 180</num>
+          <content>
+          <paragraph>
+          <p><obligation>تلغى أحكام <ref href="/akn/dz/act/law/1990-04-07/90-09">القانون رقم 90-09 المؤرخ في 12 رمضان عام 1410 الموافق 7 أبريل سنة 1990 والمتعلق بالولاية، المتمم</ref>.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_181">
+          <num>المادة 181</num>
+          <content>
+          <paragraph>
+          <p><obligation>ينشر هذا القانون في <term refersTo="#official_gazette">الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية</term>.</obligation></p>
+          </paragraph>
+          <paragraph>
+          <p>حرر بالجزائر في 28 ربيع الأول عام 1433 الموافق 21 فبراير سنة 2012.</p>
+          </paragraph>
+          <paragraph>
+          <p>عبد العزيز بوتفليقة</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+    </body>
+  </act>
+</akomaNtoso>

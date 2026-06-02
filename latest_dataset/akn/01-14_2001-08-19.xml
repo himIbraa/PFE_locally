@@ -1,0 +1,1734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="law">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/law/2001-08-19/01-14_2001-08-19/main"/>
+      <FRBRuri value="/akn/dz/act/law/2001-08-19/01-14_2001-08-19"/>
+      <FRBRdate date="2001-08-19" name="enactment"/>
+      <FRBRauthor href="#parliament"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="01-14_2001-08-19"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/law/2001-08-19/01-14_2001-08-19/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/law/2001-08-19/01-14_2001-08-19/ara@"/>
+      <FRBRdate date="2001-08-19" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/law/2001-08-19/01-14_2001-08-19/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/law/2001-08-19/01-14_2001-08-19/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="parliament" href="/ontology/organization/dz/parliament" showAs="البرلمان"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="president" href="/ontology/person/dz/president" showAs="رئيس الجمهورية"/>
+  </references>
+</meta>
+    <preface>
+  <docTitle>قانون يتعلق بتنظيم حركة المرور عبر الطرق وسلامتها وأمنها</docTitle>
+  <docNumber>01-14_2001-08-19</docNumber>
+  <docDate date="2001-08-19">29 جمادى الأولى عام 1422 الموافق 19 غشت سنة 2001</docDate>
+  <docAuthority>البرلمان</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>إن رئيس الجمهورية،</p>
+    </citation>
+    <citation>
+      <p>بناء على الدستور، لا سيما المواد 119 و 120 و 122 و 126 منه،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 66-154 المؤرخ في 18 صفر عام 1386 الموافق 8 يونيو سنة 1966 والمتضمن قانون الإجراءات المدنية، المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 66-155 المؤرخ في 18 صفر عام 1386 الموافق 8 يونيو سنة 1966 والمتضمن قانون الإجراءات الجزائية المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 66-156 المؤرخ في صفر عام 1386 الموافق 8 يونيو سنة 1966 والمتضمن قانون العقوبات، المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 75-58 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون المدني، المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>و بمقتضى القانون رقم 83-03 المؤرخ في 22 ربيع الثاني عام 1403 الموافق 5 فبراير سنة 1983 و المتعلق بحماية البيئة،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 84-09 المؤرخ في 2 جمادى الأولى عام 1404 الموافق 4 فبراير سنة 1984 والمتعلق بالتنظيم الإقليمي للبلاد،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 84-17 المؤرخ في 8 شوال عام 1404 الموافق 7 يوليو سنة 1984 والمتعلق بقوانين المالية، المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 85-05 المؤرخ في 26 جمادى الأولى عام 1405 الموافق 16 فبراير سنة 1985 و المتعلق بحماية الصحة وترقيتها، المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 87-03 المؤرخ في 27 جمادى الأولى عام 1407 الموافق 27 يناير سنة 1987 والمتعلق بالتهيئة العمرانية،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 87-09 المؤرخ في 11 جمادى الثانية عام 1407 الموافق 10 فبراير سنة 1987 والمتعلق بتنظيم حركة المرور عبر الطرق وسلامتها وأمنها،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 88-17 المؤرخ في 23 رمضان عام 1408 الموافق 10 مايو سنة 1988 والمتضمن توجيه النقل البري وتنظيمه،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 90-08 المؤرخ في 12 رمضان عام 1410 الموافق 7 أبريل سنة 1990 والمتعلق بالبلدية،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 90-09 المؤرخ في 12 رمضان عام 1410 الموافق 7 أبريل سنة 1990 والمتعلق بالولاية،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 90-29 المؤرخ في 14 جمادى الأولى عام 1411 الموافق أول ديسمبر سنة 1990 والمتعلق بالتهيئة والتعمير، المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 90-30 المؤرخ في 14 جمادى الأولى عام 1411 الموافق أول ديسمبر سنة 1990 والمتضمن قانون الأملاك الوطنية،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 90-35 المؤرخ في 8 جمادى الثانية عام 1411 الموافق 25 ديسمبر سنة 1990 والمتعلق بالأمن والسلامة والاستعمال والحفاظ في استغلال النقل بالسكك الحديدية،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 95-07 المؤرخ في 23 شعبان عام 1415 الموافق 25 يناير سنة 1995 والمتعلق بالتأمينات،</p>
+    </citation>
+    <citation>
+      <p>وبعد مصادقة البرلمان،</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يصدر القانون الآتي نصه:</p>
+  </formula>
+</preamble>
+    <body>
+      <section eId="sec_1">
+        <num>الأول</num>
+        <heading>أحكام عامة</heading>
+        <article eId="art_1">
+          <num>الأولى</num>
+          <content>
+          <paragraph>
+          <p>يهدف هذا القانون إلى تحديد <condition>الشروط المتعلقة بتنظيم <term refersTo="#traffic_movement">حركة المرور عبر الطرق</term> وسلامتها وأمنها</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_2">
+          <num>2</num>
+          <content>
+          <paragraph>
+          <p><def refersTo="#definitions">يقصد في مفهوم هذا <ref href="#">القانون</ref> بما يأتي:</def></p>
+          <list>
+          <point>
+          <p><term refersTo="#road">الطريق</term>، كل المسالك العمومية المفتوحة لحركة مرور المركبات</p>
+          </point>
+          <point>
+          <p><term refersTo="#carriageway">وسط الطريق</term>، جزء من الطريق يستعمل لمرور المركبات</p>
+          </point>
+          <point>
+          <p><term refersTo="#lane">المسلك</term>، أحد تفرعات وسط الطريق له العرض الكافي لمرور رتل من المركبات</p>
+          </point>
+          <point>
+          <p><term refersTo="#built_up_area">المجمع السكاني</term>، فضاء أرضي يتجمع فيه عدد من المباني المتقاربة وتبين مداخله ومخارجه لافتات توضع لهذا الغرض على طول الطريق الذي يقطع هذا الفضاء أو يحاذيه</p>
+          </point>
+          <point>
+          <p><term refersTo="#intersection">التقاطع</term>، مكان التقاء أو تقاطع وسطي طريقين أو أكثر مهما كانت زاوية أو زوايا محاور هذه الطرقات،</p>
+          </point>
+          <point>
+          <p><term refersTo="#stopping">التوقف</term>، مكوث مركبة مؤقتا على الطريق،</p>
+          </point>
+          <point>
+          <p>طوال المدة اللازمة لركوب أشخاص أو نزولهم، وشحن البضائع أو تفريغها مع بقاء السائق في مكان قيادة السيارة أو على مقربة منها ليتمكن <condition>عند الاقتضاء</condition>، من تغيير مكانها، ويكون المحرك مشتعلا دائما</p>
+          </point>
+          <point>
+          <p><term refersTo="#parking">الوقوف</term> مكوث مركبة في طريق خارج الظروف المميزة للتوقف ويكون المحرك صامتا،</p>
+          </point>
+          <point>
+          <p><term refersTo="#cycle_path">ممر الدراجات</term>، وسط الطريق المخصص للدراجات العادية والدراجات النارية فقط،</p>
+          </point>
+          <point>
+          <p><term refersTo="#cycle_lane">شريط مرور الدراجات</term>، مسلك مخصص فقط للدراجات العادية والدراجات النارية في وسط طريق له عدة مسالك</p>
+          </point>
+          <point>
+          <p><term refersTo="#expressway">الطريق السريع</term> طريق مفتوح لحركة المرور العامة ويمكن أن تقطعه طرق أو سكك حديدية ويشتمل في اتجاهي حركة المرور على وسطي طريقين متميزين قد يفصل بينهما شريط أرضي وسطي</p>
+          </point>
+          <point>
+          <p><term refersTo="#motorway">الطريق السريع للسيارات</term>، طريق أعد وأنجز خصيصا لمرور السيارات دون أن يقطعه طريق آخر أو سكة حديدية أو ممر للراجلين، ولا يمكن الدخول إليه إلا في نقاط مهيأة لذلك، ولا يؤدي إلى الممتلكات المتاخمة، ويشتمل في اتجاهي حركة المرور، على وسطي طريقين متميزين، يفصل بينهما شريط أرضي وسطي غير مخصص للمرور ويمكن استعماله بصفة استثنائية لوسائل النقل الجماعي، ويبين ذلك بصورة متميزة،</p>
+          </point>
+          <point>
+          <p><term refersTo="#motorway_link">فرع طريق موصل إلى الطريق السريع للسيارات</term>، الطريق أو الطرق التي تربط الطرق السريعة للسيارات بباقي شبكة الطرق،</p>
+          </point>
+          <point>
+          <p><term refersTo="#emergency_lane">شريط التوقف الاستعجالي</term>، جزء من الحافة يقع جنب وسط الطريق والطرقات السريعة والطرق السريعة للسيارات أعد خصيصا لتوقف المركبات أو وقوفها في حالة الضرورة</p>
+          </point>
+          <point>
+          <p><term refersTo="#shoulder">الحافة</term>، شريط أرضي يمتد من حدود وسط الطريق إلى حدود قاعدة الطريق،</p>
+          </point>
+          <point>
+          <p><term refersTo="#road_bed">قاعدة الطريق</term> المساحة التي تشمل وسط الطريق وحافتيه</p>
+          </point>
+          <point>
+          <p><term refersTo="#median_strip">الشريط الأرضي الوسطي</term>، الحيز الذي يفصل وسطي طريقين متعاكسي الاتجاه،</p>
+          </point>
+          <point>
+          <p><term refersTo="#sidewalk">الرصيف</term>، حيز مهيا على جانب الطريق لمرور الراجلين، يجب أن يكون أكثر ارتفاعا من وسط الطريق و يكون معبدا ، عادة أو مبلطا</p>
+          </point>
+          <point>
+          <p><term refersTo="#driver">السائق</term>، كل شخص يتولى قيادة مركبة بما فيها الدراجات العادية والدراجات النارية أويسوق حيوانات الجر والحمل والركوب والقطعان عبر الطريق أو يتحكم فعلا في ذلك</p>
+          </point>
+          <point>
+          <p><term refersTo="#pedestrian">الراجل</term> كل شخص يتنقل سيرا على الأقدام. ويعد بمثابة راجلين الأشخاص الذين يدفعون أو يجرون عربات الأطفال أو المرضى أو العجزة وكذلك الدراجات العادية أو الآلية والعجزة الذين يتنقلون في عربات يقودونها بأنفسهم بسرعة الخطى</p>
+          </point>
+          <point>
+          <p><term refersTo="#motor_vehicle">السيارة</term>، كل مركبة تستعمل لنقل الأشخاص أو البضائع وتكون مزودة بمحرك للدفع، وتسير على الطريق</p>
+          </point>
+          <point>
+          <p><term refersTo="#articulated_vehicle">المركبة المتمفصلة</term>، كل سيارة نقل البضائع متبوعة بمقطورة بدون محور أمامي متزاوجة بحيث يكون جزء من المقطورة متكئا على المركبة الجارة ويكون أكبر جزء من وزن هذه المقطورة وحمولتها واقعا على المركبة الجارة وتسمى هذه المقطورة، "نصف مقطورة"،</p>
+          </point>
+          <point>
+          <p><term refersTo="#articulated_bus">الحافلة المتمفصلة</term>، مركبة متكونة من عدة أجزاء صلبة يتمفصل كل جزء بالنسبة للآخر وتتصل الحجرات المخصصة للمسافرين المتعلقة بكل قسم فيما بينها بشكل يسمح لهم بالتنقل بحرية وتكون الأقسام الصلبة موصولة بشكل دائم لا يمكن فصلها،</p>
+          </point>
+          <point>
+          <p><term refersTo="#trailer">المقطورة</term>، كل مركبة موجهة لتكون موصولة بسيارة.</p>
+          </point>
+          <point>
+          <p><term refersTo="#cycle">الدراجة</term>، كل دراجة غير مزودة بجهاز محرك ذاتي</p>
+          </point>
+          <point>
+          <p><term refersTo="#gross_weight">الوزن الإجمالي للحمولة المرخص بها</term>، وزن المركبة بالجمع مع الحمولة</p>
+          </point>
+          <point>
+          <p><term refersTo="#alcotest">مقياس الكحول (ألكوتاست)</term>، جهاز يدوي يسمح بالتحقق الفوري من وجود الكحول في جسم الشخص من خلال الهواء المستخرج،</p>
+          </point>
+          <point>
+          <p><term refersTo="#ethylometer">مقياس الإيتيل</term> جهاز يسمح بالقياس الفوري والدقيق لنسبة الكحول بتحليل الهواء المستخرج،</p>
+          </point>
+          <point>
+          <p><term refersTo="#speedometer">مقياس السرعة</term> جهاز يسمح بالقياس الفوري لسرعة مركبة في حالة السير.</p>
+          </point>
+          </list>
+          </paragraph>
+          </content>
+          </article>
+        <subsection eId="sec_1_subsec_2">
+          <num>الثاني</num>
+          <heading>مبادئ عامة</heading>
+          <article eId="art_3">
+            <num>المادة 3</num>
+            <content>
+            <paragraph>
+            <p>ينظم استعمال <term refersTo="#public_roads">المسالك العمومية</term> بصفة تحقق تنقلا متساويا للمستعملين.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_4">
+            <num>المادة 4</num>
+            <content>
+            <paragraph>
+            <p><obligation>يتعين على الدولة ترقية سياسة خاصة بالوقاية والأمن في الطرق</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_5">
+            <num>المادة 5</num>
+            <content>
+            <paragraph>
+            <p>يشجع السير على الأقدام و الدراجات العادية والدراجات النارية ووسائل النقل الجماعي في المناطق الحضرية.</p>
+            </paragraph>
+            <paragraph>
+            <p>وتستفيد وسائط التنقل هذه بالأولوية ويتم تشجيعها بمنحها المشالك والمعابر الرواقية أو التهيئات الملائمة بجعل المرور فيها يسيرا.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_6">
+            <num>المادة 6</num>
+            <content>
+            <paragraph>
+            <p>تحدد أسبقية المرور بالنسبة إلى بعض الطرق أو بعض المستعملين عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_7">
+            <num>المادة 7</num>
+            <content>
+            <paragraph>
+            <p><obligation>ينبغي تصميم المركبات وصناعتها بصفة تستجيب للمقاييس المحددة عن طريق التنظيم</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_8">
+            <num>المادة 8</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على كل سائق مركبة أن يكون حاملا ل<term refersTo="#driving_license">رخصة سياقة</term> موافقة للمركبة التي يقودها</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>بالإضافة إلى <term refersTo="#driving_license">رخصة السياقة</term>، تحدث <term refersTo="#professional_certificate">شهادة مهنية للنقل العمومي للمسافرين والبضائع</term>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تعد بمثابة <term refersTo="#driving_license">رخصة سياقة</term> الشهادات المنصوص عليها في التنظيمات الخاصة بقيادة المركبات ذات محرك، <condition>عندما لا تكون رخصة السياقة مطلوبة</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه <ref href="#art_8">المادة</ref> عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_9">
+            <num>المادة 9</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على كل سائق مركبة الامتثال للقواعد الخاصة بحركة المرور</obligation>، حتى لا يشكل أي خطر عليه أو على غيره من مستعملي الطريق.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_10">
+            <num>المادة 10</num>
+            <content>
+            <paragraph>
+            <p><right>يحق لكل مواطن الحصول على <term refersTo="#driving_license">رخصة السياقة</term></right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه <ref href="#art_10">المادة</ref> عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_11">
+            <num>المادة 11</num>
+            <content>
+            <paragraph>
+            <p><obligation>استعمال حزام الأمن إجباري</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه <ref href="#art_11">المادة</ref> عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_12">
+            <num>المادة 12</num>
+            <content>
+            <paragraph>
+            <p><obligation>يتحمل سائق المركبة المسؤولية الجزائية والمدنية عن المخالفات التي يرتكبها</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+      </section>
+      <section eId="sec_2">
+        <num>الثاني</num>
+        <heading>حركة مرور</heading>
+        <subsection eId="sec_2_subsec_1">
+          <num>الأول</num>
+          <heading>حركة المرور على المسألك العمومية</heading>
+          <article eId="art_13">
+            <num>13</num>
+            <content>
+            <paragraph>
+            <p>تنظم حركة المرور عبر الطرق قصد ضمان أفضل شروط الأمن والسيولة وفي هذا الإطار، تكلف <term refersTo="#local_authorities">الجماعات الإقليمية</term> بإعداد و تنفيذ مخطط حركة المرور في المنطقة الحضرية للتحكم في تطور حركة السيارات وتقليص تأثيراتها السلبية.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه <ref href="#art_13">المادة</ref> عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_14">
+            <num>14</num>
+            <content>
+            <paragraph>
+            <p>يمكن المنع أو الحد من استعمال السيارات لا سيما الخاصة منها في مساحات محددة وفقا للشروط المحددة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_15">
+            <num>15</num>
+            <content>
+            <paragraph>
+            <p>تنظم سباقات العدو وسباقات المركبات ذات محرك وسباقات الدراجات العادية والدراجات النارية على المسالك العمومية وفقا للشروط المحددة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_17">
+            <num>17</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على كل <term refersTo="#driver">سائق</term> أن يكون باستمرار في حالة ووضعية تمكنه من القيام بكل عمليات قيادة السيارة بسهولة ودون تأخير.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_18">
+            <num>18</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب أن يمتنع كل <term refersTo="#driver">سائق</term> عن السياقة عندما يتعاطى مسكرا أو يكون تحت تأثير أية مادة أخرى من شأنها أن تؤثر في ردود أفعاله وقدراته في السياقة.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_19">
+            <num>19</num>
+            <content>
+            <paragraph>
+            <p><condition>في حالة وقوع أي حادث مرور جسماني</condition>، يجري <term refersTo="#judicial_police">ضباط أو أعوان الشرطة القضائية</term> على <term refersTo="#driver">السائق</term> أو على المرافق للسائق المتدرب المتسبب في وقوع حادث المرور، عملية الكشف عن تناول الكحول عن طريق جهاز زفر الهواء.</p>
+            </paragraph>
+            <paragraph>
+            <p>كما يمكنهم إجراء نفس العمليات على كل <term refersTo="#driver">سائق</term> أثناء إجراء التفتيش في الطريق.</p>
+            </paragraph>
+            <paragraph>
+            <p>يتم إجراء هذه العمليات بواسطة جهاز معتمد يسمى" <def refersTo="#alcotest">مقياس الكحول (ألكوتاست) و/أو مقياس الإيتيل</def>"، الذي يسمح بتحديد نسبة الكحول بتحليل الهواء المستخرج. ويمكن إجراء فحص فوري ثان بعد التأكد من اشتغال الجهاز بصفة جيدة.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وعندما تبين عمليات الكشف عن احتمال تناول مشروب كحولي أو في حالة اعتراض السائق أو المرافق للسائق المتدرب على نتائج هذه العمليات أو رفضه إجراء الكشف</condition>، يقوم <term refersTo="#judicial_police">ضباط أو أعوان الشرطة القضائية</term> بإجراء عمليات الفحص الطبي والاستشفائي والبيولوجي للوصول إلى إثبات ذلك.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_20">
+            <num>20</num>
+            <content>
+            <paragraph>
+            <p><condition>في حالة وقوع حادث مرور أدى إلى القتل الخطأ</condition>، <obligation>يجب أن يخضع <term refersTo="#police_officer">ضباط أو أعوان الشرطة القضائية</term> <term refersTo="#driver">السائق</term> إلى فحوص طبية واستشفائية وبيولوجية لإثبات ما إذا كان يقود سيارته تحت تأثير مواد أو أعشاب مصنفة ضمن المخدرات</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_26">
+            <num>26</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب أن يتم التقاطع والتجاوز وفقا للشروط المحددة عن طريق التنظيم</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_27">
+            <num>27</num>
+            <content>
+            <paragraph>
+            <p>يحدد تنظيم استعمال الممهلات والشروط المتعلقة بوضعها وأماكنها عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_28">
+            <num>28</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب التنبيه إلى وجود الخطوط الحديدية المحاذية للطريق أو التي تقطعه ، بواسطة وضع إشارة ملائمة</obligation>، ويقع هذا الواجب على عاتق مستغل الخط الحديدي.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>تحظى بأسبقية المرور الآليات والمركبات التي تسير على الخطوط الحديدية</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يتعين على المستعملين الآخرين الذين يعبرون هذه الخطوط ، أن يلتزموا الحيطة والحذر وألا يشكلوا في أي حال من الأحوال عائقا يعيق مرور الآليات والمركبات التي خصصت لها هذه الخطوط</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_29">
+            <num>29</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب أن تتوفر المركبات على أنظمة وأجهزة إنارة وإشارة ملائمة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_30">
+            <num>30</num>
+            <content>
+            <paragraph>
+            <p><obligation>يمنع على <term refersTo="#driver">السائق</term> الاستعمال اليدوي للهاتف المحمول أو خوذة التصنت الإذاعي والسمعي <condition>عندما تكون المركبة في حالة السير</condition></obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_31">
+            <num>المادة 31</num>
+            <content>
+            <paragraph>
+            <p><obligation>يقتصر استعمال <term refersTo="#acoustic_signals">المنبهات الصوتية</term> في حالات <condition>الضرورة لوجود خطر فوري</condition></obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>غير أنه <condition>يمكن منع استعمالها بواسطة وضع إشارة ملائمة</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_33">
+            <num>المادة 33</num>
+            <content>
+            <paragraph>
+            <p><right>الوقوف المرخص في المسالك العمومية مجاني</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>غير أنه <condition>يمكن الجماعات الإقليمية أن تبادر بإجراءات تجعله مقابل ثمن</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق <ref href="#art_33">هذه المادة</ref> عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+        <subsection eId="sec_2_subsec_2">
+          <num>الثاني</num>
+          <heading>أحكام خاصة مطبقة على الراجلين</heading>
+          <article eId="art_34">
+            <num>34</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على <term refersTo="#pedestrians">الراجلين</term> السير على الأرصفة أو حواف الطرقات المهيأة خصيصا لاستعمالها لهذا الغرض</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يمنع كل استعمال آخر للأرصفة يعيق حركة المارة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_35">
+            <num>35</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على <term refersTo="#pedestrians">الراجلين</term> عند عبور وسط الطريق التأكد مسبقا من عدم وجود أي خطر داهم، والأخذ في الحسبان أيضا المسافة التي تفصلهم عن المركبة السائرة وسرعتها، واستعمال الممرات المخصصة لهم والمسماة "<term refersTo="#pedestrian_crossing">ممر الراجلين</term>"، وذلك كلما وجدت هذه الممرات على مسافة أقل من 30 مترا</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يجب عبور وسط الطريق على خط مستقيم، أي تعامديا مع محور وسط الطريق</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يمنع على <term refersTo="#pedestrians">الراجلين</term> التوقف في وسط الطريق.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_36">
+            <num>36</num>
+            <content>
+            <paragraph>
+            <p><condition>عندما يستحيل عبور وسط الطريق من طرف <term refersTo="#pedestrians">الراجلين</term> أو يشكل خطرا، بسبب الأشغال وتهيئة الطريق</condition>، <obligation>يجب اتخاذ التدابير اللازمة لتمكين <term refersTo="#pedestrians">الراجلين</term> من ممرات بديلة ملائمة ومؤمنة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_37">
+            <num>37</num>
+            <content>
+            <paragraph>
+            <p>خارج المجمعات السكانية، <obligation>يجب على <term refersTo="#pedestrians">الراجلين</term> في اتجاه سيرهم اتخاذ الجهة اليسرى لوسط الطريق <condition>إذا كان ذلك لا يضر بأمنهم</condition></obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يجب أن يشار لكل سرب أو فرقة أو جماعة من <term refersTo="#pedestrians">الراجلين</term> تسير كقافلة على وسط الطريق، عند حلول الظلام وأثناء النهار <condition>إذا اقتضت الظروف ذلك، خصوصا حين انتشار الضباب</condition>، بواسطة وضع إشارة ضوئية بيضاء في الأمام وإشارة ضوئية حمراء في الخلف</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يجب أن يحمل هاتين الإشارتين الضوئيتين عضوان من هذه القافلة يسير كل منهما على بعد 10 أمتار من مقدمتها و 10 أمتار من مؤخرتها</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_38">
+            <num>38</num>
+            <content>
+            <paragraph>
+            <p><condition>في حالة انعدام الإشارات الضوئية</condition> <obligation>يلزم <term refersTo="#drivers">السائقون</term> بالسماح بمرور <term refersTo="#pedestrians">الراجلين</term> الموجودين في الممرات</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>عند الاقتراب من الممرات المخصصة <term refersTo="#pedestrians">للراجلين</term> يجب على <term refersTo="#drivers">السائقين</term> الامتناع عن تجاوز السيارات، دون التأكد من عدم وجود أحد <term refersTo="#pedestrians">الراجلين</term> في هذا الممر</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_39">
+            <num>39</num>
+            <content>
+            <paragraph>
+            <p>يمنع على كل <term refersTo="#driver">سائق</term> التوقف أو الوقوف على ممر مخصص <term refersTo="#pedestrians">للراجلين</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_40">
+            <num>40</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا كانت حظائر وقوف المركبات مقامة على الأرصفة أو على الأشرطة الترابية</condition>، <obligation>يجب على <term refersTo="#drivers">السائقين</term> عند مرورهم عليها السير بسرعة جد منخفضة مع أخذ كل الاحتياطات من أجل عدم الإضرار <term refersTo="#pedestrians">بالراجلين</term></obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+      </section>
+      <section eId="sec_3">
+        <num>الثالث</num>
+        <heading>الشروط الإدارية و قواعد مطابقة المركبات و تجهيزاتها</heading>
+        <article eId="art_41">
+          <num>المادة 41</num>
+          <content>
+          <paragraph>
+          <p><obligation>لا تقبل أية <term refersTo="#vehicle">مركبة</term> للسير</obligation> <condition>إذا لم تكن مطابقة للمواصفات التقنية السارية المفعول</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_42">
+          <num>المادة 42</num>
+          <content>
+          <paragraph>
+          <p>عملا ب<ref href="#art_7">المادة 7</ref> أعلاه، <obligation>تخضع السيارات قبل وضعها للسير لأول مرة للمراقبة</obligation> قصد التأكد من مطابقتها للمواصفات التقنية و التنظيمية.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_43">
+          <num>المادة 43</num>
+          <content>
+          <paragraph>
+          <p><obligation>المراقبة التقنية للسيارات إجبارية</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p>يحدد تنظيم هذه المراقبة وكيفيات ممارستها عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_45">
+          <num>المادة 45</num>
+          <content>
+          <paragraph>
+          <p><obligation>لا يجوز أن تتجاوز كمية الدخان والغازات السامة التي تنفثها السيارات وكذا الضجيج الذي تحدثه، المستويات المحددة عن طريق التنظيم</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_46">
+          <num>المادة 46</num>
+          <content>
+          <paragraph>
+          <p><obligation>يجب أن تتوفر كل مركبة على تجهيزات تسمح للسائق أن يكون له مجال رؤية كاف نحو الأمام وإلى الخلف وكذا نحو اليمين واليسار حتى تتسنى له السياقة في أمان</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_47">
+          <num>المادة 47</num>
+          <content>
+          <paragraph>
+          <p><obligation>يجب أن يكون الزجاج كله بما فيه الزجاج الأمامي الواقي من مادة شفافة، ومطابقا للمقاييس المحددة عن طريق التنظيم</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_48">
+          <num>المادة 48</num>
+          <content>
+          <paragraph>
+          <p><obligation>يمنع إلصاق شريط بلاستيكي أو استعمال أي طريقة أخرى تعتم زجاج المركبة</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_49">
+          <num>المادة 49</num>
+          <content>
+          <paragraph>
+          <p><obligation>يجب أن تكون كل مركبة نقل البضائع يفوق وزنها الإجمالي مع الحمولة 3500 كلغ، وكل مركبة نقل الأشخاص تشتمل على أكثر من خمسة عشر (15) مقعدا، مجهزة بجهاز مراقبة وتسجيل السرعة</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_50">
+          <num>المادة 50</num>
+          <content>
+          <paragraph>
+          <p><obligation>ينبغي أن يكون لكل مركبة رقم تسجيل وأن تتوفر على الرخص والوثائق الإدارية اللازمة لسيرها</obligation> <condition>وفقا للشروط المحددة عن طريق التنظيم</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_51">
+          <num>المادة 51</num>
+          <content>
+          <paragraph>
+          <p><obligation>يجب أن تتوفر كل مركبة على لوحة تسجيل</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد مواصفات لوحات التسجيل وشروط وكيفيات صنعها وتركيبها عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_52">
+          <num>المادة 52</num>
+          <content>
+          <paragraph>
+          <p><obligation>يخضع تحويل ملكية المركبة أو إتلافها إلى تصريح</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_53">
+          <num>المادة 53</num>
+          <content>
+          <paragraph>
+          <p><obligation>يجب أن تحمل مركبات المعوقين والمعطوبين إشارة ملائمة</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_54">
+          <num>المادة 54</num>
+          <content>
+          <paragraph>
+          <p><def refersTo="#national_file">تحدث بطاقية وطنية لبطاقات تسجيل المركبات تدعى "بطاقات رمادية"</def>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد شروط وكيفيات مسك هذه البطاقية عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+      <section eId="sec_4">
+        <num>الرابع</num>
+        <heading>تكوين السائقين</heading>
+        <article eId="art_55">
+          <num>55</num>
+          <content>
+          <paragraph>
+          <p>تسلم <term refersTo="#driving_license">رخصة السياقة</term> كما هو منصوص عليها في <ref href="#art_8">المادة 8 أعلاه</ref> للمترشح الذي أجرى بنجاح الامتحانات النظرية والتطبيقية الخاصة بسياقة المركبات.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد <condition>شروط الالتحاق بالامتحانات المذكورة أعلاه ، وتجديد رخصة السياقة</condition> عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_56">
+          <num>56</num>
+          <content>
+          <paragraph>
+          <p>يكون <obligation>الفحص الطبي الدوري إجباريا لكل السائقين</obligation>. ويتم وفقا للشروط المحددة عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_57">
+          <num>57</num>
+          <content>
+          <paragraph>
+          <p>يلقن تعليم سياقة السيارة بمقابل مالي في مؤسسات التكوين المعتمدة.</p>
+          </paragraph>
+          <paragraph>
+          <p>تنظم وتراقب هذه المؤسسات وفقا للشروط المحددة عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_58">
+          <num>58</num>
+          <content>
+          <paragraph>
+          <p>يرخص بتعليم سياقة السيارة بدون مقابل مالي بالنسبة للأصناف "أ، أ 1 وب" من <term refersTo="#driving_license">رخصة السياقة</term>، وفقا للكيفيات المحددة عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_59">
+          <num>59</num>
+          <content>
+          <paragraph>
+          <p>تتولى المؤسسات المعتمدة، التكوين المهني لسائقي المركبات المخصصة للنقل العمومي للأشخاص والبضائع والمواد الخطيرة.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد شروط وكيفيات اعتماد هذه المؤسسات عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_60">
+          <num>60</num>
+          <content>
+          <paragraph>
+          <p>يكون <obligation>تعليم القواعد الخاصة بحركة المرور والوقاية والأمن في الطرق، إجباريا في المؤسسات المدرسية</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تطبيق <ref href="#art_60">هذه المادة</ref> عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_61">
+          <num>61</num>
+          <content>
+          <paragraph>
+          <p>يحدث <term refersTo="#national_center_driving_licenses">مركز وطني لرخص السياقة</term>.</p>
+          </paragraph>
+          <paragraph>
+          <p>يقوم المركز الوطني لرخص السياقة بتأطير نشاطات تعليم سياقة السيارة وتنظيم الامتحانات الخاصة برخص السياقة.</p>
+          </paragraph>
+          <paragraph>
+          <p>يحدد تنظيم وس هذا المركز عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_62">
+          <num>62</num>
+          <content>
+          <paragraph>
+          <p>تحدث <term refersTo="#national_database_driving_licenses">بطاقية وطنية لرخص السياقة</term>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد شروط وكيفيات مسك هذه البطاقية عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+      <section eId="sec_5">
+        <num>الخامس</num>
+        <heading>أمن الطرق والوقاية من حوادث المرور</heading>
+        <article eId="art_63">
+          <num>المادة 63</num>
+          <content>
+          <paragraph>
+          <p>في إطار تطبيق <ref href="#art_4">المادة 4</ref> أعلاه المتعلقة بترقية السياسة الخاصة بالوقاية في الطرق، <obligation>تتكفل الدولة بما يأتي</obligation>:</p>
+          <list>
+          <point>
+          <p>تربية وإعلام المواطن من أجل ترقية الإنضباط في استعمال المسالك العمومية الكفيلة بضمان أمنه،</p>
+          </point>
+          <point>
+          <p>التنظيم الدوري للحملات الخاصة بالوقاية والأمن في الطرق،</p>
+          </point>
+          <point>
+          <p>الحراسة والمراقبة الدائمتين لحركة المرور في الطرق من طرف المصالح المؤهلة</p>
+          </point>
+          <point>
+          <p>التهيئة الملائمة للمنشآت القاعدية للطرق،</p>
+          </point>
+          <point>
+          <p>وضع التجهيزات الأمنية في الطرق وصيانتها بصفة دائمة،</p>
+          </point>
+          <point>
+          <p>تشجيع نشاط الحركة الجمعوية</p>
+          </point>
+          <point>
+          <p>السهر على تطبيق الممراقبة التقنية للمركبات.</p>
+          </point>
+          </list>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_64">
+          <num>المادة 64</num>
+          <content>
+          <paragraph>
+          <p>يحدث <term refersTo="#national_center">مركز وطني</term> و<term refersTo="#provincial_committees">لجان ولائية</term> للوقاية والأمن في الطرق.</p>
+          </paragraph>
+          <paragraph>
+          <p>يوضع هذا المركز تحت وصاية <term refersTo="#transport_ministry">الوزارة المكلفة بالنقل</term>.</p>
+          </paragraph>
+          <paragraph>
+          <p>يمكن أن تنشأ هيئات تكلف بمتابعة تطبيق أحكام هذا القانون.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+      <section eId="sec_6">
+        <num>السادس</num>
+        <heading>المخالفات</heading>
+        <article eId="art_65">
+          <num>المادة 65</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب طبقا لأحكام <ref href="/akn/dz/act/order/1966-06-08/66-156#art_288">المادتين 288</ref> و <ref href="/akn/dz/act/order/1966-06-08/66-156#art_289">289</ref> من قانون العقوبات</obligation>، كل <term refersTo="#driver">سائق</term> ارتكب جريمة الجرح أو القتل الخطأ نتيجة خطأ منه أو تهاونه أو وعدم امتثاله لقواعد حركة المرور في الطريق.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_66">
+          <num>المادة 66</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بالحبس من سنة (1) إلى خمس (5) سنوات وبغرامة من 50.000 إلى 150.000 دج</obligation>، كل <term refersTo="#driver">سائق</term> ارتكب جريمة الجرح أو القتل الخطأ <condition>وهو في حالة سكر أو تحت تأثير مواد أو أعشاب تدخل ضمن أصناف المخدرات</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>في حالة العود</condition>، <obligation>تضاعف العقوبة</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_67">
+          <num>المادة 67</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بالحبس من شهرين (2) إلى ثمانية عشر (18) شهرا وبغرامة من 5.000 إلى 50.000 دج، أو بإحدى هاتين العقوبتين فقط</obligation>، كل شخص يقود مركبة أو يرافق السائق المتدرب في إطار التمهين بدون مقابل أو بمقابل، وفقا لما هو منصوص عليه في هذا القانون، و هو <condition>تحت تأثير مشروب كحولي يتميز بوجوده في الدم بنسبة تعادل أو تزيد على 0,10 غ في الألف</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>تطبق نفس العقوبة</obligation> على كل شخص يقود مركبة <condition>وهو تحت تأثير مواد أو أعشاب تدخل ضمن أصناف المخدرات</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>في حالة العود</condition>، <obligation>تضاعف العقوبة</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_68">
+          <num>المادة 68</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بالحبس من شهرين (2) إلى ثمانية عشر (18) شهرا، وبغرامة من 5.000 إلى 50.000 دج أو بإحدى هاتين العقوبتين فقط</obligation>، كل <term refersTo="#driver">سائق مركبة</term> <condition>رفض الخضوع للفحوص الطبية والاستشفائية والبيولوجية المنصوص عليها في <ref href="#art_19">المادة 19</ref> أعلاه</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_70">
+          <num>المادة 70</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بالحبس من شهرين (2) إلى ستة (6) أشهر وبغرامة من 1.500 إلى 5.000 دج أو بإحدى هاتين العقوبتين فقط</obligation>، كل <term refersTo="#driver">سائق</term> <condition>لا يمتثل عمدا لإنذار التوقف الصادر عن الأعوان المشار إليهم في <ref href="#art_130">المادة 130</ref> من هذا القانون المكلفين بمعاينة المخالفات والحاملين للشارات الخارجية الظاهرة والدالة على صفتهم، أو يرفض الخضوع لكل التحقيقات المفروضة والمتعلقة بالمركبة أو الشخص، والمنصوص عليها في هذا القانون</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>في حالة العود</condition>، <obligation>تضاعف العقوبة</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_71">
+          <num>المادة 71</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بغرامة من 800 إلى 1.500 دج، كل سائق يخالف الأحكام المتعلقة بما يأتي :</obligation>
+          <list>
+          <point><p>1 - الحد من سرعة المركبات ذات محرك بمقطورة أو بدون مقطورة أو نصف مقطورة والحد من السرعة في بعض مخارج الطرق وبكل صنف مركبة.</p></point>
+          <point><p>2 - التخفيض غير العادي للسرعة بدون أسباب حتمية من شأنه تقليص سيولة حركة المرور.</p></point>
+          <point><p>3 - التقاطع و التجاوز.</p></point>
+          <point><p>4 - إشارات الأمر بالتوقف التام.</p></point>
+          <point><p>5 - منع المرور أو تقييده في بعض الاتجاهات بالنسبة لبعض أصناف المركبات أو بالنسبة للمركبات التي تقوم ببعض أنواع النقل.</p></point>
+          <point><p>6 - حالات الإلزام أو المنع المتعلقة بعبور الخطوط الحديدية الواقعة على الطريق.</p></point>
+          <point><p>7 - التوقف أو الوقوف الخطيرين.</p></point>
+          <point><p>8 - التوقف أو الوقوف بدون ضرورة حتمية على شريط الوقوف الاستعجالي للطريق السريع للسيارات والطريق السريع.</p></point>
+          <point><p>9 - شد حزام الأمن بالنسبة للجالسين في المقاعد الأمامية للمركبة إذا كانت مزودة بهذا الجهاز.</p></point>
+          <point><p>10 - الارتداء الإجباري للخوذة بالنسبة لسائقي الدراجات النارية والراكبين.</p></point>
+          <point><p>11 - القواعد المنظمة لحركة مرور الراجلين لا سيما عند مرورهم في الممرات الخاصة بالراجلين.</p></point>
+          </list></p>
+          </paragraph>
+          <paragraph>
+          <p><condition>في حالة العود</condition>، تضاعف العقوبة.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_72">
+          <num>المادة 72</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بغرامة من 1.500 إلى 5.000 دج، كل سائق يخالف الأحكام المتعلقة بما يأتي:</obligation>
+          <list>
+          <point><p>1 - اتجاهات المرور الإلزامية.</p></point>
+          <point><p>2 - تقاطع الطرق و أسبقية المرور.</p></point>
+          <point><p>3 - استعمال أجهزة الإنارة والإشارة.</p></point>
+          <point><p>4 - حركة السياقة الممنوعة في الطرق السريعة للسيارات والطرق السريعة، والمكوث على الشريط الأرضي الوسطي الفاصل بين أوساط الطرق المكونة للطريق السريع للسيارات والطريق السريع والسير إلى الوراء والتراجع أو استعمال الشريط الوسيط الفاصل.</p></point>
+          <point><p>5 - السير على الخط المتواصل أو اجتيازه عندما يكون هذا الخط منفردا أو مزدوجا مع الخط المتقاطع عندما تكون هذه الحركة ممنوعة.</p></point>
+          <point><p>6 - التغيير الخطير للاتجاه دون تأكد السائق من عدم خطورة هذه الحركة على المستعملين الآخرين وبدون تنبيههم عن رغبته في تغيير الاتجاه.</p></point>
+          <point><p>7 - زيادة السرعة من طرف سائق المركبة أثناء محاولة تجاوزه من طرف سائق أخر.</p></point>
+          <point><p>8 - سير أو وقوف مركبة في وسط الطريق ليلا أو أثناء انتشار الضباب في مكان خال من الإنارة العمومية، إذا كانت هذه المركبة بدون إنارة ولا تحمل إشارة.</p></point>
+          <point><p>9 - منع المرور على مسلك يقع مباشرة على يسار طريق يتضمن ثلاثة مخارج أو أكثر ذات اتجاه واحد للمرور، بالنسبة لمركبات نقل الأشخاص أو البضائع التي يتجاوز طولها 7 أمتار وذات وزن إجمالي للحمولة المرخص بها يفوق طنين (2) .</p></point>
+          <point><p>10- منع نقل الأطفال الذين تقل أعمارهم عن عشر (10) سنوات في الأماكن الأمامية.</p></point>
+          </list></p>
+          </paragraph>
+          <paragraph>
+          <p><condition>في حالة العود</condition>، تضاعف العقوبة.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_73">
+          <num>73</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بغرامة من 300 إلى 800 دج كل شخص يخالف الأحكام المتعلقة بما يأتي :</obligation></p>
+          <list>
+          <point>
+          <p>سرعة المركبات بدون محرك بمقطورة أو بدون مقطورة أو بدون نصف مقطورة</p>
+          </point>
+          <point>
+          <p>استعمال المنبهات</p>
+          </point>
+          <point>
+          <p>عدد الحيوانات المقرونة</p>
+          </point>
+          <point>
+          <p>الالتزام بتشغيل ضوء أو أضواء المركبة المجرورة بواسطة الحيوانات.</p>
+          </point>
+          <point>
+          <p>الوقوف التعسفي المؤدي إلى التوقف أو الوقوف المعيق، عندما ترتكب المخالفة في أوساط الطريق أو المسالك أو الدروب أو أشرطة الطريق أو الأرصفة أو حافة الطرق المخصصة لمرور مركبات النقل الجماعي والمركبات الأخرى المرخص لها بذلك خصيصا، ولمرور الراجلين.</p>
+          </point>
+          <point>
+          <p>المرور في وسط الطريق أو المسالك أو الدروب أو أشرطة الطريق أو الأرصفة أو حافة الطرق المخصصة لمرور مركبات النقل الجماعي والمركبات الأخرى المرخص لها بذلك خصيصا، ولمرور الراجلين</p>
+          </point>
+          </list>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_74">
+          <num>74</num>
+          <content>
+          <paragraph>
+          <p>دون المساس بالعقوبات المتعلقة بسحب <term refersTo="#driving_license">رخصة السياقة</term> و<condition>عندما تعاين المخالفة بتجهيزات ملائمة معتمدة من السلطات المختصة</condition> <obligation>يعاقب بغرامة مالية من 5.000 إلى 10.000 دج كل شخص تجاوز ب :</obligation></p>
+          <list>
+          <point>
+          <p>40 كلم/ سا السرعة القانونية المرخص بها في الطريق السريع للسيارات والطريق السريع.</p>
+          </point>
+          <point>
+          <p>30 كلم / سا السرعة القانونية المرخص بها خارج المجمع السكاني.</p>
+          </point>
+          <point>
+          <p>20 كلم / سا السرعة القانونية المرخص بها داخل المجمع السكاني.</p>
+          </point>
+          </list>
+          </paragraph>
+          <paragraph>
+          <p><condition>في حالة العود</condition>، <obligation>تضاعف العقوبة</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_75">
+          <num>75</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بغرامة من 1.500 إلى 5.000 دج ، كل شخص يخالف الأحكام التنظيمية المتعلقة بمنع الوقوف أو التوقف على أجزاء الطريق التي يعبر سطحها خط حديدي أو سير المركبات غير مرخص لها بذلك على السكك الحديدية</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>في حالة العود</condition>، <obligation>يرفع مبلغ الغرامة إلى 10.000 دج</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_76">
+          <num>76</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بغرامة من 800 إلى 1.500 دج كل سائق يستعمل أثناء سير المركبة الهاتف المحمول أو يرتدي خوذة التصنت الإذاعي والسمعي</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>في حالة وقوع حادث جسماني أدى إلى الجرح أو نتج عنه القتل الخطأ وثبت بوسائل ملائمة أن السائق كان مستعملا للأجهزة المذكورة في الفقرة السابقة حال وقوع الحادث</condition>، <obligation>يعاقب بغرامة من 5.000 إلى 50.000 دج وبالحبس من ثلاثة (3) أشهر إلى ثلاث (3) سنوات أو بإحدى هاتين العقوبتين فقط</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>في حالة العود</condition>، <obligation>تضاعف العقوبة</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <subsection eId="sec_6_subsec_2">
+          <num>الثاني</num>
+          <heading>العقوبات الخاصة بالمخالفات المتعلقةباستعمال المسالك المفتوحة لحركة المرور</heading>
+          <article eId="art_77">
+            <num>77</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من 1.500 إلى 5.000 دج، كل <term refersTo="#driver">سائق</term> يعبر بعض أجزاء الطرق غير الصالحة للسير بسبب رداءة الطقس أو الأشغال المنبه عليها بإشارات نظامية أو يعبر بعض الجسور ذات الحمولة المحدودة</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة العود</condition>، <obligation>يعاقب بالحبس من شهر (1) إلى شهرين (2) وتضاعف الغرامة أو يعاقب بإحدى هاتين العقوبتين فقط</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_78">
+            <num>78</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من 50.000 إلى 150.000 دج، كل من يقوم بتنظيم سباقات العدو أو سباقات المركبات ذات محرك أو سباقات الدراجات العادية والدراجات النارية بدون ترخيص من السلطة المختصة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_79">
+            <num>79</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من 1.500 إلى 5.000 دج، منظمو السباقات المذكورة في <ref href="#art_78">أعلاه</ref> الذين خالفوا الأحكام السارية المفعول، رغم حصولهم على الرخصة</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة العود</condition>، <obligation>تضاعف العقوبة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_80">
+            <num>80</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب طبقا للأحكام المنصوص عليها في <ref href="/akn/dz/act/code/penal#art_408">المادة 408 من قانون العقوبات</ref> ، كل من يضع أو يحاول وضع على مسلك مفتوح لحركة المرور أو على خافته المباشرة قصد عرقلة حركة المرور شيئا من شأنه إعاقة سير المركبات</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_81">
+            <num>81</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من 1.500 إلى 5.000 دج، كل مستعمل طريق تسبب في إلحاق ضرر بالمسلك العمومي أو ملحقاته، نتيجة خطأ منه أو تهاونه أو تغافله</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_82">
+            <num>82</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من 5.000 إلى 10.000 دج كل من قام بأشغال أحدثت ضررا بالمسلك العمومي نتيجة حفر لتوصيل المياه أو الغاز أو التطهير دون إصلاحها</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+        <subsection eId="sec_6_subsec_3">
+          <num>الثالث</num>
+          <heading>العقوبات الخاصة بالمخالفات المتعلقة بالمركبات و تجهيزاتها</heading>
+          <article eId="art_83">
+            <num>المادة 83</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من 1.500 إلى 5.000 دج</obligation>، <condition>كل شخص يقود في المسالك المفتوحة للسير مركبة ذات محرك أو مقطورة دون أن تكون هذه المركبة حاملة للوحتي التسجيل</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_84">
+            <num>المادة 84</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بالحبس من شهرين (2) إلى سنتين (2) وبغرامة من 50.000 إلى 150.000 دج، أو بإحدى هاتين العقوبتين فقط</obligation>، <condition>كل شخص يضع للسير مركبة ذات محرك أو مقطورة مزودة بلوحة تسجيل أو علامة لاتتطابق مع نوع هذهالمركبة أو الصفة الخاصة بالمنتفع بها</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة العود</condition>، <obligation>تضاعف العقوبة</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>فضلا عن ذلك، <obligation>يمكن المحكمة الحكم بمصادرة العتاد المستعمل لصنع لوحات التسجيل والمركبة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_85">
+            <num>المادة 85</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من 1.500 إلى 5.000 دج</obligation>، كل سائق يخالف الأحكام المتعلقة بما يأتي :</p>
+            <list>
+            <point>
+            <p>1 وزن المركبات وطبيعة الأطر المطاطية للمركبات ذات محرك وشكلها وحالتها وشروط استعمالها.</p>
+            </point>
+            <point>
+            <p>2 - مكابح المركبات المخصصة للنقل الجماعي للأشخاص والبضائع التي يزيد وزن حمولتها المرخص به عن 3500 كلغ.</p>
+            </point>
+            <point>
+            <p>3 - معيار المركبات، وتركيب أجهزة الإنارة والإشارة للمركبات.</p>
+            </point>
+            <point>
+            <p>4 - الحمولة القصوى لكل محور.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ينبغي الأمر بتوقيف المركبة</obligation> طبقا لأحكام <ref href="#art_121">المادة 121</ref> من هذا القانون.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة العود</condition>، <obligation>تضاعف العقوبة</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_86">
+            <num>المادة 86</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من 1.500 إلى 5.000 دج</obligation>، كل سائق يخالف أحكام <ref href="#art_16">المادة 16</ref> أعلاه، دون المساس بالتوقيف الفوري للمركبة إلى غاية مطابقتها للأحكام التشريعية والتنظيمية.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة العود</condition>، <obligation>تضاعف العقوبة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_87">
+            <num>المادة 87</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من 800 إلى 1.500 دج</obligation>، كل سائق يخالف الأحكام التنظيمية المتعلقة بتركيب جهاز المراقبة الذي يسمح بتسجيل السرعة ومواصفاته وصيانته.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة العود</condition>، <obligation>تضاعف العقوبة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_88">
+            <num>المادة 88</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من 800 إلى 1.500 دج</obligation>، كل سائق يخالف الأحكام التنظيمية المتعلقة بمكابح المركبات في غير الحالات المحددة في <ref href="#art_85">المادة 85</ref> أعلاه، و مقاسات لوحات التسجيل والتجهيزات وإشارة النقل الاستثنائي ومؤشرات السرعة وربط المقطورات ونصف المقطورات.</p>
+            </paragraph>
+            <paragraph>
+            <p>وفي جميع الحالات، <obligation>يمكن أن يؤمر بتوقيف المركبة</obligation> طبقا لأحكام <ref href="#art_121">المادة 121</ref> من هذا القانون.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة العود</condition>، <obligation>تضاعف العقوبة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_89">
+            <num>المادة 89</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من 200 إلى 300دج</obligation>، كل من خالف الأحكام المتعلقة بالإنارة والإشارة ومكابح الدراجات غير المزودة بمحرك.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة العود</condition>، <obligation>تضاعف العقوبة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_90">
+            <num>المادة 90</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من 800 إلى 1.500 دج</obligation>، كل سائق يخالف أحكام المواد <ref href="#art_45">45</ref> و <ref href="#art_47">47</ref> و <ref href="#art_48">48</ref> من هذا القانون ، دون الإخلال بالتوقيف الفوري للمركبة إلى غاية جعلها مطابقة للأحكام التشريعية والتنظيمية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_91">
+            <num>المادة 91</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من 300 إلى 800 دج</obligation>، <condition>كل سائق يضع للسير مركبة دون أن تكون مزودة بالتجهيزات التي تسمح للسائق بأن يكون له مجال رؤية كاف</condition> مثلما هو منصوص عليه في <ref href="#art_46">المادة 46</ref> من هذا القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+        <subsection eId="sec_6_subsec_4">
+          <num>الرابع</num>
+          <heading>العقوبات الخاصة بالمخالفات للأحكام المتعلقة بالوثائق الإدارية وقواعد تطابق المركبات</heading>
+          <article eId="art_92">
+            <num>المادة 92</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من 1.500إلى 5.000 دج وبالحبس من شهرين (2) إلى ستة (6) أشهر، أو بإحدى هاتين العقوبتين فقط، كل من خالف أحكام <ref href="#art_50">المادة 50</ref> أعلاه والنصوص التنظيمية المتخذة لتطبيقها.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة العود، تضاعف العقوبة.</condition></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_93">
+            <num>المادة 93</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من 200 إلى 300 دج، كل سائق يخالف أحكام هذا القانون المتعلقة بتقديم <term refersTo="#vehicle_documents">الوثائق الخاصة بالمركبة</term> و<term refersTo="#driving_license">رخصة السياقة</term> و/أو <term refersTo="#professional_certificate">الشهادة المهنية</term> التي تسمح له بقيادة المركبة المعنية.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_94">
+            <num>المادة 94</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من 800 إلى 1.500 دج، كل شخص يخالف أحكام <ref href="#art_52">المادة 52</ref> أعلاه و الآجال المنصوص عليها في الأحكام التنظيمية المتعلقة ببيع المركبات أو إتلافها واسترجاع بطاقة التسجيل، وتغيير مقر إقامة أي صاحب سيارة أو مقطورة أو نصف مقطورة يزيد وزنها الإجمالي بالحمولة على 500 كلغ.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_95">
+            <num>المادة 95</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من 1.500 إلى 5.000 دج، كل شخص لم يصرح بالتغييرات التي أجراها على المركبة.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_96">
+            <num>المادة 96</num>
+            <content>
+            <paragraph>
+            <p>خلافا لأحكام <ref href="#art_12">المادة 12</ref> أعلاه، <obligation>يتحمل صاحب بطاقة تسجيل المركبة المسؤولية المدنية عن مخالفة التنظيم المتعلق بوقوف المركبات ، والتي يترتب عليها وحدها دفع غرامة</obligation>، <condition>إلا إذا أثبت وجود قوة قاهرة أو قدم معلومات تمكن من اكتشاف المرتكب الحقيقي للمخالفة</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة تأجير المركبة للغير</condition>، <obligation>تقع المسؤولية ضمن الشروط نفسها على عاتق المستأجر</obligation> .</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وعندما تكون بطاقة تسجيل المركبة باسم شخص معنوي</condition>، <obligation>تقع المسؤولية المدنية المنصوص عليها في الفقرة الأولى أعلاه، ضمن الشروط نفسها على عاتق الممثل الشرعي لهذا الشخص المعنوي</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_97">
+            <num>المادة 97</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من 50.000 إلى 150.000 دج وبالحبس من شهرين (2) إلى ثمانية عشر (18) شهرا أو بإحدى هاتين العقوبتين فقط، كل شخص يعرض للبيع أو يبيع آلة أو تجهيز مركبة غير معتمد، وذلك عندما يكون الاعتماد قد فرضه التشريع والتنظيم المعمول بهما.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة العود، تضاعف العقوبة.</condition></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_98">
+            <num>المادة 98</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من 200 إلى 300دج كل شخص يستخدم آلة أو تجهيزا لمركبة غير مطابق للأحكام التشريعية والتنظيمية.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_100">
+            <num>المادة 100</num>
+            <content>
+            <paragraph>
+            <p>دون المساس بالعقوبات المنصوص عليها في <ref href="#art_108">المادتين 108</ref> و<ref href="#art_111">111</ref> أدناه، و</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يعاقب بالحبس من ثمانية (8) أيام إلى شهر (1) و بغرامة من 1.500 إلى 5.000 دج أو بإحدى هاتين العقوبتين فقط، كل شخص يعرض للبيع أو يبيع أو يحوز أو يستعمل أو يكيف أو يضع أو يركب أو ينقل بأية صفة كانت جهازا أو آلة مخصصة إما للكشف عن الأدوات المستعملة لمعاينة مخالفات التشريع أو التنظيم المتعلق بمرور السيارات، وإما للتشويش على سيرها.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يصادر هذا الجهاز أو هذه الآلة.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+        <subsection eId="sec_6_subsec_5">
+          <num>الخامس</num>
+          <heading>العقوبات الخاصة بالمخالفات</heading>
+          <article eId="art_101">
+            <num>المادة 101</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بالحبس من شهرين (2) إلى سنة (1) وبغرامة من 1.500 إلى 5.000 دج أو بإحدى هاتين العقوبتين فقط</obligation>، كل شخص <condition>يقود مركبة دون أن يكون متحصلا على <term refersTo="#driving_license">رخصة سياقة</term> أو تكون غير موافقة لصنف المركبة المعتبرة</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_102">
+            <num>المادة 102</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من 300 إلى 800 دج</obligation>، كل سائق <condition>تحصل على <term refersTo="#driving_license">رخصة سياقة</term> منذ أقل من سنتين، ولم يضع الإشارة الملائمة</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_103">
+            <num>المادة 103</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من 800 إلى 1.500 دج</obligation>، كل سائق <condition>تحصل على <term refersTo="#driving_license">رخصة سياقة</term> منذ أقل من سنتين ، وتجاوز حدود السرعة المنصوص عليها لهذه الفئة من السائقين</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_104">
+            <num>المادة 104</num>
+            <content>
+            <paragraph>
+            <p><condition>عندما يكون السائق غير حائز الرخصة المقررة للمركبة التي حكم عليه نتيجة سياقتها بعقوبة قد تكون سببا في تعليق أو إلغاء هذه الوثيقة</condition>، <obligation>تستبدل هذه العقوبات بعقوبة تمنعه من الحصول على <term refersTo="#driving_license">رخصة السياقة</term> وتتراوح مدة العقوبة من ستة (6) أشهر إلى سنتين (2)</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة العود</condition>، <obligation>تضاعف المدة القصوى للعقوبة المنصوص عليها أعلاه</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_105">
+            <num>المادة 105</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بالحبس من شهرين (2) إلى ستة (6) أشهر وبغرامة من 1.500 إلى 5.000 دج أو بإحدى هاتين العقوبتين فقط</obligation>، كل شخص <condition>يستمر في قيادة مركبة ذات محرك يقتضي لأجل قيادتها وثيقة ما، رغم تبليغه القرار الصادر بشأنه والمتضمن تعليق أو إلغاء <term refersTo="#driving_license">رخصة السياقة</term> أو منع تسليمها</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تطبق نفس العقوبات</obligation> على كل شخص <condition>يستلم تبلیغ قرار صادر بشأنه ويتضمن تعليق أو إلغاء <term refersTo="#driving_license">رخصة السياقة</term> ، ويرفض تسليم الرخصة المعلقة أو الملغاة إلى العون التابع للسلطة المكلفة بتنفيذ هذا القرار</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_106">
+            <num>المادة 106</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب كل شخص يحصل على <term refersTo="#driving_license">رخصة سياقة</term> أو يحاول الحصول عليها بواسطة تصريح كاذب</obligation> طبقا لأحكام <ref href="/akn/dz/act/law/1966-06-08/66-156#art_223">المادة 223 من قانون العقوبات</ref>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_108">
+            <num>المادة 108</num>
+            <content>
+            <paragraph>
+            <p><right>يجوز للوالي</right> <condition>عندما يحال عليه محضر إثبات إحدى المخالفات المبينة في <ref href="#art_111">المادة 111</ref> أدناه، إذا رأى من غير الواجب حفظ الملف</condition>، أن <obligation>يصدر بصفة مؤقتة وبعد أخذ رأي لجنة خاصة قرار تعليق <term refersTo="#driving_license">رخصة السياقة</term> أو منع اجتياز امتحانها عندما يكون السائق المعني غير متحصل عليها</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_109">
+            <num>109</num>
+            <content>
+            <paragraph>
+            <p><obligation>لا يمكن أن تتجاوز مدة التعليق أو منع تسليم <term refersTo="#driving_license">رخصة السياقة</term> سنة واحدة</obligation> في <condition>الحالات المنصوص عليها في <ref href="#art_111">المادة 111</ref> أدناه</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p>ترفع هذه المدة إلى سنتين (2) في <condition>حالة ارتكاب جريمة الجرح أو القتل الخطأ والتي قد تؤدي إلى العجز الكلي للشخص عن العمل</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>لا يمكن أن تتجاوز مدة التعليق ثلاثة (3) أشهر</obligation> بالنسبة لمرتكب إحدى المخالفات المنصوص عليها في <ref href="#art_71">الفقرات 2 و 4 و 6 من المادة 71</ref> و<ref href="#art_72">الفقرات 1 و 2 و 4 من المادة 72</ref> و<ref href="#art_103">المادة 103</ref> أعلاه.</p>
+            </paragraph>
+            <paragraph>
+            <p>يبطل مفعول القرار الذي يصدره الوالي بتعليق <term refersTo="#driving_license">رخصة السياقة</term> ، أو منع الحصول عليها مهما كانت المدة تطبيقا لهذه الأحكام، <condition>عندما يصبح القرار القضائي الذي ينص على إجراء تقييد حق السياقة، نهائيا</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تبطل الإجراءات الإدارية المنصوص عليها في هذه المادة في <condition>حالة إصدار أمر بأن لا وجه للمتابعة أو حكم بالتسريح</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحسم مدة التدابير الإدارية عند الاقتضاء، من مدة التدابير المماثلة الصادرة عن المحكمة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_110">
+            <num>110</num>
+            <content>
+            <paragraph>
+            <p>يمكن أن يكون تعليق <term refersTo="#driving_license">رخصة السياقة</term> أو إلغاؤها و كذا منع تسليمها، من العقوبات التكميلية التي يمكن أن تحكم بها الجهات القضائية المختصة.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويمكن الحكم بالتنفيذ المعجل لهذه العقوبات التكميلية كتدبير وقائي.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_111">
+            <num>111</num>
+            <content>
+            <paragraph>
+            <p>يمكن أن تأمر الجهات القضائية المختصة بتعليق <term refersTo="#driving_license">رخصة السياقة</term> لمدة ثلاث (3) سنوات في <condition>حالة إصدار حكم قضائي لارتكاب سائقي المركبات إحدى المخالفات الآتية</condition> :</p>
+            <list>
+            <point>
+            <p>السياقة في حالة سكر،</p>
+            </point>
+            <point>
+            <p>سياقة مركبة تحت تأثير مواد أو أعشاب مصنفة ضمن المخدرات،</p>
+            </point>
+            <point>
+            <p>جنحة الفرار،</p>
+            </point>
+            <point>
+            <p>رفض الخضوع،</p>
+            </point>
+            <point>
+            <p>مخالفة الأحكام المتعلقة بتحديد السرعة،</p>
+            </point>
+            <point>
+            <p>عبور بعض الجسور المحدودة الحمولة،</p>
+            </point>
+            <point>
+            <p>استعمال أجهزة أو آلات مخصصة إما للكشف عن المخالفات المتعلقة بالتشريع أو التنظيم المتعلق بحركة مرور السيارات، وإما للتشويش على سير الأدوات المستعملة لمعاينة تلك المخالفات.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_112">
+            <num>112</num>
+            <content>
+            <paragraph>
+            <p>مع مراعاة أحكام <ref href="#art_108">المادتين 108</ref> و<ref href="#art_111">111</ref> من هذا القانون، يقوم الأعوان المؤهلون بسحب <term refersTo="#driving_license">رخصة السياقة</term> فورا لمدة لا تتجاوز خمسة عشر (15) يوما في <condition>الحالات المنصوص عليها في المواد <ref href="#art_65">65</ref> و<ref href="#art_66">66</ref> و<ref href="#art_67">67</ref> و<ref href="#art_69">69</ref> من هذا القانون</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_113">
+            <num>113</num>
+            <content>
+            <paragraph>
+            <p><condition>عندما يرتكب السائق مخالفة أدت إلى الجرح أو القتل الخطأ أثناء سياقة مركبة ذات محرك كان أحد الراجلين ضحية ذلك وعندما يكون هذا السائق قد حكم عليه بعقوبة تطبيقا للمادتين <ref href="#art_66">66</ref> و<ref href="#art_69">69</ref> من هذا القانون والمادتين <ref href="/akn/dz/act/law/1966-06-08/66-156#art_288">288</ref> و<ref href="/akn/dz/act/law/1966-06-08/66-156#art_289">289</ref> من قانون العقوبات</condition>، يمكن الجهات القضائية المختصة الحكم بإلغاء <term refersTo="#driving_license">رخصة السياقة</term>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يمكن الجهات القضائية المختصة ضمن الشروط نفسها المذكورة في الفقرة الأولى أعلاه، إصدار حكم بإلغاء <term refersTo="#driving_license">رخصة السياقة</term>، ومنع مرتكب المخالفة من الحصول عليها نهائيا .</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد الشروط التي يتسنى بمقتضاها للسائق طلب <term refersTo="#driving_license">رخصة سياقة</term> جديدة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+        <subsection eId="sec_6_subsec_6">
+          <num>السادس</num>
+          <heading>العقوبات الخاصة بالمخالفات المتعلقة بتعليم سياقة المركبات ذات محرك</heading>
+          <article eId="art_114">
+            <num>المادة 114</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من 1.000 إلى 5.000 دج، كل من خالف أحكام هذا القانون والنصوص التنظيمية المتخذة لتطبيقه والمتعلقة بتعليم سياقة المركبات ذات محرك</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة العود</condition>، تضاعف العقوبة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_115">
+            <num>المادة 115</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بغرامة من 1.500 إلى 5.000 دج، كل شخص يخالف الأحكام التنظيمية التي تنظم تعليم سياقة السيارة بدون مقابل مالي</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+        <subsection eId="sec_6_subsec_7">
+          <num>السابع</num>
+          <heading>المخالفات المتعلقة بالأحكام المشتركة</heading>
+          <article eId="art_116">
+            <num>المادة 116</num>
+            <content>
+            <paragraph>
+            <p><condition>خلافا لأحكام قانون العقوبات</condition>، يعتبر <def refersTo="#recidivism">العود في ارتكاب المخالفات الخاصة بسلامة المرور في الطرق</def> مستقلا عن المكان الذي وقعت فيه المخالفة الأولى.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفية إثبات العود في ارتكاب هذه المخالفات وفقا لأحكام <ref href="/akn/dz/act/code/criminal_procedure#art_655">المواد من 655</ref> إلى <ref href="/akn/dz/act/code/criminal_procedure#art_665">665</ref> من قانون الإجراءات الجزائية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_117">
+            <num>المادة 117</num>
+            <content>
+            <paragraph>
+            <p><condition>عندما يتعذر على مرتكب مخالفة خاصة بسلامة المرور في الطرق إثبات محل إقامته أو عمله في التراب الوطني</condition>، يمكن فيما عدا حالة دفع <term refersTo="#fine">غرامة جزافية</term>، توقيف المركبة موضوع المخالفة إلى وكيل أن يودع لدى أحد محاسبي الخزينة كفالة يحدد <term refersTo="#prosecutor">وكيل الجمهورية</term> مقدارها.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وفي حالة عدم تقديم مرتكب المخالفة أيا من هذين الضمانين</condition>، يمكن أن توضع المركبة في المحشر وأن تكون النفقات الناجمة عن ذلك على عاتقه.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="sec_6_sec_6_subsec_7_art_18">
+            <num>18</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب أن يمتنع كل <term refersTo="#driver">سائق</term> عن السياقة عندما يتعاطى مسكرا أو يكون تحت تأثير أية مادة أخرى من شأنها أن تؤثر في ردود أفعاله وقدراته في السياقة.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_119">
+            <num>المادة 119</num>
+            <content>
+            <paragraph>
+            <p>لا يمكن تطبيق الإجراء المتعلق بالغرامة الجزافية في الحالات الآتية :</p>
+            <list>
+            <point>
+            <p>إذا كانت المخالفة المثبتة تعرض مرتكبها إما لعقوبة أخرى غير العقوبة المالية، وإما لتعويض عن الضرر المسبب للأشخاص أو الممتلكات.</p>
+            </point>
+            <point>
+            <p>في حالة المخالفات المتزامنة والتي لا يترتب على إحداها على الأقل تطبيق الإجراء المتعلق بالغرامة الجزافية.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_120">
+            <num>المادة 120</num>
+            <content>
+            <paragraph>
+            <p>تحدد قيمة الغرامة الجزافية على النحو الآتي :</p>
+            <list>
+            <point>
+            <p>200 دج للمستوجبة غرامة لا تتجاوز قيمتها القصوى 300 دج ،</p>
+            </point>
+            <point>
+            <p>300 دج للمخالفات المستوجبة غرامة لا تتجاوز قيمتها القصوى 800 دج ،</p>
+            </point>
+            <point>
+            <p>800 دج للمخالفات المستوجبة غرامة لا تتجاوز قيمتها القصوى 1.500 دج ،</p>
+            </point>
+            <point>
+            <p>1.500 دج للمخالفات المستوجبة غرامة لا تتجاوز قيمتها القصوى 5.000 دج.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_121">
+            <num>المادة 121</num>
+            <content>
+            <paragraph>
+            <p>يمكن توقيف المركبات المخالفة لقواعد حركة المرور والوقوف المنصوص عليها في هذا القانون ووضعها في المحشر.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد حالات وضع المركبة في المحشر وتوقيفها وشروط ومدة ذلك عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_122">
+            <num>المادة 122</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن الشخص المعني بالأمر أن يطعن في قرار وضع المركبة في المحشر أمام <term refersTo="#prosecutor">وكيل الجمهورية</term> الذي وقعت المخالفة في دائرة اختصاصه.</right></p>
+            </paragraph>
+            <paragraph>
+            <p>يمكن <term refersTo="#prosecutor">وكيل الجمهورية</term> أن يؤكد الإجراء المتخذ أو يلغيه في أجل أقصاه خمسة (5) أيام</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_123">
+            <num>المادة 123</num>
+            <content>
+            <paragraph>
+            <p>عملا بـ <ref href="#art_121">المادة 121</ref> أعلاه، و بناء على أمر يصدره <term refersTo="#judicial_police_officer">ضابط الشرطة القضائية</term> المختص إقليميا، يمكن رجال الشرطة المرتدين البذلة و أعوان الدرك الوطني المؤهلين قانونا لإثبات المخالفات الخاصة بسلامة المرور في الطرق بمحاضر، أن يقوموا <condition>في حال غياب السائق</condition>، بنقل المركبة بحضورهم إلى المحشر، وذلك باستعمال وسائل غير وسائل الدفع الذاتية التي تتوفر عليها المركبة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_124">
+            <num>124</num>
+            <content>
+            <paragraph>
+            <p><obligation>لا يجوز أن تسحب المركبات التي لا تسمح حالتها بالسير حسب الشروط العادية للأمن من <term refersTo="#impound">المحشر</term>، إلا من قبل مصلحين يكلفهم أصحاب المركبات بالقيام بالتصليحات الضرورية.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p><condition>إذا حصل اختلاف على حالة المركبة</condition>، يتم تعيين خبير حسب الشروط التي يحددها التنظيم.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة إثباته أن المركبة ليست في حالة تمكنها من السير حسب الشروط العادية للأمن</condition> يحدد التصليحات الواجب القيام بها قبل تسليمها لصاحبها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_125">
+            <num>125</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#abandoned_vehicles">تعتبر مركبات مهجورة المركبات التي تترك في <term refersTo="#impound">المحشر</term> بعد انقضاء أجل ستين (60) يوما ابتداء من إشعار صاحب المركبة بوجوب سحبها.</def></p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وفي حالة ما إذا كانت المركبة موضوع رهن مسجل قانونا</condition>، <obligation>يبلغ هذا الإشعار أيضا إلى الدائن الضامن.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وإذا تعذر التعرف على صاحب المركبة</condition>، يبلغ الملف إلى الجهة القضائية المختصة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_126">
+            <num>126</num>
+            <content>
+            <paragraph>
+            <p>تسلم المركبات المهجورة حسب الشروط المنصوص عليها في الفقرة الأولى من <ref href="#art_125">المادة 125</ref> أعلاه، أو المصرح بها كذلك بموجب حكم قضائي، إلى مصلحة أملاك الدولة قصد التصرف فيها وفقا للتنظيم المعمول به.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>إذا لم تجد المركبات مقتنيا بعد الأجل المحدد من طرف كل والي ولاية</condition> تسلم هذه المركبات للتدمير بمبادرة من السلطة الإدارية المختصة بسلطات سلامة المرور.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_127">
+            <num>127</num>
+            <content>
+            <paragraph>
+            <p><obligation>يتحمل مالك المركبة المهجورة مصاريف رفعها ووضعها في <term refersTo="#impound">المحشر</term> وإجراء الخبرة وبيعها أو تدميرها.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p>يوضع حاصل البيع بعد أن تخصم منه المصاريف المذكورة في الفقرة أعلاه، تحت تصرف المالك أو ذوي حقوقه، أو عند الاقتضاء، الدائن الضامن الذي يتمكن من إثبات حقوقه خلال أجل مدته سنتان (2).</p>
+            </paragraph>
+            <paragraph>
+            <p>عند انقضاء هذا الأجل، يعود هذا الحاصل إلى الدولة.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>عندما يقل حاصل البيع عن مبلغ المصاريف المذكورة أعلاه</condition>، <obligation>يبقى المالك مدينا بالفارق.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_128">
+            <num>128</num>
+            <content>
+            <paragraph>
+            <p><obligation>تسيج المحاشر المعينة قانونا من طرف السلطات المحلية وتحرس ليلا ونهارا.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تكون الهيئة المكلفة بحراسة المركبات الموضوعة في <term refersTo="#impound">المحشر</term> مسؤولة عن الخسائر والسرقات وأضرار التلف التي تتعرض لها هذه المركبات.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_129">
+            <num>129</num>
+            <content>
+            <paragraph>
+            <p>يعاقب طبقا لأحكام <ref href="/akn/dz/act/law/1966-06-08/66-156#art_350">المادة 350 من قانون العقوبات</ref> كل من حطم أو سرق أو أتلف أو حاول تحطيم أو سرقة أو إتلاف مركبة موضوعة في <term refersTo="#impound">المحشر</term>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وإذا كان الفاعل مسؤولا عن الحظيرة</condition> تضاعف العقوبة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_130">
+            <num>130</num>
+            <content>
+            <paragraph>
+            <p>طبقا لأحكام <term refersTo="#criminal_procedure_code">قانون الإجراءات الجزائية</term>، تتم معاينة المخالفات المنصوص عليها في هذا القانون والنصوص التنظيمية المتخذة لتطبيقه، بموجب محضر يحرر من طرف :</p>
+            <list>
+            <point><p>ضباط الشرطة القضائية</p></point>
+            <point><p>الضباط وذوي الرتب وأعوان الدرك الوطني</p></point>
+            <point><p>محافظي الشرطة والضباط ذوي الرتب وأعوان الأمن الوطني.</p></point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_131">
+            <num>131</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن مهندسي الأشغال العمومية ورؤساء المناطق والأعوان التقنيين للغابات وحماية الأراضي واستصلاحها، معاينة المخالفات المنصوص عليها في أحكام هذا القانون</right> <condition>عندما ترتكب على المسالك الغابية المفتوحة للسير العمومي.</condition></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_132">
+            <num>132</num>
+            <content>
+            <paragraph>
+            <p>يمكن <term refersTo="#engineers">مهندسي</term> و<term refersTo="#technicians">تقنيي الأشغال العمومية</term>، دون المساس بـ<right>الحق المخول لجميع الموظفين والأعوان المذكورين في <ref href="#art_130">المادة 130</ref> أعلاه</right>، معاينة الأضرار التي تلحق بالمسالك العمومية، وإعداد محضر عن الأعمال التخريبية المرتكبة بحضورهم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_133">
+            <num>133</num>
+            <content>
+            <paragraph>
+            <p>يختص <term refersTo="#agents">الأعوان</term> المذكورون في <ref href="#art_130">المادة 130</ref> أعلاه بمعاينة المخالفات المنصوص عليها في هذا القانون ونصوصه التطبيقية بموجب محضر :</p>
+            <list>
+            <point>
+            <p>أ ) <condition>عند اقترانها بالمخالفات المتعلقة بسلامة الأملاك العمومية الخاصة بالطرق</condition></p>
+            </point>
+            <point>
+            <p>ب ) <condition>عندما تكون مرتكبة في موقع الورشات الواقعة على المسلك العمومي أو بجوارها، وينتج عنها أو يمكن أن ينتج عنها ضرر يضر بالاستغلال العادي لتلك الورشات المذكورة أو بحماية المستخدمين فيها</condition>.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_134">
+            <num>134</num>
+            <content>
+            <paragraph>
+            <p>يختص <term refersTo="#transport_inspectors">مفتشو النقل البري</term> بمعاينة مخالفة أحكام الفقرتين 1 و 4 من <ref href="#art_85">المادة 85</ref> أعلاه وإعداد محضر بذلك.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_135">
+            <num>135</num>
+            <content>
+            <paragraph>
+            <p><obligation>يؤدي الأعوان محررو المحاضر، من غير الضباط وأعوان الشرطة القضائية المذكورين في <ref href="#art_130">المادة 130</ref> أعلاه، اليمين أمام المحكمة التابعة لمكان إقامتهم</obligation>، <condition>هذا إن لم يسبق لهم أداء اليمين من قبل</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تكون صيغة اليمين كما يأتي :</p>
+            </paragraph>
+            <paragraph>
+            <p>"أقسم بالله العلي العظيم وأتعهد بأن أقوم بأعمال وظيفتي بأمانة وأن أراعي في كل الأحوال الواجبات التي تفرضها علي"</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_136">
+            <num>136</num>
+            <content>
+            <paragraph>
+            <p>يكون للمحاضر المحررة تطبيقا لأحكام هذا القانون قوة الثبوت <condition>ما لم يثبت العكس</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_137">
+            <num>137</num>
+            <content>
+            <paragraph>
+            <p><obligation>تبلغ هذه المحاضر مباشرة ودون تأخير إلى وكيل الجمهورية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>وترسل نسخة إلى الوالي</obligation> <condition>عندما يحتمل أن يترتب عن المخالفة تعليق رخصة السياقة</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_138">
+            <num>138</num>
+            <content>
+            <paragraph>
+            <p>تحدث <def refersTo="#national_database">بطاقية وطنية للمخالفات الخاصة بقواعد حركة المرور في الطرق</def>تحدد مواصفات وشروط مسكها عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+      </section>
+      <section eId="sec_8">
+        <num>الثامن</num>
+        <heading>أحكام ختامية</heading>
+        <article eId="art_139">
+          <num>المادة 139</num>
+          <content>
+          <paragraph>
+          <p>تلغى أحكام <ref href="/akn/dz/act/law/1987-02-10/87-09">القانون رقم 87 - 09 المؤرخ في 11 جمادى الثانية عام 1407 الموافق 10 فبراير سنة 1987 والمتعلق بتنظيم حركة المرور عبر الطرق وسلامتها وأمنها</ref>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تبقى النصوص التنظيمية المتخذة لتطبيق القانون المذكور أعلاه ، سارية المفعول <condition>مالم تكن مخالفة لهذا القانون</condition> إلى غاية نشر النصوص التنظيمية المنصوص عليها في هذا القانون خلال <condition>أجل لا يتجاوز أربعة وعشرين (24) شهرا</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_140">
+          <num>المادة 140</num>
+          <content>
+          <paragraph>
+          <p><obligation>ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p>حرر بالجزائر في 29 جمادى الأولى عام 1422 الموافق 19 غشت سنة 2001.</p>
+          </paragraph>
+          <paragraph>
+          <p>عبد العزيز بوتفليقة</p>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+    </body>
+  </act>
+</akomaNtoso>

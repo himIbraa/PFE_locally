@@ -1,0 +1,984 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="presidential-decree">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/presidential-decree/2003-07-19/03-07/main"/>
+      <FRBRuri value="/akn/dz/act/presidential-decree/2003-07-19/03-07"/>
+      <FRBRdate date="2003-07-19" name="enactment"/>
+      <FRBRauthor href="#president"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="03-07"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/presidential-decree/2003-07-19/03-07/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/presidential-decree/2003-07-19/03-07/ara@"/>
+      <FRBRdate date="2003-07-19" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/presidential-decree/2003-07-19/03-07/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/presidential-decree/2003-07-19/03-07/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="president" href="/ontology/organization/dz/president" showAs="رئيس الجمهورية"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="converter" href="/ontology/person/dz/converter" showAs="Markup Specialist"/>
+  </references>
+<lifecycle source="#source"><eventRef eId="evt_1" date="2003-07-19" source="#source" type="generation"/></lifecycle><analysis source="#source"><activeModifications><textualMod type="substitution" eId="amend_1"><source href="#art_26"/><destination href="/akn/dz/act/order/1975-09-26/75-59"/><force period="#evt_1"/></textualMod><textualMod type="substitution" eId="amend_2"><source href="#art_44"/><destination href="/akn/dz/act/order/1975-09-26/75-59"/><force period="#evt_1"/></textualMod></activeModifications></analysis></meta>
+    <preface>
+  <docTitle>أمر رقم 03 - 07 يتعلق ببراءات الاختراع</docTitle>
+  <docNumber>03-07</docNumber>
+  <docDate date="2003-07-19">19 جمادى الأولى عام 1424 الموافق 19 يوليو سنة 2003</docDate>
+  <docAuthority>رئيس الجمهورية</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>بناء على الدستور ، لاسيما المواد 38 و52 و 122 و 124 منه،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 66-48 المؤرخ في 5 ذي القعدة عام 1385 الموافق 25 فبراير سنة 1966 والمتضمن انضمام الجمهورية الجزائرية الديمقراطية الشعبية إلى اتفاقية باريس المؤرخة 20 مارس سنة 1883 و المتعلقة بحماية الملكية الصناعية،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 66-154 المؤرخ في 18 صفر عام 1386 الموافق 8 يونيو سنة 1966 والمتضمن قانون الإجراءات المدنية ، المعدل و المتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 66-155 المؤرخ في 18 صفر عام 1386 الموافق 8 يونيو سنة 1966 والمتضمن قانون الإجراءات الجزائية ، المعدل و المتمم</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 156-66 المؤرخ في 18 صفر عام 1386 الموافق 8 يونيو سنة 1966 والمتضمن قانون العقوبات ، المعدل و المتمم</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 75-02 المؤرخ في 26 ذي الحجة عام 1394 الموافق 9 يناير سنة 1975 والمتضمن المصادقة على اتفاقية باريس لحماية الملكية الصناعية المبرمة في 20 مارس سنة 1883 والمعدلة ببروكسل في 14 ديسمبر سنة 1900، وواشنطن في 2 يونيو سنة 1911 ولا هاي في 6 نوفمبر سنة 1925 ولندن في 2 يونيو سنة 1934 ولشبونة في 31 أكتوبر سنة 1958 و استوكهولم في 14 يوليو سنة 1967،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 75-58 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون المدني، المعدل و المتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون التجاري، المعدل و المتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 79-07 المؤرخ في 26 شعبان عام 1399 الموافق 21 يوليو سنة 1979 والمتضمن قانون الجمارك، المعدل و المتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 84-17 المؤرخ في 8 شوال عام 1404 الموافق 7 يوليو سنة 1984 والمتعلق بقوانين المالية ، المعدل و المتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى المرسوم التشريعي رقم 93-17 المؤرخ في 23 جمادى الثانية عام 1414 الموافق 7 ديسمبر سنة 1993 والمتعلق بحماية الاختراعات</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى المرسوم الرئاسي رقم 99-92 المؤرخ في 29 ذي الحجة عام 1419 الموافق 15 أبريل سنة 1999 والمتضمن المصادقة بتحفظ على معاهدة التعاون بشأن البراءات المبرمة في واشنطن بتاريخ 19 يونيو سنة 1970 و المعدلة في : 28 سبتمبر سنة 1979، وفي 3 فبراير سنة 1984، وعلى لائحتها التنفيذية،</p>
+    </citation>
+    <citation>
+      <p>و بعد الاستماع إلى مجلس الوزراء،</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يصدر الأمر الآتي نصه :</p>
+  </formula>
+</preamble>
+    <body>
+      <chapter eId="chp_1">
+        <num>الأول</num>
+        <heading>الهدف والتعاريف</heading>
+        <article eId="art_1">
+          <num>المادة الأولى</num>
+          <content>
+          <paragraph>
+          <p>يهدف هذا <term refersTo="#order">الأمر</term> إلى تحديد شروط حماية <term refersTo="#inventions">الاختراعات</term>، كما يحدد وسائل هذه الحماية وآثارها.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_2">
+          <num>المادة 2</num>
+          <content>
+          <paragraph>
+          <p>يقصد في مفهوم هذا <term refersTo="#order">الأمر</term> بما يأتي:</p>
+          <list>
+          <point>
+          <p><def refersTo="#invention">الاختراع</def> : فكرة لمخترع ، تسمح عمليا بإيجاد حل لمشكل محدد في مجال التقنية،</p>
+          </point>
+          <point>
+          <p><def refersTo="#patent">البراءة أو براءة الاختراع</def> : وثيقة تسلم لحماية اختراع،</p>
+          </point>
+          <point>
+          <p><def refersTo="#competent_authority">المصلحة المختصة</def> : المعهد الوطني الجزائري للملكية الصناعية،</p>
+          </point>
+          </list>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_2">
+        <num>الثاني</num>
+        <heading>أحكام عامة</heading>
+        <subsection eId="chp_2_subsec_1">
+          <num>الأول</num>
+          <heading>شروط أهلية الاختراع للحصول على البراءة</heading>
+          <article eId="art_3">
+            <num>3</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن أن تحمي بواسطة <term refersTo="#patent">براءة الاختراع</term>، الاختراعات الجديدة والناتجة عن نشاط اختراعي والقابلة للتطبيق الصناعي</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يمكن أن يتضمن الاختراع منتوجا أو طريقة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_4">
+            <num>4</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#new_invention">يعتبر الاختراع جديدا إذا لم يكن مدرجا في حالة التقنية</def>، وتتضمن هذه الحالة كل ما وضع في متناول الجمهور عن طريق وصف كتابي أو شفوي أو استعمال أو أي وسيلة أخرى عبر العالم، وذلك قبل يوم إيداع طلب الحماية أو تاريخ مطالبة الأولوية بها.</p>
+            </paragraph>
+            <paragraph>
+            <p>لا يعتبر الاختراع في متناول الجمهور بما تعرف عليه الجمهور خلال الإثني عشر شهرا التي تسبق تاريخ إيداع البراءة أو تاريخ الأولوية إثر فعل قام به المودع أو سابقه في الحق طبقا ل<ref href="#art_14">المادة 14</ref> أدناه أو جراء تعسف من الغير إزاء المودع أو إزاء سابقه في الحق.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_5">
+            <num>5</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#inventive_step">يعتبر الاختراع ناتجا عن نشاط اختراعي إذا لم يكن ناجما بداهة من حالة التقنية</def>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_7">
+            <num>7</num>
+            <content>
+            <paragraph>
+            <p>لا تعد من قبيل الاختراعات في مفهوم هذا الأمر</p>
+            <list>
+            <point>
+            <p>المبادئ والنظريات والاكتشافات ذات الطابع العلمي وكذلك المناهج الرياضية.</p>
+            </point>
+            <point>
+            <p>الخطط والمبادئ والمناهج الرامية إلى القيام بأعمال ذات طابع ثقافي أو ترفيهي محض</p>
+            </point>
+            <point>
+            <p>المناهج ومنظومات التعليم والتنظيم والإدارة التسيير،</p>
+            </point>
+            <point>
+            <p>طرق علاج جسم الإنسان أو الحيوان بالجراحة أو المداواة وكذلك مناهج التشخيص،</p>
+            </point>
+            <point>
+            <p>مجرد تقديم المعلومات،</p>
+            </point>
+            <point>
+            <p>برامج الحاسوب،</p>
+            </point>
+            <point>
+            <p>الابتكارات ذات الطابع التزييني المحض.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_8">
+            <num>8</num>
+            <content>
+            <paragraph>
+            <p>لا يمكن الحصول على براءات اختراع بموجب هذا الأمر بالنسبة لما يأتي:</p>
+            <list>
+            <point>
+            <p>الأنواع النباتية أو الأجناس الحيوانية وكذلك الطرق البيولوجية المحضة للحصول على نباتات أو حيوانات</p>
+            </point>
+            <point>
+            <p>الاختراعات التي يكون تطبيقها على الإقليم الجزائري مخلا بالنظام أو الآداب العامة،</p>
+            </point>
+            <point>
+            <p>الاختراعات التي يكون استغلالها على الإقليم الجزائري مضرا بصحة و حياة الأشخاص والحيوانات أو مضرا بحفظ النباتات أو يشكل خطرا جسيما على حماية البيئة.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_9">
+            <num>9</num>
+            <content>
+            <paragraph>
+            <p>مدة براءة الاختراع هي عشرون (20) سنة ابتداء من تاريخ إيداع الطلب <condition>مع مراعاة دفع رسوم التسجيل ورسوم الإبقاء على سريان المفعول وفقا للتشريع المعمول به</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+        <subsection eId="chp_2_subsec_2">
+          <num>الثاني</num>
+          <heading>الحقوق المخولة</heading>
+          <article eId="art_10">
+            <num>المادة 10</num>
+            <content>
+            <paragraph>
+            <p><right><term refersTo="#patent_right">الحق في براءة الاختراع</term> ملك لصاحب الاختراع</right> كما هو محدد في <ref href="#art_3">المواد من 3</ref> إلى <ref href="#art_8">8</ref> أعلاه، أو ملك لخلفه .</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>إذا اشترك شخصان أو عدة أشخاص جماعيا في إنجاز اختراع</condition>، فإن <right>الحق في ملكية براءة الاختراع يعد ملكا مشتركا بينهم باعتبارهم شركاء في الاختراع أو يعد ملكا لخلفائهم</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>يحق للمخترع أو للمخترعين ذكرهم كمخترعين في براءة الاختراع</right></p>
+            </paragraph>
+            <paragraph>
+            <p><condition>إذا لم يكن المودع هو المخترع أو المودعين هم المخترعين</condition>، فإن <obligation>الطلب يجب أن يرفق بتصريح يثبت به المودع أو المودعون حقهم في براءة الاختراع</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>لا يشترط التصريح المشار إليه في الفقرة أعلاه في حالة طلب يتضمن مطالبة بأولوية لإيداع سابق باسم المودع.</p>
+            </paragraph>
+            <paragraph>
+            <p>يحدد شكل و كيفيات إعداد التصريح المشار إليه أعلاه عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_11">
+            <num>المادة 11</num>
+            <content>
+            <paragraph>
+            <p>مع مراعاة <ref href="#art_14">المادة 14</ref> أدناه، تخول <term refersTo="#patent">براءة الاختراع</term> لمالكها <right>الحقوق الاستئثارية</right> الآتية :</p>
+            <list>
+            <point>
+            <p><condition>في حالة ما إذا كان موضوع الاختراع منتوجا</condition>، يمنع الغير من القيام بصناعة المنتوج أو استعماله أو بيعه أو عرضه للبيع أو استيراده لهذه الأغراض دون رضاه</p>
+            </point>
+            <point>
+            <p><condition>إذا كان موضوع الاختراع طريقة صنع</condition> ، يمنع الغير من استعمال طريقة الصنع واستعمال المنتوج الناتج مباشرة عن هذه الطريقة أو بيعه أو عرضا للبيع أو استيراده لهذه الأغراض دون رضاه.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p><right>لصاحب البراءة الحق كذلك في التنازل عنها أو في تحويلها عن طريق الإرث و إبرام عقود تراخيص</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_12">
+            <num>المادة 12</num>
+            <content>
+            <paragraph>
+            <p>لا تشمل الحقوق الواردة عن براءة الاختراع إلا الأعمال ذات الأغراض الصناعية أو التجارية .</p>
+            </paragraph>
+            <paragraph>
+            <p>ولا تشمل هذه الحقوق ما يأتي:</p>
+            <list>
+            <point>
+            <p>الأعمال المؤداة لأغراض البحث العلمي فقط،</p>
+            </point>
+            <point>
+            <p>الأعمال التي تخص المنتوج الذي تشمله البراءة و ذلك بعد رض هذا المنتوج في السوق شرعا،</p>
+            </point>
+            <point>
+            <p>استعمال وسائل محمية ببراءة على متن البواخر والسفن الفضائية أو أجهزة النقل الجوية أو البرية الأجنبية التي تدخل المياه الإقليمية أو المجال الجوي أو التراب الوطني دخولا مؤقتا أو اضطراريا.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_14">
+            <num>المادة 14</num>
+            <content>
+            <paragraph>
+            <p><condition>عند تاريخ إيداع طلب براءة الاختراع أو تاريخ الأولوية المطالب به قانونا إذا قام أحد عن حسن نية</condition> :</p>
+            <list>
+            <point>
+            <p>بصنع المنتوج أو استعمال طريقة الصنع موضوع الاختراع المحمي بالبراءة،</p>
+            </point>
+            <point>
+            <p>بتحضيرات جادة لمباشرة هذا الصنع أو هذا الاستعمال، <right>يحق له الاستمرار في مباشرة عمله على الرغم من وجود براءة الاختراع المذكورة</right>.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>إن حق المستخدم السابق لا يمكن تحويله أو نقله إلا مع المؤسسة أو الشركة أو الفروع التابعة لهما واللتين حدث فيهما الاستخدام أو التحضير للاستخدام.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+        <subsection eId="chp_2_subsec_3">
+          <num>الثالث</num>
+          <heading>شهادة الإضافة</heading>
+          <article eId="art_15">
+            <num>المادة 15</num>
+            <content>
+            <paragraph>
+            <p>طوال صلاحية <term refersTo="#patent">البراءة</term> <right>يحق لمالكها أو لذوي الحقوق إدخال تغييرات أو تحسينات أو إضافات على اختراعه</right> مع <obligation>استيفاء الإجراءات المطلوبة لإيداع الطلب المحددة في <ref href="#art_20">المواد 20</ref> إلى <ref href="#art_25">25</ref> أدناه</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يتم إثبات هذه التغييرات أو التحسينات أو الإضافات بشهادات تسلم بنفس الشكل الذي تم بالنسبة للبراءة الرئيسية و يكون لها نفس الأثر.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يترتب على كل طلب شهادة إضافة تسديد الرسوم المحددة وفقا للتشريع الساري المفعول</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تنتهي صلاحية شهادات الإضافة بانقضاء البراءة الرئيسية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_16">
+            <num>المادة 16</num>
+            <content>
+            <paragraph>
+            <p><condition>طالما لم تسلم شهادة الإضافة</condition>، <right>بإمكان طالب هذه الشهادة تحويل طلبه إلى طلب براءة اختراع</right> يكون تاريخ إيداعها هو تاريخ إيداع طلب شهادة الإضافة.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يترتب على البراءة المتحصل عليها تبعا للتحويل المذكور في الفقرة الأولى أعلاه، تسديد رسوم الإبقاء على سريان المفعول ابتداء من تاريخ إيداع طلب شهادة الإضافة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+        <subsection eId="chp_2_subsec_4">
+          <num>الرابع</num>
+          <heading>اختراعات الخدمة</heading>
+          <article eId="art_17">
+            <num>المادة 17</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#service_invention">يعد من قبيل اختراع الخدمة، الاختراع الذي ينجزه شخص أو عدة أشخاص خلال تنفيذ عقد عمل يتضمن مهمة اختراعية تسند إليهم صراحة</def></p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وفي هذه الحالة وإذا لم تكن اتفاقية خاصة بين <term refersTo="#employer">الهيئة المستخدمة</term> التي تدعى "الهيئة " والمخترع</condition>، يعود إلى الهيئة حق امتلاك الاختراع.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وإذا عبرت الهيئة صراحة عن تخليها عن هذا الحق</condition>، فإنه يصبح ملكا للمخترع.</p>
+            </paragraph>
+            <paragraph>
+            <p>وفي أي حال من الأحوال، فإن لصاحب الاختراع <right>الحق في ذكر صفة المخترع</right> وفقا للفقرة 3 من <ref href="#art_10">المادة 10</ref> أعلاه.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق أحكام هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_18">
+            <num>المادة 18</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#service_invention">يعد اختراع الخدمة، الاختراع الذي ينجزه شخص أو عدة أشخاص بمقتضى اتفاقية غير الاتفاقية المنصوص عليها في <ref href="#art_17">المادة 17</ref> أعلاه، وذلك باستخدام تقنيات الهيئة و/أو وسائلها</def>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق أحكام هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+        <subsection eId="chp_2_subsec_5">
+          <num>الخامس</num>
+          <heading>الاختراعات السرية</heading>
+          <article eId="art_19">
+            <num>19</num>
+            <content>
+            <paragraph>
+            <p><condition>يمكن أن تعتبر سرية <term refersTo="#inventions">الاختراعات</term> التي تهم <term refersTo="#national_security">الأمن الوطني</term> و <term refersTo="#inventions">الاختراعات</term> ذات الأثر الخاص على الصالح العام</condition> دون المساس ب<right>الحقوق المادية والمعنوية للمخترع</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق أحكام <ref href="#art_19">هذه المادة</ref> عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+      </chapter>
+      <chapter eId="chp_3">
+        <num>الثالث</num>
+        <heading>الإيداع والفحص والإصدار</heading>
+        <subsection eId="chp_3_subsec_1">
+          <num>الأول</num>
+          <heading>الإيداع</heading>
+          <article eId="art_20">
+            <num>20</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على كل من يرغب في الحصول على <term refersTo="#patent">براءة اختراع</term> أن يقوم بتقديم طلب كتابي صريح إلى <term refersTo="#competent_authority">المصلحة المختصة</term></obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يجب أن يتضمن طلب <term refersTo="#patent">براءة الاختراع</term> ما يأتي</obligation>:</p>
+            <list>
+            <point>
+            <p>استمارة طلب ووصف للاختراع و مطلب أو عدد من المطالب ورسم أو عدد من الرسومات عند اللزوم ، ووصف مختصر،</p>
+            </point>
+            <point>
+            <p>وثائق إثبات تسديد الرسومات المحددة.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p><condition>عدا حالة اتفاق متبادل</condition>، <obligation>يتعين على المودعين المقيمين في الخارج تمثيلهم لدى <term refersTo="#competent_authority">المصلحة المختصة</term></obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق أحكام هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_21">
+            <num>21</num>
+            <content>
+            <paragraph>
+            <p><condition>بغض النظر عن أحكام <ref href="#art_20">المادة 20</ref> أعلاه</condition>، يعتبر تاريخ إيداع طلب <term refersTo="#patent">براءة الاختراع</term> هو تاريخ استلام <term refersTo="#competent_authority">المصلحة المختصة</term> على الأقل لما يأتي:</p>
+            <list>
+            <point>
+            <p>أ) استمارة طلب كتابي تسمح بالتعرف على الطالب وعلى رغبته في الحصول على <term refersTo="#patent">براءة اختراع</term>،</p>
+            </point>
+            <point>
+            <p>ب) وصف للاختراع مرفوقا بمطلب واحد على الأقل.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>غير أن الطلب الدولي الذي حصل على تاريخ إيداع دولي بموجب اتفاق التعاون بشأن البراءات والذي يشمل الجزائر كبلد معني للحصول على براءة، يعد كأنه طلب براءة مودع بتاريخ إيداعه الدولي.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_22">
+            <num>22</num>
+            <content>
+            <paragraph>
+            <p>لا يشمل طلب <term refersTo="#patent">براءة الاختراع</term> إلا اختراعا واحدا أو عدد من الاختراعات مرتبطة فيما بينها بحيث لا تمثل في مفهومها سوی اختراعا شاملا واحدا.</p>
+            </paragraph>
+            <paragraph>
+            <p>ولا تتضمن قيودا أو شروطا أو تحفظات أو تحديدا أو منح حقوق</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يوصف الاختراع وصفا واضحا بما فيه الكفاية و کاملا حتى يتسنى لمحترف تنفيذه</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يتعين أن يحدد المطلب أو المطالب التي يتضمنها الاختراع نطاق الحماية المطلوبة</obligation>، ويجب أن تكون واضحة ومختصرة و مبنية كليا على الوصف.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويستخدم الوصف المختصر لغرض الانتفاع بالمعلومة التقنية فقط.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_23">
+            <num>23</num>
+            <content>
+            <paragraph>
+            <p><obligation>على كل من يرغب في المطالبة بأولوية إيداع سابق لنفس الاختراع أن يقدم تصريحا للأولوية ونسخة من الطلب السابق حسب الشروط والآجال المحددة عن طريق التنظيم</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_24">
+            <num>24</num>
+            <content>
+            <paragraph>
+            <p><condition>كل شخص عرض اختراعا في معرض دولي رسمي أو معترف به رسميا</condition>، <right>يمكنه في أجل إثني عشر شهرا الموالية لتاريخ اختتام المعرض، طلب حماية هذا الاختراع مع المطالبة بالأولوية ابتداء من تاريخ عرض موضوع هذا الاختراع</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_25">
+            <num>25</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن المودع سحب طلبه كليا أو جزئيا قبل صدور <term refersTo="#patent">براءة الاختراع</term></right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_26">
+            <num>26</num>
+            <content>
+            <paragraph>
+            <p><condition>قبل إصدار <term refersTo="#patent">براءة الاختراع</term> وبعد تسديد الرسوم المحددة</condition>، <right>يجوز للمودع تصحيح الأخطاء المادية المثبتة قانونا في الوثائق المودعة إذا طلب ذلك</right> <condition>في حالة عدم تسديد الرسم المطلوب أو عدم القيام بالتعديلات في الأجل المحدد والذي يمكن أن يمدد عند الضرورة المبررة</condition>، فإن البراءة تسلم في حالتها.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+        <subsection eId="chp_3_subsec_2">
+          <num>الثاني</num>
+          <heading>الفحص</heading>
+          <article eId="art_27">
+            <num>المادة 27</num>
+            <content>
+            <paragraph>
+            <p><obligation>تقوم <term refersTo="#competent_service">المصلحة المختصة</term> بعد الإيداع بالتأكد من أن <condition>الشروط المتعلقة بإجراءات الإيداع المحددة في القسم الأول من الباب الثالث أعلاه و في النصوص المتخذة لتطبيقه متوفرة</condition></obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>إذا لم يستوف الطلب هذه الشروط</condition>، <obligation>يستدعى طالب البراءة أو وكيله لتصحيح الملف في أجل شهرين</obligation> ويمكن أن يمدد هذا الأجل، عند الضرورة، المعللة بطلب من المودع أو من وكيله.</p>
+            </paragraph>
+            <paragraph>
+            <p>يحتفظ الطلب المصحح في هذا الأجل بتاريخ الإيداع الأول.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة عدم تصحيح ملف الطلب في الأجل المحدد</condition>، يعتبر الطلب مسحوبا.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_28">
+            <num>المادة 28</num>
+            <content>
+            <paragraph>
+            <p><obligation>تقوم المصلحة بالتأكد من أن موضوع الطلب غير مدرج في الميادين المذكورة في <ref href="#art_7">المادة 7</ref> وغير مقصى بداهة من الحماية بموجب المواد من <ref href="#art_3">3</ref> إلى <ref href="#art_6">6</ref> و <ref href="#art_8">8</ref></obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تعلم المصلحة المختصة صاحب الطلب ، عند الاقتضاء ، بأن طلبه لا يسمح بمنحه براءة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_29">
+            <num>المادة 29</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا كان واضحا أن أي طلب لا يتوافق وأحكام الفقرة الأولى من <ref href="#art_22">المادة 22</ref> أعلاه</condition>، فإنه <right>يمكن تجزئة هذا الطلب و تقسيمه إلى عدد من الطلبات بحيث ينفرد كل واحد منهم بتاريخ إيداع الطلب ذلك الأصلي و في الآجال المحددة عن طريق التنظيم</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يجب أن لا يتعدى موضوع كل طلب مجزأ محتوى الطلب الأصلي</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+        <subsection eId="chp_3_subsec_3">
+          <num>الثالث</num>
+          <heading>الإصدار</heading>
+          <article eId="art_31">
+            <num>31</num>
+            <content>
+            <paragraph>
+            <p><obligation>تصدر <term refersTo="#patent">براءات الاختراع</term> ذات الطلبات المستوفية الشروط دون فحص مسبق وتحت مسؤولية الطالبين ومن غير أي ضمان</obligation>، سواء تعلق الأمر بواقع الاختراع أو جدته أو جدارته أو تعلق الأمر بوفاء الوصف و بدقته . و<obligation>تسلم <term refersTo="#competent_authority">المصلحة المختصة</term> للطالب شهادة تثبت صحة الطلب وتمثل <term refersTo="#patent">براءة الاختراع</term></obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ترفق الشهادة المذكورة في <ref href="#art_31__para_1">الفقرة أعلاه</ref> بنسخة من الوصف والمطالب والرسومات بعد إثبات مطابقتها للأصل عند الحاجة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+      </chapter>
+      <chapter eId="chp_4">
+        <num>الرابع</num>
+        <heading>السجل والنشر</heading>
+        <subsection eId="chp_4_subsec_1">
+          <num>الأول</num>
+          <heading>سجل البراءات</heading>
+          <article eId="art_32">
+            <num>32</num>
+            <content>
+            <paragraph>
+            <p><obligation>تحفظ <term refersTo="#competent_authority">المصلحة المختصة</term> سجلا تدون فيه كل <term refersTo="#patents">براءات الاختراع</term> المذكورة في <ref href="#art_31">المادة 31</ref> أعلاه تسلسل صدورها وكل العمليات الواجب قيدها بموجب هذا <term refersTo="#order">الأمر</term> والنصوص المتخذة لتطبيقه</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>تحدد كيفيات مسك السجل عن طريق التنظيم</condition>. و<obligation>تمسك <term refersTo="#competent_authority">المصلحة المختصة</term> مستخرجا للسجل المرقم والمؤشر عليه</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>يمكن أي شخص الاطلاع على سجل <term refersTo="#patents">براءات الاختراع</term> والحصول على مستخرجات منه</right> <condition>بعد تسديد الرسم المحدد</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+        <subsection eId="chp_4_subsec_2">
+          <num>الثاني</num>
+          <heading>النشر</heading>
+          <article eId="art_33">
+            <num>المادة 33</num>
+            <content>
+            <paragraph>
+            <p><obligation>تنشر <term refersTo="#competent_authority">المصلحة المختصة</term> نشرة رسمية للبراءات</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_34">
+            <num>المادة 34</num>
+            <content>
+            <paragraph>
+            <p><condition>مع مراعاة أحكام <ref href="#art_19">المادة 19</ref> أعلاه</condition>، <obligation>تنشر <term refersTo="#competent_authority">المصلحة المختصة</term> دوريا، في نشرتها الرسمية، براءات الاختراع و الأعمال المنصوص عليها في <ref href="#art_32">المادة 32</ref> أعلاه</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_35">
+            <num>المادة 35</num>
+            <content>
+            <paragraph>
+            <p><obligation>تحفظ <term refersTo="#competent_authority">المصلحة المختصة</term> وثائق وصف براءة الاختراع والمطالب والرسومات بعد نشرها في النشرة المذكورة في <ref href="#art_33">المادة 33</ref> أعلاه، وتبلغ عند كل طلب قضائي</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>باستطاعة أي شخص الاطلاع عليها و الحصول على نسخ منها <condition>بدفع المستحقات المترتبة عليها</condition></right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تطبق أحكام الفقرتين السابقتين على النسخ الرسمية المقدمة من الطالبين المتمسكين بمطالبة الأولوية لإيداع سابق.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>يمكن طالب البراءة المتمسك بمطالبة الأولوية لإيداعه في الخارج قبل تسلمه البراءة، الحصول على نسخة رسمية لطلبه</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+      </chapter>
+      <chapter eId="chp_5">
+        <num>الخامس</num>
+        <heading>انتقال الحقوق</heading>
+        <subsection eId="chp_5_subsec_1">
+          <num>الأول</num>
+          <heading>النقل</heading>
+          <article eId="art_36">
+            <num>36</num>
+            <content>
+            <paragraph>
+            <p>تكون <right>الحقوق الناجمة عن طلب <term refersTo="#patent">براءة اختراع</term> أو عن <term refersTo="#patent">براءة اختراع</term> و/أو شهادات الإضافة المحتملة المتصلة بها قابلة للانتقال كليا أو جزئيا</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>تشترط الكتابة في العقود المتضمنة انتقال الملكية أو التنازل عن حق الاستغلال أو توقف هذا الحق أو رهن أو رفع الرهن المتعلق بطلب <term refersTo="#patent">براءة اختراع</term> أو ببراءة اختراع وفقا للقانون الذي ينظم هذا العقد</condition>، و <obligation>يجب أن تقيد في سجل البراءات</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>لا تكون العقود المذكورة في <ref href="#art_36__para_2">الفقرة أعلاه</ref>، نافذة في مواجهة الغير إلا بعد تسجيلها.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+        <subsection eId="chp_5_subsec_2">
+          <num>الثاني</num>
+          <heading>الرخص التعاقدية</heading>
+          <article eId="art_37">
+            <num>37</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن <term refersTo="#patent_owner">صاحب براءة الاختراع</term> أو طالبها أن يمنح لشخص آخر <term refersTo="#exploitation_license">رخصة استغلال</term> اختراعه بموجب عقد</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تعد باطلة البنود الواردة في العقود بالرخصة <condition>إذا فرضت على مشتري الرخصة، في المجال الصناعي أو التجاري ، تحديدات تمثل استعمالا تعسفيا للحقوق التي تخولها براءة الاختراع بحيث يكون لاستخدامها أثر مضر على المنافسة في السوق الوطنية</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_38">
+            <num>38</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن أي شخص في أي وقت، <condition>بعد انقضاء أربع (4) سنوات ابتداء من تاريخ إيداع طلب براءة الاختراع أو ثلاث (3) سنوات ابتداء من تاريخ صدور براءة الاختراع</condition> ، أن يتحصل من <term refersTo="#competent_authority">المصلحة المختصة</term> على <term refersTo="#exploitation_license">رخصة استغلال</term> بسبب عدم استغلال الاختراع أو نقص فيه</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>لتقدير الأجل المذكور في الفقرة أعلاه، <obligation>تطبق <term refersTo="#competent_authority">المصلحة المختصة</term> أقصى الآجال</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>لا يمكن منح <term refersTo="#compulsory_license">الرخصة الإجبارية</term> إلا <condition>إذا تحققت <term refersTo="#competent_authority">المصلحة المختصة</term> من عدم الاستغلال أو نقص فيه ومن عدم وجود ظروف تبرر ذلك</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_39">
+            <num>39</num>
+            <content>
+            <paragraph>
+            <p><obligation>على كل شخص يطلب <term refersTo="#compulsory_license">رخصة إجبارية</term> وفقا ل<ref href="#art_38">المادتين 38</ref> و <ref href="#art_47">47</ref> من هذا الأمر ، أن يثبت بأنه قام بتقديم طلب لصاحب البراءة ولم يستطع الحصول منه على رخصة تعاقدية بشروط منصفة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_40">
+            <num>40</num>
+            <content>
+            <paragraph>
+            <p>لا يمكن أن تمنح <term refersTo="#compulsory_license">الرخصة الإجبارية</term> المذكورة في <ref href="#art_38">المادة 38</ref> أعلاه إلا <condition>للطالب الذي يقدم الضمانات الضرورية بخصوص استغلال من شأنه تدارك الخلل الذي أدى إلى الرخصة الإجبارية</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_41">
+            <num>41</num>
+            <content>
+            <paragraph>
+            <p>تمنح <term refersTo="#compulsory_license">الرخصة الإجبارية</term> مقابل تعويض مناسب، و حسب الحالة، فإنه يراعى القيمة الاقتصادية لها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_42">
+            <num>42</num>
+            <content>
+            <paragraph>
+            <p>لا يمكن نقل <term refersTo="#compulsory_license">الرخصة الإجبارية</term> إلا مع جزء المؤسسة أو المحل التجاري المنتفع بها. ولا يتم هذا الانتقال إلا <condition>بعد موافقة <term refersTo="#competent_authority">المصلحة المختصة</term></condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_43">
+            <num>43</num>
+            <content>
+            <paragraph>
+            <p><obligation>تسجل <term refersTo="#compulsory_license">الرخصة الإجبارية</term> أو انتقالها لدى <term refersTo="#competent_authority">المصلحة المختصة</term>، بعد تسديد الرسم المحدد</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_44">
+            <num>44</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن <term refersTo="#competent_authority">المصلحة المختصة</term> تعديل قرار منح <term refersTo="#compulsory_license">الرخصة الإجبارية</term>، بطلب من صاحب براءة الاختراع أو المستفيد من الرخصة الإجبارية، <condition>إذا ظهرت أحداث جديدة تبرر هذا التعديل و خاصة إذا كان صاحب البراءة يمنح رخصا تعاقدية بشروط أكثر امتيازا للمرخص التعاقدي</condition></right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_45">
+            <num>45</num>
+            <content>
+            <paragraph>
+            <p>دون الإخلال بأحكام الفقرة الأخيرة من هذه المادة، <right>يمكن <term refersTo="#competent_authority">المصلحة المختصة</term> أن تسحب <term refersTo="#compulsory_license">الرخصة الإجبارية</term> بطلب من صاحب براءة الاختراع في الحالات الآتية</right> :</p>
+            <list>
+            <point>
+            <p>(1) <condition>إذا زالت الشروط التي بررت منح الرخصة الإجبارية</condition> ،</p>
+            </point>
+            <point>
+            <p>(2) <condition>إذا تبين أن الشروط المحددة لم تعد متوفرة في المستفيد من الرخصة الإجبارية</condition>.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>لا تسحب <term refersTo="#competent_authority">المصلحة المختصة</term> <term refersTo="#compulsory_license">الرخصة الإجبارية</term> <condition>إذا اقتنعت بوجود ظروف تبرر الإبقاء عليها وخصوصا في الحالة المذكورة في النقطة (1) أعلاه، إذا كان المستفيد من الرخصة يستغل الاختراع المحمي بالبراءة صناعيا أو قام بتحضيرات جادة من أجل ذلك</condition></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_46">
+            <num>46</num>
+            <content>
+            <paragraph>
+            <p><obligation>يقدم طلب <term refersTo="#compulsory_license">الرخصة الإجبارية</term> لبراءة الاختراع للمصلحة المختصة مبررا بالحجج المذكورة في <ref href="#art_39">المادة 39</ref> أعلاه.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تستدعي المصلحة المختصة الطالب وصاحب البراءة أو من يمثلهما وتستمع إليهما.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p><condition>إذا منحت المصلحة المختصة الرخصة الإجبارية</condition>، <obligation>يجب عليها تحديد شروطها و مدتها وقيمة التعويض اللازم لصاحب البراءة</obligation> إلا في حالة اتفاق الطرفين، دون الإضرار في هذه الحالة بالطعن لدى الجهة القضائية المختصة التي تفصل في الأمر ابتدائيا و نهائيا.</p>
+            </paragraph>
+            <paragraph>
+            <p>تطبق أحكام هذه المادة في حالة انتقال <term refersTo="#compulsory_license">الرخصة الإجبارية</term> لبراءة اختراع وفقا لما نصت عليه <ref href="#art_42">المادة 42</ref> من هذا الأمر.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_47">
+            <num>47</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا لم يكن استغلال الاختراع المحمي ببراءة ممكنا دون المساس بالحقوق الناتجة عن براءة اختراع سابقة</condition>، فإنه <right>يمكن منح رخصة إجبارية لصاحب براءة الاختراع اللاحقة بناء على طلب منه</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تمنح مثل هذه الرخصة في الحدود الضرورية لاستغلال الاختراع على أن يشكل هذا الاختراع تقدما تقنيا ملحوظا و مصلحة اقتصادية هامة بالنسبة للاختراع موضوع البراءة السابقة.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>لصاحب البراءة السابقة الحق في الرخصة المتبادلة بشروط معقولة لاستعمال الاختراع موضوع البراءة اللاحقة</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_48">
+            <num>48</num>
+            <content>
+            <paragraph>
+            <p>تكون <term refersTo="#compulsory_license">الرخصة الإجبارية</term> المذكورة في <ref href="#art_38">المادة 38</ref> أعلاه، غير استئثارية ويكون هدفها الأساسي تموين السوق الوطنية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_49">
+            <num>49</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن <term refersTo="#minister">الوزير المكلف بالملكية الصناعية</term> في أي وقت، منح رخصة إجبارية لمصلحة من مصالح الدولة أو للغير الذي يتم تعيينه من طرفه، لطلب براءة أو لبراءة اختراع</right>، و ذلك في إحدى الحالات الآتية :</p>
+            <list>
+            <point>
+            <p><condition>عند ما تستدعي المصلحة العامة و خاصة الأمن الوطني، التغذية، الصحة، أو تنمية قطاعات اقتصادية وطنية أخرى، و لا سيما عندما يكون سعر المواد الصيدلانية المحمية بواسطة البراءة مخالفا ومرتفعا بالنسبة للأسعار المتوسطة للسوق</condition>.</p>
+            </point>
+            <point>
+            <p><condition>عند ما ترى هيئة قضائية أو إدارية، أن صاحب البراءة أو من هو مرخص له باستغلالها، يستغل البراءة بطريقة مخالفة للقواعد التنافسية، وعندما يرى الوزير المكلف بالملكية الصناعية أن استغلال البراءة تطبيقا لهذه الفقرة يسمح بالعدول عن هذا التصرف</condition>.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_50">
+            <num>50</num>
+            <content>
+            <paragraph>
+            <p>تطبق <ref href="#art_43">المواد من 43</ref> إلى <ref href="#art_46">46</ref> و <ref href="#art_48">48</ref> مع ما يلزم من تغيير على <term refersTo="#public_interest_license">الرخصة الإجبارية للمنفعة العامة</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+      </chapter>
+      <chapter eId="chp_6">
+        <num>السادس</num>
+        <heading>سقوط الحقوق</heading>
+        <subsection eId="chp_6_subsec_1">
+          <num>الأول</num>
+          <heading>التخلي عن الحقوق</heading>
+          <article eId="art_51">
+            <num>المادة 51</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن <term refersTo="#patent_owner">صاحب براءة الاختراع</term> أن يتخلى، كليا أو جزئيا و في أي وقت، عن مطلب أو عدة مطالب تتعلق ببراءته بتقديم تصريح مكتوب إلى <term refersTo="#competent_authority">المصلحة المختصة</term></right>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_52">
+            <num>المادة 52</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا تم قيد إحدى الرخص المذكورة في الفصلين الثاني والثالث من الباب الخامس أعلاه في سجل البراءات</condition>، فـ<obligation>التخلي عن براءة الاختراع لا يقيد إلا بعد تقديم الحاصل على الرخصة تصريحا يقبل فيه هذا التخلي</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+        <subsection eId="chp_6_subsec_2">
+          <num>الثاني</num>
+          <heading>البطلان</heading>
+          <article eId="art_53">
+            <num>53</num>
+            <content>
+            <paragraph>
+            <p>تعلن <term refersTo="#judicial_authority">الجهة القضائية المختصة</term> البطلان الكلي أو الجزئي لمطلب أو لعدة مطالب تتعلق ب<term refersTo="#patent">براءة اختراع</term>، بناء على طلب أي شخص معني في <condition>الحالات الآتية</condition> :</p>
+            <list>
+            <point>
+            <p>إذا لم تتوفر في موضوع <term refersTo="#patent">براءة الاختراع</term> الأحكام الواردة في <ref href="#art_3">المواد من 3</ref> إلى <ref href="#art_8">8</ref> أعلاه،</p>
+            </point>
+            <point>
+            <p>إذا لم تتوفر في وصف الاختراع أحكام <ref href="#art_22">المادة 22</ref> (الفقرة 3) أعلاه، وإذا لم تحدد مطالب <term refersTo="#patent">براءة الاختراع</term> الحماية المطلوبة،</p>
+            </point>
+            <point>
+            <p>إذا كان الاختراع ذاته موضوع <term refersTo="#patent">براءة اختراع</term> في الجزائر تبعا لطلب سابق أو كان مستفيدا من أولوية سابقة.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p><condition>عندما يصبح قرار الإبطال نهائيا</condition>، <obligation>يتولى الطرف الذي يعنيه التعجيل، تبليغه بقوة القانون إلى المصلحة المختصة التي تقوم بقيده ونشره</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+        <subsection eId="chp_6_subsec_3">
+          <num>الثالث</num>
+          <heading>السقوط</heading>
+          <article eId="art_54">
+            <num>54</num>
+            <content>
+            <paragraph>
+            <p><obligation>تسقط <term refersTo="#patent">براءة الاختراع</term> عند عدم تسديد رسوم الإبقاء على سريان المفعول السنوية الموافقة لتاريخ الإيداع والمنصوص عليها في <ref href="#art_9">المادة 9</ref> أعلاه</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>غير أن لصاحب البراءة أو طلب البراءة مهلة ستة (6) أشهر تحسب ابتداء من هذا التاريخ لتسديد الرسوم المستحقة إضافة إلى غرامة تأخير</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>ومع ذلك، وبطلب معلل من صاحب البراءة يقدم في أجل أقصاه ستة (6) أشهر بعد انقضاء الأجل القانوني</condition>، <right>يمكن <term refersTo="#competent_authority">المصلحة المختصة</term> تقرير إعادة تأهيل البراءة وذلك بعد تسديد الرسوم المستحقة ورسم إعادة التأهيل</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_55">
+            <num>55</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا انقضت سنتان على منح الرخصة الإجبارية ولم يدرك عدم الاستغلال أو النقص فيه لاختراع حاز على براءة ، لأسباب تقع على عاتق صاحبها</condition>، <right>يمكن الجهة القضائية المختصة بناء على طلب <term refersTo="#minister">الوزير المعني</term> و بعد استشارة <term refersTo="#minister_industrial_property">الوزير المكلف بالملكية الصناعية</term>، أن تصدر حكما بسقوط <term refersTo="#patent">براءة الاختراع</term></right>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+      </chapter>
+      <chapter eId="chp_7">
+        <num>السابع</num>
+        <heading>المساس بالحقوق و العقوبات</heading>
+        <subsection eId="chp_7_subsec_1">
+          <num>الأول</num>
+          <heading>الدعاوى المدنية</heading>
+          <article eId="art_56">
+            <num>المادة 56</num>
+            <content>
+            <paragraph>
+            <p><condition>مع مراعاة <ref href="#art_12">المادتين 12</ref> <ref href="#art_14">14</ref> أعلاه</condition> ، يعتبر مساسا <right>بالحقوق الناجمة عن <term refersTo="#patent">براءة الاختراع</term></right> كل عمل من الأعمال المنصوص عليها في <ref href="#art_11">المادة 11</ref> أعلاه يتم <condition>بدون موافقة صاحب البراءة</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_58">
+            <num>المادة 58</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن صاحب <term refersTo="#patent">براءة الاختراع</term> أو خلفه رفع دعوى قضائية ضد أي شخص قام أو يقوم بإحدى الأعمال حسب مفهوم <ref href="#art_56">المادة 56</ref> أعلاه</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وإذا أثبت المدعي ارتكاب أحد الأعمال المذكورة في الفقرة أعلاه</condition>، فإن الجهة القضائية المختصة تقضي بمنح التعويضات المدنية و <right>يمكنها الأمر بمنع مواصلة هذه الأعمال واتخاذ أي إجراء آخر منصوص عليه في التشريع الساري المفعول</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_59">
+            <num>المادة 59</num>
+            <content>
+            <paragraph>
+            <p>بغض النظر عن أحكام الفقرة 2 من <ref href="#art_58">المادة 58</ref> أعلاه، و حتى إثبات العكس، يعتبر كل منتوج مطابق صنع بدون رضا صاحب البراءة منتوجا حصل عليه بالطريقة التي تشملها البراءة و ذلك على الأقل في إحدى الحالتين الآتيتين :</p>
+            <list>
+            <point>
+            <p>عندما يكون موضوع البراءة طريقة تتعلق بالحصول على منتوج جديد،</p>
+            </point>
+            <point>
+            <p>عندما يوجد احتمال كبير بأن المنتوج المطابق حصل عليه بالطريقة التي تشملها البراءة وأن صاحب البراءة لم يستطع برغم الجهود المبذولة، شرح الطريقة المستعملة.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>وفي هذه الحالة، <right>يمكن الجهة القضائية المختصة أن تأمر المدعى عليه بتقديم الأدلة التي تثبت أن الطريقة المستعملة للحصول على منتوج مطابق تختلف عن الطريقة التي تشملها البراءة</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>فعلى الجهة القضائية المختصة أن تأخذ بعين الاعتبار المصالح المشروعة للمدعى عليه عند اعتمادها لأي أدلة تطلبها، وذلك بعدم الفصح عن أسراره الصناعية والتجارية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_60">
+            <num>المادة 60</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن المدعى عليه في أية قضية من القضايا المذكورة في <ref href="#art_58">المادتين 58</ref> و <ref href="#art_59">59</ref> أعلاه، رفع دعوى بطلان براءة الاختراع عن طريق نفس الإجراء</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+        <subsection eId="chp_7_subsec_2">
+          <num>الثاني</num>
+          <heading>الدعاوى الجزائية</heading>
+          <article eId="art_61">
+            <num>المادة 61</num>
+            <content>
+            <paragraph>
+            <p>يعد كل عمل متع يرتكب مفهوم <ref href="#art_56">المادة 56</ref> أعلاه، <term refersTo="#counterfeiting_offense">جنحة تقليد</term></p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يعاقب على <term refersTo="#counterfeiting_offense">جنحة التقليد</term> بالحبس من ستة (6) أشهر إلى سنتين وبغرامة من مليونين وخمسمائة ألف دينار ( 2.500.000 دج) إلى عشرة ملايين دينار (10.000.000 دج) أو بإحدى هاتين العقوبتين فقط.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_62">
+            <num>المادة 62</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعاقب بنفس العقوبة التي يعاقب بها المقلد كل من <condition>يتعمد إخفاء شيء مقلد أو إخفاء عدة أشياء مقلدة أو يبيعها أو يعرضها للبيع أو يدخلها إلى التراب الوطني</condition>.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+      </chapter>
+      <chapter eId="chp_8">
+        <num>الثامن</num>
+        <heading>حكم انتقالي</heading>
+        <article eId="art_63">
+          <num>المادة 63</num>
+          <content>
+          <paragraph>
+          <p>تبقى <term refersTo="#patents">البراءات</term> الصادرة بموجب <ref href="/akn/dz/act/legislativeOrder/1993-12-07/93-17">المرسوم التشريعي رقم 93-17 المؤرخ في 23 جمادى الثانية عام 1414 الموافق 7 ديسمبر سنة 1993</ref> والمتعلق بـ <term refersTo="#protection_of_inventions">حماية الاختراعات</term> وكذا <term refersTo="#addition_certificates">شهادات الإضافة</term> المتعلقة بها، خاضعة لأحكام نفس <ref href="/akn/dz/act/legislativeOrder/1993-12-07/93-17">المرسوم التشريعي</ref>.</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_9">
+        <num>التاسع</num>
+        <heading>أحكام ختامية</heading>
+        <article eId="art_64">
+          <num>المادة 64</num>
+          <content>
+          <paragraph>
+          <p>تلغى أحكام <ref href="/akn/dz/act/decree/1993-12-07/93-17">المرسوم التشريعي رقم 93-17 المؤرخ في 23 جمادى الثانية عام 1414 الموافق 7 ديسمبر سنة 1993 والمتعلق بحماية الاختراعات</ref>، مع مراعاة أحكام <ref href="#art_61">المادتين 61</ref> و<ref href="#art_62">62</ref> أعلاه.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_65">
+          <num>المادة 65</num>
+          <content>
+          <paragraph>
+          <p><obligation>ينشر هذا الأمر في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية.</obligation></p>
+          </paragraph>
+          <paragraph>
+          <p>حرر بالجزائر في 19 جمادى الأولى عام 1424 الموافق 19 يوليو سنة 2003.</p>
+          </paragraph>
+          <paragraph>
+          <p>عبد العزيز بوتفليقة</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+    </body>
+  </act>
+</akomaNtoso>

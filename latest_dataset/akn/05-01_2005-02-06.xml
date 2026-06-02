@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="law">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/law/2005-02-06/05-01/main"/>
+      <FRBRuri value="/akn/dz/act/law/2005-02-06/05-01"/>
+      <FRBRdate date="2005-02-06" name="enactment"/>
+      <FRBRauthor href="#parliament"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="05-01"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/law/2005-02-06/05-01/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/law/2005-02-06/05-01/ara@"/>
+      <FRBRdate date="2005-02-06" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/law/2005-02-06/05-01/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/law/2005-02-06/05-01/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="parliament" href="/ontology/organization/dz/parliament" showAs="البرلمان"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="president" href="/ontology/person/dz/president" showAs="رئيس الجمهورية"/>
+  </references>
+</meta>
+    <preface>
+  <docTitle>القانون المتعلق بالوقاية من تبييض الأموال وتمويل الإرهاب ومكافحتهما المعدل والمتمم</docTitle>
+  <docNumber>05-01</docNumber>
+  <docDate date="2005-02-06">27 ذي الحجة عام 1425 الموافق 6 فبراير سنة 2005</docDate>
+  <docAuthority>البرلمان</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>إن رئيس الجمهورية،</p>
+    </citation>
+    <citation>
+      <p>وبعد مصادقة البرلمان</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يصدر القانون الآتي نصه:</p>
+  </formula>
+</preamble>
+    <body>
+      <section eId="sec_1">
+        <num>الأول</num>
+        <heading>أحكام عامة</heading>
+        <article eId="art_1">
+          <num>الأولى</num>
+          <content>
+          <paragraph>
+          <p>فضلا عن الأحكام الواردة في <ref href="/akn/dz/act/law/1966-06-08/66-156">قانون العقوبات</ref>، يهدف هذا القانون إلى الوقاية من <term refersTo="#money_laundering">تبييض الأموال</term> و<term refersTo="#terrorism_financing">تمويل الإرهاب</term> ومكافحتهما.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_2" status="modified">
+          <num>2</num>
+          <content>
+          <paragraph>
+          <p><def refersTo="#money_laundering">يعتبر تبييضا للأموال</def>:</p>
+          <list>
+          <point>
+          <p>أ) تحويل الأموال أو نقلها، مع علم الفاعل أنها عائدات مباشرة أو غير مباشرة من جريمة، بغرض إخفاء أو تمويه المصدر غير المشروع لتلك الأموال أو مساعدة أي شخص متورط في ارتكاب الجريمة الأصلية التي تحصلت منها هذه الأموال، على الإفلات من الآثار القانونية لأفعاله،</p>
+          </point>
+          <point>
+          <p>ب) إخفاء أو تمويه الطبيعة الحقيقية للأموال أو مصدرها أو مكانها أو كيفية التصرف فيها أو حركتها أو الحقوق المتعلقة بها ، مع علم الفاعل أنها عائدات إجرامية،</p>
+          </point>
+          <point>
+          <p>ج) اكتساب الأموال أو حيازتها أو استخدامها مع علم الشخص القائم بذلك وقت تلقيها أنها تشكل عائدات إجرامية،</p>
+          </point>
+          <point>
+          <p>د) المشاركة في ارتكاب أي من الجرائم المقررة وفقا لهذه المادة أو التواطؤ أو التآمر على ارتكابها أو محاولة ارتكابها والمساعدة أو التحريض على ذلك وتسهيله وإسداء المشورة بشأنه.</p>
+          </point>
+          </list>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_3" status="modified">
+          <num>3</num>
+          <content>
+          <paragraph>
+          <p><def refersTo="#terrorism_financing">يعتبر تمويلا للإرهاب في مفهوم هذا القانون</def>، و<obligation>يعاقب عليه بالعقوبات المقررة في <ref href="/akn/dz/act/law/1966-06-08/66-156#art_87_bis_4">المادة 87 مكرر4 من قانون العقوبات</ref></obligation>، أي فعل يقوم به كل شخص أو منظمة إرهابية بأي وسيلة كانت، مباشرة أو غير مباشرة، وبشكل غير مشروع وبإرادة الفاعل، من خلال تقديم أو جمع الأموال بنية استخدامها شخصيا أو من طرف إرهابي أو منظمة إرهابية كليا أو جزئيا، من أجل ارتكاب الجرائم الموصوفة بأفعال إرهابية أو تخريبية، المنصوص والمعاقب عليها في التشريع المعمول به.</p>
+          </paragraph>
+          <paragraph>
+          <p>وتعتبر الجريمة مرتكبة سواء تم أو لم يتم ارتكاب الفعل الإرهابي وسواء تم استخدام هذه الأموال أو لم يتم استخدامها لارتكابه.</p>
+          </paragraph>
+          <paragraph>
+          <p>يعد تمويل الإرهاب فعلا إرهابيا.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_4" status="modified">
+          <num>4</num>
+          <content>
+          <paragraph>
+          <p>يقصد في مفهوم هذا <ref href="/akn/dz/act/law/unknown/unknown">القانون</ref> بما يأتي :</p>
+          <list>
+          <point>
+          <p><def refersTo="#funds">"الأموال"</def> : أي نوع من الممتلكات أو الأموال المادية أو غير المادية، لا سيما المنقولة أو غير المنقولة التي يحصل عليها بأي وسيلة كانت مباشرة أو غير مباشرة، والوثائق أو السندات القانونية أيا كان شكلها، بما في ذلك الشكل الإلكتروني أو الرقمي، والتي تدل على ملكية تلك الأموال أو مصلحة فيها، بما في ذلك على الخصوص الائتمانات المصرفية، والشيكات وشيكات السفر والحوالات والأسهم والأوراق المالية والسندات والكمبيالات وخطابات الاعتماد،</p>
+          </point>
+          <point>
+          <p><def refersTo="#predicate_offence">"جريمة أصلية"</def> : أي جريمة، حتى ولو ارتكبت بالخارج، سمحت لمرتكبيها بالحصول على <term refersTo="#funds">الأموال</term> حسب ما ينص عليه هذا <ref href="/akn/dz/act/law/unknown/unknown">القانون</ref>،</p>
+          </point>
+          <point>
+          <p><def refersTo="#subject_entities">" الخاضعون"</def> : <term refersTo="#financial_institution">المؤسسات المالية</term> و<term refersTo="#non_financial_professions">المؤسسات والمهن غير المالية</term> <obligation>الملزمة بالقيام بالإخطار بالشبهة</obligation>،</p>
+          </point>
+          <point>
+          <p><def refersTo="#financial_institution">"مؤسسة مالية"</def> : كل شخص طبيعي أو معنوي يمارس لأغراض تجارية نشاطا أو أكثر من الأنشطة أو العمليات الآتية باسم أو لحساب زبون :</p>
+          <list>
+          <point><p>1 - تلقي <term refersTo="#funds">الأموال</term> والودائع الأخرى القابلة للاسترجاع ،</p></point>
+          <point><p>2 - القروض أو السلفيات،</p></point>
+          <point><p>3 - القرض الإيجاري،</p></point>
+          <point><p>4 - تحويل <term refersTo="#funds">الأموال</term> أو القيم،</p></point>
+          <point><p>5 - إصدار كل وسائل الدفع وتسييرها،</p></point>
+          <point><p>6 - منح الضمانات واكتتاب الالتزامات،</p></point>
+          <point>
+          <p>7 - التداول والتعامل في :</p>
+          <list>
+          <point><p>أ) وسائل السوق النقدية،</p></point>
+          <point><p>ب) سوق الصرف،</p></point>
+          <point><p>ج) وسائل عملات الصرف و نسب الفائدة والمؤشرات،</p></point>
+          <point><p>د) القيم المنقولة،</p></point>
+          <point><p>ه) الاتجار بالسلع الآجلة التسليم</p></point>
+          </list>
+          </point>
+          <point><p>8 - المشاركة في إصدار قيم منقولة وتقديم خدمات مالية ملحقة،</p></point>
+          <point><p>9 - التسيير الفردي والجماعي للممتلكات،</p></point>
+          <point><p>10 - حفظ القيم المنقولة نقدا أو سيولة وإدارتها لحساب الغير،</p></point>
+          <point><p>11 - عمليات أخرى للاستثمار وإدارة <term refersTo="#funds">الأموال</term> أو النقود وتسييرها لحساب الغير،</p></point>
+          <point><p>12 - اكتتاب وتوظيف تأمينات على الحياة ومواد استثمارية أخرى ذات صلة بالتأمين،</p></point>
+          <point><p>13 - صرف النقود والعملات الأجنبية.</p></point>
+          </list>
+          </point>
+          <point>
+          <p><def refersTo="#non_financial_professions">"المؤسسات والمهن غير المالية"</def> : كل شخص طبيعي أو معنوي يمارس نشاطات غير تلك التي تمارسها <term refersTo="#financial_institution">المؤسسات المالية</term>، لا سيما منها المهن الحرة المنظمة وخصوصا المحامين عندما يقومون بأعمال مالية لحساب موكليهم والموثقين والمحضرين القضائيين ومحافظي البيع بالمزايدة وخبراء المحاسبة ومحافظي الحسابات والمحاسبين المعتمدين والسماسرة والوكلاء الجمركيين والوسطاء في عمليات البورصة والأعوان العقاريين ومقدمي الخدمات للشركات ووكلاء بيع السيارات، والرهانات والألعاب وكذا تجار الأحجار والمعادن الثمينة والقطع الأثرية والتحف الفنية، والأشخاص الطبيعيين والمعنويين الذين يقومون في إطار مهامهم على الخصوص بالاستشارة و/أو إجراء عمليات يترتب عليها إيداع أو مبادلات أو توظيفات أو تحويلات أو أي حركة أخرى <term refersTo="#funds">للأموال</term>،</p>
+          </point>
+          <point>
+          <p><def refersTo="#terrorist">"الإرهابي"</def>: أي شخص :</p>
+          <list>
+          <point><p>يرتكب أو يحاول ارتكاب أفعال إرهابية بأي وسيلة كانت مباشرة أو غير مباشرة ، وبشكل غير مشروع وبإرادة الفاعل،</p></point>
+          <point><p>يساهم كشريك في أفعال إرهابية،</p></point>
+          <point><p>ينظم أو يأمر أشخاصا آخرين بارتكاب أفعال إرهابية،</p></point>
+          <point><p>يشارك في قيام مجموعة من الأشخاص تعمل بقصد مشترك بارتكاب أفعال إرهابية وتكون هذه المشاركة بهدف تنفيذ نشاط إرهابي مع العلم بنوايا المجموعة بارتكاب الفعل الإرهابي،</p></point>
+          </list>
+          </point>
+          <point>
+          <p><def refersTo="#terrorist_organization">"منظمة إرهابية"</def>: كل مجموعة إرهابيين :</p>
+          <list>
+          <point><p>ترتكب أو يحاول ارتكاب أفعال إرهابية بأي وسائل كانت مباشرة أو غير مباشرة، وبشكل غير مشروع وبإرادة الفاعلين،</p></point>
+          <point><p>المساهمة كشركاء في أفعال إرهابية،</p></point>
+          <point><p>تنظم أو يأمر أشخاصا آخرين بارتكاب أفعال إرهابية ،</p></point>
+          <point><p>تشارك في قيام مجموعة من الأشخاص تعمل بقصد مشترك بارتكاب أفعال إرهابية وتكون هذه المشاركة بهدف تنفيذ نشاط إرهابي مع العلم بنوايا المجموعة بارتكاب الفعل الإرهابي،</p></point>
+          </list>
+          </point>
+          <point>
+          <p><def refersTo="#pep">"شخص معرض سياسيا"</def> : كل أجنبي معين أو منتخب مارس أو يمارس في الجزائر أو في الخارج وظائف هامة ، تشريعية أو تنفيذية أو إدارية أو قضائية.</p>
+          </point>
+          <point>
+          <p><def refersTo="#specialized_body">" الهيئة المتخصصة "</def> : خلية معالجة الاستعلام المالي المنصوص عليها في التنظيم المعمول به،</p>
+          </point>
+          <point>
+          <p><def refersTo="#competent_authorities">" السلطات المختصة "</def> : السلطات الإدارية والسلطات المكلفة بتطبيق القانون والسلطات المكلفة بمكافحة تبييض الأموال وتمويل الإرهاب، بما فيها سلطات الرقابة،</p>
+          </point>
+          <point>
+          <p><def refersTo="#freezing_seizure">"التجميد و/أو الحجز"</def> : فرض حظر مؤقت على تحويل <term refersTo="#funds">الأموال</term> أو استبدالها أو التصرف فيها أو نقلها، أو تولي عهدة <term refersTo="#funds">الأموال</term> أو السيطرة عليها مؤقتا بناء على أمر قضائي،</p>
+          </point>
+          <point>
+          <p><def refersTo="#beneficial_owner">" المستفيد الحقيقي"</def> : الشخص أو الأشخاص الطبيعيون الذين يملكون أو يمارسون سيطرة فعلية في النهاية على الزبون و/أو الشخص الذي تتم العمليات نيابة عنه، كما يتضمن أيضا الأشخاص الذين يمارسون سيطرة فعلية نهائية على شخص معنوي.</p>
+          </point>
+          </list>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_4_bis" status="new">
+          <num>4 مكرر</num>
+          <content>
+          <paragraph>
+          <p><def refersTo="#specialized_body">الهيئة المتخصصة</def> هي <term refersTo="#independent_administrative_authority">سلطة إدارية مستقلة</term> تتمتع بالشخصية المعنوية والاستقلال المالي، وتوضع لدى <term refersTo="#minister_of_finance">الوزير المكلف بالمالية</term>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد مهام <term refersTo="#specialized_body">الهيئة المتخصصة</term> وتنظيمها وسيرها عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_4_bis_1" status="new">
+          <num>4 مكرر 1</num>
+          <content>
+          <paragraph>
+          <p><obligation>يؤدي أعضاء <term refersTo="#specialized_body">الهيئة المتخصصة</term> الذين لم يسبق لهم تأدية اليمين، في إطار ممارسة مهامهم، والمستخدمون المؤهلون للاطلاع على المعلومات ذات الطابع السري، اليمين أمام المجلس القضائي قبل تنصيبهم</obligation> بالعبارات الآتية :</p>
+          </paragraph>
+          <paragraph>
+          <p>"أقسم بالله العلي العظيم أن أقوم بمهامي أحسن قيام وأن أخلص في تأديتها وأكتم سرها وأسلك في كل الظروف سلوكا شريفا ".</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_5">
+          <num>5</num>
+          <content>
+          <paragraph>
+          <p><condition>لا يمكن اتخاذ إجراءات المتابعة الجزائية من أجل <term refersTo="#money_laundering">تبييض الأموال</term> و/أو <term refersTo="#terrorism_financing">تمويل الإرهاب</term>، إلا إذا كانت الأفعال الأصلية المرتكبة في الخارج تكتسي طابعا إجراميا في قانون البلد الذي ارتكبت فيه وفي القانون الجزائري</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+      <section eId="sec_2">
+        <num>الثاني</num>
+        <heading>الوقاية من تبييض الأموال وتمويل الإرهاب</heading>
+        <article eId="art_6">
+          <num>6</num>
+          <content>
+          <paragraph>
+          <p><obligation>يجب أن يتم كل دفع يفوق مبلغا يتم تحديده عن طريق التنظيم، بواسطة وسائل الدفع وعن طريق القنوات البنكية والمالية.</obligation></p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_7" status="modified">
+          <num>7</num>
+          <content>
+          <paragraph>
+          <p><obligation>يجب على <term refersTo="#subject_entities">الخاضعين</term> أن يتأكدوا من موضوع وطبيعة النشاط وهوية زبائنهم وعناوينهم، كل فيما يخصه، قبل فتح حساب أو دفتر، أو حفظ سندات أو قيم أو إيصالات، أو تأجير صندوق أو القيام بأي عملية أو ربط أي علاقة أعمال أخرى.</obligation></p>
+          </paragraph>
+          <paragraph>
+          <p>يتم التأكد من هوية الشخص الطبيعي بتقديم وثيقة رسمية أصلية، سارية الصلاحية متضمنة للصورة، ومن عنوانه بتقديم وثيقة رسمية تثبت ذلك.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>ويتعين الاحتفاظ بنسخة من كل وثيقة.</obligation></p>
+          </paragraph>
+          <paragraph>
+          <p>يتم التأكد من هوية الشخص المعنوي بتقديم قانونه الأساسي وأية وثيقة تثبت تسجيله أو اعتماده وبأن له وجودا فعليا أثناء إثبات شخصيته.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>ويتعين الاحتفاظ بنسخة من كل وثيقة.</obligation></p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يجب تحيين المعلومات المذكورة في الفقرتين الثانية والثالثة سنويا وعند كل تغيير لها.</obligation></p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يتعين على الوكلاء والمستخدمين الذين يعملون لحساب الغير أن يقدموا، فضلا عن الوثائق المذكورة أعلاه، التفويض بالسلطات المخولة لهم بالإضافة إلى الوثائق التي تثبت شخصية وعنوان أصحاب الأموال الحقيقيين.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_7_bis" status="new">
+          <num>7 مكرر</num>
+          <content>
+          <paragraph>
+          <p><obligation>يتعين على <term refersTo="#subject_entities">الخاضعين</term> أن يتوفروا على منظومة مناسبة لتسيير المخاطر قادرة على تحديد ما إذا كان الزبون المحتمل أو الزبون أو المستفيد الحقيقي شخصا معرضا سياسيا، واتخاذ كل الإجراءات اللازمة لتحديد أصل الأموال والحرص على ضمان مراقبة مشددة ومستمرة لعلاقة الأعمال.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_8">
+          <num>8</num>
+          <content>
+          <paragraph>
+          <p>يتم إثبات شخصية الزبائن غير الاعتياديين حسب الشروط المنصوص عليها في <ref href="#art_7">المادة 7</ref> أعلاه.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_9" status="modified">
+          <num>9</num>
+          <content>
+          <paragraph>
+          <p><condition>في حالة عدم تأكد <term refersTo="#subject_entities">الخاضعين</term> من تصرف الزبون لحسابه الخاص</condition>، <obligation>يتعين عليهم الاستعلام بكل الطرق القانونية عن هوية المستفيد الحقيقي أو الآمر الحقيقي بالعملية.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_10" status="modified">
+          <num>10</num>
+          <content>
+          <paragraph>
+          <p><condition>إذا تمت عملية ما في ظروف من التعقيد غير عادية أو غير مبررة أو تبدو أنها لا تستند إلى مبرر اقتصادي أو إلى محل مشروع أو في الحالات التي يفوق مبلغ العملية حدا يتم تحديده عن طريق التنظيم</condition>، <obligation>يتعين على <term refersTo="#subject_entities">الخاضعين</term> أن يولوها عناية خاصة والاستعلام عن مصدر الأموال ووجهتها وكذا محل العملية وهوية المتعاملين الاقتصاديين.</obligation></p>
+          </paragraph>
+          <paragraph>
+          <p>يحرر تقرير سري ويحفظ دون الإخلال بتطبيق <ref href="#art_15">المواد من 15</ref> إلى <ref href="#art_22">22</ref> من هذا القانون.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_10_bis" status="new">
+          <num>10 مكرر</num>
+          <content>
+          <paragraph>
+          <p>تتولى السلطات التي لها صلاحيات الضبط و/أو الإشراف و / أو الرقابة التي يتبعها <term refersTo="#subject_entities">الخاضعون</term>، سن تنظيمات في مجال الوقاية من تبييض الأموال وتمويل الإرهاب ومكافحتهما ، ومساعدة <term refersTo="#subject_entities">الخاضعين</term> على احترام الواجبات المنصوص عليها في هذا القانون.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد شروط و کیفیات تطبيق هذه المادة عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_10_bis_1" status="new">
+          <num>10 مكرر 1</num>
+          <content>
+          <paragraph>
+          <p><obligation>يجب على <term refersTo="#subject_entities">الخاضعين</term>، في إطار الوقاية من تبييض الأموال وتمويل الإرهاب ومكافحتهما، وضع وتنفيذ برامج تضمن الرقابة الداخلية والتكوين المستمر لمستخدميهم.</obligation></p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_10_bis_2" status="new">
+          <num>10 مكرر 2</num>
+          <content>
+          <paragraph>
+          <p><obligation>تتولى السلطات المنصوص عليها في <ref href="#art_10_bis">المادة 10 مكرر</ref> أعلاه، في إطار الوقاية من <term refersTo="#money_laundering">تبييض الأموال</term> و<term refersTo="#terrorism_financing">تمويل الإرهاب</term> ومكافحتهما</obligation> :</p>
+          <list>
+          <point>
+          <p>أ) السهر على أن تتوفر لدى الخاضعين برامج مناسبة لكشف عمليات تبييض الأموال وتمويل الإرهاب والوقاية منها،</p>
+          </point>
+          <point>
+          <p>ب) مراقبة مدى احترام الخاضعين للواجبات المنصوص عليها في هذا القانون بما في ذلك عن طريق الرقابة في عين المكان،</p>
+          </point>
+          <point>
+          <p>ج) اتخاذ الإجراءات التأديبية المناسبة وإعلام الهيئة المتخصصة بها،</p>
+          </point>
+          <point>
+          <p>د) التعاون مع السلطات المختصة وتبادل المعلومات وإياها وتقديم العون في التحقيقات أو المتابعات،</p>
+          </point>
+          <point>
+          <p>ه) السهر على أن تعتمد وتطبق المؤسسات المالية وفروعها وشركاتها التابعة بالخارج إجراءات مطابقة لهذا القانون حسبما تسمح به قوانين وتنظيمات البلد المضيف،</p>
+          </point>
+          <point>
+          <p>و) تبليغ الهيئة المتخصصة، دون تأخير، بكل المعلومات المتعلقة بعمليات أو وقائع مشبوهة لها علاقة بتبييض الأموال أو تمويل الإرهاب،</p>
+          </point>
+          <point>
+          <p>ز) مسك إحصائيات تتعلق بالإجراءات المتخذة والجزاءات التأديبية المسلطة في إطار تطبيق هذا القانون.</p>
+          </point>
+          </list>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_10_bis_3" status="new">
+          <num>10 مكرر 3</num>
+          <content>
+          <paragraph>
+          <p>تطبق التنظيمات التي يتخذها <term refersTo="#monetary_and_credit_council">مجلس النقد والقرض</term> في مجال الوقاية من <term refersTo="#money_laundering">تبييض الأموال</term> و<term refersTo="#terrorism_financing">تمويل الإرهاب</term> ومكافحتهما، على البنوك والمؤسسات المالية وعلى المصالح المالية لبريد الجزائر التي تخضع لرقابة <term refersTo="#banking_commission">اللجنة المصرفية</term>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_10_bis_4" status="new">
+          <num>10 مكرر 4</num>
+          <content>
+          <paragraph>
+          <p><obligation>يلزم الخاضعون بواجب اليقظة طيلة مدة علاقة الأعمال ويراقبون بدقة العمليات المنجزة للتأكد من مطابقتها للمعلومات التي يحوزونها حول زبائنهم</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_11" status="modified">
+          <num>11</num>
+          <content>
+          <paragraph>
+          <p><obligation>يرسل مفتشو <term refersTo="#bank_of_algeria">بنك الجزائر</term> المفوضون من قبل <term refersTo="#banking_commission">اللجنة المصرفية</term> في إطار المراقبة في عين المكان لدى البنوك والمؤسسات المالية وفروعها ومساهماتها ولدى المصالح المالية لبريد الجزائر أو في إطار مراقبة الوثائق ، بصفة استعجاليه ، تقريرا سريا إلى الهيئة المتخصصة بمجرد اكتشافهم لعملية تكتسي المميزات المذكورة في <ref href="#art_10">المادة 10</ref> أعلاه</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_12" status="modified">
+          <num>12</num>
+          <content>
+          <paragraph>
+          <p>تباشر <term refersTo="#banking_commission">اللجنة المصرفية</term> فيما يخصها ، إجراء تأديبيا طبقا للقانون ضد البنك أو المؤسسة المالية التي تثبت عجزا في إجراءاتها الداخلية الخاصة بالرقابة في مجال الوقاية من <term refersTo="#money_laundering">تبييض الأموال</term> و<term refersTo="#terrorism_financing">تمويل الإرهاب</term> ومكافحتها، ويمكنها التحري عن وجود التقرير المذكور في <ref href="#art_10">المادة 10</ref> أعلاه والمطالبة بالاطلاع عليه.</p>
+          </paragraph>
+          <paragraph>
+          <p>يرفع تقرير بخصوص المصالح المالية لبريد الجزائر إلى السلطة الوصية.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_13" status="original">
+          <num>13</num>
+          <content>
+          <paragraph>
+          <p><obligation>يجب أن يتم إخطار الهيئة المتخصصة بنتائج الإجراءات التي اتخذتها <term refersTo="#banking_commission">اللجنة المصرفية</term></obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_14" status="modified">
+          <num>14</num>
+          <content>
+          <paragraph>
+          <p><obligation>يتعين على الخاضعين الاحتفاظ بالوثائق الآتي ذكرها وجعلها في متناول السلطات المختصة</obligation> :</p>
+          <list>
+          <point>
+          <p>1 - الوثائق المتعلقة بهوية الزبائن وعناوينهم خلال فترة خمس (5) سنوات على الأقل، بعد غلق الحسابات أو وقف علاقة التعامل.</p>
+          </point>
+          <point>
+          <p>2 - الوثائق المتعلقة بالعمليات التي أجراها الزبائن خلال فترة خمس (5) سنوات على الأقل، بعد تنفيذ العملية.</p>
+          </point>
+          </list>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+      <section eId="sec_3">
+        <num>الثالث</num>
+        <heading>الاستكشاف</heading>
+        <article eId="art_15" status="modified">
+          <num>15</num>
+          <content>
+          <paragraph>
+          <p><obligation>تتولى <term refersTo="#specialized_body">الهيئة المتخصصة</term> تحليل واستغلال المعلومات التي ترد إليها من السلطات المختصة والخاضعين قصد تحديد مصدر الأموال ووجهتها.</obligation></p>
+          </paragraph>
+          <paragraph>
+          <p>كما <right>يمكنها أن تطلب من السلطات المختصة أو من الخاضعين، في إطار كل إخطار بالشبهة أو تقرير سري تستلمه، أي معلومات إضافية تراها ضرورية لممارسة مهامها.</right></p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>تكتسي المعلومات المبلغة إلى <term refersTo="#specialized_body">الهيئة المتخصصة</term> طابعا سريا</obligation> ، و<obligation>لا يجوز استعمالها لأغراض غير تلك المنصوص عليها في هذا القانون.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_15_bis" status="new">
+          <num>15 مكرر</num>
+          <content>
+          <paragraph>
+          <p><obligation>تتولى <term refersTo="#specialized_body">الهيئة المتخصصة</term> تبليغ المعلومات المالية للسلطات الأمنية والقضائية</obligation> <condition>عندما توجد مبررات للاشتباه في عمليات <term refersTo="#money_laundering">تبييض الأموال</term> أو <term refersTo="#terrorism_financing">تمويل الإرهاب</term>.</condition></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_15_bis_1" status="new">
+          <num>15 مكرر 1</num>
+          <content>
+          <paragraph>
+          <p><obligation>تتعاون <term refersTo="#specialized_body">الهيئة المتخصصة</term> والسلطات المختصة وتنسقان أعمالهما لإعداد وتنفيذ استراتيجيات وأعمال الوقاية من <term refersTo="#money_laundering">تبييض الأموال</term> و<term refersTo="#terrorism_financing">تمويل الإرهاب</term> ومكافحتهما.</obligation></p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تطبيق هذه المادة عند الاقتضاء، عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_16">
+          <num>16</num>
+          <content>
+          <paragraph>
+          <p><obligation>تسلم <term refersTo="#specialized_body">الهيئة المتخصصة</term> وصل الإخطار بالشبهة وتقوم بجمع كل المعلومات والبيانات التي تسمح باكتشاف مصدر الأموال أو الطبيعة الحقيقية للعمليات موضوع الإخطار</obligation>، و<obligation>تقوم بإرسال الملف لوكيل الجمهورية المختص طبقا للقانون، في كل مرة يحتمل فيها أن تكون الوقائع المصرح بها مرتبطة بجريمة <term refersTo="#money_laundering">تبييض الأموال</term> أو <term refersTo="#terrorism_financing">تمويل الإرهاب</term>.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_17">
+          <num>17</num>
+          <content>
+          <paragraph>
+          <p><right>يمكن <term refersTo="#specialized_body">الهيئة المتخصصة</term> أن تعترض بصفة تحفظية ولمدة أقصاها 72 ساعة، على تنفيذ أية عملية بنكية لأي شخص طبيعي أو معنوي تقع عليه شبهات قوية ل<term refersTo="#money_laundering">تبييض الأموال</term> أو <term refersTo="#terrorism_financing">تمويل الإرهاب</term></right>، ويسجل هذا الإجراء على الإشعار بوصل الإخطار بالشبهة.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_18">
+          <num>18</num>
+          <content>
+          <paragraph>
+          <p><obligation>لا يمكن الإبقاء على التدابير التحفظية التي تأمر بها <term refersTo="#specialized_body">الهيئة المتخصصة</term> بعد انقضاء مدة 72 ساعة إلا بقرار قضائي.</obligation></p>
+          </paragraph>
+          <paragraph>
+          <p><right>يمكن رئيس محكمة الجزائر، بناء على طلب <term refersTo="#specialized_body">الهيئة المتخصصة</term> وبعد استطلاع رأي وكيل الجمهورية لدى محكمة الجزائر، أن يمدد الأجل المحدد في الفقرة أعلاه، أو يأمر بالحراسة القضائية المؤقتة على الأموال والحسابات والسندات موضوع الإخطار.</right></p>
+          </paragraph>
+          <paragraph>
+          <p><right>يمكن وكيل الجمهورية لدى محكمة الجزائر تقديم عريضة لنفس الغرض.</right></p>
+          </paragraph>
+          <paragraph>
+          <p>ينفذ الأمر الذي يستجيب لهذا الطلب، بناء على النسخة الأصلية، قبل تبليغ الطرف المعني بالعملية.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>إذا لم يتضمن الإشعار باستلام وصل الإخطار بالشبهة التدابير التحفظية المنصوص عليها أعلاه، أو لم يبلغ أي قرار صادر عن رئيس محكمة الجزائر أو قاضي التحقيق الجاري أمامه التحقيق عن الاقتضاء، للأشخاص والهيئات المذكورة في <ref href="#art_19">المادتين 19</ref> و <ref href="#art_21">21</ref> من هذا القانون في أجل أقصاه 72 ساعة</condition>، فإنه <right>يمكنهم تنفيذ العملية موضوع الإخطار.</right></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_18_bis" status="new">
+          <num>18 مكرر</num>
+          <content>
+          <paragraph>
+          <p><condition>يمكن <term refersTo="#president_court">رئيس محكمة الجزائر</term> أن يأمر بتجميد و/أو حجز كل أو جزء من الأموال التي تكون ملكا لإرهابيين أو منظمات إرهابية أو الموجهة لهم وعائداتها لمدة شهر قابل للتجديد</condition>، بناء على طلب <term refersTo="#specialized_body">الهيئة المتخصصة</term> أو <term refersTo="#prosecutor">وكيل الجمهورية لدى محكمة الجزائر</term> أو الهيئات الدولية المؤهلة.</p>
+          </paragraph>
+          <paragraph>
+          <p><right>يكون هذا الأمر قابلا للاعتراض أمام نفس الجهة التي أصدرته، في أجل يومين (2) من تاريخ تبليغه</right>.</p>
+          </paragraph>
+          <paragraph>
+          <p>ينفذ هذا الأمر وفقا لأحكام الفقرة 4 من <ref href="#art_18">المادة 18</ref> أعلاه.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_19" status="modified">
+          <num>19</num>
+          <content>
+          <paragraph>
+          <p><obligation>يلزم الخاضعون بواجب الإخطار بالشبهة</obligation>، وفقا للأحكام المحددة في <ref href="#art_20">المادة 20</ref> أدناه.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_20" status="modified">
+          <num>20</num>
+          <content>
+          <paragraph>
+          <p>دون الإخلال بأحكام <ref href="/akn/dz/act/code/1966-06-08/66-155#art_32">المادة 32 من قانون الإجراءات الجزائية</ref>، <obligation>يتعين على الخاضعين، إبلاغ <term refersTo="#specialized_body">الهيئة المتخصصة</term> بكل عملية تتعلق بأموال يشتبه أنها متحصل عليها من جريمة أو يبدو أنها موجهة لتبييض الأموال و/ أو تمويل الإرهاب</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>ويتعين القيام بهذا الإخطار بمجرد وجود الشبهة حتى ولو تعذر تأجيل تنفيذ تلك العمليات أو بعد إنجازها</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يجب إبلاغ كل معلومات ترمي إلى تأكيد الشبهة أو نفيها دون تأخير إلى <term refersTo="#specialized_body">الهيئة المتخصصة</term></obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p>يحدد شكل الإخطار بالشبهة ونموذجه ومحتواه ووصل استلامه عن طريق التنظيم بناء على اقتراح من <term refersTo="#specialized_body">الهيئة المتخصصة</term>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_21" status="modified">
+          <num>21</num>
+          <content>
+          <paragraph>
+          <p><obligation>ترسل المفتشية العامة للمالية ومصالح الضرائب والجمارك وأملاك الدولة والخزينة لعمومية، وبنك الجزائر ، بصفة عاجلة تقريرا سريا إلى <term refersTo="#specialized_body">الهيئة المتخصصة</term> فور اكتشافها خلال قيامها بمهامها الخاصة بالمراقبة والتحقيق، وجود أموال أو عمليات يشتبه أنها متحصل عليها من جريمة، أو يبدو أنها موجهة لتبييض الأموال و/ أو تمويل الإرهاب</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_22" status="original">
+          <num>22</num>
+          <content>
+          <paragraph>
+          <p><obligation>لا يمكن الاعتداد بالسر المهني أو السر البنكي في مواجهة <term refersTo="#specialized_body">الهيئة المتخصصة</term></obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_23" status="original">
+          <num>23</num>
+          <content>
+          <paragraph>
+          <p><right>لا يمكن اتخاذ أية متابعة من أجل انتهاك السر البنكي أو المهني ضد الأشخاص أو المسيرين والأعوان الخاضعين للإخطار بالشبهة الذين أرسلوا بحسن نية المعلومات أو قاموا بالإخطارات المنصوص عليها في هذا القانون</right>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_24" status="original">
+          <num>24</num>
+          <content>
+          <paragraph>
+          <p><right>يعفى الأشخاص الطبيعيون والمعنويون الخاضعون للإخطار بالشبهة والذين تصرفوا بحسن نية، من أية مسؤولية إدارية أو مدنية أو جزائية</right>.</p>
+          </paragraph>
+          <paragraph>
+          <p>ويبقى هذا الإعفاء من المسؤولية قائما حتى لو لم تؤد التحقيقات إلى أية نتيجة، أو انتهت المتابعات بقرارات بألا وجه للمتابعة أو التسريح أو البراءة.</p>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+      <section eId="sec_4">
+        <num>الرابع</num>
+        <heading>التعاون الدولي</heading>
+        <article eId="art_25" status="modified">
+          <num>25</num>
+          <content>
+          <paragraph>
+          <p><right>يمكن <term refersTo="#specialized_body">الهيئة المتخصصة</term> أن تطلع هيئات الدول الأخرى التي تمارس مهام مماثلة، على المعلومات التي تتوفر لديها حول العمليات التي يبدو أنها تهدف إلى <term refersTo="#money_laundering">تبييض الأموال</term> أو <term refersTo="#terrorism_financing">تمويل الإرهاب</term></right>، <condition>مع مراعاة المعاملة بالمثل وعدم استعمال هذه المعلومات لأغراض غير تلك المنصوص عليها في هذا القانون</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p><right>كما يمكن <term refersTo="#specialized_body">الهيئة المتخصصة</term> الحصول على معلومات من الخاضعين ومن السلطات المختصة بعد تلقي طلبات من هيئات الدول الأخرى التي تمارس مهام مماثلة</right>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_26">
+          <num>26</num>
+          <content>
+          <paragraph>
+          <p>يتم التعاون وتبادل المعلومات المذكورة في <ref href="#art_25">المادة 25</ref> أعلاه، في إطار احترام الاتفاقيات الدولية والأحكام القانونية الداخلية المطبقة في مجال حماية الحياة الخاصة وتبليغ المعطيات الشخصية <condition>مع مراعاة أن تكون الهيئات الأجنبية المختصة خاضعة لنفس واجبات السر المهني مثل <term refersTo="#specialized_body">الهيئة المتخصصة</term></condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_27">
+          <num>27</num>
+          <content>
+          <paragraph>
+          <p>في إطار مكافحة <term refersTo="#money_laundering">تبييض الأموال</term> و<term refersTo="#terrorism_financing">تمويل الإرهاب</term>، <right>يمكن <term refersTo="#bank_of_algeria">بنك الجزائر</term> و<term refersTo="#banking_commission">اللجنة المصرفية</term> تبليغ المعلومات إلى الهيئات المكلفة بمراقبة البنوك والمؤسسات المالية في الدول الأخرى</right> <condition>مع مراعاة المعاملة بالمثل، وبشرط أن تكون هذه الهيئات خاضعة للسر المهني بنفس الضمانات المجددة في الجزائر</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_28">
+          <num>28</num>
+          <content>
+          <paragraph>
+          <p><obligation>لا يمكن تبليغ المعلومات</obligation> <condition>إذا شرع في إجراءات جزائية في الجزائر على أساس نفس الوقائع، أو إذا كان هذا التبليغ من شأنه أن يمس بالسيادة والأمن الوطنيين أو النظام العام والمصالح الأساسية للجزائر</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_29">
+          <num>29</num>
+          <content>
+          <paragraph>
+          <p>يتم التعاون القضائي بين الجهات القضائية الجزائرية والأجنبية خلال التحقيقات والمتابعات والإجراءات القضائية المتعلقة بـ <term refersTo="#money_laundering">تبييض الأموال</term> و<term refersTo="#terrorism_financing">تمويل الإرهاب</term>، <condition>مع مراعاة المعاملة بالمثل وفي إطار احترام الاتفاقيات الثنائية والمتعددة الأطراف المطبقة في هذا المجال والمصادق عليها من قبل الجزائر طبقا للتشريع الداخلي</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_30" status="modified">
+          <num>30</num>
+          <content>
+          <paragraph>
+          <p><right>يمكن أن يتضمن التعاون القضائي طلبات التحقيق و الإنابات القضائية الدولية وتسليم الأشخاص المطلوبين طبقا للقانون وكذا البحث والتجميد والحجز ومصادرة الأموال المبيضة أو الموجهة للتبييض ونتاجها والأموال المستعملة أو المزمع استعمالها لأغراض تمويل الإرهاب والوسائل المستعملة في ارتكاب هذه الجرائم أو أموال ذات قيمة معادلة</right> دون الإخلال بحقوق الغير حسن النية.</p>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+      <section eId="sec_5">
+        <num>الخامس</num>
+        <heading>أحكام جزائية</heading>
+        <article eId="art_31" status="modified">
+          <num>المادة 31</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب كل من يقوم بدفع أو يقبل دفعا خرقا لأحكام <ref href="#art_6">المادة 6</ref> أعلاه ، بغرامة من 500.000 دج إلى 5.000.000 دج</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_32" status="modified">
+          <num>المادة 32</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب كل <term refersTo="#subject">خاضع</term> يمتنع عمدا وبسابق معرفة، عن تحرير و/أو إرسال <term refersTo="#suspicious_transaction_report">الإخطار بالشبهة</term> المنصوص عليه في هذا القانون، بغرامة من 1.000.000 دج إلى 10.000.000 دج دون الإخلال بعقوبات أشد وبأية عقوبة تأديبية أخرى</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_33__معدلة">
+          <num>المادة 33 ( معدلة)</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب مسيرو وأعوان <term refersTo="#financial_institutions">المؤسسات المالية</term> و<term refersTo="#subjects">الخاضعون</term> الذين أبلغوا عمدا صاحب الأموال أو العمليات موضوع <term refersTo="#suspicious_transaction_report">الإخطار بالشبهة</term>، بوجود هذا الإخطار أو أطلعوه على المعلومات حول النتائج التي تخصه، بغرامة من 2.000.000 دج إلى 20.000.000 دج دون الإخلال بعقوبات أشد وبأية عقوبة تأديبية أخرى</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_34" status="modified">
+          <num>المادة 34</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب مسيرو وأعوان <term refersTo="#financial_institutions">المؤسسات المالية</term> والمؤسسات والمهن غير المالية الذين يخالفون عمدا وبصفة متكررة، تدابير الوقاية من <term refersTo="#money_laundering">تبييض الأموال</term> و<term refersTo="#terrorism_financing">تمويل الإرهاب</term> المنصوص عليها في المواد <ref href="#art_7">7</ref> و <ref href="#art_8">8</ref> و <ref href="#art_9">9</ref> و <ref href="#art_10">10</ref> و <ref href="#art_10_bis">10 مكرر</ref> و <ref href="#art_10_bis_1">10 مكرر 1</ref> و <ref href="#art_10_bis_2">10 مكرر 2</ref> و <ref href="#art_14">14</ref> من هذا القانون، بغرامة من 500.000 دج إلى 10.000.000 دج</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>ويعاقب <term refersTo="#legal_persons">الأشخاص المعنويون</term> المنصوص عليهم في هذه المادة بغرامة من 10.000.000 دج إلى 50.000.000 دج، دون الإخلال بعقوبات أشد</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+      <section eId="sec_6">
+        <num>السادس</num>
+        <heading>أحكام ختامية</heading>
+        <article eId="art_35">
+          <num>المادة 35</num>
+          <content>
+          <paragraph>
+          <p>تلغى أحكام <ref href="/akn/dz/act/law/2002-12-24/02-11#art_104">المواد من 104</ref> إلى <ref href="/akn/dz/act/law/2002-12-24/02-11#art_110">110</ref> من القانون رقم 02-11 المؤرخ في 20 شوال عام 1413 الموافق 24 ديسمبر سنة 2002 والمتضمن قانون المالية لسنة 2003.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_36">
+          <num>المادة 36</num>
+          <content>
+          <paragraph>
+          <p><obligation>ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية.</obligation></p>
+          </paragraph>
+          <paragraph>
+          <p>حرر بالجزائر في 27 ذي الحجة عام 1425 الموافق 6 فبراير سنة 2005.</p>
+          </paragraph>
+          <paragraph>
+          <p>عبد العزيز بوتفليقة</p>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+    </body>
+  </act>
+</akomaNtoso>

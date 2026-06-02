@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="law">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/law/1979-07-01/79-06/main"/>
+      <FRBRuri value="/akn/dz/act/law/1979-07-01/79-06"/>
+      <FRBRdate date="1979-07-01" name="enactment"/>
+      <FRBRauthor href="#parliament"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="79-06"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/law/1979-07-01/79-06/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/law/1979-07-01/79-06/ara@"/>
+      <FRBRdate date="1979-07-01" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/law/1979-07-01/79-06/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/law/1979-07-01/79-06/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="parliament" href="/ontology/organization/dz/parliament" showAs="البرلمان"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="converter" href="/ontology/person/dz/converter" showAs="Markup Specialist"/>
+  </references>
+</meta>
+    <preface>
+  <docTitle>قانون رقم 79-06 يتضمن التعديل الدستوري</docTitle>
+  <docNumber>79-06</docNumber>
+  <docDate date="1979-07-01">1 يوليو سنة 1979</docDate>
+  <docAuthority>البرلمان</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>بناء على الدستور</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يصدر القانون الآتي نصه</p>
+  </formula>
+</preamble>
+    <body>
+      <chapter eId="chp_الثاني_السلطة_و_تنظيمها">
+        <num>الثاني السلطة و تنظيمها</num>
+        <section eId="chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية">
+          <num>الثاني الوظيفة التنفيذية</num>
+          <article eId="art_1">
+            <num>المادة الأولى</num>
+            <content>
+            <paragraph>
+            <p>تعدل الفقرة الثالثة من <ref href="/akn/dz/act/constitution/1996-11-28#art_105">المادة 105 من الدستور</ref> وتصاع على النحو التالي :</p>
+            </paragraph>
+            <paragraph>
+            <p>»ويقترحه مؤتمر <term refersTo="#fln">حزب جبهة التحرير الوطني</term> وفقا لقانونه الأساسي«</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_2">
+            <num>المادة 2</num>
+            <content>
+            <paragraph>
+            <p>تعدل <ref href="/akn/dz/act/constitution/1996-11-28#art_103">المادة 103 من الدستور</ref> و تصاغ على النحو التالي :</p>
+            </paragraph>
+            <paragraph>
+            <p>»المدة الرئاسية خمس (5) سنوات.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>يمكن تجديد انتخاب رئيس الجمهورية</right> «</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_3">
+            <num>المادة 3</num>
+            <content>
+            <paragraph>
+            <p>يضاف في آخر <ref href="/akn/dz/act/constitution/1996-11-28#art_110">المادة 110</ref> :</p>
+            </paragraph>
+            <paragraph>
+            <p>»والله على ما أقول شهيد »</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_4">
+            <num>المادة 4</num>
+            <content>
+            <paragraph>
+            <p>تعدل <ref href="/akn/dz/act/constitution/1996-11-28#art_111">المادة 111</ref> ( الفترة 15) من الدستور وتصاغ على النحو التالي :</p>
+            </paragraph>
+            <paragraph>
+            <p>«<right>يمكن له أن يفوض جزءا من صلاحياته الى نائب أو نواب رئيس الجمهورية</right> ۰۰۰۰«</p>
+            </paragraph>
+            <paragraph>
+            <p>) – و الباقي بدون تغيير).</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_5">
+            <num>المادة 5</num>
+            <content>
+            <paragraph>
+            <p>تعدل <ref href="/akn/dz/act/constitution/1996-11-28#art_112">المادة 112 من الدستور</ref> وتصاغ على النحو التالي :</p>
+            </paragraph>
+            <paragraph>
+            <p>«<right>يمكن لرئيس الجمهورية أن يعين نائبا له أو أكثر يعينونه ويساعدونه في مهامه</right>»</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_6">
+            <num>المادة 6</num>
+            <content>
+            <paragraph>
+            <p>تعدل <ref href="/akn/dz/act/constitution/1996-11-28#art_113">المادة 113 من الدستور</ref> وتصاغ على النحو التالي :</p>
+            </paragraph>
+            <paragraph>
+            <p>« يعين <term refersTo="#president">رئيس الجمهورية</term> أعضاء الحكومة ومن بينهم <term refersTo="#prime_minister">وزيرا أول</term> يساعده في تنسيق النشاط الحكومي وفي تطبيق القرارات المتخذة في مجلس الوزراء. »</p>
+            </paragraph>
+            <paragraph>
+            <p>و يمارس <term refersTo="#prime_minister">الوزير الأول</term> اختصاصاته في نطاق الصلاحيات التي يفرضها اليه <term refersTo="#president">رئيس الجمهورية</term> طبقا ل<ref href="/akn/dz/act/constitution/1996-11-28#art_111">المادة 111</ref> (الفقرة 15) من الدستور. »</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_7">
+            <num>المادة 7</num>
+            <content>
+            <paragraph>
+            <p>تعدل <ref href="/akn/dz/act/constitution/1996-11-28#art_115">المادة 115 من الدستور</ref> وتصاغ على النحو التالي :</p>
+            </paragraph>
+            <paragraph>
+            <p>»ونائب أو نواب رئيس الجمهورية ۰۰۰۰ و الباقي بدون تغيير«</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_8">
+            <num>المادة 8</num>
+            <content>
+            <paragraph>
+            <p>تعدل <ref href="/akn/dz/act/constitution/1996-11-28#art_116">المادة 116 من الدستور</ref> وتصاغ على النحو التالي :</p>
+            </paragraph>
+            <paragraph>
+            <p>» ولا يجوز بأي حال من الأحوال أن يفوض <term refersTo="#president">رئيس الجمهورية</term> سلطته في تعيين نائب أو نواب رئيس الجمهورية ……… أو اعفائهم من مهامهم ……. » (والباقي بدون تغيير).</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_9" status="modified">
+            <num>المادة 9</num>
+            <content>
+            <paragraph>
+            <p>تعدل <ref href="/akn/dz/act/constitution/1976-11-22#art_117">المادة 117 من الدستور</ref> وتصاغ على النحو التالي :</p>
+            </paragraph>
+            <paragraph>
+            <p>«<condition>اذا استحال على <term refersTo="#president">رئيس الجمهورية</term> أن يمارس مهامه بسبب مرض خطير مزمن</condition>، <obligation>تجتمع اللجنة المركزية للحزب وجوبا</obligation> ، و بعد التأكد من حقيقة هذا المانع بكل الوسائل الكفيلة بذلك ، تقترح بأغلبية ثلثي أعضائها على <term refersTo="#national_assembly">المجلس الشعبي الوطني</term> التصريح بحالة المانع. »</p>
+            </paragraph>
+            <paragraph>
+            <p>»يعلن <term refersTo="#national_assembly">المجلس الشعبي الوطني</term> ثبوت مانع الرئيس الجمهورية بأغلبية ثلثي أعضائه، و یكلف رئیسه بأن يتولى رئاسة الدولة بالنيابة لمدة أقصاها خمسة وأربعون (45) يوما وأن يمارس صلاحياته مع مراعاة أحكام <ref href="/akn/dz/act/constitution/1976-11-22#art_18">المادة 18 من الدستور</ref>. «</p>
+            </paragraph>
+            <paragraph>
+            <p>»<condition>وفي حالة استمرار المانع ، بعد انقضاء خمسة و أربعين (45) يوما</condition> ، يعلن الشغور بالاستقالة بحكم القانون ، حسب الطريقة المنصوص عليها أعلاه وطبقا لأحكام الفقرات التالية من هذه المادة. «</p>
+            </paragraph>
+            <paragraph>
+            <p>«<condition>وفي حالة استقالة رئيس الجمهورية أو وفاته</condition>، <obligation>يجتمع المجلس الشعبي الوطني وجوبا</obligation> ويثبت حالة الشغور النهائي لرئاسة الجمهورية. »</p>
+            </paragraph>
+            <paragraph>
+            <p>»يتولى رئيس المجلس الشعبي الوطني، مهام رئيس الدولة لمدة أقصاها خمسة واربعون (45) يوما ، تنظم خلالها انتخابات رئاسية. ولا يحق الرئيس المجلس الشعبي الوطني أن يكون مرشحا لرئاسة الجمهورية. «</p>
+            </paragraph>
+            <paragraph>
+            <p>»يقترح مؤتمر حزب جبهة التحرير الوطني، المرشح لرئاسة الجمهورية، طبقا لقانونه الاساسي«</p>
+            </paragraph>
+            <paragraph>
+            <p>»يمارس <term refersTo="#president">رئيس الجمهورية</term> المنتخب مهامه طبقا لأحكام <ref href="/akn/dz/act/constitution/1976-11-22#art_108">المادة 108 من الدستور</ref>«</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_10" status="modified">
+            <num>المادة 10</num>
+            <content>
+            <paragraph>
+            <p>تعدل. الفقرتان الثانية والثالثة من <ref href="/akn/dz/act/constitution/1976-11-22#art_18">المادة 18 من الدستور</ref> وتصاغان کما یلي:</p>
+            </paragraph>
+            <paragraph>
+            <p>»لا يمكن أثناء فترتي الخمسة والأربعين (45) يوما، المشار اليهما في الفقرتين الثانية والخامسة من <ref href="/akn/dz/act/constitution/1976-11-22#art_117">المادة 117 من الدستور</ref> ۰۰۰» (والباقي بدون تغییر) «</p>
+            </paragraph>
+            <paragraph>
+            <p>»لا يمكن أثناء نفس الفترتين، انهاء مهام نائب ر نواب رئيس الجمهورية » ( والباقي بدون تغيير )</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+      <chapter eId="chp_الثالث_أحكام_مختلفة">
+        <num>الثالث أحكام مختلفة</num>
+        <heading>أحكام مختلفة</heading>
+        <article eId="art_11">
+          <num>المادة 11</num>
+          <content>
+          <paragraph>
+          <p>تلغى <ref href="/akn/dz/act/constitution/1976-11-22/1#art_197">المادتان 197</ref> و <ref href="/akn/dz/act/constitution/1976-11-22/1#art_198">198</ref> من الدستور</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_12">
+          <num>المادة 12</num>
+          <content>
+          <paragraph>
+          <p>تضاف الى الدستور (الباب الثالث أحكام مختلفة )</p>
+          </paragraph>
+          <paragraph>
+          <p><ref href="/akn/dz/act/constitution/1976-11-22/1#art_197">مادة 197</ref> وتصاغ على النحو التالي :</p>
+          </paragraph>
+          <paragraph>
+          <p>»ينطبق الاجراء المنصوص عليه في <ref href="/akn/dz/act/constitution/1976-11-22/1#art_108">المادة 108</ref> (الفقرة الأولى على المدة الرئاسية التي تعقب انعقاد المؤتمر الرابع لحزب جبهة التحرير الوطني. «</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_13">
+          <num>المادة 13</num>
+          <content>
+          <paragraph>
+          <p>تصبح <ref href="/akn/dz/act/constitution/1976-11-22/1#art_199">المادة 199</ref> هي <ref href="/akn/dz/act/constitution/1976-11-22/1#art_198">المادة 198</ref> من الدستور .</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+    </body>
+  </act>
+</akomaNtoso>

@@ -1,0 +1,980 @@
+@prefix dzdoc: <https://legal.dz/ontology/document#> .
+@prefix dznorm: <https://legal.dz/ontology/norm#> .
+@prefix dzorg: <https://legal.dz/resource/organization/> .
+@prefix dzterm: <https://legal.dz/resource/term/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dzorg:الجريدة_الرسمية a dzdoc:Organization ;
+    rdfs:label "الجريدة الرسمية"@ar ;
+    dzdoc:frbrUri "/ontology/organization/dz/joradp"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#amend_1> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:confidenceScore 0.99 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpReplace ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_1> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:targetDocument <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:validFrom "2015-12-30"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_1_extref_c5504d34> a dzdoc:ExternalReference ;
+    rdfs:label "الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/order/1975-09-26/75-59"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/order/1975-09-26/75-59"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/order/1975-09-26/75-59" ;
+    dzdoc:referencesTarget <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:resolutionReason "canonical_akn_path_alias" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/order/1975-09-26/75-59"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_1_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#art_1> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يهدف هذا القانون إلى تعديل وتتميم الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون التجاري."@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_2_extref_60c4ab1e> a dzdoc:ExternalReference ;
+    rdfs:label "567"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/order/1975-09-26/75-59#art_567"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/order/1975-09-26/75-59#art_567"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/order/1975-09-26/75-59#art_567" ;
+    dzdoc:resolutionReason "cross_document_fragment_unverified" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/order/1975-09-26/75-59"^^xsd:anyURI ;
+    dzdoc:targetEId "art_567" .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_2_extref_c5504d34> a dzdoc:ExternalReference ;
+    rdfs:label "الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/order/1975-09-26/75-59"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/order/1975-09-26/75-59"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/order/1975-09-26/75-59" ;
+    dzdoc:referencesTarget <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:resolutionReason "canonical_akn_path_alias" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/order/1975-09-26/75-59"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_2_extref_d21f48ab> a dzdoc:ExternalReference ;
+    rdfs:label "المادتان 566"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/order/1975-09-26/75-59#art_566"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/order/1975-09-26/75-59#art_566"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/order/1975-09-26/75-59#art_566" ;
+    dzdoc:resolutionReason "cross_document_fragment_unverified" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/order/1975-09-26/75-59"^^xsd:anyURI ;
+    dzdoc:targetEId "art_566" .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_2_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#art_2> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تعدل وتتمم المادتان 566 و 567 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، وتحرران كما يأتي :"@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_3_extref_c5504d34> a dzdoc:ExternalReference ;
+    rdfs:label "الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/order/1975-09-26/75-59"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/order/1975-09-26/75-59"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/order/1975-09-26/75-59" ;
+    dzdoc:referencesTarget <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:resolutionReason "canonical_akn_path_alias" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/order/1975-09-26/75-59"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_3_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#art_3> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يتمم الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، بمادتين 567 مكرر و 567 مكرر 1، تحرران كما يأتي :"@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_4_extref_6983635c> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 590"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/order/1975-09-26/75-59#art_590"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/order/1975-09-26/75-59#art_590"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/order/1975-09-26/75-59#art_590" ;
+    dzdoc:resolutionReason "cross_document_fragment_unverified" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/order/1975-09-26/75-59"^^xsd:anyURI ;
+    dzdoc:targetEId "art_590" .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_4_extref_c5504d34> a dzdoc:ExternalReference ;
+    rdfs:label "الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/order/1975-09-26/75-59"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/order/1975-09-26/75-59"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/order/1975-09-26/75-59" ;
+    dzdoc:referencesTarget <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:resolutionReason "canonical_akn_path_alias" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/order/1975-09-26/75-59"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_4_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#art_4> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تعدل المادة 590 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، وتحرر كما يأتي :"@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_566_obligation_0_1f4c4655> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dznorm:expressedIn <https://legal.dz/resource/law/2015-12-30/15-20#art_566> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يحدد رأسمال الشركة ذات المسؤولية المحدودة بحرية من طرف الشركاء في القانون الأساسي للشركة"@ar ;
+    dznorm:sourceArticle "art_566" .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_566_obligation_1_319fe758> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dzdoc:hasAction <https://legal.dz/resource/law/2015-12-30/15-20#art_566_obligation_1_319fe758_action_62378f3087> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/2015-12-30/15-20#art_566> ;
+    dznorm:position 1 ;
+    dznorm:provisionText "يجب أن يشار إلى الرأسمال في جميع وثائق الشركة"@ar ;
+    dznorm:sourceArticle "art_566" .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_566_obligation_1_319fe758_action_62378f3087> a dznorm:Action ;
+    rdfs:label "أن يشار إلى الرأسمال في"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يجب أن يشار إلى الرأسمال في جميع وثائق الشركة"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/2015-12-30/15-20#art_566> .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_566_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#art_566> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يحدد رأسمال الشركة ذات المسؤولية المحدودة بحرية من طرف الشركاء في القانون الأساسي للشركة ويقسم إلى حصص ذات قيمة اسمية متساوية."@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_566_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#art_566> ;
+    dzdoc:position 1 ;
+    dzdoc:text "يجب أن يشار إلى الرأسمال في جميع وثائق الشركة."@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يمكن أن تكون المساهمة في الشركة ذات المسؤولية المحدودة تقديم عمل، تحدد كيفيات تقدير قيمته وما يخوله من أرباح ضمن القانون الأساسي للشركة ولا يدخل في تأسيس رأسمال الشركة."@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis_permission_0_0340225f> a dznorm:Permission ;
+    dzdoc:confidenceScore 0.72 ;
+    dzdoc:extractionMethod "lexical_permission_cue" ;
+    dzdoc:hasAction <https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis_permission_0_0340225f_action_16aefa3eb9> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يمكن أن تكون المساهمة في الشركة ذات المسؤولية المحدودة تقديم عمل، تحدد كيفيات تقدير قيمته وما يخوله من أرباح ضمن القانون الأساسي للشركة ولا يدخل في تأسيس رأسمال الشركة."@ar ;
+    dznorm:sourceArticle "art_567_bis" .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis_permission_0_0340225f_action_16aefa3eb9> a dznorm:Action ;
+    rdfs:label "أن تكون المساهمة في الشركة"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يمكن أن تكون المساهمة في الشركة ذات المسؤولية المحدودة تقديم عمل، تحدد كيفيات تقدير قيمته وما يخوله من أرباح ضمن القانون الأساسي للشركة ولا يدخل في تأسيس رأسمال الشركة."@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis> .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis_right_0_7c9064d9> a dznorm:Right ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_right_tag" ;
+    dzdoc:hasAction <https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis_right_0_7c9064d9_action_30319e4bc3> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يمكن أن تكون المساهمة في الشركة ذات المسؤولية المحدودة تقديم عمل"@ar ;
+    dznorm:sourceArticle "art_567_bis" .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis_right_0_7c9064d9_action_30319e4bc3> a dznorm:Action ;
+    rdfs:label "أن تكون المساهمة في الشركة"@ar ;
+    dzdoc:confidenceScore 0.62 ;
+    dzdoc:extractionMethod "lexical_action_pattern" ;
+    dzdoc:sourceTextSpan "يمكن أن تكون المساهمة في الشركة ذات المسؤولية المحدودة تقديم عمل"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis> .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_590_condition_0_8d466345> a dznorm:Condition ;
+    dzdoc:hasRole <https://legal.dz/resource/law/2015-12-30/15-20#art_590_condition_0_8d466345_role_c596fc1854> ;
+    dznorm:conditionText "وإذا أصبحت الشركة مشتملة على أكثر من خمسين (50) شريكا"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/2015-12-30/15-20#art_590> ;
+    dznorm:position 0 .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_590_condition_0_8d466345_role_c596fc1854> a dznorm:Role ;
+    rdfs:label "أكثر من خمسين (50)"@ar ;
+    dzdoc:confidenceScore 0.66 ;
+    dzdoc:extractionMethod "lexical_role_pattern" ;
+    dzdoc:sourceTextSpan "وإذا أصبحت الشركة مشتملة على أكثر من خمسين (50) شريكا"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/2015-12-30/15-20#art_590> .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_590_obligation_0_d1edb37c> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dznorm:expressedIn <https://legal.dz/resource/law/2015-12-30/15-20#art_590> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "لا يسوغ أن يتجاوز عدد الشركاء في الشركة ذات المسؤولية المحدودة خمسين (50) شريكا"@ar ;
+    dznorm:sourceArticle "art_590" .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_590_obligation_1_2fdd6b5b> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dzdoc:hasPeriod <https://legal.dz/resource/law/2015-12-30/15-20#art_590_obligation_1_2fdd6b5b_period_edd3beef84> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/2015-12-30/15-20#art_590> ;
+    dznorm:position 1 ;
+    dznorm:provisionText "وجب تحويلها إلى شركة مساهمة في أجل سنة واحدة"@ar ;
+    dznorm:sourceArticle "art_590" .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_590_obligation_1_2fdd6b5b_period_edd3beef84> a dznorm:Period ;
+    rdfs:label "في أجل سنة واحدة"@ar ;
+    dzdoc:confidenceScore 0.68 ;
+    dzdoc:extractionMethod "lexical_period_pattern" ;
+    dzdoc:sourceTextSpan "وجب تحويلها إلى شركة مساهمة في أجل سنة واحدة"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/2015-12-30/15-20#art_590> .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_590_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#art_590> ;
+    dzdoc:position 0 ;
+    dzdoc:text "لا يسوغ أن يتجاوز عدد الشركاء في الشركة ذات المسؤولية المحدودة خمسين (50) شريكا."@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_590_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#art_590> ;
+    dzdoc:position 1 ;
+    dzdoc:text "وإذا أصبحت الشركة مشتملة على أكثر من خمسين (50) شريكا وجب تحويلها إلى شركة مساهمة في أجل سنة واحدة. وعند عدم القيام بذلك، تنحل الشركة ما لم يصبح عدد الشركاء في تلك الفترة من الزمن مساويا لخمسين (50) شريكا أو أقل."@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_5_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#art_5> ;
+    dzdoc:position 0 ;
+    dzdoc:text "ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية."@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#legal_basis_4cc1a2476230> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/75-58> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى الأمر رقم 75-58 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون المدني، المعدل والمتمم،"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_2> .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#legal_basis_c17a25bab99c> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/76-105> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى الأمر رقم 76-105 المؤرخ في 17 ذي الحجة عام 1396 الموافق 9 ديسمبر سنة 1976 والمتضمن قانون التسجيل، المعدل والمتمم، لا سيما المادة 256 منه،"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_4> .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#legal_basis_ddb98b605606> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/75-59> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون التجاري، المعدل والمتمم،"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_3> .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#legal_basis_edc94df0b010> a dzdoc:LegalBasisAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/unknown/08-09> ;
+    dzdoc:confidenceScore 0.45 ;
+    dzdoc:evidenceText "وبمقتضى القانون رقم 08-09 المؤرخ في 18 صفر عام 1429 الموافق 25 فبراير سنة 2008 والمتضمن قانون الإجراءات المدنية والإدارية،"@ar ;
+    dzdoc:extractionMethod "text_pattern_doc_type_number" ;
+    dzdoc:isInferred true ;
+    dzdoc:sourceSegment <https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_5> .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#lifecycle_15fcf70ec6fe> a dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:confidenceScore 0.92 ;
+    dzdoc:evidenceText "تعدل المادة 590 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، وتحرر كما يأتي :"@ar ;
+    dzdoc:isContradictory false ;
+    dzdoc:lifecycleRelationType "amends" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:ruleId "lifecycle_explicit_amend_phrase" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_4> .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#lifecycle_29dfda0150f4> a dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:confidenceScore 0.92 ;
+    dzdoc:evidenceText "يتمم الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، بمادتين 567 مكرر و 567 مكرر 1 ، تحرران كما يأتي :"@ar ;
+    dzdoc:isContradictory false ;
+    dzdoc:lifecycleRelationType "amends" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:ruleId "lifecycle_explicit_amend_phrase" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_3> .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#lifecycle_4ac7b5bf11af> a dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:confidenceScore 0.92 ;
+    dzdoc:evidenceText "تعدل وتتمم المادتان 566 و 567 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، وتحرران كما يأتي :"@ar ;
+    dzdoc:isContradictory false ;
+    dzdoc:lifecycleRelationType "amends" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:ruleId "lifecycle_explicit_amend_phrase" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_2> .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#lifecycle_b968c1905c04> a dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:confidenceScore 0.92 ;
+    dzdoc:evidenceText "يهدف هذا القانون إلى تعديل وتتميم الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون التجاري ."@ar ;
+    dzdoc:isContradictory false ;
+    dzdoc:lifecycleRelationType "amends" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:ruleId "lifecycle_explicit_amend_phrase" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_1> .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#lifecycle_c20de350c829> a dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:confidenceScore 0.79 ;
+    dzdoc:evidenceText "تعدل وتتمم المادتان 566 و 567 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، وتحرران كما يأتي :"@ar ;
+    dzdoc:isContradictory false ;
+    dzdoc:lifecycleRelationType "amends" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:ruleId "lifecycle_explicit_amend_phrase" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_2> .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#lifecycle_c79650a5b574> a dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:confidenceScore 0.79 ;
+    dzdoc:evidenceText "تعدل وتتمم المادتان 566 و 567 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، وتحرران كما يأتي :"@ar ;
+    dzdoc:isContradictory false ;
+    dzdoc:lifecycleRelationType "amends" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:ruleId "lifecycle_explicit_amend_phrase" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_2> .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#lifecycle_deef9c96002b> a dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:confidenceScore 0.79 ;
+    dzdoc:evidenceText "تعدل المادة 590 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، وتحرر كما يأتي :"@ar ;
+    dzdoc:isContradictory false ;
+    dzdoc:lifecycleRelationType "amends" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:ruleId "lifecycle_explicit_amend_phrase" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_4> .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_8> a dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#preamble> ;
+    dzdoc:position 8 ;
+    dzdoc:segmentType "formula" ;
+    dzdoc:text "يصدر القانون الآتي نصه :"@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#preface> a dzdoc:Preface ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20> .
+
+<https://legal.dz/resource/law/2015-12-30/15-20/manifestation> a dzdoc:Manifestation ;
+    dzdoc:frbrUri "/akn/dz/act/law/2015-12-30/15-20/ara@.xml"^^xsd:anyURI ;
+    dzdoc:manifestationOf <https://legal.dz/resource/law/2015-12-30/15-20/expression> ;
+    dzdoc:transformDate "2026-04-28"^^xsd:date .
+
+dzterm:commercial_code a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "القانون التجاري"@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_0> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#preamble> ;
+    dzdoc:position 0 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "إن رئيس الجمهورية،"@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_1> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#preamble> ;
+    dzdoc:position 1 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "بناء على الدستور، لا سيما المواد 119 و 120 و 122 و 126 منه،"@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_6> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#preamble> ;
+    dzdoc:position 6 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبعد رأي مجلس الدولة،"@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_7> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#preamble> ;
+    dzdoc:position 7 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبعد مصادقة البرلمان،"@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#version_art_1_20151230_OpEnact_288ca79e52> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2015-12-30"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2015-12-30/15-20#version_art_1> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/2015-12-30/15-20#art_1> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_1> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:versionText "يهدف هذا القانون إلى تعديل وتتميم الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون التجاري ."@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#version_art_2_20151230_OpEnact_3e70b91367> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2015-12-30"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2015-12-30/15-20#version_art_2> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/2015-12-30/15-20#art_2> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_2> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:versionText "تعدل وتتمم المادتان 566 و 567 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، وتحرران كما يأتي :"@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#version_art_3_20151230_OpEnact_2b7223fe2c> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2015-12-30"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2015-12-30/15-20#version_art_3> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/2015-12-30/15-20#art_3> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_3> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:versionText "يتمم الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، بمادتين 567 مكرر و 567 مكرر 1 ، تحرران كما يأتي :"@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#version_art_4_20151230_OpEnact_0729fb08b9> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2015-12-30"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2015-12-30/15-20#version_art_4> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/2015-12-30/15-20#art_4> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_4> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:versionText "تعدل المادة 590 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، وتحرر كما يأتي :"@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#version_art_566_20151230_OpEnact_108adad0a2> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2015-12-30"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2015-12-30/15-20#version_art_566> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/2015-12-30/15-20#art_566> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_566> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:versionText "يحدد رأسمال الشركة ذات المسؤولية المحدودة بحرية من طرف الشركاء في القانون الأساسي للشركة ويقسم إلى حصص ذات قيمة اسمية متساوية. يجب أن يشار إلى الرأسمال في جميع وثائق الشركة ."@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#version_art_567_bis_20151230_OpEnact_dfba23f5cd> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2015-12-30"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2015-12-30/15-20#version_art_567_bis> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:versionText "يمكن أن تكون المساهمة في الشركة ذات المسؤولية المحدودة تقديم عمل ، تحدد كيفيات تقدير قيمته وما يخوله من أرباح ضمن القانون الأساسي للشركة ولا يدخل في تأسيس رأسمال الشركة."@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#version_art_590_20151230_OpEnact_6f333943e6> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2015-12-30"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2015-12-30/15-20#version_art_590> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/2015-12-30/15-20#art_590> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_590> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:versionText "لا يسوغ أن يتجاوز عدد الشركاء في الشركة ذات المسؤولية المحدودة خمسين (50) شريكا . وإذا أصبحت الشركة مشتملة على أكثر من خمسين (50) شريكا وجب تحويلها إلى شركة مساهمة في أجل سنة واحدة . وعند عدم القيام بذلك، تنحل الشركة ما لم يصبح عدد الشركاء في تلك الفترة من الزمن مساويا لخمسين (50) شريكا أو أقل."@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#version_art_5_20151230_OpEnact_e7ae11a1f1> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2015-12-30"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2015-12-30/15-20#version_art_5> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/2015-12-30/15-20#art_5> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_5> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:versionText "ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية."@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20/expression> a dzdoc:Expression ;
+    dzdoc:expressionOf <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:frbrUri "/akn/dz/act/law/2015-12-30/15-20/ara@"^^xsd:anyURI ;
+    dzdoc:hasManifestation <https://legal.dz/resource/law/2015-12-30/15-20/manifestation> ;
+    dzdoc:language "ara" ;
+    dzdoc:publicationDate "2015-12-30"^^xsd:date .
+
+<https://legal.dz/resource/order/1975-09-26/75-59#art_566> dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2015-12-30/15-20#amend_2> ;
+    dzdoc:hasVersion <https://legal.dz/resource/order/1975-09-26/75-59#version_art_566_20151230_OpReplace_377985bf49> ;
+    dzdoc:lastModifiedBy <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:lastModifiedOn "2015-12-30"^^xsd:date .
+
+<https://legal.dz/resource/order/1975-09-26/75-59#art_567> dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2015-12-30/15-20#amend_3> ;
+    dzdoc:hasVersion <https://legal.dz/resource/order/1975-09-26/75-59#version_art_567_20151230_OpReplace_ca9688a222> ;
+    dzdoc:lastModifiedBy <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:lastModifiedOn "2015-12-30"^^xsd:date .
+
+<https://legal.dz/resource/order/1975-09-26/75-59#art_590> dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2015-12-30/15-20#amend_4> ;
+    dzdoc:hasVersion <https://legal.dz/resource/order/1975-09-26/75-59#version_art_590_20151230_OpReplace_a84432103b> ;
+    dzdoc:lastModifiedBy <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:lastModifiedOn "2015-12-30"^^xsd:date .
+
+<https://legal.dz/resource/order/1975-09-26/75-59#version_art_566_20151230_OpReplace_377985bf49> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2015-12-30"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2015-12-30/15-20#amend_2> ;
+    dzdoc:versionOf <https://legal.dz/resource/order/1975-09-26/75-59#art_566> .
+
+<https://legal.dz/resource/order/1975-09-26/75-59#version_art_567_20151230_OpReplace_ca9688a222> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2015-12-30"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2015-12-30/15-20#amend_3> ;
+    dzdoc:versionOf <https://legal.dz/resource/order/1975-09-26/75-59#art_567> .
+
+<https://legal.dz/resource/order/1975-09-26/75-59#version_art_590_20151230_OpReplace_a84432103b> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "2015-12-30"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/2015-12-30/15-20#amend_4> ;
+    dzdoc:versionOf <https://legal.dz/resource/order/1975-09-26/75-59#art_590> .
+
+dzorg:parliament a dzdoc:Organization ;
+    rdfs:label "البرلمان"@ar ;
+    dzdoc:frbrUri "/ontology/organization/dz/parliament"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#amend_2> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:confidenceScore 0.99 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpReplace ;
+    dzdoc:producesVersion <https://legal.dz/resource/order/1975-09-26/75-59#version_art_566_20151230_OpReplace_377985bf49> ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_2> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:targetArticle <https://legal.dz/resource/order/1975-09-26/75-59#art_566> ;
+    dzdoc:targetDocument <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:validFrom "2015-12-30"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#amend_3> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:confidenceScore 0.99 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpReplace ;
+    dzdoc:producesVersion <https://legal.dz/resource/order/1975-09-26/75-59#version_art_567_20151230_OpReplace_ca9688a222> ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_2> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:targetArticle <https://legal.dz/resource/order/1975-09-26/75-59#art_567> ;
+    dzdoc:targetDocument <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:validFrom "2015-12-30"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#amend_4> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:confidenceScore 0.99 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpReplace ;
+    dzdoc:producesVersion <https://legal.dz/resource/order/1975-09-26/75-59#version_art_590_20151230_OpReplace_a84432103b> ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_4> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:targetArticle <https://legal.dz/resource/order/1975-09-26/75-59#art_590> ;
+    dzdoc:targetDocument <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:validFrom "2015-12-30"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_2> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#preamble> ;
+    dzdoc:position 2 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى الأمر رقم 75-58 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون المدني، المعدل والمتمم،"@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_3> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#preamble> ;
+    dzdoc:position 3 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون التجاري، المعدل والمتمم،"@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_4> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#preamble> ;
+    dzdoc:position 4 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى الأمر رقم 76-105 المؤرخ في 17 ذي الحجة عام 1396 الموافق 9 ديسمبر سنة 1976 والمتضمن قانون التسجيل، المعدل والمتمم، لا سيما المادة 256 منه،"@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_5> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#preamble> ;
+    dzdoc:position 5 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى القانون رقم 08-09 المؤرخ في 18 صفر عام 1429 الموافق 25 فبراير سنة 2008 والمتضمن قانون الإجراءات المدنية والإدارية،"@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#version_art_1> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يهدف هذا القانون إلى تعديل وتتميم الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون التجاري ."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/2015-12-30/15-20#version_art_1_20151230_OpEnact_288ca79e52> ;
+    dzdoc:replacementText "يهدف هذا القانون إلى تعديل وتتميم الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون التجاري ."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_1> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_1> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2015-12-30"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#version_art_2> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تعدل وتتمم المادتان 566 و 567 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، وتحرران كما يأتي :"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/2015-12-30/15-20#version_art_2_20151230_OpEnact_3e70b91367> ;
+    dzdoc:replacementText "تعدل وتتمم المادتان 566 و 567 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، وتحرران كما يأتي :"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_2> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_2> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2015-12-30"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#version_art_3> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يتمم الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، بمادتين 567 مكرر و 567 مكرر 1 ، تحرران كما يأتي :"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/2015-12-30/15-20#version_art_3_20151230_OpEnact_2b7223fe2c> ;
+    dzdoc:replacementText "يتمم الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، بمادتين 567 مكرر و 567 مكرر 1 ، تحرران كما يأتي :"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_3> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_3> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2015-12-30"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#version_art_4> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تعدل المادة 590 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، وتحرر كما يأتي :"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/2015-12-30/15-20#version_art_4_20151230_OpEnact_0729fb08b9> ;
+    dzdoc:replacementText "تعدل المادة 590 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، وتحرر كما يأتي :"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_4> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_4> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2015-12-30"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#version_art_5> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/2015-12-30/15-20#version_art_5_20151230_OpEnact_e7ae11a1f1> ;
+    dzdoc:replacementText "ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_5> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_5> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2015-12-30"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#version_art_566> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يحدد رأسمال الشركة ذات المسؤولية المحدودة بحرية من طرف الشركاء في القانون الأساسي للشركة ويقسم إلى حصص ذات قيمة اسمية متساوية. يجب أن يشار إلى الرأسمال في جميع وثائق الشركة ."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/2015-12-30/15-20#version_art_566_20151230_OpEnact_108adad0a2> ;
+    dzdoc:replacementText "يحدد رأسمال الشركة ذات المسؤولية المحدودة بحرية من طرف الشركاء في القانون الأساسي للشركة ويقسم إلى حصص ذات قيمة اسمية متساوية. يجب أن يشار إلى الرأسمال في جميع وثائق الشركة ."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_566> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_566> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2015-12-30"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#version_art_567_bis> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يمكن أن تكون المساهمة في الشركة ذات المسؤولية المحدودة تقديم عمل ، تحدد كيفيات تقدير قيمته وما يخوله من أرباح ضمن القانون الأساسي للشركة ولا يدخل في تأسيس رأسمال الشركة."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/2015-12-30/15-20#version_art_567_bis_20151230_OpEnact_dfba23f5cd> ;
+    dzdoc:replacementText "يمكن أن تكون المساهمة في الشركة ذات المسؤولية المحدودة تقديم عمل ، تحدد كيفيات تقدير قيمته وما يخوله من أرباح ضمن القانون الأساسي للشركة ولا يدخل في تأسيس رأسمال الشركة."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2015-12-30"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#version_art_590> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "لا يسوغ أن يتجاوز عدد الشركاء في الشركة ذات المسؤولية المحدودة خمسين (50) شريكا . وإذا أصبحت الشركة مشتملة على أكثر من خمسين (50) شريكا وجب تحويلها إلى شركة مساهمة في أجل سنة واحدة . وعند عدم القيام بذلك، تنحل الشركة ما لم يصبح عدد الشركاء في تلك الفترة من الزمن مساويا لخمسين (50) شريكا أو أقل."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/2015-12-30/15-20#version_art_590_20151230_OpEnact_6f333943e6> ;
+    dzdoc:replacementText "لا يسوغ أن يتجاوز عدد الشركاء في الشركة ذات المسؤولية المحدودة خمسين (50) شريكا . وإذا أصبحت الشركة مشتملة على أكثر من خمسين (50) شريكا وجب تحويلها إلى شركة مساهمة في أجل سنة واحدة . وعند عدم القيام بذلك، تنحل الشركة ما لم يصبح عدد الشركاء في تلك الفترة من الزمن مساويا لخمسين (50) شريكا أو أقل."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_590> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_590> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "2015-12-30"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+dzterm:limited_liability_company a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "الشركة ذات المسؤولية المحدودة"@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_5> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#body> ;
+    dzdoc:eId "art_5" ;
+    dzdoc:fullText "ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2015-12-30/15-20#version_art_5> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/2015-12-30/15-20#art_5_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/2015-12-30/15-20#version_art_5_20151230_OpEnact_e7ae11a1f1> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:introducedOn "2015-12-30"^^xsd:date ;
+    dzdoc:number "المادة 5" ;
+    dzdoc:position 7 .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_3> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#body> ;
+    dzdoc:eId "art_3" ;
+    dzdoc:fullText "يتمم الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، بمادتين 567 مكرر و 567 مكرر 1 ، تحرران كما يأتي :"@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2015-12-30/15-20#version_art_3> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/2015-12-30/15-20#art_3_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/2015-12-30/15-20#version_art_3_20151230_OpEnact_2b7223fe2c> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:introducedOn "2015-12-30"^^xsd:date ;
+    dzdoc:number "المادة 3" ;
+    dzdoc:position 3 ;
+    dzdoc:references <https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis_1> ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/2015-12-30/15-20#art_3_extref_c5504d34> ;
+    dzdoc:referencesInternal <https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis_1> .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_1> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#body> ;
+    dzdoc:eId "art_1" ;
+    dzdoc:fullText "يهدف هذا القانون إلى تعديل وتتميم الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون التجاري ."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2015-12-30/15-20#version_art_1> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/2015-12-30/15-20#art_1_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/2015-12-30/15-20#version_art_1_20151230_OpEnact_288ca79e52> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:introducedOn "2015-12-30"^^xsd:date ;
+    dzdoc:number "المادة الأولى" ;
+    dzdoc:position 0 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/2015-12-30/15-20#art_1_extref_c5504d34> ;
+    dzdoc:usesTerm dzterm:commercial_code .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#body> a dzdoc:Body ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:directlyContains <https://legal.dz/resource/law/2015-12-30/15-20#art_1>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#art_2>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#art_3>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#art_4>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#art_5>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#art_566>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#art_590> ;
+    dzdoc:hasArticle <https://legal.dz/resource/law/2015-12-30/15-20#art_1>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#art_2>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#art_3>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#art_4>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#art_5>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#art_566>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#art_590> .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_4> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#body> ;
+    dzdoc:eId "art_4" ;
+    dzdoc:fullText "تعدل المادة 590 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، وتحرر كما يأتي :"@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2015-12-30/15-20#version_art_4> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/2015-12-30/15-20#art_4_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/2015-12-30/15-20#version_art_4_20151230_OpEnact_0729fb08b9> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:introducedOn "2015-12-30"^^xsd:date ;
+    dzdoc:number "المادة 4" ;
+    dzdoc:position 5 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/2015-12-30/15-20#art_4_extref_6983635c>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#art_4_extref_c5504d34> .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#preamble> a dzdoc:Preamble ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:hasCitation <https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_0>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_1>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_2>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_3>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_4>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_5>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_6>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_7> ;
+    dzdoc:hasSegment <https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_0>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_1>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_2>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_3>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_4>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_5>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_6>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_7>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#preamble_segment_8> ;
+    dzdoc:text "يصدر القانون الآتي نصه :"@ar .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_566> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#body> ;
+    dzdoc:eId "art_566" ;
+    dzdoc:fullText "يحدد رأسمال الشركة ذات المسؤولية المحدودة بحرية من طرف الشركاء في القانون الأساسي للشركة ويقسم إلى حصص ذات قيمة اسمية متساوية. يجب أن يشار إلى الرأسمال في جميع وثائق الشركة ."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2015-12-30/15-20#version_art_566> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/2015-12-30/15-20#art_566_para_0>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#art_566_para_1> ;
+    dzdoc:hasStatus dzdoc:StatusModified ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/2015-12-30/15-20#version_art_566_20151230_OpEnact_108adad0a2> ;
+    dzdoc:imposesObligation <https://legal.dz/resource/law/2015-12-30/15-20#art_566_obligation_0_1f4c4655>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#art_566_obligation_1_319fe758> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:introducedOn "2015-12-30"^^xsd:date ;
+    dzdoc:number "المادة 566" ;
+    dzdoc:position 2 ;
+    dzdoc:usesTerm dzterm:limited_liability_company .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_2> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#body> ;
+    dzdoc:eId "art_2" ;
+    dzdoc:fullText "تعدل وتتمم المادتان 566 و 567 من الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمذكور أعلاه، وتحرران كما يأتي :"@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2015-12-30/15-20#version_art_2> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/2015-12-30/15-20#art_2_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/2015-12-30/15-20#version_art_2_20151230_OpEnact_3e70b91367> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:introducedOn "2015-12-30"^^xsd:date ;
+    dzdoc:number "المادة 2" ;
+    dzdoc:position 1 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/2015-12-30/15-20#art_2_extref_60c4ab1e>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#art_2_extref_c5504d34>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#art_2_extref_d21f48ab> .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#body> ;
+    dzdoc:eId "art_567_bis" ;
+    dzdoc:fullText "يمكن أن تكون المساهمة في الشركة ذات المسؤولية المحدودة تقديم عمل ، تحدد كيفيات تقدير قيمته وما يخوله من أرباح ضمن القانون الأساسي للشركة ولا يدخل في تأسيس رأسمال الشركة."@ar ;
+    dzdoc:grantsPermission <https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis_permission_0_0340225f> ;
+    dzdoc:grantsRight <https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis_right_0_7c9064d9> ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2015-12-30/15-20#version_art_567_bis> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/2015-12-30/15-20#art_567_bis_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusNew ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/2015-12-30/15-20#version_art_567_bis_20151230_OpEnact_dfba23f5cd> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:introducedOn "2015-12-30"^^xsd:date ;
+    dzdoc:number "المادة 567 مكرر" ;
+    dzdoc:position 4 ;
+    dzdoc:usesTerm dzterm:limited_liability_company .
+
+<https://legal.dz/resource/law/2015-12-30/15-20#art_590> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/2015-12-30/15-20#body> ;
+    dzdoc:eId "art_590" ;
+    dzdoc:fullText "لا يسوغ أن يتجاوز عدد الشركاء في الشركة ذات المسؤولية المحدودة خمسين (50) شريكا . وإذا أصبحت الشركة مشتملة على أكثر من خمسين (50) شريكا وجب تحويلها إلى شركة مساهمة في أجل سنة واحدة . وعند عدم القيام بذلك، تنحل الشركة ما لم يصبح عدد الشركاء في تلك الفترة من الزمن مساويا لخمسين (50) شريكا أو أقل."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2015-12-30/15-20#version_art_590> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/2015-12-30/15-20#art_590_para_0>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#art_590_para_1> ;
+    dzdoc:hasStatus dzdoc:StatusModified ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/2015-12-30/15-20#version_art_590_20151230_OpEnact_6f333943e6> ;
+    dzdoc:imposesObligation <https://legal.dz/resource/law/2015-12-30/15-20#art_590_obligation_0_d1edb37c>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#art_590_obligation_1_2fdd6b5b> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/2015-12-30/15-20> ;
+    dzdoc:introducedOn "2015-12-30"^^xsd:date ;
+    dzdoc:number "المادة 590" ;
+    dzdoc:position 6 ;
+    dzdoc:specifiesCondition <https://legal.dz/resource/law/2015-12-30/15-20#art_590_condition_0_8d466345> ;
+    dzdoc:usesTerm dzterm:limited_liability_company .
+
+<https://legal.dz/resource/law/2015-12-30/15-20> a dzdoc:Law ;
+    dzdoc:amends <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:authoredBy dzorg:parliament ;
+    dzdoc:candidateAmends <https://legal.dz/resource/order/1975-09-26/75-59> ;
+    dzdoc:citesLegalBasis <https://legal.dz/resource/law/unknown/08-09>,
+        <https://legal.dz/resource/law/unknown/75-58>,
+        <https://legal.dz/resource/law/unknown/75-59>,
+        <https://legal.dz/resource/law/unknown/76-105> ;
+    dzdoc:countryCode "dz" ;
+    dzdoc:dateText "18 ربيع الأول عام 1437 الموافق 30 ديسمبر سنة 2015"@ar ;
+    dzdoc:documentNumber "15-20" ;
+    dzdoc:enactmentDate "2015-12-30"^^xsd:date ;
+    dzdoc:frbrThisUri "/akn/dz/act/law/2015-12-30/15-20/main"^^xsd:anyURI ;
+    dzdoc:frbrUri "/akn/dz/act/law/2015-12-30/15-20"^^xsd:anyURI ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/2015-12-30/15-20#amend_1>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#amend_2>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#amend_3>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#amend_4>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#version_art_1>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#version_art_2>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#version_art_3>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#version_art_4>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#version_art_5>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#version_art_566>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#version_art_567_bis>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#version_art_590> ;
+    dzdoc:hasAuthority dzorg:parliament ;
+    dzdoc:hasBody <https://legal.dz/resource/law/2015-12-30/15-20#body> ;
+    dzdoc:hasExpression <https://legal.dz/resource/law/2015-12-30/15-20/expression> ;
+    dzdoc:hasLegalBasisAssertion <https://legal.dz/resource/law/2015-12-30/15-20#legal_basis_4cc1a2476230>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#legal_basis_c17a25bab99c>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#legal_basis_ddb98b605606>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#legal_basis_edc94df0b010> ;
+    dzdoc:hasLifecycleAssertion <https://legal.dz/resource/law/2015-12-30/15-20#lifecycle_15fcf70ec6fe>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#lifecycle_29dfda0150f4>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#lifecycle_4ac7b5bf11af>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#lifecycle_b968c1905c04>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#lifecycle_c20de350c829>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#lifecycle_c79650a5b574>,
+        <https://legal.dz/resource/law/2015-12-30/15-20#lifecycle_deef9c96002b> ;
+    dzdoc:hasPreamble <https://legal.dz/resource/law/2015-12-30/15-20#preamble> ;
+    dzdoc:hasPreface <https://legal.dz/resource/law/2015-12-30/15-20#preface> ;
+    dzdoc:publicationDate "2015-12-30"^^xsd:date ;
+    dzdoc:sourceFile "Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/15-20_2015-12-30__partial_code_commerce_pp_5-6.xml" ;
+    dzdoc:title "قانون يعدل ويتمم الأمر رقم 75-59 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون التجاري"@ar .
+

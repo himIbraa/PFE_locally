@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="law">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/law/1988-11-03/[NUMBER]/main"/>
+      <FRBRuri value="/akn/dz/act/law/1988-11-03/[NUMBER]"/>
+      <FRBRdate date="1988-11-03" name="enactment"/>
+      <FRBRauthor href="#parliament"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="[NUMBER]"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/law/1988-11-03/[NUMBER]/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/law/1988-11-03/[NUMBER]/ara@"/>
+      <FRBRdate date="1988-11-03" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/law/1988-11-03/[NUMBER]/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/law/1988-11-03/[NUMBER]/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="parliament" href="/ontology/organization/dz/parliament" showAs="البرلمان"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="converter" href="/ontology/person/dz/converter" showAs="Markup Specialist"/>
+  </references>
+</meta>
+    <preface>
+  <docTitle>التعديل الدستوري المصادق عليه في إستفتاء 3 نوفمبر سنة 1988</docTitle>
+  <docNumber>[NUMBER]</docNumber>
+  <docDate date="1988-11-03">3 نوفمبر سنة 1988</docDate>
+  <docAuthority>البرلمان</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>بناء على التعديل الدستوري المصادق عليه في إستفتاء 3 نوفمبر سنة 1988</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يصدر القانون الآتي نصه</p>
+  </formula>
+</preamble>
+    <body>
+      <chapter eId="chp_الأول_المبادئ_الأساسية_لتنظيم_المجتمع_الجزائري">
+        <num>الأول المبادئ الأساسية لتنظيم المجتمع الجزائري</num>
+        <section eId="chp_الأول_المبادئ_الأساسية_لتنظيم_المجتمع_الجزائري_sec_الأول_الجمهورية">
+          <num>الأول الجمهورية</num>
+          <article eId="art_5">
+            <num>5</num>
+            <content>
+            <paragraph>
+            <p><term refersTo="#national_sovereignty">السيادة الوطنية</term> ملك للشعب</p>
+            </paragraph>
+            <paragraph>
+            <p>يمارس الشعب هذه السيادة عن طريق الاستفتاء</p>
+            </paragraph>
+            <paragraph>
+            <p>يمارس الشعب هذه السيادة كذلك بواسطة ممثليه المنتخبين. .</p>
+            </paragraph>
+            <paragraph>
+            <p>الرئيس الجمهورية أن يرجع مباشرة إلى ارادة الشعب.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+      <chapter eId="chp_الثاني_السلطة_و_تنظيمها">
+        <num>الثاني السلطة و تنظيمها</num>
+        <section eId="chp_الثاني_السلطة_و_تنظيمها_sec_الثاني_الوظيفة_التنفيذية">
+          <num>الثاني الوظيفة التنفيذية</num>
+          <article eId="art_104">
+            <num>المادة 104</num>
+            <content>
+            <paragraph>
+            <p>يجسد <term refersTo="#president">رئيس الجمهورية</term>، رئيس الدولة، وحدة الأمة.</p>
+            </paragraph>
+            <paragraph>
+            <p>هو حامي الدستور يجسد الدولة داخل البلاد وخارجها.</p>
+            </paragraph>
+            <paragraph>
+            <p>له أن يخاطب الأمة مباشرة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_111">
+            <num>المادة 111</num>
+            <content>
+            <paragraph>
+            <p>يضطلع <term refersTo="#president">رئيس الجمهورية</term>، بالاضافة الى السلطات التي تخولها إياه صراحة أحكام أخرى في الدستور، بالسلطات والصلاحيات الآتية :</p>
+            <list>
+            <point>
+            <p>1) هو القائد الأعلى لجميع القوات المسلحة للجمهورية،</p>
+            </point>
+            <point>
+            <p>2) يتولى مسؤولية الدفاع الوطني،</p>
+            </point>
+            <point>
+            <p>3) يقرر السياسة الخارجية للأمة، طبقا للميثاق الوطني وأحكام الدستور ويوجهها،</p>
+            </point>
+            <point>
+            <p>4) يعين <term refersTo="#head_of_government">رئيس الحكومة</term> وينهي مهامه،</p>
+            </point>
+            <point>
+            <p>5) يرأس مجلس الوزراء،</p>
+            </point>
+            <point>
+            <p>6) يوقع المراسيم الرئاسية،</p>
+            </point>
+            <point>
+            <p>7) يعين في الوظائف المدنية والعسكرية طبقا للقانون،</p>
+            </point>
+            <point>
+            <p>8) له حق اصدار العفو وحق الغاء العقوبات أو تخفيضها، وحق ازالة الآثار القانونية، أيا كانت طبيعتها، التي تترتب على الأحكام التي تصدرها أية جهة قضائية،</p>
+            </point>
+            <point>
+            <p>9) يمكنه أن يعمد الى استفتاء الشعب في كل قضية ذات أهمية وطنية،</p>
+            </point>
+            <point>
+            <p>10) يمكنه أن يفوض بعض سلطاته الى نائبه أو الى نوابه مع مراعاة أحكام <ref href="#art_116">المادة 116</ref> من الدستور،</p>
+            </point>
+            <point>
+            <p>11) يعين سفراء الجمهورية والمبعوثين فوق العادة الى الخارج وينهي مهامهم، ويتسلم أوراق اعتماد الممثلين الدبلوماسيين الأجانب، وأوراق انهاء مهامهم،</p>
+            </point>
+            <point>
+            <p>12) يبرم المعاهدات الدولية ويصادق عليها حسب الشروط التي يحددها الدستور،</p>
+            </point>
+            <point>
+            <p>13) يسلم أوسمة الدولة ونياشينها وشهاداتها التشريفية.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_113">
+            <num>المادة 113</num>
+            <content>
+            <paragraph>
+            <p>يضبط <term refersTo="#head_of_government">رئيس الحكومة</term> برنامج حكومته، وينسقه وينفذه. . وهو مسؤول أمام المجلس الشعبي الوطني.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_1141">
+            <num>المادة (114(1</num>
+            <content>
+            <paragraph>
+            <p>يشكل <term refersTo="#head_of_government">رئيس الحكومة</term> بعد استشارات واسعة، حكومته، ويقدم أعضاءها الذين اختارهم ل<term refersTo="#president">رئيس الجمهورية</term> الذي يعينهم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_1142">
+            <num>المادة (114(2</num>
+            <content>
+            <paragraph>
+            <p>يقدم <term refersTo="#head_of_government">رئيس الحكومة</term> برنامجه الى المجلس الشعبي الوطني للموافقة عليه.</p>
+            </paragraph>
+            <paragraph>
+            <p>يجري المجلس الشعبي الوطني مناقشة عامة للبرنامج المقدم.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويمكن <term refersTo="#head_of_government">رئيس الحكومة</term> أن يكيف برنامجه، في ضوء هذه المناقشة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_1143">
+            <num>المادة (114(3</num>
+            <content>
+            <paragraph>
+            <p><condition>في حالة عدم موافقة المجلس الشعبي الوطني على البرنامج المعروض</condition>، <obligation>يقدم رئيس الحكومة لرئيس الجمهورية استقالة حكومته</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يعين <term refersTo="#president">رئيس الجمهورية</term> من جديد <term refersTo="#head_of_government">رئيس حكومة</term></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_1144">
+            <num>المادة (114(4</num>
+            <content>
+            <paragraph>
+            <p><condition>اذا لم تحصل موافقة المجلس الشعبي الوطني على برنامج عمل رئيس الحكومة من جديد</condition>، يحل المجلس قانونا.</p>
+            </paragraph>
+            <paragraph>
+            <p>تنظم انتخابات تشريعية جديدة في أجل أقصاه ثلاثة أشهر.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_1145">
+            <num>المادة (114(5</num>
+            <content>
+            <paragraph>
+            <p>تقدم الحكومة للمجلس الشعبي الوطني بيانا سنويا عن السياسة العامة .</p>
+            </paragraph>
+            <paragraph>
+            <p>يعقب هذا البيان نقاش عام حول عمل الحكومة. ويمكن المجلس الشعبي الوطني أن يختتم هذا النقاش بلائحة.</p>
+            </paragraph>
+            <paragraph>
+            <p>الرئيس الحكومة أن يطلب تصويتا بالثقة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_1151">
+            <num>(115(1</num>
+            <content>
+            <paragraph>
+            <p><obligation>يمارس <term refersTo="#head_of_government">رئيس الحكومة</term>، زيادة على السلطات التي تخولها إياه صراحة أحكام أخرى في <ref href="/akn/dz/act/constitution/2020-12-30/1">الدستور</ref>، الصلاحيات الآتية :</obligation></p>
+            <list>
+            <point>
+            <p>يوزع الصلاحيات بين أعضاء الحكومة مع احترام الأحكام الدستورية،</p>
+            </point>
+            <point>
+            <p>يرأس مجلس الحكومة،</p>
+            </point>
+            <point>
+            <p>يسهر على تنفيذ القوانين والتنظيمات،</p>
+            </point>
+            <point>
+            <p>يوقع المراسيم التنفيذية،</p>
+            </point>
+            <point>
+            <p>يعين في وظائف الدولة طبقا للقانون.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_1152">
+            <num>(115(2</num>
+            <content>
+            <paragraph>
+            <p><right>ل<term refersTo="#head_of_government">رئيس الحكومة</term> أن يقدم استقالة حكومته ل<term refersTo="#president">رئيس الجمهورية</term></right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_116">
+            <num>116</num>
+            <content>
+            <paragraph>
+            <p><obligation>لا يجوز بأي حال من الأحوال أن يفوض <term refersTo="#president">رئيس الجمهورية</term> سلطته في تعيين نائب أو نواب رئيس الجمهورية، ورئيس الحكومة وأعضائها، أو في إعفائهم من مهامهم، أو في إجراء إستفتاء، أو في حل المجلس الشعبي الوطني، أو في تنظيم إنتخابات تشريعية مسبقة، أو في تطبيق الاحكام المنصوص عليها في <ref href="#art_119">المواد من 119</ref> الى <ref href="#art_124">124</ref> من الدستور، وكذلك السلطات المحددة في الفقرات <ref href="#art_111__para_1">1</ref> و<ref href="#art_111__para_2">2</ref> و<ref href="#art_111__para_3">3</ref> و<ref href="#art_111__para_5">5</ref> و <ref href="#art_111__para_8">8</ref> و <ref href="#art_111">المادة 111</ref> من الدستور</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_الثاني_السلطة_و_تنظيمها_sec_الثالث_الوظيفة_التشريعية">
+          <num>الثالث الوظيفة التشريعية</num>
+          <article eId="art_147">
+            <num>المادة 147</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن استدعاء <term refersTo="#national_people_assembly">المجلس الشعبي الوطني</term> للاجتماع في دورة استثنائية</right> <condition>بمبادرة من <term refersTo="#president">رئيس الجمهورية</term> أو بطلب من ثلثي أعضاء المجلس او من <term refersTo="#head_of_government">رئيس الحكومة</term></condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تختتم الدورة الاستثنائية بمجرد ما يستنفد <term refersTo="#national_people_assembly">المجلس الشعبي الوطني</term> جدول الاعمال الذي استدعي من أجله</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_148">
+            <num>المادة 148</num>
+            <content>
+            <paragraph>
+            <p><right>لكل من <term refersTo="#head_of_government">رئيس الحكومة</term> وأعضاء <term refersTo="#national_people_assembly">المجلس الشعبي الوطني</term> أن يبادر بالقوانين</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>تكون اقتراحات القوانين قابلة للنقاش اذا قدمها عشرون نائبا</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تقدم <term refersTo="#government">الحكومة</term> مشاريع القوانين المكتب <term refersTo="#national_people_assembly">المجلس الشعبي الوطني</term></obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_153">
+            <num>المادة 153</num>
+            <content>
+            <paragraph>
+            <p><right>لـ <term refersTo="#president">رئيس الجمهورية</term>، فيما بين دورتي <term refersTo="#national_people_assembly">المجلس الشعبي الوطني</term>، أن يشرع بأمر، بناء على اقتراح من <term refersTo="#head_of_government">رئيس الحكومة</term></right>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>وتعرض <term refersTo="#government">الحكومة</term> النصوص الصادرة بهذه الكيفية على <term refersTo="#national_people_assembly">المجلس الشعبي الوطني</term> في أول دورة لاحقة ليوافق عليها</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_155" status="modified">
+            <num>المادة 155</num>
+            <content>
+            <paragraph>
+            <p>يصبح رقم هذه المادة <ref href="#art_154">154</ref>، وتحرر هكذا :</p>
+            </paragraph>
+            <paragraph>
+            <p><right>لـ <term refersTo="#head_of_government">رئيس الحكومة</term> أن يطلب إجراء مداولة ثانية في القانون الذي تم التصويت عليه</right>، <condition>في ظرف ثلاثين (30) يوما من تاريخ إقراره</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وفي هذه الحالة يتم إقرار القانون بأغلبية ثلثي أعضاء <term refersTo="#national_people_assembly">المجلس الشعبي الوطني</term></condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_154">
+            <num>المادة 154</num>
+            <content>
+            <paragraph>
+            <p>يصبح رقم هذه المادة <ref href="#art_155">155</ref> بدون تغيير.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_156">
+            <num>المادة 156</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن <term refersTo="#president">رئيس الجمهورية</term> أن يوجه خطابا إلى <term refersTo="#national_people_assembly">المجلس الشعبي الوطني</term></right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_157">
+            <num>المادة 157</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن <term refersTo="#national_people_assembly">المجلس الشعبي الوطني</term>، بناء على طلب من <term refersTo="#president">رئيس الجمهورية</term>، أو <term refersTo="#head_of_government">رئيس الحكومة</term>، أو رئيس المجلس، أن يفتح مناقشة حول السياسة الخارجية</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>يمكن، عند الاقتضاء، أن تفضي هذه المناقشة الى إصدار لائحة من <term refersTo="#national_people_assembly">المجلس الشعبي الوطني</term></condition> يبلغها رئيسه الى <term refersTo="#president">رئيس الجمهورية</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+    </body>
+  </act>
+</akomaNtoso>

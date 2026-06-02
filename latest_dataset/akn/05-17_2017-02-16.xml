@@ -1,0 +1,540 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="law">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/law/2017-02-16/05-17/main"/>
+      <FRBRuri value="/akn/dz/act/law/2017-02-16/05-17"/>
+      <FRBRdate date="2017-02-16" name="enactment"/>
+      <FRBRauthor href="#parliament"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="05-17"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/law/2017-02-16/05-17/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/law/2017-02-16/05-17/ara@"/>
+      <FRBRdate date="2017-02-16" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/law/2017-02-16/05-17/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/law/2017-02-16/05-17/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="parliament" href="/ontology/organization/dz/parliament" showAs="البرلمان"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="president" href="/ontology/person/dz/president" showAs="رئيس الجمهورية"/>
+  </references>
+<lifecycle source="#source"><eventRef eId="evt_1" date="2017-02-16" source="#source" type="generation"/></lifecycle><analysis source="#source"><activeModifications><textualMod type="substitution" eId="amend_1"><source href="#art_1"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_2"><source href="#art_2"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_8"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_3"><source href="#art_2"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_8_bis"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_4"><source href="#art_2"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_10_bis"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_5"><source href="#art_2"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_11"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_6"><source href="#art_2"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_16"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_7"><source href="#art_2"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_27"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_8"><source href="#art_2"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_49"/><force period="#evt_1"/></textualMod><textualMod type="substitution" eId="amend_9"><source href="#art_3"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_10"><source href="#art_4"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_63"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_11"><source href="#art_5"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_63bis"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_12"><source href="#art_5"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_63bis1"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_13"><source href="#art_6"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_64"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_14"><source href="#art_6"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_66"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_15"><source href="#art_7"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_69"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_16"><source href="#art_9"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_71"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_17"><source href="#art_10"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_71_bis"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_18"><source href="#art_11"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_79"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_19"><source href="#art_11"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_87"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_20"><source href="#art_11"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_89"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_21"><source href="#art_11"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_92"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_22"><source href="#art_12"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_92_bis"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_23"><source href="#art_13"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_93"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_24"><source href="#art_13"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_97"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_25"><source href="#art_13"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_98"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_26"><source href="#art_14"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_98_bis"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_27"><source href="#art_15"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_99"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_28"><source href="#art_15"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_108"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_29"><source href="#art_15"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_134"/><force period="#evt_1"/></textualMod><textualMod type="repeal" eId="amend_30"><source href="#art_17"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_83"/><force period="#evt_1"/></textualMod><textualMod type="repeal" eId="amend_31"><source href="#art_17"/><destination href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_137"/><force period="#evt_1"/></textualMod><textualMod type="repeal" eId="amend_32"><source href="#art_17"/><destination href="/akn/dz/act/law/2004-11-10/04-16#art_10_bis"/><force period="#evt_1"/></textualMod></activeModifications></analysis></meta>
+    <preface>
+  <docTitle>قانون رقم 05-17 يعدل ويتمم القانون رقم 01-14_2001-08-19 والمتعلق بتنظيم حركة المرور عبر الطرق وسلامتها وأمنها</docTitle>
+  <docNumber>05-17</docNumber>
+  <docDate date="2017-02-16">19 جمادى الأولى عام 1438 الموافق 16 فبراير سنة 2017</docDate>
+  <docAuthority>البرلمان</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>إن رئيس الجمهورية،</p>
+    </citation>
+    <citation>
+      <p>بناء على الدستور، لا سيما المواد 18 و136 و 137 و 138 و 140 و 143 و 144 منه،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 90-30 المؤرخ في 14 جمادى الأولى عام 1411 الموافق أول ديسمبر سنة 1990 والمتضمن قانون الأملاك الوطنية، المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 01-14_2001-08-19 المؤرخ في 29 جمادى الأولى عام 1422 الموافق 19 غشت سنة 2001 والمتعلق بتنظيم حركة المرور عبر الطرق وسلامتها وأمنها المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>وبعد رأي مجلس الدولة،</p>
+    </citation>
+    <citation>
+      <p>وبعد مصادقة البرلمان،</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يصدر القانون الآتي نصه :</p>
+  </formula>
+</preamble>
+    <body>
+      <article eId="art_1">
+        <num>المادة الأولى</num>
+        <content>
+        <paragraph>
+        <p>يهدف هذا القانون إلى تعديل وتتميم <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19">القانون رقم 01-14_2001-08-19 المؤرخ في 29 جمادى الأولى عام 1422 الموافق 19 غشت سنة 2001 والمتعلق بتنظيم حركة المرور عبر الطرق وسلامتها وأمنها</ref> المعدل والمتمم.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_2">
+        <num>المادة 2</num>
+        <content>
+        <paragraph>
+        <p><obligation>تعدل وتتمم</obligation> أحكام المواد <ref href="#art_2">2</ref> و <ref href="#art_8">8</ref> و <ref href="#art_8_bis">8 مكرر</ref> و <ref href="#art_10_bis">10 مكرر</ref> و <ref href="#art_11">11</ref> و <ref href="#art_16">16</ref> و <ref href="#art_27">27</ref> و <ref href="#art_49">49</ref> من <ref href="/akn/dz/act/law/2001-08-19/14-01">القانون رقم 01-14_2001-08-19 المؤرخ في 29 جمادى الأولى عام 1422 الموافق 19 غشت سنة 2001</ref> والمذكور أعلاه، وتحرر كما يأتي :</p>
+        </paragraph>
+        </content>
+        </article>
+        
+      <article eId="art_3" status="original">
+        <num>3</num>
+        <content>
+        <paragraph>
+        <p>يعدل ويتمم عنوان و أحكام الفصل الرابع من <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19">القانون رقم 01-14_2001-08-19 المؤرخ في 29 جمادى الأولى عام 1422 الموافق 19 غشت سنة 2001</ref> والمذكور أعلاه، وتحرر كما يأتي:</p>
+        </paragraph>
+        </content>
+        </article>
+      <section eId="sec_4">
+        <num>الرابع</num>
+        <heading>تكوين السائقين ونظام الرخصة بالنقاط</heading>
+        <subsection eId="sec_4_subsec_1">
+          <num>الأول</num>
+          <heading>تكوين السائقين</heading>
+        </subsection>
+        <subsection eId="sec_4_subsec_2">
+          <num>الثاني</num>
+          <heading>نظام الرخصة بالنقاط</heading>
+          <article eId="art_4">
+            <num>المادة 4</num>
+            <content>
+            <paragraph>
+            <p>تدرج ضمن أحكام <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_63">المادة 63 من القانون رقم 01–14 المؤرخ في 29 جمادى الأولى عام 1422 الموافق 19 غشت سنة 2001</ref> والمذكور أعلاه، مطة ثامنة (8) تحرر كما يأتي:</p>
+            </paragraph>
+            <paragraph>
+            <p>" <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_63">المادة 63</ref> :................... (بدون تغيير)...................</p>
+            <list>
+            <point>
+            <p><obligation>السهر على تكوين مترشحين للحصول على <term refersTo="#driving_license">رخصة السياقة</term></obligation>".</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+            
+          <article eId="art_5">
+            <num>المادة 5</num>
+            <content>
+            <paragraph>
+            <p>تدرج ضمن أحكام <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19">القانون رقم 01-14_2001-08-19 المؤرخ في 29 جمادى الأولى عام 1422 الموافق 19 غشت سنة 2001</ref> و المذكور أعلاه مادتان <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_63bis">63 مكرر</ref> و <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_63bis1">63 مكرر 1</ref> تحرران كما يأتي:</p>
+            </paragraph>
+            <paragraph>
+            <p>" <article eId="art_63bis" status="new">
+            <num>المادة 63 مكرر</num>
+            <content>
+            <paragraph>
+            <p><obligation>يحدث <term refersTo="#consultative_council">مجلس تشاوري ما بين القطاعات</term> يوضع لدى <term refersTo="#prime_minister">الوزير الأول</term>، يكلف بتحديد السياسة والاستراتيجية الوطنية للوقاية والأمن في الطرق والتنسيق المؤسساتي بين كافة الفاعلين المعنيين</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد طبيعة هذا المجلس ومهامه وعمله وتنظيمه عن طريق التنظيم ".</p>
+            </paragraph>
+            </content>
+            </article></p>
+            </paragraph>
+            <paragraph>
+            <p>" <article eId="art_63bis1" status="new">
+            <num>المادة 63 مكرر 1</num>
+            <content>
+            <paragraph>
+            <p><obligation>تنشأ <term refersTo="#national_delegation">مندوبية وطنية للأمن في الطرق</term> تابعة للوزارة المكلفة بالداخلية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تكلف بتنفيذ السياسة الوطنية للوقاية والأمن في الطرق من الناحية العملية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد طبيعة هذه المندوبية ومهامها وعملها وتنظيمها عن طريق التنظيم".</p>
+            </paragraph>
+            </content>
+            </article></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_6">
+            <num>6</num>
+            <content>
+            <paragraph>
+            <p>تعدل وتتمم أحكام المادتين <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_64">64</ref> و <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_66">66</ref> من <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19">القانون رقم 01-14_2001-08-19 المؤرخ في 29 جمادى الأولى عام 1422 الموافق 19 غشت سنة 2001</ref> والمذكور أعلاه، وتحرران كما يأتي</p>
+            </paragraph>
+            <paragraph>
+            <p>" <ref href="#art_64">المادة 64</ref>: ...................(بدون تغییر حتى) والأمن في الطرق.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يوضع هذا المركز تحت وصاية <term refersTo="#minister">الوزارة المكلفة بالداخلية</term></obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>...................( الباقي بدون تغيير)...................".</p>
+            </paragraph>
+            <paragraph>
+            <p>"<ref href="#art_66">المادة 66</ref> : تصنف المخالفات للقواعد الخاصة بحركة المرور عبر الطرق إلى أربع (4) درجات:</p>
+            <list>
+            <point>
+            <p>1) المخالفات من الدرجة الأولى مثلما هي مبينة أدناه، ويعاقب عليها بغرامة جزافية تحدد ب 2000 دج :</p>
+            <list>
+            <point><p>1 - مخالفة الأحكام المتعلقة بالإنارة وكبح الدراجات،</p></point>
+            <point><p>2 - مخالفة الأحكام المتعلقة بالإنارة والإشارة وكبح الدراجات المتحركة، والدراجات النارية،</p></point>
+            <point><p>3 - مخالفة الأحكام المتعلقة بتقديم وثائق المركبة، وعند الاقتضاء، شهادة الكفاءة المهنية،</p></point>
+            <point><p>4 - مخالفة الأحكام المتعلقة باستخدام آلة أو جهاز مركبة غير مطابق.</p></point>
+            <point><p>5 - مخالفة الراجلين للقواعد التي تنظم سيرهم، لا سيما القواعد المتعلقة باستعمال الممرات المحمية،</p></point>
+            <point><p>6 - مخالفة الأحكام المتعلقة بالخلل في أجهزة الإنارة وإشارة السيارات،</p></point>
+            <point><p>7 - مخالفة الأحكام المتعلقة بوضع حزام الأمن من قبل راكبي المركبات ذات محرك.</p></point>
+            </list>
+            </point>
+            <point>
+            <p>ب) المخالفات من الدرجة الثانية مثلما هي مبينة أدناه، ويعاقب عليها بغرامة جزافية تحدد ب . 2500 دج</p>
+            <list>
+            <point><p>1 - مخالفة الأحكام المتعلقة باستخدام أجهزة التنبيه الصوتي،</p></point>
+            <point><p>2 - مخالفة الأحكام المتعلقة بالمرور في أوساط الطرق أو المسالك أو الدروب أو أشرطة الطريق أو الأرصفة أو حواف الطرق المخصصة لمرور مركبات النقل العمومي وغيرها من المركبات المرخص لها بذلك خصيصا، ولمرور الراجلين،</p></point>
+            <point><p>3 - مخالفة الأحكام المتعلقة بالتخفيض غير العادي للسرعة بدون أسباب حتمية من شأنه تقليص سيولة حركة المرور،</p></point>
+            <point><p>4 - مخالفة الأحكام المتعلقة بلوحات التسجيل والتجهيزات وإشارات النقل الاستثنائي وكذا مؤشرات السرعة</p></point>
+            <point><p>5 - مخالفة الأحكام المتعلقة بوضع الإشارة الملائمة من قبل كل سائق صاحب رخصة سياقة في الفترة الاختبارية،</p></point>
+            <point><p>6 - مخالفة الأحكام المتعلقة بالسير على الخط المتواصل،</p></point>
+            <point><p>7 - مخالفة الأحكام المتعلقة بالتوقف أو الوقوف التعسفي المعيق الحركة المرور،</p></point>
+            <point><p>8 - مخالفة الأحكام المتعلقة بمرور مركبة ذات محرك أو مقطورة في المسالك المفتوحة لحركة المرور دون أن تكون هذه المركبة مزودة بلوحتي التسجيل،</p></point>
+            <point><p>9 - مخالفة الأحكام المتعلقة بعدم التصريح بنقل ملكية المركبة أو عدم التصريح بتغيير إقامة مالك المركبة،</p></point>
+            <point><p>10 - مخالفة الأحكام المتعلقة بتجاوز حد السرعة القانونية المرخص بها بنسبة لا تفوق 10 %، والتي قامت التجهيزات المعتمدة بمعاينتها للمركبات ذات محرك بمقطورة، أو دون مقطورة، أو نصف مقطورة في بعض مقاطع رق، ولكل صنف من أصناف المركبات.</p></point>
+            </list>
+            </point>
+            <point>
+            <p>ج) المخالفات من الدرجة الثالثة مثلما هي مبينة أدناه، ويعاقب عليها بغرامة جزافية تحدد ب3000 دج:</p>
+            <list>
+            <point><p>1 - مخالفة الأحكام المتعلقة بتجاوز حد السرعة القانونية المرخص بها بنسبة تفوق 10 % وتقل عن 20 %، والتي قامت التجهيزات المعتمدة بمعاينتها للمركبات ذات محرك بمقطورة، أو دون مقطورة، أو نصف مقطورة في بعض مقاطع الطرق، ولكل صنف من أصناف المركبات،</p></point>
+            <point><p>2 - مخالفة الأحكام المتعلقة بمنع المرور أو تقييده في بعض خطوط السير بالنسبة لبعض أصناف المركبات أو بالنسبة للمركبات التي تقوم ببعض أنواع النقل،</p></point>
+            <point><p>3 - مخالفة الأحكام المتعلقة بوضع حزام الأمن من قبل سائق مركبة ذات محرك،</p></point>
+            <point><p>4 - مخالفة الأحكام المتعلقة بالارتداء الإجباري للخوذة بالنسبة لسائقي الدراجات المتحركة والدراجات النارية وراكبيها،</p></point>
+            <point><p>5 - مخالفة الأحكام المتعلقة بالمرور أو التوقف أو الوقوف بدون ضرورة حتمية على شريط الوقوف الاستعجالي للطريق السيار، أو الطريق السريع،</p></point>
+            <point><p>6 - مخالفة الأحكام المتعلقة بالتوقف أو الوقوف الخطيرين،</p></point>
+            <point><p>7 - مخالفة الأحكام المتعلقة بمنع نقل الأطفال الذين تقل أعمارهم عن عشر (10) سنوات في المقاعد الأمامية،</p></point>
+            <point><p>8 - مخالفة الأحكام المتعلقة بالمركبات غير المزودة بالتجهيزات التي تسمح للسائق بأن يكون له مجال رؤية كاف،</p></point>
+            <point><p>9 - مخالفة الأحكام المتعلقة بوضع شريط بلاستيكي أو أية مادة معلمة أخرى على زجاج المركبة،</p></point>
+            <point><p>10 - مخالفة الأحكام المتعلقة بعدم التصريح بالتغييرات التي أجريت على المركبة،</p></point>
+            <point><p>11 - مخالفة الأحكام المتعلقة بإلزام حائزي رخص السياقة في الفترة الاختبارية للتكوين وعلى نفقتهم،</p></point>
+            <point><p>12 - مخالفة الأحكام المتعلقة بطبيعة الأطر المطاطية للمركبات ذات محرك، غير المطابقة للمعايير المقبولة وشكلها وحالتها،</p></point>
+            <point><p>13 - مخالفة الأحكام المتعلقة بإلزامية المراقبة التقنية الدورية للمركبات.</p></point>
+            </list>
+            </point>
+            <point>
+            <p>د) المخالفات من الدرجة الرابعة مثلما هي مبينة أدناه، ويعاقب عليها بغرامة جزافية تحدد ب 5000 دج :</p>
+            <list>
+            <point><p>1 - مخالفة الأحكام المتعلقة باتجاه المرور المفروض،</p></point>
+            <point><p>2 - مخالفة الأحكام المتعلقة بتقاطع الطرقات وأولوية المرور،</p></point>
+            <point><p>3 - مخالفة الأحكام المتعلقة بالتقاطع والتجاوز،</p></point>
+            <point><p>4 - مخالفة الأحكام المتعلقة بإشارات الأمر بالتوقف التام،</p></point>
+            <point><p>5 - مخالفة الأحكام المتعلقة بالمناورات الممنوعة على الطرق السيارة، والطرق السريعة،</p></point>
+            <point><p>6 - مخالفة الأحكام المتعلقة بزيادة السرعة من طرف سائق المركبة أثناء محاولة تجاوزه من قبل سائق آخر،</p></point>
+            <point><p>7 - مخالفة الأحكام المتعلقة بسير مركبة بدون إنارة أو إشارة أو وقوفها في وسط الطريق ليلا أو أثناء انتشار الضباب في مكان خال من الإنارة العمومية،</p></point>
+            <point><p>8 - مخالفة الأحكام المتعلقة بمنع المرور على مسلك يقع مباشرة على يسار طريق يتضمن ثلاثة مسالك أو أكثر ذات اتجاه واحد للمرور بالنسبة لمركبات نقل الأشخاص التي تشتمل على أكثر من تسعة (9) مقاعد، أو لمركبات نقل البضائع التي يتجاوز طولها سبعة (7) أمتار ، أو ذات وزن إجمالي مرخص به مع الحمولة يفوق 3.5 طنا،</p></point>
+            <point><p>9 - مخالفة الأحكام المتعلقة بمنع الوقوف أو التوقف على أجزاء الطريق التي تعبر سطحها سكة حديدية أو سير مركبات غير مرخص لها بذلك على الخطوط الحديدية،</p></point>
+            <point><p>10 - مخالفة الأحكام المتعلقة بعبور بعض مقاطع الطرق الممنوعة للسير أو بعض الجسور ذات الحمولة المحدودة،</p></point>
+            <point>
+            <p>11 - مخالفة الأحكام المتعلقة بوزن المركبات ذات محرك غير المطابقة للمعايير المقبولة.</p>
+            <list>
+            <point><p>غرامة من 5000 دج لكل 250 كلغ من الحمولة الزائدة في مركبات يقل وزنها الإجمالي المرخص به مع الحمولة 3.5 طن.</p></point>
+            <point><p>غرامة من 5000 دج لكل 500 كلغ من الحمولة الزائدة في مركبات يفوق وزنها الإجمالي المرخص به مع الحمولة 3.5 طن،</p></point>
+            </list>
+            </point>
+            <point><p>12 - مخالفة الأحكام المتعلقة بمكابح المركبات ذات محرك، وربط المقطورات ونصف المقطورات،</p></point>
+            <point>
+            <p>13 - مخالفة الأحكام المتعلقة بالحمولة القصوى لكل محور.</p>
+            <list>
+            <point><p>غرامة من 5000دج لكل 200 كلغ من الحمولة الزائدة في كل محور،</p></point>
+            </list>
+            </point>
+            <point><p>14 - مخالفة الأحكام المتعلقة بتركيب جهاز تسجيل وقت السرعة بالميقت، وخصوصياته وتشغيله واستعماله الملائم وصيانته،</p></point>
+            <point><p>15 - مخالفة الأحكام المتعلقة بالتغيير الهام للاتجاه دون تأكد السائق من أن المناورة لا تشكل خطرا على المستعملين الآخرين ودون تنبيههم برغبته في تغيير الاتجاه،</p></point>
+            <point><p>16 - مخالفة الأحكام المتعلقة باجتياز خط متواصل،</p></point>
+            <point><p>17 - مخالفة الأحكام المتعلقة بتشغيل الأجهزة السمعية البصرية في مقدمة المركبة أثناء السياقة،</p></point>
+            <point><p>18 - مخالفة الأحكام المتعلقة بالمكوث على الشريط الوسطي الذي يفصل أوساط الطرق في الطريق السيار والطريق السريع،</p></point>
+            <point><p>19 - مخالفة الأحكام المتعلقة بحجم المركبات وتركيب أجهزة إنارة وإشارة المركبات،</p></point>
+            <point><p>20 - مخالفة الأحكام المتعلقة بالاستمرار في قيادة مركبة دون إجراء الفحص الطبي الدوري،</p></point>
+            <point><p>21 - مخالفة الأحكام المتعلقة بتتعليم سياقة المركبات ذات محرك بمقابل أو بدون مقابل،</p></point>
+            <point><p>22 - مخالفة الأحكام المتعلقة بعدم احترام مدة السياقة، ومدة الراحة من قبل سائقي مركبات نقلالبضائع التي يفوق وزنها الإجمالي المرخص به مع الحمولة أو وزنها الإجمالي السائر المرخص به 3.500 كلغ ومركبات نقل الأشخاص التي تشتمل على أكثر من تسعة (9) مقاعد بما في ذلك مقعد السائق،</p></point>
+            <point><p>23 - مخالفة الأحكام المتعلقة بحالات الإلزام أو المنع الخاصة بعبور السكك الحديدية الواقعة على الطريق،</p></point>
+            <point><p>24 - مخالفة الأحكام المتعلقة بالاستعمال اليدوي للهاتف المحمول، أو التصنت بكلتا الأذنين بوضع خوذة التصنت الإذاعي والسمعي أثناء السياقة،</p></point>
+            <point><p>25 - مخالفة الأحكام المتعلقة بتجاوز حدود السرعة المنصوص عليها بالنسبة لصنف السائقين الحائزين رخصة السياقة في الفترة الاختبارية،</p></point>
+            <point><p>26 - مخالفة الأحكام المتعلقة بأولوية مرور الراجلين على مستوى الممرات المحمية،</p></point>
+            <point><p>27 - مخالفة الأحكام المتعلقة بالمسافة القانونية بين المركبات أثناء سيرها،</p></point>
+            <point><p>28 - مخالفة الأحكام المتعلقة بالضرر أو الخطر الملحق بالغير، أو بالمسلك العمومي وبتجهيزاته أو بملحقاته،</p></point>
+            <point><p>29 - مخالفة الأحكام المتعلقة بتصاعد الدخان والغازات السامة وإصدار الضجيج عند تجاوز المستويات المحددة،</p></point>
+            <point><p>30 - مخالفة الأحكام المتعلقة بتجاوز حد السرعة القانونية المرخص بها بنسبة تفوق 20 % وتقل عن 30 %، والتي قامت التجهيزات المعتمدة بمعاينتها للمركبات ذات محرك بمقطورة، أو دون مقطورة أو نصف مقطورة، في بعض مقاطع الطرق، ولكل صنف من أصناف المركبات.</p></point>
+            </list>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_7">
+            <num>7</num>
+            <content>
+            <paragraph>
+            <p>تدرج ضمن أحكام <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_69">المادة 69 من القانون رقم 01 – 14 المؤرخ في 29 جمادى الأولى عام 1422 الموافق 19 غشت سنة 2001</ref> والمذكور أعلاه، مطة عاشرة (10) تحرر كما يأتي:</p>
+            </paragraph>
+            <paragraph>
+            <p>" <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_69">المادة 69</ref> : ...................(بدون تغيير)...................</p>
+            <list>
+            <point>
+            <p>السير مع حمولة زائدة.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>- ................ ( الباقي بدون تغيير)..................."</p>
+            </paragraph>
+            </content>
+            </article>
+            
+          <article eId="art_8" status="modified">
+            <num>المادة 8</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على كل سائق مركبة أن يكون حائزا ل<term refersTo="#driving_license">رخصة سياقة</term> موافقة للمركبة التي يقودها</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يخصص ل<term refersTo="#driving_license">رخصة السياقة</term> رصيد نهائي من النقاط يحدد بأربع وعشرين (24) نقطة.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويتم تخفيضه بقوة القانون <condition>في حالة ما إذا ارتكب صاحب الرخصة مخالفة تم بموجبها النص على هذا التخفيض</condition>، ويضاف إلى هذا التخفيض سحب آخر حالة في عدم دفع الغرامة الجزافية المطابقة للنقاط لإحدى المخالفات المنصوص عليها في هذا القانون.</p>
+            </paragraph>
+            <paragraph>
+            <p>يخصص ل<term refersTo="#driving_license">رخصة السياقة</term> خلال <term refersTo="#probationary_period">الفترة الاختبارية</term>، رصيد أولي يحدد باثنتي عشرة (12) نقطة، و<condition>في حالة فقدان النقاط خلال هذه الفترة</condition>، <obligation>يلزم صاحب الرخصة بمتابعة تكوين على نفقته لاسترجاع النقاط الضائعة</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>أما بعد انتهاء <term refersTo="#probationary_period">الفترة الاختبارية</term>، و<condition>في حالة فقدان حائز الرخصة لبعض النقاط</condition> ، لا تمنح له سوى النقاط المتبقية من الرصيد النهائي، أما <condition>في حالة عدم ارتکاب حائز الرخصة أية مخالفة تؤدي إلى سحب النقاط</condition>، يخصص له رصيد نهائي يقدر ب 24 نقطة.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة ارتكاب عدة مخالفات في وقت واحد أدت سحب النقاط</condition> ، تجمع عمليات سحب النقاط في حدود نصف عدد نقاط الرصيد النهائي.</p>
+            </paragraph>
+            <paragraph>
+            <p>يؤثر سحب النقاط على <term refersTo="#driving_license">رخصة السياقة</term> في مجملها كسند وحيد غير قابل للتجزئة يتضمن، عند الاقتضاء، عدة أصناف أيا كانت المركبة المستعملة عند ارتكاب المخالفة.</p>
+            </paragraph>
+            <paragraph>
+            <p>تعد بمثابة <term refersTo="#driving_license">رخصة السياقة</term>، الشهادات المنصوص عليها في التنظيمات الخاصة بقيادة المركبات ذات محرك، عندما لا تكون <term refersTo="#driving_license">رخصة السياقة</term> مطلوبة.</p>
+            </paragraph>
+            <paragraph>
+            <p>وزيادة على <term refersTo="#driving_license">رخصة السياقة</term>، تحدث شهادة الكفاءة المهنية من أجل نقل الأشخاص والبضائع والمواد الخطرة.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+            
+          <article eId="art_9">
+            <num>9</num>
+            <content>
+            <paragraph>
+            <p>تدرج ضمن أحكام <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_71">المادة 71 من القانون رقم 1401 المؤرخ في 29 جمادى الأولى عام 1422 الموافق 19 غشت سنة 2001</ref> والمذكور أعلاه، مطة عاشرة (10) تحرر كما يأتي:</p>
+            </paragraph>
+            <paragraph>
+            <p>" <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_71">المادة 71</ref> : .............. بدون تغيير.</p>
+            <list>
+            <point>
+            <p>السير مع حمولة زائدة.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>- ................. (الباقي بدون تغيير) ..................."</p>
+            </paragraph>
+            </content>
+            </article>
+            
+          <article eId="art_10">
+            <num>10</num>
+            <content>
+            <paragraph>
+            <p>تدرج ضمن أحكام <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19">القانون رقم 1401 المؤرخ في 29 جمادى الأولى عام 1422 الموافق 19 غشت سنة 2001</ref> و المذكور أعلاه <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_71_bis">مادة 71 مكرر</ref> تحرر كما يأتي:</p>
+            </paragraph>
+            <paragraph>
+            <p>" <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_71_bis">المادة 71 مكرر</ref> : <obligation>يعاقب بالحبس من ستة (6) أشهر إلى سنتين (2) ، وبغرامة من 20.000 دج إلى 50.000 دج، كل <term refersTo="#driver">سائق مركبة نقل البضائع</term> التي يتجاوز وزنها الإجمالي المرخص به مع الحمولة، أو وزنها الإجمالي السائر المرخص به 3.500 كلغ أو مركبة نقل الأشخاص التي تشتمل على أكثر من تسعة (9) مقاعد بما في ذلك مقعد السائق، وذلك <condition>عقب عدم احترام التدابير القانونية المتعلقة بمدة السياقة، ومدة الراحة، التي تسببت في حادث مرور نجم عنه جنحة الجرح الخطأ</condition></obligation> ".</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_11">
+            <num>11</num>
+            <content>
+            <paragraph>
+            <p>تعدل وتتمم أحكام المواد <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_79">79</ref> و<ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_87">87</ref> و <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_89">89</ref> و <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_92">92</ref> من <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19">القانون رقم 01-14_2001-08-19 المؤرخ في 29 جمادى الأولى عام 1422 الموافق 19 غشت سنة 2001</ref> والمذكور أعلاه، وتحرر كما يأتي:</p>
+            </paragraph>
+            <paragraph>
+            <p>" <ref href="#art_79">المادة 79</ref> : <obligation>يعاقب بالحبس من ستة (6) أشهر إلى سنة(1) وبغرامة من 20.000 دج إلى 50.000دج، كل شخص يقود مركبة دون أن يكون حائزا لرخصة سياقة صالحة لصنف المركبة المعنية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويمنع، علاوة على ذلك، لمدة سنة من طلب الحصول على <term refersTo="#driving_license">رخصة السياقة</term> للأصناف الأخرى.</p>
+            </paragraph>
+            <paragraph>
+            <p>لا يسري مفعول منع طلب الحصول على <term refersTo="#driving_license">رخصة السياقة</term> إلا بعد تنفيذ العقوبة".</p>
+            </paragraph>
+            <paragraph>
+            <p>"<ref href="#art_87">المادة 87</ref> : <obligation>يعاقب بغرامة من 50.000 دج إلى 150.000 دج ، كل شخص لا يمتثل للقواعد الخاصة بتنظيم السباقات على المسلك العمومي</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>علاوة على العقوبات المنصوص عليها في البند الخامس من <ref href="#art_62_bis">المادة 62 مكرر</ref> أعلاه، <obligation>يعاقب بغرامة من 50.000 دج إلى 150.000 دج، كل شخص يشارك في سباق المركبات ذات محرك غير المرخص لها في المسللك العمومي</obligation>".</p>
+            </paragraph>
+            <paragraph>
+            <p>" <ref href="#art_89">المادة 89</ref> : <obligation>يعاقب بغرامة من 10.000 دج إلى 50.000 دج، كل سائق تجاوز حد السرعة القانونية المرخص بها بنسبة 30% فما فوق، والتي قامت التجهيزات المعتمدة بمعاينتها للمركبات ذات محرك بمقطورة، أو دون مقطورة، أو نصف مقطورة في بعض مقاطع الطرق، ولكل صنف من أصناف المركبات</obligation>".</p>
+            </paragraph>
+            <paragraph>
+            <p>" <ref href="#art_92">المادة 92</ref> : <condition>في حالة ارتكاب جنح يعاينها قانونا الأعوان المؤهلون، باستثناء الجنح المذكورة في المواد <ref href="#art_77">77</ref> و <ref href="#art_79">79</ref> و <ref href="#art_84">84</ref> و <ref href="#art_85">85</ref> و <ref href="#art_86">86</ref> أعلاه</condition>، <obligation>يجب أن تكون رخصة السياقة موضوع احتفاظ على سبيل التحفظ، طبقا للإجراءات المنصوص عليها في التشريع المعمول به</obligation>".</p>
+            </paragraph>
+            </content>
+            </article>
+            
+          <article eId="art_12">
+            <num>12</num>
+            <content>
+            <paragraph>
+            <p>تدرج ضمن أحكام <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19">القانون رقم 1401 المؤرخ في 29 جمادى الأولى عام 1422 الموافق 19 غشت سنة 2001</ref> والمذكور أعلاه، <ref href="#art_92_bis">مادة 92 مكرر</ref> تحرر كما يأتي:</p>
+            </paragraph>
+            <paragraph>
+            <p>"<ref href="#art_92_bis">المادة 92 مكرر</ref>: <condition>عندما يرتكب حائز رخصة السياقة الأجنبية أية مخالفة منصوص عليها في</condition></p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+        <subsection eId="sec_4_subsec_الأول_من_هذا_الفصل_يتم_الاحتفاظ_بها_إلى_غاية_تسديد_الغرامة_الجزافية_">
+          <num>الأول من هذا الفصل يتم الاحتفاظ بها إلى غاية تسديد الغرامة الجزافية ".</num>
+          <article eId="art_13">
+            <num>المادة 13</num>
+            <content>
+            <paragraph>
+            <p>تعدل وتتمم أحكام <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_93">المواد 93</ref> و <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_97">97</ref> و <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_98">98</ref> من <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19">القانون رقم 01-14_2001-08-19 المؤرخ في 29 جمادى الأولى عام 1422 الموافق 19 غشت سنة 2001</ref> والمذكور أعلاه، وتحرر كما يأتي:</p>
+            </paragraph>
+            <paragraph>
+            <p>" <ref href="#art_93">المادة 93</ref> : <condition>في حالة المخالفات المذكورة في القسم الأول من هذا الفصل</condition> <obligation>يسلم العون الذي عاين المخالفة للسائق الإخطار بالمخالفة من أجل دفع الغرامة الجزافية في أجل أقصاه خمسة وأربعون (45) يوما</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>ومع انقضاء هذا الأجل وفي حالة عدم دفع الغرامة الجزافية</condition>، <obligation>يرسل محضر عدم الدفع إلى وكيل الجمهورية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>وفي هذه الحالة، يرفع مبلغ الغرامة بحدها الأقصى كما يأتي:</p>
+            <list>
+            <point><p>3000 دج، بالنسبة للمخالفات من الدرجة الأولى،</p></point>
+            <point><p>4000 دج، بالنسبة للمخالفات من الدرجة الثانية،</p></point>
+            <point><p>6000 دج، بالنسبة للمخالفات من الدرجة الثالثة،</p></point>
+            <point><p>7000 دج ، بالنسبة للمخالفات من الدرجة الرابعة.</p></point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>ترسل المعلومة إلى الإدارة المكلفة بتسيير <term refersTo="#driving_license_points_system">نظام الرخصة بالنقاط</term> للسحب الإضافي لنقطتين (2).</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم"</p>
+            </paragraph>
+            <paragraph>
+            <p>" <ref href="#art_97">المادة 97</ref> : <condition>في حالة ارتكاب السائق حائز رخصة السياقة إحدى الجنح المنصوص عليها في القسم الثاني من هذا الفصل</condition>، <obligation>يقوم العون الذي عاين المخالفة بإرسال محضر المخالفة المرتكبة مرفقا برخصة السياقة، حسب الحالة، إلى وكيل الجمهورية في أجل أقصاه اثنتان وسبعون (72) ساعة</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>ترسل المعلومة الخاصة بالجنحة المرتكبة إلى الإدارة المكلفة بتسيير <term refersTo="#driving_license_points_system">نظام الرخصة بالنقاط</term> في أجل لا يتجاوز ثمانية (8) أيام، ابتداء من تاريخ معاينة المخالفة.</p>
+            </paragraph>
+            <paragraph>
+            <p>يتم السحب التلقائي لعدد النقاط طبقا لأحكام <ref href="#art_62_bis">المادة 62 مكرر</ref> من هذا القانون.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وإذا صدر الحكم بالبراءة وبناء على طلب المعني</condition>، <right>يتم استرجاع النقاط التي تم سحبها من رخصة السياقة بعد صيرورة الحكم النهائي</right>".</p>
+            </paragraph>
+            <paragraph>
+            <p>" <ref href="#art_98">المادة 98</ref> : يمكن الجهة القضائية المختصة عندما يحال عليها محضر إثبات إحدى المخالفات المبينة في قسم الثاني من هذا الفصل، بالإضافة إلى العقوبات الجزائية الأخرى القيام بتعليق رخصة السياقة كما يأتي:</p>
+            <list>
+            <point><p>لمدة من سنتين (2) إلى أربع (4) سنوات، بالنسبة للجنح المنصوص عليها في المواد <ref href="#art_67">67</ref> و <ref href="#art_68">68</ref> و <ref href="#art_69">69</ref> و <ref href="#art_69_bis">69 مكرر</ref> و <ref href="#art_70">70</ref> و <ref href="#art_71">71</ref> و <ref href="#art_71_bis">71 مكرر</ref> و <ref href="#art_73">73</ref>،</p></point>
+            <point><p>لمدة سنة (1) بالنسبة للجنح المنصوص عليها في المواد <ref href="#art_72">72</ref> و <ref href="#art_74">74</ref> و <ref href="#art_75">75</ref> و <ref href="#art_76">76</ref> و <ref href="#art_77">77</ref> و <ref href="#art_79">79</ref> و <ref href="#art_84">84</ref> و <ref href="#art_85">85</ref> و <ref href="#art_86">86</ref> و <ref href="#art_87">87 (الفقرة 2)</ref> و <ref href="#art_89">89</ref>.</p></point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة العود</condition>، <obligation>تقوم الجهة القضائية المختصة بإلغاء رخصة السياقة</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>ماعدا حالة المنع</condition> ، <right>يمكن المعني أن يلتمس الحصول على رخصة سياقة جديدة بعد أجل خمس (5) سنوات</right>".</p>
+            </paragraph>
+            </content>
+            </article>
+            
+          <article eId="art_14">
+            <num>المادة 14</num>
+            <content>
+            <paragraph>
+            <p>تدرج ضمن أحكام <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19">القانون رقم 01-14_2001-08-19 المؤرخ في 29 جمادى الأولى عام 1422 الموافق 19 غشت سنة 2001</ref> والمذكور أعلاه، <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_98_bis">مادة 98 مكرر</ref> تحرر كما يأتي:</p>
+            </paragraph>
+            <paragraph>
+            <p>" <ref href="#art_98_bis">المادة 98 مكرر</ref> : <condition>في حالة تعليق رخصة السياقة أو إلغائها بموجب حكم قضائي</condition>، <obligation>يتعين على المعني إعادة رخصة سياقته إلى المصالح المؤهلة التابعة للوزارة المكلفة بالداخلية</obligation>."</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_15">
+            <num>المادة 15</num>
+            <content>
+            <paragraph>
+            <p>تعدل وتتمم أحكام المواد <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_99">99</ref> و<ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_108">108</ref> و<ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_134">134</ref> من <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19">القانون رقم 01-14_2001-08-19 المؤرخ في 29 جمادى الأولى عام 1422 الموافق 19 غشت سنة 2001</ref> والمذكور أعلاه، وتحرر كما يأتي:</p>
+            </paragraph>
+            <paragraph>
+            <p>" <ref href="#art_99">المادة 99</ref> : <condition>في حالة ارتكاب صاحب رخصة السياقة المخالفات المدرجة ضمن القسم الثاني من هذا الفصل التي تتم معاينتها قانونا خلال الفترة الاختبارية</condition>، <obligation>تصدر الجهة القضائية المختصة قرار إلغاء رخصة السياقة بالإضافة إلى العقوبات الجزائية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>وفي هذه الحالة، <obligation>لا يمكن لهذا الأخير طلب الحصول على رخصة سياقة جديدة خلال أجل مدته ثمانية عشر (18) شهرا، ابتداء من تاريخ صدور قرار الإلغاء</obligation> ".</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_108">
+            <num>المادة 108</num>
+            <content>
+            <paragraph>
+            <p><obligation>تسلم المركبات المهجورة وفقا للشروط المنصوص عليها في <ref href="#art_107">المادة 107</ref> أعلاه، أو المصرح بها كذلك بموجب حكم قضائي، إلى مصلحة الأملاك الوطنية قصد التصرف فيها</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد شروط وكيفيات تطبيق هذه المادة عن طريق التنظيم "</p>
+            </paragraph>
+            <paragraph>
+            <p>" <ref href="#art_134">المادة 134</ref> : يختص <term refersTo="#transport_inspectors">مفتشو النقل البري</term> بمعاينة المخالفات من الدرجة الرابعة، المطتان 11 و 13، والمخالفة من الدرجة الثالثة - المطة 12 من <ref href="#art_66">المادة 66</ref> أعلاه، وإعداد محضر بذلك".</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_16" status="modified">
+            <num>المادة 16</num>
+            <content>
+            <paragraph>
+            <p><obligation>يلتزم صاحب المركبة باتخاذ كل الاحتياطات حتى لا تتسبب حمولة سيارة أو مقطورة في إلحاق الضرر بالغير وبالطريق العام وبتجهيزاته أو ملحقاته أو تشكل خطرا عليهم</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تتم كل حمولة على مركبات نقل البضائع، أيا كان المنتوج المنقول، وفقا للشروط المحددة عن طريق التنظيم.</p>
+            </paragraph>
+            <paragraph>
+            <p>تتم مراقبة حمولة المركبات، ووزنها على مستوى <term refersTo="#weighing_station">محطات الوزن</term>، بواسطة تجهيزات وأدوات قياس معتمدة.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+            
+          <article eId="art_17">
+            <num>المادة 17</num>
+            <content>
+            <paragraph>
+            <p>تلغى الأحكام المخالفة لهذا القانون، لا سيما <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_83">المادتان 83</ref> و <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19#art_137">137</ref> من <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19">القانون رقم14-01 المؤرخ في 29 جمادى الأولى عام 1422 الموافق 19 غشت سنة 2001 والمتعلق بتنظيم حركة المرور عبر الطرق وسلامتها وأمنها المعدل والمتمم</ref>.</p>
+            </paragraph>
+            <paragraph>
+            <p>كما تلغى <ref href="/akn/dz/act/law/2004-11-10/04-16#art_10_bis">المادة 10 مكرر</ref> من <ref href="/akn/dz/act/law/2004-11-10/04-16">القانون رقم 04-16 المؤرخ في 27 رمضان عام 1425 الموافق 10 نوفمبر سنة 2004</ref>، المعدل والمتمم <ref href="/akn/dz/act/law/2001-08-19/01-14_2001-08-19">للقانون رقم 01-14_2001-08-19 المؤرخ في 29 جمادى الأولى عام 1422 الموافق 19 غشت سنة 2001 والمتعلق بتنظيم حركة المرور عبر الطرق وسلامتها وأمنها المعدل والمتمم</ref>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_18">
+            <num>المادة 18</num>
+            <content>
+            <paragraph>
+            <p><obligation>ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>حرر بالجزائر في 19 جمادى الأولى عام 1438 الموافق 16 فبراير سنة 2017.</p>
+            </paragraph>
+            <paragraph>
+            <p>عبد العزيز بوتفليقة</p>
+            </paragraph>
+            </content>
+            </article>
+        </subsection>
+      </section>
+    </body>
+  </act>
+</akomaNtoso>

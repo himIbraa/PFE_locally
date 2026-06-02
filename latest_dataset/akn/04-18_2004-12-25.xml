@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="law">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/law/2004-12-25/04-18/main"/>
+      <FRBRuri value="/akn/dz/act/law/2004-12-25/04-18"/>
+      <FRBRdate date="2004-12-25" name="enactment"/>
+      <FRBRauthor href="#parliament"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="04-18"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/law/2004-12-25/04-18/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/law/2004-12-25/04-18/ara@"/>
+      <FRBRdate date="2004-12-25" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/law/2004-12-25/04-18/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/law/2004-12-25/04-18/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="parliament" href="/ontology/organization/dz/parliament" showAs="البرلمان"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="president" href="/ontology/person/dz/president" showAs="رئيس الجمهورية"/>
+  </references>
+</meta>
+    <preface>
+  <docTitle>قانون يتعلق بالوقاية من المخدرات والمؤثرات العقلية وقمع الاستعمال والاتجار غير المشروعين بها</docTitle>
+  <docNumber>04-18</docNumber>
+  <docDate date="2004-12-25">13 ذي القعدة عام 1425 الموافق 25 ديسمبر سنة 2004</docDate>
+  <docAuthority>البرلمان</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>إن رئيس الجمهورية،</p>
+    </citation>
+    <citation>
+      <p>وبعد مصادقة البرلمان</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يصدر القانون الآتي نصه:</p>
+  </formula>
+</preamble>
+    <body>
+      <section eId="sec_1">
+        <num>الأول</num>
+        <heading>أحكام عامة</heading>
+        <article eId="art_1">
+          <num>الأولى</num>
+          <content>
+          <paragraph>
+          <p>يهدف هذا القانون إلى <obligation>الوقاية من المخدرات والمؤثرات العقلية وقمع الاستعمال والاتجار غير المشروعين بها</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_2">
+          <num>2</num>
+          <content>
+          <paragraph>
+          <p>يقصد في مفهوم هذا القانون بما يأتي:</p>
+          <list>
+          <point>
+          <p><def refersTo="#narcotic">المخدر: كل مادة طبيعية كانت أم اصطناعية، من المواد الواردة في الجدولين الأول والثاني من الاتفاقية الوحيدة للمخدرات لسنة 1961 بصيغتها بموجب بروتوكول سنة 1972. المعدلة</def></p>
+          </point>
+          <point>
+          <p><def refersTo="#psychotropic_substances">المؤثرات العقلية : كل مادة طبيعية كانت أم اصطناعية، أو كل منتوج طبيعي مدرج في الجدول الأول أو الثاني أو الثالث أو الرابع من اتفاقية المؤثرات العقلية لسنة 1971.</def></p>
+          </point>
+          <point>
+          <p><def refersTo="#precursors">السلائف جميع المنتجات الكيماوية التي تستخدم في عمليات صنع المواد المخدرة والمؤثرات العقلية.</def></p>
+          </point>
+          <point>
+          <p><def refersTo="#preparation">المستحضر كل مزيج جامد أو سائل به مخدر ومؤثر عقلي.</def></p>
+          </point>
+          <point>
+          <p><def refersTo="#cannabis">القنب الأطراف المزهرة أو المثمرة من نبتة القنب ولا يشمل البذور والأوراق غير المصحوبة بأطراف التي لم يستخرج الراتينج منها، أيا كان استخدامها.</def></p>
+          </point>
+          <point>
+          <p><def refersTo="#cannabis_plant">نبات القنب أي نبات من جنس القنب.</def></p>
+          </point>
+          <point>
+          <p><def refersTo="#opium_poppy">خشخاش الأفيون كل شجيرة من فصيلة الخشخاش المنوم.</def></p>
+          </point>
+          <point>
+          <p><def refersTo="#coca_bush">شجيرة الكوكا: كل نوع من أنواع الشجيرات من جنس إريتروكسيلون.</def></p>
+          </point>
+          <point>
+          <p><def refersTo="#illicit_use">الاستعمال غير المشروع : الاستعمال الشخصي للمخدرات أو المؤثرات العقلية الموضوعة تحت الرقابة بدون وصفة طبية.</def></p>
+          </point>
+          <point>
+          <p><def refersTo="#addiction">الإدمان: حالة تبعية نفسانية أو تبعية نفسية جسمانية تجاه مخدر أو مؤثر عقلي.</def></p>
+          </point>
+          <point>
+          <p><def refersTo="#addiction_treatment">العلاج من الإدمان: العلاج الذي يهدف إلى إزالة التبعية النفسانية أو التبعية النفسية جسمانية تجاه مخدر أو مؤثر عقلي.</def></p>
+          </point>
+          <point>
+          <p><def refersTo="#cultivation">الزراعة: يقصد بها زراعة خشخاش الأفيون، وجنبة الكوكا، ونبتة القنب.</def></p>
+          </point>
+          <point>
+          <p><def refersTo="#production">الإنتاج: عملية تتمثل في فصل الأفيون وأوراق الكوكا والقنب وراتينج القنب عن نباتاتها.</def></p>
+          </point>
+          <point>
+          <p><def refersTo="#manufacture">الصنع جميع العمليات غير الإنتاج التي يتم الحصول بها على المخدرات والمؤثرات العقلية وتشمل التنقية وتحويل المخدرات إلى مخدرات أخرى.</def></p>
+          </point>
+          <point>
+          <p><def refersTo="#export_import">التصدير والاستيراد النقل المادي للمخدرات و/أو المؤثرات العقلية من دولة إلى دولة أخرى.</def></p>
+          </point>
+          <point>
+          <p><def refersTo="#transport">النقل: نقل المواد الموضوعة تحت المراقبة داخل الإقليم الجزائري من مكان إلى آخر أو عن طريق العبور.</def></p>
+          </point>
+          <point>
+          <p><def refersTo="#transit_state">دولة العبور : الدولة التي يجري عبر إقليمها نقل المواد غير المشروعة والمخدرات والمؤثرات العقلية والمواد الواردة في الجدول الأول والجدول الثاني غير المشروعة والتي ليست مكان منشئها الأصلي ولا مكان مقصدها النهائي.</def></p>
+          </point>
+          </list>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_3">
+          <num>3</num>
+          <content>
+          <paragraph>
+          <p><obligation>ترتب جميع النباتات والمواد المصنفة كمخدرات أو مؤثرات عقلية أو سلائف بقرار من <term refersTo="#health_minister">الوزير المكلف بالصحة</term> في أربعة (4) جداول تبعا لخطورتها وفائدتها الطبية</obligation> ويخضع كل تعديل لهذه الجداول إلى الأشكال نفسها.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>تسجل النباتات والمواد بتسميتها الدولية، وإذا تعذر ذلك بتسميتها العلمية أو التسمية المتعارف عليها</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_4">
+          <num>4</num>
+          <content>
+          <paragraph>
+          <p>لا يسلم الترخيص بالقيام بالعمليات المذكورة في <ref href="#art_17">المواد 17</ref> و<ref href="#art_19">19</ref> و <ref href="#art_20">20</ref> من هذا القانون، <condition>إلا إذا كان استعمال النباتات والمواد والمستحضرات موجها لأهداف طبية أو علمية</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p>ولا يمنح هذا الترخيص <condition>إلا بناء على تحقيق اجتماعي حول السلوك الأخلاقي والمهني للشخص طالب الرخصة</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p>ولا يمكن أن يمنح هذا الترخيص <condition>لشخص حكم عليه بسبب الجرائم المنصوص عليها في هذا القانون</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_5">
+          <num>5</num>
+          <content>
+          <paragraph>
+          <p><condition>لا يسلم <term refersTo="#license">الترخيص</term> المذكور في <ref href="#art_4">المادة 4</ref> أعلاه، إلا <term refersTo="#minister">الوزير المكلف بالصحة</term></condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+      <section eId="sec_2">
+        <num>الثاني</num>
+        <heading>التدابير الوقائية والعلاجية</heading>
+        <article eId="art_6">
+          <num>المادة 6</num>
+          <content>
+          <paragraph>
+          <p><obligation>لا تمارس <term refersTo="#public_action">الدعوى العمومية</term> ضد الأشخاص الذين امتثلوا إلى العلاج الطبي الذي وصف لهم لإزالة التسمم وتابعوه حتى نهايته</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>ولا يجوز أيضا متابعة الأشخاص الذين استعملوا <term refersTo="#drugs">المخدرات</term> أو <term refersTo="#psychotropic_substances">المؤثرات العقلية</term> استعمالا غير مشروع <condition>إذا ثبت أنهم خضعوا لعلاج مزيل للتسمم أو كانوا تحت المتابعة الطبية منذ حدوث الوقائع المنسوبة إليهم</condition></obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p>الحالات المنصوص عليها في <ref href="#art_6">هذه المادة</ref> يحكم بمصادرة المواد وفي جميع والنباتات المحجوزة إن اقتضى الأمر بأمر من رئيس الجهة القضائية المختصة، بناء على طلب النيابة العامة.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تطبيق <ref href="#art_6">هذه المادة</ref> عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_7">
+          <num>المادة 7</num>
+          <content>
+          <paragraph>
+          <p><right>يمكن أن يأمر قاضي التحقيق أو قاضي الأحداث بإخضاع الأشخاص المتهمين بارتكاب الجنحة المنصوص عليها في <ref href="#art_12">المادة 12</ref> أدناه، لعلاج مزيل للتسمم تصاحبه جميع تدابير المراقبة الطبية وإعادة التكييف الملائم لحالتهم</right>، <condition>إذا ثبت بواسطة خبرة طبية متخصصة ، أن حالتهم الصحية تستوجب علاجا طبيا</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p>يبقى الأمر الذي يوجب هذا العلاج نافذا، عند الاقتضاء، بعد انتهاء التحقيق، وحتى تقرر الجهة القضائية المختصة خلاف ذلك.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_9">
+          <num>المادة 9</num>
+          <content>
+          <paragraph>
+          <p><obligation>تطبق العقوبات المنصوص عليها في <ref href="#art_12">المادة 12</ref> من هذا القانون على الأشخاص الذين يمتنعون عن تنفيذ قرار الخضوع للعلاج المزيل للتسمم</obligation>، دون الإخلال بتطبيق <ref href="#art_7">المادة 7</ref> أعلاه من جديد، عند الاقتضاء.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_11">
+          <num>المادة 11</num>
+          <content>
+          <paragraph>
+          <p><condition>إذا أمر قاضي التحقيق أو الجهة القضائية المختصة متهما بإجراء مراقبة طبية أو الخضوع لعلاج مزيل للتسمم</condition>، فإن <obligation>تنفيذ هذه الإجراءات يخضع لأحكام المواد من <ref href="#art_7">7</ref> إلى <ref href="#art_9">9</ref> من هذا القانون</obligation>، مع مراعاة أحكام <ref href="/akn/dz/act/code/1966-06-08/66-155#art_125_bis_1">المادة 125 مكرر 1 "الفقرة 2-7" من قانون الإجراءات الجزائية</ref>.</p>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+      <section eId="sec_3">
+        <num>الثالث</num>
+        <heading>الأحكام الجزائية</heading>
+        <article eId="art_12">
+          <num>12</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بالحبس من شهرين (2) إلى سنتين (2) وبغرامة من 5.000 دج إلى 50.000 دج أو بإحدى هاتين العقوبتين</obligation> كل شخص <condition>يستهلك أو يحوز من أجل الاستهلاك الشخصي <term refersTo="#narcotics">مخدرات</term> أو <term refersTo="#psychotropic_substances">مؤثرات عقلية</term> بصفة غير مشروعة</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_13">
+          <num>13</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بالحبس من سنتين (2) إلى عشر (10) سنوات وبغرامة من 100.000 دج إلى 500.000 دج</obligation> كل من <condition>يسلم أو يعرض بطريقة غير مشروعة <term refersTo="#narcotics">مخدرات</term> أو <term refersTo="#psychotropic_substances">مؤثرات عقلية</term> على الغير بهدف الاستعمال الشخصي</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يضاعف الحد الأقصى للعقوبة</obligation> <condition>إذا تم تسليم أو عرض <term refersTo="#narcotics">المخدرات</term> أو <term refersTo="#psychotropic_substances">المؤثرات العقلية</term> حسب الشروط المحددة في الفقرة السابقة على قاصر أو معوق أو شخص يعالج بسبب إدمانه أو في مراكز تعليمية أو تربوية أو تكوينية أو صحية أو اجتماعية أو داخل هيئات عمومية</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_14">
+          <num>14</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بالحبس من سنتين (2) إلى خمس (5) سنوات وبغرامة من 100.000 دج إلى 200.000 دج</obligation> كل من <condition>يعرقل أو يمنع بأي شكل من الأشكال الأعوان المكلفين بمعاينة الجرائم أثناء ممارسة وظائفهم أو المهام المخولة لهم بموجب أحكام هذا القانون</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_15">
+          <num>15</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بالحبس من خمس (5) سنوات إلى خمس عشرة (15) سنة وبغرامة من 500.000 دج إلى 1.000.000 دج</obligation>، كل من:</p>
+          <list>
+          <point>
+          <p>1 - <condition>سهل للغير الاستعمال غير المشروع للمواد المخدرة أو المؤثرات العقلية بمقابل أو مجانا، سواء بتوفير المحل لهذا الغرض أو بأية وسيلة أخرى، وكذلك الأمر بالنسبة لكل من الملاك والمسيرين والمديرين والمستغلين بأية صفة كانت لفندق أو منزل مفروش أو نزل أو حانة أو مطعم أو ناد أو مكان عرض أو أي مكان مخصص للجمهور أو مستعمل من الجمهور، الذين يسمحون باستعمال المخدرات داخل هذه المؤسسات أو ملحقاتها أو في الأماكن المذكورة</condition>.</p>
+          </point>
+          <point>
+          <p>2 - <condition>وضع مخدرات أو مؤثرات عقلية في مواد غذائية أو في مشروبات دون علم المستهلكين</condition>.</p>
+          </point>
+          </list>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_16">
+          <num>16</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بالحبس من خمس (5) سنوات إلى خمس عشرة (15) سنة وبغرامة من 500.000 دج إلى 1.000.000 دج</obligation>، كل من:</p>
+          <list>
+          <point>
+          <p><condition>قدم عن قصد وصفة طبية صورية أو على سبيل المحاباة تحتوي على مؤثرات عقلية</condition>.</p>
+          </point>
+          <point>
+          <p><condition>سلم مؤثرات عقلية بدون وصفة أو كان على علم بالطابع الصوري أو المحاباة للوصفات الطبية</condition>.</p>
+          </point>
+          <point>
+          <p><condition>حاول الحصول على المؤثرات العقلية قصد البيع أو تحصل عليها بواسطة وصفات طبية صورية بناء على ما عرض عليه</condition>.</p>
+          </point>
+          </list>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_17">
+          <num>المادة 17</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب بالحبس من عشر (10) سنوات إلى عشرين (20) سنة وبغرامة من 5.000.000 دج إلى 50.000.000 دج كل من قام بطريقة غير مشروعة بإنتاج أو صنع أو حيازة أو عرض أو بيع أو وضع للبيع أو حصول وشراء قصد البيع أو التخزين أو استخراج أو تحضير أو توزيع أو تسليم بأية صفة كانت، أو سمسرة أو شحن أو نقل عن طريق العبور أو نقل <term refersTo="#narcotics">المواد المخدرة</term> أو <term refersTo="#psychotropic_substances">المؤثرات العقلية</term>.</obligation></p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>ويعاقب على الشروع في هذه الجرائم بالعقوبات ذاتها المقررة للجريمة المرتكبة.</obligation></p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>ويعاقب على الأفعال المنصوص عليها في الفقرة الأولى أعلاه بالسجن المؤبد <condition>عندما ترتكبها جماعة إجرامية منظمة</condition>.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_22">
+          <num>المادة 22</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب كل من يحرض أو يشجع أو يحث بأية وسيلة كانت على ارتكاب الجرائم المنصوص عليها في هذا القانون بالعقوبات المقررة للجريمة أو الجرائم المرتكبة.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_23">
+          <num>المادة 23</num>
+          <content>
+          <paragraph>
+          <p><obligation>يعاقب الشريك في الجريمة أو في كل عمل تحضيري منصوص عليه في هذا القانون بنفس عقوبة الفاعل الأصلي.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_24">
+          <num>المادة 24</num>
+          <content>
+          <paragraph>
+          <p><right>يجوز للمحكمة أن تمنع أي أجنبي حكم عليه بسبب ارتكابه إحدى الجرائم المنصوص عليها في هذا القانون من الإقامة في الإقليم الجزائري إما نهائيا أو لمدة لا تقل عن عشر (10) سنوات.</right></p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يترتب بقوة القانون على المنع من الإقامة في الإقليم الجزائري طرد المحكوم عليه إلى خارج الحدود بعد انقضاء العقوبة.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_25">
+          <num>المادة 25</num>
+          <content>
+          <paragraph>
+          <p><obligation>بغض النظر عن العقوبات المنصوص عليها بالنسبة للشخص الطبيعي، يعاقب <term refersTo="#legal_entity">الشخص المعنوي</term> الذي يرتكب جريمة أو أكثر من الجرائم المنصوص عليها في المواد من <ref href="#art_13">13</ref> إلى <ref href="#art_17">17</ref> من هذا القانون بغرامة تعادل خمس (5) مرات الغرامة المقررة للشخص الطبيعي.</obligation></p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>وفي حالة ارتكاب الجرائم المنصوص عليها في المواد من <ref href="#art_18">18</ref> إلى <ref href="#art_21">21</ref> من هذا القانون، يعاقب <term refersTo="#legal_entity">الشخص المعنوي</term> بغرامة تتراوح من 50.000.000 دج إلى 250.000.000 دج.</obligation></p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>وفي جميع الحالات، يتم الحكم بحل المؤسسة أو غلقها مؤقتا لمدة لا تفوق خمس (5) سنوات.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_26">
+          <num>26</num>
+          <content>
+          <paragraph>
+          <p><obligation>لا تطبق أحكام <ref href="/akn/dz/act/code/1966-06-08/66-156#art_53">المادة 53 من قانون العقوبات</ref> على الجرائم المنصوص عليها في المواد من <ref href="#art_12">12</ref> إلى <ref href="#art_23">23</ref> من هذا القانون</obligation>:
+          <list>
+          <point>
+          <p><condition>إذا استخدم الجاني العنف أو الأسلحة</condition>،</p>
+          </point>
+          <point>
+          <p><condition>إذا كان الجاني يمارس وظيفة عمومية وارتكب الجريمة أثناء تأدية وظيفته</condition>،</p>
+          </point>
+          <point>
+          <p><condition>إذا ارتكب الجريمة ممتهن في الصحة أو شخص مكلف بمكافحة المخدرات أو استعمالها</condition>،</p>
+          </point>
+          <point>
+          <p><condition>إذا تسببت المخدرات أو المؤثرات العقلية المسلمة في وفاة شخص، أو عدة أشخاص أو إحداث عاهة مستديمة</condition>،</p>
+          </point>
+          <point>
+          <p><condition>إذا أضاف مرتكب الجريمة للمخدرات موادا من شأنها أن تزيد في خطورتها</condition>.</p>
+          </point>
+          </list></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_27">
+          <num>27</num>
+          <content>
+          <paragraph>
+          <p><condition>في حالة العود</condition>, تكون العقوبة التي يتعرض لها مرتكب الأفعال المنصوص عليها في هذا القانون كما يأتي:
+          <list>
+          <point>
+          <p>السجن المؤبد عندما تكون الجريمة معاقبا عليها بالحبس من عشر (10) سنوات إلى عشرين (20) سنة،</p>
+          </point>
+          <point>
+          <p>السجن المؤقت من عشر (10) سنوات إلى عشرين (20) سنة، عندما تكون الجريمة معاقبا عليها بالحبس من خمس (5) سنوات إلى عشر (10) سنوات,</p>
+          </point>
+          <point>
+          <p>ضعف العقوبة المقررة لكل الجرائم الأخرى.</p>
+          </point>
+          </list></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_28">
+          <num>28</num>
+          <content>
+          <paragraph>
+          <p>العقوبات المقررة في هذا القانون غير قابلة للتخفيض حسب الشكل الآتي:
+          <list>
+          <point>
+          <p>عشرون (20) سنة سجنا, عندما تكون العقوبة المقررة هي السجن المؤبد,</p>
+          </point>
+          <point>
+          <p>ثلثا (3/2) العقوبة المقررة في كل الحالات.</p>
+          </point>
+          </list></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_29">
+          <num>29</num>
+          <content>
+          <paragraph>
+          <p><condition>في حالة الإدانة لمخالفة الأحكام المنصوص عليها في هذا القانون</condition>, <right>للجهة القضائية المختصة أن تقضي بعقوبة الحرمان من الحقوق السياسية والمدنية والعائلية من خمس (5) سنوات إلى عشر (10) سنوات</right>.</p>
+          </paragraph>
+          <paragraph>
+          <p>ويجوز لها, زيادة على ذلك, الحكم بما يأتي:
+          <list>
+          <point>
+          <p>المنع من ممارسة المهنة التي ارتكبت الجريمة بمناسبتها لمدة لا تقل عن خمس (5) سنوات,</p>
+          </point>
+          <point>
+          <p>المنع من الإقامة وفقا للأحكام المنصوص عليها في <term refersTo="#penal_code">قانون العقوبات</term>,</p>
+          </point>
+          <point>
+          <p>سحب جواز السفر وكذا سحب رخصة السياقة لمدة لا تقل عن خمس (5) سنوات,</p>
+          </point>
+          <point>
+          <p>المنع من حيازة أو حمل سلاح خاضع للترخيص لمدة لا تقل عن خمس (5) سنوات,</p>
+          </point>
+          <point>
+          <p>مصادرة الأشياء التي استعملت أو كانت موجهة لارتكاب الجريمة أو الأشياء الناجمة عنها,</p>
+          </point>
+          <point>
+          <p>الغلق لمدة لا تزيد عن عشر (10) سنوات بالنسبة للفنادق والمنازل المفروشة ومراكز الإيواء والحانات والمطاعم والنوادي وأماكن العروض أو أي مكان مفتوح للجمهور أو مستعمل من قبل الجمهور, حيث ارتكب المستغل أو شارك في ارتكاب الجرائم المنصوص عليها في <ref href="#art_15">المادتين 15</ref> و <ref href="#art_16">16</ref> من هذا القانون.</p>
+          </point>
+          </list></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_30">
+          <num>30</num>
+          <content>
+          <paragraph>
+          <p><right>يعفى من العقوبة المقررة كل من يبلغ السلطات الإدارية أو القضائية بكل جريمة منصوص عليها في هذا القانون</right>, <condition>قبل البدء في تنفيذها أو الشروع فيها</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_31">
+          <num>31</num>
+          <content>
+          <paragraph>
+          <p><obligation>تخفض العقوبات التي يتعرض لها مرتكب الجريمة أو شريكه, المنصوص عليها في المواد من <ref href="#art_12">12</ref> إلى <ref href="#art_17">17</ref> من هذا القانون إلى النصف</obligation>, <condition>إذا مكن بعد تحريك الدعوى العمومية من إيقاف الفاعل الأصلي أو الشركاء في نفس الجريمة أو الجرائم الأخرى من نفس الطبيعة أو مساوية لها في الخطورة</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p>وتخفض العقوبات المنصوص عليها في المواد من <ref href="#art_18">18</ref> إلى <ref href="#art_23">23</ref> من هذا القانون إلى السجن المؤقت من عشر (10) سنوات إلى عشرين (20) سنة.</p>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+      <section eId="sec_4">
+        <num>الرابع</num>
+        <heading>القواعد الإجرائية</heading>
+        <article eId="art_33">
+          <num>33</num>
+          <content>
+          <paragraph>
+          <p><obligation>تأمر <term refersTo="#judicial_authority">الجهة القضائية المختصة</term> في كل الحالات المنصوص عليها في هذا القانون, بمصادرة المنشآت والتجهيزات والأملاك المنقولة والعقارية الأخرى المستعملة أو الموجهة للاستعمال قصد ارتكب الجريمة أيا كان مالكها</obligation>, <condition>إلا إذا أثبت أصحابها حسن نيتهم</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_35">
+          <num>35</num>
+          <content>
+          <paragraph>
+          <p><right>يمكن أن تتابع وتحاكم الجهات القضائية الجزائرية كل من يرتكب جريمة منصوصا عليها في هذا القانون سواء كان جزائريا أو أجنبيا مقيما بالجزائر أو موجودا بها, أو كل شخص معنوي خاضع للقانون الجزائري, ولو خارج الإقليم الوطني, أو يكون قد ارتكب فعلا من الأفعال المكونة لأحد أركان الجريمة داخل الإقليم الجزائري حتى وإن كانت الأفعال الأخرى قد تم ارتكابها في بلدان أخرى</right>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_36">
+          <num>36</num>
+          <content>
+          <paragraph>
+          <p>زيادة على <term refersTo="#judicial_police_officers">ضباط الشرطة القضائية</term> المنصوص عليهم في <ref href="/akn/dz/act/code/1966-06-08/66-155#art_12">المادة 12</ref> وما يليها من <term refersTo="#criminal_procedure_code">قانون الإجراءات الجزائية</term>, <right>يمكن أن يقوم المهندسون الزراعيون ومفتشو الصيدلة المؤهلون قانونا من وصايتهم, تحت سلطة ضباط الشرطة القضائية, بالبحث عن الجرائم المنصوص عليها في هذا القانون ومعاينتها</right>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_37">
+          <num>37</num>
+          <content>
+          <paragraph>
+          <p><right>يجوز لضباط الشرطة القضائية <condition>إذا دعت ضرورات التحقيق الابتدائي المتعلق بالبحث عن الجرائم المنصوص عليها في هذا القانون ومعاينتها</condition>, أن يوقفوا للنظر أي شخص مشتبه فيه لمدة 48 ساعة</right>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>ويتعين عليهم تقديم الشخص الموقوف للنظر إلى وكيل الجمهورية قبل انقضاء هذا الأجل</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p>وبعد أن يقوم وكيل الجمهورية باستجواب الشخص المقدم إليه <right>يجوز له بإذن كتابي أن يمدد حجزه إلى مدة لا تتجاوز ثلاث (3) مرات المدة الأصلية بعد فحص ملف التحقيق</right>.</p>
+          </paragraph>
+          <paragraph>
+          <p><right>ويجوز, بصفة استثنائية, منح هذا الإذن بقرار مسبب دون تقديم الشخص إلى النيابة</right>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_38">
+          <num>38</num>
+          <content>
+          <paragraph>
+          <p><obligation>تلغى جميع الأحكام المخالفة لهذا القانون</obligation>, لا سيما <ref href="/akn/dz/act/law/1985-02-16/85-05#art_190">المواد 190</ref> من <ref href="/akn/dz/act/law/1985-02-16/85-05#art_241">241</ref> إلى <ref href="/akn/dz/act/law/1985-02-16/85-05#art_259">259</ref> من القانون رقم 85-05 المؤرخ في 26 جمادى الأولى عام 1405 الموافق 16 فبراير سنة 1985 والمذكور أعلاه.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_39">
+          <num>39</num>
+          <content>
+          <paragraph>
+          <p>ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية.</p>
+          </paragraph>
+          <paragraph>
+          <p>حرر بالجزائر في 13 ذي القعدة عام 1425 الموافق 25 ديسمبر سنة 2004.</p>
+          </paragraph>
+          <paragraph>
+          <p>عبد العزيز بوتفليقة</p>
+          </paragraph>
+          </content>
+          </article>
+      </section>
+    </body>
+  </act>
+</akomaNtoso>

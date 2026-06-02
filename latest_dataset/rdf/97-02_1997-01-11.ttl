@@ -1,0 +1,739 @@
+@prefix dzdoc: <https://legal.dz/ontology/document#> .
+@prefix dznorm: <https://legal.dz/ontology/norm#> .
+@prefix dzorg: <https://legal.dz/resource/organization/> .
+@prefix dzterm: <https://legal.dz/resource/term/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dzorg:الجريدة_الرسمية a dzdoc:Organization ;
+    rdfs:label "الجريدة الرسمية"@ar ;
+    dzdoc:frbrUri "/ontology/organization/dz/joradp"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#amend_1> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:confidenceScore 0.99 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpInsert ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_1> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:validFrom "1997-01-11"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_1_extref_7dfc639f> a dzdoc:ExternalReference ;
+    rdfs:label "القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/law/1990-04-21/90-11"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/law/1990-04-21/90-11"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/law/1990-04-21/90-11" ;
+    dzdoc:referencesTarget <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:resolutionReason "canonical_akn_path_alias" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/law/1990-04-21/90-11"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_1_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_1> ;
+    dzdoc:position 0 ;
+    dzdoc:text "يتمم هذا الأمر أحكام القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل."@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2_extref_7dfc639f> a dzdoc:ExternalReference ;
+    rdfs:label "القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/law/1990-04-21/90-11"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/law/1990-04-21/90-11"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/law/1990-04-21/90-11" ;
+    dzdoc:referencesTarget <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:resolutionReason "canonical_akn_path_alias" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/law/1990-04-21/90-11"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2_extref_daac4f20> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 52 مكرر"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/law/1990-04-21/90-11#art_52bis"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/law/1990-04-21/90-11#art_52bis"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/law/1990-04-21/90-11#art_52bis" ;
+    dzdoc:resolutionReason "cross_document_fragment_unverified" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/law/1990-04-21/90-11"^^xsd:anyURI ;
+    dzdoc:targetEId "art_52bis" .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2_obligation_0_7309d7a5> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dzdoc:hasActivity <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2_obligation_0_7309d7a5_activity_a0f8dcfbd4> ;
+    dzdoc:hasPeriod <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2_obligation_0_7309d7a5_period_3d767a197d>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2_obligation_0_7309d7a5_period_b138cac37d> ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2> ;
+    dznorm:position 0 ;
+    dznorm:provisionText "يسدد صندوق خاص تعويض العطلة السنوية المستحقة لعمال المهن والفروع وقطاعات النشاط الذين لا يشتغلون عادة بصفة مستمرة عند نفس الهيئة المستخدمة خلال المدة المعتمدة لتقدير الحق في العطلة"@ar ;
+    dznorm:sourceArticle "art_2" .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2_obligation_0_7309d7a5_activity_a0f8dcfbd4> a dznorm:Activity ;
+    rdfs:label "نشاط الذين لا يشتغلون عادة بصفة مستمرة عند نف"@ar ;
+    dzdoc:confidenceScore 0.6 ;
+    dzdoc:extractionMethod "lexical_activity_pattern" ;
+    dzdoc:sourceTextSpan "يسدد صندوق خاص تعويض العطلة السنوية المستحقة لعمال المهن والفروع وقطاعات النشاط الذين لا يشتغلون عادة بصفة مستمرة عند نفس الهيئة المستخدمة خلال المدة المعتمدة لتقدير الحق في العطلة"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2> .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2_obligation_0_7309d7a5_period_3d767a197d> a dznorm:Period ;
+    rdfs:label "خلال المدة المعتمدة لتقدير الحق في"@ar ;
+    dzdoc:confidenceScore 0.68 ;
+    dzdoc:extractionMethod "lexical_period_pattern" ;
+    dzdoc:sourceTextSpan "يسدد صندوق خاص تعويض العطلة السنوية المستحقة لعمال المهن والفروع وقطاعات النشاط الذين لا يشتغلون عادة بصفة مستمرة عند نفس الهيئة المستخدمة خلال المدة المعتمدة لتقدير الحق في العطلة"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2> .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2_obligation_0_7309d7a5_period_b138cac37d> a dznorm:Period ;
+    rdfs:label "لمدة المعتمدة لتقدير الحق في العطلة"@ar ;
+    dzdoc:confidenceScore 0.68 ;
+    dzdoc:extractionMethod "lexical_period_pattern" ;
+    dzdoc:sourceTextSpan "يسدد صندوق خاص تعويض العطلة السنوية المستحقة لعمال المهن والفروع وقطاعات النشاط الذين لا يشتغلون عادة بصفة مستمرة عند نفس الهيئة المستخدمة خلال المدة المعتمدة لتقدير الحق في العطلة"@ar ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2> .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2_obligation_1_cc717836> a dznorm:Obligation ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:extractionMethod "akn_obligation_tag" ;
+    dznorm:expressedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2> ;
+    dznorm:position 1 ;
+    dznorm:provisionText "تنخرط الهيئات المستخدمة المذكورة أعلاه وجوبا في هذا الصندوق"@ar ;
+    dznorm:sourceArticle "art_2" .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تدرج ضمن القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 المادة 52 مكرر، وتحرر كما يأتي :"@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2> ;
+    dzdoc:position 1 ;
+    dzdoc:text "\" المادة 52 مكرر : يسدد صندوق خاص تعويض العطلة السنوية المستحقة لعمال المهن والفروع وقطاعات النشاط الذين لا يشتغلون عادة بصفة مستمرة عند نفس الهيئة المستخدمة خلال المدة المعتمدة لتقدير الحق في العطلة."@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2> ;
+    dzdoc:position 2 ;
+    dzdoc:text "تنخرط الهيئات المستخدمة المذكورة أعلاه وجوبا في هذا الصندوق."@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2_para_3> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2> ;
+    dzdoc:position 3 ;
+    dzdoc:text "تحدد المهن والفروع وقطاعات النشاط المذكورة أعلاه عن طريق التنظيم\"."@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_3_extref_7dfc639f> a dzdoc:ExternalReference ;
+    rdfs:label "القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/law/1990-04-21/90-11"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/law/1990-04-21/90-11"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/law/1990-04-21/90-11" ;
+    dzdoc:referencesTarget <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:resolutionReason "canonical_akn_path_alias" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/law/1990-04-21/90-11"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_3_extref_8a588d34> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 52 مكرر 2"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/law/1990-04-21/90-11#art_52bis2"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/law/1990-04-21/90-11#art_52bis2"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/law/1990-04-21/90-11#art_52bis2" ;
+    dzdoc:resolutionReason "cross_document_fragment_unverified" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/law/1990-04-21/90-11"^^xsd:anyURI ;
+    dzdoc:targetEId "art_52bis2" .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_3_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_3> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تدرج ضمن القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 المادة 52 مكرر 2، وتحرر كما يأتي:"@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_3_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_3> ;
+    dzdoc:position 1 ;
+    dzdoc:text "\" المادة 52 مكرر 2 : تغطى النفقات المتعلقة بتسديد تعويض العطلة المذكورة في المادة 52 مكرر أعلاه، وكذا مصاريف التسيير، بواسطة اشتراك على عاتق الهيئات المستخدمة دون سواها."@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_3_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_3> ;
+    dzdoc:position 2 ;
+    dzdoc:text "تحدد نسبة هذا الاشتراك وكيفيات تحصيله عن طريق التنظيم\"."@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_4_extref_7dfc639f> a dzdoc:ExternalReference ;
+    rdfs:label "القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/law/1990-04-21/90-11"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/law/1990-04-21/90-11"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/law/1990-04-21/90-11" ;
+    dzdoc:referencesTarget <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:resolutionReason "canonical_akn_path_alias" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/law/1990-04-21/90-11"^^xsd:anyURI .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_4_extref_b94f2875> a dzdoc:ExternalReference ;
+    rdfs:label "المادة 52 مكرر 3"@ar ;
+    dzdoc:frbrUri "/akn/dz/act/law/1990-04-21/90-11#art_52bis3"^^xsd:anyURI ;
+    dzdoc:normalizedUri "/akn/dz/act/law/1990-04-21/90-11#art_52bis3"^^xsd:anyURI ;
+    dzdoc:rawHref "/akn/dz/act/law/1990-04-21/90-11#art_52bis3" ;
+    dzdoc:resolutionReason "cross_document_fragment_unverified" ;
+    dzdoc:resolutionStatus "partial" ;
+    dzdoc:targetDocumentUri "https://legal.dz/resource/law/1990-04-21/90-11"^^xsd:anyURI ;
+    dzdoc:targetEId "art_52bis3" .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_4_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_4> ;
+    dzdoc:position 0 ;
+    dzdoc:text "تدرج ضمن القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 المادة 52 مكرر 3، وتحرر كما يأتي :"@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_4_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_4> ;
+    dzdoc:position 1 ;
+    dzdoc:text "\" المادة 52 مكرر 3: يحدد عن طريق التنظيم إنشاء الصندوق الخاص المنصوص عليه في هذا الأمر وكذا شروط سيره وكيفياته\"."@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_5_para_0> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_5> ;
+    dzdoc:position 0 ;
+    dzdoc:text "ينشر هذا الأمر في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية."@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_5_para_1> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_5> ;
+    dzdoc:position 1 ;
+    dzdoc:text "حرر بالجزائر في 2 رمضان عام 1417 الموافق 11 يناير سنة 1997."@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_5_para_2> a dzdoc:Paragraph ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_5> ;
+    dzdoc:position 2 ;
+    dzdoc:text "اليمين زروال"@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#lifecycle_a00ba484f6fa> a dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:confidenceScore 0.92 ;
+    dzdoc:evidenceText "يتمم هذا الأمر أحكام القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل ."@ar ;
+    dzdoc:isContradictory false ;
+    dzdoc:lifecycleRelationType "amends" ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:ruleId "lifecycle_explicit_amend_phrase" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_1> .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_13> a dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble> ;
+    dzdoc:position 13 ;
+    dzdoc:segmentType "formula" ;
+    dzdoc:text "يصدر الأمر الآتي نصه :"@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preface> a dzdoc:Preface ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11/manifestation> a dzdoc:Manifestation ;
+    dzdoc:frbrUri "/akn/dz/act/law/1997-01-11/97-02_1997-01-11/ara@.xml"^^xsd:anyURI ;
+    dzdoc:manifestationOf <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11/expression> ;
+    dzdoc:transformDate "2026-04-28"^^xsd:date .
+
+<https://legal.dz/resource/law/1990-04-21/90-11#art_52bis> dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#amend_2> ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1990-04-21/90-11#version_art_52bis_19970111_OpInsert_3db094c039> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:introducedOn "1997-01-11"^^xsd:date .
+
+<https://legal.dz/resource/law/1990-04-21/90-11#art_52bis2> dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#amend_3> ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1990-04-21/90-11#version_art_52bis2_19970111_OpInsert_8758c722d1> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:introducedOn "1997-01-11"^^xsd:date .
+
+<https://legal.dz/resource/law/1990-04-21/90-11#art_52bis3> dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#amend_4> ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1990-04-21/90-11#version_art_52bis3_19970111_OpInsert_8c49af451d> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:introducedOn "1997-01-11"^^xsd:date .
+
+<https://legal.dz/resource/law/1990-04-21/90-11#version_art_52bis2_19970111_OpInsert_8758c722d1> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1997-01-11"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#amend_3> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1990-04-21/90-11#art_52bis2> .
+
+<https://legal.dz/resource/law/1990-04-21/90-11#version_art_52bis3_19970111_OpInsert_8c49af451d> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1997-01-11"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#amend_4> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1990-04-21/90-11#art_52bis3> .
+
+<https://legal.dz/resource/law/1990-04-21/90-11#version_art_52bis_19970111_OpInsert_3db094c039> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1997-01-11"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#amend_2> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1990-04-21/90-11#art_52bis> .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_0> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble> ;
+    dzdoc:position 0 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "إن رئيس الجمهورية"@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_1> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble> ;
+    dzdoc:position 1 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "بناء على الدستور، لاسيما المواد 55 و 56 و 57 و 119 و 122 و 126 179 منه،"@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_10> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble> ;
+    dzdoc:position 10 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى القانون رقم 90 - 14 المؤرخ في 9 ذي القعدة عام 1410 الموافق 2 يونيو سنة 1990 والمتعلق بكيفيات ممارسة الحق النقابي، المعدل والمتمم،"@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_11> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble> ;
+    dzdoc:position 11 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى الأمر رقم 97 - 01 المؤرخ في 2 رمضان عام 1417 الموافق 11 يناير سنة 1997 الذي يؤسس تعويض البطالة الناجمة عن سوء الأحوال الجوية لعمال قطاعات البناء والأشغال العمومية والري، ويحدد شروط منحه وكيفياته،"@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_12> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble> ;
+    dzdoc:position 12 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبعد مصادقة المجلس الوطني الانتقالي،"@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_2> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble> ;
+    dzdoc:position 2 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى الأمر رقم 66 - 154 المؤرخ في 18 صفر عام 1386 الموافق 8 يونيو سنة 1966 والمتضمن قانون الإجراءات المدنية، المعدل والمتمم"@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_3> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble> ;
+    dzdoc:position 3 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى الأمر رقم 66 - 155 المؤرخ في 18 صفر عام 1386 الموافق 8 يونيو سنة 1966 والمتضمن قانون الإجراءات الجزائية، المعدل والمتمم،"@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_4> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble> ;
+    dzdoc:position 4 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى الأمر رقم 66 156 المؤرخ في 18 صفر عام 1386 الموافق 8 يونيو سنة 1966 والمتضمن قانون العقوبات، المعدل والمتمم"@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_5> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble> ;
+    dzdoc:position 5 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى الأمر رقم 75 - 58 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون المدني، المعدل والمتمم"@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_6> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble> ;
+    dzdoc:position 6 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى القانون رقم 90 - 02 المؤرخ في 10 رجب عام 1410 الموافق 6 فبراير سنة 1990 والمتعلق بالوقاية من النزاعات الجماعية في العمل وتسويتها وممارسة حق الإضراب، المعدل والمتمم"@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_7> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble> ;
+    dzdoc:position 7 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى القانون رقم 90 - 03 المؤرخ في 10 رجب عام 1410 الموافق 6 فبراير سنة 1990 والمتعلق بمفتشية العمل المعدل والمتمم"@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_8> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble> ;
+    dzdoc:position 8 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى القانون رقم 90 - 04 المؤرخ في 10 رجب عام 1410 الموافق 6 فبراير سنة 1990 والمتعلق بتسوية النزاعات الفردية في العمل، المعدل والمتمم"@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_9> a dzdoc:Citation,
+        dzdoc:PreambleSegment ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble> ;
+    dzdoc:position 9 ;
+    dzdoc:segmentType "citation" ;
+    dzdoc:text "وبمقتضى القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل، المعدل والمتمم"@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_1_19970111_OpEnact_3b24dbae88> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1997-01-11"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_1> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_1> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_1> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:versionText "يتمم هذا الأمر أحكام القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل ."@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_2_19970111_OpEnact_9bed722e7b> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1997-01-11"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_2> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:versionText "تدرج ضمن القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 المادة 52 مكرر ، وتحرر كما يأتي : \" المادة 52 مكرر : يسدد صندوق خاص تعويض العطلة السنوية المستحقة لعمال المهن والفروع وقطاعات النشاط الذين لا يشتغلون عادة بصفة مستمرة عند نفس الهيئة المستخدمة خلال المدة المعتمدة لتقدير الحق في العطلة . تنخرط الهيئات المستخدمة المذكورة أعلاه وجوبا في هذا الصندوق . تحدد المهن والفروع وقطاعات النشاط المذكورة أعلاه عن طريق التنظيم\"."@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_3_19970111_OpEnact_fef87516dc> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1997-01-11"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_3> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_3> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_3> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:versionText "تدرج ضمن القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 المادة 52 مكرر 2 ، وتحرر كما يأتي: \" المادة 52 مكرر 2 : تغطى النفقات المتعلقة بتسديد تعويض العطلة المذكورة في المادة 52 مكرر أعلاه، وكذا مصاريف التسيير، بواسطة اشتراك على عاتق الهيئات المستخدمة دون سواها. تحدد نسبة هذا الاشتراك وكيفيات تحصيله عن طريق التنظيم\"."@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_4_19970111_OpEnact_e4145c5301> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1997-01-11"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_4> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_4> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_4> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:versionText "تدرج ضمن القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 المادة 52 مكرر 3 ، وتحرر كما يأتي : \" المادة 52 مكرر 3 : يحدد عن طريق التنظيم إنشاء الصندوق الخاص المنصوص عليه في هذا الأمر وكذا شروط سيره وكيفياته\"."@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_5_19970111_OpEnact_c4ba59caf3> a dzdoc:ArticleVersion ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:inForceFrom "1997-01-11"^^xsd:date ;
+    dzdoc:validFromBasis "publication" ;
+    dzdoc:versionEvent <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_5> ;
+    dzdoc:versionOf <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_5> ;
+    dzdoc:versionSourceArticle <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_5> ;
+    dzdoc:versionSourceDocument <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:versionText "ينشر هذا الأمر في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية. حرر بالجزائر في 2 رمضان عام 1417 الموافق 11 يناير سنة 1997. اليمين زروال"@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11/expression> a dzdoc:Expression ;
+    dzdoc:expressionOf <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:frbrUri "/akn/dz/act/law/1997-01-11/97-02_1997-01-11/ara@"^^xsd:anyURI ;
+    dzdoc:hasManifestation <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11/manifestation> ;
+    dzdoc:language "ara" ;
+    dzdoc:publicationDate "1997-01-11"^^xsd:date .
+
+dzorg:parliament a dzdoc:Organization ;
+    rdfs:label "البرلمان"@ar ;
+    dzdoc:frbrUri "/ontology/organization/dz/parliament"^^xsd:anyURI .
+
+dzterm:special_fund a skos:Concept,
+        dzdoc:LegalTerm ;
+    skos:prefLabel "الصندوق الخاص"@ar,
+        "صندوق خاص"@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#amend_2> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:confidenceScore 0.99 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpInsert ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1990-04-21/90-11#version_art_52bis_19970111_OpInsert_3db094c039> ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1990-04-21/90-11#art_52bis> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:validFrom "1997-01-11"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#amend_3> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:confidenceScore 0.99 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpInsert ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1990-04-21/90-11#version_art_52bis2_19970111_OpInsert_8758c722d1> ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_3> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1990-04-21/90-11#art_52bis2> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:validFrom "1997-01-11"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#amend_4> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:confidenceScore 0.99 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpInsert ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1990-04-21/90-11#version_art_52bis3_19970111_OpInsert_8c49af451d> ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_4> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1990-04-21/90-11#art_52bis3> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:validFrom "1997-01-11"^^xsd:date ;
+    dzdoc:validFromBasis "explicit-effective" .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_1> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "يتمم هذا الأمر أحكام القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل ."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_1_19970111_OpEnact_3b24dbae88> ;
+    dzdoc:replacementText "يتمم هذا الأمر أحكام القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل ."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_1> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_1> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1997-01-11"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_2> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تدرج ضمن القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 المادة 52 مكرر ، وتحرر كما يأتي : \" المادة 52 مكرر : يسدد صندوق خاص تعويض العطلة السنوية المستحقة لعمال المهن والفروع وقطاعات النشاط الذين لا يشتغلون عادة بصفة مستمرة عند نفس الهيئة المستخدمة خلال المدة المعتمدة لتقدير الحق في العطلة . تنخرط الهيئات المستخدمة المذكورة أعلاه وجوبا في هذا الصندوق . تحدد المهن والفروع وقطاعات النشاط المذكورة أعلاه عن طريق التنظيم\"."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_2_19970111_OpEnact_9bed722e7b> ;
+    dzdoc:replacementText "تدرج ضمن القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 المادة 52 مكرر ، وتحرر كما يأتي : \" المادة 52 مكرر : يسدد صندوق خاص تعويض العطلة السنوية المستحقة لعمال المهن والفروع وقطاعات النشاط الذين لا يشتغلون عادة بصفة مستمرة عند نفس الهيئة المستخدمة خلال المدة المعتمدة لتقدير الحق في العطلة . تنخرط الهيئات المستخدمة المذكورة أعلاه وجوبا في هذا الصندوق . تحدد المهن والفروع وقطاعات النشاط المذكورة أعلاه عن طريق التنظيم\"."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1997-01-11"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_3> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تدرج ضمن القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 المادة 52 مكرر 2 ، وتحرر كما يأتي: \" المادة 52 مكرر 2 : تغطى النفقات المتعلقة بتسديد تعويض العطلة المذكورة في المادة 52 مكرر أعلاه، وكذا مصاريف التسيير، بواسطة اشتراك على عاتق الهيئات المستخدمة دون سواها. تحدد نسبة هذا الاشتراك وكيفيات تحصيله عن طريق التنظيم\"."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_3_19970111_OpEnact_fef87516dc> ;
+    dzdoc:replacementText "تدرج ضمن القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 المادة 52 مكرر 2 ، وتحرر كما يأتي: \" المادة 52 مكرر 2 : تغطى النفقات المتعلقة بتسديد تعويض العطلة المذكورة في المادة 52 مكرر أعلاه، وكذا مصاريف التسيير، بواسطة اشتراك على عاتق الهيئات المستخدمة دون سواها. تحدد نسبة هذا الاشتراك وكيفيات تحصيله عن طريق التنظيم\"."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_3> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_3> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1997-01-11"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_4> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "تدرج ضمن القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 المادة 52 مكرر 3 ، وتحرر كما يأتي : \" المادة 52 مكرر 3 : يحدد عن طريق التنظيم إنشاء الصندوق الخاص المنصوص عليه في هذا الأمر وكذا شروط سيره وكيفياته\"."@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_4_19970111_OpEnact_e4145c5301> ;
+    dzdoc:replacementText "تدرج ضمن القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 المادة 52 مكرر 3 ، وتحرر كما يأتي : \" المادة 52 مكرر 3 : يحدد عن طريق التنظيم إنشاء الصندوق الخاص المنصوص عليه في هذا الأمر وكذا شروط سيره وكيفياته\"."@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_4> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_4> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1997-01-11"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_5> a dzdoc:AmendmentEvent,
+        dzdoc:LifecycleAssertion ;
+    dzdoc:assertsTarget <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:confidenceScore 1.0 ;
+    dzdoc:datePrecision "exact" ;
+    dzdoc:evidenceText "ينشر هذا الأمر في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية. حرر بالجزائر في 2 رمضان عام 1417 الموافق 11 يناير سنة 1997. اليمين زروال"@ar ;
+    dzdoc:isAuthoritative true ;
+    dzdoc:isContradictory false ;
+    dzdoc:operationType dzdoc:OpEnact ;
+    dzdoc:producesVersion <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_5_19970111_OpEnact_c4ba59caf3> ;
+    dzdoc:replacementText "ينشر هذا الأمر في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية. حرر بالجزائر في 2 رمضان عام 1417 الموافق 11 يناير سنة 1997. اليمين زروال"@ar ;
+    dzdoc:resolutionStatus "resolved" ;
+    dzdoc:sourceArticle <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_5> ;
+    dzdoc:sourceDocument <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:targetArticle <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_5> ;
+    dzdoc:targetDocument <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:targetScope "whole_article" ;
+    dzdoc:validFrom "1997-01-11"^^xsd:date ;
+    dzdoc:validFromBasis "publication" .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#body> a dzdoc:Body ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:directlyContains <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_1>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_3>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_4>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_5> ;
+    dzdoc:hasArticle <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_1>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_3>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_4>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_5> .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_1> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#body> ;
+    dzdoc:eId "art_1" ;
+    dzdoc:fullText "يتمم هذا الأمر أحكام القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل ."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_1> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_1_para_0> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_1_19970111_OpEnact_3b24dbae88> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:introducedOn "1997-01-11"^^xsd:date ;
+    dzdoc:number "المادة الأولى" ;
+    dzdoc:position 0 ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_1_extref_7dfc639f> .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_4> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#body> ;
+    dzdoc:eId "art_4" ;
+    dzdoc:fullText "تدرج ضمن القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 المادة 52 مكرر 3 ، وتحرر كما يأتي : \" المادة 52 مكرر 3 : يحدد عن طريق التنظيم إنشاء الصندوق الخاص المنصوص عليه في هذا الأمر وكذا شروط سيره وكيفياته\"."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_4> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_4_para_0>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_4_para_1> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_4_19970111_OpEnact_e4145c5301> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:introducedOn "1997-01-11"^^xsd:date ;
+    dzdoc:number "المادة 4" ;
+    dzdoc:position 3 ;
+    dzdoc:references <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_52bis3> ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_4_extref_7dfc639f>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_4_extref_b94f2875> ;
+    dzdoc:referencesInternal <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_52bis3> ;
+    dzdoc:usesTerm dzterm:special_fund .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_5> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#body> ;
+    dzdoc:eId "art_5" ;
+    dzdoc:fullText "ينشر هذا الأمر في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية. حرر بالجزائر في 2 رمضان عام 1417 الموافق 11 يناير سنة 1997. اليمين زروال"@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_5> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_5_para_0>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_5_para_1>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_5_para_2> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_5_19970111_OpEnact_c4ba59caf3> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:introducedOn "1997-01-11"^^xsd:date ;
+    dzdoc:number "المادة 5" ;
+    dzdoc:position 4 .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_3> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#body> ;
+    dzdoc:eId "art_3" ;
+    dzdoc:fullText "تدرج ضمن القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 المادة 52 مكرر 2 ، وتحرر كما يأتي: \" المادة 52 مكرر 2 : تغطى النفقات المتعلقة بتسديد تعويض العطلة المذكورة في المادة 52 مكرر أعلاه، وكذا مصاريف التسيير، بواسطة اشتراك على عاتق الهيئات المستخدمة دون سواها. تحدد نسبة هذا الاشتراك وكيفيات تحصيله عن طريق التنظيم\"."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_3> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_3_para_0>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_3_para_1>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_3_para_2> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_3_19970111_OpEnact_fef87516dc> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:introducedOn "1997-01-11"^^xsd:date ;
+    dzdoc:number "المادة 3" ;
+    dzdoc:position 2 ;
+    dzdoc:references <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_52bis>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_52bis2> ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_3_extref_7dfc639f>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_3_extref_8a588d34> ;
+    dzdoc:referencesInternal <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_52bis>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_52bis2> .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble> a dzdoc:Preamble ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:hasCitation <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_0>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_1>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_10>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_11>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_12>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_2>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_3>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_4>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_5>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_6>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_7>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_8>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_9> ;
+    dzdoc:hasSegment <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_0>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_1>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_10>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_11>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_12>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_13>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_2>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_3>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_4>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_5>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_6>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_7>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_8>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble_segment_9> ;
+    dzdoc:text "يصدر الأمر الآتي نصه :"@ar .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2> a dzdoc:Article ;
+    dzdoc:containedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:directlyContainedIn <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#body> ;
+    dzdoc:eId "art_2" ;
+    dzdoc:fullText "تدرج ضمن القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 المادة 52 مكرر ، وتحرر كما يأتي : \" المادة 52 مكرر : يسدد صندوق خاص تعويض العطلة السنوية المستحقة لعمال المهن والفروع وقطاعات النشاط الذين لا يشتغلون عادة بصفة مستمرة عند نفس الهيئة المستخدمة خلال المدة المعتمدة لتقدير الحق في العطلة . تنخرط الهيئات المستخدمة المذكورة أعلاه وجوبا في هذا الصندوق . تحدد المهن والفروع وقطاعات النشاط المذكورة أعلاه عن طريق التنظيم\"."@ar ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_2> ;
+    dzdoc:hasParagraph <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2_para_0>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2_para_1>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2_para_2>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2_para_3> ;
+    dzdoc:hasStatus dzdoc:StatusOriginal ;
+    dzdoc:hasVersion <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_2_19970111_OpEnact_9bed722e7b> ;
+    dzdoc:imposesObligation <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2_obligation_0_7309d7a5>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2_obligation_1_cc717836> ;
+    dzdoc:introducedBy <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> ;
+    dzdoc:introducedOn "1997-01-11"^^xsd:date ;
+    dzdoc:number "المادة 2" ;
+    dzdoc:position 1 ;
+    dzdoc:references <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_52bis> ;
+    dzdoc:referencesExternal <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2_extref_7dfc639f>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_2_extref_daac4f20> ;
+    dzdoc:referencesInternal <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#art_52bis> ;
+    dzdoc:usesTerm dzterm:special_fund .
+
+<https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11> a dzdoc:Law ;
+    dzdoc:amends <https://legal.dz/resource/law/1990-04-21/90-11> ;
+    dzdoc:authoredBy dzorg:parliament ;
+    dzdoc:countryCode "dz" ;
+    dzdoc:dateText "2 رمضان عام 1417 الموافق 11 يناير سنة 1997"@ar ;
+    dzdoc:documentNumber "97-02_1997-01-11" ;
+    dzdoc:enactmentDate "1997-01-11"^^xsd:date ;
+    dzdoc:frbrThisUri "/akn/dz/act/law/1997-01-11/97-02_1997-01-11/main"^^xsd:anyURI ;
+    dzdoc:frbrUri "/akn/dz/act/law/1997-01-11/97-02_1997-01-11"^^xsd:anyURI ;
+    dzdoc:hasAmendmentEvent <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#amend_1>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#amend_2>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#amend_3>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#amend_4>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_1>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_2>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_3>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_4>,
+        <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#version_art_5> ;
+    dzdoc:hasAuthority dzorg:parliament ;
+    dzdoc:hasBody <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#body> ;
+    dzdoc:hasExpression <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11/expression> ;
+    dzdoc:hasLifecycleAssertion <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#lifecycle_a00ba484f6fa> ;
+    dzdoc:hasPreamble <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preamble> ;
+    dzdoc:hasPreface <https://legal.dz/resource/law/1997-01-11/97-02_1997-01-11#preface> ;
+    dzdoc:publicationDate "1997-01-11"^^xsd:date ;
+    dzdoc:sourceFile "Dataset/regeneration_runs/2026-04-28_full_final_chunk2800_retry6/akn/97-02_1997-01-11.xml" ;
+    dzdoc:title "أمر رقم 97-02_1997-01-11 يتمم القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل"@ar .
+

@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="law">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/law/1996-07-09/96-21_1996-07-09/main"/>
+      <FRBRuri value="/akn/dz/act/law/1996-07-09/96-21_1996-07-09"/>
+      <FRBRdate date="1996-07-09" name="enactment"/>
+      <FRBRauthor href="#parliament"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="96-21_1996-07-09"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/law/1996-07-09/96-21_1996-07-09/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/law/1996-07-09/96-21_1996-07-09/ara@"/>
+      <FRBRdate date="1996-07-09" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/law/1996-07-09/96-21_1996-07-09/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/law/1996-07-09/96-21_1996-07-09/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="parliament" href="/ontology/organization/dz/parliament" showAs="البرلمان"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="president" href="/ontology/person/dz/president" showAs="رئيس الجمهورية"/>
+  </references>
+<lifecycle source="#source"><eventRef eId="evt_1" date="1996-07-09" source="#source" type="generation"/></lifecycle><analysis source="#source"><activeModifications><textualMod type="insertion" eId="amend_1"><source href="#art_1"/><destination href="/akn/dz/act/law/1990-04-21/90-11"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_2"><source href="#art_3"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_12"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_3"><source href="#art_3"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_12_bis"/><force period="#evt_1"/></textualMod><textualMod type="substitution" eId="amend_4"><source href="#art_6"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_42"/><force period="#evt_1"/></textualMod><textualMod type="substitution" eId="amend_5"><source href="#art_7"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_44"/><force period="#evt_1"/></textualMod><textualMod type="substitution" eId="amend_6"><source href="#art_8"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_54"/><force period="#evt_1"/></textualMod><textualMod type="substitution" eId="amend_7"><source href="#art_10"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_91"/><force period="#evt_1"/></textualMod><textualMod type="substitution" eId="amend_8"><source href="#art_11"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_93"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_9"><source href="#art_12"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_93_bis"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_10"><source href="#art_12"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_91"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_11"><source href="#art_12"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_92"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_12"><source href="#art_12"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_94"/><force period="#evt_1"/></textualMod><textualMod type="substitution" eId="amend_13"><source href="#art_14"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_98"/><force period="#evt_1"/></textualMod><textualMod type="substitution" eId="amend_14"><source href="#art_15"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_100"/><force period="#evt_1"/></textualMod><textualMod type="substitution" eId="amend_15"><source href="#art_17"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_114"/><force period="#evt_1"/></textualMod><textualMod type="substitution" eId="amend_16"><source href="#art_19"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_134"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_17"><source href="#art_21"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_146_bis"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_18"><source href="#art_21"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_12"/><force period="#evt_1"/></textualMod><textualMod type="insertion" eId="amend_19"><source href="#art_21"/><destination href="/akn/dz/act/law/1990-04-21/90-11#art_12_bis"/><force period="#evt_1"/></textualMod></activeModifications></analysis></meta>
+    <preface>
+  <docTitle>أمر رقم 96 - 21 يعدل ويتمم القانون رقم 90-11 والمتعلق بعلاقات العمل</docTitle>
+  <docNumber>96-21_1996-07-09</docNumber>
+  <docDate date="1996-07-09">23 صفر عام 1417 الموافق 9 يوليو سنة 1996</docDate>
+  <docAuthority>البرلمان</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>إن رئيس الجمهورية،</p>
+    </citation>
+    <citation>
+      <p>بناء على الدستور، لا سيما المواد 52 ، 53، 54، 115 و 117 منه،</p>
+    </citation>
+    <citation>
+      <p>وبناء على الأرضية المتضمنة الوفاق الوطني حول المرحلة الانتقالية،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 66 – 154 المؤرخ في 18 صفر عام 1386 الموافق 8 يونيو سنة 1966 والمتضمن قانون الإجراءات المدنية، المعدل والمتمم</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 66 - 156 المؤرخ في 18 صفر عام 1386 الموافق 8 يونيو سنة 1966 والمتضمن قانون العقوبات، المعدل والمتمم</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 75- 58 المؤرخ في 20 رمضان عام 1395 الموافق 26 سبتمبر سنة 1975 والمتضمن القانون المدني، المعدل والمتمم</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 90 - 02 المؤرخ في 10 رجب عام 1410 الموافق 6 فبراير سنة 1990 والمتعلق بالوقاية من النزاعات الجماعية في العمل وتسويتها وممارسة حق الإضراب، المعدل والمتمم</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 90 – 03 المؤرخ في 10 رجب عام 1410 الموافق 6 فبراير سنة 1990 والمتعلق بمفتشية العمل، المعدل والمتمم،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 90 - 04 المؤرخ في 10 رجب عام 1410 الموافق 6 فبراير سنة 1990 والمتعلق بتسوية النزاعات الفردية فى العمل المعدل والمتمم</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 90 – 10 المؤرخ في 19 رمضان عام 1410 المواقق 14 أبريل سنة 1990 والمتعلق بالنقد والقرض، المعدل،</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 90 - 11 المؤرخ في 26 رمضان عام 1410 الموافق 21 أبريل سنة 1990 والمتعلق بعلاقات العمل، المعدل والمتمم</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى القانون رقم 90 - 14 المؤرخ في 9 ذي القعدة عام 1410 الموافق 2 يونيو سنة 1990 والمتعلق بكيفيات ممارسة الحق النقابي، المعدل والمتمم.</p>
+    </citation>
+    <citation>
+      <p>وبمقتضى الأمر رقم 95 – 25 المؤرخ في 30 ربيع الثاني عام 1416 الموافق 25 سبتمبر سنة 1995 والمتعلق بتسيير رؤوس الأموال التجارية التابعة للدولة،</p>
+    </citation>
+    <citation>
+      <p>وبعد مصادقة المجلس الوطني الانتقالي،</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يصدر الأمر الآتي نصه :</p>
+  </formula>
+</preamble>
+    <body>
+      <article eId="art_1">
+        <num>المادة الأولى</num>
+        <content>
+        <paragraph>
+        <p>يعدل هذ الأمر ويتمم أحكام <ref href="/akn/dz/act/law/1990-04-21/90-11">القانون رقم 90-11 المؤرخ في 21 أبريل سنة 1990</ref> والمتعلق ب<term refersTo="#labor_relations">علاقات العمل</term>.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_2">
+        <num>المادة 2</num>
+        <content>
+        <paragraph>
+        <p>تتمم <ref href="/akn/dz/act/law/1990-04-21/90-11#art_12">المادة 12 من القانون رقم 90 - 11 المؤرخ في 21 أبريل سنة 1990</ref> والمذكور أعلاه بمقطع خامس، يحرر كما يأتي:</p>
+        </paragraph>
+        <paragraph>
+        <p>"المادة 12 :</p>
+        <list>
+        <point>
+        <p>عندما يتعلق الأمر بنشاطات أو أشغال ذات مدة محدودة أو مؤقتة بحكم طبيعتها ".</p>
+        </point>
+        </list>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_3">
+        <num>المادة 3</num>
+        <content>
+        <paragraph>
+        <p>تتمم أحكام <ref href="/akn/dz/act/law/1990-04-21/90-11">القانون رقم 90 - 11 المؤرخ في 21 أبريل سنة 1990</ref> والمذكور أعلاه بالمادة 12 مكرر ، تحرر كما يأتي :</p>
+        </paragraph>
+        <paragraph>
+        <p>" المادة 12 مكرر : <obligation>يتأكد <term refersTo="#labor_inspector">مفتش العمل</term> المختص إقليميا، بحكم الصلاحيات التي يخولها إياه التشريع والتنظيم المعمول بهما، من أن عقد العمل لمدة محدودة أبرم من أجل إحدى الحالات المنصوص عليها صراحة في <ref href="#art_12">المادة 12</ref> من هذا القانون، وأن المدة المنصوص عليها في العقد موافقة للنشاط الذي وظف من أجله العامل</obligation> ".</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_4">
+        <num>المادة 4</num>
+        <content>
+        <paragraph>
+        <p>تتمم <ref href="/akn/dz/act/law/1990-04-21/90-11#art_13">المادة 13 من القانون رقم 90 - 11 المؤرخ في 21 أبريل سنة 1990</ref> والمذكور أعلاه بفقرة 2، تحرر كما يأتي</p>
+        </paragraph>
+        <paragraph>
+        <p>"المادة 13 :</p>
+        </paragraph>
+        <paragraph>
+        <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم".</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_5">
+        <num>المادة 5</num>
+        <content>
+        <paragraph>
+        <p>تتمم <ref href="/akn/dz/act/law/1990-04-21/90-11#art_31">المادة 31 من القانون رقم 90 - 11 المؤرخ في 21 أبريل سنة 1990</ref> والمذكور أعلاه بفقرتين تحرران كما يأتي</p>
+        </paragraph>
+        <paragraph>
+        <p>"المادة 31 :</p>
+        </paragraph>
+        <paragraph>
+        <p><condition>غير أنه يجوز مخالفة الحدود المنصوص عليها في الفقرة 2 من هذه المادة في الحالات المذكورة صراحة وضمن الشروط المحددة في الاتفاقيات والاتفاقات الجماعية، وهي :</condition></p>
+        <list>
+        <point>
+        <p>الوقاية من الحوادث الوشيكة الوقوع أو إصلاح الأضرار الناجمة عن الحوادث</p>
+        </point>
+        <point>
+        <p>إنهاء الأشغال التي يمكن أن يتسبب توقفها، بحكم طبيعتها في أضرار .</p>
+        </point>
+        </list>
+        </paragraph>
+        <paragraph>
+        <p><obligation>يستشار وجوبا في هذه الحالات ممثلو العمال ويعلم إلزاما <term refersTo="#labor_inspector">مفتش العمل</term> المختص إقليميا</obligation> ".</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_6">
+        <num>المادة 6</num>
+        <content>
+        <paragraph>
+        <p>تعدل <ref href="/akn/dz/act/law/1990-04-21/90-11#art_42">المادة 42 من القانون رقم 90 - 11 المؤرخ في 21 أبريل سنة 1990</ref> والمذكور أعلاه، وتحرر كما يأتي :</p>
+        </paragraph>
+        <paragraph>
+        <p>" المادة 42 : <right>يمنح العامل في ولايات الجنوب عطلة إضافية لا تقل عن عشرة (10) أيام عن سنة العمل الواحدة</right>.</p>
+        </paragraph>
+        <paragraph>
+        <p>تحدد الاتفاقيات أو الاتفاقات الجماعية كيفيات منح هذه العطلة</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_7">
+        <num>المادة 7</num>
+        <content>
+        <paragraph>
+        <p>تعدل وتتمم <ref href="/akn/dz/act/law/1990-04-21/90-11#art_44">المادة 44 من القانون رقم 90 - 11 المؤرخ في 21 أبريل سنة 1990</ref> والمذكور أعلاه، وتحرر كما يأتي :</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_44">
+        <num>المادة 44</num>
+        <content>
+        <paragraph>
+        <p>تعادل الفترة التي تتعدى خمسة عشر (15) يوم عمل في الشهر الأول من تشغيل العامل شهر عمل لتحديد مدة <term refersTo="#paid_leave">العطلة السنوية المدفوعة الأجر</term></p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_8">
+        <num>8</num>
+        <content>
+        <paragraph>
+        <p>يعدل ويتمم المقطع الثالث من الفقرة الأولى من <ref href="/akn/dz/act/law/1990-04-21/90-11#art_54">المادة 54 من القانون رقم 90-11 المؤرخ في 21 أبريل سنة 1990</ref> والمذكور أعلاه، ويحرر كما يأتي :</p>
+        </paragraph>
+        <paragraph>
+        <p>"المادة 54</p>
+        <list>
+        <point>
+        <p><right>يستفيد العامل ثلاثة (3) أيام كاملة مدفوعة الأجر، بمناسبة حدث من الأحداث العائلية الآتية : زواج العامل وولادة مولود له، أو زواج أحد فروع العامل أو وفاة أحد الأصول أو الفروع أو الحواشي من الدرجة الأولى للعامل أو لزوجه، أو وفاة زوج العامل، أو ختان إبن العامل</right>.</p>
+        </point>
+        </list>
+        </paragraph>
+        <paragraph>
+        <p>غير أنه <condition>في حالتي الولادة أو الوفاة</condition> يكون التبرير لاحقا</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_10">
+        <num>10</num>
+        <content>
+        <paragraph>
+        <p>تعدل <ref href="/akn/dz/act/law/1990-04-21/90-11#art_91">المادة 91 من القانون رقم 90 - 11 المؤرخ في 21 أبريل سنة 1990</ref> والمذكور أعلاه، وتحرر كما يأتي :</p>
+        </paragraph>
+        <paragraph>
+        <p>"المادة . 91 تتم مشاركة العمال في الهيئة المستخدمة كما يأتي</p>
+        <list>
+        <point>
+        <p>بواسطة مندوبي المستخدمين في مستوى كل مكان عمل متميز يحتوي على عشرين (20) عاملا على الأقل،</p>
+        </point>
+        <point>
+        <p>بواسطة لجنة مشاركة تضم مندوبي المستخدمين، في مستوى مقر الهيئة المستخدمة المنتخبين طبقا ل<ref href="#art_93">المادة 93</ref> أدناه</p>
+        </point>
+        </list>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_11">
+        <num>11</num>
+        <content>
+        <paragraph>
+        <p>تعدل وتتمم <ref href="/akn/dz/act/law/1990-04-21/90-11#art_93">المادة 93 من القانون رقم 90 - 11 المؤرخ في 21 أبريل سنة 1990</ref> والمذكور أعلاه، وتحرر كما يأتي :</p>
+        </paragraph>
+        <paragraph>
+        <p>" المادة 93 : ينتخب مندوبو المستخدمين، ضمن نفس الهيئة المستخدمة، المنتخبين طبقا لأحكام <ref href="#art_91">المادتين 91</ref> و <ref href="#art_92">92</ref> من هذا القانون من بينهم لجنة مشاركة ويحدد عدد المندوبين فيها طبقا للشروط المنصوص عليها في <ref href="#art_99">المادة 99</ref> أدناه ".</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_12">
+        <num>12</num>
+        <content>
+        <paragraph>
+        <p>تتمم أحكام <ref href="/akn/dz/act/law/1990-04-21/90-11">القانون رقم 90 - 11 المؤرخ في 21 أبريل سنة 1990</ref> والمذكور أعلاه ب<ref href="#art_93_bis">المادة 93 مكرر</ref> ، تحرر كما يأتي :</p>
+        </paragraph>
+        <paragraph>
+        <p>" المادة 93 مكرر : يمارس مندوب المستخدمين المنتخب، طبقا ل<ref href="#art_91">المادتين 91</ref> و <ref href="#art_92">92</ref> من هذا القانون، صلاحيات لجنة المشاركة المنصوص عليها في <ref href="#art_94">المادة 94</ref> أدناه <condition>في الحالات التي تتوفر فيها الهيئة المستخدمة على مكان عمل متميز وحيد</condition></p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_13">
+        <num>13</num>
+        <content>
+        <paragraph>
+        <p>تتمم <ref href="/akn/dz/act/law/1990-04-21/90-11#art_97">المادة 97 من القانون رقم 90 - 11 المؤرخ في 21 أبريل سنة 1990</ref> والمذكور أعلاه، وتحرر كما يأتي:</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_97">
+        <num>97</num>
+        <content>
+        <paragraph>
+        <p>المادة 97 : لا تشترط الأقدمية المنصوص عليها في الفقرة الثالثة أعلاه، <condition>إذا كانت الهيئة المستخدمة مؤسسة منذ أقل من سنة</condition>".</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_14">
+        <num>المادة 14</num>
+        <content>
+        <paragraph>
+        <p>تعدل وتتمم <ref href="/akn/dz/act/law/1990-04-21/90-11#art_98">المادة 98 من القانون رقم 90 - 11 المؤرخ في 21 أبريل سنة 1990</ref> والمذكور أعلاه، وتحرر كما يأتي :</p>
+        </paragraph>
+        <paragraph>
+        <p>" <ref href="#art_98">المادة 98</ref>: <obligation>يتم الاقتراع في دورين</obligation>، في الدور الأول <obligation>تقدم <term refersTo="#trade_unions">المنظمات النقابية التمثيلية</term> ضمن الهيئة المستخدمة مترشحين لانتخاب مندوبي المستخدمين من بين العمال الذين تتوفر فيهم <condition>معايير قابلية الانتخاب المحددة في <ref href="#art_97">المادة 97</ref> أعلاه</condition></obligation>.</p>
+        </paragraph>
+        <paragraph>
+        <p><condition>إذا كان عدد المصوتين أقل من نصف عدد الناخبين</condition> <obligation>يجري الدور الثاني من الاقتراع في مدة أقصاها ثلاثون (30) يوما</obligation>.</p>
+        </paragraph>
+        <paragraph>
+        <p>وفي هذه الحالة، <right>يمكن كل العمال الذين تتوفر فيهم <condition>معايير قابلية الانتخاب المحددة في <ref href="#art_97">المادة 97</ref> أعلاه</condition> أن يرشحوا أنفسهم</right> وفي حالة عدم وجود منظمة أو منظمات نقابية تمثيلية، ضمن الهيئة المستخدمة، <obligation>تنظم انتخابات مندوبي المستخدمين ضمن الشروط المحددة في الفقرة 3 السابقة، مع مراعاة النسبة الدنيا للمشاركة في الاقتراع كما هو في الفقرة 2 أعلاه</obligation>.</p>
+        </paragraph>
+        <paragraph>
+        <p><obligation>يجب زيادة على ذلك، أن يسمح نمط الاقتراع بالحصول على تمثيل عادل لمختلف الفئات الاجتماعية والمهنية في مكان العمل وفي الهيئة المستخدمة المعنية</obligation>.</p>
+        </paragraph>
+        <paragraph>
+        <p>يعتبر فائزا في الانتخابات المترشحون الذين يحصلون على أكبر عدد من الأصوات و<condition>عندما يحصل مترشحان أو عدة مترشحين على نفس عدد الأصوات</condition>، <obligation>تؤخذ الأقدمية ضمن الهيئة المستخدمة بعين الاعتبار من أجل الفصل بينهم</obligation>.</p>
+        </paragraph>
+        <paragraph>
+        <p><condition>غير أنه في حالة ما إذا كان المترشحون الفائزون يتمتعون بنفس الأقدمية ضمن الهيئة المستخدمة</condition> يعتبر فائزا المترشح الأكبر سنا.</p>
+        </paragraph>
+        <paragraph>
+        <p><obligation>تحدد كيفيات تطبيق هذه المادة، لا سيما المتعلقة منها بتنظيم الانتخابات عن طريق التنظيم، بعد استشارة المنظمات النقابية للعمال والمستخدمين الأكثر تمثيلا</obligation> ".</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_15">
+        <num>المادة 15</num>
+        <content>
+        <paragraph>
+        <p>تعدل <ref href="/akn/dz/act/law/1990-04-21/90-11#art_100">المادة 100 من القانون رقم 90 - 11 المؤرخ في 21 أبريل سنة 1990</ref> والمذكور أعلاه، وتحرر كما يأتي :</p>
+        </paragraph>
+        <paragraph>
+        <p>" <ref href="#art_100">المادة 100</ref> : <right>يرفع كل احتجاج يتعلق بانتخابات مندوبي المستخدمين في أجل الثلاثين (30) يوما التالية للانتخابات أمام المحكمة المختصة إقليميا</right> التي <obligation>تبت بحكم ابتدائي ونهائي في أجل ثلاثين (30) يوما من إخطارها</obligation> ".</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_17">
+        <num>المادة 17</num>
+        <content>
+        <paragraph>
+        <p>تعدل وتتمم <ref href="/akn/dz/act/law/1990-04-21/90-11#art_114">المادة 114 من القانون رقم 90 - 11 المؤرخ في 21 أبريل سنة 1990</ref> والمذكور أعلاه، وتحرر كما يأتي :</p>
+        </paragraph>
+        <paragraph>
+        <p>" <ref href="/akn/dz/act/law/1990-04-21/90-11#art_114">المادة 114</ref> : <def refersTo="#collective_agreement">الاتفاقية الجماعية اتفاق مدون يتضمن مجموع شروط التشغيل والعمل فيما يخص فئة أو عدة فئات مهنية</def>.</p>
+        </paragraph>
+        <paragraph>
+        <p><def refersTo="#collective_accord">الاتفاق الجماعي اتفاق مدون يعالج عنصرا معينا أو عدة عناصر محددة من مجموع شروط التشغيل والعمل بالنسبة لفئة أو عدة فئات اجتماعية ومهنية</def>. ويمكن أن يشكل ملحقا للاتفاقية الجماعية.</p>
+        </paragraph>
+        <paragraph>
+        <p>تبرم الاتفاقيات والاتفاقات الجماعية ضمن نفس الهيئة المستخدمة بين <term refersTo="#employer">المستخدم</term> و<term refersTo="#union_representatives">الممثلين النقابيين للعمال</term>.</p>
+        </paragraph>
+        <paragraph>
+        <p>كما تبرم بين مجموعة مستخدمين أو منظمة أو عدة منظمات نقابية تمثيلية للمستخدمين، من جهة، أو منظمة أو عدة منظمات نقابية تمثيلية للعمال، من جهة أخرى.</p>
+        </paragraph>
+        <paragraph>
+        <p>تحدد تمثيلية الأطراف في التفاوض طبقا للشروط المنصوص عليها في القانون</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_18">
+        <num>المادة 18</num>
+        <content>
+        <paragraph>
+        <p>يدرج كل مرة بعد المصطلح "<term refersTo="#collective_agreement">اتفاقية جماعية</term>" مصطلح "<term refersTo="#collective_accord">اتفاق جماعي</term>" في مستوى المواد <ref href="#art_115">115</ref> <ref href="#art_116">116</ref> <ref href="#art_117">117</ref> <ref href="#art_118">118</ref> <ref href="#art_119">119</ref> <ref href="#art_121">121</ref> <ref href="#art_122">122</ref> <ref href="#art_123">123</ref> <ref href="#art_124">124</ref> <ref href="#art_126">126</ref> <ref href="#art_127">127</ref> <ref href="#art_128">128</ref> <ref href="#art_129">129</ref> <ref href="#art_130">130</ref> <ref href="#art_131">131</ref> <ref href="#art_132">132</ref> و <ref href="#art_133">133</ref> من هذا القانون.</p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_19">
+        <num>المادة 19</num>
+        <content>
+        <paragraph>
+        <p>تعدل <ref href="/akn/dz/act/law/1990-04-21/90-11#art_134">المادة 134 من القانون رقم 90 – 11 المؤرخ في 21 أبريل سنة 1990</ref> والمذكور أعلاه، وتحرر كما يأتي :</p>
+        </paragraph>
+        <paragraph>
+        <p>" <ref href="/akn/dz/act/law/1990-04-21/90-11#art_134">المادة 134</ref> : <condition>إذا لاحظ مفتش العمل أن اتفاقية جماعية أو اتفاقا جماعيا مخالف (ة) للتشريع والتنظيم المعمول بهما</condition>، <obligation>يعرضها ( يعرضه ) تلقائيا على الجهة القضائية المختصة</obligation></p>
+        </paragraph>
+        </content>
+        </article>
+      <article eId="art_21">
+        <num>المادة 21</num>
+        <content>
+        <paragraph>
+        <p>تتمم أحكام <ref href="/akn/dz/act/law/1990-04-21/90-11">القانون رقم 90 - 11 المؤرخ في 21 أبريل سنة 1990</ref> والمذكور أعلاه بالمادة <ref href="#art_146_bis">146 مكرر</ref>، تحرر كما يأتي :</p>
+        </paragraph>
+        <paragraph>
+        <p>" <ref href="#art_146_bis">المادة 146 مكرر</ref> : يعاقب على كل مخالفة لأحكام هذا القانون المتعلقة باللجوء إلى عقد العمل ذي المدة المحدودة خارج الحالات والشروط المنصوص عليها صراحة في <ref href="#art_12">المادتين 12</ref> و <ref href="#art_12_bis">12 مكرر</ref> من هذا القانون، بغرامة مالية من 1000 دج إلى 2000 دج مطبقة حسب عدد المخالفات ".</p>
+        </paragraph>
+        </content>
+        </article>
+    </body>
+  </act>
+</akomaNtoso>

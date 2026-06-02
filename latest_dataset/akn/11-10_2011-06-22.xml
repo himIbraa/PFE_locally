@@ -1,0 +1,3025 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="law">
+    <meta>
+  <identification source="#source">
+    <FRBRWork>
+      <FRBRthis value="/akn/dz/act/law/2011-06-22/11-10/main"/>
+      <FRBRuri value="/akn/dz/act/law/2011-06-22/11-10"/>
+      <FRBRdate date="2011-06-22" name="enactment"/>
+      <FRBRauthor href="#parliament"/>
+      <FRBRcountry value="dz"/>
+      <FRBRnumber value="11-10"/>
+    </FRBRWork>
+    <FRBRExpression>
+      <FRBRthis value="/akn/dz/act/law/2011-06-22/11-10/ara@/main"/>
+      <FRBRuri value="/akn/dz/act/law/2011-06-22/11-10/ara@"/>
+      <FRBRdate date="2011-06-22" name="publication"/>
+      <FRBRauthor href="#joradp"/>
+      <FRBRlanguage language="ara"/>
+    </FRBRExpression>
+    <FRBRManifestation>
+      <FRBRthis value="/akn/dz/act/law/2011-06-22/11-10/ara@/main.xml"/>
+      <FRBRuri value="/akn/dz/act/law/2011-06-22/11-10/ara@.xml"/>
+      <FRBRdate date="2026-04-28" name="transform"/>
+      <FRBRauthor href="#converter"/>
+    </FRBRManifestation>
+  </identification>
+  <references source="#source">
+    <TLCOrganization eId="parliament" href="/ontology/organization/dz/parliament" showAs="البرلمان"/>
+    <TLCOrganization eId="joradp" href="/ontology/organization/dz/joradp" showAs="الجريدة الرسمية"/>
+    <TLCPerson eId="president" href="/ontology/person/dz/president" showAs="رئيس الجمهورية"/>
+  </references>
+</meta>
+    <preface>
+  <docTitle>قانون يتعلق بالبلدية</docTitle>
+  <docNumber>11-10</docNumber>
+  <docDate date="2011-06-22">20 رجب عام 1432 الموافق 22 يونيو سنة 2011</docDate>
+  <docAuthority>البرلمان</docAuthority>
+</preface>
+    <preamble>
+  <citations>
+    <citation>
+      <p>إن رئيس الجمهورية،</p>
+    </citation>
+    <citation>
+      <p>وبعد رأي مجلس الدولة،</p>
+    </citation>
+    <citation>
+      <p>وبعد مصادقة البرلمان</p>
+    </citation>
+  </citations>
+  <formula name="enactingFormula">
+    <p>يصدر القانون الآتي نصه :</p>
+  </formula>
+</preamble>
+    <body>
+      <subsection eId="subsec_1">
+        <num>الأول</num>
+        <heading>أحكام تمهيدية</heading>
+      </subsection>
+      <chapter eId="chp_1">
+        <num>الأول</num>
+        <heading>المبادئ الأساسية</heading>
+        <article eId="art_1">
+          <num>الأولى</num>
+          <content>
+          <paragraph>
+          <p><def refersTo="#municipality">البلدية هي الجماعة الإقليمية القاعدية للدولة.</def></p>
+          </paragraph>
+          <paragraph>
+          <p>وتتمتع <term refersTo="#legal_personality">بالشخصية المعنوية</term> <term refersTo="#financial_autonomy">والذمة المالية المستقلة.</term></p>
+          </paragraph>
+          <paragraph>
+          <p>وتحدث بموجب القانون.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_2">
+          <num>2</num>
+          <content>
+          <paragraph>
+          <p><term refersTo="#municipality">البلدية</term> هي القاعدة الإقليمية للامركزية، ومكان لممارسة المواطنة، وتشكل إطار مشاركة المواطن في تسيير الشؤون العمومية.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_3">
+          <num>3</num>
+          <content>
+          <paragraph>
+          <p>تمارس <term refersTo="#municipality">البلدية</term> صلاحياتها في كل مجالات الاختصاص المخولة لها بموجب القانون.</p>
+          </paragraph>
+          <paragraph>
+          <p>وتساهم مع الدولة، بصفة خاصة في إدارة وتهيئة الإقليم والتنمية الاقتصادية والاجتماعية والثقافية والأمن وكذا الحفاظ على الإطار المعيشي للمواطنين وتحسينه.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_4">
+          <num>4</num>
+          <content>
+          <paragraph>
+          <p><obligation>يجب على <term refersTo="#municipality">البلدية</term> أن تتأكد من توفر الموارد المالية الضرورية للتكفل بالأعباء والمهام المخولة لها قانونا في كل میدان.</obligation></p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يرافق كل مهمة جديدة يعهد بها إلى <term refersTo="#municipality">البلدية</term> أو تحول لها من قبل الدولة التوفير المتلازم للموارد المالية الضرورية للتكفل بهذه المهمة بصفة دائمة.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_5">
+          <num>5</num>
+          <content>
+          <paragraph>
+          <p><obligation>يجب أن يعوض كل تخفيض في الإيرادات الجبائية البلدية <condition>ينجم عن إجراء تتخذه الدولة ويتضمن إعفاء جبائيا أو تخفيضا في نسب الضريبة أو إلغائها</condition> ، بناتج جبائي يساوي على الأقل مبلغ الفارق عند التحصيل.</obligation></p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_2">
+        <num>الثاني</num>
+        <heading>الاسم والإقليم والمقر الرئيسي للبلدية</heading>
+        <article eId="art_6">
+          <num>6</num>
+          <content>
+          <paragraph>
+          <p>لل<term refersTo="#municipality">بلدية</term> اسم وإقليم ومقر رئيسي.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_7">
+          <num>7</num>
+          <content>
+          <paragraph>
+          <p>يتم تغيير اسم <term refersTo="#municipality">بلدية</term> و/أو تعيين مقرها الرئيسي أو تحويله بموجب مرسوم رئاسي بناء على تقرير <term refersTo="#minister_interior">الوزير المكلف بالداخلية</term> بعد أخذ رأي <term refersTo="#wali">الوالي</term> ومداولة <term refersTo="#apc">المجلس الشعبي البلدي</term> المعني.</p>
+          </paragraph>
+          <paragraph>
+          <p>ويخطر <term refersTo="#apw">المجلس الشعبي الولائي</term> بذلك.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_8">
+          <num>8</num>
+          <content>
+          <paragraph>
+          <p><obligation>تضع <term refersTo="#municipality">البلدية</term> معالم حدود إقليمها باتخاذ كافة الإجراءات التقنية والمادية المرتبطة بذلك</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تطبيق <ref href="#art_8">هذه المادة</ref> عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_9">
+          <num>9</num>
+          <content>
+          <paragraph>
+          <p>يتم ضم جزء من إقليم <term refersTo="#municipality">بلدية</term> أو أكثر إلى <term refersTo="#municipality">بلدية</term> أخرى أو أكثر من نفس <term refersTo="#wilaya">الولاية</term> بموجب مرسوم رئاسي يتخذ بناء على تقرير <term refersTo="#minister_interior">الوزير المكلف بالداخلية</term> بعد أخذ رأي <term refersTo="#wali">الوالي</term> ورأي <term refersTo="#apw">المجلس الشعبي الولائي</term> ومداولة <term refersTo="#apc">المجالس الشعبية البلدية</term> المعنية.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_10">
+          <num>10</num>
+          <content>
+          <paragraph>
+          <p><condition>عندما تضم <term refersTo="#municipality">بلدية</term> أو أكثر أو جزء من <term refersTo="#municipality">بلدية</term> أو أكثر إلى <term refersTo="#municipality">بلدية</term> أخرى</condition>، <obligation>تحول جميع حقوقها والتزاماتها إلى <term refersTo="#municipality">البلدية</term> التي ضمت إليها</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تطبيق <ref href="#art_10">هذه المادة</ref> عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_3">
+        <num>الثالث</num>
+        <heading>مشاركة المواطنين</heading>
+        <article eId="art_11">
+          <num>11</num>
+          <content>
+          <paragraph>
+          <p><def refersTo="#municipality">تشكل <term refersTo="#municipality">البلدية</term> الإطار المؤسساتي لممارسة الديمقراطية على المستوى المحلي والتسيير الجواري.</def></p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يتخذ <term refersTo="#apc">المجلس الشعبي البلدي</term> كل التدابير لإعلام المواطنين بشؤونهم واستشارتهم حول خيارات وأولويات التهيئة والتنمية الاقتصادية والاجتماعية والثقافية</obligation> <condition>حسب الشروط المحددة في هذا القانون</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p>ويمكن في هذا المجال استعمال، على وجه الخصوص الوسائط والوسائل الإعلامية المتاحة.</p>
+          </paragraph>
+          <paragraph>
+          <p>كما يمكن <term refersTo="#apc">المجلس الشعبي البلدي</term> تقديم عرض عن نشاطه السنوي أمام المواطنين.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_12">
+          <num>12</num>
+          <content>
+          <paragraph>
+          <p>قصد تحقيق أهداف الديمقراطية المحلية في إطار التسيير الجواري المذكور في <ref href="#art_11">المادة 11</ref> أعلاه، <obligation>يسهر <term refersTo="#apc">المجلس الشعبي البلدي</term> على وضع إطار ملائم للمبادرات المحلية التي تهدف إلى تحفيز المواطنين وحثهم على المشاركة في تسوية مشاكلهم وتحسين ظروف معيشتهم</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p>يتم تنظيم هذا الإطار طبقا للتشريع والتنظيم المعمول بهما.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_13">
+          <num>13</num>
+          <content>
+          <paragraph>
+          <p>يمكن <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term>، <condition>كلما اقتضت ذلك شؤون البلدية</condition>، أن يستعين بصفة استشارية، بكل شخصية محلية وكل خبير أو كل ممثل جمعية محلية معتمدة قانونا، الذين من شأنهم تقديم أي مساهمة مفيدة لأشغال المجلس أو لجانه بحكم مؤهلاتهم أو طبيعة نشاطاتهم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_14">
+          <num>14</num>
+          <content>
+          <paragraph>
+          <p><right>يمكن كل شخص الاطلاع على مستخرجات مداولات <term refersTo="#apc">المجلس الشعبي البلدي</term> وكذا القرارات البلدية</right>. و<right>يمكن كل شخص ذي مصلحة الحصول على نسخة منها كاملة أو جزئية على نفقته</right> <condition>مع مراعاة أحكام <ref href="#art_56">المادة 56</ref> أدناه</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <subsection eId="chp_3_subsec_2">
+          <num>الثاني</num>
+          <heading>صلاحيات البلدية</heading>
+        </subsection>
+      </chapter>
+      <chapter eId="chp_1">
+        <num>الأول</num>
+        <heading>هيئات البلدية وهياكلها</heading>
+        <article eId="art_15">
+          <num>15</num>
+          <content>
+          <paragraph>
+          <p>تتوفر <term refersTo="#municipality">البلدية</term> على :</p>
+          <list>
+          <point>
+          <p>هيئة مداولة : <term refersTo="#apc">المجلس الشعبي البلدي</term></p>
+          </point>
+          <point>
+          <p>هيئة تنفيذية يرأسها <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term>،</p>
+          </point>
+          <point>
+          <p>إدارة ينشطها <term refersTo="#secretary_general">الأمين العام للبلدية</term> تحت سلطة <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term>.</p>
+          </point>
+          </list>
+          </paragraph>
+          <paragraph>
+          <p>تمارس الهيئات البلدية أعمالها في إطار التشريع والتنظيم المعمول بهما.</p>
+          </paragraph>
+          </content>
+          </article>
+        <section eId="chp_1_sec_1">
+          <num>الأول</num>
+          <heading>المجلس الشعبي البلدي</heading>
+          <article eId="art_16">
+            <num>16</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجتمع <term refersTo="#council">المجلس الشعبي البلدي</term> في دورة عادية كل شهرين (2)</obligation> ولا تتعدى مدة كل دورة خمسة (5) أيام.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يعد <term refersTo="#council">المجلس الشعبي البلدي</term> نظامه الداخلي ويصادق عليه في أول دورة</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يحدد النظام الداخلي النموذجي ومحتواه عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_17">
+            <num>17</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن <term refersTo="#council">المجلس الشعبي البلدي</term> أن يجتمع في دورة غير عادية</right> <condition>كلما اقتضت شؤون البلدية ذلك، بطلب من رئيسه أو ثلثي (3/2) أعضائه أو بطلب من الوالي</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_18">
+            <num>18</num>
+            <content>
+            <paragraph>
+            <p><condition>في حالة ظروف استثنائية مرتبطة بخطر وشيك أو كارثة كبرى</condition> <obligation>يجتمع <term refersTo="#council">المجلس الشعبي البلدي</term> بقوة القانون</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويخطر الوالي بذلك فورا</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_19">
+            <num>19</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعقد <term refersTo="#council">المجلس الشعبي البلدي</term> دوراته بمقر البلدية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>إلا أنه في حالة قوة قاهرة معلنة تحول دون الدخول إلى مقر البلدية</condition>، <right>يمكنه أن يجتمع في مكان آخر من إقليم البلدية</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>كما يمكن <term refersTo="#council">المجلس الشعبي البلدي</term> أن يجتمع في مكان آخر، خارج إقليم البلدية</right> يعينه الوالي بعد استشارة رئيس المجلس الشعبي البلدي.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_20">
+            <num>20</num>
+            <content>
+            <paragraph>
+            <p><obligation>يحدد رئيس <term refersTo="#council">المجلس الشعبي البلدي</term> تاريخ وجدول أعمال دورات المجلس بالتشاور مع الهيئة التنفيذية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_21">
+            <num>21</num>
+            <content>
+            <paragraph>
+            <p><obligation>ترسل الاستدعاءات لدورات <term refersTo="#council">المجلس الشعبي البلدي</term> من رئيسه، وتدون بسجل مداولات البلدية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تسلم الاستدعاءات، مرفقة بمشروع جدول الأعمال بواسطة ظرف محمول إلى أعضاء <term refersTo="#council">المجلس الشعبي البلدي</term> بمقر سكناهم قبل عشرة (10) أيام كاملة على الأقل من تاريخ افتتاح الدورة مقابل وصل استلام</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>يمكن تخفيض هذا الأجل في حالة الاستعجال، على ألا يقل عن يوم واحد كامل</condition>. وفي هذه الحالة، <obligation>يتخذ رئيس <term refersTo="#council">المجلس الشعبي البلدي</term> التدابير اللازمة لتسليم الاستدعاءات</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_22">
+            <num>22</num>
+            <content>
+            <paragraph>
+            <p><obligation>يلصق مشروع جدول أعمال الاجتماعات عند مدخل قاعة المداولات وفي الأماكن المخصصة لإعلام الجمهور، بمجرد استدعاء أعضاء <term refersTo="#council">المجلس الشعبي البلدي</term></obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يوافق <term refersTo="#council">المجلس الشعبي البلدي</term> على النقاط المسجلة في جدول أعمال الاجتماع</obligation> و<right>يمكنه إدراج نقاط إضافية</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_23">
+            <num>23</num>
+            <content>
+            <paragraph>
+            <p><condition>لا تصح اجتماعات <term refersTo="#council">المجلس الشعبي البلدي</term> إلا بحضور الأغلبية المطلقة لأعضائه الممارسين</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>إذا لم يجتمع <term refersTo="#council">المجلس الشعبي البلدي</term> بعد الاستدعاء الأول لعدم اكتمال النصاب القانوني</condition>، <obligation>تعتبر المداولات المتخذة بعد الاستدعاء الثاني بفارق خمسة (5) أيام كاملة على الأقل، صحيحة مهما كان عدد الأعضاء الحاضرين</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_24">
+            <num>24</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن عضو <term refersTo="#council">المجلس الشعبي البلدي</term> الذي حصل له مانع لحضور جلسة أو دورة أن يوكل كتابيا عضوا آخر من المجلس من اختياره، ليصوت نيابة عنه</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>لا يمكن نفس العضو أن يكون حاملا لأكثر من وكالة واحدة</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>لا تصح الوكالة إلا لجلسة أو لدورة واحدة</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_25">
+            <num>25</num>
+            <content>
+            <paragraph>
+            <p><obligation>يتم إعداد الوكالة بطلب من الموكل أمام أي سلطة مؤهلة لهذا الغرض</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>وتحدد صراحة الجلسة أو الدورة التي حررت من أجلها هذه الوكالة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_26">
+            <num>26</num>
+            <content>
+            <paragraph>
+            <p>جلسات <term refersTo="#council">المجلس الشعبي البلدي</term> علنية. وتكون مفتوحة لمواطني البلدية ولكل مواطن معني بموضوع المداولة.</p>
+            </paragraph>
+            <paragraph>
+            <p>غير أن <term refersTo="#council">المجلس الشعبي البلدي</term> يداول في جلسة مغلقة من أجل:</p>
+            <list>
+            <point>
+            <p>دراسة الحالات التأديبية للمنتخبين،</p>
+            </point>
+            <point>
+            <p>دراسة المسائل المرتبطة بالحفاظ على النظام العام.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_27">
+            <num>27</num>
+            <content>
+            <paragraph>
+            <p>ضبط الجلسة منوط برئيسها ، ويمكنه طرد أي شخص غير منتخب بالمجلس، يخل بحسن سير الجلسة بعد إنذاره.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_28">
+            <num>28</num>
+            <content>
+            <paragraph>
+            <p><obligation>يمنع على أي عضو بالمجلس الشعبي البلدي حضور جلسات المجلس التي يداول فيها حول موضوع يخصه أو تكون له مصلحة فيه</obligation> بمفهوم أحكام <ref href="#art_60">المادة 60</ref> من هذا القانون، و<obligation>يجب على رئيس الجلسة التأكد من ذلك</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_29">
+            <num>29</num>
+            <content>
+            <paragraph>
+            <p>يضمن <term refersTo="#secretary_general">الأمين العام للبلدية</term> أمانة الجلسة وتحت إشراف <term refersTo="#president">رئيس المجلس الشعبي البلدي</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_30">
+            <num>30</num>
+            <content>
+            <paragraph>
+            <p>تعلق المداولات، باستثناء تلك المتعلقة بالنظام العام والحالات التأديبية، تحت إشراف <term refersTo="#president">رئيس المجلس الشعبي البلدي</term>، في الأماكن المخصصة للملصقات وإعلام الجمهور ، وتنشر بكل وسيلة إعلام أخرى خلال الثمانية (8) أيام الموالية لدخوله حيز التنفيذ طبقا لأحكام هذا القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_31">
+            <num>31</num>
+            <content>
+            <paragraph>
+            <p>يشكل <term refersTo="#council">المجلس الشعبي البلدي</term> من بين أعضائه، لجانا دائمة للمسائل التابعة لمجال اختصاصه ولاسيما تلك المتعلقة بما يأتي :</p>
+            <list>
+            <point>
+            <p>الاقتصاد والمالية والاستثمار،</p>
+            </point>
+            <point>
+            <p>الصحة والنظافة وحماية البيئة،</p>
+            </point>
+            <point>
+            <p>تهيئة الإقليم والتعمير والسياحة والصناعات التقليدية،</p>
+            </point>
+            <point>
+            <p>الري والفلاحة والصيد البحري،</p>
+            </point>
+            <point>
+            <p>الشؤون الاجتماعية والثقافية والرياضية والشباب.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>يحدد عدد اللجان الدائمة كما يأتي :</p>
+            <list>
+            <point>
+            <p>ثلاث (3) لجان بالنسبة للبلديات التي يبلغ عدد سكانها 20.000 نسمة أو أقل،</p>
+            </point>
+            <point>
+            <p>أربع (4) لجان بالنسبة للبلديات التي يتراوح عدد سكانها بين 20.001 إلى 50.000 نسمة،</p>
+            </point>
+            <point>
+            <p>خمس (5) لجان بالنسبة للبلديات التي يتراوح عدد سكانها بين 50.001 إلى 100.000 نسمة،</p>
+            </point>
+            <point>
+            <p>ست (6) لجان بالنسبة للبلديات التي يفوق عدد سكانها 100.000 نسمة.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_32">
+            <num>32</num>
+            <content>
+            <paragraph>
+            <p>تحدث اللجان الدائمة بمداولة مصادق عليها بأغلبية أعضاء <term refersTo="#council">المجلس الشعبي البلدي</term> بناء على اقتراح من رئيسه.</p>
+            </paragraph>
+            <paragraph>
+            <p>تعد اللجنة نظامها الداخلي وتعرضه على <term refersTo="#council">المجلس الشعبي البلدي</term> للمصادقة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_33">
+            <num>33</num>
+            <content>
+            <paragraph>
+            <p>يمكن <term refersTo="#council">المجلس الشعبي البلدي</term> أن يشكل من بين أعضائه لجنة خاصة لدراسة موضوع محدد يدخل في مجال اختصاصه كما هو مبين في هذا القانون.</p>
+            </paragraph>
+            <paragraph>
+            <p>تتشكل اللجنة خاصة بناء على اقتراح من <term refersTo="#president">رئيس المجلس الشعبي البلدي</term> عن طريق مداولة المجلس مصادق عليها بأغلبية أعضائه.</p>
+            </paragraph>
+            <paragraph>
+            <p>تقدم اللجنة نتائج أعمالها لرئيس <term refersTo="#council">المجلس الشعبي البلدي</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_34">
+            <num>34</num>
+            <content>
+            <paragraph>
+            <p>يحدد موضوع وتاريخ انتهاء المهمة والآجال الممنوحة للجنة الخاصة المنصوص عليها في <ref href="#art_33">المادة 33</ref> أعلاه، من أجل استكمال مهمتها بصفة صريحة في المداولة المحدثة لها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_35">
+            <num>35</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب أن تضمن تشكيلة اللجان المنصوص عليها في <ref href="#art_32">المادتين 32</ref> و <ref href="#art_33">33</ref> أعلاه تمثيلا نسبيا يعكس التركيبة السياسية للمجلس الشعبي البلدي</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_36">
+            <num>المادة 36</num>
+            <content>
+            <paragraph>
+            <p>تنتخب كل لجنة رئيسا من بين أعضائها.</p>
+            </paragraph>
+            <paragraph>
+            <p>تجتمع اللجان بناء على استدعاء من رئيسها بعد إعلام <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term>. ويمكنها اللجوء إلى الاستشارة طبقا لأحكام <ref href="#art_13">المادة 13</ref> أعلاه.</p>
+            </paragraph>
+            <paragraph>
+            <p>توكل أمانة الجلسة إلى موظف من البلدية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_37">
+            <num>المادة 37</num>
+            <content>
+            <paragraph>
+            <p><condition>مع مراعاة أحكام <ref href="#art_76">المادة 76</ref> من هذا القانون</condition>، تكون العهدة الانتخابية مجانية.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>يستفيد المنتخبون من علاوات وتعويضة ملائمة بمناسبة انعقاد دورات المجلس</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_38">
+            <num>المادة 38</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على المستخدمين منح مستخدميهم، الأعضاء في مجلس شعبي بلدي الوقت الضروري لممارسة عهدتهم الانتخابية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يعتبر الاستدعاء لأشغال المجلس ودورات التكوين المنظمة لصالح المنتخبين مبررا للغياب.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>مع مراعاة أحكام <ref href="#art_76">المادة 76</ref> من هذا القانون</condition>، <obligation>يدفع المستخدم أجر المنتخب غير الدائم مقابل الوقت المخصص لأداء العهدة</obligation>، و<condition>لا يمكن أن يشكل التوقف عن العمل المنصوص عليه في هذه المادة سببا لفسخ عقد العمل من طرف المستخدم</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>يستفيد المنتخب من الحقوق المرتبطة بمساره المهني طوال كل الفترة المخصصة لعهدته الانتخابية</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_39">
+            <num>المادة 39</num>
+            <content>
+            <paragraph>
+            <p><obligation>يلزم المنتخب البلدي بمتابعة دورات التكوين وتحسين المستوى المرتبطة بالتسيير البلدي المنظمة لصالحه</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_40">
+            <num>المادة 40</num>
+            <content>
+            <paragraph>
+            <p>تزول صفة المنتخب بالوفاة أو الاستقالة أو الإقصاء أو حصول مانع قانوني.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويقر المجلس الشعبي البلدي ذلك بموجب مداولة، و<obligation>يخطر الوالي بذلك وجوبا</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_41">
+            <num>المادة 41</num>
+            <content>
+            <paragraph>
+            <p><condition>في حالة الوفاة أو الاستقالة أو الإقصاء أو حصول مانع قانوني لمنتخب بالمجلس الشعبي البلدي</condition>، يتم استخلافه في أجل لا يتجاوز شهرا واحدا ، بالمرشح الذي يلي مباشرة آخر منتخب من نفس القائمة بقرار من <term refersTo="#wali">الوالي</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_42">
+            <num>المادة 42</num>
+            <content>
+            <paragraph>
+            <p>يرسل عضو المجلس الشعبي البلدي استقالته إلى <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> بواسطة ظرف محمول مقابل وصل استلام.</p>
+            </paragraph>
+            <paragraph>
+            <p>يقر المجلس الشعبي البلدي ذلك بموجب مداولة في أول دورة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_43">
+            <num>المادة 43</num>
+            <content>
+            <paragraph>
+            <p>يوقف بقرار من <term refersTo="#wali">الوالي</term> كل منتخب تعرض لمتابعة قضائية بسبب جناية أو جنحة لها صلة بالمال العام أو لأسباب مخلة بالشرف أو كان محل تدابير قضائية لا تمكنه من الاستمرار في ممارسة عهدته الانتخابية بصفة صحيحة، إلى غاية صدور حكم نهائي من الجهة القضائية المختصة.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة صدور حكم نهائي بالبراءة</condition>، <right>يستأنف المنتخب تلقائيا وفوريا ممارسة مهامه الانتخابية</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_44">
+            <num>المادة 44</num>
+            <content>
+            <paragraph>
+            <p>يقصى بقوة القانون من المجلس، كل عضو مجلس شعبي بلدي كان محل إدانة جزائية نهائية للأسباب المذكورة في <ref href="#art_43">المادة 43</ref> أعلاه.</p>
+            </paragraph>
+            <paragraph>
+            <p>يثبت <term refersTo="#wali">الوالي</term> هذا الإقصاء بموجب قرار.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_45">
+            <num>45</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعتبر مستقيلا تلقائيا من <term refersTo="#council">المجلس الشعبي البلدي</term>، كل عضو منتخب تغيب بدون عذر مقبول لأكثر من ثلاث (3) دورات عادية خلال نفس السنة.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة تخلف المنتخب عن حضور جلسة السماع رغم صحة التبليغ</condition> يعتبر قرار المجلس حضوريا.</p>
+            </paragraph>
+            <paragraph>
+            <p>يعلن الغياب من طرف <term refersTo="#council">المجلس الشعبي البلدي</term> بعد سماع المنتخب المعني، ويخطر <term refersTo="#wali">الوالي</term> بذلك.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_46">
+            <num>46</num>
+            <content>
+            <paragraph>
+            <p>يتم الحل والتجديد الكلي <term refersTo="#council">للمجلس الشعبي البلدي</term> :</p>
+            <list>
+            <point>
+            <p>في حالة خرق أحكام دستورية،</p>
+            </point>
+            <point>
+            <p>في حالة إلغاء انتخاب جميع أعضاء المجلس،</p>
+            </point>
+            <point>
+            <p>في حالة استقالة جماعية لأعضاء المجلس،</p>
+            </point>
+            <point>
+            <p>عندما يكون الإبقاء على المجلس مصدر اختلالات خطيرة تم إثباتها في التسيير البلدي أو من طبيعته المساس بمصالح المواطنين وطمأنينتهم،</p>
+            </point>
+            <point>
+            <p>عندما يصبح عدد المنتخبين أقل من الأغلبية المطلقة بالرغم من تطبيق أحكام <ref href="#art_41">المادة 41</ref> أعلاه،</p>
+            </point>
+            <point>
+            <p>في حالة خلافات خطيرة بين أعضاء <term refersTo="#council">المجلس الشعبي البلدي</term> تعيق السير العادي لهيئات البلدية، وبعد إعذار يوجهه <term refersTo="#wali">الوالي</term> للمجلس دون الاستجابة له،</p>
+            </point>
+            <point>
+            <p>في حالة اندماج بلديات أو ضمها أو تجزئتها،</p>
+            </point>
+            <point>
+            <p>في حالة حدوث ظروف استثنائية تحول دون تنصيب المجلس المنتخب.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_47">
+            <num>47</num>
+            <content>
+            <paragraph>
+            <p>يتم حل <term refersTo="#council">المجلس الشعبي البلدي</term> وتجديده بموجب مرسوم رئاسي بناء على تقرير <term refersTo="#minister_interior">الوزير المكلف بالداخلية</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_48">
+            <num>48</num>
+            <content>
+            <paragraph>
+            <p><obligation>في حالة حل <term refersTo="#council">المجلس الشعبي البلدي</term>، يعين <term refersTo="#wali">الوالي</term>، خلال العشرة (10) أيام التي تلي حل المجلس، متصرفا ومساعدين، عند الاقتضاء، توكل لهم مهمة تسيير شؤون البلدية.</obligation></p>
+            </paragraph>
+            <paragraph>
+            <p>وتنتهي مهامهم بقوة القانون بمجرد تنصيب المجلس الجديد.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه <ref href="#art_48">المادة</ref> عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_49">
+            <num>49</num>
+            <content>
+            <paragraph>
+            <p><obligation>تجري انتخابات تجديد <term refersTo="#council">المجلس الشعبي البلدي</term> المحل خلال أجل أقصاه ستة (6) أشهر ابتداء من تاريخ الحل</obligation>، و<condition>لا يمكن بأي حال من الأحوال إجراؤها خلال السنة الأخيرة من العهدة الانتخابية</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه <ref href="#art_49">المادة</ref> عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_50">
+            <num>50</num>
+            <content>
+            <paragraph>
+            <p>تنتهي عهدة المجلس الجديد مع انتهاء الفترة المتبقية للتجديد العام للمجالس الشعبية البلدية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_51">
+            <num>51</num>
+            <content>
+            <paragraph>
+            <p><condition>في حالة ظروف استثنائية تعيق إجراء الانتخابات بالبلدية</condition> وبعد تقرير <term refersTo="#minister_interior">الوزير المكلف بالداخلية</term> الذي يعرض على مجلس الوزراء، <obligation>يعين <term refersTo="#wali">الوالي</term> متصرفا لتسيير شؤون البلدية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يمارس المتصرف، تحت سلطة <term refersTo="#wali">الوالي</term>، السلطات المخولة بموجب التشريع والتنظيم <term refersTo="#council">للمجلس الشعبي البلدي</term> ورئيسه.</p>
+            </paragraph>
+            <paragraph>
+            <p>وتنتهي مهام المتصرف بقوة القانون بمجرد تنصيب المجلس الجديد.</p>
+            </paragraph>
+            <paragraph>
+            <p>تنظم انتخابات <term refersTo="#council">المجلس الشعبي البلدي</term> بمجرد توفر الظروف المناسبة.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه <ref href="#art_51">المادة</ref> عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_52">
+            <num>52</num>
+            <content>
+            <paragraph>
+            <p>يعالج <term refersTo="#council">المجلس الشعبي البلدي</term> الشؤون التي تدخل في مجال اختصاصه عن طريق المداولات.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_53">
+            <num>53</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب أن تجري وتحرر مداولات وأشغال <term refersTo="#council">المجلس الشعبي البلدي</term> باللغة العربية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_54">
+            <num>54</num>
+            <content>
+            <paragraph>
+            <p><condition>باستثناء الحالات المنصوص عليها صراحة في هذا القانون</condition>، تتخذ مداولات <term refersTo="#council">المجلس الشعبي البلدي</term> بالأغلبية البسيطة لأعضائه الحاضرين أو الممثلين عند التصويت. وفي حالة تساوي الأصوات، يكون صوت الرئيس مرجحا.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_55">
+            <num>55</num>
+            <content>
+            <paragraph>
+            <p><obligation>تحرر المداولات وتسجل حسب ترتيبها الزمني في سجل خاص مرقم ومؤشر عليه من رئيس المحكمة المختصة إقليميا</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>توقع هذه المداولات أثناء الجلسة من جميع الأعضاء الحاضرين عند التصويت</obligation> و<obligation>يودع رئيس المجلس الشعبي البلدي المداولات في أجل ثمانية (8) أيام لدى الوالي مقابل وصل بالاستلام</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_56">
+            <num>56</num>
+            <content>
+            <paragraph>
+            <p><condition>مع مراعاة أحكام المواد <ref href="#art_57">57</ref> و <ref href="#art_59">59</ref> و <ref href="#art_60">60</ref> أدناه</condition>، تصبح مداولات <term refersTo="#council">المجلس الشعبي البلدي</term> قابلة للتنفيذ بقوة القانون بعد واحد وعشرين (21) يوما من تاريخ إيداعها بالولاية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_57">
+            <num>57</num>
+            <content>
+            <paragraph>
+            <p><condition>لا تنفذ إلا بعد المصادقة عليها من الوالي</condition>، المداولات المتضمنة ما يأتي :</p>
+            <list>
+            <point>
+            <p>الميزانيات والحسابات</p>
+            </point>
+            <point>
+            <p>قبول الهبات والوصايا الأجنبية،</p>
+            </point>
+            <point>
+            <p>اتفاقيات التوأمة،</p>
+            </point>
+            <point>
+            <p>التنازل عن الأملاك العقارية البلدية.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_58">
+            <num>58</num>
+            <content>
+            <paragraph>
+            <p><condition>عندما يخطر الوالي، قصد المصادقة، بالحالات المنصوص عليها في <ref href="#art_57">المادة 57</ref> أعلاه، ولم يعلن قراره خلال مدة ثلاثين (30) يوما ابتداء من تاريخ إيداع المداولة بالولاية</condition>، تعتبر هذه الأخيرة مصادقا عليها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_59">
+            <num>59</num>
+            <content>
+            <paragraph>
+            <p>تبطل بقوة القانون مداولات <term refersTo="#council">المجلس الشعبي البلدي</term> :</p>
+            <list>
+            <point>
+            <p>المتخذة خرقا للدستور وغير المطابقة للقوانين والتنظيمات،</p>
+            </point>
+            <point>
+            <p>التي تمس برموز الدولة وشعاراتها،</p>
+            </point>
+            <point>
+            <p>غير المحررة باللغة العربية.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>يعاين الوالي بطلان المداولة بقرار.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_60">
+            <num>60</num>
+            <content>
+            <paragraph>
+            <p><obligation>لا يمكن رئيس المجلس الشعبي البلدي أو أي عضو من المجلس في وضعية تعارض مصالحه مع مصالح البلدية، بأسمائهم الشخصية أو أزواجهم أو أصولهم أو فروعهم إلى الدرجة الرابعة أو كوكلاء، حضور المداولة التي تعالج هذا الموضوع</obligation> وإلا تعد هذه المداولة باطلة.</p>
+            </paragraph>
+            <paragraph>
+            <p>يثبت بطلان هذه المداولة بقرار معلل من الوالي.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يلزم كل عضو مجلس شعبي بلدي يكون في وضعية تعارض مصالح بالتصريح بذلك لرئيس المجلس الشعبي البلدي</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة ما يكون رئيس المجلس الشعبي البلدي في وضعية تعارض مصالح متعلقة به</condition>، <obligation>يجب عليه إعلان ذلك للمجلس الشعبي البلدي</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_61">
+            <num>61</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن رئيس المجلس الشعبي البلدي وفقا للشروط والأشكال المنصوص عليها قانونا، أن يرفع إما تظلما إداريا، أو دعوى قضائية أمام الجهات المختصة ضد قرار الوالي الذي يثبت بطلان أو رفض المصادقة على مداولة</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_1_sec_2">
+          <num>الثاني</num>
+          <heading>رئيس المجلس الشعبي البلدي</heading>
+          <article eId="art_62">
+            <num>62</num>
+            <content>
+            <paragraph>
+            <p>ينتخب <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> للعهدة الانتخابية طبقا لأحكام هذا القانون.</p>
+            </paragraph>
+            <paragraph>
+            <p>يمارس <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> سلطات باسم الجماعة الإقليمية التي يمثلها وباسم الدولة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_63">
+            <num>63</num>
+            <content>
+            <paragraph>
+            <p><obligation>يجب على <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> أن يقيم بصفة دائمة وفعلية بإقليم البلدية</obligation>. و<condition>في الحالات الاستثنائية، يمكن <term refersTo="#wali">الوالي</term> الترخيص بغير ذلك</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_64">
+            <num>64</num>
+            <content>
+            <paragraph>
+            <p><obligation>يستدعي <term refersTo="#wali">الوالي</term> المنتخبين قصد تنصيب المجلس الشعبي البلدي خلال الخمسة عشر (15) يوما التي تلي إعلان نتائج الانتخابات</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_65">
+            <num>65</num>
+            <content>
+            <paragraph>
+            <p>يعلن رئيسا للمجلس الشعبي البلدي متصدر القائمة التي تحصلت على أغلبية أصوات الناخبين.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وفي حالة تساوي الأصوات</condition>، يعلن رئيسا المرشحة أو المرشح الأصغر سنا.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_66">
+            <num>66</num>
+            <content>
+            <paragraph>
+            <p>يرسل محضر تنصيب <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> إلى <term refersTo="#wali">الوالي</term>. ويعلن للعموم عن طريق الإلصاق بمقر البلدية والملحقات الإدارية والمندوبيات البلدية، المنصوص عليها في هذا القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_67">
+            <num>67</num>
+            <content>
+            <paragraph>
+            <p>ينصب الرئيس المنتخب في مهامه بمقر البلدية في حفل رسمي بحضور منتخبي المجلس الشعبي البلدي أثناء جلسة علنية يرأسها <term refersTo="#wali">الوالي</term> أو ممثله خلال الخمسة عشر (15) يوما على الأكثر التي تلي إعلان نتائج الانتخابات.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>عند حدوث حالة استثنائية تعيق تنصيب رئيس المجلس الشعبي البلدي بمقر البلدية</condition> تطبق أحكام <ref href="#art_19">المادة 19</ref> من هذا القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_68">
+            <num>68</num>
+            <content>
+            <paragraph>
+            <p>يعد محضر بين <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> المنتهية عهدته والرئيس الجديد خلال الثمانية (8) أيام التي تلي تنصيبه وترسل نسخة من هذا المحضر إلى <term refersTo="#wali">الوالي</term>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يخطر بذلك المجلس الشعبي البلدي.</p>
+            </paragraph>
+            <paragraph>
+            <p>يحدد مضمون وخصائص هذا المحضر عن طريق التنظيم.</p>
+            </paragraph>
+            <paragraph>
+            <p>يقدم <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> الذي جددت عهدته عرض حال عن وضعية البلدية أمام أعضاء المجلس المنتخب.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_69">
+            <num>69</num>
+            <content>
+            <paragraph>
+            <p>يساعد <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> نائبان (2) أو عدة نواب الرئيس يكون عددهم كما يأتي :</p>
+            <list>
+            <point>
+            <p>نائبان (2) بالنسبة للبلديات ذات المجلس الشعبي البلدي المتكون من سبعة (7) إلى تسعة (9) مقاعد،</p>
+            </point>
+            <point>
+            <p>ثلاثة (3) نواب بالنسبة للبلديات ذات المجلس الشعبي البلدي المتكون من أحد عشر (11) مقعدا،</p>
+            </point>
+            <point>
+            <p>أربعة (4) نواب بالنسبة للبلديات ذات المجلس الشعبي البلدي المتكون من خمسة عشر (15) مقعدا،</p>
+            </point>
+            <point>
+            <p>خمسة (5) نواب بالنسبة للبلديات ذات المجلس الشعبي البلدي المتكون من ثلاثة وعشرين (23) مقعدا،</p>
+            </point>
+            <point>
+            <p>ستة (6) نواب بالنسبة للبلديات ذات المجلس الشعبي البلدي المتكون من ثلاثة وثلاثين (33) مقعدا.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_70">
+            <num>المادة 70</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعرض <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> قائمة المنتخبين الذين اختارهم لشغل وظائف نواب الرئيس، خلال الخمسة عشر (15) يوما على الأكثر التي تلي تنصيبه للمصادقة عليها بالأغلبية المطلقة للمجلس الشعبي البلدي</obligation> في حدود ما تنص عليه <ref href="#art_69">المادة 69</ref> أعلاه.</p>
+            </paragraph>
+            <paragraph>
+            <p>يتم استخلاف نائب الرئيس المتوفى أو المستقيل أو المقصى أو الممنوع قانونا حسب نفس الأشكال.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>يمكن <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> تفويض إمضائه لصالح نواب الرئيس في حدود المهام الموكلة لهم</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_71">
+            <num>المادة 71</num>
+            <content>
+            <paragraph>
+            <p>يستخلف <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> المتوفى أو المستقيل أو المتخلي عن المنصب أو محل مانع قانوني خلال عشرة (10) أيام على الأكثر، حسب الكيفيات المنصوص عليها في <ref href="#art_65">المادة 65</ref> أعلاه.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_72">
+            <num>المادة 72</num>
+            <content>
+            <paragraph>
+            <p><obligation>يتفرغ <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> بصفة دائمة لممارسة عهدته الانتخابية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يستخلف <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> الذي حصل له مانع مؤقت في أداء وظائفه بنائب رئيس.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>إذا استحال على الرئيس تعيين مستخلف له</condition>، يقوم المجلس الشعبي البلدي بتعيين أحد نواب الرئيس، وإن تعذر ذلك، أحد أعضاء المجلس الشعبي البلدي.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_73">
+            <num>المادة 73</num>
+            <content>
+            <paragraph>
+            <p><obligation>يتعين على <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> المستقيل دعوة المجلس للاجتماع لتقديم استقالته</obligation>. وتثبت هذه الاستقالة عن طريق مداولة ترسل إلى الوالي.</p>
+            </paragraph>
+            <paragraph>
+            <p>تصبح استقالة <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> سارية المفعول ابتداء من تاريخ استلامها من الوالي.</p>
+            </paragraph>
+            <paragraph>
+            <p>يتم إلصاق المداولة المتضمنة تثبيت استقالة <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> بمقر البلدية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_74">
+            <num>المادة 74</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#abandonment_of_post">يعد متخليا عن المنصب <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> المستقيل الذي لم يجمع المجلس طبقا ل<ref href="#art_73">المادة 73</ref> أعلاه لتقديم استقالته أمامه، كما هو محدد في هذا القانون</def>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يتم إثبات تخلي <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> عن المنصب في أجل عشرة (10) أيام بعد شهر من غيابه خلال دورة غير عادية للمجلس بحضور الوالي أو ممثله.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويستخلف في مهامه طبقا لأحكام <ref href="#art_65">المادة 65</ref> أعلاه.</p>
+            </paragraph>
+            <paragraph>
+            <p>تلصق المداولة المتضمنة إثبات تخلي <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> عن المنصب بمقر البلدية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_75">
+            <num>المادة 75</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#abandonment_of_post">يعتبر في حالة تخل عن المنصب، الغياب غير المبرر ل<term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> لأكثر من شهر</def>، ويعلن ذلك من طرف المجلس الشعبي البلدي.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة انقضاء أربعين (40) يوما من غياب <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> دون أن يجتمع المجلس في جلسة استثنائية</condition>، يقوم الوالي بجمعه لإثبات هذا الغياب.</p>
+            </paragraph>
+            <paragraph>
+            <p>يتم استخلاف <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> في مهامه طبقا لأحكام <ref href="#art_72">المادة 72</ref> أعلاه.</p>
+            </paragraph>
+            <paragraph>
+            <p>يتم تعويض <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> وفق الشروط والأشكال المنصوص عليها في <ref href="#art_65">المادة 65</ref> من هذا القانون.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_76">
+            <num>المادة 76</num>
+            <content>
+            <paragraph>
+            <p><right>يتقاضى <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> ونواب الرئيس والمندوبون البلديون، وعند الاقتضاء، المتصرف المنصوص عليه في <ref href="#art_48">المادة 48</ref> من هذا القانون منحة مرتبطة بوظائفهم</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_77">
+            <num>77</num>
+            <content>
+            <paragraph>
+            <p>يمثل <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> البلدية في جميع المراسم التشريفية والتظاهرات الرسمية.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>وينبغي عليه المشاركة فيها حسب التزاماته المحددة في هذا القانون.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_78">
+            <num>78</num>
+            <content>
+            <paragraph>
+            <p>يمثل <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> البلدية في كل أعمال الحياة المدنية والإدارية وفق الشروط والأشكال المنصوص عليها في التشريع والتنظيم المعمول بهما.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_79">
+            <num>79</num>
+            <content>
+            <paragraph>
+            <p>يرأس <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term>، <term refersTo="#council">المجلس الشعبي البلدي</term>، وبهذه الصفة :</p>
+            <list>
+            <point>
+            <p>يستدعيه ويعرض عليه المسائل الخاضعة لاختصاصه،</p>
+            </point>
+            <point>
+            <p>يعد مشروع جدول أعمال الدورات ويترأسها.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_80">
+            <num>80</num>
+            <content>
+            <paragraph>
+            <p><obligation>يسهر <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> على تنفيذ مداولات <term refersTo="#council">المجلس الشعبي البلدي</term> ويطلعه على ذلك.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_81">
+            <num>81</num>
+            <content>
+            <paragraph>
+            <p>ينفذ <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> ميزانية البلدية وهو <term refersTo="#authorizing_officer">الأمر بالصرف</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_82">
+            <num>82</num>
+            <content>
+            <paragraph>
+            <p>يقوم <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> وتحت رقابة <term refersTo="#council">المجلس الشعبي البلدي</term> باسم البلدية، بجميع التصرفات الخاصة بالمحافظة على الأملاك والحقوق المكونة للممتلكات البلدية وإدارتها.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويجب عليه، على وجه الخصوص، القيام بما يأتي:</obligation></p>
+            <list>
+            <point>
+            <p>التقاضي باسم البلدية ولحسابها،</p>
+            </point>
+            <point>
+            <p>إدارة مداخيل البلدية والأمر بصرف النفقات ومتابعة تطور المالية البلدية،</p>
+            </point>
+            <point>
+            <p>إبرام عقود اقتناء الأملاك والمعاملات والصفقات والإيجارات وقبول الهبات والوصايا،</p>
+            </point>
+            <point>
+            <p>القيام بمناقصات أشغال البلدية ومراقبة حسن تنفيذها،</p>
+            </point>
+            <point>
+            <p>اتخاذ كل القرارات الموقفة للتقادم والإسقاط،</p>
+            </point>
+            <point>
+            <p>ممارسة كل الحقوق على الأملاك العقارية والمنقولة التي تملكها البلدية بما في ذلك حق الشفعة،</p>
+            </point>
+            <point>
+            <p>اتخاذ التدابير المتعلقة بشبكة الطرق البلدية،</p>
+            </point>
+            <point>
+            <p>السهر على المحافظة على الأرشيف،</p>
+            </point>
+            <point>
+            <p>اتخاذ المبادرات لتطوير مداخيل البلدية.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_83">
+            <num>83</num>
+            <content>
+            <paragraph>
+            <p><obligation>يسهر <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> على وضع المصالح والمؤسسات العمومية البلدية وحسن سيرها.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_84">
+            <num>84</num>
+            <content>
+            <paragraph>
+            <p><condition>عندما تتعارض مصالح <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> مع مصالح البلدية باسمه الشخصي أو باسم زوجه أو أصوله أو فروعه إلى الدرجة الرابعة أو بصفته وكيلا</condition>، يعين <term refersTo="#council">المجلس الشعبي البلدي</term> المجتمع تحت رئاسة منتخب آخر غير رئيس المجلس الشعبي البلدي، أحد أعضائه لتمثيل البلدية سواء أمام القضاء أو عند إبرام العقود.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ولا يمكن <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> أن يتولى تنفيذ قرارات ناجمة عن المداولة ولا يحق له تمثيل البلدية في جميع القضايا المتنازع فيها ذات الصلة بموضوع المداولة.</obligation></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_85">
+            <num>85</num>
+            <content>
+            <paragraph>
+            <p>يمثل <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> الدولة على مستوى البلدية. وبهذه الصفة، فهو يكلف على الخصوص بالسهر على احترام وتطبيق التشريع والتنظيم المعمول بهما.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_86">
+            <num>86</num>
+            <content>
+            <paragraph>
+            <p>لـ <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> صفة <term refersTo="#civil_registrar">ضابط الحالة المدنية</term>. وبهذه الصفة، يقوم بجميع العقود المتعلقة بالحالة المدنية طبقا للتشريع الساري المفعول تحت رقابة النائب العام المختص إقليميا.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_87">
+            <num>87</num>
+            <content>
+            <paragraph>
+            <p>في إطار أحكام <ref href="#art_86">المادة 86</ref> أعلاه، <right>يمكن <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> وتحت مسؤوليته، تفويض إمضائه للمندوبين البلديين والمندوبين الخاصين وإلى كل موظف بلدي</right> قصد:
+            <list>
+            <point><p>استقبال التصريحات بالولادة والزواج والوفيات،</p></point>
+            <point><p>تدوين كل العقود والأحكام في سجلات الحالة المدنية،</p></point>
+            <point><p>إعداد وتسليم كل العقود المتعلقة بالتصريحات المذكورة أعلاه،</p></point>
+            <point><p>التصديق على كل توقيع يقوم به أي مواطن أمامهم بموجب تقديم وثيقة هوية،</p></point>
+            <point><p>التصديق بالمطابقة على كل نسخة وثيقة بتقديم النسخة الأصلية منها.</p></point>
+            </list></p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يرسل القرار المتضمن التفويض بالإمضاء إلى <term refersTo="#wali">الوالي</term> وإلى النائب العام المختص إقليميا</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_88">
+            <num>88</num>
+            <content>
+            <paragraph>
+            <p><obligation>يقوم <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> تحت إشراف <term refersTo="#wali">الوالي</term> بما يأتي :</obligation>
+            <list>
+            <point><p>تبليغ وتنفيذ القوانين والتنظيمات على إقليم البلدية،</p></point>
+            <point><p>السهر على النظام والسكينة والنظافة العمومية،</p></point>
+            <point><p>السهر على حسن تنفيذ التدابير الاحتياطية والوقاية والتدخل في مجال الإسعاف.</p></point>
+            </list></p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويكلف بالإضافة إلى ذلك، بكل المهام التي يخولها له التشريع والتنظيم المعمول بهما</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_89">
+            <num>89</num>
+            <content>
+            <paragraph>
+            <p><obligation>يتخذ <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> في إطار القوانين والتنظيمات المعمول بها كل الاحتياطات الضرورية وكل التدابير الوقائية لضمان سلامة وحماية الأشخاص والممتلكات في الأماكن العمومية التي يمكن أن تحدث فيها أية كارثة أو حادث</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وفي حالة الخطر الجسيم والوشيك</condition>، <obligation>يأمر <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> بتنفيذ تدابير الأمن التي تقتضيها الظروف ويعلم <term refersTo="#wali">الوالي</term> بها فورا</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>كما يأمر ضمن نفس الأشكال، بهدم الجدران والعمارات والبنايات الآيلة للسقوط مع احترام التشريع والتنظيم المعمول بهما ، لا سيما المتعلق بحماية التراث الثقافي</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_90">
+            <num>90</num>
+            <content>
+            <paragraph>
+            <p><condition>في حالة حدوث كارثة طبيعية أو تكنولوجية على إقليم البلدية</condition> <obligation>يأمر <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> بتفعيل المخطط البلدي لتنظيم الإسعافات طبقا للتشريع والتنظيم المعمول بهما</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_91">
+            <num>91</num>
+            <content>
+            <paragraph>
+            <p>في إطار مخططات تنظيم وتدخل الإسعافات، <right>يمكن <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> القيام بتسخير الأشخاص والممتلكات طبقا للتشريع المعمول به</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويخطر <term refersTo="#wali">الوالي</term> بذلك</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_92">
+            <num>92</num>
+            <content>
+            <paragraph>
+            <p><obligation>ل<term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> صفة ضابط الشرطة القضائية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_93">
+            <num>93</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعتمد <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term>، قصد ممارسة صلاحياته في مجال الشرطة الإدارية، على سلك الشرطة البلدية التي يحدد قانونها الأساسي عن طريق التنظيم</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>يمكن <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term>، عند الاقتضاء، تسخير قوات الشرطة أو الدرك الوطني المختصة إقليميا حسب الكيفيات المحددة عن طريق التنظيم</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_94">
+            <num>المادة 94</num>
+            <content>
+            <paragraph>
+            <p>في إطار احترام حقوق وحريات المواطنين، <obligation>يكلف <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> على الخصوص، بما ياتي</obligation>
+            <list>
+            <point><p>السهر على المحافظة على النظام العام وأمن الأشخاص والممتلكات،</p></point>
+            <point><p>التأكد من الحفاظ على النظام العام في كل الأماكن العمومية التي يجرى فيها تجمع الأشخاص، ومعاقبة كل مساس بالسكينة العمومية وكل الأعمال التي من شأنها الإخلال بها،</p></point>
+            <point><p>تنظيم ضبطية الطرقات المتواجدة على إقليم البلدية مع مراعاة الأحكام الخاصة بالطرقات ذات الحركة الكثيفة،</p></point>
+            <point><p>السهر على حماية التراث التاريخي والثقافي ورموز ثورة التحرير الوطني،</p></point>
+            <point><p>السهر على احترام المقاييس والتعليمات في مجال العقار والسكن والتعمير وحماية التراث الثقافي المعماري،</p></point>
+            <point><p>السهر على نظافة العمارات وضمان سهولة السير في الشوارع والساحات والطرق العمومية،</p></point>
+            <point><p>السهر على احترام التنظيم في مجال الشغل المؤقت للأماكن التابعة للأملاك العمومية والمحافظة عليها،</p></point>
+            <point><p>اتخاذ الاحتياطات والتدابير الضرورية لمكافحة الأمراض المتنقلة أو المعدية والوقاية منها،</p></point>
+            <point><p>منع تشرد الحيوانات المؤذية والضارة،</p></point>
+            <point><p>السهر على سلامة المواد الغذائية الاستهلاكية المعروضة للبيع،</p></point>
+            <point><p>السهر على احترام تعليمات نظافة المحيط وحماية البيئة،</p></point>
+            <point><p>ضمان ضبطية الجنائز والمقابر طبقا للعادات وحسب مختلف الشعائر الدينية، والعمل فورا على دفن كل شخص متوفى بصفة لائقة دون تمييز للدين أو المعتقد.</p></point>
+            </list></p>
+            </paragraph>
+            <paragraph>
+            <p>ترسل نسخة من المحاضر التي تثبت مخالفة القانون والتنظيم من المصالح التقنية للدولة إلى <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يمكن <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> أن يستعين بالمصالح التقنية للدولة في إطار ممارسة صلاحياته كما هي محددة في <ref href="#art_94">هذه المادة</ref>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_95">
+            <num>المادة 95</num>
+            <content>
+            <paragraph>
+            <p>يسلم <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> رخص البناء والهدم والتجزئة حسب <condition>الشروط والكيفيات المحددة في التشريع والتنظيم المعمول بهما</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يلزم بالسهر على احترام التشريع والتنظيم المتعلقين بالعقار والسكن والتعمير وحماية التراث الثقافي المعماري على كامل إقليم البلدية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_96">
+            <num>المادة 96</num>
+            <content>
+            <paragraph>
+            <p>يتخذ <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term>، في إطار صلاحياته، قرارات قصد :
+            <list>
+            <point><p>الأمر باتخاذ تدابير محلية خاصة بالمسائل الموضوعة بموجب القوانين والتنظيمات تحت إشرافه وسلطته،</p></point>
+            <point><p>إعلان القوانين والتنظيمات الخاصة بالضبطية وتذكير المواطنين باحترامها،</p></point>
+            <point><p>تنفيذ مداولات المجلس الشعبي البلدي، عند الاقتضاء،</p></point>
+            <point><p>تفويض إمضائه.</p></point>
+            </list></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_97">
+            <num>المادة 97</num>
+            <content>
+            <paragraph>
+            <p><condition>لا تصبح قرارات رئيس المجلس الشعبي البلدي قابلة للتنفيذ إلا بعد إعلام المعنيين بها</condition> عن طريق النشر <condition>إذا كان محتواها يتضمن أحكاما عامة</condition> أو بعد إشعار فردي بأي وسيلة قانونية في الحالات الأخرى.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_98">
+            <num>المادة 98</num>
+            <content>
+            <paragraph>
+            <p>تسجل قرارات <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> حسب تاريخ إصدارها في السجل البلدي المخصص لهذا الغرض.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ترسل هذه القرارات خلال الثماني والأربعين (48) ساعة من رئيس المجلس الشعبي البلدي إلى الوالي</obligation> الذي يثبت استلامها على سجل مرقم ومؤشر من طرفه ويسلم مقابلها وصل استلام.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويتم إلصاقها في المكان المخصص لإعلام الجمهور بعد إصدار وصل الاستلام من الوالي، وتدرج في مدونة العقود الإدارية للبلدية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_99">
+            <num>99</num>
+            <content>
+            <paragraph>
+            <p>تصبح <term refersTo="#municipal_decisions">القرارات البلدية</term> المتعلقة بالتنظيمات العامة <condition>قابلة للتنفيذ بعد شهر (1) من تاريخ إرسالها إلى <term refersTo="#wali">الوالي</term></condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وفي حالة الاستعجال</condition>، يمكن <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> أن <right>ينفذ فورا القرار أو القرارات البلدية المتعلقة بها</right> <condition>بعد إعلام <term refersTo="#wali">الوالي</term> بذلك</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_1_sec_3">
+          <num>الثالث</num>
+          <heading>سلطة حلول الوالي</heading>
+          <article eId="art_100">
+            <num>المادة 100</num>
+            <content>
+            <paragraph>
+            <p>يمكن <term refersTo="#wali">الوالي</term> أن يتخذ، بالنسبة لجميع بلديات الولاية أو بعضها كل الإجراءات المتعلقة بالحفاظ على <term refersTo="#public_order">الأمن</term> و<term refersTo="#hygiene">النظافة</term> و<term refersTo="#public_tranquility">السكينة العمومية</term> و<term refersTo="#public_service_continuity">ديمومة المرفق العام</term>، <condition>عندما لا تقوم السلطات البلدية بذلك ولا سيما منها التكفل بالعمليات الانتخابية والخدمة الوطنية والحالة المدنية</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_101">
+            <num>المادة 101</num>
+            <content>
+            <paragraph>
+            <p><condition>عندما يمتنع رئيس المجلس الشعبي البلدي عن اتخاذ القرارات الموكلة له بمقتضى القوانين والتنظيمات</condition>، يمكن <term refersTo="#wali">الوالي</term>، <condition>بعد إعذاره</condition>، أن يقوم تلقائيا بهذا العمل مباشرة <condition>بعد انقضاء الآجال المحددة بموجب الإعذار</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_102">
+            <num>المادة 102</num>
+            <content>
+            <paragraph>
+            <p><condition>في حالة حدوث اختلال بالمجلس الشعبي البلدي يحول دون التصويت على الميزانية</condition>، فإن <term refersTo="#wali">الوالي</term> يضمن المصادقة عليها وتنفيذها وفق <condition>الشروط المحددة في <ref href="#art_186">المادة 186</ref> من هذا القانون</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+      <chapter eId="chp_2">
+        <num>الثاني</num>
+        <heading>صلاحيات البلدية</heading>
+        <article eId="art_103">
+          <num>المادة 103</num>
+          <content>
+          <paragraph>
+          <p><def refersTo="#المجلس_الشعبي_البلدي">يشكل <term refersTo="#المجلس_الشعبي_البلدي">المجلس الشعبي البلدي</term> إطارا للتعبير عن الديمقراطية، ويمثل قاعدة اللامركزية ومكان مشاركة المواطن في تسيير الشؤون العمومية.</def></p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_104">
+          <num>المادة 104</num>
+          <content>
+          <paragraph>
+          <p>يمارس <term refersTo="#المجلس_الشعبي_البلدي">المجلس الشعبي البلدي</term> صلاحياته طبقا للمبادئ المحددة في <ref href="#art_3">المادتين 3</ref> و<ref href="#art_4">4</ref> من هذا القانون.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_105">
+          <num>المادة 105</num>
+          <content>
+          <paragraph>
+          <p><obligation>يتعين على المصالح التقنية للدولة تقديم مساهمتها للبلدية</obligation> <condition>وفق الشروط المحددة عن طريق القوانين والتنظيمات المعمول بها</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_106">
+          <num>المادة 106</num>
+          <content>
+          <paragraph>
+          <p>تخضع توأمة بلدية ما مع بلدية أو أي جماعة إقليمية أجنبية أخرى إلى <condition>الموافقة المسبقة للوزير المكلف بالداخلية بعد أخذ رأي وزير الشؤون الخارجية</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <section eId="chp_2_sec_1">
+          <num>الأول</num>
+          <heading>التهيئة والتنمية</heading>
+          <article eId="art_107">
+            <num>المادة 107</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعد <term refersTo="#council">المجلس الشعبي البلدي</term> برامجه السنوية والمتعددة السنوات الموافقة لمدة عهدته ويصادق عليها ويسهر على تنفيذها</obligation>، تماشيا مع الصلاحيات المخولة له قانونا، وفي إطار المخطط الوطني للتهيئة والتنمية المستدامة للإقليم وكذا المخططات التوجيهية القطاعية.</p>
+            </paragraph>
+            <paragraph>
+            <p>يكون اختيار العمليات التي تنجز في إطار المخطط البلدي للتنمية من صلاحيات <term refersTo="#council">المجلس الشعبي البلدي</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_108">
+            <num>المادة 108</num>
+            <content>
+            <paragraph>
+            <p><obligation>يشارك <term refersTo="#council">المجلس الشعبي البلدي</term> في إجراءات إعداد عمليات تهيئة الإقليم والتنمية المستدامة وتنفيذها</obligation> طبقا للتشريع والتنظيم المعمول بهما.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_109">
+            <num>المادة 109</num>
+            <content>
+            <paragraph>
+            <p><condition>تخضع إقامة أي مشروع استثمار و/أو تجهيز على إقليم البلدية أو أي مشروع يندرج في إطار البرامج القطاعية للتنمية، إلى الرأي المسبق للمجلس الشعبي البلدي</condition> ولا سيما في مجال حماية الأراضي الفلاحية والتأثير في البيئة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_110">
+            <num>المادة 110</num>
+            <content>
+            <paragraph>
+            <p><obligation>يسهر <term refersTo="#council">المجلس الشعبي البلدي</term> على حماية الأراضي الفلاحية والمساحات الخضراء</obligation> ولا سيما عند إقامة مختلف المشاريع على إقليم البلدية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_111">
+            <num>المادة 111</num>
+            <content>
+            <paragraph>
+            <p><obligation>يبادر <term refersTo="#council">المجلس الشعبي البلدي</term> بكل عملية ويتخذ كل إجراء من شأنه التحفيز وبعث تنمية نشاطات اقتصادية تتماشى مع طاقات البلدية ومخططها التنموي</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>لهذا الغرض، <obligation>يتخذ <term refersTo="#council">المجلس الشعبي البلدي</term> كافة التدابير التي من شأنها تشجيع الاستثمار وترقيته</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه <ref href="#art_111">المادة</ref> عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_112">
+            <num>المادة 112</num>
+            <content>
+            <paragraph>
+            <p><obligation>تساهم <term refersTo="#municipality">البلدية</term> في حماية التربة والموارد المائية وتسهر على الاستغلال الأفضل لهما</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_2_sec_2">
+          <num>الثاني</num>
+          <heading>التعمير والهياكل القاعدية والتجهيز</heading>
+          <article eId="art_113">
+            <num>113</num>
+            <content>
+            <paragraph>
+            <p><obligation>تتزود <term refersTo="#municipality">البلدية</term> بكل أدوات التعمير المنصوص عليها في التشريع والتنظيم المعمول بهما</obligation> <condition>بعد المصادقة عليها بموجب مداولة <term refersTo="#municipal_council">المجلس الشعبي البلدي</term></condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_114">
+            <num>114</num>
+            <content>
+            <paragraph>
+            <p><obligation>يقتضي إنشاء أي مشروع يحتمل الإضرار بـ <term refersTo="#environment">البيئة</term> و <term refersTo="#public_health">الصحة العمومية</term> على إقليم <term refersTo="#municipality">البلدية</term> موافقة <term refersTo="#municipal_council">المجلس الشعبي البلدي</term></obligation>، باستثناء المشاريع ذات المنفعة الوطنية التي تخضع للأحكام المتعلقة بحماية البيئة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_115">
+            <num>115</num>
+            <content>
+            <paragraph>
+            <p><condition>ضمن الشروط المحددة في التشريع والتنظيم المعمول بهما وبمساهمة المصالح التقنية للدولة</condition>، <obligation>تتولى <term refersTo="#municipality">البلدية</term></obligation> :</p>
+            <list>
+            <point>
+            <p>التأكد من احترام تخصيصات الأراضي وقواعد استعمالها،</p>
+            </point>
+            <point>
+            <p>السهر على المراقبة الدائمة لمطابقة عمليات البناء، ذات العلاقة ببرامج التجهيز والسكن،</p>
+            </point>
+            <point>
+            <p>السهر على احترام الأحكام في مجال مكافحة السكنات الهشة غير القانونية.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_116">
+            <num>116</num>
+            <content>
+            <paragraph>
+            <p>في إطار حماية التراث المعماري وطبقا للتشريع والتنظيم المعمول بهما المتعلقين بالسكن والتعمير والمحافظة على التراث الثقافي وحمايته <obligation>تسهر <term refersTo="#municipality">البلدية</term> بمساهمة المصالح التقنية المؤهلة على المحافظة وحماية الأملاك العقارية الثقافية والحماية والحفاظ على الانسجام الهندسي للتجمعات السكنية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_117">
+            <num>117</num>
+            <content>
+            <paragraph>
+            <p><obligation>تسهر <term refersTo="#municipality">البلدية</term> على الحفاظ على وعائها العقاري ومنح الأولوية في تخصيصها لبرامج التجهيزات العمومية والاستثمار الاقتصادي</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>وتسهر أيضا على الحفاظ على الأملاك العقارية التابعة للأملاك العمومية للدولة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_118">
+            <num>118</num>
+            <content>
+            <paragraph>
+            <p><obligation>تبادر <term refersTo="#municipality">البلدية</term> بالعمليات المرتبطة بتهيئة الهياكل والتجهيزات الخاصة بالشبكات التابعة لاختصاصاتها وكذا العمليات المتعلقة بتسييرها وصيانتها</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>ويمكنها أيضا القيام أو المساهمة في تهيئة المساحات الموجهة لاحتواء النشاطات الاقتصادية أو التجارية أو الخدماتية</right>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_119">
+            <num>119</num>
+            <content>
+            <paragraph>
+            <p><obligation>توفر <term refersTo="#municipality">البلدية</term> في مجال السكن الشروط التحفيزية للترقية العقارية، كما تبادر أو تساهم في ترقية برامج السكن</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تشجع وتنظم بصفة خاصة كل جمعية سكان تهدف إلى حماية وصيانة وترميم المباني أو الأحياء</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_120">
+            <num>120</num>
+            <content>
+            <paragraph>
+            <p><obligation>يقوم <term refersTo="#municipal_council">المجلس الشعبي البلدي</term> بتعريف الفضاء الأهل طبقا للتشريع والتنظيم المعمول بهما لا سيما منها المتعلقة بالمجاهد والشهيد</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>وبهذه الصفة، <obligation>يحرص على تسمية كافة المجموعات العقارية السكنية والتجهيزات الجماعية وكذا مختلف طرق المرور المتواجدة على إقليم <term refersTo="#municipality">البلدية</term></obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_121">
+            <num>121</num>
+            <content>
+            <paragraph>
+            <p><obligation>تساهم <term refersTo="#municipality">البلدية</term> إلى جانب الدولة في التحضير والاحتفال بالأعياد الوطنية كما هي محددة في التشريع الساري المفعول وإحياء ذكرى الأحداث التاريخية ولاسيما منها تلك المخلدة للثورة التحريرية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_2_sec_3">
+          <num>الثالث</num>
+          <heading>نشاطات البلدية في مجال التربية والحماية الاجتماعية</heading>
+          <article eId="art_122">
+            <num>122</num>
+            <content>
+            <paragraph>
+            <p><obligation>تتخذ <term refersTo="#municipality">البلدية</term> طبقا للتشريع والتنظيم المعمول بهما ، كافة الإجراءات قصد</obligation>
+            <list>
+            <point>
+            <p>إنجاز مؤسسات التعليم الابتدائي طبقا للخريطة المدرسية الوطنية وضمان صيانتها،</p>
+            </point>
+            <point>
+            <p>إنجاز وتسيير المطاعم المدرسية والسهر على ضمان توفير وسائل نقل التلاميذ والتأكد من ذلك.</p>
+            </point>
+            </list>
+            </p>
+            </paragraph>
+            <paragraph>
+            <p><condition>غير أنه يمكن البلديات في حدود إمكانياتها القيام بما يأتي:</condition>
+            <list>
+            <point>
+            <p>اتخاذ عند الاقتضاء، وفي إطار التشريع والتنظيم المعمول بهما ، كل التدابير الموجهة لترقية تفتح الطفولة الصغرى والرياض وحدائق الأطفال والتعليم التحضيري والتعليم الثقافي والفني،</p>
+            </point>
+            <point>
+            <p>المساهمة في إنجاز الهياكل القاعدية البلدية الجوارية الموجهة للنشاطات الرياضية والشباب والثقافة والتسلية التي يمكنها الاستفادة من المساهمة المالية للدولة،</p>
+            </point>
+            <point>
+            <p>تقديم مساعدتها للهياكل والأجهزة المكلفة بالشباب والثقافة والرياضة والتسلية،</p>
+            </point>
+            <point>
+            <p>المساهمة في تطوير الهياكل الأساسية الجوارية الموجهة لنشاطات التسلية ونشر الفن والقراءة العمومية والتنشيط الثقافي والحفاظ عليها وصيانتها،</p>
+            </point>
+            <point>
+            <p>اتخاذ كل تدبير يرمي إلى توسيع قدراتها السياحية وتشجيع المتعاملين المعنيين باستغلالها،</p>
+            </point>
+            <point>
+            <p>تشجيع عمليات التمهين واستحداث مناصب الشغل،</p>
+            </point>
+            <point>
+            <p>حصر الفئات الاجتماعية المحرومة أو الهشة أو المعوزة وتنظيم التكفل بها في إطار السياسات العمومية الوطنية المقررة في مجال التضامن والحماية الاجتماعية،</p>
+            </point>
+            <point>
+            <p>المساهمة في صيانة المساجد والمدارس القرآنية المتواجدة على ترابها وضمان المحافظة على الممتلكات الخاصة بالعبادة،</p>
+            </point>
+            <point>
+            <p>تشجيع ترقية الحركة الجمعوية في ميادين الشباب والثقافة والرياضة والتسلية وثقافة النظافة والصحة ومساعدة الفئات الاجتماعية المحرومة لا سيما منها ذوي الاحتياجات الخاصة.</p>
+            </point>
+            </list>
+            </p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_2_sec_4">
+          <num>الرابع</num>
+          <heading>النظافة وحفظ الصحة والطرقات البلدية</heading>
+          <article eId="art_123">
+            <num>المادة 123</num>
+            <content>
+            <paragraph>
+            <p><obligation>تسهر <term refersTo="#municipality">البلدية</term> بمساهمة المصالح التقنية للدولة على احترام التشريع والتنظيم المعمول بهما المتعلقين بحفظ الصحة والنظافة العمومية</obligation> ولاسيما في مجالات :
+            <list>
+            <point><p>توزيع المياه الصالحة للشرب،</p></point>
+            <point><p>صرف المياه المستعملة ومعالجتها،</p></point>
+            <point><p>جمع النفايات الصلبة ونقلها ومعالجتها،</p></point>
+            <point><p>مكافحة نواقل الأمراض المتنقلة،</p></point>
+            <point><p>الحفاظ على صحة الأغذية والأماكن والمؤسسات المستقبلة للجمهور،</p></point>
+            <point><p>صيانة طرقات البلدية،</p></point>
+            <point><p>إشارات المرور التابعة لشبكة طرقاتها.</p></point>
+            </list></p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_124">
+            <num>المادة 124</num>
+            <content>
+            <paragraph>
+            <p><obligation>تتكفل <term refersTo="#municipality">البلدية</term> في مجال تحسين الإطار المعيشي للمواطن، و<condition>في حدود إمكانياتها وطبقا للتشريع والتنظيم المعمول بهما</condition>، بتهيئة المساحات الخضراء ووضع العتاد الحضري وتساهم في صيانة فضاءات الترفيه والشواطئ</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <subsection eId="chp_2_sec_4_subsec_3">
+            <num>الثالث</num>
+            <heading>الإدارة البلدية والمصالح العمومية وأملاك البلدية</heading>
+          </subsection>
+        </section>
+      </chapter>
+      <chapter eId="chp_1">
+        <num>الأول</num>
+        <heading>إدارة البلدية</heading>
+        <section eId="chp_1_sec_1">
+          <num>الأول</num>
+          <heading>تنظيم إدارة البلدية</heading>
+          <article eId="art_125">
+            <num>المادة 125</num>
+            <content>
+            <paragraph>
+            <p>للبلدية إدارة توضع تحت سلطة <term refersTo="#president_apc">رئيس المجلس الشعبي البلدي</term> وينشطها <term refersTo="#secretary_general">الأمين العام للبلدية</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_126">
+            <num>المادة 126</num>
+            <content>
+            <paragraph>
+            <p>يتحدد تنظيم إدارة البلدية طبقا لهذا القانون وحسب أهمية الجماعة وحجم المهام المسندة إليها ولا سيما منها المتعلقة بما يأتي:</p>
+            <list>
+            <point>
+            <p>الهيكل التنظيمي ومخطط تسيير المستخدمين،</p>
+            </point>
+            <point>
+            <p>تنظيم مصلحة الحالة المدنية . وسير ها، وحماية كل العقود والسجلات الخاصة بها والحفاظ عليها،</p>
+            </point>
+            <point>
+            <p>مسك بطاقة الناخبين وتسييرها،</p>
+            </point>
+            <point>
+            <p>إحصاء المواطنين، حسب شرائح السن المولودين في البلدية أو المقيمين بها في إطار تسيير بطاقة الخدمة الوطنية،</p>
+            </point>
+            <point>
+            <p>النشاط الاجتماعي،</p>
+            </point>
+            <point>
+            <p>النشاط الثقافي والرياضي،</p>
+            </point>
+            <point>
+            <p>تسيير الميزانية والمالية،</p>
+            </point>
+            <point>
+            <p>مسك سجل جرد الأملاك العقارية البلدية وسجل جرد الأملاك المنقولة،</p>
+            </point>
+            <point>
+            <p>تسيير مستخدمي البلدية،</p>
+            </point>
+            <point>
+            <p>تنظيم المصالح التقنية البلدية وتسييرها،</p>
+            </point>
+            <point>
+            <p>أرشيف البلدية،</p>
+            </point>
+            <point>
+            <p>الشؤون القانونية والمنازعات.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_127">
+            <num>المادة 127</num>
+            <content>
+            <paragraph>
+            <p>تحدد كيفية وشروط تعيين <term refersTo="#secretary_general">الأمين العام للبلدية</term> عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_128">
+            <num>المادة 128</num>
+            <content>
+            <paragraph>
+            <p>تحدد حقوق <term refersTo="#secretary_general">الأمين العام للبلدية</term> وواجباته عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_129">
+            <num>المادة 129</num>
+            <content>
+            <paragraph>
+            <p>يتولى <term refersTo="#secretary_general">الأمين العام للبلدية</term> تحت سلطة <term refersTo="#president_apc">رئيس المجلس الشعبي البلدي</term> :</p>
+            <list>
+            <point>
+            <p>ضمان تحضير اجتماعات <term refersTo="#apc">المجلس الشعبي البلدي</term>،</p>
+            </point>
+            <point>
+            <p>تنشيط وتنسيق سير المصالح الإدارية والتقنية البلدية،</p>
+            </point>
+            <point>
+            <p>ضمان تنفيذ القرارات ذات الصلة بتطبيق المداولات المتضمنة الهيكل التنظيمي ومخطط تسيير المستخدمين المنصوص عليه في <ref href="#art_126">المادة 126</ref> أعلاه،</p>
+            </point>
+            <point>
+            <p>إعداد محضر تسليم واستلام المهام المنصوص عليه في <ref href="#art_68">المادة 68</ref> أعلاه.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>يتلقى التفويض بالإمضاء من <term refersTo="#president_apc">رئيس المجلس الشعبي البلدي</term> قصد الإمضاء على كافة الوثائق المتعلقة بالتسيير الإداري والتقني للبلدية باستثناء القرارات.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_130">
+            <num>المادة 130</num>
+            <content>
+            <paragraph>
+            <p>يزود مستخدمو المصالح والمؤسسات البلدية غير الخاضعين للقانون الأساسي العام للوظيفة العمومية، بقانون أساسي خاص.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_131">
+            <num>المادة 131</num>
+            <content>
+            <paragraph>
+            <p><right>يستفيد مستخدمو المصالح والمؤسسات البلدية من التكوين وتحسين المستوى</right> طبقا للتشريع والتنظيم المعمول بهما. تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_132">
+            <num>المادة 132</num>
+            <content>
+            <paragraph>
+            <p><condition>يمكن البلدية أن تلجأ إلى خدمات خبراء ومستشارين عن طريق التعاقد من أجل إنجاز مهام ظرفية</condition> وفق الشروط المحددة في التشريع والتنظيم المعمول بهما.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_1_sec_2">
+          <num>الثاني</num>
+          <heading>المندوبيات والملحقات البلدية</heading>
+          <article eId="art_133">
+            <num>133</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن <term refersTo="#municipality">البلدية</term> أن تحدث <term refersTo="#municipal_delegations">مندوبيات بلدية</term> و/أو <term refersTo="#municipal_annexes">ملحقات بلدية</term> في حدود اختصاصاتها</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد قواعد تنظيم المندوبيات والملحقات البلدية وسيرها عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_134">
+            <num>134</num>
+            <content>
+            <paragraph>
+            <p><obligation>تتولى <term refersTo="#municipal_delegation">المندوبية البلدية</term> ضمان مهام المرفق العام وتوفير الوسائل الضرورية للتكفل بها</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>وينشط المندوبية البلدية منتخب يدعى <term refersTo="#municipal_delegate">المندوب البلدي</term> ويعين بموجب مداولة <term refersTo="#apc">المجلس الشعبي البلدي</term> بناء على اقتراح من <term refersTo="#mayor">رئيس المجلس</term>.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويساعده متصرف يعينه <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> بناء على اقتراح من <term refersTo="#secretary_general">الأمين العام للبلدية</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_135">
+            <num>135</num>
+            <content>
+            <paragraph>
+            <p>يتصرف <term refersTo="#municipal_delegate">المندوب البلدي</term> تحت مسؤولية <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> وباسمه ويتلقى منه تفويضا بالإمضاء.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_136">
+            <num>136</num>
+            <content>
+            <paragraph>
+            <p>يحدد بموجب مرسوم عدد المندوبيات البلدية المنصوص عليها في <ref href="#art_134">المادة 134</ref> أعلاه وحدودها بالنسبة لكل بلدية كبرى اعتمادا ، بصفة خاصة، على الطابع الجغرافي والحضري لإقليمها ومقتضيات المرفق العام.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_137">
+            <num>137</num>
+            <content>
+            <paragraph>
+            <p><obligation>يحدد <term refersTo="#apc">المجلس الشعبي البلدي</term> بموجب مداولة، المرافق العمومية التي يعهد بها إلى <term refersTo="#municipal_delegation">المندوبية البلدية</term> ويوفر الوسائل المادية والبشرية الضرورية لسيرها</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_138">
+            <num>138</num>
+            <content>
+            <paragraph>
+            <p><condition>عندما يكون من الصعب الاتصال بين المقر الرئيسي للبلدية وجزء منها لبعد المسافة أو للضرورة</condition>، <obligation>يحدث <term refersTo="#apc">المجلس الشعبي البلدي</term> بموجب مداولة <term refersTo="#administrative_annex">ملحقة إدارية</term> ويحدد مجال اختصاصها، ويعين لها <term refersTo="#special_delegate">مندوبا خاصا</term></obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يعين <term refersTo="#special_delegate">المندوب الخاص</term> من بين أعضاء <term refersTo="#apc">المجلس الشعبي البلدي</term> ويراعى قدر الإمكان في تعيينه أن يكون من المقيمين في ذلك الجزء المعني من البلدية ويتصرف تحت مسؤولية <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term>، ويتلقى باسمه تفويضا بالإمضاء.</p>
+            </paragraph>
+            <paragraph>
+            <p>يتولى <term refersTo="#special_delegate">المندوب الخاص</term> وظائف <term refersTo="#civil_status_officer">ضابط الحالة المدنية</term> في هذا الجزء من البلدية.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_1_sec_3">
+          <num>الثالث</num>
+          <heading>أرشيف البلدية</heading>
+          <article eId="art_139">
+            <num>المادة 139</num>
+            <content>
+            <paragraph>
+            <p><obligation><term refersTo="#municipality">البلدية</term> مسؤولة على حماية أرشيفها والاحتفاظ به</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يضمن <term refersTo="#secretary_general">الأمين العام للبلدية</term> تحت سلطة <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> تسيير أرشيف البلدية طبقا للتشريع والتنظيم المعمول بهما.</p>
+            </paragraph>
+            <paragraph>
+            <p>تشكل أعباء حفظ أرشيف البلدية وتسييره وحمايته نفقات إجبارية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_140">
+            <num>المادة 140</num>
+            <content>
+            <paragraph>
+            <p>في إطار احترام التشريع والتنظيم المعمول بهما ، <obligation>تودع إجباريا وثائق الحالة المدنية التي تجاوز عمرها القرن والمخططات وسجلات مسح الأراضي التي لم تعد مستعملة منذ ثلاثين (30) سنة على الأقل وكل الوثائق الأخرى المحفوظة في أرشيف البلدية التي يقل عدد سكانها عن 20.000 نسمة في أرشيف الولاية</obligation> <condition>ما عدا الحالات التي يرخص فيها الوالي بخلاف ذلك</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_141">
+            <num>المادة 141</num>
+            <content>
+            <paragraph>
+            <p>مع احترام التشريع والتنظيم المعمول بهما ، يمكن أن تودع الوثائق المذكورة في <ref href="#art_140">المادة 140</ref> أعلاه المحفوظة بأرشيف البلديات التي يزيد عدد سكانها عن 20.000 نسمة بأرشيف الولاية بقرار من <term refersTo="#wali">الوالي</term>، بعد مداولة <term refersTo="#apc">المجلس الشعبي البلدي</term>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>وتودع هذه الوثائق إجباريا في مركز أرشيف الولاية</obligation> <condition>إذا تبين بأنه من غير الممكن ضمان حفظها بصفة ملائمة من طرف البلدية</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_142">
+            <num>المادة 142</num>
+            <content>
+            <paragraph>
+            <p>في إطار احترام التشريع والتنظيم المعمول بهما ، <obligation>يلزم <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> باتخاذ كافة الإجراءات اللازمة بالنسبة للوثائق التي تكتسي أهمية خاصة</obligation>، لا سيما سجلات الحالة المدنية والمخططات وسجلات مسح الأراضي، والوثائق المالية والمحاسبة التي تبين أن ظروف المحافظة عليها تعرضها للاتلاف.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة تقصير البلدية</condition>، يقرر <term refersTo="#wali">الوالي</term> الإيداع التلقائي لهذه الوثائق في أرشيف الولاية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_143">
+            <num>المادة 143</num>
+            <content>
+            <paragraph>
+            <p>في إطار احترام التشريع والتنظيم المعمول بهما ، تبقى الوثائق المودعة تطبيقا لأحكام المواد <ref href="#art_140">140</ref> و<ref href="#art_141">141</ref> و <ref href="#art_142">142</ref> أعلاه بأرشيف الولاية ملكا للبلدية.</p>
+            </paragraph>
+            <paragraph>
+            <p>يتم ضمان حفظ أرشيف البلدية وتصنيفه وتبليغه وفق نفس الشروط المطبقة على أرشيف الولاية.</p>
+            </paragraph>
+            <paragraph>
+            <p>لا يمكن إتلاف محتوى أرشيف البلدية المودع بأرشيف الولاية بدون ترخيص من <term refersTo="#apc">المجلس الشعبي البلدي</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+      </chapter>
+      <chapter eId="chp_2">
+        <num>الثاني</num>
+        <heading>مسؤولية البلدية</heading>
+        <article eId="art_144">
+          <num>144</num>
+          <content>
+          <paragraph>
+          <p><term refersTo="#municipality">البلدية</term> مسؤولة مدنيا عن الأخطاء التي يرتكبها <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> ومنتخبو <term refersTo="#municipality">البلدية</term> ومستخدموها أثناء ممارسة مهامهم أو بمناسبتها.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>وتلزم <term refersTo="#municipality">البلدية</term> برفع دعوى الرجوع أمام الجهة القضائية المختصة ضد هؤلاء</obligation> <condition>في حالة ارتكابهم خطأ شخصيا</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_145">
+          <num>145</num>
+          <content>
+          <paragraph>
+          <p>كل قرار صادر عن <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> <condition>لا يأخذ بعين الاعتبار آراء المصالح التقنية المؤهلة قانونا ويحدث ضررا في حق المواطن والبلدية و/أو الدولة</condition> تعرضه للعقوبات المنصوص عليها في التشريع الساري المفعول.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_146">
+          <num>146</num>
+          <content>
+          <paragraph>
+          <p><obligation>تلزم <term refersTo="#municipality">البلدية</term> بحماية الأشخاص المذكورين في <ref href="#art_148">المادة 148</ref> أدناه من التهديدات أو الإهانات أو القذف التي يمكن أن يتعرضوا لها أثناء ممارسة مهامهم أو بمناسبتها</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_147">
+          <num>147</num>
+          <content>
+          <paragraph>
+          <p><condition>في حالة وقوع كارثة طبيعية</condition> لا تتحمل <term refersTo="#municipality">البلدية</term> أية مسؤولية تجاه الدولة والمواطنين <condition>إذا أثبتت أنها اتخذت الاحتياطات التي تقع على عاتقها والمنصوص عليها بموجب التشريع والتنظيم المعمول بهما</condition>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_148">
+          <num>148</num>
+          <content>
+          <paragraph>
+          <p><obligation>تغطي <term refersTo="#municipality">البلدية</term> مبالغ التعويضات الناجمة عن الحوادث الضارة التي تطرأ لرئيس المجلس الشعبي البلدي ونواب الرئيس والمندوبين البلديين والمنتخبين والمستخدمين البلديين أثناء ممارسة مهامهم أو بمناسبتها</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><condition>عندما يتعرض منتخب أو عون بلدي إلى ضرر مادي ناجم بصفة مباشرة عن ممارسة وظيفته أو بمناسبتها</condition>، <obligation>تكون <term refersTo="#municipality">البلدية</term> ملزمة بموجب مداولة المجلس الشعبي البلدي مصادق عليها طبقا لأحكام هذا القانون، بالتعويض المستحق على أساس تقييم عادل ومنصف</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p>ولا يمكن بأي حال من الأحوال أن يجمع هذا التعويض مع تعويض آخر لنفس الضرر.</p>
+          </paragraph>
+          <paragraph>
+          <p>تتحمل ميزانية <term refersTo="#municipality">البلدية</term> التعويضات ذات الصلة.</p>
+          </paragraph>
+          <paragraph>
+          <p><right>للبلدية حق الرجوع ضد المتسببين في هذه الأحداث</right>.</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_3">
+        <num>الثالث</num>
+        <heading>المصالح العمومية البلدية</heading>
+        <section eId="chp_3_sec_1">
+          <num>الأول</num>
+          <heading>أحكام عامة</heading>
+          <article eId="art_149">
+            <num>المادة 149</num>
+            <content>
+            <paragraph>
+            <p><condition>مع مراعاة الأحكام القانونية المطبقة في هذا المجال</condition>، <obligation>تضمن <term refersTo="#municipality">البلدية</term> سير المصالح العمومية البلدية التي تهدف إلى تلبية حاجات مواطنيها وإدارة أملاكها</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>وبهذه الصفة، فهي تحدث إضافة إلى مصالح الإدارة العامة، مصالح عمومية تقنية قصد التكفل على وجه الخصوص، بما يأتي :</p>
+            <list>
+            <point>
+            <p>التزويد بالمياه الصالحة للشرب وصرف المياه المستعملة،</p>
+            </point>
+            <point>
+            <p>النفايات المنزلية والفضلات الأخرى،</p>
+            </point>
+            <point>
+            <p>صيانة الطرقات وإشارات المرور</p>
+            </point>
+            <point>
+            <p>الإنارة العمومية،</p>
+            </point>
+            <point>
+            <p>الأسواق المغطاة والأسواق والموازين العمومية،</p>
+            </point>
+            <point>
+            <p>الحظائر ومساحات التوقف،</p>
+            </point>
+            <point>
+            <p>المحاشر،</p>
+            </point>
+            <point>
+            <p>النقل الجماعي،</p>
+            </point>
+            <point>
+            <p>المذابح البلدية،</p>
+            </point>
+            <point>
+            <p>الخدمات الجنائزية وتهيئة المقابر وصيانتها بما فيها مقابر الشهداء،</p>
+            </point>
+            <point>
+            <p>الفضاءات الثقافية التابعة لأملاكها،</p>
+            </point>
+            <point>
+            <p>فضاءات الرياضة والتسلية التابعة لأملاكها،</p>
+            </point>
+            <point>
+            <p>المساحات الخضراء.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_150">
+            <num>المادة 150</num>
+            <content>
+            <paragraph>
+            <p>يكيف عدد وحجم المصالح المنصوص عليها في <ref href="#art_149">المادة 149</ref> أعلاه، حسب إمكانيات ووسائل واحتياجات كل بلدية.</p>
+            </paragraph>
+            <paragraph>
+            <p>ويمكن تسيير هذه المصالح مباشرة في شكل استغلال مباشر أو في شكل مؤسسة عمومية بلدية عن طريق الامتياز أو التفويض.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_3_sec_2">
+          <num>الثاني</num>
+          <heading>الاستغلال المباشر</heading>
+          <article eId="art_151">
+            <num>151</num>
+            <content>
+            <paragraph>
+            <p><condition>يمكن <term refersTo="#municipality">البلدية</term> أن تستغل مصالحها العمومية عن طريق الاستغلال المباشر</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تقييد إيرادات ونفقات الاستغلال المباشر في ميزانية <term refersTo="#municipality">البلدية</term></obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>ويتولى تنفيذها <term refersTo="#treasurer">أمين خزينة البلدية</term> طبقا لقواعد المحاسبة العمومية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_152">
+            <num>152</num>
+            <content>
+            <paragraph>
+            <p><condition>يمكن <term refersTo="#municipality">البلدية</term> أن تقرر منح ميزانية مستقلة لبعض المصالح العمومية المستغلة مباشرة</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_3_sec_3">
+          <num>الثالث</num>
+          <heading>المؤسسة العمومية البلدية</heading>
+          <article eId="art_153">
+            <num>المادة 153</num>
+            <content>
+            <paragraph>
+            <p>يمكن <term refersTo="#municipality">البلدية</term> أن تنشئ <term refersTo="#public_institution">مؤسسات عمومية بلدية</term> تتمتع بـ <right>الشخصية المعنوية والذمة المالية المستقلة</right> من أجل تسيير مصالحها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_154">
+            <num>المادة 154</num>
+            <content>
+            <paragraph>
+            <p>تكون <term refersTo="#public_institution">المؤسسات العمومية البلدية</term> ذات طابع إداري أو ذات طابع صناعي وتجاري و<obligation>يجب على المؤسسة العمومية البلدية ذات الطابع الصناعي والتجاري أن توازن بين إيراداتها ونفقاتها</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد قواعد تنظيم <term refersTo="#public_institution">المؤسسات العمومية البلدية</term> وسيرها عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_3_sec_4">
+          <num>الرابع</num>
+          <heading>الامتياز وتفويض المصالح العمومية</heading>
+          <article eId="art_155">
+            <num>المادة 155</num>
+            <content>
+            <paragraph>
+            <p>يمكن <term refersTo="#public_services">المصالح العمومية البلدية</term> المذكورة في <ref href="#art_149">المادة 149</ref> أعلاه، أن تكون محل <term refersTo="#concession">امتياز</term> طبقا للتنظيم الساري المفعول.</p>
+            </paragraph>
+            <paragraph>
+            <p>يخضع <term refersTo="#concession">الامتياز</term> لـ <term refersTo="#model_specifications">دفتر شروط نموذجي</term> يحدد عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_156">
+            <num>المادة 156</num>
+            <content>
+            <paragraph>
+            <p>يمكن <term refersTo="#municipality">البلدية</term> أن تفوض تسيير <term refersTo="#public_services">المصالح العمومية</term> المنصوص عليها في <ref href="#art_149">المادة 149</ref> أعلاه عن طريق <term refersTo="#program_contract">عقد برنامج</term> أو <term refersTo="#order_contract">صفقة طلبية</term> طبقا للأحكام التشريعية والتنظيمية المعمول بها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_157">
+            <num>المادة 157</num>
+            <content>
+            <paragraph>
+            <p>لـ <term refersTo="#municipality">البلدية</term> <term refersTo="#public_property">أملاك عمومية</term> و<term refersTo="#private_property">أملاك خاصة</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_3_sec_5">
+          <num>الخامس</num>
+          <heading>الأملاك البلدية</heading>
+          <article eId="art_158">
+            <num>المادة 158</num>
+            <content>
+            <paragraph>
+            <p>تتشكل <term refersTo="#public_domain">الأملاك العمومية للبلدية</term> من الأملاك العمومية الطبيعية والأملاك العمومية الاصطناعية طبقا لأحكام القانون المنظم للأملاك الوطنية.</p>
+            </paragraph>
+            <paragraph>
+            <p>إن الأملاك البلدية التابعة للأملاك العمومية للبلدية <condition>غير قابلة للتنازل ولا التقادم ولا الحجز</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_159">
+            <num>المادة 159</num>
+            <content>
+            <paragraph>
+            <p>تشتمل <term refersTo="#private_domain">الأملاك الخاصة للبلدية</term>، على الخصوص، على ما يأتي :</p>
+            <list>
+            <point>
+            <p>جميع البنايات والأراضي التي تملكها البلدية غير المصنفة ضمن أملاكها والمخصصة للمصالح والهيئات الإدارية،</p>
+            </point>
+            <point>
+            <p>المحلات ذات الاستعمال السكني وتوابعها المتبقية ضمن الأملاك الخاصة للبلدية أو التي أنجزتها بأموالها الخاصة،</p>
+            </point>
+            <point>
+            <p>الأراضي الجرداء غير المخصصة التي تملكها البلدية،</p>
+            </point>
+            <point>
+            <p>الأملاك العقارية غير المخصصة التي اقتنتها البلدية أو أنجزتها بأموالها الخاصة،</p>
+            </point>
+            <point>
+            <p>العقارات والمحلات ذات الاستعمال المهني أو التجاري أو الحرفي التي نقلت ملكيتها إلى البلدية وفق ما نص عليه القانون،</p>
+            </point>
+            <point>
+            <p>المساكن الإلزامية أو الوظيفية كما هي معرفة قانونا والتي نقلت ملكيتها إلى البلدية،</p>
+            </point>
+            <point>
+            <p>الأملاك التي ألغي تصنيفها من الأملاك العمومية الوطنية والعائدة إليها،</p>
+            </point>
+            <point>
+            <p>الهبات والوصايا التي تقدم للبلدية والتي تقبلها حسب الأشكال والشروط التي ينص عليها القانون،</p>
+            </point>
+            <point>
+            <p>الأملاك الآتية من الأملاك الخاصة للدولة أو الولاية التي تم التنازل عنها للبلدية أو انتقلت ملكيتها التامة إليها،</p>
+            </point>
+            <point>
+            <p>الأملاك المنقولة والعتاد الذي اقتنته أو أنجزته البلدية بأموالها الخاصة،</p>
+            </point>
+            <point>
+            <p>الحقوق والقيم المنقولة التي اقتنتها البلدية أو أنجزتها والتي تمثل مقابل قيمة حصص مساهمتها في تأسيس المؤسسات العمومية ودعمها المالي.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_160">
+            <num>المادة 160</num>
+            <content>
+            <paragraph>
+            <p><obligation>يتم إحصاء الأملاك البلدية غير المنقولة في السجل البلدي لجرد الأملاك العقارية ويتم جرد الأملاك المنقولة في سجل جرد الأملاك المنقولة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_161">
+            <num>المادة 161</num>
+            <content>
+            <paragraph>
+            <p>يكتسي مسك سجل الأملاك العقارية وسجل الجرد المنصوص عليهما في <ref href="#art_160">المادة 160</ref> أعلاه، طابعا إلزاميا تجاه المصالح المشرفة على تخصيصات الأملاك البلدية.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_162">
+            <num>المادة 162</num>
+            <content>
+            <paragraph>
+            <p><obligation>يسهر المجلس الشعبي البلدي تحت مسؤولية رئيس المجلس على مسك وتحيين سجل الأملاك العقارية وسجل جرد الأملاك المنقولة</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_163">
+            <num>المادة 163</num>
+            <content>
+            <paragraph>
+            <p><obligation>يتعين على المجلس الشعبي البلدي القيام بصفة دورية باتخاذ التدابير اللازمة من أجل تثمين الأملاك البلدية المنتجة للمداخيل وجعلها أكثر مردودية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_164">
+            <num>المادة 164</num>
+            <content>
+            <paragraph>
+            <p><condition>لا يمكن القيام بأي نفقة متعلقة بملك بلدي إلا إذا تم تطهير وضعيته وتسجيله في سجل جرد الأملاك البلدية</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد عن طريق التنظيم كيفيات التسيير والاستغلال الذي يسمح ف النفقات على الأملاك التي توجد في طور الإدماج ضمن الأملاك البلدية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_165">
+            <num>المادة 165</num>
+            <content>
+            <paragraph>
+            <p>يتم التملك وعقود حيازة الأملاك العقارية من طرف البلدية أو مؤسساتها العمومية طبقا للشروط المحددة في التشريع والتنظيم المعمول بهما.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_166">
+            <num>المادة 166</num>
+            <content>
+            <paragraph>
+            <p>يخضع قبول أو رفض <term refersTo="#donations">الهبات والوصايا</term> الممنوحة للبلدية أو مؤسساتها العمومية لمداولة <term refersTo="#apc">المجلس الشعبي البلدي</term> مع مراعاة أحكام <ref href="#art_57">المادة 57</ref> أعلاه.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_167">
+            <num>المادة 167</num>
+            <content>
+            <paragraph>
+            <p><obligation>يتعين على البلدية اقتناء وتخصيص الأراضي الضرورية للدفن وصيانتها</obligation>، وهي غير قابلة للتمليك.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد كيفيات إنشائها وتوسيعها وإعادة تخصيصها عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_168">
+            <num>المادة 168</num>
+            <content>
+            <paragraph>
+            <p>ينظم <term refersTo="#apc">المجلس الشعبي البلدي</term> تسيير ومراقبة الأسواق البلدية والأسواق المتنقلة والمعارض والعروض التي تنظم على إقليم البلدية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <subsection eId="chp_3_sec_5_subsec_4">
+            <num>الرابع</num>
+            <heading>مالية البلدية</heading>
+          </subsection>
+        </section>
+      </chapter>
+      <chapter eId="chp_1">
+        <num>الأول</num>
+        <heading>أحكام عامة</heading>
+        <article eId="art_169">
+          <num>169</num>
+          <content>
+          <paragraph>
+          <p><obligation><term refersTo="#municipality">البلدية</term> مسؤولة عن تسيير مواردها المالية الخاصة بها</obligation>. وهي مسؤولة أيضا عن تعبئة مواردها.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_170">
+          <num>170</num>
+          <content>
+          <paragraph>
+          <p>تتكون الموارد الميزانية والمالية للبلدية بصفة خاصة، مما يأتي :</p>
+          <list>
+          <point><p>حصيلة الجباية،</p></point>
+          <point><p>مداخيل ممتلكاتها،</p></point>
+          <point><p>مداخيل أملاك البلدية،</p></point>
+          <point><p>الإعانات والمخصصات،</p></point>
+          <point><p>ناتج الهبات والوصايا،</p></point>
+          <point><p>القروض،</p></point>
+          <point><p>ناتج مقابل الخدمات الخاصة التي تؤديها البلدية،</p></point>
+          <point><p>ناتج حق الامتياز للفضاءات العمومية، بما فيها الفضاءات الإشهارية،</p></point>
+          <point><p>الناتج المحصل مقابل مختلف الخدمات.</p></point>
+          </list>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_171">
+          <num>171</num>
+          <content>
+          <paragraph>
+          <p><obligation>يخضع قبول الهبات والوصايا الأجنبية لـ <condition>الموافقة المسبقة لـ <term refersTo="#minister_interior">الوزير المكلف بالداخلية</term></condition> ويتم جردها وإدراجها في الميزانية</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_172">
+          <num>172</num>
+          <content>
+          <paragraph>
+          <p><right>تتلقى <term refersTo="#municipality">البلدية</term> إعانات ومخصصات تسيير</right> بالنظر على وجه الخصوص، لما يأتي :</p>
+          <list>
+          <point><p>عدم كفاية مداخيلها مقارنة بمهامها وصلاحياتها كما هي محددة في هذا القانون،</p></point>
+          <point><p>عدم كفاية التغطية المالية للنفقات الإجبارية،</p></point>
+          <point><p>التبعات المرتبطة بالتكفل بحالات القوة القاهرة ولا سيما منها الكوارث الطبيعية أو النكبات كما هي محددة في هذا القانون،</p></point>
+          <point><p>أهداف المستوى المطلوب فيما يتعلق بتلبية الاحتياجات المخولة لها قانونا،</p></point>
+          <point><p>نقص القيمة للإيرادات الجبائية للبلدية، في إطار تشجيع الاستثمار المنصوص عليه في قانون المالية.</p></point>
+          </list>
+          </paragraph>
+          <paragraph>
+          <p><obligation>توجه الإعانات الممنوحة للبلدية من الدولة للغرض الذي منحت من أجله</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_173">
+          <num>173</num>
+          <content>
+          <paragraph>
+          <p><obligation>تقيد الاعتمادات المالية للتجهيز بعنوان مساهمات الدولة أو ميزانية الولاية أو الصندوق المشترك للجماعات المحلية وكل الإعانات الأخرى بتخصيص خاص</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_174">
+          <num>174</num>
+          <content>
+          <paragraph>
+          <p><right>يمكن <term refersTo="#municipality">البلدية</term> اللجوء إلى القرض لإنجاز مشاريع منتجة للمداخيل</right>. تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_175">
+          <num>175</num>
+          <content>
+          <paragraph>
+          <p><obligation>تحدد <term refersTo="#municipality">البلدية</term> في إطار تسيير ممتلكاتها وسير مصالحها العمومية المحلية مساهمة مالية للمرتفقين تتناسب وطبيعة الخدمات المقدمة ونوعيتها</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>تشجع <term refersTo="#municipality">البلدية</term> وتدعم كل نشاط أو مساهمة أو مبادرة فردية أو جماعية تهدف إلى إنجاز مشاريع ذات منفعة عامة</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_2">
+        <num>الثاني</num>
+        <heading>الميزانية والحسابات</heading>
+        <section eId="chp_2_sec_1">
+          <num>الأول</num>
+          <heading>ميزانية البلدية</heading>
+          <article eId="art_176">
+            <num>المادة 176</num>
+            <content>
+            <paragraph>
+            <p><def refersTo="#municipal_budget">ميزانية البلدية هي جدول تقديرات الإيرادات والنفقات السنوية للبلدية.</def> وهي عقد ترخيص وإدارة يسمح بسير المصالح البلدية وتنفيذ برنامجها للتجهيز والاستثمار.</p>
+            </paragraph>
+            <paragraph>
+            <p>يحدد شكل <term refersTo="#municipal_budget">ميزانية البلدية</term> ومضمونها عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_177">
+            <num>المادة 177</num>
+            <content>
+            <paragraph>
+            <p>يتم إعداد <term refersTo="#initial_budget">الميزانية الأولية</term> قبل بدء السنة المالية ويتم تعديل النفقات والإيرادات خلال السنة المالية حسب نتائج السنة المالية السابقة عن طريق <term refersTo="#additional_budget">ميزانية إضافية</term>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يسمى فتح الاعتمادات المصادق عليها على انفراد في حالة الضرورة <def refersTo="#pre_opened_credits">"اعتمادات مفتوحة مسبقا"</def> <condition>إذا جاءت قبل الميزانية الإضافية</condition> أو <def refersTo="#special_authorization">"ترخيصا خاصا"</def> <condition>إذا جاءت بعدها</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_178">
+            <num>المادة 178</num>
+            <content>
+            <paragraph>
+            <p><condition>يشترط فتح الاعتمادات المسبقة للميزانية الإضافية والتراخيص الخاصة بتوفر إيرادات جديدة</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_179">
+            <num>المادة 179</num>
+            <content>
+            <paragraph>
+            <p>تحتوي <term refersTo="#municipal_budget">ميزانية البلدية</term> على قسمين :</p>
+            <list>
+            <point>
+            <p>قسم التسيير،</p>
+            </point>
+            <point>
+            <p>قسم التجهيز والاستثمار.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p><obligation>وينقسم كل قسم إلى إيرادات ونفقات متوازنة وجوبا</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يقتطع من إيرادات التسيير مبلغ يخصص لتغطية نفقات التجهيز والاستثمار.</p>
+            </paragraph>
+            <paragraph>
+            <p>تحدد شروط وكيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_180">
+            <num>المادة 180</num>
+            <content>
+            <paragraph>
+            <p>يتولى <term refersTo="#secretary_general">الأمين العام للبلدية</term>، تحت سلطة <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term>، إعداد مشروع الميزانية.</p>
+            </paragraph>
+            <paragraph>
+            <p>يقدم <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> مشروع الميزانية أمام المجلس للمصادقة عليه.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_181">
+            <num>المادة 181</num>
+            <content>
+            <paragraph>
+            <p>يصوت <term refersTo="#municipal_council">المجلس الشعبي البلدي</term> على <term refersTo="#municipal_budget">ميزانية البلدية</term> وتضبط وفقا للشروط المنصوص عليها في هذا القانون.</p>
+            </paragraph>
+            <paragraph>
+            <p>يصوت على <term refersTo="#initial_budget">الميزانية الأولية</term> قبل 31 أكتوبر من السنة المالية التي تسبق سنة تنفيذها.</p>
+            </paragraph>
+            <paragraph>
+            <p>يصوت على <term refersTo="#additional_budget">الميزانية الإضافية</term> قبل 15 يونيو من السنة المالية التي تنفذ فيها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_182">
+            <num>المادة 182</num>
+            <content>
+            <paragraph>
+            <p>يصوت على الاعتمادات بابا بابا ومادة مادة.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>يمكن المجلس الشعبي البلدي إجراء تحويلات من باب إلى باب داخل نفس القسم عن طريق مداولة</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p><right>يمكن رئيس المجلس الشعبي البلدي إجراء تحويلات من مادة إلى مادة داخل نفس الباب بموجب قرار</right>، <obligation>ويخطر بذلك المجلس الشعبي البلدي بمجرد انعقاد دورة جديدة</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>غير أنه لا يمكن القيام بأي تحويل بالنسبة للاعتمادات المقيدة بتخصيص خاص.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_183">
+            <num>المادة 183</num>
+            <content>
+            <paragraph>
+            <p><obligation>لا يمكن المصادقة على الميزانية إذا لم تكن متوازنة أو إذا لم تنص على النفقات الإجبارية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة ما إذا صوت المجلس الشعبي البلدي على ميزانية غير متوازنة</condition>، فإن <obligation>الوالي يرجعها مرفقة بملاحظاته خلال الخمسة عشر (15) يوما التي تلي استلامها، إلى الرئيس الذي يخضعها لمداولة ثانية للمجلس الشعبي البلدي خلال عشرة (10) أيام</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يتم إعذار <term refersTo="#municipal_council">المجلس الشعبي البلدي</term> من <term refersTo="#wali">الوالي</term>، <condition>إذا صوت على الميزانية مجددا بدون توازن أو لم تنص على النفقات الإجبارية</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وإذا لم يتم التصويت على الميزانية ضمن الشروط المنصوص عليها في هذه المادة خلال أجل الثمانية (8) أيام التي تلي تاريخ الإعذار المذكور أعلاه</condition>، تضبط تلقائيا من طرف <term refersTo="#wali">الوالي</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_184">
+            <num>المادة 184</num>
+            <content>
+            <paragraph>
+            <p><condition>عندما يترتب على تنفيذ ميزانية البلدية عجز</condition> ، فإنه <obligation>يجب على <term refersTo="#council">المجلس الشعبي البلدي</term> اتخاذ جميع اللازمة لامتصاصه وضمان توازن الميزانية الإضافية</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>إذا لم يتخذ <term refersTo="#council">المجلس الشعبي البلدي</term> الإجراءات التصحيحية الضرورية</condition>، فإنه يتم اتخاذها من <term refersTo="#wali">الوالي</term> الذي يمكنه أن يأذن بامتصاص العجز على سنتين ماليتين أو أكثر.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_185">
+            <num>المادة 185</num>
+            <content>
+            <paragraph>
+            <p><condition>إذا لم تضبط ميزانية البلدية نهائيا لسبب ما ، قبل بدء السنة المالية</condition> يستمر العمل بالإيرادات والنفقات العادية المقيدة في السنة المالية السابقة إلى غاية المصادقة على الميزانية الجديدة.</p>
+            </paragraph>
+            <paragraph>
+            <p>غير أنه لا يجوز الالتزام بالنفقات وصرفها إلا في حدود جزء من اثني عشر (1/12) في الشهر من مبلغ اعتمادات السنة المالية السابقة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_186">
+            <num>المادة 186</num>
+            <content>
+            <paragraph>
+            <p><condition>عندما لا يصوت على ميزانية البلدية بسبب اختلال داخل <term refersTo="#council">المجلس الشعبي البلدي</term> وطبقا ل<ref href="#art_102">المادة 102</ref> أعلاه</condition>، يقوم <term refersTo="#wali">الوالي</term> باستدعاء <term refersTo="#council">المجلس الشعبي البلدي</term> في دورة غير عادية للمصادقة عليها.</p>
+            </paragraph>
+            <paragraph>
+            <p>غير أنه لا تعقد هذه الدورة إلا <condition>إذا انقضت الفترة القانونية للمصادقة على الميزانية وبعد تطبيق أحكام <ref href="#art_185">المادة 185</ref> أعلاه عندما يتعلق الأمر بالميزانية الأولية</condition>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>وفي حالة عدم توصل هذه الدورة إلى المصادقة على الميزانية</condition>، يضبطها <term refersTo="#wali">الوالي</term> نهائيا.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_187">
+            <num>المادة 187</num>
+            <content>
+            <paragraph>
+            <p>تعد ميزانية البلدية للسنة المدنية ويمتد تنفيذها إلى غاية :</p>
+            <list>
+            <point>
+            <p>15 مارس من السنة الموالية بالنسبة إلى عمليات التصفية ودفع النفقات،</p>
+            </point>
+            <point>
+            <p>31 مارس بالنسبة إلى عمليات تصفية المداخيل وتحصيلها ودفع النفقات.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_188">
+            <num>المادة 188</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعد <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> عند نهاية الفترة الإضافية للسنة المالية الحساب الإداري للبلدية ويعرضه على <term refersTo="#council">المجلس الشعبي البلدي</term> للمصادقة</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>تتم المصادقة على الحساب الإداري وإعداد حساب التسيير وكذا التقريب الدوري للكتابات طبقا للتشريع والتنظيم المعمول بهما.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_189">
+            <num>المادة 189</num>
+            <content>
+            <paragraph>
+            <p>يتم إبرام صفقات اللوازم والأشغال أو تقديم الخدمات التي تقوم بها البلدية والمؤسسات العمومية البلدية ذات الطابع الإداري طبقا للتنظيم الساري المفعول المطبق على الصفقات العمومية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_190">
+            <num>المادة 190</num>
+            <content>
+            <paragraph>
+            <p>تتأسس اللجنة البلدية للصفقات طبقا للتنظيم الساري المفعول المطبق على الصفقات العمومية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_191">
+            <num>المادة 191</num>
+            <content>
+            <paragraph>
+            <p>تنشأ لجنة بلدية للمناقصة تتشكل كما يأتي :</p>
+            <list>
+            <point>
+            <p><term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term>، رئيسا،</p>
+            </point>
+            <point>
+            <p>منتخبان (2) يعينهما <term refersTo="#council">المجلس الشعبي البلدي</term>، عضوين،</p>
+            </point>
+            <point>
+            <p>الأمين العام للبلدية، عضوا،</p>
+            </point>
+            <point>
+            <p>ممثل مصالح أملاك الدولة.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>تتم المناقصة بناء على دفتر شروط تصادق علیه قانونا اللجنة البلدية للمناقصة وفقا للتشريع والتنظيم المعمول بهما.</p>
+            </paragraph>
+            <paragraph>
+            <p>وتحدد مصالح أملاك الدولة السعر الافتتاحي.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_192">
+            <num>192</num>
+            <content>
+            <paragraph>
+            <p><condition>عندما يقوم <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> بإجراء مناقصة عمومية لحساب <term refersTo="#municipality">البلدية</term></condition>، يساعده أعضاء <term refersTo="#tender_committee">اللجنة البلدية للمناقصة</term>.</p>
+            </paragraph>
+            <paragraph>
+            <p>كل مناقصة يحرر بشأنها محضر يتضمن جميع الملاحظات، ويوقعه جميع أعضاء <term refersTo="#tender_committee">اللجنة البلدية للمناقصة</term>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_193">
+            <num>193</num>
+            <content>
+            <paragraph>
+            <p><condition>عندما تقوم السلطة المكلفة بتسيير مؤسسة عمومية بلدية بإجراء مناقصة عمومية</condition>، يساعدها أعضاء <term refersTo="#tender_committee">اللجنة البلدية للمناقصة</term>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يحرر مدير المؤسسة محضر المناقصة الذي يتضمن مجموع الملاحظات، ويوقعه جميع أعضاء <term refersTo="#tender_committee">اللجنة البلدية للمناقصة</term> وكذا مدير المؤسسة المعنية.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_194">
+            <num>194</num>
+            <content>
+            <paragraph>
+            <p>يصادق على محضر المناقصة والصفقة العمومية عن طريق مداولة <term refersTo="#municipal_council">المجلس الشعبي البلدي</term>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>يرسل محضر المناقصة والصفقة العمومية إلى <term refersTo="#wali">الوالي</term> مرفقان بالمداولة المتعلقة بهما</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_195">
+            <num>195</num>
+            <content>
+            <paragraph>
+            <p>تتكون إيرادات قسم التسيير مما يأتي :</p>
+            <list>
+            <point>
+            <p>ناتج الموارد الجبائية المرخص بتحصيلها لفائدة البلديات بموجب التشريع والتنظيم المعمول بهما،</p>
+            </point>
+            <point>
+            <p>المساهمات وناتج التسيير الممنوح من الدولة والصندوق المشترك للجماعات المحلية والمؤسسات العمومية،</p>
+            </point>
+            <point>
+            <p>رسوم وحقوق ومقابل الخدمات المرخص بها بموجب القوانين والتنظيمات،</p>
+            </point>
+            <point>
+            <p>ناتج ومداخيل أملاك البلدية.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>يخصص لتغطية نفقات قسم التجهيز والاستثمار ما يأتي:</p>
+            <list>
+            <point>
+            <p>الاقتطاع من إيرادات التسيير المنصوص عليها في <ref href="#art_198">المادة 198</ref> أدناه،</p>
+            </point>
+            <point>
+            <p>ناتج الاستغلال لامتياز المرافق العمومية البلدية،</p>
+            </point>
+            <point>
+            <p>الفائض المحقق عن المصالح العمومية المسيرة في شكل مؤسسة ذات طابع صناعي وتجاري،</p>
+            </point>
+            <point>
+            <p>ناتج المساهمات في رأس المال،</p>
+            </point>
+            <point>
+            <p>إعانات الدولة والصندوق المشترك للجماعات المحلية والولاية</p>
+            </point>
+            <point>
+            <p>ناتج التمليك،</p>
+            </point>
+            <point>
+            <p>الهبات والوصايا المقبولة</p>
+            </point>
+            <point>
+            <p>كل الإيرادات المؤقتة أو الظرفية،</p>
+            </point>
+            <point>
+            <p>ناتج القروض.</p>
+            </point>
+            </list>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_196">
+            <num>196</num>
+            <content>
+            <paragraph>
+            <p><obligation>لا يسمح للبلدية إلا بتحصيل الضرائب والمساهمات والرسوم والأتاوى المحددة عن طريق التشريع والتنظيم المعمول بهما</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يصوت <term refersTo="#municipal_council">المجلس الشعبي البلدي</term>، في حدود النطاقات المنصوص عليها قانونا على الرسوم والأتاوى التي يرخص للبلدية بتحصيلها لتمويل ميزانيتها.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_197">
+            <num>197</num>
+            <content>
+            <paragraph>
+            <p><obligation>لا يمكن أيا كان في إقليم البلدية القيام بتحصيل حق أو رسم مع مراعاة الحالات المنصوص عليها قانونا، من دون الموافقة المسبقة المتداول عليها في <term refersTo="#municipal_council">المجلس الشعبي البلدي</term></obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_198">
+            <num>المادة 198</num>
+            <content>
+            <paragraph>
+            <p>يحتوي <term refersTo="#management_section">قسم التسيير</term> في باب النفقات على ما يأتي :</p>
+            <list>
+            <point><p>أجور وأعباء مستخدمي البلدية،</p></point>
+            <point><p>التعويضات والأعباء المرتبطة بالمهام الانتخابية،</p></point>
+            <point><p>المساهمات المقررة على الأملاك ومداخيل البلدية بموجب القوانين،</p></point>
+            <point><p>نفقات صيانة الأملاك المنقولة والعقارية،</p></point>
+            <point><p>نفقات صيانة طرق البلدية،</p></point>
+            <point><p>المساهمات البلدية والأقساط المترتبة عليها،</p></point>
+            <point><p>الاقتطاع من قسم التسيير لفائدة قسم التجهيز والاستثمار،</p></point>
+            <point><p>فوائد القروض،</p></point>
+            <point><p>أعباء التسيير المرتبطة باستغلال تجهيزات جديدة،</p></point>
+            <point><p>مصاريف تسيير المصالح البلدية،</p></point>
+            <point><p>الأعباء السابقة.</p></point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p>يحتوي <term refersTo="#investment_section">قسم التجهيز والاستثمار</term> في باب النفقات خصوصا على ما يأتي :</p>
+            <list>
+            <point><p>نفقات التجهيز العمومي،</p></point>
+            <point><p>نفقات المساهمة في رأس المال بعنوان الاستثمار،</p></point>
+            <point><p>تسديد رأسمال القروض،</p></point>
+            <point><p>نفقات إعادة تهيئة المنشآت البلدية.</p></point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p><condition>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_199">
+            <num>المادة 199</num>
+            <content>
+            <paragraph>
+            <p><obligation>لا تعد إجبارية بالنسبة للبلدية إلا النفقات الملقاة على عاتقها بموجب التشريع والتنظيم المعمول بهما والنفقات المتعلقة بتسديد الديون الواجبة الأداء في إطار القرض</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p>مع مراعاة احترام الأحكام المتعلقة بالمالية البلدية، <obligation>تسهر الدولة على تخصيص الموارد التكميلية لتغطية النفقات الملقاة على عاتق البلدية بموجب التشريع والتنظيم المعمول بهما</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_200">
+            <num>المادة 200</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن المجلس الشعبي البلدي أن يقيد في الميزانية اعتمادات لتغطية النفقات الطارئة</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p>يقرر <term refersTo="#apc">المجلس الشعبي البلدي</term> استعمال هذه الاعتمادات عن طريق التحويل إلى مواد لم تزود بصفة كافية و<condition>في حالة الاستعجال</condition>، <obligation>يقوم رئيس المجلس الشعبي البلدي بذلك ويخطر المجلس الشعبي البلدي خلال الدورة الجديدة</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_201">
+            <num>المادة 201</num>
+            <content>
+            <paragraph>
+            <p><obligation>تتقادم الديون التي لم يؤمر بصرفها وتصفيتها ودفعها في أجل أربع (4) سنوات من افتتاح السنة المالية المتعلقة بها</obligation>، وتعود بصفة نهائية لصالح البلديات <condition>باستثناء الحالات التي يكون فيها التأخير بفعل الإدارة أو بسبب وجود طعن أمام جهة قضائية</condition>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_2_sec_2">
+          <num>الثاني</num>
+          <heading>المحاسبة البلدية</heading>
+          <article eId="art_202">
+            <num>202</num>
+            <content>
+            <paragraph>
+            <p><obligation>تقدم حسابات السنة المالية السابقة من <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> قبل التداول على الميزانية الإضافية للسنة الجارية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_203">
+            <num>203</num>
+            <content>
+            <paragraph>
+            <p><obligation>يعد <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> الحوالات ويصدر سندات التحصيل</obligation>.</p>
+            </paragraph>
+            <paragraph>
+            <p><condition>في حالة رفض <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> القيام بإعداد حوالة قصد تغطية نفقة إجبارية أو إصدار سند تحصيل</condition>، <obligation>يتخذ <term refersTo="#wali">الوالي</term> قرارا يحل محل حوالة أو سند تحصيل <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> طبقا للتشريع الساري المفعول</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_204">
+            <num>204</num>
+            <content>
+            <paragraph>
+            <p>تعتبر منجزة عند نهاية السنة المالية :</p>
+            <list>
+            <point>
+            <p>كل النفقات المأمور بدفعها والمعترف بصحتها،</p>
+            </point>
+            <point>
+            <p>كل الإيرادات التي كانت موضوع إصدار سندات تحصيل.</p>
+            </point>
+            </list>
+            </paragraph>
+            <paragraph>
+            <p><obligation>تتولى <term refersTo="#treasury">الخزينة العمومية</term> من أجل تغطية حاجيات خزينة البلديات تحصيل الإيرادات وتقدم تسبيقات على الإيرادات الجبائية وفقا للأحكام المحددة في قانون المالية وطبقا للإجراءات المحددة بموجب التنظيم</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_205">
+            <num>205</num>
+            <content>
+            <paragraph>
+            <p>يمارس مهام <term refersTo="#municipal_treasurer">أمين خزينة البلدية</term> <term refersTo="#public_accountant">محاسب عمومي</term> معين طبقا للتنظيم.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_206">
+            <num>206</num>
+            <content>
+            <paragraph>
+            <p><obligation>يتولى <term refersTo="#municipal_treasurer">أمين خزينة البلدية</term> تحصيل الإيرادات وتصفية نفقات البلدية</obligation>، و<obligation>هو مكلف وحده وتحت مسؤوليته بمتابعة تحصيل مداخيل البلدية وكل المبالغ العائدة لها وصرف النفقات المأمور بدفعها</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_207">
+            <num>207</num>
+            <content>
+            <paragraph>
+            <p><obligation>يقوم <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term> ما عدا الحالات المستثناة بموجب القوانين والتنظيمات، بإعداد جميع جداول الرسوم والتوزيعات الفرعية وكشوف الخدمات الموجهة ل<term refersTo="#municipal_treasurer">أمين خزينة البلدية</term> قصد تحصيلها</obligation>، وتكون هذه الكشوف نافذة.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_208">
+            <num>208</num>
+            <content>
+            <paragraph>
+            <p><right>يمكن <term refersTo="#mayor">رئيس المجلس الشعبي البلدي</term>، عند الحاجة إنشاء وكالات إيرادات أو وكالات تسبيق على النفقات بمداولة</right>.</p>
+            </paragraph>
+            <paragraph>
+            <p><obligation>وينفذ هذه الوكالات وكيل مالي وفقا للتشريع الساري المفعول</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <article eId="art_209">
+            <num>209</num>
+            <content>
+            <paragraph>
+            <p><obligation>تبقى حسابات البلدية مودعة في مقر البلدية</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+        </section>
+        <section eId="chp_2_sec_3">
+          <num>الثالث</num>
+          <heading>مراقبة الحسابات وتطهيرها</heading>
+          <article eId="art_210">
+            <num>المادة 210</num>
+            <content>
+            <paragraph>
+            <p><obligation>تتم مراقبة وتدقيق الحسابات الإدارية للبلدية وتطهير حسابات التسيير الخاصة بها من طرف <term refersTo="#court_of_accounts">مجلس المحاسبة</term> طبقا للتشريع الساري المفعول</obligation>.</p>
+            </paragraph>
+            </content>
+            </article>
+          <subsection eId="chp_2_sec_3_subsec_5">
+            <num>الخامس</num>
+            <heading>التضامن ما بين البلديات والمابين البلديات</heading>
+          </subsection>
+        </section>
+      </chapter>
+      <chapter eId="chp_1">
+        <num>الأول</num>
+        <heading>التضامن المالي ما بين البلديات</heading>
+        <article eId="art_211">
+          <num>المادة 211</num>
+          <content>
+          <paragraph>
+          <p><obligation>تتوفر <term refersTo="#municipality">البلديات</term> قصد تجسيد التضامن المالي ما بين البلديات وضمان المداخيل الجبائية، على صندوقين</obligation>:</p>
+          <list>
+          <point>
+          <p><term refersTo="#municipal_solidarity_fund">الصندوق البلدي للتضامن</term></p>
+          </point>
+          <point>
+          <p><term refersTo="#local_authorities_guarantee_fund">صندوق الجماعات المحلية للضمان</term>.</p>
+          </point>
+          </list>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تنظيم هذه الصناديق وتسييرها عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_212">
+          <num>المادة 212</num>
+          <content>
+          <paragraph>
+          <p><obligation>يدفع <term refersTo="#municipal_solidarity_fund">الصندوق البلدي للتضامن</term> المذكور في <ref href="#art_211">المادة 211</ref> أعلاه <term refersTo="#municipality">للبلديات</term> ما يأتي</obligation> :</p>
+          <list>
+          <point>
+          <p>مخصص مالي سنوي بالمعادلة، موجه لقسم التسيير في ميزانية البلدية لتغطية النفقات الإجبارية كأولوية،</p>
+          </point>
+          <point>
+          <p>إعانات التجهيز الموجهة لقسم التجهيز والاستثمار لميزانية البلدية،</p>
+          </point>
+          <point>
+          <p>إعانات توازن للبلديات التي تواجه وضعية مالية صعبة،</p>
+          </point>
+          <point>
+          <p>إعانات استثنائية للبلديات التي تواجه وضعية غير متوقعة.</p>
+          </point>
+          </list>
+          </paragraph>
+          <paragraph>
+          <p>تقييد إعانات التجهيز للصندوق البلدي للتضامن بتخصيص خاص.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تطبيق هذه المادة عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_213">
+          <num>المادة 213</num>
+          <content>
+          <paragraph>
+          <p><def refersTo="#local_authorities_guarantee_fund">يخصص <term refersTo="#local_authorities_guarantee_fund">صندوق الجماعات المحلية للضمان</term> المنصوص عليه في <ref href="#art_211">المادة 211</ref> أعلاه لتعويض ناقص قيمة الإيرادات الجبائية بالنسبة للمبلغ المتوقع تحصيله من هذه الإيرادات</def>.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_214">
+          <num>المادة 214</num>
+          <content>
+          <paragraph>
+          <p><obligation>يمول <term refersTo="#local_authorities_guarantee_fund">صندوق الجماعات المحلية للضمان</term> المنصوص عليه في <ref href="#art_211">المادة 211</ref> أعلاه بالمساهمات الإجبارية للجماعات المحلية التي تحدد نسبتها عن طريق التنظيم</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p><obligation>يدفع الرصيد الدائن لصندوق الجماعات المحلية للضمان المستخلص من كل سنة مالية إلى الصندوق البلدي للتضامن</obligation>.</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_2">
+        <num>الثاني</num>
+        <heading>التعاون المشترك بين البلديات</heading>
+        <article eId="art_215">
+          <num>المادة 215</num>
+          <content>
+          <paragraph>
+          <p><condition>يمكن بلديتين (2) متجاورتين أو أكثر أن تشترك قصد التهيئة أو التنمية المشتركة لأقاليمها و/أو تسيير أو ضمان مرافق عمومية جوارية طبقا للقوانين والتنظيمات</condition>.</p>
+          </paragraph>
+          <paragraph>
+          <p>يسمح <term refersTo="#inter-municipal_cooperation">التعاون المشترك بين البلديات</term> للبلديات بتعاضد وسائلها وإنشاء مصالح ومؤسسات عمومية مشتركة.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_216">
+          <num>المادة 216</num>
+          <content>
+          <paragraph>
+          <p>تنجز الأعمال المسجلة في إطار <term refersTo="#inter-municipal_cooperation">التعاون المشترك بين البلديات</term> بموجب اتفاقية أو عقود يصادق عليها عن طريق المداولات.</p>
+          </paragraph>
+          <paragraph>
+          <p>تحدد كيفيات تطبيق <ref href="#art_215">المادتين 215</ref> و <ref href="#art_216">216</ref> عن طريق التنظيم.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_217">
+          <num>المادة 217</num>
+          <content>
+          <paragraph>
+          <p>يقوم <term refersTo="#inter-municipal_cooperation">التعاون المشترك بين البلديات</term> بترقية فضاء للشراكة والتضامن بين بلديتين متجاورتين أو أكثر تابعة لنفس الولاية أو لعدة ولايات.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_218">
+          <num>المادة 218</num>
+          <content>
+          <paragraph>
+          <p><obligation>يتم وضع قانون أساسي يحدد القواعد التي تنظم الجزائر العاصمة بموجب ترتيب تشريعي خاص</obligation>.</p>
+          </paragraph>
+          <paragraph>
+          <p>تبقى أحكام <ref href="/akn/dz/act/law/1990-04-07/90-08#art_177">المواد 177</ref> و <ref href="/akn/dz/act/law/1990-04-07/90-08#art_178">178</ref> و <ref href="/akn/dz/act/law/1990-04-07/90-08#art_179">179</ref> و <ref href="/akn/dz/act/law/1990-04-07/90-08#art_180">180</ref> و <ref href="/akn/dz/act/law/1990-04-07/90-08#art_181">181</ref> من القانون رقم 08-2018 المؤرخ في 7 أبريل سنة 1990 والمتعلق بالبلدية التي تحكم الجزائر العاصمة، سارية المفعول بصفة انتقالية إلى غاية إصدار القانون الأساسي الخاص المنصوص عليه في هذه المادة.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_219">
+          <num>المادة 219</num>
+          <content>
+          <paragraph>
+          <p>مع مراعاة أحكام <ref href="#art_218">المادة 218</ref> أعلاه، تلغى جميع الأحكام المخالفة لهذا القانون، لا سيما القانون رقم 08-90 المؤرخ في 7 أبريل سنة 1990 والمتعلق بالبلدية.</p>
+          </paragraph>
+          </content>
+          </article>
+        <article eId="art_220">
+          <num>المادة 220</num>
+          <content>
+          <paragraph>
+          <p>ينشر هذا القانون في الجريدة الرسمية للجمهورية الجزائرية الديمقراطية الشعبية.</p>
+          </paragraph>
+          <paragraph>
+          <p>حرر بالجزائر في 20 رجب عام 1432 الموافق 22 يونيو سنة 2011.</p>
+          </paragraph>
+          <paragraph>
+          <p>عبد العزيز بوتفليقة</p>
+          </paragraph>
+          <paragraph>
+          <p>إن رئيس الجمهورية،</p>
+          <list>
+          <point><p>وبعد رأي مجلس الدولة،</p></point>
+          <point><p>وبعد مصادقة البرلمان</p></point>
+          </list>
+          </paragraph>
+          <paragraph>
+          <p>يصدر القانون الآتي نصه :</p>
+          </paragraph>
+          </content>
+          </article>
+      </chapter>
+      <chapter eId="chp_1">
+        <num>الأول</num>
+        <heading>تنظيم الولاية</heading>
+        <section eId="chp_1_sec_1">
+          <num>الأول</num>
+          <heading>أحكام عامة</heading>
+        </section>
+      </chapter>
+    </body>
+  </act>
+</akomaNtoso>
